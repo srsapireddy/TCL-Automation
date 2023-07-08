@@ -1,5 +1,7 @@
 # ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS
 
+## Author: Srinivas Rahul Sapireddy
+
 A User Interface (UI) that will take RTL netlist & SDC constraints as an input, and will generate sythnesized netlist & pre-layout timing report as an output. It uses Yosys open-source tool for synthesis and Opentimer to generate pre-layout timing reports.
 
 ### The task is to take a User Interface to take an Excel file as an input and provide the output as a datasheet.
@@ -381,6 +383,7 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 
 For a detailed explanation (Private Repo): https://github.com/srsapireddy/Advanced-TCL-Scripting
 
+Acknowledgements: TCL Workshop by Mr. Kunal Ghosh
 
 
 
