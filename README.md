@@ -371,7 +371,6 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 ![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/e91a31a7-6590-40d1-bb24-df528fd16df2)
 
 #### PRELAYOUT TIMING RESULTS
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/ea96bdaf-53b2-4351-a365-b7a682d372fa)
 
 #### Script to print the values of QoR
 ![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/0c6b8ed2-5a5e-4d74-b612-239deb23aee1)
