@@ -384,7 +384,7 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 
 For a detailed explanation (Private Repo): https://github.com/srsapireddy/Advanced-TCL-Scripting
 
-Acknowledgements: TCL Workshop by Mr. Kunal Ghosh
+Acknowledgements: Mr. Kunal Ghosh
 
 
 
