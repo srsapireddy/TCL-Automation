@@ -19,12 +19,14 @@ A User Interface (UI) that will take RTL netlist & SDC constraints as an input, 
 
 ### Checking the contents of the CSV file
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/8444afc6-e8b5-4de0-a958-80a36eea0147)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/554b39a1-d4f2-4e05-bed0-ad3a53e10260)
+
 
 
 ### Checking if the CSV file is provided or provided.
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/dd3d4205-a831-41a4-93fa-818d7933c60c)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/85eabafe-a4de-4053-9135-a719edf8a476)
+
 
 Output:
 
