@@ -500,24 +500,24 @@ puts "time_elapsed_in_sec is $time_elapsed_in_sec seconds"
 puts "\nInfo: STA finished in $time_elapsed_in_sec seconds"
 puts "\nInfo: Refer to $OutputDirectory/$DesignName.results for warnings and errors"
 
-puts "tcl_precision is $tcl_precision"
+#puts "tcl_precision is $tcl_precision"
 
 
 #-------------------------------Find worst output violation---------------------------------#
 
 set worst_RAT_slack "-"
 set report_file [open $OutputDirectory/$DesignName.results r]
-puts "report_file is $OutputDirectory/$DesignName.results"
+#puts "report_file is $OutputDirectory/$DesignName.results"
 set pattern {RAT}
-puts "pattern is $pattern"
+#puts "pattern is $pattern"
 while {[gets $report_file line] != -1} {
   if {[regexp $pattern $line]} {
-    puts "pattern \"$pattern\" found in \"$line\""
-    puts "old_worst_RAT_slack is $worst_RAT_slack"
+   #puts "pattern \"$pattern\" found in \"$line\""
+   #puts "old_worst_RAT_slack is $worst_RAT_slack"
     set worst_RAT_slack "[expr {[lindex $line 3]/1000}]ns"
-    puts "part1 is [lindex $line 3]"
-    puts "new worst_RAT_slack is $worst_RAT_slack"
-    puts "Breaking"
+   #puts "part1 is [lindex $line 3]"
+   #puts "new worst_RAT_slack is $worst_RAT_slack"
+   #puts "Breaking"
     break  
   } else {
     continue
@@ -548,7 +548,7 @@ while {[gets $report_file line] != -1} {
     #puts "old_worst_RAT_slack is $worst_RAT_slack"
     set worst_negative_setup_slack "[expr {[lindex $line 3]/1000}]ns"
     #puts "part1 is [lindex $line 3]"
-    puts "new worst_negatvie_setup_slack is $worst_negative_setup_slack"
+    #puts "new worst_negatvie_setup_slack is $worst_negative_setup_slack"
     #puts "Breaking"
     break  
   } else {
@@ -580,7 +580,7 @@ while {[gets $report_file line] != -1} {
     #puts "old_worst_RAT_slack is $worst_RAT_slack"
     set worst_negative_hold_slack "[expr {[lindex $line 3]/1000}]ns"
     #puts "part1 is [lindex $line 3]"
-    puts "new worst_negatvie_hold_slack is $worst_negative_hold_slack"
+    #puts "new worst_negatvie_hold_slack is $worst_negative_hold_slack"
     #puts "Breaking"
     break  
   } else {
@@ -607,7 +607,7 @@ set report_file [open $OutputDirectory/$DesignName.results r]
 while {[gets $report_file line] != -1} {
   if {[regexp -all -- $pattern $line]} {
     set Instance_count [lindex [join $line " "] 4 ]
-    puts "pattern \"$pattern\" found at line \"$line\""
+    #puts "pattern \"$pattern\" found at line \"$line\""
     break
   } else {
     continue
