@@ -581,7 +581,6 @@ while {[gets $report_file line] != -1} {
     set worst_negative_hold_slack "[expr {[lindex $line 3]/1000}]ns"
     #puts "part1 is [lindex $line 3]"
     #puts "new worst_negatvie_hold_slack is $worst_negative_hold_slack"
-    #puts "Breaking"
     break  
   } else {
     continue
