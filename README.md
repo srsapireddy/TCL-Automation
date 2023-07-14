@@ -348,19 +348,24 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 ### Proc file Scripts
 
 #### read_lib.proc file:
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/dca9a668-a670-4e81-9c2c-c95bcd14891b)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/fec58b91-0e3c-460b-bdfc-57caedc29970)
+
 
 #### read_sdc.proc file:
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/681f21d4-f886-429a-b80d-785dbd25c29d)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/585d1d8c-5ec0-4725-9e0c-a3bb3f566b3c)
+
 
 #### read_verilog.proc file:
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/41613170-d75f-471f-87dc-27d3a3a41238)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/b715801a-8b6b-49c7-82d5-f0386a2a3308)
+
 
 #### reopenStdout.proc file:
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/0405bbd4-3af1-4f30-b7be-33ff869c1c77)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/34cebd6e-a5e0-4b86-9059-f5913213be5f)
+
 
 #### set_num_threads.proc
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/3cea8144-a1e3-44f6-93a8-2409829f1cb0)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/2b4f35fe-8da6-4ff7-95f1-8374a10811e1)
+
 
 #### Convert set_clock_latency in SDC to arrival_time in opentimer
 
