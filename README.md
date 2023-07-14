@@ -380,7 +380,9 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 
 
 #### Output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/74c07c3c-ede2-4fdc-b354-5babae955cd0)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/ada105e3-56d7-4264-844d-f8927031db63)
+
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/81c29384-84fc-4503-83e9-cd58f3ca52a1)
 
 For a detailed explanation (Private Repo): https://github.com/srsapireddy/Advanced-TCL-Scripting
 
