@@ -5713,286 +5713,286 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   wire aclk;
   output aclk_en;
   wire aclk_en;
-  wire  clock_module_0.UNUSED_cpuoff ;
-  wire  clock_module_0.aclk_div_0_ ;
-  wire  clock_module_0.aclk_div_1_ ;
-  wire  clock_module_0.aclk_div_2_ ;
-  wire  clock_module_0.bcsctl1_4_ ;
-  wire  clock_module_0.bcsctl1_5_ ;
-  wire  clock_module_0.bcsctl1_rd_12_ ;
-  wire  clock_module_0.bcsctl1_rd_13_ ;
-  wire  clock_module_0.bcsctl2_1_ ;
-  wire  clock_module_0.bcsctl2_2_ ;
-  wire  clock_module_0.bcsctl2_3_ ;
-  wire  clock_module_0.bcsctl2_rd_1_ ;
-  wire  clock_module_0.bcsctl2_rd_2_ ;
-  wire  clock_module_0.bcsctl2_rd_3_ ;
-  wire  clock_module_0.dbg_cpu_reset ;
-  wire  clock_module_0.dbg_rst ;
-  wire  clock_module_0.dbg_rst_nxt ;
-  wire  clock_module_0.lfxt_clk_dly ;
-  wire  clock_module_0.lfxt_clk_s ;
-  wire  clock_module_0.oscoff ;
-  wire  clock_module_0.por ;
-  wire  clock_module_0.por_a ;
-  wire  clock_module_0.puc_a ;
-  wire  clock_module_0.puc_noscan_n ;
-  wire  clock_module_0.scg1 ;
-  wire  clock_module_0.smclk_div_0_ ;
-  wire  clock_module_0.smclk_div_1_ ;
-  wire  clock_module_0.smclk_div_2_ ;
-  wire  clock_module_0.sync_cell_lfxt_clk.data_sync_0_ ;
-  wire  clock_module_0.sync_cell_puc.data_in ;
-  wire  clock_module_0.sync_cell_puc.data_sync_0_ ;
-  wire  clock_module_0.sync_reset_por.data_sync_0_ ;
-  wire  clock_module_0.wdt_reset ;
+  wire clock_module_0.UNUSED_cpuoff ;
+  wire clock_module_0.aclk_div_0_ ;
+  wire clock_module_0.aclk_div_1_ ;
+  wire clock_module_0.aclk_div_2_ ;
+  wire clock_module_0.bcsctl1_4_ ;
+  wire clock_module_0.bcsctl1_5_ ;
+  wire clock_module_0.bcsctl1_rd_12_ ;
+  wire clock_module_0.bcsctl1_rd_13_ ;
+  wire clock_module_0.bcsctl2_1_ ;
+  wire clock_module_0.bcsctl2_2_ ;
+  wire clock_module_0.bcsctl2_3_ ;
+  wire clock_module_0.bcsctl2_rd_1_ ;
+  wire clock_module_0.bcsctl2_rd_2_ ;
+  wire clock_module_0.bcsctl2_rd_3_ ;
+  wire clock_module_0.dbg_cpu_reset ;
+  wire clock_module_0.dbg_rst ;
+  wire clock_module_0.dbg_rst_nxt ;
+  wire clock_module_0.lfxt_clk_dly ;
+  wire clock_module_0.lfxt_clk_s ;
+  wire clock_module_0.oscoff ;
+  wire clock_module_0.por ;
+  wire clock_module_0.por_a ;
+  wire clock_module_0.puc_a ;
+  wire clock_module_0.puc_noscan_n ;
+  wire clock_module_0.scg1 ;
+  wire clock_module_0.smclk_div_0_ ;
+  wire clock_module_0.smclk_div_1_ ;
+  wire clock_module_0.smclk_div_2_ ;
+  wire clock_module_0.sync_cell_lfxt_clk.data_sync_0_ ;
+  wire clock_module_0.sync_cell_puc.data_in ;
+  wire clock_module_0.sync_cell_puc.data_sync_0_ ;
+  wire clock_module_0.sync_reset_por.data_sync_0_ ;
+  wire clock_module_0.wdt_reset ;
   input cpu_en;
   wire cpu_en;
-  wire  dbg_0.UNUSED_eu_mab_0_ ;
-  wire  dbg_0.UNUSED_eu_mab_10_ ;
-  wire  dbg_0.UNUSED_eu_mab_11_ ;
-  wire  dbg_0.UNUSED_eu_mab_12_ ;
-  wire  dbg_0.UNUSED_eu_mab_13_ ;
-  wire  dbg_0.UNUSED_eu_mab_14_ ;
-  wire  dbg_0.UNUSED_eu_mab_15_ ;
-  wire  dbg_0.UNUSED_eu_mab_1_ ;
-  wire  dbg_0.UNUSED_eu_mab_2_ ;
-  wire  dbg_0.UNUSED_eu_mab_3_ ;
-  wire  dbg_0.UNUSED_eu_mab_4_ ;
-  wire  dbg_0.UNUSED_eu_mab_5_ ;
-  wire  dbg_0.UNUSED_eu_mab_6_ ;
-  wire  dbg_0.UNUSED_eu_mab_7_ ;
-  wire  dbg_0.UNUSED_eu_mab_8_ ;
-  wire  dbg_0.UNUSED_eu_mab_9_ ;
-  wire  dbg_0.UNUSED_eu_mb_en ;
-  wire  dbg_0.UNUSED_eu_mb_wr_0_ ;
-  wire  dbg_0.UNUSED_eu_mb_wr_1_ ;
-  wire  dbg_0.UNUSED_pc_0_ ;
-  wire  dbg_0.UNUSED_pc_10_ ;
-  wire  dbg_0.UNUSED_pc_11_ ;
-  wire  dbg_0.UNUSED_pc_12_ ;
-  wire  dbg_0.UNUSED_pc_13_ ;
-  wire  dbg_0.UNUSED_pc_14_ ;
-  wire  dbg_0.UNUSED_pc_15_ ;
-  wire  dbg_0.UNUSED_pc_1_ ;
-  wire  dbg_0.UNUSED_pc_2_ ;
-  wire  dbg_0.UNUSED_pc_3_ ;
-  wire  dbg_0.UNUSED_pc_4_ ;
-  wire  dbg_0.UNUSED_pc_5_ ;
-  wire  dbg_0.UNUSED_pc_6_ ;
-  wire  dbg_0.UNUSED_pc_7_ ;
-  wire  dbg_0.UNUSED_pc_8_ ;
-  wire  dbg_0.UNUSED_pc_9_ ;
-  wire  dbg_0.cpu_ctl_3_ ;
-  wire  dbg_0.cpu_ctl_4_ ;
-  wire  dbg_0.cpu_ctl_5_ ;
-  wire  dbg_0.cpu_stat_2_ ;
-  wire  dbg_0.cpu_stat_3_ ;
-  wire  dbg_0.cpu_stat_full_0_ ;
-  wire  dbg_0.dbg_addr_0_ ;
-  wire  dbg_0.dbg_addr_1_ ;
-  wire  dbg_0.dbg_addr_2_ ;
-  wire  dbg_0.dbg_addr_3_ ;
-  wire  dbg_0.dbg_addr_4_ ;
-  wire  dbg_0.dbg_addr_5_ ;
-  wire  dbg_0.dbg_din_0_ ;
-  wire  dbg_0.dbg_din_10_ ;
-  wire  dbg_0.dbg_din_11_ ;
-  wire  dbg_0.dbg_din_12_ ;
-  wire  dbg_0.dbg_din_13_ ;
-  wire  dbg_0.dbg_din_14_ ;
-  wire  dbg_0.dbg_din_15_ ;
-  wire  dbg_0.dbg_din_1_ ;
-  wire  dbg_0.dbg_din_2_ ;
-  wire  dbg_0.dbg_din_3_ ;
-  wire  dbg_0.dbg_din_4_ ;
-  wire  dbg_0.dbg_din_5_ ;
-  wire  dbg_0.dbg_din_6_ ;
-  wire  dbg_0.dbg_din_7_ ;
-  wire  dbg_0.dbg_din_8_ ;
-  wire  dbg_0.dbg_din_9_ ;
-  wire  dbg_0.dbg_dout_0_ ;
-  wire  dbg_0.dbg_dout_10_ ;
-  wire  dbg_0.dbg_dout_11_ ;
-  wire  dbg_0.dbg_dout_12_ ;
-  wire  dbg_0.dbg_dout_13_ ;
-  wire  dbg_0.dbg_dout_14_ ;
-  wire  dbg_0.dbg_dout_15_ ;
-  wire  dbg_0.dbg_dout_1_ ;
-  wire  dbg_0.dbg_dout_2_ ;
-  wire  dbg_0.dbg_dout_3_ ;
-  wire  dbg_0.dbg_dout_4_ ;
-  wire  dbg_0.dbg_dout_5_ ;
-  wire  dbg_0.dbg_dout_6_ ;
-  wire  dbg_0.dbg_dout_7_ ;
-  wire  dbg_0.dbg_dout_8_ ;
-  wire  dbg_0.dbg_dout_9_ ;
-  wire  dbg_0.dbg_halt_cmd ;
-  wire  dbg_0.dbg_i2c_0.dbg_bw ;
-  wire  dbg_0.dbg_i2c_0.dbg_rd ;
-  wire  dbg_0.dbg_i2c_0.dbg_state_0_ ;
-  wire  dbg_0.dbg_i2c_0.dbg_state_1_ ;
-  wire  dbg_0.dbg_i2c_0.dbg_state_2_ ;
-  wire  dbg_0.dbg_i2c_0.dbg_state_nxt_0_ ;
-  wire  dbg_0.dbg_i2c_0.dbg_state_nxt_1_ ;
-  wire  dbg_0.dbg_i2c_0.dbg_state_nxt_2_ ;
-  wire  dbg_0.dbg_i2c_0.dbg_wr ;
-  wire  dbg_0.dbg_i2c_0.i2c_active_seq ;
-  wire  dbg_0.dbg_i2c_0.i2c_state_0_ ;
-  wire  dbg_0.dbg_i2c_0.i2c_state_1_ ;
-  wire  dbg_0.dbg_i2c_0.i2c_state_2_ ;
-  wire  dbg_0.dbg_i2c_0.i2c_state_nxt_0_ ;
-  wire  dbg_0.dbg_i2c_0.i2c_state_nxt_1_ ;
-  wire  dbg_0.dbg_i2c_0.i2c_state_nxt_2_ ;
-  wire  dbg_0.dbg_i2c_0.mem_burst ;
-  wire  dbg_0.dbg_i2c_0.mem_burst_end ;
-  wire  dbg_0.dbg_i2c_0.mem_burst_rd ;
-  wire  dbg_0.dbg_i2c_0.mem_burst_wr ;
-  wire  dbg_0.dbg_i2c_0.mem_bw ;
-  wire  dbg_0.dbg_i2c_0.scl ;
-  wire  dbg_0.dbg_i2c_0.scl_buf_0_ ;
-  wire  dbg_0.dbg_i2c_0.scl_buf_1_ ;
-  wire  dbg_0.dbg_i2c_0.scl_dly ;
-  wire  dbg_0.dbg_i2c_0.scl_re ;
-  wire  dbg_0.dbg_i2c_0.scl_re_dly_0_ ;
-  wire  dbg_0.dbg_i2c_0.scl_re_dly_1_ ;
-  wire  dbg_0.dbg_i2c_0.scl_sync ;
-  wire  dbg_0.dbg_i2c_0.scl_sync_n ;
-  wire  dbg_0.dbg_i2c_0.sda_in ;
-  wire  dbg_0.dbg_i2c_0.sda_in_buf_0_ ;
-  wire  dbg_0.dbg_i2c_0.sda_in_buf_1_ ;
-  wire  dbg_0.dbg_i2c_0.sda_in_dly ;
-  wire  dbg_0.dbg_i2c_0.sda_in_sync ;
-  wire  dbg_0.dbg_i2c_0.sda_in_sync_n ;
-  wire  dbg_0.dbg_i2c_0.shift_buf_0_ ;
-  wire  dbg_0.dbg_i2c_0.shift_buf_1_ ;
-  wire  dbg_0.dbg_i2c_0.shift_buf_2_ ;
-  wire  dbg_0.dbg_i2c_0.shift_buf_3_ ;
-  wire  dbg_0.dbg_i2c_0.shift_buf_4_ ;
-  wire  dbg_0.dbg_i2c_0.shift_buf_5_ ;
-  wire  dbg_0.dbg_i2c_0.shift_buf_6_ ;
-  wire  dbg_0.dbg_i2c_0.shift_buf_7_ ;
-  wire  dbg_0.dbg_i2c_0.shift_buf_8_ ;
-  wire  dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_in ;
-  wire  dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_sync_0_ ;
-  wire  dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_in ;
-  wire  dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_sync_0_ ;
-  wire  dbg_0.dbg_mem_addr_0_ ;
-  wire  dbg_0.dbg_mem_addr_10_ ;
-  wire  dbg_0.dbg_mem_addr_11_ ;
-  wire  dbg_0.dbg_mem_addr_12_ ;
-  wire  dbg_0.dbg_mem_addr_13_ ;
-  wire  dbg_0.dbg_mem_addr_14_ ;
-  wire  dbg_0.dbg_mem_addr_15_ ;
-  wire  dbg_0.dbg_mem_addr_1_ ;
-  wire  dbg_0.dbg_mem_addr_2_ ;
-  wire  dbg_0.dbg_mem_addr_3_ ;
-  wire  dbg_0.dbg_mem_addr_4_ ;
-  wire  dbg_0.dbg_mem_addr_5_ ;
-  wire  dbg_0.dbg_mem_addr_6_ ;
-  wire  dbg_0.dbg_mem_addr_7_ ;
-  wire  dbg_0.dbg_mem_addr_8_ ;
-  wire  dbg_0.dbg_mem_addr_9_ ;
-  wire  dbg_0.dbg_mem_din_0_ ;
-  wire  dbg_0.dbg_mem_din_10_ ;
-  wire  dbg_0.dbg_mem_din_11_ ;
-  wire  dbg_0.dbg_mem_din_12_ ;
-  wire  dbg_0.dbg_mem_din_13_ ;
-  wire  dbg_0.dbg_mem_din_14_ ;
-  wire  dbg_0.dbg_mem_din_15_ ;
-  wire  dbg_0.dbg_mem_din_1_ ;
-  wire  dbg_0.dbg_mem_din_2_ ;
-  wire  dbg_0.dbg_mem_din_3_ ;
-  wire  dbg_0.dbg_mem_din_4_ ;
-  wire  dbg_0.dbg_mem_din_5_ ;
-  wire  dbg_0.dbg_mem_din_6_ ;
-  wire  dbg_0.dbg_mem_din_7_ ;
-  wire  dbg_0.dbg_mem_din_8_ ;
-  wire  dbg_0.dbg_mem_din_9_ ;
-  wire  dbg_0.dbg_mem_en ;
-  wire  dbg_0.dbg_mem_rd ;
-  wire  dbg_0.dbg_mem_rd_dly ;
-  wire  dbg_0.dbg_mem_wr_0_ ;
-  wire  dbg_0.dbg_mem_wr_1_ ;
-  wire  dbg_0.dbg_rd_rdy ;
-  wire  dbg_0.dbg_reg_din_0_ ;
-  wire  dbg_0.dbg_reg_din_10_ ;
-  wire  dbg_0.dbg_reg_din_11_ ;
-  wire  dbg_0.dbg_reg_din_12_ ;
-  wire  dbg_0.dbg_reg_din_13_ ;
-  wire  dbg_0.dbg_reg_din_14_ ;
-  wire  dbg_0.dbg_reg_din_15_ ;
-  wire  dbg_0.dbg_reg_din_1_ ;
-  wire  dbg_0.dbg_reg_din_2_ ;
-  wire  dbg_0.dbg_reg_din_3_ ;
-  wire  dbg_0.dbg_reg_din_4_ ;
-  wire  dbg_0.dbg_reg_din_5_ ;
-  wire  dbg_0.dbg_reg_din_6_ ;
-  wire  dbg_0.dbg_reg_din_7_ ;
-  wire  dbg_0.dbg_reg_din_8_ ;
-  wire  dbg_0.dbg_reg_din_9_ ;
-  wire  dbg_0.dbg_reg_wr ;
-  wire  dbg_0.decode_noirq ;
-  wire  dbg_0.fe_mdb_in_0_ ;
-  wire  dbg_0.fe_mdb_in_10_ ;
-  wire  dbg_0.fe_mdb_in_11_ ;
-  wire  dbg_0.fe_mdb_in_12_ ;
-  wire  dbg_0.fe_mdb_in_13_ ;
-  wire  dbg_0.fe_mdb_in_14_ ;
-  wire  dbg_0.fe_mdb_in_15_ ;
-  wire  dbg_0.fe_mdb_in_1_ ;
-  wire  dbg_0.fe_mdb_in_2_ ;
-  wire  dbg_0.fe_mdb_in_3_ ;
-  wire  dbg_0.fe_mdb_in_4_ ;
-  wire  dbg_0.fe_mdb_in_5_ ;
-  wire  dbg_0.fe_mdb_in_6_ ;
-  wire  dbg_0.fe_mdb_in_7_ ;
-  wire  dbg_0.fe_mdb_in_8_ ;
-  wire  dbg_0.fe_mdb_in_9_ ;
-  wire  dbg_0.halt_flag ;
-  wire  dbg_0.inc_step_0_ ;
-  wire  dbg_0.inc_step_1_ ;
-  wire  dbg_0.istep ;
-  wire  dbg_0.mem_cnt_0_ ;
-  wire  dbg_0.mem_cnt_10_ ;
-  wire  dbg_0.mem_cnt_11_ ;
-  wire  dbg_0.mem_cnt_12_ ;
-  wire  dbg_0.mem_cnt_13_ ;
-  wire  dbg_0.mem_cnt_14_ ;
-  wire  dbg_0.mem_cnt_15_ ;
-  wire  dbg_0.mem_cnt_1_ ;
-  wire  dbg_0.mem_cnt_2_ ;
-  wire  dbg_0.mem_cnt_3_ ;
-  wire  dbg_0.mem_cnt_4_ ;
-  wire  dbg_0.mem_cnt_5_ ;
-  wire  dbg_0.mem_cnt_6_ ;
-  wire  dbg_0.mem_cnt_7_ ;
-  wire  dbg_0.mem_cnt_8_ ;
-  wire  dbg_0.mem_cnt_9_ ;
-  wire  dbg_0.mem_ctl_1_ ;
-  wire  dbg_0.mem_ctl_2_ ;
-  wire  dbg_0.mem_data_0_ ;
-  wire  dbg_0.mem_data_10_ ;
-  wire  dbg_0.mem_data_11_ ;
-  wire  dbg_0.mem_data_12_ ;
-  wire  dbg_0.mem_data_13_ ;
-  wire  dbg_0.mem_data_14_ ;
-  wire  dbg_0.mem_data_15_ ;
-  wire  dbg_0.mem_data_1_ ;
-  wire  dbg_0.mem_data_2_ ;
-  wire  dbg_0.mem_data_3_ ;
-  wire  dbg_0.mem_data_4_ ;
-  wire  dbg_0.mem_data_5_ ;
-  wire  dbg_0.mem_data_6_ ;
-  wire  dbg_0.mem_data_7_ ;
-  wire  dbg_0.mem_data_8_ ;
-  wire  dbg_0.mem_data_9_ ;
-  wire  dbg_0.mem_start ;
-  wire  dbg_0.mem_startb ;
-  wire  dbg_0.mem_state_0_ ;
-  wire  dbg_0.mem_state_1_ ;
-  wire  dbg_0.mem_state_nxt_0_ ;
-  wire  dbg_0.mem_state_nxt_1_ ;
+  wire dbg_0.UNUSED_eu_mab_0_ ;
+  wire dbg_0.UNUSED_eu_mab_10_ ;
+  wire dbg_0.UNUSED_eu_mab_11_ ;
+  wire dbg_0.UNUSED_eu_mab_12_ ;
+  wire dbg_0.UNUSED_eu_mab_13_ ;
+  wire dbg_0.UNUSED_eu_mab_14_ ;
+  wire dbg_0.UNUSED_eu_mab_15_ ;
+  wire dbg_0.UNUSED_eu_mab_1_ ;
+  wire dbg_0.UNUSED_eu_mab_2_ ;
+  wire dbg_0.UNUSED_eu_mab_3_ ;
+  wire dbg_0.UNUSED_eu_mab_4_ ;
+  wire dbg_0.UNUSED_eu_mab_5_ ;
+  wire dbg_0.UNUSED_eu_mab_6_ ;
+  wire dbg_0.UNUSED_eu_mab_7_ ;
+  wire dbg_0.UNUSED_eu_mab_8_ ;
+  wire dbg_0.UNUSED_eu_mab_9_ ;
+  wire dbg_0.UNUSED_eu_mb_en ;
+  wire dbg_0.UNUSED_eu_mb_wr_0_ ;
+  wire dbg_0.UNUSED_eu_mb_wr_1_ ;
+  wire dbg_0.UNUSED_pc_0_ ;
+  wire dbg_0.UNUSED_pc_10_ ;
+  wire dbg_0.UNUSED_pc_11_ ;
+  wire dbg_0.UNUSED_pc_12_ ;
+  wire dbg_0.UNUSED_pc_13_ ;
+  wire dbg_0.UNUSED_pc_14_ ;
+  wire dbg_0.UNUSED_pc_15_ ;
+  wire dbg_0.UNUSED_pc_1_ ;
+  wire dbg_0.UNUSED_pc_2_ ;
+  wire dbg_0.UNUSED_pc_3_ ;
+  wire dbg_0.UNUSED_pc_4_ ;
+  wire dbg_0.UNUSED_pc_5_ ;
+  wire dbg_0.UNUSED_pc_6_ ;
+  wire dbg_0.UNUSED_pc_7_ ;
+  wire dbg_0.UNUSED_pc_8_ ;
+  wire dbg_0.UNUSED_pc_9_ ;
+  wire dbg_0.cpu_ctl_3_ ;
+  wire dbg_0.cpu_ctl_4_ ;
+  wire dbg_0.cpu_ctl_5_ ;
+  wire dbg_0.cpu_stat_2_ ;
+  wire dbg_0.cpu_stat_3_ ;
+  wire dbg_0.cpu_stat_full_0_ ;
+  wire dbg_0.dbg_addr_0_ ;
+  wire dbg_0.dbg_addr_1_ ;
+  wire dbg_0.dbg_addr_2_ ;
+  wire dbg_0.dbg_addr_3_ ;
+  wire dbg_0.dbg_addr_4_ ;
+  wire dbg_0.dbg_addr_5_ ;
+  wire dbg_0.dbg_din_0_ ;
+  wire dbg_0.dbg_din_10_ ;
+  wire dbg_0.dbg_din_11_ ;
+  wire dbg_0.dbg_din_12_ ;
+  wire dbg_0.dbg_din_13_ ;
+  wire dbg_0.dbg_din_14_ ;
+  wire dbg_0.dbg_din_15_ ;
+  wire dbg_0.dbg_din_1_ ;
+  wire dbg_0.dbg_din_2_ ;
+  wire dbg_0.dbg_din_3_ ;
+  wire dbg_0.dbg_din_4_ ;
+  wire dbg_0.dbg_din_5_ ;
+  wire dbg_0.dbg_din_6_ ;
+  wire dbg_0.dbg_din_7_ ;
+  wire dbg_0.dbg_din_8_ ;
+  wire dbg_0.dbg_din_9_ ;
+  wire dbg_0.dbg_dout_0_ ;
+  wire dbg_0.dbg_dout_10_ ;
+  wire dbg_0.dbg_dout_11_ ;
+  wire dbg_0.dbg_dout_12_ ;
+  wire dbg_0.dbg_dout_13_ ;
+  wire dbg_0.dbg_dout_14_ ;
+  wire dbg_0.dbg_dout_15_ ;
+  wire dbg_0.dbg_dout_1_ ;
+  wire dbg_0.dbg_dout_2_ ;
+  wire dbg_0.dbg_dout_3_ ;
+  wire dbg_0.dbg_dout_4_ ;
+  wire dbg_0.dbg_dout_5_ ;
+  wire dbg_0.dbg_dout_6_ ;
+  wire dbg_0.dbg_dout_7_ ;
+  wire dbg_0.dbg_dout_8_ ;
+  wire dbg_0.dbg_dout_9_ ;
+  wire dbg_0.dbg_halt_cmd ;
+  wire dbg_0.dbg_i2c_0.dbg_bw ;
+  wire dbg_0.dbg_i2c_0.dbg_rd ;
+  wire dbg_0.dbg_i2c_0.dbg_state_0_ ;
+  wire dbg_0.dbg_i2c_0.dbg_state_1_ ;
+  wire dbg_0.dbg_i2c_0.dbg_state_2_ ;
+  wire dbg_0.dbg_i2c_0.dbg_state_nxt_0_ ;
+  wire dbg_0.dbg_i2c_0.dbg_state_nxt_1_ ;
+  wire dbg_0.dbg_i2c_0.dbg_state_nxt_2_ ;
+  wire dbg_0.dbg_i2c_0.dbg_wr ;
+  wire dbg_0.dbg_i2c_0.i2c_active_seq ;
+  wire dbg_0.dbg_i2c_0.i2c_state_0_ ;
+  wire dbg_0.dbg_i2c_0.i2c_state_1_ ;
+  wire dbg_0.dbg_i2c_0.i2c_state_2_ ;
+  wire dbg_0.dbg_i2c_0.i2c_state_nxt_0_ ;
+  wire dbg_0.dbg_i2c_0.i2c_state_nxt_1_ ;
+  wire dbg_0.dbg_i2c_0.i2c_state_nxt_2_ ;
+  wire dbg_0.dbg_i2c_0.mem_burst ;
+  wire dbg_0.dbg_i2c_0.mem_burst_end ;
+  wire dbg_0.dbg_i2c_0.mem_burst_rd ;
+  wire dbg_0.dbg_i2c_0.mem_burst_wr ;
+  wire dbg_0.dbg_i2c_0.mem_bw ;
+  wire dbg_0.dbg_i2c_0.scl ;
+  wire dbg_0.dbg_i2c_0.scl_buf_0_ ;
+  wire dbg_0.dbg_i2c_0.scl_buf_1_ ;
+  wire dbg_0.dbg_i2c_0.scl_dly ;
+  wire dbg_0.dbg_i2c_0.scl_re ;
+  wire dbg_0.dbg_i2c_0.scl_re_dly_0_ ;
+  wire dbg_0.dbg_i2c_0.scl_re_dly_1_ ;
+  wire dbg_0.dbg_i2c_0.scl_sync ;
+  wire dbg_0.dbg_i2c_0.scl_sync_n ;
+  wire dbg_0.dbg_i2c_0.sda_in ;
+  wire dbg_0.dbg_i2c_0.sda_in_buf_0_ ;
+  wire dbg_0.dbg_i2c_0.sda_in_buf_1_ ;
+  wire dbg_0.dbg_i2c_0.sda_in_dly ;
+  wire dbg_0.dbg_i2c_0.sda_in_sync ;
+  wire dbg_0.dbg_i2c_0.sda_in_sync_n ;
+  wire dbg_0.dbg_i2c_0.shift_buf_0_ ;
+  wire dbg_0.dbg_i2c_0.shift_buf_1_ ;
+  wire dbg_0.dbg_i2c_0.shift_buf_2_ ;
+  wire dbg_0.dbg_i2c_0.shift_buf_3_ ;
+  wire dbg_0.dbg_i2c_0.shift_buf_4_ ;
+  wire dbg_0.dbg_i2c_0.shift_buf_5_ ;
+  wire dbg_0.dbg_i2c_0.shift_buf_6_ ;
+  wire dbg_0.dbg_i2c_0.shift_buf_7_ ;
+  wire dbg_0.dbg_i2c_0.shift_buf_8_ ;
+  wire dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_in ;
+  wire dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_sync_0_ ;
+  wire dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_in ;
+  wire dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_sync_0_ ;
+  wire dbg_0.dbg_mem_addr_0_ ;
+  wire dbg_0.dbg_mem_addr_10_ ;
+  wire dbg_0.dbg_mem_addr_11_ ;
+  wire dbg_0.dbg_mem_addr_12_ ;
+  wire dbg_0.dbg_mem_addr_13_ ;
+  wire dbg_0.dbg_mem_addr_14_ ;
+  wire dbg_0.dbg_mem_addr_15_ ;
+  wire dbg_0.dbg_mem_addr_1_ ;
+  wire dbg_0.dbg_mem_addr_2_ ;
+  wire dbg_0.dbg_mem_addr_3_ ;
+  wire dbg_0.dbg_mem_addr_4_ ;
+  wire dbg_0.dbg_mem_addr_5_ ;
+  wire dbg_0.dbg_mem_addr_6_ ;
+  wire dbg_0.dbg_mem_addr_7_ ;
+  wire dbg_0.dbg_mem_addr_8_ ;
+  wire dbg_0.dbg_mem_addr_9_ ;
+  wire dbg_0.dbg_mem_din_0_ ;
+  wire dbg_0.dbg_mem_din_10_ ;
+  wire dbg_0.dbg_mem_din_11_ ;
+  wire dbg_0.dbg_mem_din_12_ ;
+  wire dbg_0.dbg_mem_din_13_ ;
+  wire dbg_0.dbg_mem_din_14_ ;
+  wire dbg_0.dbg_mem_din_15_ ;
+  wire dbg_0.dbg_mem_din_1_ ;
+  wire dbg_0.dbg_mem_din_2_ ;
+  wire dbg_0.dbg_mem_din_3_ ;
+  wire dbg_0.dbg_mem_din_4_ ;
+  wire dbg_0.dbg_mem_din_5_ ;
+  wire dbg_0.dbg_mem_din_6_ ;
+  wire dbg_0.dbg_mem_din_7_ ;
+  wire dbg_0.dbg_mem_din_8_ ;
+  wire dbg_0.dbg_mem_din_9_ ;
+  wire dbg_0.dbg_mem_en ;
+  wire dbg_0.dbg_mem_rd ;
+  wire dbg_0.dbg_mem_rd_dly ;
+  wire dbg_0.dbg_mem_wr_0_ ;
+  wire dbg_0.dbg_mem_wr_1_ ;
+  wire dbg_0.dbg_rd_rdy ;
+  wire dbg_0.dbg_reg_din_0_ ;
+  wire dbg_0.dbg_reg_din_10_ ;
+  wire dbg_0.dbg_reg_din_11_ ;
+  wire dbg_0.dbg_reg_din_12_ ;
+  wire dbg_0.dbg_reg_din_13_ ;
+  wire dbg_0.dbg_reg_din_14_ ;
+  wire dbg_0.dbg_reg_din_15_ ;
+  wire dbg_0.dbg_reg_din_1_ ;
+  wire dbg_0.dbg_reg_din_2_ ;
+  wire dbg_0.dbg_reg_din_3_ ;
+  wire dbg_0.dbg_reg_din_4_ ;
+  wire dbg_0.dbg_reg_din_5_ ;
+  wire dbg_0.dbg_reg_din_6_ ;
+  wire dbg_0.dbg_reg_din_7_ ;
+  wire dbg_0.dbg_reg_din_8_ ;
+  wire dbg_0.dbg_reg_din_9_ ;
+  wire dbg_0.dbg_reg_wr ;
+  wire dbg_0.decode_noirq ;
+  wire dbg_0.fe_mdb_in_0_ ;
+  wire dbg_0.fe_mdb_in_10_ ;
+  wire dbg_0.fe_mdb_in_11_ ;
+  wire dbg_0.fe_mdb_in_12_ ;
+  wire dbg_0.fe_mdb_in_13_ ;
+  wire dbg_0.fe_mdb_in_14_ ;
+  wire dbg_0.fe_mdb_in_15_ ;
+  wire dbg_0.fe_mdb_in_1_ ;
+  wire dbg_0.fe_mdb_in_2_ ;
+  wire dbg_0.fe_mdb_in_3_ ;
+  wire dbg_0.fe_mdb_in_4_ ;
+  wire dbg_0.fe_mdb_in_5_ ;
+  wire dbg_0.fe_mdb_in_6_ ;
+  wire dbg_0.fe_mdb_in_7_ ;
+  wire dbg_0.fe_mdb_in_8_ ;
+  wire dbg_0.fe_mdb_in_9_ ;
+  wire dbg_0.halt_flag ;
+  wire dbg_0.inc_step_0_ ;
+  wire dbg_0.inc_step_1_ ;
+  wire dbg_0.istep ;
+  wire dbg_0.mem_cnt_0_ ;
+  wire dbg_0.mem_cnt_10_ ;
+  wire dbg_0.mem_cnt_11_ ;
+  wire dbg_0.mem_cnt_12_ ;
+  wire dbg_0.mem_cnt_13_ ;
+  wire dbg_0.mem_cnt_14_ ;
+  wire dbg_0.mem_cnt_15_ ;
+  wire dbg_0.mem_cnt_1_ ;
+  wire dbg_0.mem_cnt_2_ ;
+  wire dbg_0.mem_cnt_3_ ;
+  wire dbg_0.mem_cnt_4_ ;
+  wire dbg_0.mem_cnt_5_ ;
+  wire dbg_0.mem_cnt_6_ ;
+  wire dbg_0.mem_cnt_7_ ;
+  wire dbg_0.mem_cnt_8_ ;
+  wire dbg_0.mem_cnt_9_ ;
+  wire dbg_0.mem_ctl_1_ ;
+  wire dbg_0.mem_ctl_2_ ;
+  wire dbg_0.mem_data_0_ ;
+  wire dbg_0.mem_data_10_ ;
+  wire dbg_0.mem_data_11_ ;
+  wire dbg_0.mem_data_12_ ;
+  wire dbg_0.mem_data_13_ ;
+  wire dbg_0.mem_data_14_ ;
+  wire dbg_0.mem_data_15_ ;
+  wire dbg_0.mem_data_1_ ;
+  wire dbg_0.mem_data_2_ ;
+  wire dbg_0.mem_data_3_ ;
+  wire dbg_0.mem_data_4_ ;
+  wire dbg_0.mem_data_5_ ;
+  wire dbg_0.mem_data_6_ ;
+  wire dbg_0.mem_data_7_ ;
+  wire dbg_0.mem_data_8_ ;
+  wire dbg_0.mem_data_9_ ;
+  wire dbg_0.mem_start ;
+  wire dbg_0.mem_startb ;
+  wire dbg_0.mem_state_0_ ;
+  wire dbg_0.mem_state_1_ ;
+  wire dbg_0.mem_state_nxt_0_ ;
+  wire dbg_0.mem_state_nxt_1_ ;
   input dbg_en;
   wire dbg_en;
   output dbg_freeze;
@@ -6245,541 +6245,541 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   wire dmem_wen_0_;
   output dmem_wen_1_;
   wire dmem_wen_1_;
-  wire  execution_unit_0.UNUSED_inst_ad_idx ;
-  wire  execution_unit_0.UNUSED_inst_ad_symb ;
-  wire  execution_unit_0.alu_0.N ;
-  wire  execution_unit_0.alu_0.UNUSED_inst_alu ;
-  wire  execution_unit_0.alu_0.UNUSED_inst_so_call ;
-  wire  execution_unit_0.alu_0.UNUSED_inst_so_push ;
-  wire  execution_unit_0.alu_0.UNUSED_inst_so_reti ;
-  wire  execution_unit_0.alu_0.Z ;
-  wire  execution_unit_0.alu_0.alu_out_0_ ;
-  wire  execution_unit_0.alu_0.alu_out_10_ ;
-  wire  execution_unit_0.alu_0.alu_out_11_ ;
-  wire  execution_unit_0.alu_0.alu_out_12_ ;
-  wire  execution_unit_0.alu_0.alu_out_13_ ;
-  wire  execution_unit_0.alu_0.alu_out_14_ ;
-  wire  execution_unit_0.alu_0.alu_out_15_ ;
-  wire  execution_unit_0.alu_0.alu_out_1_ ;
-  wire  execution_unit_0.alu_0.alu_out_2_ ;
-  wire  execution_unit_0.alu_0.alu_out_3_ ;
-  wire  execution_unit_0.alu_0.alu_out_4_ ;
-  wire  execution_unit_0.alu_0.alu_out_5_ ;
-  wire  execution_unit_0.alu_0.alu_out_6_ ;
-  wire  execution_unit_0.alu_0.alu_out_7_ ;
-  wire  execution_unit_0.alu_0.alu_out_8_ ;
-  wire  execution_unit_0.alu_0.alu_out_9_ ;
-  wire  execution_unit_0.alu_0.alu_shift_0_ ;
-  wire  execution_unit_0.alu_0.alu_shift_10_ ;
-  wire  execution_unit_0.alu_0.alu_shift_11_ ;
-  wire  execution_unit_0.alu_0.alu_shift_12_ ;
-  wire  execution_unit_0.alu_0.alu_shift_13_ ;
-  wire  execution_unit_0.alu_0.alu_shift_14_ ;
-  wire  execution_unit_0.alu_0.alu_shift_1_ ;
-  wire  execution_unit_0.alu_0.alu_shift_2_ ;
-  wire  execution_unit_0.alu_0.alu_shift_3_ ;
-  wire  execution_unit_0.alu_0.alu_shift_4_ ;
-  wire  execution_unit_0.alu_0.alu_shift_5_ ;
-  wire  execution_unit_0.alu_0.alu_shift_6_ ;
-  wire  execution_unit_0.alu_0.alu_shift_8_ ;
-  wire  execution_unit_0.alu_0.alu_shift_9_ ;
-  wire  execution_unit_0.alu_0.alu_stat_0_ ;
-  wire  execution_unit_0.alu_0.alu_stat_3_ ;
-  wire  execution_unit_0.alu_0.alu_stat_wr_0_ ;
-  wire  execution_unit_0.alu_0.alu_swpb_0_ ;
-  wire  execution_unit_0.alu_0.alu_swpb_8_ ;
-  wire  execution_unit_0.alu_0.exec_cycle ;
-  wire  execution_unit_0.alu_0.inst_alu_0_ ;
-  wire  execution_unit_0.alu_0.inst_alu_10_ ;
-  wire  execution_unit_0.alu_0.inst_alu_1_ ;
-  wire  execution_unit_0.alu_0.inst_alu_2_ ;
-  wire  execution_unit_0.alu_0.inst_alu_3_ ;
-  wire  execution_unit_0.alu_0.inst_alu_4_ ;
-  wire  execution_unit_0.alu_0.inst_alu_5_ ;
-  wire  execution_unit_0.alu_0.inst_alu_6_ ;
-  wire  execution_unit_0.alu_0.inst_alu_7_ ;
-  wire  execution_unit_0.alu_0.inst_alu_8_ ;
-  wire  execution_unit_0.alu_0.inst_alu_9_ ;
-  wire  execution_unit_0.alu_0.inst_bw ;
-  wire  execution_unit_0.alu_0.inst_jmp_0_ ;
-  wire  execution_unit_0.alu_0.inst_jmp_1_ ;
-  wire  execution_unit_0.alu_0.inst_jmp_2_ ;
-  wire  execution_unit_0.alu_0.inst_jmp_3_ ;
-  wire  execution_unit_0.alu_0.inst_jmp_4_ ;
-  wire  execution_unit_0.alu_0.inst_jmp_5_ ;
-  wire  execution_unit_0.alu_0.inst_jmp_6_ ;
-  wire  execution_unit_0.alu_0.inst_so_0_ ;
-  wire  execution_unit_0.alu_0.inst_so_1_ ;
-  wire  execution_unit_0.alu_0.inst_so_3_ ;
-  wire  execution_unit_0.alu_0.inst_so_7_ ;
-  wire  execution_unit_0.alu_0.op_dst_0_ ;
-  wire  execution_unit_0.alu_0.op_dst_10_ ;
-  wire  execution_unit_0.alu_0.op_dst_11_ ;
-  wire  execution_unit_0.alu_0.op_dst_12_ ;
-  wire  execution_unit_0.alu_0.op_dst_13_ ;
-  wire  execution_unit_0.alu_0.op_dst_14_ ;
-  wire  execution_unit_0.alu_0.op_dst_15_ ;
-  wire  execution_unit_0.alu_0.op_dst_1_ ;
-  wire  execution_unit_0.alu_0.op_dst_2_ ;
-  wire  execution_unit_0.alu_0.op_dst_3_ ;
-  wire  execution_unit_0.alu_0.op_dst_4_ ;
-  wire  execution_unit_0.alu_0.op_dst_5_ ;
-  wire  execution_unit_0.alu_0.op_dst_6_ ;
-  wire  execution_unit_0.alu_0.op_dst_7_ ;
-  wire  execution_unit_0.alu_0.op_dst_8_ ;
-  wire  execution_unit_0.alu_0.op_dst_9_ ;
-  wire  execution_unit_0.alu_0.status_0_ ;
-  wire  execution_unit_0.alu_0.status_1_ ;
-  wire  execution_unit_0.alu_0.status_2_ ;
-  wire  execution_unit_0.alu_0.status_3_ ;
-  wire  execution_unit_0.e_state_0_ ;
-  wire  execution_unit_0.e_state_1_ ;
-  wire  execution_unit_0.e_state_2_ ;
-  wire  execution_unit_0.e_state_3_ ;
-  wire  execution_unit_0.exec_done ;
-  wire  execution_unit_0.gie ;
-  wire  execution_unit_0.inst_ad_0_ ;
-  wire  execution_unit_0.inst_ad_6_ ;
-  wire  execution_unit_0.inst_as_0_ ;
-  wire  execution_unit_0.inst_as_1_ ;
-  wire  execution_unit_0.inst_as_2_ ;
-  wire  execution_unit_0.inst_as_3_ ;
-  wire  execution_unit_0.inst_as_4_ ;
-  wire  execution_unit_0.inst_as_5_ ;
-  wire  execution_unit_0.inst_as_6_ ;
-  wire  execution_unit_0.inst_as_7_ ;
-  wire  execution_unit_0.inst_dest_0_ ;
-  wire  execution_unit_0.inst_dest_10_ ;
-  wire  execution_unit_0.inst_dest_11_ ;
-  wire  execution_unit_0.inst_dest_12_ ;
-  wire  execution_unit_0.inst_dest_13_ ;
-  wire  execution_unit_0.inst_dest_14_ ;
-  wire  execution_unit_0.inst_dest_15_ ;
-  wire  execution_unit_0.inst_dest_1_ ;
-  wire  execution_unit_0.inst_dest_2_ ;
-  wire  execution_unit_0.inst_dest_3_ ;
-  wire  execution_unit_0.inst_dest_4_ ;
-  wire  execution_unit_0.inst_dest_5_ ;
-  wire  execution_unit_0.inst_dest_6_ ;
-  wire  execution_unit_0.inst_dest_7_ ;
-  wire  execution_unit_0.inst_dest_8_ ;
-  wire  execution_unit_0.inst_dest_9_ ;
-  wire  execution_unit_0.inst_dext_0_ ;
-  wire  execution_unit_0.inst_dext_10_ ;
-  wire  execution_unit_0.inst_dext_11_ ;
-  wire  execution_unit_0.inst_dext_12_ ;
-  wire  execution_unit_0.inst_dext_13_ ;
-  wire  execution_unit_0.inst_dext_14_ ;
-  wire  execution_unit_0.inst_dext_15_ ;
-  wire  execution_unit_0.inst_dext_1_ ;
-  wire  execution_unit_0.inst_dext_2_ ;
-  wire  execution_unit_0.inst_dext_3_ ;
-  wire  execution_unit_0.inst_dext_4_ ;
-  wire  execution_unit_0.inst_dext_5_ ;
-  wire  execution_unit_0.inst_dext_6_ ;
-  wire  execution_unit_0.inst_dext_7_ ;
-  wire  execution_unit_0.inst_dext_8_ ;
-  wire  execution_unit_0.inst_dext_9_ ;
-  wire  execution_unit_0.inst_irq_rst ;
-  wire  execution_unit_0.inst_mov ;
-  wire  execution_unit_0.inst_sext_0_ ;
-  wire  execution_unit_0.inst_sext_10_ ;
-  wire  execution_unit_0.inst_sext_11_ ;
-  wire  execution_unit_0.inst_sext_12_ ;
-  wire  execution_unit_0.inst_sext_13_ ;
-  wire  execution_unit_0.inst_sext_14_ ;
-  wire  execution_unit_0.inst_sext_15_ ;
-  wire  execution_unit_0.inst_sext_1_ ;
-  wire  execution_unit_0.inst_sext_2_ ;
-  wire  execution_unit_0.inst_sext_3_ ;
-  wire  execution_unit_0.inst_sext_4_ ;
-  wire  execution_unit_0.inst_sext_5_ ;
-  wire  execution_unit_0.inst_sext_6_ ;
-  wire  execution_unit_0.inst_sext_7_ ;
-  wire  execution_unit_0.inst_sext_8_ ;
-  wire  execution_unit_0.inst_sext_9_ ;
-  wire  execution_unit_0.inst_src_0_ ;
-  wire  execution_unit_0.inst_src_10_ ;
-  wire  execution_unit_0.inst_src_11_ ;
-  wire  execution_unit_0.inst_src_12_ ;
-  wire  execution_unit_0.inst_src_13_ ;
-  wire  execution_unit_0.inst_src_14_ ;
-  wire  execution_unit_0.inst_src_15_ ;
-  wire  execution_unit_0.inst_src_1_ ;
-  wire  execution_unit_0.inst_src_2_ ;
-  wire  execution_unit_0.inst_src_3_ ;
-  wire  execution_unit_0.inst_src_4_ ;
-  wire  execution_unit_0.inst_src_5_ ;
-  wire  execution_unit_0.inst_src_6_ ;
-  wire  execution_unit_0.inst_src_7_ ;
-  wire  execution_unit_0.inst_src_8_ ;
-  wire  execution_unit_0.inst_src_9_ ;
-  wire  execution_unit_0.inst_type_0_ ;
-  wire  execution_unit_0.inst_type_1_ ;
-  wire  execution_unit_0.inst_type_2_ ;
-  wire  execution_unit_0.mab_lsb ;
-  wire  execution_unit_0.mdb_in_0_ ;
-  wire  execution_unit_0.mdb_in_10_ ;
-  wire  execution_unit_0.mdb_in_11_ ;
-  wire  execution_unit_0.mdb_in_12_ ;
-  wire  execution_unit_0.mdb_in_13_ ;
-  wire  execution_unit_0.mdb_in_14_ ;
-  wire  execution_unit_0.mdb_in_15_ ;
-  wire  execution_unit_0.mdb_in_1_ ;
-  wire  execution_unit_0.mdb_in_2_ ;
-  wire  execution_unit_0.mdb_in_3_ ;
-  wire  execution_unit_0.mdb_in_4_ ;
-  wire  execution_unit_0.mdb_in_5_ ;
-  wire  execution_unit_0.mdb_in_6_ ;
-  wire  execution_unit_0.mdb_in_7_ ;
-  wire  execution_unit_0.mdb_in_8_ ;
-  wire  execution_unit_0.mdb_in_9_ ;
-  wire  execution_unit_0.mdb_in_buf_0_ ;
-  wire  execution_unit_0.mdb_in_buf_10_ ;
-  wire  execution_unit_0.mdb_in_buf_11_ ;
-  wire  execution_unit_0.mdb_in_buf_12_ ;
-  wire  execution_unit_0.mdb_in_buf_13_ ;
-  wire  execution_unit_0.mdb_in_buf_14_ ;
-  wire  execution_unit_0.mdb_in_buf_15_ ;
-  wire  execution_unit_0.mdb_in_buf_1_ ;
-  wire  execution_unit_0.mdb_in_buf_2_ ;
-  wire  execution_unit_0.mdb_in_buf_3_ ;
-  wire  execution_unit_0.mdb_in_buf_4_ ;
-  wire  execution_unit_0.mdb_in_buf_5_ ;
-  wire  execution_unit_0.mdb_in_buf_6_ ;
-  wire  execution_unit_0.mdb_in_buf_7_ ;
-  wire  execution_unit_0.mdb_in_buf_8_ ;
-  wire  execution_unit_0.mdb_in_buf_9_ ;
-  wire  execution_unit_0.mdb_in_buf_en ;
-  wire  execution_unit_0.mdb_in_buf_valid ;
-  wire  execution_unit_0.mdb_out_0_ ;
-  wire  execution_unit_0.mdb_out_10_ ;
-  wire  execution_unit_0.mdb_out_11_ ;
-  wire  execution_unit_0.mdb_out_12_ ;
-  wire  execution_unit_0.mdb_out_13_ ;
-  wire  execution_unit_0.mdb_out_14_ ;
-  wire  execution_unit_0.mdb_out_15_ ;
-  wire  execution_unit_0.mdb_out_1_ ;
-  wire  execution_unit_0.mdb_out_2_ ;
-  wire  execution_unit_0.mdb_out_3_ ;
-  wire  execution_unit_0.mdb_out_4_ ;
-  wire  execution_unit_0.mdb_out_5_ ;
-  wire  execution_unit_0.mdb_out_6_ ;
-  wire  execution_unit_0.mdb_out_7_ ;
-  wire  execution_unit_0.mdb_out_8_ ;
-  wire  execution_unit_0.mdb_out_9_ ;
-  wire  execution_unit_0.mdb_out_nxt_10_ ;
-  wire  execution_unit_0.mdb_out_nxt_11_ ;
-  wire  execution_unit_0.mdb_out_nxt_12_ ;
-  wire  execution_unit_0.mdb_out_nxt_13_ ;
-  wire  execution_unit_0.mdb_out_nxt_14_ ;
-  wire  execution_unit_0.mdb_out_nxt_15_ ;
-  wire  execution_unit_0.mdb_out_nxt_8_ ;
-  wire  execution_unit_0.mdb_out_nxt_9_ ;
-  wire  execution_unit_0.pc_nxt_0_ ;
-  wire  execution_unit_0.pc_nxt_10_ ;
-  wire  execution_unit_0.pc_nxt_11_ ;
-  wire  execution_unit_0.pc_nxt_12_ ;
-  wire  execution_unit_0.pc_nxt_13_ ;
-  wire  execution_unit_0.pc_nxt_14_ ;
-  wire  execution_unit_0.pc_nxt_15_ ;
-  wire  execution_unit_0.pc_nxt_1_ ;
-  wire  execution_unit_0.pc_nxt_2_ ;
-  wire  execution_unit_0.pc_nxt_3_ ;
-  wire  execution_unit_0.pc_nxt_4_ ;
-  wire  execution_unit_0.pc_nxt_5_ ;
-  wire  execution_unit_0.pc_nxt_6_ ;
-  wire  execution_unit_0.pc_nxt_7_ ;
-  wire  execution_unit_0.pc_nxt_8_ ;
-  wire  execution_unit_0.pc_nxt_9_ ;
-  wire  execution_unit_0.pc_sw_10_ ;
-  wire  execution_unit_0.pc_sw_11_ ;
-  wire  execution_unit_0.pc_sw_12_ ;
-  wire  execution_unit_0.pc_sw_13_ ;
-  wire  execution_unit_0.pc_sw_14_ ;
-  wire  execution_unit_0.pc_sw_15_ ;
-  wire  execution_unit_0.pc_sw_8_ ;
-  wire  execution_unit_0.pc_sw_9_ ;
-  wire  execution_unit_0.pc_sw_wr ;
-  wire  execution_unit_0.reg_dest_wr ;
-  wire  execution_unit_0.reg_incr ;
-  wire  execution_unit_0.reg_pc_call ;
-  wire  execution_unit_0.reg_sp_wr ;
-  wire  execution_unit_0.reg_sr_clr ;
-  wire  execution_unit_0.reg_sr_wr ;
-  wire  execution_unit_0.reg_src_0_ ;
-  wire  execution_unit_0.reg_src_10_ ;
-  wire  execution_unit_0.reg_src_11_ ;
-  wire  execution_unit_0.reg_src_12_ ;
-  wire  execution_unit_0.reg_src_13_ ;
-  wire  execution_unit_0.reg_src_14_ ;
-  wire  execution_unit_0.reg_src_15_ ;
-  wire  execution_unit_0.reg_src_1_ ;
-  wire  execution_unit_0.reg_src_2_ ;
-  wire  execution_unit_0.reg_src_3_ ;
-  wire  execution_unit_0.reg_src_4_ ;
-  wire  execution_unit_0.reg_src_5_ ;
-  wire  execution_unit_0.reg_src_6_ ;
-  wire  execution_unit_0.reg_src_7_ ;
-  wire  execution_unit_0.reg_src_8_ ;
-  wire  execution_unit_0.reg_src_9_ ;
-  wire  execution_unit_0.register_file_0.r10_0_ ;
-  wire  execution_unit_0.register_file_0.r10_10_ ;
-  wire  execution_unit_0.register_file_0.r10_11_ ;
-  wire  execution_unit_0.register_file_0.r10_12_ ;
-  wire  execution_unit_0.register_file_0.r10_13_ ;
-  wire  execution_unit_0.register_file_0.r10_14_ ;
-  wire  execution_unit_0.register_file_0.r10_15_ ;
-  wire  execution_unit_0.register_file_0.r10_1_ ;
-  wire  execution_unit_0.register_file_0.r10_2_ ;
-  wire  execution_unit_0.register_file_0.r10_3_ ;
-  wire  execution_unit_0.register_file_0.r10_4_ ;
-  wire  execution_unit_0.register_file_0.r10_5_ ;
-  wire  execution_unit_0.register_file_0.r10_6_ ;
-  wire  execution_unit_0.register_file_0.r10_7_ ;
-  wire  execution_unit_0.register_file_0.r10_8_ ;
-  wire  execution_unit_0.register_file_0.r10_9_ ;
-  wire  execution_unit_0.register_file_0.r11_0_ ;
-  wire  execution_unit_0.register_file_0.r11_10_ ;
-  wire  execution_unit_0.register_file_0.r11_11_ ;
-  wire  execution_unit_0.register_file_0.r11_12_ ;
-  wire  execution_unit_0.register_file_0.r11_13_ ;
-  wire  execution_unit_0.register_file_0.r11_14_ ;
-  wire  execution_unit_0.register_file_0.r11_15_ ;
-  wire  execution_unit_0.register_file_0.r11_1_ ;
-  wire  execution_unit_0.register_file_0.r11_2_ ;
-  wire  execution_unit_0.register_file_0.r11_3_ ;
-  wire  execution_unit_0.register_file_0.r11_4_ ;
-  wire  execution_unit_0.register_file_0.r11_5_ ;
-  wire  execution_unit_0.register_file_0.r11_6_ ;
-  wire  execution_unit_0.register_file_0.r11_7_ ;
-  wire  execution_unit_0.register_file_0.r11_8_ ;
-  wire  execution_unit_0.register_file_0.r11_9_ ;
-  wire  execution_unit_0.register_file_0.r12_0_ ;
-  wire  execution_unit_0.register_file_0.r12_10_ ;
-  wire  execution_unit_0.register_file_0.r12_11_ ;
-  wire  execution_unit_0.register_file_0.r12_12_ ;
-  wire  execution_unit_0.register_file_0.r12_13_ ;
-  wire  execution_unit_0.register_file_0.r12_14_ ;
-  wire  execution_unit_0.register_file_0.r12_15_ ;
-  wire  execution_unit_0.register_file_0.r12_1_ ;
-  wire  execution_unit_0.register_file_0.r12_2_ ;
-  wire  execution_unit_0.register_file_0.r12_3_ ;
-  wire  execution_unit_0.register_file_0.r12_4_ ;
-  wire  execution_unit_0.register_file_0.r12_5_ ;
-  wire  execution_unit_0.register_file_0.r12_6_ ;
-  wire  execution_unit_0.register_file_0.r12_7_ ;
-  wire  execution_unit_0.register_file_0.r12_8_ ;
-  wire  execution_unit_0.register_file_0.r12_9_ ;
-  wire  execution_unit_0.register_file_0.r13_0_ ;
-  wire  execution_unit_0.register_file_0.r13_10_ ;
-  wire  execution_unit_0.register_file_0.r13_11_ ;
-  wire  execution_unit_0.register_file_0.r13_12_ ;
-  wire  execution_unit_0.register_file_0.r13_13_ ;
-  wire  execution_unit_0.register_file_0.r13_14_ ;
-  wire  execution_unit_0.register_file_0.r13_15_ ;
-  wire  execution_unit_0.register_file_0.r13_1_ ;
-  wire  execution_unit_0.register_file_0.r13_2_ ;
-  wire  execution_unit_0.register_file_0.r13_3_ ;
-  wire  execution_unit_0.register_file_0.r13_4_ ;
-  wire  execution_unit_0.register_file_0.r13_5_ ;
-  wire  execution_unit_0.register_file_0.r13_6_ ;
-  wire  execution_unit_0.register_file_0.r13_7_ ;
-  wire  execution_unit_0.register_file_0.r13_8_ ;
-  wire  execution_unit_0.register_file_0.r13_9_ ;
-  wire  execution_unit_0.register_file_0.r14_0_ ;
-  wire  execution_unit_0.register_file_0.r14_10_ ;
-  wire  execution_unit_0.register_file_0.r14_11_ ;
-  wire  execution_unit_0.register_file_0.r14_12_ ;
-  wire  execution_unit_0.register_file_0.r14_13_ ;
-  wire  execution_unit_0.register_file_0.r14_14_ ;
-  wire  execution_unit_0.register_file_0.r14_15_ ;
-  wire  execution_unit_0.register_file_0.r14_1_ ;
-  wire  execution_unit_0.register_file_0.r14_2_ ;
-  wire  execution_unit_0.register_file_0.r14_3_ ;
-  wire  execution_unit_0.register_file_0.r14_4_ ;
-  wire  execution_unit_0.register_file_0.r14_5_ ;
-  wire  execution_unit_0.register_file_0.r14_6_ ;
-  wire  execution_unit_0.register_file_0.r14_7_ ;
-  wire  execution_unit_0.register_file_0.r14_8_ ;
-  wire  execution_unit_0.register_file_0.r14_9_ ;
-  wire  execution_unit_0.register_file_0.r15_0_ ;
-  wire  execution_unit_0.register_file_0.r15_10_ ;
-  wire  execution_unit_0.register_file_0.r15_11_ ;
-  wire  execution_unit_0.register_file_0.r15_12_ ;
-  wire  execution_unit_0.register_file_0.r15_13_ ;
-  wire  execution_unit_0.register_file_0.r15_14_ ;
-  wire  execution_unit_0.register_file_0.r15_15_ ;
-  wire  execution_unit_0.register_file_0.r15_1_ ;
-  wire  execution_unit_0.register_file_0.r15_2_ ;
-  wire  execution_unit_0.register_file_0.r15_3_ ;
-  wire  execution_unit_0.register_file_0.r15_4_ ;
-  wire  execution_unit_0.register_file_0.r15_5_ ;
-  wire  execution_unit_0.register_file_0.r15_6_ ;
-  wire  execution_unit_0.register_file_0.r15_7_ ;
-  wire  execution_unit_0.register_file_0.r15_8_ ;
-  wire  execution_unit_0.register_file_0.r15_9_ ;
-  wire  execution_unit_0.register_file_0.r1_10_ ;
-  wire  execution_unit_0.register_file_0.r1_11_ ;
-  wire  execution_unit_0.register_file_0.r1_12_ ;
-  wire  execution_unit_0.register_file_0.r1_13_ ;
-  wire  execution_unit_0.register_file_0.r1_14_ ;
-  wire  execution_unit_0.register_file_0.r1_15_ ;
-  wire  execution_unit_0.register_file_0.r1_1_ ;
-  wire  execution_unit_0.register_file_0.r1_2_ ;
-  wire  execution_unit_0.register_file_0.r1_3_ ;
-  wire  execution_unit_0.register_file_0.r1_4_ ;
-  wire  execution_unit_0.register_file_0.r1_5_ ;
-  wire  execution_unit_0.register_file_0.r1_6_ ;
-  wire  execution_unit_0.register_file_0.r1_7_ ;
-  wire  execution_unit_0.register_file_0.r1_8_ ;
-  wire  execution_unit_0.register_file_0.r1_9_ ;
-  wire  execution_unit_0.register_file_0.r2_4_ ;
-  wire  execution_unit_0.register_file_0.r3_0_ ;
-  wire  execution_unit_0.register_file_0.r3_10_ ;
-  wire  execution_unit_0.register_file_0.r3_11_ ;
-  wire  execution_unit_0.register_file_0.r3_12_ ;
-  wire  execution_unit_0.register_file_0.r3_13_ ;
-  wire  execution_unit_0.register_file_0.r3_14_ ;
-  wire  execution_unit_0.register_file_0.r3_15_ ;
-  wire  execution_unit_0.register_file_0.r3_1_ ;
-  wire  execution_unit_0.register_file_0.r3_2_ ;
-  wire  execution_unit_0.register_file_0.r3_3_ ;
-  wire  execution_unit_0.register_file_0.r3_4_ ;
-  wire  execution_unit_0.register_file_0.r3_5_ ;
-  wire  execution_unit_0.register_file_0.r3_6_ ;
-  wire  execution_unit_0.register_file_0.r3_7_ ;
-  wire  execution_unit_0.register_file_0.r3_8_ ;
-  wire  execution_unit_0.register_file_0.r3_9_ ;
-  wire  execution_unit_0.register_file_0.r4_0_ ;
-  wire  execution_unit_0.register_file_0.r4_10_ ;
-  wire  execution_unit_0.register_file_0.r4_11_ ;
-  wire  execution_unit_0.register_file_0.r4_12_ ;
-  wire  execution_unit_0.register_file_0.r4_13_ ;
-  wire  execution_unit_0.register_file_0.r4_14_ ;
-  wire  execution_unit_0.register_file_0.r4_15_ ;
-  wire  execution_unit_0.register_file_0.r4_1_ ;
-  wire  execution_unit_0.register_file_0.r4_2_ ;
-  wire  execution_unit_0.register_file_0.r4_3_ ;
-  wire  execution_unit_0.register_file_0.r4_4_ ;
-  wire  execution_unit_0.register_file_0.r4_5_ ;
-  wire  execution_unit_0.register_file_0.r4_6_ ;
-  wire  execution_unit_0.register_file_0.r4_7_ ;
-  wire  execution_unit_0.register_file_0.r4_8_ ;
-  wire  execution_unit_0.register_file_0.r4_9_ ;
-  wire  execution_unit_0.register_file_0.r5_0_ ;
-  wire  execution_unit_0.register_file_0.r5_10_ ;
-  wire  execution_unit_0.register_file_0.r5_11_ ;
-  wire  execution_unit_0.register_file_0.r5_12_ ;
-  wire  execution_unit_0.register_file_0.r5_13_ ;
-  wire  execution_unit_0.register_file_0.r5_14_ ;
-  wire  execution_unit_0.register_file_0.r5_15_ ;
-  wire  execution_unit_0.register_file_0.r5_1_ ;
-  wire  execution_unit_0.register_file_0.r5_2_ ;
-  wire  execution_unit_0.register_file_0.r5_3_ ;
-  wire  execution_unit_0.register_file_0.r5_4_ ;
-  wire  execution_unit_0.register_file_0.r5_5_ ;
-  wire  execution_unit_0.register_file_0.r5_6_ ;
-  wire  execution_unit_0.register_file_0.r5_7_ ;
-  wire  execution_unit_0.register_file_0.r5_8_ ;
-  wire  execution_unit_0.register_file_0.r5_9_ ;
-  wire  execution_unit_0.register_file_0.r6_0_ ;
-  wire  execution_unit_0.register_file_0.r6_10_ ;
-  wire  execution_unit_0.register_file_0.r6_11_ ;
-  wire  execution_unit_0.register_file_0.r6_12_ ;
-  wire  execution_unit_0.register_file_0.r6_13_ ;
-  wire  execution_unit_0.register_file_0.r6_14_ ;
-  wire  execution_unit_0.register_file_0.r6_15_ ;
-  wire  execution_unit_0.register_file_0.r6_1_ ;
-  wire  execution_unit_0.register_file_0.r6_2_ ;
-  wire  execution_unit_0.register_file_0.r6_3_ ;
-  wire  execution_unit_0.register_file_0.r6_4_ ;
-  wire  execution_unit_0.register_file_0.r6_5_ ;
-  wire  execution_unit_0.register_file_0.r6_6_ ;
-  wire  execution_unit_0.register_file_0.r6_7_ ;
-  wire  execution_unit_0.register_file_0.r6_8_ ;
-  wire  execution_unit_0.register_file_0.r6_9_ ;
-  wire  execution_unit_0.register_file_0.r7_0_ ;
-  wire  execution_unit_0.register_file_0.r7_10_ ;
-  wire  execution_unit_0.register_file_0.r7_11_ ;
-  wire  execution_unit_0.register_file_0.r7_12_ ;
-  wire  execution_unit_0.register_file_0.r7_13_ ;
-  wire  execution_unit_0.register_file_0.r7_14_ ;
-  wire  execution_unit_0.register_file_0.r7_15_ ;
-  wire  execution_unit_0.register_file_0.r7_1_ ;
-  wire  execution_unit_0.register_file_0.r7_2_ ;
-  wire  execution_unit_0.register_file_0.r7_3_ ;
-  wire  execution_unit_0.register_file_0.r7_4_ ;
-  wire  execution_unit_0.register_file_0.r7_5_ ;
-  wire  execution_unit_0.register_file_0.r7_6_ ;
-  wire  execution_unit_0.register_file_0.r7_7_ ;
-  wire  execution_unit_0.register_file_0.r7_8_ ;
-  wire  execution_unit_0.register_file_0.r7_9_ ;
-  wire  execution_unit_0.register_file_0.r8_0_ ;
-  wire  execution_unit_0.register_file_0.r8_10_ ;
-  wire  execution_unit_0.register_file_0.r8_11_ ;
-  wire  execution_unit_0.register_file_0.r8_12_ ;
-  wire  execution_unit_0.register_file_0.r8_13_ ;
-  wire  execution_unit_0.register_file_0.r8_14_ ;
-  wire  execution_unit_0.register_file_0.r8_15_ ;
-  wire  execution_unit_0.register_file_0.r8_1_ ;
-  wire  execution_unit_0.register_file_0.r8_2_ ;
-  wire  execution_unit_0.register_file_0.r8_3_ ;
-  wire  execution_unit_0.register_file_0.r8_4_ ;
-  wire  execution_unit_0.register_file_0.r8_5_ ;
-  wire  execution_unit_0.register_file_0.r8_6_ ;
-  wire  execution_unit_0.register_file_0.r8_7_ ;
-  wire  execution_unit_0.register_file_0.r8_8_ ;
-  wire  execution_unit_0.register_file_0.r8_9_ ;
-  wire  execution_unit_0.register_file_0.r9_0_ ;
-  wire  execution_unit_0.register_file_0.r9_10_ ;
-  wire  execution_unit_0.register_file_0.r9_11_ ;
-  wire  execution_unit_0.register_file_0.r9_12_ ;
-  wire  execution_unit_0.register_file_0.r9_13_ ;
-  wire  execution_unit_0.register_file_0.r9_14_ ;
-  wire  execution_unit_0.register_file_0.r9_15_ ;
-  wire  execution_unit_0.register_file_0.r9_1_ ;
-  wire  execution_unit_0.register_file_0.r9_2_ ;
-  wire  execution_unit_0.register_file_0.r9_3_ ;
-  wire  execution_unit_0.register_file_0.r9_4_ ;
-  wire  execution_unit_0.register_file_0.r9_5_ ;
-  wire  execution_unit_0.register_file_0.r9_6_ ;
-  wire  execution_unit_0.register_file_0.r9_7_ ;
-  wire  execution_unit_0.register_file_0.r9_8_ ;
-  wire  execution_unit_0.register_file_0.r9_9_ ;
-  wire  frontend_0.e_state_nxt_0_ ;
-  wire  frontend_0.e_state_nxt_1_ ;
-  wire  frontend_0.e_state_nxt_2_ ;
-  wire  frontend_0.e_state_nxt_3_ ;
-  wire  frontend_0.exec_dext_rdy ;
-  wire  frontend_0.exec_dst_wr ;
-  wire  frontend_0.exec_jmp ;
-  wire  frontend_0.exec_src_wr ;
-  wire  frontend_0.fe_pmem_wait ;
-  wire  frontend_0.i_state_0_ ;
-  wire  frontend_0.i_state_1_ ;
-  wire  frontend_0.i_state_2_ ;
-  wire  frontend_0.i_state_nxt_0_ ;
-  wire  frontend_0.i_state_nxt_1_ ;
-  wire  frontend_0.i_state_nxt_2_ ;
-  wire  frontend_0.inst_dest_bin_0_ ;
-  wire  frontend_0.inst_dest_bin_1_ ;
-  wire  frontend_0.inst_dest_bin_2_ ;
-  wire  frontend_0.inst_dest_bin_3_ ;
-  wire  frontend_0.inst_jmp_bin_0_ ;
-  wire  frontend_0.inst_jmp_bin_1_ ;
-  wire  frontend_0.inst_jmp_bin_2_ ;
-  wire  frontend_0.inst_src_bin_0_ ;
-  wire  frontend_0.inst_src_bin_1_ ;
-  wire  frontend_0.inst_sz_0_ ;
-  wire  frontend_0.inst_sz_1_ ;
-  wire  frontend_0.irq_addr_1_ ;
-  wire  frontend_0.irq_addr_2_ ;
-  wire  frontend_0.irq_addr_3_ ;
-  wire  frontend_0.irq_addr_4_ ;
-  wire  frontend_0.mb_en ;
-  wire  frontend_0.pmem_busy ;
-  wire  frontend_0.wdt_irq ;
+  wire execution_unit_0.UNUSED_inst_ad_idx ;
+  wire execution_unit_0.UNUSED_inst_ad_symb ;
+  wire execution_unit_0.alu_0.N ;
+  wire execution_unit_0.alu_0.UNUSED_inst_alu ;
+  wire execution_unit_0.alu_0.UNUSED_inst_so_call ;
+  wire execution_unit_0.alu_0.UNUSED_inst_so_push ;
+  wire execution_unit_0.alu_0.UNUSED_inst_so_reti ;
+  wire execution_unit_0.alu_0.Z ;
+  wire execution_unit_0.alu_0.alu_out_0_ ;
+  wire execution_unit_0.alu_0.alu_out_10_ ;
+  wire execution_unit_0.alu_0.alu_out_11_ ;
+  wire execution_unit_0.alu_0.alu_out_12_ ;
+  wire execution_unit_0.alu_0.alu_out_13_ ;
+  wire execution_unit_0.alu_0.alu_out_14_ ;
+  wire execution_unit_0.alu_0.alu_out_15_ ;
+  wire execution_unit_0.alu_0.alu_out_1_ ;
+  wire execution_unit_0.alu_0.alu_out_2_ ;
+  wire execution_unit_0.alu_0.alu_out_3_ ;
+  wire execution_unit_0.alu_0.alu_out_4_ ;
+  wire execution_unit_0.alu_0.alu_out_5_ ;
+  wire execution_unit_0.alu_0.alu_out_6_ ;
+  wire execution_unit_0.alu_0.alu_out_7_ ;
+  wire execution_unit_0.alu_0.alu_out_8_ ;
+  wire execution_unit_0.alu_0.alu_out_9_ ;
+  wire execution_unit_0.alu_0.alu_shift_0_ ;
+  wire execution_unit_0.alu_0.alu_shift_10_ ;
+  wire execution_unit_0.alu_0.alu_shift_11_ ;
+  wire execution_unit_0.alu_0.alu_shift_12_ ;
+  wire execution_unit_0.alu_0.alu_shift_13_ ;
+  wire execution_unit_0.alu_0.alu_shift_14_ ;
+  wire execution_unit_0.alu_0.alu_shift_1_ ;
+  wire execution_unit_0.alu_0.alu_shift_2_ ;
+  wire execution_unit_0.alu_0.alu_shift_3_ ;
+  wire execution_unit_0.alu_0.alu_shift_4_ ;
+  wire execution_unit_0.alu_0.alu_shift_5_ ;
+  wire execution_unit_0.alu_0.alu_shift_6_ ;
+  wire execution_unit_0.alu_0.alu_shift_8_ ;
+  wire execution_unit_0.alu_0.alu_shift_9_ ;
+  wire execution_unit_0.alu_0.alu_stat_0_ ;
+  wire execution_unit_0.alu_0.alu_stat_3_ ;
+  wire execution_unit_0.alu_0.alu_stat_wr_0_ ;
+  wire execution_unit_0.alu_0.alu_swpb_0_ ;
+  wire execution_unit_0.alu_0.alu_swpb_8_ ;
+  wire execution_unit_0.alu_0.exec_cycle ;
+  wire execution_unit_0.alu_0.inst_alu_0_ ;
+  wire execution_unit_0.alu_0.inst_alu_10_ ;
+  wire execution_unit_0.alu_0.inst_alu_1_ ;
+  wire execution_unit_0.alu_0.inst_alu_2_ ;
+  wire execution_unit_0.alu_0.inst_alu_3_ ;
+  wire execution_unit_0.alu_0.inst_alu_4_ ;
+  wire execution_unit_0.alu_0.inst_alu_5_ ;
+  wire execution_unit_0.alu_0.inst_alu_6_ ;
+  wire execution_unit_0.alu_0.inst_alu_7_ ;
+  wire execution_unit_0.alu_0.inst_alu_8_ ;
+  wire execution_unit_0.alu_0.inst_alu_9_ ;
+  wire execution_unit_0.alu_0.inst_bw ;
+  wire execution_unit_0.alu_0.inst_jmp_0_ ;
+  wire execution_unit_0.alu_0.inst_jmp_1_ ;
+  wire execution_unit_0.alu_0.inst_jmp_2_ ;
+  wire execution_unit_0.alu_0.inst_jmp_3_ ;
+  wire execution_unit_0.alu_0.inst_jmp_4_ ;
+  wire execution_unit_0.alu_0.inst_jmp_5_ ;
+  wire execution_unit_0.alu_0.inst_jmp_6_ ;
+  wire execution_unit_0.alu_0.inst_so_0_ ;
+  wire execution_unit_0.alu_0.inst_so_1_ ;
+  wire execution_unit_0.alu_0.inst_so_3_ ;
+  wire execution_unit_0.alu_0.inst_so_7_ ;
+  wire execution_unit_0.alu_0.op_dst_0_ ;
+  wire execution_unit_0.alu_0.op_dst_10_ ;
+  wire execution_unit_0.alu_0.op_dst_11_ ;
+  wire execution_unit_0.alu_0.op_dst_12_ ;
+  wire execution_unit_0.alu_0.op_dst_13_ ;
+  wire execution_unit_0.alu_0.op_dst_14_ ;
+  wire execution_unit_0.alu_0.op_dst_15_ ;
+  wire execution_unit_0.alu_0.op_dst_1_ ;
+  wire execution_unit_0.alu_0.op_dst_2_ ;
+  wire execution_unit_0.alu_0.op_dst_3_ ;
+  wire execution_unit_0.alu_0.op_dst_4_ ;
+  wire execution_unit_0.alu_0.op_dst_5_ ;
+  wire execution_unit_0.alu_0.op_dst_6_ ;
+  wire execution_unit_0.alu_0.op_dst_7_ ;
+  wire execution_unit_0.alu_0.op_dst_8_ ;
+  wire execution_unit_0.alu_0.op_dst_9_ ;
+  wire execution_unit_0.alu_0.status_0_ ;
+  wire execution_unit_0.alu_0.status_1_ ;
+  wire execution_unit_0.alu_0.status_2_ ;
+  wire execution_unit_0.alu_0.status_3_ ;
+  wire execution_unit_0.e_state_0_ ;
+  wire execution_unit_0.e_state_1_ ;
+  wire execution_unit_0.e_state_2_ ;
+  wire execution_unit_0.e_state_3_ ;
+  wire execution_unit_0.exec_done ;
+  wire execution_unit_0.gie ;
+  wire execution_unit_0.inst_ad_0_ ;
+  wire execution_unit_0.inst_ad_6_ ;
+  wire execution_unit_0.inst_as_0_ ;
+  wire execution_unit_0.inst_as_1_ ;
+  wire execution_unit_0.inst_as_2_ ;
+  wire execution_unit_0.inst_as_3_ ;
+  wire execution_unit_0.inst_as_4_ ;
+  wire execution_unit_0.inst_as_5_ ;
+  wire execution_unit_0.inst_as_6_ ;
+  wire execution_unit_0.inst_as_7_ ;
+  wire execution_unit_0.inst_dest_0_ ;
+  wire execution_unit_0.inst_dest_10_ ;
+  wire execution_unit_0.inst_dest_11_ ;
+  wire execution_unit_0.inst_dest_12_ ;
+  wire execution_unit_0.inst_dest_13_ ;
+  wire execution_unit_0.inst_dest_14_ ;
+  wire execution_unit_0.inst_dest_15_ ;
+  wire execution_unit_0.inst_dest_1_ ;
+  wire execution_unit_0.inst_dest_2_ ;
+  wire execution_unit_0.inst_dest_3_ ;
+  wire execution_unit_0.inst_dest_4_ ;
+  wire execution_unit_0.inst_dest_5_ ;
+  wire execution_unit_0.inst_dest_6_ ;
+  wire execution_unit_0.inst_dest_7_ ;
+  wire execution_unit_0.inst_dest_8_ ;
+  wire execution_unit_0.inst_dest_9_ ;
+  wire execution_unit_0.inst_dext_0_ ;
+  wire execution_unit_0.inst_dext_10_ ;
+  wire execution_unit_0.inst_dext_11_ ;
+  wire execution_unit_0.inst_dext_12_ ;
+  wire execution_unit_0.inst_dext_13_ ;
+  wire execution_unit_0.inst_dext_14_ ;
+  wire execution_unit_0.inst_dext_15_ ;
+  wire execution_unit_0.inst_dext_1_ ;
+  wire execution_unit_0.inst_dext_2_ ;
+  wire execution_unit_0.inst_dext_3_ ;
+  wire execution_unit_0.inst_dext_4_ ;
+  wire execution_unit_0.inst_dext_5_ ;
+  wire execution_unit_0.inst_dext_6_ ;
+  wire execution_unit_0.inst_dext_7_ ;
+  wire execution_unit_0.inst_dext_8_ ;
+  wire execution_unit_0.inst_dext_9_ ;
+  wire execution_unit_0.inst_irq_rst ;
+  wire execution_unit_0.inst_mov ;
+  wire execution_unit_0.inst_sext_0_ ;
+  wire execution_unit_0.inst_sext_10_ ;
+  wire execution_unit_0.inst_sext_11_ ;
+  wire execution_unit_0.inst_sext_12_ ;
+  wire execution_unit_0.inst_sext_13_ ;
+  wire execution_unit_0.inst_sext_14_ ;
+  wire execution_unit_0.inst_sext_15_ ;
+  wire execution_unit_0.inst_sext_1_ ;
+  wire execution_unit_0.inst_sext_2_ ;
+  wire execution_unit_0.inst_sext_3_ ;
+  wire execution_unit_0.inst_sext_4_ ;
+  wire execution_unit_0.inst_sext_5_ ;
+  wire execution_unit_0.inst_sext_6_ ;
+  wire execution_unit_0.inst_sext_7_ ;
+  wire execution_unit_0.inst_sext_8_ ;
+  wire execution_unit_0.inst_sext_9_ ;
+  wire execution_unit_0.inst_src_0_ ;
+  wire execution_unit_0.inst_src_10_ ;
+  wire execution_unit_0.inst_src_11_ ;
+  wire execution_unit_0.inst_src_12_ ;
+  wire execution_unit_0.inst_src_13_ ;
+  wire execution_unit_0.inst_src_14_ ;
+  wire execution_unit_0.inst_src_15_ ;
+  wire execution_unit_0.inst_src_1_ ;
+  wire execution_unit_0.inst_src_2_ ;
+  wire execution_unit_0.inst_src_3_ ;
+  wire execution_unit_0.inst_src_4_ ;
+  wire execution_unit_0.inst_src_5_ ;
+  wire execution_unit_0.inst_src_6_ ;
+  wire execution_unit_0.inst_src_7_ ;
+  wire execution_unit_0.inst_src_8_ ;
+  wire execution_unit_0.inst_src_9_ ;
+  wire execution_unit_0.inst_type_0_ ;
+  wire execution_unit_0.inst_type_1_ ;
+  wire execution_unit_0.inst_type_2_ ;
+  wire execution_unit_0.mab_lsb ;
+  wire execution_unit_0.mdb_in_0_ ;
+  wire execution_unit_0.mdb_in_10_ ;
+  wire execution_unit_0.mdb_in_11_ ;
+  wire execution_unit_0.mdb_in_12_ ;
+  wire execution_unit_0.mdb_in_13_ ;
+  wire execution_unit_0.mdb_in_14_ ;
+  wire execution_unit_0.mdb_in_15_ ;
+  wire execution_unit_0.mdb_in_1_ ;
+  wire execution_unit_0.mdb_in_2_ ;
+  wire execution_unit_0.mdb_in_3_ ;
+  wire execution_unit_0.mdb_in_4_ ;
+  wire execution_unit_0.mdb_in_5_ ;
+  wire execution_unit_0.mdb_in_6_ ;
+  wire execution_unit_0.mdb_in_7_ ;
+  wire execution_unit_0.mdb_in_8_ ;
+  wire execution_unit_0.mdb_in_9_ ;
+  wire execution_unit_0.mdb_in_buf_0_ ;
+  wire execution_unit_0.mdb_in_buf_10_ ;
+  wire execution_unit_0.mdb_in_buf_11_ ;
+  wire execution_unit_0.mdb_in_buf_12_ ;
+  wire execution_unit_0.mdb_in_buf_13_ ;
+  wire execution_unit_0.mdb_in_buf_14_ ;
+  wire execution_unit_0.mdb_in_buf_15_ ;
+  wire execution_unit_0.mdb_in_buf_1_ ;
+  wire execution_unit_0.mdb_in_buf_2_ ;
+  wire execution_unit_0.mdb_in_buf_3_ ;
+  wire execution_unit_0.mdb_in_buf_4_ ;
+  wire execution_unit_0.mdb_in_buf_5_ ;
+  wire execution_unit_0.mdb_in_buf_6_ ;
+  wire execution_unit_0.mdb_in_buf_7_ ;
+  wire execution_unit_0.mdb_in_buf_8_ ;
+  wire execution_unit_0.mdb_in_buf_9_ ;
+  wire execution_unit_0.mdb_in_buf_en ;
+  wire execution_unit_0.mdb_in_buf_valid ;
+  wire execution_unit_0.mdb_out_0_ ;
+  wire execution_unit_0.mdb_out_10_ ;
+  wire execution_unit_0.mdb_out_11_ ;
+  wire execution_unit_0.mdb_out_12_ ;
+  wire execution_unit_0.mdb_out_13_ ;
+  wire execution_unit_0.mdb_out_14_ ;
+  wire execution_unit_0.mdb_out_15_ ;
+  wire execution_unit_0.mdb_out_1_ ;
+  wire execution_unit_0.mdb_out_2_ ;
+  wire execution_unit_0.mdb_out_3_ ;
+  wire execution_unit_0.mdb_out_4_ ;
+  wire execution_unit_0.mdb_out_5_ ;
+  wire execution_unit_0.mdb_out_6_ ;
+  wire execution_unit_0.mdb_out_7_ ;
+  wire execution_unit_0.mdb_out_8_ ;
+  wire execution_unit_0.mdb_out_9_ ;
+  wire execution_unit_0.mdb_out_nxt_10_ ;
+  wire execution_unit_0.mdb_out_nxt_11_ ;
+  wire execution_unit_0.mdb_out_nxt_12_ ;
+  wire execution_unit_0.mdb_out_nxt_13_ ;
+  wire execution_unit_0.mdb_out_nxt_14_ ;
+  wire execution_unit_0.mdb_out_nxt_15_ ;
+  wire execution_unit_0.mdb_out_nxt_8_ ;
+  wire execution_unit_0.mdb_out_nxt_9_ ;
+  wire execution_unit_0.pc_nxt_0_ ;
+  wire execution_unit_0.pc_nxt_10_ ;
+  wire execution_unit_0.pc_nxt_11_ ;
+  wire execution_unit_0.pc_nxt_12_ ;
+  wire execution_unit_0.pc_nxt_13_ ;
+  wire execution_unit_0.pc_nxt_14_ ;
+  wire execution_unit_0.pc_nxt_15_ ;
+  wire execution_unit_0.pc_nxt_1_ ;
+  wire execution_unit_0.pc_nxt_2_ ;
+  wire execution_unit_0.pc_nxt_3_ ;
+  wire execution_unit_0.pc_nxt_4_ ;
+  wire execution_unit_0.pc_nxt_5_ ;
+  wire execution_unit_0.pc_nxt_6_ ;
+  wire execution_unit_0.pc_nxt_7_ ;
+  wire execution_unit_0.pc_nxt_8_ ;
+  wire execution_unit_0.pc_nxt_9_ ;
+  wire execution_unit_0.pc_sw_10_ ;
+  wire execution_unit_0.pc_sw_11_ ;
+  wire execution_unit_0.pc_sw_12_ ;
+  wire execution_unit_0.pc_sw_13_ ;
+  wire execution_unit_0.pc_sw_14_ ;
+  wire execution_unit_0.pc_sw_15_ ;
+  wire execution_unit_0.pc_sw_8_ ;
+  wire execution_unit_0.pc_sw_9_ ;
+  wire execution_unit_0.pc_sw_wr ;
+  wire execution_unit_0.reg_dest_wr ;
+  wire execution_unit_0.reg_incr ;
+  wire execution_unit_0.reg_pc_call ;
+  wire execution_unit_0.reg_sp_wr ;
+  wire execution_unit_0.reg_sr_clr ;
+  wire execution_unit_0.reg_sr_wr ;
+  wire execution_unit_0.reg_src_0_ ;
+  wire execution_unit_0.reg_src_10_ ;
+  wire execution_unit_0.reg_src_11_ ;
+  wire execution_unit_0.reg_src_12_ ;
+  wire execution_unit_0.reg_src_13_ ;
+  wire execution_unit_0.reg_src_14_ ;
+  wire execution_unit_0.reg_src_15_ ;
+  wire execution_unit_0.reg_src_1_ ;
+  wire execution_unit_0.reg_src_2_ ;
+  wire execution_unit_0.reg_src_3_ ;
+  wire execution_unit_0.reg_src_4_ ;
+  wire execution_unit_0.reg_src_5_ ;
+  wire execution_unit_0.reg_src_6_ ;
+  wire execution_unit_0.reg_src_7_ ;
+  wire execution_unit_0.reg_src_8_ ;
+  wire execution_unit_0.reg_src_9_ ;
+  wire execution_unit_0.register_file_0.r10_0_ ;
+  wire execution_unit_0.register_file_0.r10_10_ ;
+  wire execution_unit_0.register_file_0.r10_11_ ;
+  wire execution_unit_0.register_file_0.r10_12_ ;
+  wire execution_unit_0.register_file_0.r10_13_ ;
+  wire execution_unit_0.register_file_0.r10_14_ ;
+  wire execution_unit_0.register_file_0.r10_15_ ;
+  wire execution_unit_0.register_file_0.r10_1_ ;
+  wire execution_unit_0.register_file_0.r10_2_ ;
+  wire execution_unit_0.register_file_0.r10_3_ ;
+  wire execution_unit_0.register_file_0.r10_4_ ;
+  wire execution_unit_0.register_file_0.r10_5_ ;
+  wire execution_unit_0.register_file_0.r10_6_ ;
+  wire execution_unit_0.register_file_0.r10_7_ ;
+  wire execution_unit_0.register_file_0.r10_8_ ;
+  wire execution_unit_0.register_file_0.r10_9_ ;
+  wire execution_unit_0.register_file_0.r11_0_ ;
+  wire execution_unit_0.register_file_0.r11_10_ ;
+  wire execution_unit_0.register_file_0.r11_11_ ;
+  wire execution_unit_0.register_file_0.r11_12_ ;
+  wire execution_unit_0.register_file_0.r11_13_ ;
+  wire execution_unit_0.register_file_0.r11_14_ ;
+  wire execution_unit_0.register_file_0.r11_15_ ;
+  wire execution_unit_0.register_file_0.r11_1_ ;
+  wire execution_unit_0.register_file_0.r11_2_ ;
+  wire execution_unit_0.register_file_0.r11_3_ ;
+  wire execution_unit_0.register_file_0.r11_4_ ;
+  wire execution_unit_0.register_file_0.r11_5_ ;
+  wire execution_unit_0.register_file_0.r11_6_ ;
+  wire execution_unit_0.register_file_0.r11_7_ ;
+  wire execution_unit_0.register_file_0.r11_8_ ;
+  wire execution_unit_0.register_file_0.r11_9_ ;
+  wire execution_unit_0.register_file_0.r12_0_ ;
+  wire execution_unit_0.register_file_0.r12_10_ ;
+  wire execution_unit_0.register_file_0.r12_11_ ;
+  wire execution_unit_0.register_file_0.r12_12_ ;
+  wire execution_unit_0.register_file_0.r12_13_ ;
+  wire execution_unit_0.register_file_0.r12_14_ ;
+  wire execution_unit_0.register_file_0.r12_15_ ;
+  wire execution_unit_0.register_file_0.r12_1_ ;
+  wire execution_unit_0.register_file_0.r12_2_ ;
+  wire execution_unit_0.register_file_0.r12_3_ ;
+  wire execution_unit_0.register_file_0.r12_4_ ;
+  wire execution_unit_0.register_file_0.r12_5_ ;
+  wire execution_unit_0.register_file_0.r12_6_ ;
+  wire execution_unit_0.register_file_0.r12_7_ ;
+  wire execution_unit_0.register_file_0.r12_8_ ;
+  wire execution_unit_0.register_file_0.r12_9_ ;
+  wire execution_unit_0.register_file_0.r13_0_ ;
+  wire execution_unit_0.register_file_0.r13_10_ ;
+  wire execution_unit_0.register_file_0.r13_11_ ;
+  wire execution_unit_0.register_file_0.r13_12_ ;
+  wire execution_unit_0.register_file_0.r13_13_ ;
+  wire execution_unit_0.register_file_0.r13_14_ ;
+  wire execution_unit_0.register_file_0.r13_15_ ;
+  wire execution_unit_0.register_file_0.r13_1_ ;
+  wire execution_unit_0.register_file_0.r13_2_ ;
+  wire execution_unit_0.register_file_0.r13_3_ ;
+  wire execution_unit_0.register_file_0.r13_4_ ;
+  wire execution_unit_0.register_file_0.r13_5_ ;
+  wire execution_unit_0.register_file_0.r13_6_ ;
+  wire execution_unit_0.register_file_0.r13_7_ ;
+  wire execution_unit_0.register_file_0.r13_8_ ;
+  wire execution_unit_0.register_file_0.r13_9_ ;
+  wire execution_unit_0.register_file_0.r14_0_ ;
+  wire execution_unit_0.register_file_0.r14_10_ ;
+  wire execution_unit_0.register_file_0.r14_11_ ;
+  wire execution_unit_0.register_file_0.r14_12_ ;
+  wire execution_unit_0.register_file_0.r14_13_ ;
+  wire execution_unit_0.register_file_0.r14_14_ ;
+  wire execution_unit_0.register_file_0.r14_15_ ;
+  wire execution_unit_0.register_file_0.r14_1_ ;
+  wire execution_unit_0.register_file_0.r14_2_ ;
+  wire execution_unit_0.register_file_0.r14_3_ ;
+  wire execution_unit_0.register_file_0.r14_4_ ;
+  wire execution_unit_0.register_file_0.r14_5_ ;
+  wire execution_unit_0.register_file_0.r14_6_ ;
+  wire execution_unit_0.register_file_0.r14_7_ ;
+  wire execution_unit_0.register_file_0.r14_8_ ;
+  wire execution_unit_0.register_file_0.r14_9_ ;
+  wire execution_unit_0.register_file_0.r15_0_ ;
+  wire execution_unit_0.register_file_0.r15_10_ ;
+  wire execution_unit_0.register_file_0.r15_11_ ;
+  wire execution_unit_0.register_file_0.r15_12_ ;
+  wire execution_unit_0.register_file_0.r15_13_ ;
+  wire execution_unit_0.register_file_0.r15_14_ ;
+  wire execution_unit_0.register_file_0.r15_15_ ;
+  wire execution_unit_0.register_file_0.r15_1_ ;
+  wire execution_unit_0.register_file_0.r15_2_ ;
+  wire execution_unit_0.register_file_0.r15_3_ ;
+  wire execution_unit_0.register_file_0.r15_4_ ;
+  wire execution_unit_0.register_file_0.r15_5_ ;
+  wire execution_unit_0.register_file_0.r15_6_ ;
+  wire execution_unit_0.register_file_0.r15_7_ ;
+  wire execution_unit_0.register_file_0.r15_8_ ;
+  wire execution_unit_0.register_file_0.r15_9_ ;
+  wire execution_unit_0.register_file_0.r1_10_ ;
+  wire execution_unit_0.register_file_0.r1_11_ ;
+  wire execution_unit_0.register_file_0.r1_12_ ;
+  wire execution_unit_0.register_file_0.r1_13_ ;
+  wire execution_unit_0.register_file_0.r1_14_ ;
+  wire execution_unit_0.register_file_0.r1_15_ ;
+  wire execution_unit_0.register_file_0.r1_1_ ;
+  wire execution_unit_0.register_file_0.r1_2_ ;
+  wire execution_unit_0.register_file_0.r1_3_ ;
+  wire execution_unit_0.register_file_0.r1_4_ ;
+  wire execution_unit_0.register_file_0.r1_5_ ;
+  wire execution_unit_0.register_file_0.r1_6_ ;
+  wire execution_unit_0.register_file_0.r1_7_ ;
+  wire execution_unit_0.register_file_0.r1_8_ ;
+  wire execution_unit_0.register_file_0.r1_9_ ;
+  wire execution_unit_0.register_file_0.r2_4_ ;
+  wire execution_unit_0.register_file_0.r3_0_ ;
+  wire execution_unit_0.register_file_0.r3_10_ ;
+  wire execution_unit_0.register_file_0.r3_11_ ;
+  wire execution_unit_0.register_file_0.r3_12_ ;
+  wire execution_unit_0.register_file_0.r3_13_ ;
+  wire execution_unit_0.register_file_0.r3_14_ ;
+  wire execution_unit_0.register_file_0.r3_15_ ;
+  wire execution_unit_0.register_file_0.r3_1_ ;
+  wire execution_unit_0.register_file_0.r3_2_ ;
+  wire execution_unit_0.register_file_0.r3_3_ ;
+  wire execution_unit_0.register_file_0.r3_4_ ;
+  wire execution_unit_0.register_file_0.r3_5_ ;
+  wire execution_unit_0.register_file_0.r3_6_ ;
+  wire execution_unit_0.register_file_0.r3_7_ ;
+  wire execution_unit_0.register_file_0.r3_8_ ;
+  wire execution_unit_0.register_file_0.r3_9_ ;
+  wire execution_unit_0.register_file_0.r4_0_ ;
+  wire execution_unit_0.register_file_0.r4_10_ ;
+  wire execution_unit_0.register_file_0.r4_11_ ;
+  wire execution_unit_0.register_file_0.r4_12_ ;
+  wire execution_unit_0.register_file_0.r4_13_ ;
+  wire execution_unit_0.register_file_0.r4_14_ ;
+  wire execution_unit_0.register_file_0.r4_15_ ;
+  wire execution_unit_0.register_file_0.r4_1_ ;
+  wire execution_unit_0.register_file_0.r4_2_ ;
+  wire execution_unit_0.register_file_0.r4_3_ ;
+  wire execution_unit_0.register_file_0.r4_4_ ;
+  wire execution_unit_0.register_file_0.r4_5_ ;
+  wire execution_unit_0.register_file_0.r4_6_ ;
+  wire execution_unit_0.register_file_0.r4_7_ ;
+  wire execution_unit_0.register_file_0.r4_8_ ;
+  wire execution_unit_0.register_file_0.r4_9_ ;
+  wire execution_unit_0.register_file_0.r5_0_ ;
+  wire execution_unit_0.register_file_0.r5_10_ ;
+  wire execution_unit_0.register_file_0.r5_11_ ;
+  wire execution_unit_0.register_file_0.r5_12_ ;
+  wire execution_unit_0.register_file_0.r5_13_ ;
+  wire execution_unit_0.register_file_0.r5_14_ ;
+  wire execution_unit_0.register_file_0.r5_15_ ;
+  wire execution_unit_0.register_file_0.r5_1_ ;
+  wire execution_unit_0.register_file_0.r5_2_ ;
+  wire execution_unit_0.register_file_0.r5_3_ ;
+  wire execution_unit_0.register_file_0.r5_4_ ;
+  wire execution_unit_0.register_file_0.r5_5_ ;
+  wire execution_unit_0.register_file_0.r5_6_ ;
+  wire execution_unit_0.register_file_0.r5_7_ ;
+  wire execution_unit_0.register_file_0.r5_8_ ;
+  wire execution_unit_0.register_file_0.r5_9_ ;
+  wire execution_unit_0.register_file_0.r6_0_ ;
+  wire execution_unit_0.register_file_0.r6_10_ ;
+  wire execution_unit_0.register_file_0.r6_11_ ;
+  wire execution_unit_0.register_file_0.r6_12_ ;
+  wire execution_unit_0.register_file_0.r6_13_ ;
+  wire execution_unit_0.register_file_0.r6_14_ ;
+  wire execution_unit_0.register_file_0.r6_15_ ;
+  wire execution_unit_0.register_file_0.r6_1_ ;
+  wire execution_unit_0.register_file_0.r6_2_ ;
+  wire execution_unit_0.register_file_0.r6_3_ ;
+  wire execution_unit_0.register_file_0.r6_4_ ;
+  wire execution_unit_0.register_file_0.r6_5_ ;
+  wire execution_unit_0.register_file_0.r6_6_ ;
+  wire execution_unit_0.register_file_0.r6_7_ ;
+  wire execution_unit_0.register_file_0.r6_8_ ;
+  wire execution_unit_0.register_file_0.r6_9_ ;
+  wire execution_unit_0.register_file_0.r7_0_ ;
+  wire execution_unit_0.register_file_0.r7_10_ ;
+  wire execution_unit_0.register_file_0.r7_11_ ;
+  wire execution_unit_0.register_file_0.r7_12_ ;
+  wire execution_unit_0.register_file_0.r7_13_ ;
+  wire execution_unit_0.register_file_0.r7_14_ ;
+  wire execution_unit_0.register_file_0.r7_15_ ;
+  wire execution_unit_0.register_file_0.r7_1_ ;
+  wire execution_unit_0.register_file_0.r7_2_ ;
+  wire execution_unit_0.register_file_0.r7_3_ ;
+  wire execution_unit_0.register_file_0.r7_4_ ;
+  wire execution_unit_0.register_file_0.r7_5_ ;
+  wire execution_unit_0.register_file_0.r7_6_ ;
+  wire execution_unit_0.register_file_0.r7_7_ ;
+  wire execution_unit_0.register_file_0.r7_8_ ;
+  wire execution_unit_0.register_file_0.r7_9_ ;
+  wire execution_unit_0.register_file_0.r8_0_ ;
+  wire execution_unit_0.register_file_0.r8_10_ ;
+  wire execution_unit_0.register_file_0.r8_11_ ;
+  wire execution_unit_0.register_file_0.r8_12_ ;
+  wire execution_unit_0.register_file_0.r8_13_ ;
+  wire execution_unit_0.register_file_0.r8_14_ ;
+  wire execution_unit_0.register_file_0.r8_15_ ;
+  wire execution_unit_0.register_file_0.r8_1_ ;
+  wire execution_unit_0.register_file_0.r8_2_ ;
+  wire execution_unit_0.register_file_0.r8_3_ ;
+  wire execution_unit_0.register_file_0.r8_4_ ;
+  wire execution_unit_0.register_file_0.r8_5_ ;
+  wire execution_unit_0.register_file_0.r8_6_ ;
+  wire execution_unit_0.register_file_0.r8_7_ ;
+  wire execution_unit_0.register_file_0.r8_8_ ;
+  wire execution_unit_0.register_file_0.r8_9_ ;
+  wire execution_unit_0.register_file_0.r9_0_ ;
+  wire execution_unit_0.register_file_0.r9_10_ ;
+  wire execution_unit_0.register_file_0.r9_11_ ;
+  wire execution_unit_0.register_file_0.r9_12_ ;
+  wire execution_unit_0.register_file_0.r9_13_ ;
+  wire execution_unit_0.register_file_0.r9_14_ ;
+  wire execution_unit_0.register_file_0.r9_15_ ;
+  wire execution_unit_0.register_file_0.r9_1_ ;
+  wire execution_unit_0.register_file_0.r9_2_ ;
+  wire execution_unit_0.register_file_0.r9_3_ ;
+  wire execution_unit_0.register_file_0.r9_4_ ;
+  wire execution_unit_0.register_file_0.r9_5_ ;
+  wire execution_unit_0.register_file_0.r9_6_ ;
+  wire execution_unit_0.register_file_0.r9_7_ ;
+  wire execution_unit_0.register_file_0.r9_8_ ;
+  wire execution_unit_0.register_file_0.r9_9_ ;
+  wire frontend_0.e_state_nxt_0_ ;
+  wire frontend_0.e_state_nxt_1_ ;
+  wire frontend_0.e_state_nxt_2_ ;
+  wire frontend_0.e_state_nxt_3_ ;
+  wire frontend_0.exec_dext_rdy ;
+  wire frontend_0.exec_dst_wr ;
+  wire frontend_0.exec_jmp ;
+  wire frontend_0.exec_src_wr ;
+  wire frontend_0.fe_pmem_wait ;
+  wire frontend_0.i_state_0_ ;
+  wire frontend_0.i_state_1_ ;
+  wire frontend_0.i_state_2_ ;
+  wire frontend_0.i_state_nxt_0_ ;
+  wire frontend_0.i_state_nxt_1_ ;
+  wire frontend_0.i_state_nxt_2_ ;
+  wire frontend_0.inst_dest_bin_0_ ;
+  wire frontend_0.inst_dest_bin_1_ ;
+  wire frontend_0.inst_dest_bin_2_ ;
+  wire frontend_0.inst_dest_bin_3_ ;
+  wire frontend_0.inst_jmp_bin_0_ ;
+  wire frontend_0.inst_jmp_bin_1_ ;
+  wire frontend_0.inst_jmp_bin_2_ ;
+  wire frontend_0.inst_src_bin_0_ ;
+  wire frontend_0.inst_src_bin_1_ ;
+  wire frontend_0.inst_sz_0_ ;
+  wire frontend_0.inst_sz_1_ ;
+  wire frontend_0.irq_addr_1_ ;
+  wire frontend_0.irq_addr_2_ ;
+  wire frontend_0.irq_addr_3_ ;
+  wire frontend_0.irq_addr_4_ ;
+  wire frontend_0.mb_en ;
+  wire frontend_0.pmem_busy ;
+  wire frontend_0.wdt_irq ;
   input irq_0_;
   wire irq_0_;
   input irq_10_;
@@ -6844,151 +6844,151 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   wire lfxt_wkup;
   output mclk;
   wire mclk;
-  wire  mem_backbone_0.eu_mdb_in_sel_0_ ;
-  wire  mem_backbone_0.eu_mdb_in_sel_1_ ;
-  wire  mem_backbone_0.eu_per_en ;
-  wire  mem_backbone_0.eu_pmem_en ;
-  wire  mem_backbone_0.ext_mem_din_sel ;
-  wire  mem_backbone_0.ext_per_en ;
-  wire  mem_backbone_0.ext_pmem_en ;
-  wire  mem_backbone_0.fe_pmem_en ;
-  wire  mem_backbone_0.fe_pmem_en_dly ;
-  wire  mem_backbone_0.per_dout_0_ ;
-  wire  mem_backbone_0.per_dout_10_ ;
-  wire  mem_backbone_0.per_dout_11_ ;
-  wire  mem_backbone_0.per_dout_12_ ;
-  wire  mem_backbone_0.per_dout_13_ ;
-  wire  mem_backbone_0.per_dout_14_ ;
-  wire  mem_backbone_0.per_dout_15_ ;
-  wire  mem_backbone_0.per_dout_1_ ;
-  wire  mem_backbone_0.per_dout_2_ ;
-  wire  mem_backbone_0.per_dout_3_ ;
-  wire  mem_backbone_0.per_dout_4_ ;
-  wire  mem_backbone_0.per_dout_5_ ;
-  wire  mem_backbone_0.per_dout_6_ ;
-  wire  mem_backbone_0.per_dout_7_ ;
-  wire  mem_backbone_0.per_dout_8_ ;
-  wire  mem_backbone_0.per_dout_9_ ;
-  wire  mem_backbone_0.per_dout_val_0_ ;
-  wire  mem_backbone_0.per_dout_val_10_ ;
-  wire  mem_backbone_0.per_dout_val_11_ ;
-  wire  mem_backbone_0.per_dout_val_12_ ;
-  wire  mem_backbone_0.per_dout_val_13_ ;
-  wire  mem_backbone_0.per_dout_val_14_ ;
-  wire  mem_backbone_0.per_dout_val_15_ ;
-  wire  mem_backbone_0.per_dout_val_1_ ;
-  wire  mem_backbone_0.per_dout_val_2_ ;
-  wire  mem_backbone_0.per_dout_val_3_ ;
-  wire  mem_backbone_0.per_dout_val_4_ ;
-  wire  mem_backbone_0.per_dout_val_5_ ;
-  wire  mem_backbone_0.per_dout_val_6_ ;
-  wire  mem_backbone_0.per_dout_val_7_ ;
-  wire  mem_backbone_0.per_dout_val_8_ ;
-  wire  mem_backbone_0.per_dout_val_9_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_0_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_10_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_11_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_12_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_13_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_14_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_15_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_1_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_2_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_3_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_4_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_5_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_6_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_7_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_8_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_9_ ;
-  wire  mem_backbone_0.pmem_dout_bckup_sel ;
-  wire  multiplier_0.acc_sel ;
-  wire  multiplier_0.cycle_0_ ;
-  wire  multiplier_0.cycle_1_ ;
-  wire  multiplier_0.op1_0_ ;
-  wire  multiplier_0.op1_10_ ;
-  wire  multiplier_0.op1_11_ ;
-  wire  multiplier_0.op1_12_ ;
-  wire  multiplier_0.op1_13_ ;
-  wire  multiplier_0.op1_14_ ;
-  wire  multiplier_0.op1_15_ ;
-  wire  multiplier_0.op1_1_ ;
-  wire  multiplier_0.op1_2_ ;
-  wire  multiplier_0.op1_3_ ;
-  wire  multiplier_0.op1_4_ ;
-  wire  multiplier_0.op1_5_ ;
-  wire  multiplier_0.op1_6_ ;
-  wire  multiplier_0.op1_7_ ;
-  wire  multiplier_0.op1_8_ ;
-  wire  multiplier_0.op1_9_ ;
-  wire  multiplier_0.op2_0_ ;
-  wire  multiplier_0.op2_10_ ;
-  wire  multiplier_0.op2_11_ ;
-  wire  multiplier_0.op2_12_ ;
-  wire  multiplier_0.op2_13_ ;
-  wire  multiplier_0.op2_14_ ;
-  wire  multiplier_0.op2_15_ ;
-  wire  multiplier_0.op2_1_ ;
-  wire  multiplier_0.op2_2_ ;
-  wire  multiplier_0.op2_3_ ;
-  wire  multiplier_0.op2_4_ ;
-  wire  multiplier_0.op2_5_ ;
-  wire  multiplier_0.op2_6_ ;
-  wire  multiplier_0.op2_7_ ;
-  wire  multiplier_0.op2_8_ ;
-  wire  multiplier_0.op2_9_ ;
-  wire  multiplier_0.op2_wr ;
-  wire  multiplier_0.per_dout_0_ ;
-  wire  multiplier_0.per_dout_10_ ;
-  wire  multiplier_0.per_dout_11_ ;
-  wire  multiplier_0.per_dout_12_ ;
-  wire  multiplier_0.per_dout_13_ ;
-  wire  multiplier_0.per_dout_14_ ;
-  wire  multiplier_0.per_dout_15_ ;
-  wire  multiplier_0.per_dout_1_ ;
-  wire  multiplier_0.per_dout_2_ ;
-  wire  multiplier_0.per_dout_3_ ;
-  wire  multiplier_0.per_dout_4_ ;
-  wire  multiplier_0.per_dout_5_ ;
-  wire  multiplier_0.per_dout_6_ ;
-  wire  multiplier_0.per_dout_7_ ;
-  wire  multiplier_0.per_dout_8_ ;
-  wire  multiplier_0.per_dout_9_ ;
-  wire  multiplier_0.reshi_0_ ;
-  wire  multiplier_0.reshi_10_ ;
-  wire  multiplier_0.reshi_11_ ;
-  wire  multiplier_0.reshi_12_ ;
-  wire  multiplier_0.reshi_13_ ;
-  wire  multiplier_0.reshi_14_ ;
-  wire  multiplier_0.reshi_15_ ;
-  wire  multiplier_0.reshi_1_ ;
-  wire  multiplier_0.reshi_2_ ;
-  wire  multiplier_0.reshi_3_ ;
-  wire  multiplier_0.reshi_4_ ;
-  wire  multiplier_0.reshi_5_ ;
-  wire  multiplier_0.reshi_6_ ;
-  wire  multiplier_0.reshi_7_ ;
-  wire  multiplier_0.reshi_8_ ;
-  wire  multiplier_0.reshi_9_ ;
-  wire  multiplier_0.reslo_0_ ;
-  wire  multiplier_0.reslo_10_ ;
-  wire  multiplier_0.reslo_11_ ;
-  wire  multiplier_0.reslo_12_ ;
-  wire  multiplier_0.reslo_13_ ;
-  wire  multiplier_0.reslo_14_ ;
-  wire  multiplier_0.reslo_15_ ;
-  wire  multiplier_0.reslo_1_ ;
-  wire  multiplier_0.reslo_2_ ;
-  wire  multiplier_0.reslo_3_ ;
-  wire  multiplier_0.reslo_4_ ;
-  wire  multiplier_0.reslo_5_ ;
-  wire  multiplier_0.reslo_6_ ;
-  wire  multiplier_0.reslo_7_ ;
-  wire  multiplier_0.reslo_8_ ;
-  wire  multiplier_0.reslo_9_ ;
-  wire  multiplier_0.sign_sel ;
-  wire  multiplier_0.sumext_0_ ;
-  wire  multiplier_0.sumext_10_ ;
+  wire mem_backbone_0.eu_mdb_in_sel_0_ ;
+  wire mem_backbone_0.eu_mdb_in_sel_1_ ;
+  wire mem_backbone_0.eu_per_en ;
+  wire mem_backbone_0.eu_pmem_en ;
+  wire mem_backbone_0.ext_mem_din_sel ;
+  wire mem_backbone_0.ext_per_en ;
+  wire mem_backbone_0.ext_pmem_en ;
+  wire mem_backbone_0.fe_pmem_en ;
+  wire mem_backbone_0.fe_pmem_en_dly ;
+  wire mem_backbone_0.per_dout_0_ ;
+  wire mem_backbone_0.per_dout_10_ ;
+  wire mem_backbone_0.per_dout_11_ ;
+  wire mem_backbone_0.per_dout_12_ ;
+  wire mem_backbone_0.per_dout_13_ ;
+  wire mem_backbone_0.per_dout_14_ ;
+  wire mem_backbone_0.per_dout_15_ ;
+  wire mem_backbone_0.per_dout_1_ ;
+  wire mem_backbone_0.per_dout_2_ ;
+  wire mem_backbone_0.per_dout_3_ ;
+  wire mem_backbone_0.per_dout_4_ ;
+  wire mem_backbone_0.per_dout_5_ ;
+  wire mem_backbone_0.per_dout_6_ ;
+  wire mem_backbone_0.per_dout_7_ ;
+  wire mem_backbone_0.per_dout_8_ ;
+  wire mem_backbone_0.per_dout_9_ ;
+  wire mem_backbone_0.per_dout_val_0_ ;
+  wire mem_backbone_0.per_dout_val_10_ ;
+  wire mem_backbone_0.per_dout_val_11_ ;
+  wire mem_backbone_0.per_dout_val_12_ ;
+  wire mem_backbone_0.per_dout_val_13_ ;
+  wire mem_backbone_0.per_dout_val_14_ ;
+  wire mem_backbone_0.per_dout_val_15_ ;
+  wire mem_backbone_0.per_dout_val_1_ ;
+  wire mem_backbone_0.per_dout_val_2_ ;
+  wire mem_backbone_0.per_dout_val_3_ ;
+  wire mem_backbone_0.per_dout_val_4_ ;
+  wire mem_backbone_0.per_dout_val_5_ ;
+  wire mem_backbone_0.per_dout_val_6_ ;
+  wire mem_backbone_0.per_dout_val_7_ ;
+  wire mem_backbone_0.per_dout_val_8_ ;
+  wire mem_backbone_0.per_dout_val_9_ ;
+  wire mem_backbone_0.pmem_dout_bckup_0_ ;
+  wire mem_backbone_0.pmem_dout_bckup_10_ ;
+  wire mem_backbone_0.pmem_dout_bckup_11_ ;
+  wire mem_backbone_0.pmem_dout_bckup_12_ ;
+  wire mem_backbone_0.pmem_dout_bckup_13_ ;
+  wire mem_backbone_0.pmem_dout_bckup_14_ ;
+  wire mem_backbone_0.pmem_dout_bckup_15_ ;
+  wire mem_backbone_0.pmem_dout_bckup_1_ ;
+  wire mem_backbone_0.pmem_dout_bckup_2_ ;
+  wire mem_backbone_0.pmem_dout_bckup_3_ ;
+  wire mem_backbone_0.pmem_dout_bckup_4_ ;
+  wire mem_backbone_0.pmem_dout_bckup_5_ ;
+  wire mem_backbone_0.pmem_dout_bckup_6_ ;
+  wire mem_backbone_0.pmem_dout_bckup_7_ ;
+  wire mem_backbone_0.pmem_dout_bckup_8_ ;
+  wire mem_backbone_0.pmem_dout_bckup_9_ ;
+  wire mem_backbone_0.pmem_dout_bckup_sel ;
+  wire multiplier_0.acc_sel ;
+  wire multiplier_0.cycle_0_ ;
+  wire multiplier_0.cycle_1_ ;
+  wire multiplier_0.op1_0_ ;
+  wire multiplier_0.op1_10_ ;
+  wire multiplier_0.op1_11_ ;
+  wire multiplier_0.op1_12_ ;
+  wire multiplier_0.op1_13_ ;
+  wire multiplier_0.op1_14_ ;
+  wire multiplier_0.op1_15_ ;
+  wire multiplier_0.op1_1_ ;
+  wire multiplier_0.op1_2_ ;
+  wire multiplier_0.op1_3_ ;
+  wire multiplier_0.op1_4_ ;
+  wire multiplier_0.op1_5_ ;
+  wire multiplier_0.op1_6_ ;
+  wire multiplier_0.op1_7_ ;
+  wire multiplier_0.op1_8_ ;
+  wire multiplier_0.op1_9_ ;
+  wire multiplier_0.op2_0_ ;
+  wire multiplier_0.op2_10_ ;
+  wire multiplier_0.op2_11_ ;
+  wire multiplier_0.op2_12_ ;
+  wire multiplier_0.op2_13_ ;
+  wire multiplier_0.op2_14_ ;
+  wire multiplier_0.op2_15_ ;
+  wire multiplier_0.op2_1_ ;
+  wire multiplier_0.op2_2_ ;
+  wire multiplier_0.op2_3_ ;
+  wire multiplier_0.op2_4_ ;
+  wire multiplier_0.op2_5_ ;
+  wire multiplier_0.op2_6_ ;
+  wire multiplier_0.op2_7_ ;
+  wire multiplier_0.op2_8_ ;
+  wire multiplier_0.op2_9_ ;
+  wire multiplier_0.op2_wr ;
+  wire multiplier_0.per_dout_0_ ;
+  wire multiplier_0.per_dout_10_ ;
+  wire multiplier_0.per_dout_11_ ;
+  wire multiplier_0.per_dout_12_ ;
+  wire multiplier_0.per_dout_13_ ;
+  wire multiplier_0.per_dout_14_ ;
+  wire multiplier_0.per_dout_15_ ;
+  wire multiplier_0.per_dout_1_ ;
+  wire multiplier_0.per_dout_2_ ;
+  wire multiplier_0.per_dout_3_ ;
+  wire multiplier_0.per_dout_4_ ;
+  wire multiplier_0.per_dout_5_ ;
+  wire multiplier_0.per_dout_6_ ;
+  wire multiplier_0.per_dout_7_ ;
+  wire multiplier_0.per_dout_8_ ;
+  wire multiplier_0.per_dout_9_ ;
+  wire multiplier_0.reshi_0_ ;
+  wire multiplier_0.reshi_10_ ;
+  wire multiplier_0.reshi_11_ ;
+  wire multiplier_0.reshi_12_ ;
+  wire multiplier_0.reshi_13_ ;
+  wire multiplier_0.reshi_14_ ;
+  wire multiplier_0.reshi_15_ ;
+  wire multiplier_0.reshi_1_ ;
+  wire multiplier_0.reshi_2_ ;
+  wire multiplier_0.reshi_3_ ;
+  wire multiplier_0.reshi_4_ ;
+  wire multiplier_0.reshi_5_ ;
+  wire multiplier_0.reshi_6_ ;
+  wire multiplier_0.reshi_7_ ;
+  wire multiplier_0.reshi_8_ ;
+  wire multiplier_0.reshi_9_ ;
+  wire multiplier_0.reslo_0_ ;
+  wire multiplier_0.reslo_10_ ;
+  wire multiplier_0.reslo_11_ ;
+  wire multiplier_0.reslo_12_ ;
+  wire multiplier_0.reslo_13_ ;
+  wire multiplier_0.reslo_14_ ;
+  wire multiplier_0.reslo_15_ ;
+  wire multiplier_0.reslo_1_ ;
+  wire multiplier_0.reslo_2_ ;
+  wire multiplier_0.reslo_3_ ;
+  wire multiplier_0.reslo_4_ ;
+  wire multiplier_0.reslo_5_ ;
+  wire multiplier_0.reslo_6_ ;
+  wire multiplier_0.reslo_7_ ;
+  wire multiplier_0.reslo_8_ ;
+  wire multiplier_0.reslo_9_ ;
+  wire multiplier_0.sign_sel ;
+  wire multiplier_0.sumext_0_ ;
+  wire multiplier_0.sumext_10_ ;
   input nmi;
   wire nmi;
   output per_addr_0_;
@@ -7195,121 +7195,121 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   wire scan_enable;
   input scan_mode;
   wire scan_mode;
-  wire  sfr_0.cpu_nr_rd_10_ ;
-  wire  sfr_0.cpu_nr_rd_11_ ;
-  wire  sfr_0.cpu_nr_rd_12_ ;
-  wire  sfr_0.cpu_nr_rd_13_ ;
-  wire  sfr_0.cpu_nr_rd_2_ ;
-  wire  sfr_0.cpu_nr_rd_3_ ;
-  wire  sfr_0.cpu_nr_rd_4_ ;
-  wire  sfr_0.cpu_nr_rd_5_ ;
-  wire  sfr_0.cpu_nr_rd_6_ ;
-  wire  sfr_0.cpu_nr_rd_7_ ;
-  wire  sfr_0.cpu_nr_rd_9_ ;
-  wire  sfr_0.ie1_0_ ;
-  wire  sfr_0.ifg1_0_ ;
-  wire  sfr_0.per_dout_0_ ;
-  wire  sfr_0.per_dout_14_ ;
-  wire  sfr_0.per_dout_15_ ;
-  wire  sfr_0.per_dout_1_ ;
-  wire  sfr_0.per_dout_8_ ;
-  wire  sfr_0.wdtifg_sw_clr ;
-  wire  sfr_0.wdtifg_sw_set ;
+  wire sfr_0.cpu_nr_rd_10_ ;
+  wire sfr_0.cpu_nr_rd_11_ ;
+  wire sfr_0.cpu_nr_rd_12_ ;
+  wire sfr_0.cpu_nr_rd_13_ ;
+  wire sfr_0.cpu_nr_rd_2_ ;
+  wire sfr_0.cpu_nr_rd_3_ ;
+  wire sfr_0.cpu_nr_rd_4_ ;
+  wire sfr_0.cpu_nr_rd_5_ ;
+  wire sfr_0.cpu_nr_rd_6_ ;
+  wire sfr_0.cpu_nr_rd_7_ ;
+  wire sfr_0.cpu_nr_rd_9_ ;
+  wire sfr_0.ie1_0_ ;
+  wire sfr_0.ifg1_0_ ;
+  wire sfr_0.per_dout_0_ ;
+  wire sfr_0.per_dout_14_ ;
+  wire sfr_0.per_dout_15_ ;
+  wire sfr_0.per_dout_1_ ;
+  wire sfr_0.per_dout_8_ ;
+  wire sfr_0.wdtifg_sw_clr ;
+  wire sfr_0.wdtifg_sw_set ;
   output smclk;
   wire smclk;
   output smclk_en;
   wire smclk_en;
-  wire  watchdog_0.per_dout_0_ ;
-  wire  watchdog_0.per_dout_11_ ;
-  wire  watchdog_0.per_dout_1_ ;
-  wire  watchdog_0.per_dout_2_ ;
-  wire  watchdog_0.per_dout_4_ ;
-  wire  watchdog_0.per_dout_7_ ;
-  wire  watchdog_0.wdtcnt_0_ ;
-  wire  watchdog_0.wdtcnt_10_ ;
-  wire  watchdog_0.wdtcnt_11_ ;
-  wire  watchdog_0.wdtcnt_12_ ;
-  wire  watchdog_0.wdtcnt_13_ ;
-  wire  watchdog_0.wdtcnt_14_ ;
-  wire  watchdog_0.wdtcnt_15_ ;
-  wire  watchdog_0.wdtcnt_1_ ;
-  wire  watchdog_0.wdtcnt_2_ ;
-  wire  watchdog_0.wdtcnt_3_ ;
-  wire  watchdog_0.wdtcnt_4_ ;
-  wire  watchdog_0.wdtcnt_5_ ;
-  wire  watchdog_0.wdtcnt_6_ ;
-  wire  watchdog_0.wdtcnt_7_ ;
-  wire  watchdog_0.wdtcnt_8_ ;
-  wire  watchdog_0.wdtcnt_9_ ;
-  wire  watchdog_0.wdtctl_0_ ;
-  wire  watchdog_0.wdtctl_1_ ;
-  wire  watchdog_0.wdtctl_2_ ;
-  wire  watchdog_0.wdtctl_4_ ;
-  wire  watchdog_0.wdtctl_7_ ;
+  wire watchdog_0.per_dout_0_ ;
+  wire watchdog_0.per_dout_11_ ;
+  wire watchdog_0.per_dout_1_ ;
+  wire watchdog_0.per_dout_2_ ;
+  wire watchdog_0.per_dout_4_ ;
+  wire watchdog_0.per_dout_7_ ;
+  wire watchdog_0.wdtcnt_0_ ;
+  wire watchdog_0.wdtcnt_10_ ;
+  wire watchdog_0.wdtcnt_11_ ;
+  wire watchdog_0.wdtcnt_12_ ;
+  wire watchdog_0.wdtcnt_13_ ;
+  wire watchdog_0.wdtcnt_14_ ;
+  wire watchdog_0.wdtcnt_15_ ;
+  wire watchdog_0.wdtcnt_1_ ;
+  wire watchdog_0.wdtcnt_2_ ;
+  wire watchdog_0.wdtcnt_3_ ;
+  wire watchdog_0.wdtcnt_4_ ;
+  wire watchdog_0.wdtcnt_5_ ;
+  wire watchdog_0.wdtcnt_6_ ;
+  wire watchdog_0.wdtcnt_7_ ;
+  wire watchdog_0.wdtcnt_8_ ;
+  wire watchdog_0.wdtcnt_9_ ;
+  wire watchdog_0.wdtctl_0_ ;
+  wire watchdog_0.wdtctl_1_ ;
+  wire watchdog_0.wdtctl_2_ ;
+  wire watchdog_0.wdtctl_4_ ;
+  wire watchdog_0.wdtctl_7_ ;
   input wkup;
   wire wkup;
   INVX1 _05697_ (
-    .A( multiplier_0.per_dout_0_ ),
+    .A(multiplier_0.per_dout_0_ ),
     .Y(_00045_)
   );
   INVX1 _05698_ (
-    .A( multiplier_0.per_dout_1_ ),
+    .A(multiplier_0.per_dout_1_ ),
     .Y(_00046_)
   );
   INVX1 _05699_ (
-    .A( multiplier_0.per_dout_2_ ),
+    .A(multiplier_0.per_dout_2_ ),
     .Y(_00047_)
   );
   INVX1 _05700_ (
-    .A( multiplier_0.per_dout_3_ ),
+    .A(multiplier_0.per_dout_3_ ),
     .Y(_00000_)
   );
   INVX1 _05701_ (
-    .A( multiplier_0.per_dout_4_ ),
+    .A(multiplier_0.per_dout_4_ ),
     .Y(_00001_)
   );
   INVX1 _05702_ (
-    .A( multiplier_0.per_dout_5_ ),
+    .A(multiplier_0.per_dout_5_ ),
     .Y(_00002_)
   );
   INVX1 _05703_ (
-    .A( multiplier_0.per_dout_6_ ),
+    .A(multiplier_0.per_dout_6_ ),
     .Y(_00003_)
   );
   INVX1 _05704_ (
-    .A( multiplier_0.per_dout_7_ ),
+    .A(multiplier_0.per_dout_7_ ),
     .Y(_00004_)
   );
   INVX1 _05705_ (
-    .A( multiplier_0.per_dout_8_ ),
+    .A(multiplier_0.per_dout_8_ ),
     .Y(_00005_)
   );
   INVX1 _05706_ (
-    .A( multiplier_0.per_dout_9_ ),
+    .A(multiplier_0.per_dout_9_ ),
     .Y(_00006_)
   );
   INVX1 _05707_ (
-    .A( multiplier_0.per_dout_10_ ),
+    .A(multiplier_0.per_dout_10_ ),
     .Y(_00007_)
   );
   INVX1 _05708_ (
-    .A( multiplier_0.per_dout_11_ ),
+    .A(multiplier_0.per_dout_11_ ),
     .Y(_00008_)
   );
   INVX1 _05709_ (
-    .A( multiplier_0.per_dout_12_ ),
+    .A(multiplier_0.per_dout_12_ ),
     .Y(_00009_)
   );
   INVX1 _05710_ (
-    .A( multiplier_0.per_dout_13_ ),
+    .A(multiplier_0.per_dout_13_ ),
     .Y(_00010_)
   );
   INVX1 _05711_ (
-    .A( multiplier_0.per_dout_14_ ),
+    .A(multiplier_0.per_dout_14_ ),
     .Y(_00011_)
   );
   INVX1 _05712_ (
-    .A( multiplier_0.per_dout_15_ ),
+    .A(multiplier_0.per_dout_15_ ),
     .Y(_00012_)
   );
   NOR2X1 _05713_ (
@@ -7318,55 +7318,55 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00013_)
   );
   NOR2X1 _05714_ (
-    .A( sfr_0.per_dout_0_ ),
-    .B( watchdog_0.per_dout_0_ ),
+    .A(sfr_0.per_dout_0_ ),
+    .B(watchdog_0.per_dout_0_ ),
     .Y(_00014_)
   );
   NAND3X1 _05715_ (
     .A(_00045_),
     .B(_00013_),
     .C(_00014_),
-    .Y( mem_backbone_0.per_dout_0_ )
+    .Y(mem_backbone_0.per_dout_0_ )
   );
   NOR2X1 _05716_ (
-    .A( clock_module_0.bcsctl2_rd_1_ ),
+    .A(clock_module_0.bcsctl2_rd_1_ ),
     .B(per_dout_1_),
     .Y(_00015_)
   );
   NOR2X1 _05717_ (
-    .A( sfr_0.per_dout_1_ ),
-    .B( watchdog_0.per_dout_1_ ),
+    .A(sfr_0.per_dout_1_ ),
+    .B(watchdog_0.per_dout_1_ ),
     .Y(_00016_)
   );
   NAND3X1 _05718_ (
     .A(_00046_),
     .B(_00015_),
     .C(_00016_),
-    .Y( mem_backbone_0.per_dout_1_ )
+    .Y(mem_backbone_0.per_dout_1_ )
   );
   NOR2X1 _05719_ (
-    .A( clock_module_0.bcsctl2_rd_2_ ),
+    .A(clock_module_0.bcsctl2_rd_2_ ),
     .B(per_dout_2_),
     .Y(_00017_)
   );
   NOR2X1 _05720_ (
-    .A( sfr_0.cpu_nr_rd_2_ ),
-    .B( watchdog_0.per_dout_2_ ),
+    .A(sfr_0.cpu_nr_rd_2_ ),
+    .B(watchdog_0.per_dout_2_ ),
     .Y(_00018_)
   );
   NAND3X1 _05721_ (
     .A(_00047_),
     .B(_00017_),
     .C(_00018_),
-    .Y( mem_backbone_0.per_dout_2_ )
+    .Y(mem_backbone_0.per_dout_2_ )
   );
   NOR2X1 _05722_ (
-    .A( clock_module_0.bcsctl2_rd_3_ ),
+    .A(clock_module_0.bcsctl2_rd_3_ ),
     .B(per_dout_3_),
     .Y(_00019_)
   );
   NOR2X1 _05723_ (
-    .A( sfr_0.cpu_nr_rd_3_ ),
+    .A(sfr_0.cpu_nr_rd_3_ ),
     .B(1'h0),
     .Y(_00020_)
   );
@@ -7374,7 +7374,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00000_),
     .B(_00019_),
     .C(_00020_),
-    .Y( mem_backbone_0.per_dout_3_ )
+    .Y(mem_backbone_0.per_dout_3_ )
   );
   NOR2X1 _05725_ (
     .A(1'h0),
@@ -7382,15 +7382,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00021_)
   );
   NOR2X1 _05726_ (
-    .A( sfr_0.cpu_nr_rd_4_ ),
-    .B( watchdog_0.per_dout_4_ ),
+    .A(sfr_0.cpu_nr_rd_4_ ),
+    .B(watchdog_0.per_dout_4_ ),
     .Y(_00022_)
   );
   NAND3X1 _05727_ (
     .A(_00001_),
     .B(_00021_),
     .C(_00022_),
-    .Y( mem_backbone_0.per_dout_4_ )
+    .Y(mem_backbone_0.per_dout_4_ )
   );
   NOR2X1 _05728_ (
     .A(1'h0),
@@ -7398,7 +7398,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00023_)
   );
   NOR2X1 _05729_ (
-    .A( sfr_0.cpu_nr_rd_5_ ),
+    .A(sfr_0.cpu_nr_rd_5_ ),
     .B(1'h0),
     .Y(_00024_)
   );
@@ -7406,7 +7406,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00002_),
     .B(_00023_),
     .C(_00024_),
-    .Y( mem_backbone_0.per_dout_5_ )
+    .Y(mem_backbone_0.per_dout_5_ )
   );
   NOR2X1 _05731_ (
     .A(1'h0),
@@ -7414,7 +7414,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00025_)
   );
   NOR2X1 _05732_ (
-    .A( sfr_0.cpu_nr_rd_6_ ),
+    .A(sfr_0.cpu_nr_rd_6_ ),
     .B(1'h0),
     .Y(_00026_)
   );
@@ -7422,7 +7422,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00003_),
     .B(_00025_),
     .C(_00026_),
-    .Y( mem_backbone_0.per_dout_6_ )
+    .Y(mem_backbone_0.per_dout_6_ )
   );
   NOR2X1 _05734_ (
     .A(1'h0),
@@ -7430,15 +7430,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00027_)
   );
   NOR2X1 _05735_ (
-    .A( sfr_0.cpu_nr_rd_7_ ),
-    .B( watchdog_0.per_dout_7_ ),
+    .A(sfr_0.cpu_nr_rd_7_ ),
+    .B(watchdog_0.per_dout_7_ ),
     .Y(_00028_)
   );
   NAND3X1 _05736_ (
     .A(_00004_),
     .B(_00027_),
     .C(_00028_),
-    .Y( mem_backbone_0.per_dout_7_ )
+    .Y(mem_backbone_0.per_dout_7_ )
   );
   NOR2X1 _05737_ (
     .A(1'h0),
@@ -7446,15 +7446,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00029_)
   );
   NOR2X1 _05738_ (
-    .A( sfr_0.per_dout_8_ ),
-    .B( watchdog_0.per_dout_11_ ),
+    .A(sfr_0.per_dout_8_ ),
+    .B(watchdog_0.per_dout_11_ ),
     .Y(_00030_)
   );
   NAND3X1 _05739_ (
     .A(_00005_),
     .B(_00029_),
     .C(_00030_),
-    .Y( mem_backbone_0.per_dout_8_ )
+    .Y(mem_backbone_0.per_dout_8_ )
   );
   NOR2X1 _05740_ (
     .A(1'h0),
@@ -7462,7 +7462,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00031_)
   );
   NOR2X1 _05741_ (
-    .A( sfr_0.cpu_nr_rd_9_ ),
+    .A(sfr_0.cpu_nr_rd_9_ ),
     .B(1'h0),
     .Y(_00032_)
   );
@@ -7470,7 +7470,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00006_),
     .B(_00031_),
     .C(_00032_),
-    .Y( mem_backbone_0.per_dout_9_ )
+    .Y(mem_backbone_0.per_dout_9_ )
   );
   NOR2X1 _05743_ (
     .A(1'h0),
@@ -7478,7 +7478,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00033_)
   );
   NOR2X1 _05744_ (
-    .A( sfr_0.cpu_nr_rd_10_ ),
+    .A(sfr_0.cpu_nr_rd_10_ ),
     .B(1'h0),
     .Y(_00034_)
   );
@@ -7486,7 +7486,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00007_),
     .B(_00033_),
     .C(_00034_),
-    .Y( mem_backbone_0.per_dout_10_ )
+    .Y(mem_backbone_0.per_dout_10_ )
   );
   NOR2X1 _05746_ (
     .A(1'h0),
@@ -7494,23 +7494,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00035_)
   );
   NOR2X1 _05747_ (
-    .A( sfr_0.cpu_nr_rd_11_ ),
-    .B( watchdog_0.per_dout_11_ ),
+    .A(sfr_0.cpu_nr_rd_11_ ),
+    .B(watchdog_0.per_dout_11_ ),
     .Y(_00036_)
   );
   NAND3X1 _05748_ (
     .A(_00008_),
     .B(_00035_),
     .C(_00036_),
-    .Y( mem_backbone_0.per_dout_11_ )
+    .Y(mem_backbone_0.per_dout_11_ )
   );
   NOR2X1 _05749_ (
-    .A( clock_module_0.bcsctl1_rd_12_ ),
+    .A(clock_module_0.bcsctl1_rd_12_ ),
     .B(per_dout_12_),
     .Y(_00037_)
   );
   NOR2X1 _05750_ (
-    .A( sfr_0.cpu_nr_rd_12_ ),
+    .A(sfr_0.cpu_nr_rd_12_ ),
     .B(1'h0),
     .Y(_00038_)
   );
@@ -7518,23 +7518,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00009_),
     .B(_00037_),
     .C(_00038_),
-    .Y( mem_backbone_0.per_dout_12_ )
+    .Y(mem_backbone_0.per_dout_12_ )
   );
   NOR2X1 _05752_ (
-    .A( clock_module_0.bcsctl1_rd_13_ ),
+    .A(clock_module_0.bcsctl1_rd_13_ ),
     .B(per_dout_13_),
     .Y(_00039_)
   );
   NOR2X1 _05753_ (
-    .A( sfr_0.cpu_nr_rd_13_ ),
-    .B( watchdog_0.per_dout_11_ ),
+    .A(sfr_0.cpu_nr_rd_13_ ),
+    .B(watchdog_0.per_dout_11_ ),
     .Y(_00040_)
   );
   NAND3X1 _05754_ (
     .A(_00010_),
     .B(_00039_),
     .C(_00040_),
-    .Y( mem_backbone_0.per_dout_13_ )
+    .Y(mem_backbone_0.per_dout_13_ )
   );
   NOR2X1 _05755_ (
     .A(1'h0),
@@ -7542,15 +7542,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00041_)
   );
   NOR2X1 _05756_ (
-    .A( sfr_0.per_dout_14_ ),
-    .B( watchdog_0.per_dout_11_ ),
+    .A(sfr_0.per_dout_14_ ),
+    .B(watchdog_0.per_dout_11_ ),
     .Y(_00042_)
   );
   NAND3X1 _05757_ (
     .A(_00011_),
     .B(_00041_),
     .C(_00042_),
-    .Y( mem_backbone_0.per_dout_14_ )
+    .Y(mem_backbone_0.per_dout_14_ )
   );
   NOR2X1 _05758_ (
     .A(1'h0),
@@ -7558,7 +7558,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00043_)
   );
   NOR2X1 _05759_ (
-    .A( sfr_0.per_dout_15_ ),
+    .A(sfr_0.per_dout_15_ ),
     .B(1'h0),
     .Y(_00044_)
   );
@@ -7566,22 +7566,22 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00012_),
     .B(_00043_),
     .C(_00044_),
-    .Y( mem_backbone_0.per_dout_15_ )
+    .Y(mem_backbone_0.per_dout_15_ )
   );
   INVX1 _05761_ (
-    .A( clock_module_0.aclk_div_0_ ),
+    .A(clock_module_0.aclk_div_0_ ),
     .Y(_00097_)
   );
   INVX1 _05762_ (
     .A(reset_n),
-    .Y( clock_module_0.por_a )
+    .Y(clock_module_0.por_a )
   );
   INVX1 _05763_ (
     .A(dbg_en),
-    .Y( clock_module_0.dbg_rst_nxt )
+    .Y(clock_module_0.dbg_rst_nxt )
   );
   INVX1 _05764_ (
-    .A( clock_module_0.puc_noscan_n ),
+    .A(clock_module_0.puc_noscan_n ),
     .Y(_05695_)
   );
   INVX1 _05765_ (
@@ -7597,47 +7597,47 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00100_)
   );
   INVX1 _05768_ (
-    .A( clock_module_0.bcsctl2_2_ ),
+    .A(clock_module_0.bcsctl2_2_ ),
     .Y(_00101_)
   );
   INVX1 _05769_ (
-    .A( clock_module_0.bcsctl1_4_ ),
+    .A(clock_module_0.bcsctl1_4_ ),
     .Y(_00102_)
   );
   INVX1 _05770_ (
-    .A( clock_module_0.lfxt_clk_dly ),
+    .A(clock_module_0.lfxt_clk_dly ),
     .Y(_00103_)
   );
   INVX1 _05771_ (
-    .A( clock_module_0.oscoff ),
+    .A(clock_module_0.oscoff ),
     .Y(_00104_)
   );
   INVX1 _05772_ (
-    .A( clock_module_0.aclk_div_1_ ),
+    .A(clock_module_0.aclk_div_1_ ),
     .Y(_00105_)
   );
   INVX1 _05773_ (
-    .A( clock_module_0.smclk_div_1_ ),
+    .A(clock_module_0.smclk_div_1_ ),
     .Y(_00106_)
   );
   INVX1 _05774_ (
-    .A( clock_module_0.smclk_div_2_ ),
+    .A(clock_module_0.smclk_div_2_ ),
     .Y(_00107_)
   );
   INVX1 _05775_ (
-    .A( clock_module_0.por ),
+    .A(clock_module_0.por ),
     .Y(_00050_)
   );
   NOR2X1 _05776_ (
-    .A( clock_module_0.dbg_rst_nxt ),
-    .B( clock_module_0.puc_noscan_n ),
+    .A(clock_module_0.dbg_rst_nxt ),
+    .B(clock_module_0.puc_noscan_n ),
     .Y(_00108_)
   );
   AOI21X1 _05777_ (
-    .A( clock_module_0.dbg_rst ),
+    .A(clock_module_0.dbg_rst ),
     .B(_00108_),
-    .C( clock_module_0.dbg_cpu_reset ),
-    .Y( clock_module_0.sync_cell_puc.data_in )
+    .C(clock_module_0.dbg_cpu_reset ),
+    .Y(clock_module_0.sync_cell_puc.data_in )
   );
   NOR2X1 _05778_ (
     .A(_05632_),
@@ -7717,19 +7717,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00063_)
   );
   AND2X1 _05793_ (
-    .A( clock_module_0.bcsctl2_1_ ),
+    .A(clock_module_0.bcsctl2_1_ ),
     .B(_00063_),
-    .Y( clock_module_0.bcsctl2_rd_1_ )
+    .Y(clock_module_0.bcsctl2_rd_1_ )
   );
   AND2X1 _05794_ (
-    .A( clock_module_0.bcsctl2_2_ ),
+    .A(clock_module_0.bcsctl2_2_ ),
     .B(_00063_),
-    .Y( clock_module_0.bcsctl2_rd_2_ )
+    .Y(clock_module_0.bcsctl2_rd_2_ )
   );
   AND2X1 _05795_ (
-    .A( clock_module_0.bcsctl2_3_ ),
+    .A(clock_module_0.bcsctl2_3_ ),
     .B(_00063_),
-    .Y( clock_module_0.bcsctl2_rd_3_ )
+    .Y(clock_module_0.bcsctl2_rd_3_ )
   );
   NAND2X1 _05796_ (
     .A(_05634_),
@@ -7748,45 +7748,45 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00066_)
   );
   AND2X1 _05799_ (
-    .A( clock_module_0.bcsctl1_4_ ),
+    .A(clock_module_0.bcsctl1_4_ ),
     .B(_00066_),
-    .Y( clock_module_0.bcsctl1_rd_12_ )
+    .Y(clock_module_0.bcsctl1_rd_12_ )
   );
   AND2X1 _05800_ (
-    .A( clock_module_0.bcsctl1_5_ ),
+    .A(clock_module_0.bcsctl1_5_ ),
     .B(_00066_),
-    .Y( clock_module_0.bcsctl1_rd_13_ )
+    .Y(clock_module_0.bcsctl1_rd_13_ )
   );
   OAI21X1 _05801_ (
     .A(_00102_),
-    .B( clock_module_0.aclk_div_2_ ),
-    .C( clock_module_0.aclk_div_1_ ),
+    .B(clock_module_0.aclk_div_2_ ),
+    .C(clock_module_0.aclk_div_1_ ),
     .Y(_00067_)
   );
   OR2X1 _05802_ (
-    .A( clock_module_0.bcsctl1_4_ ),
-    .B( clock_module_0.bcsctl1_5_ ),
+    .A(clock_module_0.bcsctl1_4_ ),
+    .B(clock_module_0.bcsctl1_5_ ),
     .Y(_00068_)
   );
   OAI21X1 _05803_ (
-    .A( clock_module_0.bcsctl1_4_ ),
-    .B( clock_module_0.bcsctl1_5_ ),
+    .A(clock_module_0.bcsctl1_4_ ),
+    .B(clock_module_0.bcsctl1_5_ ),
     .C(_00097_),
     .Y(_00069_)
   );
   NAND2X1 _05804_ (
     .A(_00103_),
-    .B( clock_module_0.lfxt_clk_s ),
+    .B(clock_module_0.lfxt_clk_s ),
     .Y(_00070_)
   );
   NOR2X1 _05805_ (
-    .A( clock_module_0.oscoff ),
+    .A(clock_module_0.oscoff ),
     .B(_00070_),
     .Y(_00071_)
   );
   NAND3X1 _05806_ (
     .A(_00103_),
-    .B( clock_module_0.lfxt_clk_s ),
+    .B(clock_module_0.lfxt_clk_s ),
     .C(_00104_),
     .Y(_00072_)
   );
@@ -7797,32 +7797,32 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00073_)
   );
   AOI21X1 _05808_ (
-    .A( clock_module_0.bcsctl1_5_ ),
+    .A(clock_module_0.bcsctl1_5_ ),
     .B(_00067_),
     .C(_00073_),
     .Y(_00048_)
   );
   AOI21X1 _05809_ (
-    .A( clock_module_0.bcsctl2_3_ ),
+    .A(clock_module_0.bcsctl2_3_ ),
     .B(_00072_),
-    .C( clock_module_0.scg1 ),
+    .C(clock_module_0.scg1 ),
     .Y(_00074_)
   );
   AOI21X1 _05810_ (
-    .A( clock_module_0.bcsctl2_1_ ),
+    .A(clock_module_0.bcsctl2_1_ ),
     .B(_00107_),
     .C(_00106_),
     .Y(_00075_)
   );
   OR2X1 _05811_ (
-    .A( clock_module_0.bcsctl2_1_ ),
-    .B( clock_module_0.bcsctl2_2_ ),
+    .A(clock_module_0.bcsctl2_1_ ),
+    .B(clock_module_0.bcsctl2_2_ ),
     .Y(_00076_)
   );
   OAI21X1 _05812_ (
     .A(_00101_),
     .B(_00075_),
-    .C( clock_module_0.smclk_div_0_ ),
+    .C(clock_module_0.smclk_div_0_ ),
     .Y(_00077_)
   );
   NAND2X1 _05813_ (
@@ -7837,9 +7837,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00049_)
   );
   OR2X1 _05815_ (
-    .A( clock_module_0.wdt_reset ),
-    .B( clock_module_0.por ),
-    .Y( clock_module_0.puc_a )
+    .A(clock_module_0.wdt_reset ),
+    .B(clock_module_0.por ),
+    .Y(clock_module_0.puc_a )
   );
   NOR2X1 _05816_ (
     .A(_05641_),
@@ -7876,7 +7876,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00084_)
   );
   MUX2X1 _05822_ (
-    .A( clock_module_0.bcsctl2_1_ ),
+    .A(clock_module_0.bcsctl2_1_ ),
     .B(_05650_),
     .S(_00084_),
     .Y(_00085_)
@@ -7886,7 +7886,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00051_)
   );
   MUX2X1 _05824_ (
-    .A( clock_module_0.bcsctl2_2_ ),
+    .A(clock_module_0.bcsctl2_2_ ),
     .B(_05651_),
     .S(_00084_),
     .Y(_00086_)
@@ -7896,7 +7896,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00052_)
   );
   MUX2X1 _05826_ (
-    .A( clock_module_0.bcsctl2_3_ ),
+    .A(clock_module_0.bcsctl2_3_ ),
     .B(_05652_),
     .S(_00084_),
     .Y(_00087_)
@@ -7906,19 +7906,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00053_)
   );
   OAI21X1 _05828_ (
-    .A( clock_module_0.bcsctl2_1_ ),
-    .B( clock_module_0.bcsctl2_2_ ),
+    .A(clock_module_0.bcsctl2_1_ ),
+    .B(clock_module_0.bcsctl2_2_ ),
     .C(_00074_),
     .Y(_00088_)
   );
   NAND3X1 _05829_ (
-    .A( clock_module_0.smclk_div_0_ ),
+    .A(clock_module_0.smclk_div_0_ ),
     .B(_00074_),
     .C(_00076_),
     .Y(_00089_)
   );
   XNOR2X1 _05830_ (
-    .A( clock_module_0.smclk_div_0_ ),
+    .A(clock_module_0.smclk_div_0_ ),
     .B(_00088_),
     .Y(_00054_)
   );
@@ -7928,7 +7928,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00090_)
   );
   XNOR2X1 _05832_ (
-    .A( clock_module_0.smclk_div_1_ ),
+    .A(clock_module_0.smclk_div_1_ ),
     .B(_00089_),
     .Y(_00055_)
   );
@@ -7938,19 +7938,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00056_)
   );
   OAI21X1 _05834_ (
-    .A( clock_module_0.bcsctl1_4_ ),
-    .B( clock_module_0.bcsctl1_5_ ),
+    .A(clock_module_0.bcsctl1_4_ ),
+    .B(clock_module_0.bcsctl1_5_ ),
     .C(_00071_),
     .Y(_00091_)
   );
   NAND3X1 _05835_ (
-    .A( clock_module_0.aclk_div_0_ ),
+    .A(clock_module_0.aclk_div_0_ ),
     .B(_00068_),
     .C(_00071_),
     .Y(_00092_)
   );
   XNOR2X1 _05836_ (
-    .A( clock_module_0.aclk_div_0_ ),
+    .A(clock_module_0.aclk_div_0_ ),
     .B(_00091_),
     .Y(_00057_)
   );
@@ -7960,12 +7960,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00093_)
   );
   XNOR2X1 _05838_ (
-    .A( clock_module_0.aclk_div_1_ ),
+    .A(clock_module_0.aclk_div_1_ ),
     .B(_00092_),
     .Y(_00058_)
   );
   XOR2X1 _05839_ (
-    .A( clock_module_0.aclk_div_2_ ),
+    .A(clock_module_0.aclk_div_2_ ),
     .B(_00093_),
     .Y(_00059_)
   );
@@ -7976,7 +7976,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00094_)
   );
   MUX2X1 _05841_ (
-    .A( clock_module_0.bcsctl1_4_ ),
+    .A(clock_module_0.bcsctl1_4_ ),
     .B(_05646_),
     .S(_00094_),
     .Y(_00095_)
@@ -7986,7 +7986,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00060_)
   );
   MUX2X1 _05843_ (
-    .A( clock_module_0.bcsctl1_5_ ),
+    .A(clock_module_0.bcsctl1_5_ ),
     .B(_05647_),
     .S(_00094_),
     .Y(_00096_)
@@ -7997,325 +7997,325 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   DFFSR _05845_ (
     .CLK(dco_clk),
-    .D( clock_module_0.dbg_rst_nxt ),
-    .Q( clock_module_0.dbg_rst ),
+    .D(clock_module_0.dbg_rst_nxt ),
+    .Q(clock_module_0.dbg_rst ),
     .R(1'h1),
     .S(_00050_)
   );
   DFFSR _05846_ (
     .CLK(dco_clk),
     .D(_00051_),
-    .Q( clock_module_0.bcsctl2_1_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.bcsctl2_1_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05847_ (
     .CLK(dco_clk),
     .D(_00052_),
-    .Q( clock_module_0.bcsctl2_2_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.bcsctl2_2_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05848_ (
     .CLK(dco_clk),
     .D(_00053_),
-    .Q( clock_module_0.bcsctl2_3_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.bcsctl2_3_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05849_ (
     .CLK(dco_clk),
     .D(_00049_),
     .Q(_05696_),
-    .R( clock_module_0.puc_noscan_n ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05850_ (
     .CLK(dco_clk),
     .D(_00048_),
     .Q(_05581_),
-    .R( clock_module_0.puc_noscan_n ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05851_ (
     .CLK(dco_clk),
     .D(_00054_),
-    .Q( clock_module_0.smclk_div_0_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.smclk_div_0_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05852_ (
     .CLK(dco_clk),
     .D(_00055_),
-    .Q( clock_module_0.smclk_div_1_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.smclk_div_1_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05853_ (
     .CLK(dco_clk),
     .D(_00056_),
-    .Q( clock_module_0.smclk_div_2_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.smclk_div_2_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05854_ (
     .CLK(dco_clk),
-    .D( clock_module_0.lfxt_clk_s ),
-    .Q( clock_module_0.lfxt_clk_dly ),
+    .D(clock_module_0.lfxt_clk_s ),
+    .Q(clock_module_0.lfxt_clk_dly ),
     .R(_00050_),
     .S(1'h1)
   );
   DFFSR _05855_ (
     .CLK(dco_clk),
     .D(_00057_),
-    .Q( clock_module_0.aclk_div_0_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.aclk_div_0_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05856_ (
     .CLK(dco_clk),
     .D(_00058_),
-    .Q( clock_module_0.aclk_div_1_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.aclk_div_1_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05857_ (
     .CLK(dco_clk),
     .D(_00059_),
-    .Q( clock_module_0.aclk_div_2_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.aclk_div_2_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05858_ (
     .CLK(dco_clk),
     .D(_00060_),
-    .Q( clock_module_0.bcsctl1_4_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.bcsctl1_4_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   DFFSR _05859_ (
     .CLK(dco_clk),
     .D(_00061_),
-    .Q( clock_module_0.bcsctl1_5_ ),
-    .R( clock_module_0.puc_noscan_n ),
+    .Q(clock_module_0.bcsctl1_5_ ),
+    .R(clock_module_0.puc_noscan_n ),
     .S(1'h1)
   );
   INVX1 _05860_ (
-    .A( clock_module_0.por ),
+    .A(clock_module_0.por ),
     .Y(_00122_)
   );
   DFFSR _05861_ (
     .CLK(dco_clk),
     .D(lfxt_clk),
-    .Q( clock_module_0.sync_cell_lfxt_clk.data_sync_0_ ),
+    .Q(clock_module_0.sync_cell_lfxt_clk.data_sync_0_ ),
     .R(_00122_),
     .S(1'h1)
   );
   DFFSR _05862_ (
     .CLK(dco_clk),
-    .D( clock_module_0.sync_cell_lfxt_clk.data_sync_0_ ),
-    .Q( clock_module_0.lfxt_clk_s ),
+    .D(clock_module_0.sync_cell_lfxt_clk.data_sync_0_ ),
+    .Q(clock_module_0.lfxt_clk_s ),
     .R(_00122_),
     .S(1'h1)
   );
   INVX1 _05863_ (
-    .A( clock_module_0.puc_a ),
+    .A(clock_module_0.puc_a ),
     .Y(_00123_)
   );
   DFFSR _05864_ (
     .CLK(dco_clk),
-    .D( clock_module_0.sync_cell_puc.data_in ),
-    .Q( clock_module_0.sync_cell_puc.data_sync_0_ ),
+    .D(clock_module_0.sync_cell_puc.data_in ),
+    .Q(clock_module_0.sync_cell_puc.data_sync_0_ ),
     .R(_00123_),
     .S(1'h1)
   );
   DFFSR _05865_ (
     .CLK(dco_clk),
-    .D( clock_module_0.sync_cell_puc.data_sync_0_ ),
-    .Q( clock_module_0.puc_noscan_n ),
+    .D(clock_module_0.sync_cell_puc.data_sync_0_ ),
+    .Q(clock_module_0.puc_noscan_n ),
     .R(_00123_),
     .S(1'h1)
   );
   INVX1 _05866_ (
-    .A( clock_module_0.por_a ),
+    .A(clock_module_0.por_a ),
     .Y(_00124_)
   );
   DFFSR _05867_ (
     .CLK(dco_clk),
     .D(1'h0),
-    .Q( clock_module_0.sync_reset_por.data_sync_0_ ),
+    .Q(clock_module_0.sync_reset_por.data_sync_0_ ),
     .R(1'h1),
     .S(_00124_)
   );
   DFFSR _05868_ (
     .CLK(dco_clk),
-    .D( clock_module_0.sync_reset_por.data_sync_0_ ),
-    .Q( clock_module_0.por ),
+    .D(clock_module_0.sync_reset_por.data_sync_0_ ),
+    .Q(clock_module_0.por ),
     .R(1'h1),
     .S(_00124_)
   );
   INVX1 _05869_ (
-    .A( dbg_0.mem_cnt_8_ ),
+    .A(dbg_0.mem_cnt_8_ ),
     .Y(_00189_)
   );
   INVX1 _05870_ (
-    .A( dbg_0.mem_cnt_13_ ),
+    .A(dbg_0.mem_cnt_13_ ),
     .Y(_00190_)
   );
   INVX1 _05871_ (
-    .A( dbg_0.mem_cnt_12_ ),
+    .A(dbg_0.mem_cnt_12_ ),
     .Y(_00191_)
   );
   INVX1 _05872_ (
-    .A( dbg_0.mem_cnt_14_ ),
+    .A(dbg_0.mem_cnt_14_ ),
     .Y(_00192_)
   );
   INVX1 _05873_ (
-    .A( dbg_0.mem_state_1_ ),
+    .A(dbg_0.mem_state_1_ ),
     .Y(_00193_)
   );
   INVX1 _05874_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .Y(_00194_)
   );
   INVX1 _05875_ (
-    .A( dbg_0.dbg_addr_0_ ),
+    .A(dbg_0.dbg_addr_0_ ),
     .Y(_00195_)
   );
   INVX1 _05876_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst ),
+    .A(dbg_0.dbg_i2c_0.mem_burst ),
     .Y(_00196_)
   );
   INVX1 _05877_ (
-    .A( dbg_0.mem_ctl_1_ ),
+    .A(dbg_0.mem_ctl_1_ ),
     .Y(_00197_)
   );
   INVX1 _05878_ (
-    .A( dbg_0.dbg_mem_rd_dly ),
+    .A(dbg_0.dbg_mem_rd_dly ),
     .Y(_00198_)
   );
   INVX1 _05879_ (
-    .A( dbg_0.dbg_mem_addr_0_ ),
+    .A(dbg_0.dbg_mem_addr_0_ ),
     .Y(_00199_)
   );
   INVX1 _05880_ (
-    .A( dbg_0.dbg_din_0_ ),
+    .A(dbg_0.dbg_din_0_ ),
     .Y(_00200_)
   );
   INVX1 _05881_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .Y(_00201_)
   );
   INVX1 _05882_ (
-    .A( dbg_0.fe_mdb_in_14_ ),
+    .A(dbg_0.fe_mdb_in_14_ ),
     .Y(_00202_)
   );
   INVX1 _05883_ (
-    .A( dbg_0.dbg_mem_addr_4_ ),
+    .A(dbg_0.dbg_mem_addr_4_ ),
     .Y(_00203_)
   );
   INVX1 _05884_ (
-    .A( dbg_0.dbg_mem_addr_5_ ),
+    .A(dbg_0.dbg_mem_addr_5_ ),
     .Y(_00204_)
   );
   INVX1 _05885_ (
-    .A( dbg_0.dbg_din_5_ ),
+    .A(dbg_0.dbg_din_5_ ),
     .Y(_00205_)
   );
   INVX1 _05886_ (
-    .A( dbg_0.dbg_din_7_ ),
+    .A(dbg_0.dbg_din_7_ ),
     .Y(_00206_)
   );
   INVX1 _05887_ (
-    .A( dbg_0.dbg_mem_addr_8_ ),
+    .A(dbg_0.dbg_mem_addr_8_ ),
     .Y(_00207_)
   );
   INVX1 _05888_ (
-    .A( dbg_0.dbg_din_8_ ),
+    .A(dbg_0.dbg_din_8_ ),
     .Y(_00208_)
   );
   INVX1 _05889_ (
-    .A( dbg_0.dbg_mem_addr_9_ ),
+    .A(dbg_0.dbg_mem_addr_9_ ),
     .Y(_00209_)
   );
   INVX1 _05890_ (
-    .A( dbg_0.dbg_din_9_ ),
+    .A(dbg_0.dbg_din_9_ ),
     .Y(_00210_)
   );
   INVX1 _05891_ (
-    .A( dbg_0.dbg_mem_addr_12_ ),
+    .A(dbg_0.dbg_mem_addr_12_ ),
     .Y(_00211_)
   );
   INVX1 _05892_ (
-    .A( dbg_0.dbg_din_13_ ),
+    .A(dbg_0.dbg_din_13_ ),
     .Y(_00212_)
   );
   INVX1 _05893_ (
-    .A( dbg_0.dbg_din_15_ ),
+    .A(dbg_0.dbg_din_15_ ),
     .Y(_00213_)
   );
   INVX1 _05894_ (
-    .A( dbg_0.mem_data_0_ ),
+    .A(dbg_0.mem_data_0_ ),
     .Y(_00214_)
   );
   INVX1 _05895_ (
-    .A( dbg_0.mem_data_1_ ),
+    .A(dbg_0.mem_data_1_ ),
     .Y(_00215_)
   );
   INVX1 _05896_ (
-    .A( dbg_0.mem_data_2_ ),
+    .A(dbg_0.mem_data_2_ ),
     .Y(_00216_)
   );
   INVX1 _05897_ (
-    .A( dbg_0.mem_data_3_ ),
+    .A(dbg_0.mem_data_3_ ),
     .Y(_00217_)
   );
   INVX1 _05898_ (
-    .A( dbg_0.mem_data_4_ ),
+    .A(dbg_0.mem_data_4_ ),
     .Y(_00218_)
   );
   INVX1 _05899_ (
-    .A( dbg_0.mem_data_5_ ),
+    .A(dbg_0.mem_data_5_ ),
     .Y(_00219_)
   );
   INVX1 _05900_ (
-    .A( dbg_0.mem_data_6_ ),
+    .A(dbg_0.mem_data_6_ ),
     .Y(_00220_)
   );
   INVX1 _05901_ (
-    .A( dbg_0.mem_data_7_ ),
+    .A(dbg_0.mem_data_7_ ),
     .Y(_00221_)
   );
   INVX1 _05902_ (
-    .A( dbg_0.mem_data_8_ ),
+    .A(dbg_0.mem_data_8_ ),
     .Y(_00222_)
   );
   INVX1 _05903_ (
-    .A( dbg_0.mem_data_9_ ),
+    .A(dbg_0.mem_data_9_ ),
     .Y(_00223_)
   );
   INVX1 _05904_ (
-    .A( dbg_0.mem_data_10_ ),
+    .A(dbg_0.mem_data_10_ ),
     .Y(_00224_)
   );
   INVX1 _05905_ (
-    .A( dbg_0.mem_data_11_ ),
+    .A(dbg_0.mem_data_11_ ),
     .Y(_00225_)
   );
   INVX1 _05906_ (
-    .A( dbg_0.mem_data_12_ ),
+    .A(dbg_0.mem_data_12_ ),
     .Y(_00226_)
   );
   INVX1 _05907_ (
-    .A( dbg_0.mem_data_13_ ),
+    .A(dbg_0.mem_data_13_ ),
     .Y(_00227_)
   );
   INVX1 _05908_ (
-    .A( dbg_0.mem_data_14_ ),
+    .A(dbg_0.mem_data_14_ ),
     .Y(_00228_)
   );
   INVX1 _05909_ (
-    .A( dbg_0.mem_data_15_ ),
+    .A(dbg_0.mem_data_15_ ),
     .Y(_00229_)
   );
   INVX1 _05910_ (
@@ -8323,26 +8323,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00230_)
   );
   INVX1 _05911_ (
-    .A( clock_module_0.dbg_rst ),
+    .A(clock_module_0.dbg_rst ),
     .Y(_00163_)
   );
   NOR2X1 _05912_ (
-    .A( dbg_0.mem_cnt_5_ ),
-    .B( dbg_0.mem_cnt_4_ ),
+    .A(dbg_0.mem_cnt_5_ ),
+    .B(dbg_0.mem_cnt_4_ ),
     .Y(_00231_)
   );
   OR2X1 _05913_ (
-    .A( dbg_0.mem_cnt_5_ ),
-    .B( dbg_0.mem_cnt_4_ ),
+    .A(dbg_0.mem_cnt_5_ ),
+    .B(dbg_0.mem_cnt_4_ ),
     .Y(_00232_)
   );
   NOR2X1 _05914_ (
-    .A( dbg_0.mem_cnt_7_ ),
-    .B( dbg_0.mem_cnt_6_ ),
+    .A(dbg_0.mem_cnt_7_ ),
+    .B(dbg_0.mem_cnt_6_ ),
     .Y(_00233_)
   );
   OR2X1 _05915_ (
-    .A( dbg_0.mem_cnt_6_ ),
+    .A(dbg_0.mem_cnt_6_ ),
     .B(_00232_),
     .Y(_00234_)
   );
@@ -8352,18 +8352,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00235_)
   );
   NOR2X1 _05917_ (
-    .A( dbg_0.mem_cnt_0_ ),
-    .B( dbg_0.mem_cnt_3_ ),
+    .A(dbg_0.mem_cnt_0_ ),
+    .B(dbg_0.mem_cnt_3_ ),
     .Y(_00236_)
   );
   NOR2X1 _05918_ (
-    .A( dbg_0.mem_cnt_1_ ),
-    .B( dbg_0.mem_cnt_2_ ),
+    .A(dbg_0.mem_cnt_1_ ),
+    .B(dbg_0.mem_cnt_2_ ),
     .Y(_00237_)
   );
   OR2X1 _05919_ (
-    .A( dbg_0.mem_cnt_1_ ),
-    .B( dbg_0.mem_cnt_2_ ),
+    .A(dbg_0.mem_cnt_1_ ),
+    .B(dbg_0.mem_cnt_2_ ),
     .Y(_00238_)
   );
   NAND2X1 _05920_ (
@@ -8372,13 +8372,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00239_)
   );
   NOR2X1 _05921_ (
-    .A( dbg_0.mem_cnt_9_ ),
-    .B( dbg_0.mem_cnt_8_ ),
+    .A(dbg_0.mem_cnt_9_ ),
+    .B(dbg_0.mem_cnt_8_ ),
     .Y(_00240_)
   );
   NOR2X1 _05922_ (
-    .A( dbg_0.mem_cnt_11_ ),
-    .B( dbg_0.mem_cnt_10_ ),
+    .A(dbg_0.mem_cnt_11_ ),
+    .B(dbg_0.mem_cnt_10_ ),
     .Y(_00241_)
   );
   NAND2X1 _05923_ (
@@ -8387,8 +8387,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00242_)
   );
   NOR2X1 _05924_ (
-    .A( dbg_0.mem_cnt_15_ ),
-    .B( dbg_0.mem_cnt_14_ ),
+    .A(dbg_0.mem_cnt_15_ ),
+    .B(dbg_0.mem_cnt_14_ ),
     .Y(_00243_)
   );
   NAND3X1 _05925_ (
@@ -8420,9 +8420,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00248_)
   );
   AOI21X1 _05930_ (
-    .A( dbg_0.mem_start ),
+    .A(dbg_0.mem_start ),
     .B(_00247_),
-    .C( dbg_0.mem_startb ),
+    .C(dbg_0.mem_startb ),
     .Y(_00249_)
   );
   INVX1 _05931_ (
@@ -8435,31 +8435,31 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00251_)
   );
   OAI21X1 _05933_ (
-    .A( dbg_0.mem_state_0_ ),
+    .A(dbg_0.mem_state_0_ ),
     .B(_00250_),
     .C(_00193_),
     .Y(_00252_)
   );
   AOI21X1 _05934_ (
-    .A( dbg_0.mem_state_0_ ),
-    .B( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.mem_state_0_ ),
+    .B(dbg_0.cpu_stat_full_0_ ),
     .C(_00252_),
-    .Y( dbg_0.mem_state_nxt_0_ )
+    .Y(dbg_0.mem_state_nxt_0_ )
   );
   AND2X1 _05935_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
-    .B( dbg_0.dbg_mem_addr_0_ ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
+    .B(dbg_0.dbg_mem_addr_0_ ),
     .Y(_00253_)
   );
   NAND2X1 _05936_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
-    .B( dbg_0.dbg_mem_addr_0_ ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
+    .B(dbg_0.dbg_mem_addr_0_ ),
     .Y(_00254_)
   );
   NOR2X1 _05937_ (
     .A(_00193_),
-    .B( dbg_0.mem_ctl_2_ ),
-    .Y( dbg_0.dbg_mem_en )
+    .B(dbg_0.mem_ctl_2_ ),
+    .Y(dbg_0.dbg_mem_en )
   );
   NOR2X1 _05938_ (
     .A(_00193_),
@@ -8467,70 +8467,70 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00255_)
   );
   NAND2X1 _05939_ (
-    .A( dbg_0.mem_ctl_1_ ),
-    .B( dbg_0.dbg_mem_en ),
+    .A(dbg_0.mem_ctl_1_ ),
+    .B(dbg_0.dbg_mem_en ),
     .Y(_00256_)
   );
   NOR2X1 _05940_ (
     .A(_00253_),
     .B(_00256_),
-    .Y( dbg_0.dbg_mem_wr_0_ )
+    .Y(dbg_0.dbg_mem_wr_0_ )
   );
   AOI21X1 _05941_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00199_),
     .C(_00256_),
-    .Y( dbg_0.dbg_mem_wr_1_ )
+    .Y(dbg_0.dbg_mem_wr_1_ )
   );
   NOR2X1 _05942_ (
     .A(_00194_),
     .B(_00252_),
-    .Y( dbg_0.mem_state_nxt_1_ )
+    .Y(dbg_0.mem_state_nxt_1_ )
   );
   OAI21X1 _05943_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
-    .B( dbg_0.dbg_rd_rdy ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
+    .B(dbg_0.dbg_rd_rdy ),
     .C(_00247_),
     .Y(_00257_)
   );
   INVX1 _05944_ (
     .A(_00257_),
-    .Y( dbg_0.dbg_i2c_0.mem_burst_end )
+    .Y(dbg_0.dbg_i2c_0.mem_burst_end )
   );
   AND2X1 _05945_ (
-    .A( dbg_0.mem_ctl_2_ ),
+    .A(dbg_0.mem_ctl_2_ ),
     .B(_00255_),
-    .Y( dbg_0.dbg_reg_wr )
+    .Y(dbg_0.dbg_reg_wr )
   );
   NOR2X1 _05946_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst ),
-    .B( dbg_0.dbg_addr_1_ ),
+    .A(dbg_0.dbg_i2c_0.mem_burst ),
+    .B(dbg_0.dbg_addr_1_ ),
     .Y(_00258_)
   );
   NAND2X1 _05947_ (
-    .A( dbg_0.dbg_addr_0_ ),
+    .A(dbg_0.dbg_addr_0_ ),
     .B(_00258_),
     .Y(_00259_)
   );
   OR2X1 _05948_ (
-    .A( dbg_0.dbg_addr_4_ ),
-    .B( dbg_0.dbg_addr_5_ ),
+    .A(dbg_0.dbg_addr_4_ ),
+    .B(dbg_0.dbg_addr_5_ ),
     .Y(_00260_)
   );
   NOR2X1 _05949_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst ),
-    .B( dbg_0.dbg_addr_2_ ),
+    .A(dbg_0.dbg_i2c_0.mem_burst ),
+    .B(dbg_0.dbg_addr_2_ ),
     .Y(_00261_)
   );
   OAI21X1 _05950_ (
-    .A( dbg_0.dbg_addr_3_ ),
+    .A(dbg_0.dbg_addr_3_ ),
     .B(_00260_),
     .C(_00196_),
     .Y(_00262_)
   );
   OAI21X1 _05951_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst ),
-    .B( dbg_0.dbg_addr_2_ ),
+    .A(dbg_0.dbg_i2c_0.mem_burst ),
+    .B(dbg_0.dbg_addr_2_ ),
     .C(_00262_),
     .Y(_00263_)
   );
@@ -8540,17 +8540,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00264_)
   );
   AND2X1 _05953_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
     .B(_00264_),
     .Y(_00265_)
   );
   NAND2X1 _05954_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
     .B(_00264_),
     .Y(_00266_)
   );
   NOR2X1 _05955_ (
-    .A( dbg_0.dbg_rd_rdy ),
+    .A(dbg_0.dbg_rd_rdy ),
     .B(_00255_),
     .Y(_00267_)
   );
@@ -8560,9 +8560,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00268_)
   );
   OAI21X1 _05957_ (
-    .A( dbg_0.dbg_rd_rdy ),
+    .A(dbg_0.dbg_rd_rdy ),
     .B(_00255_),
-    .C( dbg_0.dbg_i2c_0.mem_burst ),
+    .C(dbg_0.dbg_i2c_0.mem_burst ),
     .Y(_00269_)
   );
   NOR2X1 _05958_ (
@@ -8576,17 +8576,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00271_)
   );
   NOR2X1 _05960_ (
-    .A( dbg_0.mem_ctl_2_ ),
-    .B( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.mem_ctl_2_ ),
+    .B(dbg_0.dbg_i2c_0.mem_bw ),
     .Y(_00272_)
   );
   OR2X1 _05961_ (
-    .A( dbg_0.mem_ctl_2_ ),
-    .B( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.mem_ctl_2_ ),
+    .B(dbg_0.dbg_i2c_0.mem_bw ),
     .Y(_00273_)
   );
   NAND3X1 _05962_ (
-    .A( dbg_0.dbg_mem_addr_0_ ),
+    .A(dbg_0.dbg_mem_addr_0_ ),
     .B(_00270_),
     .C(_00273_),
     .Y(_00274_)
@@ -8603,7 +8603,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00276_)
   );
   NAND2X1 _05965_ (
-    .A( dbg_0.dbg_din_0_ ),
+    .A(dbg_0.dbg_din_0_ ),
     .B(_00265_),
     .Y(_00277_)
   );
@@ -8620,12 +8620,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00278_)
   );
   NAND2X1 _05968_ (
-    .A( dbg_0.dbg_mem_addr_1_ ),
+    .A(dbg_0.dbg_mem_addr_1_ ),
     .B(_00278_),
     .Y(_00279_)
   );
   XNOR2X1 _05969_ (
-    .A( dbg_0.dbg_mem_addr_1_ ),
+    .A(dbg_0.dbg_mem_addr_1_ ),
     .B(_00278_),
     .Y(_00280_)
   );
@@ -8635,7 +8635,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00281_)
   );
   NAND2X1 _05971_ (
-    .A( dbg_0.dbg_din_1_ ),
+    .A(dbg_0.dbg_din_1_ ),
     .B(_00265_),
     .Y(_00282_)
   );
@@ -8652,23 +8652,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00283_)
   );
   AND2X1 _05974_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
     .B(_00283_),
     .Y(_00284_)
   );
   NAND2X1 _05975_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
     .B(_00283_),
     .Y(_00285_)
   );
   OAI21X1 _05976_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
     .B(_00283_),
     .C(_00266_),
     .Y(_00286_)
   );
   NAND2X1 _05977_ (
-    .A( dbg_0.dbg_din_2_ ),
+    .A(dbg_0.dbg_din_2_ ),
     .B(_00265_),
     .Y(_00287_)
   );
@@ -8679,18 +8679,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00137_)
   );
   NAND3X1 _05979_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
-    .B( dbg_0.dbg_mem_addr_3_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
+    .B(dbg_0.dbg_mem_addr_3_ ),
     .C(_00283_),
     .Y(_00288_)
   );
   XOR2X1 _05980_ (
-    .A( dbg_0.dbg_mem_addr_3_ ),
+    .A(dbg_0.dbg_mem_addr_3_ ),
     .B(_00285_),
     .Y(_00289_)
   );
   NAND2X1 _05981_ (
-    .A( dbg_0.dbg_din_3_ ),
+    .A(dbg_0.dbg_din_3_ ),
     .B(_00265_),
     .Y(_00290_)
   );
@@ -8701,7 +8701,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00138_)
   );
   NAND2X1 _05983_ (
-    .A( dbg_0.dbg_din_4_ ),
+    .A(dbg_0.dbg_din_4_ ),
     .B(_00265_),
     .Y(_00291_)
   );
@@ -8722,7 +8722,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00139_)
   );
   NOR2X1 _05987_ (
-    .A( dbg_0.dbg_mem_addr_5_ ),
+    .A(dbg_0.dbg_mem_addr_5_ ),
     .B(_00292_),
     .Y(_00294_)
   );
@@ -8745,17 +8745,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00140_)
   );
   NAND2X1 _05991_ (
-    .A( dbg_0.dbg_din_6_ ),
+    .A(dbg_0.dbg_din_6_ ),
     .B(_00265_),
     .Y(_00297_)
   );
   AND2X1 _05992_ (
-    .A( dbg_0.dbg_mem_addr_6_ ),
+    .A(dbg_0.dbg_mem_addr_6_ ),
     .B(_00295_),
     .Y(_00298_)
   );
   OAI21X1 _05993_ (
-    .A( dbg_0.dbg_mem_addr_6_ ),
+    .A(dbg_0.dbg_mem_addr_6_ ),
     .B(_00295_),
     .C(_00266_),
     .Y(_00299_)
@@ -8767,15 +8767,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00141_)
   );
   NAND3X1 _05995_ (
-    .A( dbg_0.dbg_mem_addr_6_ ),
-    .B( dbg_0.dbg_mem_addr_7_ ),
+    .A(dbg_0.dbg_mem_addr_6_ ),
+    .B(dbg_0.dbg_mem_addr_7_ ),
     .C(_00295_),
     .Y(_00300_)
   );
   AOI21X1 _05996_ (
-    .A( dbg_0.dbg_mem_addr_6_ ),
+    .A(dbg_0.dbg_mem_addr_6_ ),
     .B(_00295_),
-    .C( dbg_0.dbg_mem_addr_7_ ),
+    .C(dbg_0.dbg_mem_addr_7_ ),
     .Y(_00301_)
   );
   NOR2X1 _05997_ (
@@ -8795,7 +8795,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00142_)
   );
   NAND2X1 _06000_ (
-    .A( dbg_0.dbg_din_8_ ),
+    .A(dbg_0.dbg_din_8_ ),
     .B(_00265_),
     .Y(_00304_)
   );
@@ -8839,17 +8839,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00144_)
   );
   NAND2X1 _06008_ (
-    .A( dbg_0.dbg_din_10_ ),
+    .A(dbg_0.dbg_din_10_ ),
     .B(_00265_),
     .Y(_00310_)
   );
   NAND2X1 _06009_ (
-    .A( dbg_0.dbg_mem_addr_10_ ),
+    .A(dbg_0.dbg_mem_addr_10_ ),
     .B(_00307_),
     .Y(_00311_)
   );
   XNOR2X1 _06010_ (
-    .A( dbg_0.dbg_mem_addr_10_ ),
+    .A(dbg_0.dbg_mem_addr_10_ ),
     .B(_00307_),
     .Y(_00312_)
   );
@@ -8860,18 +8860,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00130_)
   );
   NAND2X1 _06012_ (
-    .A( dbg_0.dbg_din_11_ ),
+    .A(dbg_0.dbg_din_11_ ),
     .B(_00265_),
     .Y(_00313_)
   );
   NAND3X1 _06013_ (
-    .A( dbg_0.dbg_mem_addr_10_ ),
-    .B( dbg_0.dbg_mem_addr_11_ ),
+    .A(dbg_0.dbg_mem_addr_10_ ),
+    .B(dbg_0.dbg_mem_addr_11_ ),
     .C(_00307_),
     .Y(_00314_)
   );
   XOR2X1 _06014_ (
-    .A( dbg_0.dbg_mem_addr_11_ ),
+    .A(dbg_0.dbg_mem_addr_11_ ),
     .B(_00311_),
     .Y(_00315_)
   );
@@ -8882,7 +8882,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00131_)
   );
   NAND2X1 _06016_ (
-    .A( dbg_0.dbg_din_12_ ),
+    .A(dbg_0.dbg_din_12_ ),
     .B(_00265_),
     .Y(_00316_)
   );
@@ -8903,17 +8903,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00132_)
   );
   NAND2X1 _06020_ (
-    .A( dbg_0.dbg_din_13_ ),
+    .A(dbg_0.dbg_din_13_ ),
     .B(_00265_),
     .Y(_00319_)
   );
   NAND2X1 _06021_ (
-    .A( dbg_0.dbg_mem_addr_13_ ),
+    .A(dbg_0.dbg_mem_addr_13_ ),
     .B(_00317_),
     .Y(_00320_)
   );
   XNOR2X1 _06022_ (
-    .A( dbg_0.dbg_mem_addr_13_ ),
+    .A(dbg_0.dbg_mem_addr_13_ ),
     .B(_00317_),
     .Y(_00321_)
   );
@@ -8924,18 +8924,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00133_)
   );
   NAND2X1 _06024_ (
-    .A( dbg_0.dbg_din_14_ ),
+    .A(dbg_0.dbg_din_14_ ),
     .B(_00265_),
     .Y(_00322_)
   );
   NAND3X1 _06025_ (
-    .A( dbg_0.dbg_mem_addr_13_ ),
-    .B( dbg_0.dbg_mem_addr_14_ ),
+    .A(dbg_0.dbg_mem_addr_13_ ),
+    .B(dbg_0.dbg_mem_addr_14_ ),
     .C(_00317_),
     .Y(_00323_)
   );
   XOR2X1 _06026_ (
-    .A( dbg_0.dbg_mem_addr_14_ ),
+    .A(dbg_0.dbg_mem_addr_14_ ),
     .B(_00320_),
     .Y(_00324_)
   );
@@ -8946,7 +8946,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00134_)
   );
   XOR2X1 _06028_ (
-    .A( dbg_0.dbg_mem_addr_15_ ),
+    .A(dbg_0.dbg_mem_addr_15_ ),
     .B(_00323_),
     .Y(_00325_)
   );
@@ -8957,9 +8957,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00135_)
   );
   NAND3X1 _06030_ (
-    .A( dbg_0.dbg_addr_0_ ),
+    .A(dbg_0.dbg_addr_0_ ),
     .B(_00196_),
-    .C( dbg_0.dbg_addr_1_ ),
+    .C(dbg_0.dbg_addr_1_ ),
     .Y(_00326_)
   );
   NOR2X1 _06031_ (
@@ -8968,24 +8968,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00327_)
   );
   AND2X1 _06032_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
     .B(_00327_),
     .Y(_00328_)
   );
   NAND2X1 _06033_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
     .B(_00327_),
     .Y(_00329_)
   );
   OR2X1 _06034_ (
-    .A( dbg_0.mem_cnt_0_ ),
+    .A(dbg_0.mem_cnt_0_ ),
     .B(_00271_),
     .Y(_00330_)
   );
   OAI21X1 _06035_ (
     .A(_00247_),
     .B(_00269_),
-    .C( dbg_0.mem_cnt_0_ ),
+    .C(dbg_0.mem_cnt_0_ ),
     .Y(_00331_)
   );
   AND2X1 _06036_ (
@@ -8994,7 +8994,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00332_)
   );
   NAND2X1 _06037_ (
-    .A( dbg_0.dbg_din_0_ ),
+    .A(dbg_0.dbg_din_0_ ),
     .B(_00328_),
     .Y(_00333_)
   );
@@ -9005,17 +9005,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00145_)
   );
   NOR2X1 _06039_ (
-    .A( dbg_0.mem_cnt_1_ ),
+    .A(dbg_0.mem_cnt_1_ ),
     .B(_00330_),
     .Y(_00334_)
   );
   XOR2X1 _06040_ (
-    .A( dbg_0.mem_cnt_1_ ),
+    .A(dbg_0.mem_cnt_1_ ),
     .B(_00330_),
     .Y(_00335_)
   );
   NAND2X1 _06041_ (
-    .A( dbg_0.dbg_din_1_ ),
+    .A(dbg_0.dbg_din_1_ ),
     .B(_00328_),
     .Y(_00336_)
   );
@@ -9026,12 +9026,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00152_)
   );
   XNOR2X1 _06043_ (
-    .A( dbg_0.mem_cnt_2_ ),
+    .A(dbg_0.mem_cnt_2_ ),
     .B(_00334_),
     .Y(_00337_)
   );
   NAND2X1 _06044_ (
-    .A( dbg_0.dbg_din_2_ ),
+    .A(dbg_0.dbg_din_2_ ),
     .B(_00328_),
     .Y(_00338_)
   );
@@ -9049,7 +9049,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _06047_ (
     .A(_00238_),
     .B(_00330_),
-    .C( dbg_0.mem_cnt_3_ ),
+    .C(dbg_0.mem_cnt_3_ ),
     .Y(_00340_)
   );
   AND2X1 _06048_ (
@@ -9058,7 +9058,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00341_)
   );
   NAND2X1 _06049_ (
-    .A( dbg_0.dbg_din_3_ ),
+    .A(dbg_0.dbg_din_3_ ),
     .B(_00328_),
     .Y(_00342_)
   );
@@ -9069,12 +9069,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00154_)
   );
   XOR2X1 _06051_ (
-    .A( dbg_0.mem_cnt_4_ ),
+    .A(dbg_0.mem_cnt_4_ ),
     .B(_00339_),
     .Y(_00343_)
   );
   NAND2X1 _06052_ (
-    .A( dbg_0.dbg_din_4_ ),
+    .A(dbg_0.dbg_din_4_ ),
     .B(_00328_),
     .Y(_00344_)
   );
@@ -9085,9 +9085,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00155_)
   );
   OAI21X1 _06054_ (
-    .A( dbg_0.mem_cnt_4_ ),
+    .A(dbg_0.mem_cnt_4_ ),
     .B(_00339_),
-    .C( dbg_0.mem_cnt_5_ ),
+    .C(dbg_0.mem_cnt_5_ ),
     .Y(_00345_)
   );
   OAI21X1 _06055_ (
@@ -9115,7 +9115,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _06059_ (
     .A(_00232_),
     .B(_00339_),
-    .C( dbg_0.mem_cnt_6_ ),
+    .C(dbg_0.mem_cnt_6_ ),
     .Y(_00349_)
   );
   AND2X1 _06060_ (
@@ -9124,7 +9124,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00350_)
   );
   NAND2X1 _06061_ (
-    .A( dbg_0.dbg_din_6_ ),
+    .A(dbg_0.dbg_din_6_ ),
     .B(_00328_),
     .Y(_00351_)
   );
@@ -9135,12 +9135,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00157_)
   );
   NOR2X1 _06063_ (
-    .A( dbg_0.dbg_din_7_ ),
+    .A(dbg_0.dbg_din_7_ ),
     .B(_00329_),
     .Y(_00352_)
   );
   XOR2X1 _06064_ (
-    .A( dbg_0.mem_cnt_7_ ),
+    .A(dbg_0.mem_cnt_7_ ),
     .B(_00348_),
     .Y(_00353_)
   );
@@ -9162,7 +9162,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00355_)
   );
   OR2X1 _06068_ (
-    .A( dbg_0.mem_cnt_8_ ),
+    .A(dbg_0.mem_cnt_8_ ),
     .B(_00354_),
     .Y(_00356_)
   );
@@ -9184,7 +9184,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00358_)
   );
   XNOR2X1 _06072_ (
-    .A( dbg_0.mem_cnt_9_ ),
+    .A(dbg_0.mem_cnt_9_ ),
     .B(_00270_),
     .Y(_00359_)
   );
@@ -9205,8 +9205,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00361_)
   );
   OAI21X1 _06076_ (
-    .A( dbg_0.mem_cnt_9_ ),
-    .B( dbg_0.mem_cnt_8_ ),
+    .A(dbg_0.mem_cnt_9_ ),
+    .B(dbg_0.mem_cnt_8_ ),
     .C(_00270_),
     .Y(_00362_)
   );
@@ -9217,7 +9217,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00363_)
   );
   XNOR2X1 _06078_ (
-    .A( dbg_0.mem_cnt_10_ ),
+    .A(dbg_0.mem_cnt_10_ ),
     .B(_00270_),
     .Y(_00364_)
   );
@@ -9233,7 +9233,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00366_)
   );
   NAND2X1 _06081_ (
-    .A( dbg_0.dbg_din_10_ ),
+    .A(dbg_0.dbg_din_10_ ),
     .B(_00328_),
     .Y(_00367_)
   );
@@ -9244,18 +9244,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00146_)
   );
   NOR2X1 _06083_ (
-    .A( dbg_0.dbg_din_11_ ),
+    .A(dbg_0.dbg_din_11_ ),
     .B(_00329_),
     .Y(_00368_)
   );
   AOI21X1 _06084_ (
-    .A( dbg_0.mem_cnt_10_ ),
+    .A(dbg_0.mem_cnt_10_ ),
     .B(_00270_),
     .C(_00365_),
     .Y(_00369_)
   );
   XNOR2X1 _06085_ (
-    .A( dbg_0.mem_cnt_11_ ),
+    .A(dbg_0.mem_cnt_11_ ),
     .B(_00270_),
     .Y(_00370_)
   );
@@ -9271,7 +9271,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00147_)
   );
   NAND2X1 _06088_ (
-    .A( dbg_0.dbg_din_12_ ),
+    .A(dbg_0.dbg_din_12_ ),
     .B(_00328_),
     .Y(_00372_)
   );
@@ -9308,7 +9308,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00148_)
   );
   AOI22X1 _06095_ (
-    .A( dbg_0.mem_cnt_12_ ),
+    .A(dbg_0.mem_cnt_12_ ),
     .B(_00268_),
     .C(_00375_),
     .D(_00376_),
@@ -9345,7 +9345,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00149_)
   );
   NAND2X1 _06101_ (
-    .A( dbg_0.dbg_din_14_ ),
+    .A(dbg_0.dbg_din_14_ ),
     .B(_00328_),
     .Y(_00383_)
   );
@@ -9383,7 +9383,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00388_)
   );
   XOR2X1 _06108_ (
-    .A( dbg_0.mem_cnt_15_ ),
+    .A(dbg_0.mem_cnt_15_ ),
     .B(_00270_),
     .Y(_00389_)
   );
@@ -9393,7 +9393,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00390_)
   );
   NAND2X1 _06110_ (
-    .A( dbg_0.dbg_din_15_ ),
+    .A(dbg_0.dbg_din_15_ ),
     .B(_00328_),
     .Y(_00391_)
   );
@@ -9404,45 +9404,45 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00151_)
   );
   NAND2X1 _06112_ (
-    .A( dbg_0.mem_start ),
+    .A(dbg_0.mem_start ),
     .B(_00248_),
     .Y(_00392_)
   );
   NOR2X1 _06113_ (
-    .A( dbg_0.mem_ctl_1_ ),
+    .A(dbg_0.mem_ctl_1_ ),
     .B(_00392_),
-    .Y( dbg_0.dbg_i2c_0.mem_burst_rd )
+    .Y(dbg_0.dbg_i2c_0.mem_burst_rd )
   );
   OAI21X1 _06114_ (
-    .A( dbg_0.mem_ctl_1_ ),
+    .A(dbg_0.mem_ctl_1_ ),
     .B(_00392_),
     .C(_00196_),
     .Y(_00393_)
   );
   NAND2X1 _06115_ (
-    .A( dbg_0.mem_state_1_ ),
-    .B( dbg_0.mem_ctl_2_ ),
+    .A(dbg_0.mem_state_1_ ),
+    .B(dbg_0.mem_ctl_2_ ),
     .Y(_00394_)
   );
   NOR2X1 _06116_ (
-    .A( dbg_0.mem_ctl_1_ ),
+    .A(dbg_0.mem_ctl_1_ ),
     .B(_00394_),
     .Y(_00395_)
   );
   OR2X1 _06117_ (
-    .A( dbg_0.mem_ctl_1_ ),
+    .A(dbg_0.mem_ctl_1_ ),
     .B(_00394_),
     .Y(_00396_)
   );
   OAI21X1 _06118_ (
-    .A( dbg_0.mem_ctl_1_ ),
+    .A(dbg_0.mem_ctl_1_ ),
     .B(_00394_),
     .C(_00198_),
     .Y(_00397_)
   );
   MUX2X1 _06119_ (
     .A(_00397_),
-    .B( dbg_0.dbg_i2c_0.dbg_rd ),
+    .B(dbg_0.dbg_i2c_0.dbg_rd ),
     .S(_00393_),
     .Y(_00398_)
   );
@@ -9452,12 +9452,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   AOI21X1 _06121_ (
     .A(_00195_),
-    .B( dbg_0.dbg_addr_1_ ),
-    .C( dbg_0.dbg_i2c_0.mem_burst ),
+    .B(dbg_0.dbg_addr_1_ ),
+    .C(dbg_0.dbg_i2c_0.mem_burst ),
     .Y(_00399_)
   );
   NOR2X1 _06122_ (
-    .A( dbg_0.dbg_addr_3_ ),
+    .A(dbg_0.dbg_addr_3_ ),
     .B(_00260_),
     .Y(_00400_)
   );
@@ -9472,7 +9472,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00402_)
   );
   NAND2X1 _06125_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
     .B(_00402_),
     .Y(_00403_)
   );
@@ -9482,13 +9482,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00404_)
   );
   AND2X1 _06127_ (
-    .A( dbg_0.dbg_din_2_ ),
+    .A(dbg_0.dbg_din_2_ ),
     .B(_00404_),
-    .Y( dbg_0.istep )
+    .Y(dbg_0.istep )
   );
   NOR2X1 _06128_ (
-    .A( dbg_0.inc_step_0_ ),
-    .B( dbg_0.istep ),
+    .A(dbg_0.inc_step_0_ ),
+    .B(dbg_0.istep ),
     .Y(_00405_)
   );
   INVX1 _06129_ (
@@ -9536,56 +9536,56 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05690_)
   );
   OAI22X1 _06138_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00222_),
     .C(_00254_),
     .D(_00214_),
     .Y(_05691_)
   );
   OAI22X1 _06139_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00223_),
     .C(_00254_),
     .D(_00215_),
     .Y(_05692_)
   );
   OAI22X1 _06140_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00224_),
     .C(_00254_),
     .D(_00216_),
     .Y(_05678_)
   );
   OAI22X1 _06141_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00225_),
     .C(_00254_),
     .D(_00217_),
     .Y(_05679_)
   );
   OAI22X1 _06142_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00226_),
     .C(_00254_),
     .D(_00218_),
     .Y(_05680_)
   );
   OAI22X1 _06143_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00227_),
     .C(_00254_),
     .D(_00219_),
     .Y(_05681_)
   );
   OAI22X1 _06144_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00228_),
     .C(_00254_),
     .D(_00220_),
     .Y(_05682_)
   );
   OAI22X1 _06145_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00229_),
     .C(_00254_),
     .D(_00221_),
@@ -9597,13 +9597,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00406_)
   );
   NAND3X1 _06147_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
-    .B( dbg_0.dbg_din_2_ ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
+    .B(dbg_0.dbg_din_2_ ),
     .C(_00406_),
     .Y(_00407_)
   );
   AOI21X1 _06148_ (
-    .A( dbg_0.cpu_stat_2_ ),
+    .A(dbg_0.cpu_stat_2_ ),
     .B(_00407_),
     .C(_05695_),
     .Y(_00408_)
@@ -9613,29 +9613,29 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00125_)
   );
   NAND3X1 _06150_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
-    .B( dbg_0.dbg_din_3_ ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
+    .B(dbg_0.dbg_din_3_ ),
     .C(_00406_),
     .Y(_00409_)
   );
   NAND2X1 _06151_ (
-    .A( dbg_0.cpu_stat_3_ ),
+    .A(dbg_0.cpu_stat_3_ ),
     .B(_00409_),
     .Y(_00410_)
   );
   NOR2X1 _06152_ (
-    .A( dbg_0.fe_mdb_in_2_ ),
-    .B( dbg_0.fe_mdb_in_5_ ),
+    .A(dbg_0.fe_mdb_in_2_ ),
+    .B(dbg_0.fe_mdb_in_5_ ),
     .Y(_00411_)
   );
   NOR2X1 _06153_ (
-    .A( dbg_0.fe_mdb_in_3_ ),
-    .B( dbg_0.fe_mdb_in_4_ ),
+    .A(dbg_0.fe_mdb_in_3_ ),
+    .B(dbg_0.fe_mdb_in_4_ ),
     .Y(_00412_)
   );
   NAND3X1 _06154_ (
-    .A( dbg_0.fe_mdb_in_1_ ),
-    .B( dbg_0.fe_mdb_in_0_ ),
+    .A(dbg_0.fe_mdb_in_1_ ),
+    .B(dbg_0.fe_mdb_in_0_ ),
     .C(_00412_),
     .Y(_00413_)
   );
@@ -9644,34 +9644,34 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00414_)
   );
   NOR2X1 _06156_ (
-    .A( dbg_0.fe_mdb_in_15_ ),
+    .A(dbg_0.fe_mdb_in_15_ ),
     .B(_00202_),
     .Y(_00415_)
   );
   NAND3X1 _06157_ (
-    .A( dbg_0.decode_noirq ),
-    .B( dbg_0.cpu_ctl_3_ ),
+    .A(dbg_0.decode_noirq ),
+    .B(dbg_0.cpu_ctl_3_ ),
     .C(_00415_),
     .Y(_00416_)
   );
   NOR2X1 _06158_ (
-    .A( dbg_0.fe_mdb_in_13_ ),
-    .B( dbg_0.fe_mdb_in_12_ ),
+    .A(dbg_0.fe_mdb_in_13_ ),
+    .B(dbg_0.fe_mdb_in_12_ ),
     .Y(_00417_)
   );
   NOR2X1 _06159_ (
-    .A( dbg_0.fe_mdb_in_11_ ),
-    .B( dbg_0.fe_mdb_in_10_ ),
+    .A(dbg_0.fe_mdb_in_11_ ),
+    .B(dbg_0.fe_mdb_in_10_ ),
     .Y(_00418_)
   );
   NAND2X1 _06160_ (
     .A(_00201_),
-    .B( dbg_0.fe_mdb_in_6_ ),
+    .B(dbg_0.fe_mdb_in_6_ ),
     .Y(_00419_)
   );
   NAND2X1 _06161_ (
-    .A( dbg_0.fe_mdb_in_9_ ),
-    .B( dbg_0.fe_mdb_in_8_ ),
+    .A(dbg_0.fe_mdb_in_9_ ),
+    .B(dbg_0.fe_mdb_in_8_ ),
     .Y(_00420_)
   );
   NOR2X1 _06162_ (
@@ -9712,7 +9712,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00426_)
   );
   NAND2X1 _06169_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
     .B(_00426_),
     .Y(_00427_)
   );
@@ -9737,12 +9737,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00430_)
   );
   NAND2X1 _06174_ (
-    .A( dbg_0.dbg_addr_3_ ),
-    .B( dbg_0.dbg_addr_4_ ),
+    .A(dbg_0.dbg_addr_3_ ),
+    .B(dbg_0.dbg_addr_4_ ),
     .Y(_00431_)
   );
   NOR2X1 _06175_ (
-    .A( dbg_0.dbg_addr_5_ ),
+    .A(dbg_0.dbg_addr_5_ ),
     .B(_00431_),
     .Y(_00432_)
   );
@@ -9757,14 +9757,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00434_)
   );
   AOI22X1 _06178_ (
-    .A( dbg_0.mem_cnt_0_ ),
+    .A(dbg_0.mem_cnt_0_ ),
     .B(_00327_),
     .C(_00429_),
     .D(1'h1),
     .Y(_00435_)
   );
   AOI22X1 _06179_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_00406_),
     .C(_00430_),
     .D(1'h1),
@@ -9781,20 +9781,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00438_)
   );
   AOI22X1 _06182_ (
-    .A( dbg_0.dbg_mem_addr_0_ ),
+    .A(dbg_0.dbg_mem_addr_0_ ),
     .B(_00264_),
     .C(_00428_),
-    .D( dbg_0.mem_data_0_ ),
+    .D(dbg_0.mem_data_0_ ),
     .Y(_00439_)
   );
   NAND3X1 _06183_ (
     .A(_00435_),
     .B(_00438_),
     .C(_00439_),
-    .Y( dbg_0.dbg_dout_0_ )
+    .Y(dbg_0.dbg_dout_0_ )
   );
   AOI22X1 _06184_ (
-    .A( dbg_0.mem_data_1_ ),
+    .A(dbg_0.mem_data_1_ ),
     .B(_00428_),
     .C(_00429_),
     .D(1'h0),
@@ -9805,20 +9805,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00441_)
   );
   AOI21X1 _06186_ (
-    .A( dbg_0.dbg_mem_addr_1_ ),
+    .A(dbg_0.dbg_mem_addr_1_ ),
     .B(_00264_),
     .C(_00441_),
     .Y(_00442_)
   );
   AOI22X1 _06187_ (
-    .A( dbg_0.mem_ctl_1_ ),
+    .A(dbg_0.mem_ctl_1_ ),
     .B(_00426_),
     .C(_00430_),
     .D(1'h1),
     .Y(_00443_)
   );
   AOI22X1 _06188_ (
-    .A( dbg_0.mem_cnt_1_ ),
+    .A(dbg_0.mem_cnt_1_ ),
     .B(_00327_),
     .C(_00434_),
     .D(1'h0),
@@ -9828,13 +9828,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00442_),
     .B(_00443_),
     .C(_00444_),
-    .Y( dbg_0.dbg_dout_1_ )
+    .Y(dbg_0.dbg_dout_1_ )
   );
   AOI22X1 _06190_ (
-    .A( dbg_0.mem_cnt_2_ ),
+    .A(dbg_0.mem_cnt_2_ ),
     .B(_00327_),
     .C(_00428_),
-    .D( dbg_0.mem_data_2_ ),
+    .D(dbg_0.mem_data_2_ ),
     .Y(_00445_)
   );
   INVX1 _06191_ (
@@ -9848,14 +9848,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00447_)
   );
   AOI22X1 _06193_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
     .B(_00264_),
     .C(_00426_),
-    .D( dbg_0.mem_ctl_2_ ),
+    .D(dbg_0.mem_ctl_2_ ),
     .Y(_00448_)
   );
   AOI22X1 _06194_ (
-    .A( dbg_0.cpu_stat_2_ ),
+    .A(dbg_0.cpu_stat_2_ ),
     .B(_00406_),
     .C(_00430_),
     .D(1'h0),
@@ -9875,36 +9875,36 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00447_),
     .B(_00448_),
     .C(_00451_),
-    .Y( dbg_0.dbg_dout_2_ )
+    .Y(dbg_0.dbg_dout_2_ )
   );
   AOI22X1 _06198_ (
-    .A( dbg_0.cpu_ctl_3_ ),
+    .A(dbg_0.cpu_ctl_3_ ),
     .B(_00402_),
     .C(_00430_),
     .D(1'h0),
     .Y(_00452_)
   );
   AOI22X1 _06199_ (
-    .A( dbg_0.mem_data_3_ ),
+    .A(dbg_0.mem_data_3_ ),
     .B(_00428_),
     .C(_00434_),
     .D(1'h0),
     .Y(_00453_)
   );
   AOI22X1 _06200_ (
-    .A( dbg_0.dbg_mem_addr_3_ ),
+    .A(dbg_0.dbg_mem_addr_3_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_3_ ),
+    .D(dbg_0.mem_cnt_3_ ),
     .Y(_00454_)
   );
   NAND2X1 _06201_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .B(_00426_),
     .Y(_00455_)
   );
   AOI22X1 _06202_ (
-    .A( dbg_0.cpu_stat_3_ ),
+    .A(dbg_0.cpu_stat_3_ ),
     .B(_00406_),
     .C(_00429_),
     .D(1'h0),
@@ -9924,20 +9924,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00452_),
     .B(_00453_),
     .C(_00458_),
-    .Y( dbg_0.dbg_dout_3_ )
+    .Y(dbg_0.dbg_dout_3_ )
   );
   AOI22X1 _06206_ (
-    .A( dbg_0.mem_data_4_ ),
+    .A(dbg_0.mem_data_4_ ),
     .B(_00428_),
     .C(_00434_),
     .D(1'h0),
     .Y(_00459_)
   );
   AOI22X1 _06207_ (
-    .A( dbg_0.mem_cnt_4_ ),
+    .A(dbg_0.mem_cnt_4_ ),
     .B(_00327_),
     .C(_00402_),
-    .D( dbg_0.cpu_ctl_4_ ),
+    .D(dbg_0.cpu_ctl_4_ ),
     .Y(_00460_)
   );
   INVX1 _06208_ (
@@ -9951,7 +9951,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00462_)
   );
   AOI22X1 _06210_ (
-    .A( dbg_0.dbg_mem_addr_4_ ),
+    .A(dbg_0.dbg_mem_addr_4_ ),
     .B(_00264_),
     .C(_00429_),
     .D(1'h0),
@@ -9961,13 +9961,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00459_),
     .B(_00462_),
     .C(_00463_),
-    .Y( dbg_0.dbg_dout_4_ )
+    .Y(dbg_0.dbg_dout_4_ )
   );
   AOI22X1 _06212_ (
-    .A( dbg_0.dbg_mem_addr_5_ ),
+    .A(dbg_0.dbg_mem_addr_5_ ),
     .B(_00264_),
     .C(_00402_),
-    .D( dbg_0.cpu_ctl_5_ ),
+    .D(dbg_0.cpu_ctl_5_ ),
     .Y(_00464_)
   );
   INVX1 _06213_ (
@@ -9975,7 +9975,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00465_)
   );
   AOI21X1 _06214_ (
-    .A( dbg_0.mem_cnt_5_ ),
+    .A(dbg_0.mem_cnt_5_ ),
     .B(_00327_),
     .C(_00465_),
     .Y(_00466_)
@@ -9988,7 +9988,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00467_)
   );
   AOI22X1 _06216_ (
-    .A( dbg_0.mem_data_5_ ),
+    .A(dbg_0.mem_data_5_ ),
     .B(_00428_),
     .C(_00429_),
     .D(1'h0),
@@ -9998,10 +9998,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00466_),
     .B(_00467_),
     .C(_00468_),
-    .Y( dbg_0.dbg_dout_5_ )
+    .Y(dbg_0.dbg_dout_5_ )
   );
   AOI22X1 _06218_ (
-    .A( clock_module_0.dbg_cpu_reset ),
+    .A(clock_module_0.dbg_cpu_reset ),
     .B(_00402_),
     .C(_00429_),
     .D(1'h0),
@@ -10012,10 +10012,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00470_)
   );
   AOI22X1 _06220_ (
-    .A( dbg_0.mem_cnt_6_ ),
+    .A(dbg_0.mem_cnt_6_ ),
     .B(_00327_),
     .C(_00428_),
-    .D( dbg_0.mem_data_6_ ),
+    .D(dbg_0.mem_data_6_ ),
     .Y(_00471_)
   );
   AOI21X1 _06221_ (
@@ -10025,7 +10025,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00472_)
   );
   AOI22X1 _06222_ (
-    .A( dbg_0.dbg_mem_addr_6_ ),
+    .A(dbg_0.dbg_mem_addr_6_ ),
     .B(_00264_),
     .C(_00430_),
     .D(1'h0),
@@ -10035,17 +10035,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00471_),
     .B(_00472_),
     .C(_00473_),
-    .Y( dbg_0.dbg_dout_6_ )
+    .Y(dbg_0.dbg_dout_6_ )
   );
   AOI22X1 _06224_ (
-    .A( dbg_0.dbg_mem_addr_7_ ),
+    .A(dbg_0.dbg_mem_addr_7_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_7_ ),
+    .D(dbg_0.mem_cnt_7_ ),
     .Y(_00474_)
   );
   NAND2X1 _06225_ (
-    .A( dbg_0.mem_data_7_ ),
+    .A(dbg_0.mem_data_7_ ),
     .B(_00428_),
     .Y(_00475_)
   );
@@ -10070,17 +10070,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00474_),
     .B(_00475_),
     .C(_00478_),
-    .Y( dbg_0.dbg_dout_7_ )
+    .Y(dbg_0.dbg_dout_7_ )
   );
   AOI22X1 _06230_ (
-    .A( dbg_0.dbg_mem_addr_8_ ),
+    .A(dbg_0.dbg_mem_addr_8_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_8_ ),
+    .D(dbg_0.mem_cnt_8_ ),
     .Y(_00479_)
   );
   NAND2X1 _06231_ (
-    .A( dbg_0.mem_data_8_ ),
+    .A(dbg_0.mem_data_8_ ),
     .B(_00428_),
     .Y(_00480_)
   );
@@ -10105,13 +10105,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00479_),
     .B(_00480_),
     .C(_00483_),
-    .Y( dbg_0.dbg_dout_8_ )
+    .Y(dbg_0.dbg_dout_8_ )
   );
   AOI22X1 _06236_ (
-    .A( dbg_0.dbg_mem_addr_9_ ),
+    .A(dbg_0.dbg_mem_addr_9_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_9_ ),
+    .D(dbg_0.mem_cnt_9_ ),
     .Y(_00484_)
   );
   NAND2X1 _06237_ (
@@ -10131,7 +10131,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00487_)
   );
   AOI21X1 _06240_ (
-    .A( dbg_0.mem_data_9_ ),
+    .A(dbg_0.mem_data_9_ ),
     .B(_00428_),
     .C(_00487_),
     .Y(_00488_)
@@ -10140,13 +10140,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00484_),
     .B(_00485_),
     .C(_00488_),
-    .Y( dbg_0.dbg_dout_9_ )
+    .Y(dbg_0.dbg_dout_9_ )
   );
   AOI22X1 _06242_ (
-    .A( dbg_0.dbg_mem_addr_10_ ),
+    .A(dbg_0.dbg_mem_addr_10_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_10_ ),
+    .D(dbg_0.mem_cnt_10_ ),
     .Y(_00489_)
   );
   NAND2X1 _06243_ (
@@ -10166,7 +10166,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00492_)
   );
   AOI21X1 _06246_ (
-    .A( dbg_0.mem_data_10_ ),
+    .A(dbg_0.mem_data_10_ ),
     .B(_00428_),
     .C(_00492_),
     .Y(_00493_)
@@ -10175,17 +10175,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00489_),
     .B(_00490_),
     .C(_00493_),
-    .Y( dbg_0.dbg_dout_10_ )
+    .Y(dbg_0.dbg_dout_10_ )
   );
   AOI22X1 _06248_ (
-    .A( dbg_0.dbg_mem_addr_11_ ),
+    .A(dbg_0.dbg_mem_addr_11_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_11_ ),
+    .D(dbg_0.mem_cnt_11_ ),
     .Y(_00494_)
   );
   NAND2X1 _06249_ (
-    .A( dbg_0.mem_data_11_ ),
+    .A(dbg_0.mem_data_11_ ),
     .B(_00428_),
     .Y(_00495_)
   );
@@ -10210,18 +10210,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00494_),
     .B(_00495_),
     .C(_00498_),
-    .Y( dbg_0.dbg_dout_11_ )
+    .Y(dbg_0.dbg_dout_11_ )
   );
   NAND2X1 _06254_ (
-    .A( dbg_0.mem_data_12_ ),
+    .A(dbg_0.mem_data_12_ ),
     .B(_00428_),
     .Y(_00499_)
   );
   AOI22X1 _06255_ (
-    .A( dbg_0.dbg_mem_addr_12_ ),
+    .A(dbg_0.dbg_mem_addr_12_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_12_ ),
+    .D(dbg_0.mem_cnt_12_ ),
     .Y(_00500_)
   );
   INVX1 _06256_ (
@@ -10245,13 +10245,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00499_),
     .B(_00502_),
     .C(_00503_),
-    .Y( dbg_0.dbg_dout_12_ )
+    .Y(dbg_0.dbg_dout_12_ )
   );
   AOI22X1 _06260_ (
-    .A( dbg_0.dbg_mem_addr_13_ ),
+    .A(dbg_0.dbg_mem_addr_13_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_13_ ),
+    .D(dbg_0.mem_cnt_13_ ),
     .Y(_00504_)
   );
   NAND2X1 _06261_ (
@@ -10271,7 +10271,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00507_)
   );
   AOI21X1 _06264_ (
-    .A( dbg_0.mem_data_13_ ),
+    .A(dbg_0.mem_data_13_ ),
     .B(_00428_),
     .C(_00507_),
     .Y(_00508_)
@@ -10280,18 +10280,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00504_),
     .B(_00505_),
     .C(_00508_),
-    .Y( dbg_0.dbg_dout_13_ )
+    .Y(dbg_0.dbg_dout_13_ )
   );
   NAND2X1 _06266_ (
-    .A( dbg_0.mem_data_14_ ),
+    .A(dbg_0.mem_data_14_ ),
     .B(_00428_),
     .Y(_00509_)
   );
   AOI22X1 _06267_ (
-    .A( dbg_0.dbg_mem_addr_14_ ),
+    .A(dbg_0.dbg_mem_addr_14_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_14_ ),
+    .D(dbg_0.mem_cnt_14_ ),
     .Y(_00510_)
   );
   INVX1 _06268_ (
@@ -10315,7 +10315,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00509_),
     .B(_00512_),
     .C(_00513_),
-    .Y( dbg_0.dbg_dout_14_ )
+    .Y(dbg_0.dbg_dout_14_ )
   );
   AOI22X1 _06272_ (
     .A(1'h1),
@@ -10329,7 +10329,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00515_)
   );
   AOI21X1 _06274_ (
-    .A( dbg_0.mem_data_15_ ),
+    .A(dbg_0.mem_data_15_ ),
     .B(_00428_),
     .C(_00515_),
     .Y(_00516_)
@@ -10340,22 +10340,22 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00517_)
   );
   AOI22X1 _06276_ (
-    .A( dbg_0.dbg_mem_addr_15_ ),
+    .A(dbg_0.dbg_mem_addr_15_ ),
     .B(_00264_),
     .C(_00327_),
-    .D( dbg_0.mem_cnt_15_ ),
+    .D(dbg_0.mem_cnt_15_ ),
     .Y(_00518_)
   );
   NAND3X1 _06277_ (
     .A(_00516_),
     .B(_00517_),
     .C(_00518_),
-    .Y( dbg_0.dbg_dout_15_ )
+    .Y(dbg_0.dbg_dout_15_ )
   );
   OAI21X1 _06278_ (
-    .A( dbg_0.cpu_ctl_4_ ),
+    .A(dbg_0.cpu_ctl_4_ ),
     .B(_00230_),
-    .C( dbg_0.cpu_stat_full_0_ ),
+    .C(dbg_0.cpu_stat_full_0_ ),
     .Y(_00519_)
   );
   INVX1 _06279_ (
@@ -10363,21 +10363,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05582_)
   );
   OAI22X1 _06280_ (
-    .A( dbg_0.mem_state_0_ ),
+    .A(dbg_0.mem_state_0_ ),
     .B(_00251_),
     .C(_00403_),
     .D(_00200_),
     .Y(_00520_)
   );
   AND2X1 _06281_ (
-    .A( dbg_0.cpu_ctl_5_ ),
+    .A(dbg_0.cpu_ctl_5_ ),
     .B(_05695_),
     .Y(_00521_)
   );
   AOI21X1 _06282_ (
     .A(dbg_en),
     .B(_00521_),
-    .C( dbg_0.halt_flag ),
+    .C(dbg_0.halt_flag ),
     .Y(_00522_)
   );
   NAND2X1 _06283_ (
@@ -10392,35 +10392,35 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00524_)
   );
   NOR2X1 _06285_ (
-    .A( dbg_0.inc_step_1_ ),
+    .A(dbg_0.inc_step_1_ ),
     .B(_00524_),
-    .Y( dbg_0.dbg_halt_cmd )
+    .Y(dbg_0.dbg_halt_cmd )
   );
   NOR2X1 _06286_ (
     .A(_00197_),
     .B(_00392_),
-    .Y( dbg_0.dbg_i2c_0.mem_burst_wr )
+    .Y(dbg_0.dbg_i2c_0.mem_burst_wr )
   );
   OAI21X1 _06287_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
-    .B( dbg_0.dbg_i2c_0.dbg_rd ),
-    .C( dbg_0.dbg_i2c_0.mem_burst ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
+    .B(dbg_0.dbg_i2c_0.dbg_rd ),
+    .C(dbg_0.dbg_i2c_0.mem_burst ),
     .Y(_00525_)
   );
   OAI21X1 _06288_ (
-    .A( dbg_0.mem_ctl_1_ ),
+    .A(dbg_0.mem_ctl_1_ ),
     .B(_00392_),
     .C(_00525_),
     .Y(_00162_)
   );
   AND2X1 _06289_ (
     .A(_00197_),
-    .B( dbg_0.dbg_mem_en ),
-    .Y( dbg_0.dbg_mem_rd )
+    .B(dbg_0.dbg_mem_en ),
+    .Y(dbg_0.dbg_mem_rd )
   );
   MUX2X1 _06290_ (
-    .A( dbg_0.cpu_ctl_3_ ),
-    .B( dbg_0.dbg_din_3_ ),
+    .A(dbg_0.cpu_ctl_3_ ),
+    .B(dbg_0.dbg_din_3_ ),
     .S(_00403_),
     .Y(_00526_)
   );
@@ -10429,8 +10429,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00164_)
   );
   MUX2X1 _06292_ (
-    .A( dbg_0.cpu_ctl_4_ ),
-    .B( dbg_0.dbg_din_4_ ),
+    .A(dbg_0.cpu_ctl_4_ ),
+    .B(dbg_0.dbg_din_4_ ),
     .S(_00403_),
     .Y(_00527_)
   );
@@ -10439,8 +10439,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00165_)
   );
   MUX2X1 _06294_ (
-    .A( dbg_0.cpu_ctl_5_ ),
-    .B( dbg_0.dbg_din_5_ ),
+    .A(dbg_0.cpu_ctl_5_ ),
+    .B(dbg_0.dbg_din_5_ ),
     .S(_00403_),
     .Y(_00528_)
   );
@@ -10449,8 +10449,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00166_)
   );
   MUX2X1 _06296_ (
-    .A( clock_module_0.dbg_cpu_reset ),
-    .B( dbg_0.dbg_din_6_ ),
+    .A(clock_module_0.dbg_cpu_reset ),
+    .B(dbg_0.dbg_din_6_ ),
     .S(_00403_),
     .Y(_00529_)
   );
@@ -10461,17 +10461,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _06298_ (
     .A(_00196_),
     .B(_00392_),
-    .C( dbg_0.dbg_i2c_0.mem_burst_end ),
+    .C(dbg_0.dbg_i2c_0.mem_burst_end ),
     .Y(_00168_)
   );
   NAND2X1 _06299_ (
-    .A( dbg_0.dbg_din_1_ ),
+    .A(dbg_0.dbg_din_1_ ),
     .B(_00404_),
     .Y(_00530_)
   );
   OAI21X1 _06300_ (
     .A(_00193_),
-    .B( dbg_0.mem_state_0_ ),
+    .B(dbg_0.mem_state_0_ ),
     .C(_00530_),
     .Y(_00531_)
   );
@@ -10481,12 +10481,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00169_)
   );
   NAND2X1 _06302_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
     .B(_00428_),
     .Y(_00532_)
   );
   AOI21X1 _06303_ (
-    .A( dbg_0.dbg_i2c_0.dbg_wr ),
+    .A(dbg_0.dbg_i2c_0.dbg_wr ),
     .B(_00428_),
     .C(_00397_),
     .Y(_00533_)
@@ -10498,8 +10498,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00534_)
   );
   MUX2X1 _06305_ (
-    .A( dbg_0.dbg_mem_din_0_ ),
-    .B( dbg_0.dbg_mem_din_8_ ),
+    .A(dbg_0.dbg_mem_din_0_ ),
+    .B(dbg_0.dbg_mem_din_8_ ),
     .S(_00254_),
     .Y(_00535_)
   );
@@ -10509,7 +10509,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00536_)
   );
   OAI21X1 _06307_ (
-    .A( dbg_0.dbg_reg_din_0_ ),
+    .A(dbg_0.dbg_reg_din_0_ ),
     .B(_00396_),
     .C(_00397_),
     .Y(_00537_)
@@ -10521,7 +10521,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00538_)
   );
   OAI21X1 _06309_ (
-    .A( dbg_0.dbg_din_0_ ),
+    .A(dbg_0.dbg_din_0_ ),
     .B(_00532_),
     .C(_00538_),
     .Y(_00539_)
@@ -10533,8 +10533,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00170_)
   );
   MUX2X1 _06311_ (
-    .A( dbg_0.dbg_mem_din_1_ ),
-    .B( dbg_0.dbg_mem_din_9_ ),
+    .A(dbg_0.dbg_mem_din_1_ ),
+    .B(dbg_0.dbg_mem_din_9_ ),
     .S(_00254_),
     .Y(_00540_)
   );
@@ -10544,7 +10544,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00541_)
   );
   OAI21X1 _06313_ (
-    .A( dbg_0.dbg_reg_din_1_ ),
+    .A(dbg_0.dbg_reg_din_1_ ),
     .B(_00396_),
     .C(_00397_),
     .Y(_00542_)
@@ -10556,7 +10556,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00543_)
   );
   OAI21X1 _06315_ (
-    .A( dbg_0.dbg_din_1_ ),
+    .A(dbg_0.dbg_din_1_ ),
     .B(_00532_),
     .C(_00543_),
     .Y(_00544_)
@@ -10568,8 +10568,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00171_)
   );
   MUX2X1 _06317_ (
-    .A( dbg_0.dbg_mem_din_2_ ),
-    .B( dbg_0.dbg_mem_din_10_ ),
+    .A(dbg_0.dbg_mem_din_2_ ),
+    .B(dbg_0.dbg_mem_din_10_ ),
     .S(_00254_),
     .Y(_00545_)
   );
@@ -10579,7 +10579,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00546_)
   );
   OAI21X1 _06319_ (
-    .A( dbg_0.dbg_reg_din_2_ ),
+    .A(dbg_0.dbg_reg_din_2_ ),
     .B(_00396_),
     .C(_00397_),
     .Y(_00547_)
@@ -10591,7 +10591,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00548_)
   );
   OAI21X1 _06321_ (
-    .A( dbg_0.dbg_din_2_ ),
+    .A(dbg_0.dbg_din_2_ ),
     .B(_00532_),
     .C(_00548_),
     .Y(_00549_)
@@ -10603,8 +10603,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00172_)
   );
   MUX2X1 _06323_ (
-    .A( dbg_0.dbg_mem_din_3_ ),
-    .B( dbg_0.dbg_mem_din_11_ ),
+    .A(dbg_0.dbg_mem_din_3_ ),
+    .B(dbg_0.dbg_mem_din_11_ ),
     .S(_00254_),
     .Y(_00550_)
   );
@@ -10614,7 +10614,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00551_)
   );
   OAI21X1 _06325_ (
-    .A( dbg_0.dbg_reg_din_3_ ),
+    .A(dbg_0.dbg_reg_din_3_ ),
     .B(_00396_),
     .C(_00397_),
     .Y(_00552_)
@@ -10626,7 +10626,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00553_)
   );
   OAI21X1 _06327_ (
-    .A( dbg_0.dbg_din_3_ ),
+    .A(dbg_0.dbg_din_3_ ),
     .B(_00532_),
     .C(_00553_),
     .Y(_00554_)
@@ -10638,8 +10638,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00173_)
   );
   MUX2X1 _06329_ (
-    .A( dbg_0.dbg_mem_din_4_ ),
-    .B( dbg_0.dbg_mem_din_12_ ),
+    .A(dbg_0.dbg_mem_din_4_ ),
+    .B(dbg_0.dbg_mem_din_12_ ),
     .S(_00254_),
     .Y(_00555_)
   );
@@ -10649,7 +10649,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00556_)
   );
   OAI21X1 _06331_ (
-    .A( dbg_0.dbg_reg_din_4_ ),
+    .A(dbg_0.dbg_reg_din_4_ ),
     .B(_00396_),
     .C(_00397_),
     .Y(_00557_)
@@ -10661,7 +10661,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00558_)
   );
   OAI21X1 _06333_ (
-    .A( dbg_0.dbg_din_4_ ),
+    .A(dbg_0.dbg_din_4_ ),
     .B(_00532_),
     .C(_00558_),
     .Y(_00559_)
@@ -10673,8 +10673,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00174_)
   );
   MUX2X1 _06335_ (
-    .A( dbg_0.dbg_mem_din_5_ ),
-    .B( dbg_0.dbg_mem_din_13_ ),
+    .A(dbg_0.dbg_mem_din_5_ ),
+    .B(dbg_0.dbg_mem_din_13_ ),
     .S(_00254_),
     .Y(_00560_)
   );
@@ -10684,7 +10684,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00561_)
   );
   OAI21X1 _06337_ (
-    .A( dbg_0.dbg_reg_din_5_ ),
+    .A(dbg_0.dbg_reg_din_5_ ),
     .B(_00396_),
     .C(_00397_),
     .Y(_00562_)
@@ -10696,7 +10696,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00563_)
   );
   OAI21X1 _06339_ (
-    .A( dbg_0.dbg_din_5_ ),
+    .A(dbg_0.dbg_din_5_ ),
     .B(_00532_),
     .C(_00563_),
     .Y(_00564_)
@@ -10708,8 +10708,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00175_)
   );
   MUX2X1 _06341_ (
-    .A( dbg_0.dbg_mem_din_6_ ),
-    .B( dbg_0.dbg_mem_din_14_ ),
+    .A(dbg_0.dbg_mem_din_6_ ),
+    .B(dbg_0.dbg_mem_din_14_ ),
     .S(_00254_),
     .Y(_00565_)
   );
@@ -10719,7 +10719,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00566_)
   );
   OAI21X1 _06343_ (
-    .A( dbg_0.dbg_reg_din_6_ ),
+    .A(dbg_0.dbg_reg_din_6_ ),
     .B(_00396_),
     .C(_00397_),
     .Y(_00567_)
@@ -10731,7 +10731,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00568_)
   );
   OAI21X1 _06345_ (
-    .A( dbg_0.dbg_din_6_ ),
+    .A(dbg_0.dbg_din_6_ ),
     .B(_00532_),
     .C(_00568_),
     .Y(_00569_)
@@ -10743,8 +10743,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00176_)
   );
   MUX2X1 _06347_ (
-    .A( dbg_0.dbg_mem_din_7_ ),
-    .B( dbg_0.dbg_mem_din_15_ ),
+    .A(dbg_0.dbg_mem_din_7_ ),
+    .B(dbg_0.dbg_mem_din_15_ ),
     .S(_00254_),
     .Y(_00570_)
   );
@@ -10754,7 +10754,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00571_)
   );
   OAI21X1 _06349_ (
-    .A( dbg_0.dbg_reg_din_7_ ),
+    .A(dbg_0.dbg_reg_din_7_ ),
     .B(_00396_),
     .C(_00397_),
     .Y(_00572_)
@@ -10766,7 +10766,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00573_)
   );
   OAI21X1 _06351_ (
-    .A( dbg_0.dbg_din_7_ ),
+    .A(dbg_0.dbg_din_7_ ),
     .B(_00532_),
     .C(_00573_),
     .Y(_00574_)
@@ -10778,17 +10778,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00177_)
   );
   NAND2X1 _06353_ (
-    .A( dbg_0.dbg_reg_din_8_ ),
+    .A(dbg_0.dbg_reg_din_8_ ),
     .B(_00395_),
     .Y(_00575_)
   );
   NOR2X1 _06354_ (
     .A(_00198_),
-    .B( dbg_0.dbg_i2c_0.mem_bw ),
+    .B(dbg_0.dbg_i2c_0.mem_bw ),
     .Y(_00576_)
   );
   NAND2X1 _06355_ (
-    .A( dbg_0.dbg_mem_din_8_ ),
+    .A(dbg_0.dbg_mem_din_8_ ),
     .B(_00576_),
     .Y(_00577_)
   );
@@ -10799,7 +10799,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00578_)
   );
   AOI22X1 _06357_ (
-    .A( dbg_0.mem_data_8_ ),
+    .A(dbg_0.mem_data_8_ ),
     .B(_00533_),
     .C(_00578_),
     .D(_00532_),
@@ -10812,12 +10812,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00178_)
   );
   NAND2X1 _06359_ (
-    .A( dbg_0.dbg_reg_din_9_ ),
+    .A(dbg_0.dbg_reg_din_9_ ),
     .B(_00395_),
     .Y(_00580_)
   );
   NAND2X1 _06360_ (
-    .A( dbg_0.dbg_mem_din_9_ ),
+    .A(dbg_0.dbg_mem_din_9_ ),
     .B(_00576_),
     .Y(_00581_)
   );
@@ -10828,7 +10828,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00582_)
   );
   AOI22X1 _06362_ (
-    .A( dbg_0.mem_data_9_ ),
+    .A(dbg_0.mem_data_9_ ),
     .B(_00533_),
     .C(_00582_),
     .D(_00532_),
@@ -10841,12 +10841,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00179_)
   );
   NAND2X1 _06364_ (
-    .A( dbg_0.dbg_reg_din_10_ ),
+    .A(dbg_0.dbg_reg_din_10_ ),
     .B(_00395_),
     .Y(_00584_)
   );
   NAND2X1 _06365_ (
-    .A( dbg_0.dbg_mem_din_10_ ),
+    .A(dbg_0.dbg_mem_din_10_ ),
     .B(_00576_),
     .Y(_00585_)
   );
@@ -10858,7 +10858,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06367_ (
     .A(_00586_),
-    .B( dbg_0.dbg_din_10_ ),
+    .B(dbg_0.dbg_din_10_ ),
     .S(_00532_),
     .Y(_00587_)
   );
@@ -10869,12 +10869,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00180_)
   );
   NAND2X1 _06369_ (
-    .A( dbg_0.dbg_reg_din_11_ ),
+    .A(dbg_0.dbg_reg_din_11_ ),
     .B(_00395_),
     .Y(_00588_)
   );
   NAND2X1 _06370_ (
-    .A( dbg_0.dbg_mem_din_11_ ),
+    .A(dbg_0.dbg_mem_din_11_ ),
     .B(_00576_),
     .Y(_00589_)
   );
@@ -10886,7 +10886,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06372_ (
     .A(_00590_),
-    .B( dbg_0.dbg_din_11_ ),
+    .B(dbg_0.dbg_din_11_ ),
     .S(_00532_),
     .Y(_00591_)
   );
@@ -10897,12 +10897,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00181_)
   );
   NAND2X1 _06374_ (
-    .A( dbg_0.dbg_reg_din_12_ ),
+    .A(dbg_0.dbg_reg_din_12_ ),
     .B(_00395_),
     .Y(_00592_)
   );
   NAND2X1 _06375_ (
-    .A( dbg_0.dbg_mem_din_12_ ),
+    .A(dbg_0.dbg_mem_din_12_ ),
     .B(_00576_),
     .Y(_00593_)
   );
@@ -10914,7 +10914,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06377_ (
     .A(_00594_),
-    .B( dbg_0.dbg_din_12_ ),
+    .B(dbg_0.dbg_din_12_ ),
     .S(_00532_),
     .Y(_00595_)
   );
@@ -10925,12 +10925,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00182_)
   );
   NAND2X1 _06379_ (
-    .A( dbg_0.dbg_reg_din_13_ ),
+    .A(dbg_0.dbg_reg_din_13_ ),
     .B(_00395_),
     .Y(_00596_)
   );
   NAND2X1 _06380_ (
-    .A( dbg_0.dbg_mem_din_13_ ),
+    .A(dbg_0.dbg_mem_din_13_ ),
     .B(_00576_),
     .Y(_00597_)
   );
@@ -10941,7 +10941,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00598_)
   );
   AOI22X1 _06382_ (
-    .A( dbg_0.mem_data_13_ ),
+    .A(dbg_0.mem_data_13_ ),
     .B(_00533_),
     .C(_00598_),
     .D(_00532_),
@@ -10954,12 +10954,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00183_)
   );
   NAND2X1 _06384_ (
-    .A( dbg_0.dbg_reg_din_14_ ),
+    .A(dbg_0.dbg_reg_din_14_ ),
     .B(_00395_),
     .Y(_00600_)
   );
   NAND2X1 _06385_ (
-    .A( dbg_0.dbg_mem_din_14_ ),
+    .A(dbg_0.dbg_mem_din_14_ ),
     .B(_00576_),
     .Y(_00601_)
   );
@@ -10971,7 +10971,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06387_ (
     .A(_00602_),
-    .B( dbg_0.dbg_din_14_ ),
+    .B(dbg_0.dbg_din_14_ ),
     .S(_00532_),
     .Y(_00603_)
   );
@@ -10982,12 +10982,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00184_)
   );
   NAND2X1 _06389_ (
-    .A( dbg_0.dbg_reg_din_15_ ),
+    .A(dbg_0.dbg_reg_din_15_ ),
     .B(_00395_),
     .Y(_00604_)
   );
   NAND2X1 _06390_ (
-    .A( dbg_0.dbg_mem_din_15_ ),
+    .A(dbg_0.dbg_mem_din_15_ ),
     .B(_00576_),
     .Y(_00605_)
   );
@@ -10998,7 +10998,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00606_)
   );
   AOI22X1 _06392_ (
-    .A( dbg_0.mem_data_15_ ),
+    .A(dbg_0.mem_data_15_ ),
     .B(_00533_),
     .C(_00606_),
     .D(_00532_),
@@ -11016,7 +11016,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00608_)
   );
   OAI21X1 _06395_ (
-    .A( dbg_0.dbg_din_1_ ),
+    .A(dbg_0.dbg_din_1_ ),
     .B(_00427_),
     .C(_00608_),
     .Y(_00609_)
@@ -11026,8 +11026,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00186_)
   );
   MUX2X1 _06397_ (
-    .A( dbg_0.mem_ctl_2_ ),
-    .B( dbg_0.dbg_din_2_ ),
+    .A(dbg_0.mem_ctl_2_ ),
+    .B(dbg_0.dbg_din_2_ ),
     .S(_00427_),
     .Y(_00610_)
   );
@@ -11036,8 +11036,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00187_)
   );
   MUX2X1 _06399_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
-    .B( dbg_0.dbg_din_3_ ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
+    .B(dbg_0.dbg_din_3_ ),
     .S(_00427_),
     .Y(_00611_)
   );
@@ -11048,646 +11048,646 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   DFFSR _06401_ (
     .CLK(dco_clk),
     .D(_00164_),
-    .Q( dbg_0.cpu_ctl_3_ ),
+    .Q(dbg_0.cpu_ctl_3_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06402_ (
     .CLK(dco_clk),
     .D(_00165_),
-    .Q( dbg_0.cpu_ctl_4_ ),
+    .Q(dbg_0.cpu_ctl_4_ ),
     .R(1'h1),
     .S(_00163_)
   );
   DFFSR _06403_ (
     .CLK(dco_clk),
     .D(_00166_),
-    .Q( dbg_0.cpu_ctl_5_ ),
+    .Q(dbg_0.cpu_ctl_5_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06404_ (
     .CLK(dco_clk),
     .D(_00167_),
-    .Q( clock_module_0.dbg_cpu_reset ),
+    .Q(clock_module_0.dbg_cpu_reset ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06405_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_mem_rd ),
-    .Q( dbg_0.dbg_mem_rd_dly ),
+    .D(dbg_0.dbg_mem_rd ),
+    .Q(dbg_0.dbg_mem_rd_dly ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06406_ (
     .CLK(dco_clk),
-    .D( dbg_0.mem_state_nxt_0_ ),
-    .Q( dbg_0.mem_state_0_ ),
+    .D(dbg_0.mem_state_nxt_0_ ),
+    .Q(dbg_0.mem_state_0_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06407_ (
     .CLK(dco_clk),
-    .D( dbg_0.mem_state_nxt_1_ ),
-    .Q( dbg_0.mem_state_1_ ),
+    .D(dbg_0.mem_state_nxt_1_ ),
+    .Q(dbg_0.mem_state_1_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06408_ (
     .CLK(dco_clk),
     .D(_00162_),
-    .Q( dbg_0.mem_startb ),
+    .Q(dbg_0.mem_startb ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06409_ (
     .CLK(dco_clk),
     .D(_00168_),
-    .Q( dbg_0.dbg_i2c_0.mem_burst ),
+    .Q(dbg_0.dbg_i2c_0.mem_burst ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06410_ (
     .CLK(dco_clk),
-    .D( dbg_0.istep ),
-    .Q( dbg_0.inc_step_0_ ),
+    .D(dbg_0.istep ),
+    .Q(dbg_0.inc_step_0_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06411_ (
     .CLK(dco_clk),
     .D(_00128_),
-    .Q( dbg_0.inc_step_1_ ),
+    .Q(dbg_0.inc_step_1_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06412_ (
     .CLK(dco_clk),
     .D(_00127_),
-    .Q( dbg_0.dbg_rd_rdy ),
+    .Q(dbg_0.dbg_rd_rdy ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06413_ (
     .CLK(dco_clk),
     .D(_00145_),
-    .Q( dbg_0.mem_cnt_0_ ),
+    .Q(dbg_0.mem_cnt_0_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06414_ (
     .CLK(dco_clk),
     .D(_00152_),
-    .Q( dbg_0.mem_cnt_1_ ),
+    .Q(dbg_0.mem_cnt_1_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06415_ (
     .CLK(dco_clk),
     .D(_00153_),
-    .Q( dbg_0.mem_cnt_2_ ),
+    .Q(dbg_0.mem_cnt_2_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06416_ (
     .CLK(dco_clk),
     .D(_00154_),
-    .Q( dbg_0.mem_cnt_3_ ),
+    .Q(dbg_0.mem_cnt_3_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06417_ (
     .CLK(dco_clk),
     .D(_00155_),
-    .Q( dbg_0.mem_cnt_4_ ),
+    .Q(dbg_0.mem_cnt_4_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06418_ (
     .CLK(dco_clk),
     .D(_00156_),
-    .Q( dbg_0.mem_cnt_5_ ),
+    .Q(dbg_0.mem_cnt_5_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06419_ (
     .CLK(dco_clk),
     .D(_00157_),
-    .Q( dbg_0.mem_cnt_6_ ),
+    .Q(dbg_0.mem_cnt_6_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06420_ (
     .CLK(dco_clk),
     .D(_00158_),
-    .Q( dbg_0.mem_cnt_7_ ),
+    .Q(dbg_0.mem_cnt_7_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06421_ (
     .CLK(dco_clk),
     .D(_00159_),
-    .Q( dbg_0.mem_cnt_8_ ),
+    .Q(dbg_0.mem_cnt_8_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06422_ (
     .CLK(dco_clk),
     .D(_00160_),
-    .Q( dbg_0.mem_cnt_9_ ),
+    .Q(dbg_0.mem_cnt_9_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06423_ (
     .CLK(dco_clk),
     .D(_00146_),
-    .Q( dbg_0.mem_cnt_10_ ),
+    .Q(dbg_0.mem_cnt_10_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06424_ (
     .CLK(dco_clk),
     .D(_00147_),
-    .Q( dbg_0.mem_cnt_11_ ),
+    .Q(dbg_0.mem_cnt_11_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06425_ (
     .CLK(dco_clk),
     .D(_00148_),
-    .Q( dbg_0.mem_cnt_12_ ),
+    .Q(dbg_0.mem_cnt_12_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06426_ (
     .CLK(dco_clk),
     .D(_00149_),
-    .Q( dbg_0.mem_cnt_13_ ),
+    .Q(dbg_0.mem_cnt_13_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06427_ (
     .CLK(dco_clk),
     .D(_00150_),
-    .Q( dbg_0.mem_cnt_14_ ),
+    .Q(dbg_0.mem_cnt_14_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06428_ (
     .CLK(dco_clk),
     .D(_00151_),
-    .Q( dbg_0.mem_cnt_15_ ),
+    .Q(dbg_0.mem_cnt_15_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06429_ (
     .CLK(dco_clk),
     .D(_00129_),
-    .Q( dbg_0.dbg_mem_addr_0_ ),
+    .Q(dbg_0.dbg_mem_addr_0_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06430_ (
     .CLK(dco_clk),
     .D(_00136_),
-    .Q( dbg_0.dbg_mem_addr_1_ ),
+    .Q(dbg_0.dbg_mem_addr_1_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06431_ (
     .CLK(dco_clk),
     .D(_00137_),
-    .Q( dbg_0.dbg_mem_addr_2_ ),
+    .Q(dbg_0.dbg_mem_addr_2_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06432_ (
     .CLK(dco_clk),
     .D(_00138_),
-    .Q( dbg_0.dbg_mem_addr_3_ ),
+    .Q(dbg_0.dbg_mem_addr_3_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06433_ (
     .CLK(dco_clk),
     .D(_00139_),
-    .Q( dbg_0.dbg_mem_addr_4_ ),
+    .Q(dbg_0.dbg_mem_addr_4_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06434_ (
     .CLK(dco_clk),
     .D(_00140_),
-    .Q( dbg_0.dbg_mem_addr_5_ ),
+    .Q(dbg_0.dbg_mem_addr_5_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06435_ (
     .CLK(dco_clk),
     .D(_00141_),
-    .Q( dbg_0.dbg_mem_addr_6_ ),
+    .Q(dbg_0.dbg_mem_addr_6_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06436_ (
     .CLK(dco_clk),
     .D(_00142_),
-    .Q( dbg_0.dbg_mem_addr_7_ ),
+    .Q(dbg_0.dbg_mem_addr_7_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06437_ (
     .CLK(dco_clk),
     .D(_00143_),
-    .Q( dbg_0.dbg_mem_addr_8_ ),
+    .Q(dbg_0.dbg_mem_addr_8_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06438_ (
     .CLK(dco_clk),
     .D(_00144_),
-    .Q( dbg_0.dbg_mem_addr_9_ ),
+    .Q(dbg_0.dbg_mem_addr_9_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06439_ (
     .CLK(dco_clk),
     .D(_00130_),
-    .Q( dbg_0.dbg_mem_addr_10_ ),
+    .Q(dbg_0.dbg_mem_addr_10_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06440_ (
     .CLK(dco_clk),
     .D(_00131_),
-    .Q( dbg_0.dbg_mem_addr_11_ ),
+    .Q(dbg_0.dbg_mem_addr_11_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06441_ (
     .CLK(dco_clk),
     .D(_00132_),
-    .Q( dbg_0.dbg_mem_addr_12_ ),
+    .Q(dbg_0.dbg_mem_addr_12_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06442_ (
     .CLK(dco_clk),
     .D(_00133_),
-    .Q( dbg_0.dbg_mem_addr_13_ ),
+    .Q(dbg_0.dbg_mem_addr_13_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06443_ (
     .CLK(dco_clk),
     .D(_00134_),
-    .Q( dbg_0.dbg_mem_addr_14_ ),
+    .Q(dbg_0.dbg_mem_addr_14_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06444_ (
     .CLK(dco_clk),
     .D(_00135_),
-    .Q( dbg_0.dbg_mem_addr_15_ ),
+    .Q(dbg_0.dbg_mem_addr_15_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06445_ (
     .CLK(dco_clk),
     .D(_00169_),
-    .Q( dbg_0.halt_flag ),
+    .Q(dbg_0.halt_flag ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06446_ (
     .CLK(dco_clk),
     .D(_00161_),
-    .Q( dbg_0.mem_start ),
+    .Q(dbg_0.mem_start ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06447_ (
     .CLK(dco_clk),
     .D(_00170_),
-    .Q( dbg_0.mem_data_0_ ),
+    .Q(dbg_0.mem_data_0_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06448_ (
     .CLK(dco_clk),
     .D(_00171_),
-    .Q( dbg_0.mem_data_1_ ),
+    .Q(dbg_0.mem_data_1_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06449_ (
     .CLK(dco_clk),
     .D(_00172_),
-    .Q( dbg_0.mem_data_2_ ),
+    .Q(dbg_0.mem_data_2_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06450_ (
     .CLK(dco_clk),
     .D(_00173_),
-    .Q( dbg_0.mem_data_3_ ),
+    .Q(dbg_0.mem_data_3_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06451_ (
     .CLK(dco_clk),
     .D(_00174_),
-    .Q( dbg_0.mem_data_4_ ),
+    .Q(dbg_0.mem_data_4_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06452_ (
     .CLK(dco_clk),
     .D(_00175_),
-    .Q( dbg_0.mem_data_5_ ),
+    .Q(dbg_0.mem_data_5_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06453_ (
     .CLK(dco_clk),
     .D(_00176_),
-    .Q( dbg_0.mem_data_6_ ),
+    .Q(dbg_0.mem_data_6_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06454_ (
     .CLK(dco_clk),
     .D(_00177_),
-    .Q( dbg_0.mem_data_7_ ),
+    .Q(dbg_0.mem_data_7_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06455_ (
     .CLK(dco_clk),
     .D(_00178_),
-    .Q( dbg_0.mem_data_8_ ),
+    .Q(dbg_0.mem_data_8_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06456_ (
     .CLK(dco_clk),
     .D(_00179_),
-    .Q( dbg_0.mem_data_9_ ),
+    .Q(dbg_0.mem_data_9_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06457_ (
     .CLK(dco_clk),
     .D(_00180_),
-    .Q( dbg_0.mem_data_10_ ),
+    .Q(dbg_0.mem_data_10_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06458_ (
     .CLK(dco_clk),
     .D(_00181_),
-    .Q( dbg_0.mem_data_11_ ),
+    .Q(dbg_0.mem_data_11_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06459_ (
     .CLK(dco_clk),
     .D(_00182_),
-    .Q( dbg_0.mem_data_12_ ),
+    .Q(dbg_0.mem_data_12_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06460_ (
     .CLK(dco_clk),
     .D(_00183_),
-    .Q( dbg_0.mem_data_13_ ),
+    .Q(dbg_0.mem_data_13_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06461_ (
     .CLK(dco_clk),
     .D(_00184_),
-    .Q( dbg_0.mem_data_14_ ),
+    .Q(dbg_0.mem_data_14_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06462_ (
     .CLK(dco_clk),
     .D(_00185_),
-    .Q( dbg_0.mem_data_15_ ),
+    .Q(dbg_0.mem_data_15_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06463_ (
     .CLK(dco_clk),
     .D(_00125_),
-    .Q( dbg_0.cpu_stat_2_ ),
+    .Q(dbg_0.cpu_stat_2_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06464_ (
     .CLK(dco_clk),
     .D(_00126_),
-    .Q( dbg_0.cpu_stat_3_ ),
+    .Q(dbg_0.cpu_stat_3_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06465_ (
     .CLK(dco_clk),
     .D(_00186_),
-    .Q( dbg_0.mem_ctl_1_ ),
+    .Q(dbg_0.mem_ctl_1_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06466_ (
     .CLK(dco_clk),
     .D(_00187_),
-    .Q( dbg_0.mem_ctl_2_ ),
+    .Q(dbg_0.mem_ctl_2_ ),
     .R(_00163_),
     .S(1'h1)
   );
   DFFSR _06467_ (
     .CLK(dco_clk),
     .D(_00188_),
-    .Q( dbg_0.dbg_i2c_0.mem_bw ),
+    .Q(dbg_0.dbg_i2c_0.mem_bw ),
     .R(_00163_),
     .S(1'h1)
   );
   INVX1 _06468_ (
-    .A( dbg_0.dbg_i2c_0.scl_sync_n ),
-    .Y( dbg_0.dbg_i2c_0.scl_sync )
+    .A(dbg_0.dbg_i2c_0.scl_sync_n ),
+    .Y(dbg_0.dbg_i2c_0.scl_sync )
   );
   INVX1 _06469_ (
-    .A( dbg_0.dbg_i2c_0.scl_dly ),
+    .A(dbg_0.dbg_i2c_0.scl_dly ),
     .Y(_00649_)
   );
   INVX1 _06470_ (
-    .A( dbg_0.dbg_i2c_0.sda_in_sync_n ),
-    .Y( dbg_0.dbg_i2c_0.sda_in_sync )
+    .A(dbg_0.dbg_i2c_0.sda_in_sync_n ),
+    .Y(dbg_0.dbg_i2c_0.sda_in_sync )
   );
   INVX1 _06471_ (
-    .A( dbg_0.dbg_i2c_0.sda_in_dly ),
+    .A(dbg_0.dbg_i2c_0.sda_in_dly ),
     .Y(_00650_)
   );
   INVX1 _06472_ (
-    .A( dbg_0.dbg_i2c_0.i2c_active_seq ),
+    .A(dbg_0.dbg_i2c_0.i2c_active_seq ),
     .Y(_00651_)
   );
   INVX1 _06473_ (
-    .A( dbg_0.dbg_i2c_0.i2c_state_2_ ),
+    .A(dbg_0.dbg_i2c_0.i2c_state_2_ ),
     .Y(_00652_)
   );
   INVX1 _06474_ (
-    .A( dbg_0.dbg_i2c_0.i2c_state_1_ ),
+    .A(dbg_0.dbg_i2c_0.i2c_state_1_ ),
     .Y(_00653_)
   );
   INVX1 _06475_ (
-    .A( dbg_0.dbg_i2c_0.i2c_state_0_ ),
+    .A(dbg_0.dbg_i2c_0.i2c_state_0_ ),
     .Y(_00654_)
   );
   INVX1 _06476_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_0_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_0_ ),
     .Y(_00655_)
   );
   INVX1 _06477_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_8_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_8_ ),
     .Y(_00656_)
   );
   INVX1 _06478_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_1_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_1_ ),
     .Y(_00657_)
   );
   INVX1 _06479_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_3_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_3_ ),
     .Y(_00658_)
   );
   INVX1 _06480_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_2_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_2_ ),
     .Y(_00659_)
   );
   INVX1 _06481_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_5_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_5_ ),
     .Y(_00660_)
   );
   INVX1 _06482_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_4_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_4_ ),
     .Y(_00661_)
   );
   INVX1 _06483_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_7_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_7_ ),
     .Y(_00662_)
   );
   INVX1 _06484_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_6_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_6_ ),
     .Y(_00663_)
   );
   INVX1 _06485_ (
-    .A( dbg_0.dbg_i2c_0.dbg_state_2_ ),
+    .A(dbg_0.dbg_i2c_0.dbg_state_2_ ),
     .Y(_00664_)
   );
   INVX1 _06486_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst ),
+    .A(dbg_0.dbg_i2c_0.mem_burst ),
     .Y(_00665_)
   );
   INVX1 _06487_ (
-    .A( dbg_0.dbg_i2c_0.mem_bw ),
+    .A(dbg_0.dbg_i2c_0.mem_bw ),
     .Y(_00666_)
   );
   INVX1 _06488_ (
     .A(dbg_i2c_scl),
-    .Y( dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_in )
+    .Y(dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_in )
   );
   INVX1 _06489_ (
     .A(dbg_i2c_sda_in),
-    .Y( dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_in )
+    .Y(dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_in )
   );
   INVX1 _06490_ (
-    .A( clock_module_0.dbg_rst ),
+    .A(clock_module_0.dbg_rst ),
     .Y(_00614_)
   );
   INVX1 _06491_ (
-    .A( dbg_0.dbg_din_11_ ),
+    .A(dbg_0.dbg_din_11_ ),
     .Y(_00667_)
   );
   INVX1 _06492_ (
-    .A( dbg_0.dbg_din_12_ ),
+    .A(dbg_0.dbg_din_12_ ),
     .Y(_00668_)
   );
   INVX1 _06493_ (
-    .A( dbg_0.dbg_din_13_ ),
+    .A(dbg_0.dbg_din_13_ ),
     .Y(_00669_)
   );
   INVX1 _06494_ (
-    .A( dbg_0.dbg_din_14_ ),
+    .A(dbg_0.dbg_din_14_ ),
     .Y(_00670_)
   );
   INVX1 _06495_ (
-    .A( dbg_0.dbg_din_15_ ),
+    .A(dbg_0.dbg_din_15_ ),
     .Y(_00671_)
   );
   OR2X1 _06496_ (
-    .A( dbg_0.dbg_i2c_0.scl_buf_0_ ),
-    .B( dbg_0.dbg_i2c_0.scl_buf_1_ ),
+    .A(dbg_0.dbg_i2c_0.scl_buf_0_ ),
+    .B(dbg_0.dbg_i2c_0.scl_buf_1_ ),
     .Y(_00672_)
   );
   AND2X1 _06497_ (
-    .A( dbg_0.dbg_i2c_0.scl_buf_0_ ),
-    .B( dbg_0.dbg_i2c_0.scl_buf_1_ ),
+    .A(dbg_0.dbg_i2c_0.scl_buf_0_ ),
+    .B(dbg_0.dbg_i2c_0.scl_buf_1_ ),
     .Y(_00673_)
   );
   OAI21X1 _06498_ (
-    .A( dbg_0.dbg_i2c_0.scl_sync ),
+    .A(dbg_0.dbg_i2c_0.scl_sync ),
     .B(_00673_),
     .C(_00672_),
     .Y(_00674_)
   );
   INVX1 _06499_ (
     .A(_00674_),
-    .Y( dbg_0.dbg_i2c_0.scl )
+    .Y(dbg_0.dbg_i2c_0.scl )
   );
   OR2X1 _06500_ (
-    .A( dbg_0.dbg_i2c_0.sda_in_buf_0_ ),
-    .B( dbg_0.dbg_i2c_0.sda_in_buf_1_ ),
+    .A(dbg_0.dbg_i2c_0.sda_in_buf_0_ ),
+    .B(dbg_0.dbg_i2c_0.sda_in_buf_1_ ),
     .Y(_00675_)
   );
   AND2X1 _06501_ (
-    .A( dbg_0.dbg_i2c_0.sda_in_buf_0_ ),
-    .B( dbg_0.dbg_i2c_0.sda_in_buf_1_ ),
+    .A(dbg_0.dbg_i2c_0.sda_in_buf_0_ ),
+    .B(dbg_0.dbg_i2c_0.sda_in_buf_1_ ),
     .Y(_00676_)
   );
   OAI21X1 _06502_ (
-    .A( dbg_0.dbg_i2c_0.sda_in_sync ),
+    .A(dbg_0.dbg_i2c_0.sda_in_sync ),
     .B(_00676_),
     .C(_00675_),
     .Y(_00677_)
   );
   INVX1 _06503_ (
     .A(_00677_),
-    .Y( dbg_0.dbg_i2c_0.sda_in )
+    .Y(dbg_0.dbg_i2c_0.sda_in )
   );
   NOR3X1 _06504_ (
     .A(_00650_),
     .B(_00674_),
-    .C( dbg_0.dbg_i2c_0.sda_in ),
+    .C(dbg_0.dbg_i2c_0.sda_in ),
     .Y(_00678_)
   );
   NAND3X1 _06505_ (
-    .A( dbg_0.dbg_i2c_0.sda_in_dly ),
-    .B( dbg_0.dbg_i2c_0.scl ),
+    .A(dbg_0.dbg_i2c_0.sda_in_dly ),
+    .B(dbg_0.dbg_i2c_0.scl ),
     .C(_00677_),
     .Y(_00679_)
   );
   NOR3X1 _06506_ (
-    .A( dbg_0.dbg_i2c_0.sda_in_dly ),
+    .A(dbg_0.dbg_i2c_0.sda_in_dly ),
     .B(_00674_),
     .C(_00677_),
     .Y(_00680_)
   );
   NAND3X1 _06507_ (
     .A(_00650_),
-    .B( dbg_0.dbg_i2c_0.scl ),
-    .C( dbg_0.dbg_i2c_0.sda_in ),
+    .B(dbg_0.dbg_i2c_0.scl ),
+    .C(dbg_0.dbg_i2c_0.sda_in ),
     .Y(_00681_)
   );
   NOR2X1 _06508_ (
@@ -11702,36 +11702,36 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00683_)
   );
   NAND3X1 _06510_ (
-    .A( dbg_0.dbg_i2c_0.i2c_active_seq ),
+    .A(dbg_0.dbg_i2c_0.i2c_active_seq ),
     .B(_00679_),
     .C(_00681_),
     .Y(_00684_)
   );
   NOR2X1 _06511_ (
     .A(_00649_),
-    .B( dbg_0.dbg_i2c_0.scl ),
+    .B(dbg_0.dbg_i2c_0.scl ),
     .Y(_00685_)
   );
   NAND2X1 _06512_ (
-    .A( dbg_0.dbg_i2c_0.scl_dly ),
+    .A(dbg_0.dbg_i2c_0.scl_dly ),
     .B(_00674_),
     .Y(_00686_)
   );
   NOR3X1 _06513_ (
     .A(_00649_),
     .B(_00654_),
-    .C( dbg_0.dbg_i2c_0.scl ),
+    .C(dbg_0.dbg_i2c_0.scl ),
     .Y(_00687_)
   );
   NAND3X1 _06514_ (
-    .A( dbg_0.dbg_i2c_0.scl_dly ),
-    .B( dbg_0.dbg_i2c_0.i2c_state_0_ ),
+    .A(dbg_0.dbg_i2c_0.scl_dly ),
+    .B(dbg_0.dbg_i2c_0.i2c_state_0_ ),
     .C(_00674_),
     .Y(_00688_)
   );
   NOR2X1 _06515_ (
-    .A( dbg_0.dbg_i2c_0.i2c_state_2_ ),
-    .B( dbg_0.dbg_i2c_0.i2c_state_1_ ),
+    .A(dbg_0.dbg_i2c_0.i2c_state_2_ ),
+    .B(dbg_0.dbg_i2c_0.i2c_state_1_ ),
     .Y(_00689_)
   );
   NAND2X1 _06516_ (
@@ -11740,14 +11740,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00690_)
   );
   NAND3X1 _06517_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_0_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_0_ ),
     .B(_00687_),
     .C(_00689_),
     .Y(_00691_)
   );
   NOR2X1 _06518_ (
     .A(_00652_),
-    .B( dbg_0.dbg_i2c_0.i2c_state_1_ ),
+    .B(dbg_0.dbg_i2c_0.i2c_state_1_ ),
     .Y(_00692_)
   );
   OAI21X1 _06519_ (
@@ -11765,12 +11765,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00691_),
     .B(_00693_),
     .C(_00684_),
-    .Y( dbg_0.dbg_i2c_0.i2c_state_nxt_2_ )
+    .Y(dbg_0.dbg_i2c_0.i2c_state_nxt_2_ )
   );
   NOR3X1 _06522_ (
     .A(_00649_),
     .B(_00656_),
-    .C( dbg_0.dbg_i2c_0.scl ),
+    .C(dbg_0.dbg_i2c_0.scl ),
     .Y(_00695_)
   );
   NAND3X1 _06523_ (
@@ -11780,22 +11780,22 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00696_)
   );
   XOR2X1 _06524_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_3_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_3_ ),
     .B(dbg_i2c_addr_2_),
     .Y(_00697_)
   );
   NOR2X1 _06525_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_6_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_6_ ),
     .B(dbg_i2c_addr_5_),
     .Y(_00698_)
   );
   AND2X1 _06526_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_6_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_6_ ),
     .B(dbg_i2c_addr_5_),
     .Y(_00699_)
   );
   XNOR2X1 _06527_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_5_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_5_ ),
     .B(dbg_i2c_addr_4_),
     .Y(_00700_)
   );
@@ -11818,7 +11818,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00703_)
   );
   XOR2X1 _06531_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_7_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_7_ ),
     .B(dbg_i2c_addr_6_),
     .Y(_00704_)
   );
@@ -11828,7 +11828,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00705_)
   );
   XNOR2X1 _06533_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_2_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_2_ ),
     .B(dbg_i2c_addr_1_),
     .Y(_00706_)
   );
@@ -11856,7 +11856,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND2X1 _06538_ (
     .A(_00652_),
-    .B( dbg_0.dbg_i2c_0.i2c_state_1_ ),
+    .B(dbg_0.dbg_i2c_0.i2c_state_1_ ),
     .Y(_00711_)
   );
   OR2X1 _06539_ (
@@ -11865,13 +11865,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00712_)
   );
   AOI21X1 _06540_ (
-    .A( dbg_0.dbg_i2c_0.i2c_state_2_ ),
-    .B( dbg_0.dbg_i2c_0.i2c_state_1_ ),
+    .A(dbg_0.dbg_i2c_0.i2c_state_2_ ),
+    .B(dbg_0.dbg_i2c_0.i2c_state_1_ ),
     .C(_00654_),
     .Y(_00713_)
   );
   NOR2X1 _06541_ (
-    .A( dbg_0.dbg_i2c_0.i2c_state_0_ ),
+    .A(dbg_0.dbg_i2c_0.i2c_state_0_ ),
     .B(_00711_),
     .Y(_00714_)
   );
@@ -11899,18 +11899,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00718_)
   );
   NOR2X1 _06546_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_4_ ),
-    .B( dbg_0.dbg_i2c_0.shift_buf_7_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_4_ ),
+    .B(dbg_0.dbg_i2c_0.shift_buf_7_ ),
     .Y(_00719_)
   );
   NAND2X1 _06547_ (
     .A(_00655_),
-    .B( dbg_0.dbg_i2c_0.shift_buf_8_ ),
+    .B(dbg_0.dbg_i2c_0.shift_buf_8_ ),
     .Y(_00720_)
   );
   NOR2X1 _06548_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_2_ ),
-    .B( dbg_0.dbg_i2c_0.shift_buf_5_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_2_ ),
+    .B(dbg_0.dbg_i2c_0.shift_buf_5_ ),
     .Y(_00721_)
   );
   NAND3X1 _06549_ (
@@ -11954,10 +11954,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NOR2X1 _06556_ (
     .A(_00684_),
     .B(_00728_),
-    .Y( dbg_0.dbg_i2c_0.i2c_state_nxt_0_ )
+    .Y(dbg_0.dbg_i2c_0.i2c_state_nxt_0_ )
   );
   NOR3X1 _06557_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_0_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_0_ ),
     .B(_00688_),
     .C(_00690_),
     .Y(_00729_)
@@ -11972,12 +11972,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00711_),
     .B(_00730_),
     .C(_00684_),
-    .Y( dbg_0.dbg_i2c_0.i2c_state_nxt_1_ )
+    .Y(dbg_0.dbg_i2c_0.i2c_state_nxt_1_ )
   );
   NOR2X1 _06560_ (
-    .A( dbg_0.dbg_i2c_0.scl_dly ),
+    .A(dbg_0.dbg_i2c_0.scl_dly ),
     .B(_00674_),
-    .Y( dbg_0.dbg_i2c_0.scl_re )
+    .Y(dbg_0.dbg_i2c_0.scl_re )
   );
   NOR2X1 _06561_ (
     .A(_00665_),
@@ -11986,17 +11986,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   AOI21X1 _06562_ (
     .A(_00665_),
-    .B( dbg_0.dbg_i2c_0.dbg_bw ),
+    .B(dbg_0.dbg_i2c_0.dbg_bw ),
     .C(_00731_),
     .Y(_00732_)
   );
   NAND2X1 _06563_ (
     .A(_00664_),
-    .B( dbg_0.dbg_i2c_0.dbg_state_1_ ),
+    .B(dbg_0.dbg_i2c_0.dbg_state_1_ ),
     .Y(_00733_)
   );
   NOR2X1 _06564_ (
-    .A( dbg_0.dbg_i2c_0.dbg_state_0_ ),
+    .A(dbg_0.dbg_i2c_0.dbg_state_0_ ),
     .B(_00733_),
     .Y(_00734_)
   );
@@ -12006,12 +12006,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00735_)
   );
   NOR2X1 _06566_ (
-    .A( dbg_0.dbg_i2c_0.dbg_state_2_ ),
-    .B( dbg_0.dbg_i2c_0.dbg_state_1_ ),
+    .A(dbg_0.dbg_i2c_0.dbg_state_2_ ),
+    .B(dbg_0.dbg_i2c_0.dbg_state_1_ ),
     .Y(_00736_)
   );
   NAND2X1 _06567_ (
-    .A( dbg_0.dbg_i2c_0.dbg_state_0_ ),
+    .A(dbg_0.dbg_i2c_0.dbg_state_0_ ),
     .B(_00736_),
     .Y(_00737_)
   );
@@ -12031,8 +12031,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00613_)
   );
   NOR2X1 _06571_ (
-    .A( dbg_0.dbg_i2c_0.dbg_state_1_ ),
-    .B( dbg_0.dbg_i2c_0.dbg_state_0_ ),
+    .A(dbg_0.dbg_i2c_0.dbg_state_1_ ),
+    .B(dbg_0.dbg_i2c_0.dbg_state_0_ ),
     .Y(_00740_)
   );
   AND2X1 _06572_ (
@@ -12056,7 +12056,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00744_)
   );
   NAND2X1 _06576_ (
-    .A( dbg_0.dbg_i2c_0.dbg_state_2_ ),
+    .A(dbg_0.dbg_i2c_0.dbg_state_2_ ),
     .B(_00740_),
     .Y(_00745_)
   );
@@ -12072,8 +12072,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _06579_ (
     .A(_00664_),
-    .B( dbg_0.dbg_i2c_0.dbg_state_1_ ),
-    .C( dbg_0.dbg_i2c_0.dbg_state_0_ ),
+    .B(dbg_0.dbg_i2c_0.dbg_state_1_ ),
+    .C(dbg_0.dbg_i2c_0.dbg_state_0_ ),
     .Y(_00748_)
   );
   INVX1 _06580_ (
@@ -12093,7 +12093,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00751_)
   );
   OAI21X1 _06583_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst ),
+    .A(dbg_0.dbg_i2c_0.mem_burst ),
     .B(_00744_),
     .C(_00751_),
     .Y(_00612_)
@@ -12112,7 +12112,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OR2X1 _06586_ (
     .A(_00665_),
-    .B( dbg_0.dbg_i2c_0.mem_burst_end ),
+    .B(dbg_0.dbg_i2c_0.mem_burst_end ),
     .Y(_00754_)
   );
   INVX1 _06587_ (
@@ -12126,14 +12126,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00756_)
   );
   AOI21X1 _06589_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst ),
-    .B( dbg_0.dbg_i2c_0.mem_burst_end ),
+    .A(dbg_0.dbg_i2c_0.mem_burst ),
+    .B(dbg_0.dbg_i2c_0.mem_burst_end ),
     .C(_00737_),
     .Y(_00757_)
   );
   OR2X1 _06590_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst_rd ),
-    .B( dbg_0.dbg_i2c_0.mem_burst_wr ),
+    .A(dbg_0.dbg_i2c_0.mem_burst_rd ),
+    .B(dbg_0.dbg_i2c_0.mem_burst_wr ),
     .Y(_00758_)
   );
   OAI21X1 _06591_ (
@@ -12153,23 +12153,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00753_),
     .B(_00759_),
     .C(_00760_),
-    .Y( dbg_0.dbg_i2c_0.dbg_state_nxt_0_ )
+    .Y(dbg_0.dbg_i2c_0.dbg_state_nxt_0_ )
   );
   AOI22X1 _06594_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst_rd ),
+    .A(dbg_0.dbg_i2c_0.mem_burst_rd ),
     .B(_00741_),
     .C(_00742_),
     .D(_00662_),
     .Y(_00761_)
   );
   OR2X1 _06595_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst_wr ),
+    .A(dbg_0.dbg_i2c_0.mem_burst_wr ),
     .B(_00761_),
     .Y(_00762_)
   );
   AOI21X1 _06596_ (
     .A(_00665_),
-    .B( dbg_0.dbg_i2c_0.dbg_bw ),
+    .B(dbg_0.dbg_i2c_0.dbg_bw ),
     .C(_00756_),
     .Y(_00763_)
   );
@@ -12184,7 +12184,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00753_),
     .B(_00762_),
     .C(_00764_),
-    .Y( dbg_0.dbg_i2c_0.dbg_state_nxt_1_ )
+    .Y(dbg_0.dbg_i2c_0.dbg_state_nxt_1_ )
   );
   NAND2X1 _06599_ (
     .A(_00732_),
@@ -12195,11 +12195,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_00726_),
     .B(_00745_),
     .C(_00765_),
-    .Y( dbg_0.dbg_i2c_0.dbg_state_nxt_2_ )
+    .Y(dbg_0.dbg_i2c_0.dbg_state_nxt_2_ )
   );
   MUX2X1 _06601_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_0_ ),
-    .B( dbg_0.dbg_din_8_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_0_ ),
+    .B(dbg_0.dbg_din_8_ ),
     .S(_00735_),
     .Y(_00766_)
   );
@@ -12209,8 +12209,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00615_)
   );
   MUX2X1 _06603_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_1_ ),
-    .B( dbg_0.dbg_din_9_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_1_ ),
+    .B(dbg_0.dbg_din_9_ ),
     .S(_00735_),
     .Y(_00767_)
   );
@@ -12220,8 +12220,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00616_)
   );
   MUX2X1 _06605_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_2_ ),
-    .B( dbg_0.dbg_din_10_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_2_ ),
+    .B(dbg_0.dbg_din_10_ ),
     .S(_00735_),
     .Y(_00768_)
   );
@@ -12236,7 +12236,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00769_)
   );
   NAND2X1 _06608_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_3_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_3_ ),
     .B(_00735_),
     .Y(_00770_)
   );
@@ -12247,7 +12247,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00618_)
   );
   NAND2X1 _06610_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_4_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_4_ ),
     .B(_00735_),
     .Y(_00771_)
   );
@@ -12258,7 +12258,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00619_)
   );
   NAND2X1 _06612_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_5_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_5_ ),
     .B(_00735_),
     .Y(_00772_)
   );
@@ -12269,7 +12269,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00620_)
   );
   NAND2X1 _06614_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_6_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_6_ ),
     .B(_00735_),
     .Y(_00773_)
   );
@@ -12280,7 +12280,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00621_)
   );
   NAND2X1 _06616_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_7_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_7_ ),
     .B(_00735_),
     .Y(_00774_)
   );
@@ -12296,7 +12296,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00775_)
   );
   OAI21X1 _06619_ (
-    .A( dbg_0.dbg_din_0_ ),
+    .A(dbg_0.dbg_din_0_ ),
     .B(_00738_),
     .C(_00775_),
     .Y(_00776_)
@@ -12311,7 +12311,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00777_)
   );
   OAI21X1 _06622_ (
-    .A( dbg_0.dbg_din_1_ ),
+    .A(dbg_0.dbg_din_1_ ),
     .B(_00738_),
     .C(_00777_),
     .Y(_00778_)
@@ -12326,7 +12326,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00779_)
   );
   OAI21X1 _06625_ (
-    .A( dbg_0.dbg_din_2_ ),
+    .A(dbg_0.dbg_din_2_ ),
     .B(_00738_),
     .C(_00779_),
     .Y(_00780_)
@@ -12341,7 +12341,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00781_)
   );
   OAI21X1 _06628_ (
-    .A( dbg_0.dbg_din_3_ ),
+    .A(dbg_0.dbg_din_3_ ),
     .B(_00738_),
     .C(_00781_),
     .Y(_00782_)
@@ -12356,7 +12356,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00783_)
   );
   OAI21X1 _06631_ (
-    .A( dbg_0.dbg_din_4_ ),
+    .A(dbg_0.dbg_din_4_ ),
     .B(_00738_),
     .C(_00783_),
     .Y(_00784_)
@@ -12371,7 +12371,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00785_)
   );
   OAI21X1 _06634_ (
-    .A( dbg_0.dbg_din_5_ ),
+    .A(dbg_0.dbg_din_5_ ),
     .B(_00738_),
     .C(_00785_),
     .Y(_00786_)
@@ -12386,7 +12386,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00787_)
   );
   OAI21X1 _06637_ (
-    .A( dbg_0.dbg_din_6_ ),
+    .A(dbg_0.dbg_din_6_ ),
     .B(_00738_),
     .C(_00787_),
     .Y(_00788_)
@@ -12401,7 +12401,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00789_)
   );
   OAI21X1 _06640_ (
-    .A( dbg_0.dbg_din_7_ ),
+    .A(dbg_0.dbg_din_7_ ),
     .B(_00738_),
     .C(_00789_),
     .Y(_00790_)
@@ -12411,20 +12411,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00630_)
   );
   NOR2X1 _06642_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst ),
+    .A(dbg_0.dbg_i2c_0.mem_burst ),
     .B(_00742_),
     .Y(_00791_)
   );
   OR2X1 _06643_ (
-    .A( dbg_0.dbg_i2c_0.mem_burst ),
+    .A(dbg_0.dbg_i2c_0.mem_burst ),
     .B(_00742_),
     .Y(_00792_)
   );
   AOI22X1 _06644_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_0_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_0_ ),
     .B(_00742_),
     .C(_00791_),
-    .D( dbg_0.dbg_addr_0_ ),
+    .D(dbg_0.dbg_addr_0_ ),
     .Y(_00793_)
   );
   INVX1 _06645_ (
@@ -12432,10 +12432,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00631_)
   );
   OAI22X1 _06646_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_1_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_1_ ),
     .B(_00743_),
     .C(_00792_),
-    .D( dbg_0.dbg_addr_1_ ),
+    .D(dbg_0.dbg_addr_1_ ),
     .Y(_00794_)
   );
   INVX1 _06647_ (
@@ -12443,10 +12443,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00632_)
   );
   OAI22X1 _06648_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_2_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_2_ ),
     .B(_00743_),
     .C(_00792_),
-    .D( dbg_0.dbg_addr_2_ ),
+    .D(dbg_0.dbg_addr_2_ ),
     .Y(_00795_)
   );
   INVX1 _06649_ (
@@ -12454,10 +12454,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00633_)
   );
   AOI22X1 _06650_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_3_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_3_ ),
     .B(_00742_),
     .C(_00791_),
-    .D( dbg_0.dbg_addr_3_ ),
+    .D(dbg_0.dbg_addr_3_ ),
     .Y(_00796_)
   );
   INVX1 _06651_ (
@@ -12465,10 +12465,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00634_)
   );
   AOI22X1 _06652_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_4_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_4_ ),
     .B(_00742_),
     .C(_00791_),
-    .D( dbg_0.dbg_addr_4_ ),
+    .D(dbg_0.dbg_addr_4_ ),
     .Y(_00797_)
   );
   INVX1 _06653_ (
@@ -12476,10 +12476,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00635_)
   );
   AOI22X1 _06654_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_5_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_5_ ),
     .B(_00742_),
     .C(_00791_),
-    .D( dbg_0.dbg_addr_5_ ),
+    .D(dbg_0.dbg_addr_5_ ),
     .Y(_00798_)
   );
   INVX1 _06655_ (
@@ -12487,7 +12487,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00636_)
   );
   NAND2X1 _06656_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_6_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_6_ ),
     .B(_00742_),
     .Y(_00799_)
   );
@@ -12499,18 +12499,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _06658_ (
     .A(_00685_),
-    .B( dbg_0.dbg_i2c_0.i2c_state_nxt_2_ ),
+    .B(dbg_0.dbg_i2c_0.i2c_state_nxt_2_ ),
     .C(_00724_),
     .Y(_00800_)
   );
   OAI21X1 _06659_ (
-    .A( dbg_0.dbg_i2c_0.i2c_state_1_ ),
+    .A(dbg_0.dbg_i2c_0.i2c_state_1_ ),
     .B(_00654_),
-    .C( dbg_0.dbg_i2c_0.scl_re_dly_1_ ),
+    .C(dbg_0.dbg_i2c_0.scl_re_dly_1_ ),
     .Y(_00801_)
   );
   NOR2X1 _06660_ (
-    .A( dbg_0.dbg_i2c_0.i2c_state_2_ ),
+    .A(dbg_0.dbg_i2c_0.i2c_state_2_ ),
     .B(_00801_),
     .Y(_00802_)
   );
@@ -12537,14 +12537,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00806_)
   );
   NOR2X1 _06665_ (
-    .A( dbg_0.dbg_i2c_0.i2c_state_2_ ),
-    .B( dbg_0.dbg_i2c_0.shift_buf_0_ ),
+    .A(dbg_0.dbg_i2c_0.i2c_state_2_ ),
+    .B(dbg_0.dbg_i2c_0.shift_buf_0_ ),
     .Y(_00807_)
   );
   NAND3X1 _06666_ (
     .A(_00653_),
-    .B( dbg_0.dbg_i2c_0.i2c_state_0_ ),
-    .C( dbg_0.dbg_i2c_0.scl_re ),
+    .B(dbg_0.dbg_i2c_0.i2c_state_0_ ),
+    .C(dbg_0.dbg_i2c_0.scl_re ),
     .Y(_00808_)
   );
   NOR2X1 _06667_ (
@@ -12575,13 +12575,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00813_)
   );
   NAND3X1 _06672_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_0_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_0_ ),
     .B(_00800_),
     .C(_00812_),
     .Y(_00814_)
   );
   NOR2X1 _06673_ (
-    .A( dbg_0.dbg_i2c_0.sda_in ),
+    .A(dbg_0.dbg_i2c_0.sda_in ),
     .B(_00811_),
     .Y(_00815_)
   );
@@ -12592,13 +12592,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00639_)
   );
   NAND2X1 _06675_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_0_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_0_ ),
     .B(_00808_),
     .Y(_00816_)
   );
   MUX2X1 _06676_ (
-    .A( dbg_0.dbg_dout_0_ ),
-    .B( dbg_0.dbg_dout_8_ ),
+    .A(dbg_0.dbg_dout_0_ ),
+    .B(dbg_0.dbg_dout_8_ ),
     .S(_00745_),
     .Y(_00817_)
   );
@@ -12620,8 +12620,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00640_)
   );
   MUX2X1 _06680_ (
-    .A( dbg_0.dbg_dout_1_ ),
-    .B( dbg_0.dbg_dout_9_ ),
+    .A(dbg_0.dbg_dout_1_ ),
+    .B(dbg_0.dbg_dout_9_ ),
     .S(_00745_),
     .Y(_00820_)
   );
@@ -12643,8 +12643,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00641_)
   );
   MUX2X1 _06684_ (
-    .A( dbg_0.dbg_dout_2_ ),
-    .B( dbg_0.dbg_dout_10_ ),
+    .A(dbg_0.dbg_dout_2_ ),
+    .B(dbg_0.dbg_dout_10_ ),
     .S(_00745_),
     .Y(_00823_)
   );
@@ -12666,8 +12666,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00642_)
   );
   MUX2X1 _06688_ (
-    .A( dbg_0.dbg_dout_3_ ),
-    .B( dbg_0.dbg_dout_11_ ),
+    .A(dbg_0.dbg_dout_3_ ),
+    .B(dbg_0.dbg_dout_11_ ),
     .S(_00745_),
     .Y(_00826_)
   );
@@ -12689,8 +12689,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00643_)
   );
   MUX2X1 _06692_ (
-    .A( dbg_0.dbg_dout_4_ ),
-    .B( dbg_0.dbg_dout_12_ ),
+    .A(dbg_0.dbg_dout_4_ ),
+    .B(dbg_0.dbg_dout_12_ ),
     .S(_00745_),
     .Y(_00829_)
   );
@@ -12712,8 +12712,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00644_)
   );
   MUX2X1 _06696_ (
-    .A( dbg_0.dbg_dout_5_ ),
-    .B( dbg_0.dbg_dout_13_ ),
+    .A(dbg_0.dbg_dout_5_ ),
+    .B(dbg_0.dbg_dout_13_ ),
     .S(_00745_),
     .Y(_00832_)
   );
@@ -12735,8 +12735,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00645_)
   );
   MUX2X1 _06700_ (
-    .A( dbg_0.dbg_dout_6_ ),
-    .B( dbg_0.dbg_dout_14_ ),
+    .A(dbg_0.dbg_dout_6_ ),
+    .B(dbg_0.dbg_dout_14_ ),
     .S(_00745_),
     .Y(_00835_)
   );
@@ -12758,8 +12758,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00646_)
   );
   MUX2X1 _06704_ (
-    .A( dbg_0.dbg_dout_7_ ),
-    .B( dbg_0.dbg_dout_15_ ),
+    .A(dbg_0.dbg_dout_7_ ),
+    .B(dbg_0.dbg_dout_15_ ),
     .S(_00745_),
     .Y(_00838_)
   );
@@ -12798,14 +12798,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00842_)
   );
   OAI21X1 _06711_ (
-    .A( dbg_0.dbg_i2c_0.shift_buf_8_ ),
+    .A(dbg_0.dbg_i2c_0.shift_buf_8_ ),
     .B(_00800_),
     .C(_00685_),
     .Y(_00843_)
   );
   OAI21X1 _06712_ (
     .A(_00649_),
-    .B( dbg_0.dbg_i2c_0.scl ),
+    .B(dbg_0.dbg_i2c_0.scl ),
     .C(_05583_),
     .Y(_00844_)
   );
@@ -12818,196 +12818,196 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   DFFSR _06714_ (
     .CLK(dco_clk),
     .D(_00612_),
-    .Q( dbg_0.dbg_i2c_0.dbg_rd ),
+    .Q(dbg_0.dbg_i2c_0.dbg_rd ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06715_ (
     .CLK(dco_clk),
     .D(_00613_),
-    .Q( dbg_0.dbg_i2c_0.dbg_wr ),
+    .Q(dbg_0.dbg_i2c_0.dbg_wr ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06716_ (
     .CLK(dco_clk),
     .D(_00615_),
-    .Q( dbg_0.dbg_din_8_ ),
+    .Q(dbg_0.dbg_din_8_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06717_ (
     .CLK(dco_clk),
     .D(_00616_),
-    .Q( dbg_0.dbg_din_9_ ),
+    .Q(dbg_0.dbg_din_9_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06718_ (
     .CLK(dco_clk),
     .D(_00617_),
-    .Q( dbg_0.dbg_din_10_ ),
+    .Q(dbg_0.dbg_din_10_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06719_ (
     .CLK(dco_clk),
     .D(_00618_),
-    .Q( dbg_0.dbg_din_11_ ),
+    .Q(dbg_0.dbg_din_11_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06720_ (
     .CLK(dco_clk),
     .D(_00619_),
-    .Q( dbg_0.dbg_din_12_ ),
+    .Q(dbg_0.dbg_din_12_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06721_ (
     .CLK(dco_clk),
     .D(_00620_),
-    .Q( dbg_0.dbg_din_13_ ),
+    .Q(dbg_0.dbg_din_13_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06722_ (
     .CLK(dco_clk),
     .D(_00621_),
-    .Q( dbg_0.dbg_din_14_ ),
+    .Q(dbg_0.dbg_din_14_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06723_ (
     .CLK(dco_clk),
     .D(_00622_),
-    .Q( dbg_0.dbg_din_15_ ),
+    .Q(dbg_0.dbg_din_15_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06724_ (
     .CLK(dco_clk),
     .D(_00623_),
-    .Q( dbg_0.dbg_din_0_ ),
+    .Q(dbg_0.dbg_din_0_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06725_ (
     .CLK(dco_clk),
     .D(_00624_),
-    .Q( dbg_0.dbg_din_1_ ),
+    .Q(dbg_0.dbg_din_1_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06726_ (
     .CLK(dco_clk),
     .D(_00625_),
-    .Q( dbg_0.dbg_din_2_ ),
+    .Q(dbg_0.dbg_din_2_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06727_ (
     .CLK(dco_clk),
     .D(_00626_),
-    .Q( dbg_0.dbg_din_3_ ),
+    .Q(dbg_0.dbg_din_3_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06728_ (
     .CLK(dco_clk),
     .D(_00627_),
-    .Q( dbg_0.dbg_din_4_ ),
+    .Q(dbg_0.dbg_din_4_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06729_ (
     .CLK(dco_clk),
     .D(_00628_),
-    .Q( dbg_0.dbg_din_5_ ),
+    .Q(dbg_0.dbg_din_5_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06730_ (
     .CLK(dco_clk),
     .D(_00629_),
-    .Q( dbg_0.dbg_din_6_ ),
+    .Q(dbg_0.dbg_din_6_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06731_ (
     .CLK(dco_clk),
     .D(_00630_),
-    .Q( dbg_0.dbg_din_7_ ),
+    .Q(dbg_0.dbg_din_7_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06732_ (
     .CLK(dco_clk),
     .D(_00631_),
-    .Q( dbg_0.dbg_addr_0_ ),
+    .Q(dbg_0.dbg_addr_0_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06733_ (
     .CLK(dco_clk),
     .D(_00632_),
-    .Q( dbg_0.dbg_addr_1_ ),
+    .Q(dbg_0.dbg_addr_1_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06734_ (
     .CLK(dco_clk),
     .D(_00633_),
-    .Q( dbg_0.dbg_addr_2_ ),
+    .Q(dbg_0.dbg_addr_2_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06735_ (
     .CLK(dco_clk),
     .D(_00634_),
-    .Q( dbg_0.dbg_addr_3_ ),
+    .Q(dbg_0.dbg_addr_3_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06736_ (
     .CLK(dco_clk),
     .D(_00635_),
-    .Q( dbg_0.dbg_addr_4_ ),
+    .Q(dbg_0.dbg_addr_4_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06737_ (
     .CLK(dco_clk),
     .D(_00636_),
-    .Q( dbg_0.dbg_addr_5_ ),
+    .Q(dbg_0.dbg_addr_5_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06738_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.dbg_state_nxt_0_ ),
-    .Q( dbg_0.dbg_i2c_0.dbg_state_0_ ),
+    .D(dbg_0.dbg_i2c_0.dbg_state_nxt_0_ ),
+    .Q(dbg_0.dbg_i2c_0.dbg_state_0_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06739_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.dbg_state_nxt_1_ ),
-    .Q( dbg_0.dbg_i2c_0.dbg_state_1_ ),
+    .D(dbg_0.dbg_i2c_0.dbg_state_nxt_1_ ),
+    .Q(dbg_0.dbg_i2c_0.dbg_state_1_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06740_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.dbg_state_nxt_2_ ),
-    .Q( dbg_0.dbg_i2c_0.dbg_state_2_ ),
+    .D(dbg_0.dbg_i2c_0.dbg_state_nxt_2_ ),
+    .Q(dbg_0.dbg_i2c_0.dbg_state_2_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06741_ (
     .CLK(dco_clk),
     .D(_00637_),
-    .Q( dbg_0.dbg_i2c_0.dbg_bw ),
+    .Q(dbg_0.dbg_i2c_0.dbg_bw ),
     .R(_00614_),
     .S(1'h1)
   );
@@ -13020,325 +13020,325 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   DFFSR _06743_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.i2c_state_nxt_0_ ),
-    .Q( dbg_0.dbg_i2c_0.i2c_state_0_ ),
+    .D(dbg_0.dbg_i2c_0.i2c_state_nxt_0_ ),
+    .Q(dbg_0.dbg_i2c_0.i2c_state_0_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06744_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.i2c_state_nxt_1_ ),
-    .Q( dbg_0.dbg_i2c_0.i2c_state_1_ ),
+    .D(dbg_0.dbg_i2c_0.i2c_state_nxt_1_ ),
+    .Q(dbg_0.dbg_i2c_0.i2c_state_1_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06745_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.i2c_state_nxt_2_ ),
-    .Q( dbg_0.dbg_i2c_0.i2c_state_2_ ),
+    .D(dbg_0.dbg_i2c_0.i2c_state_nxt_2_ ),
+    .Q(dbg_0.dbg_i2c_0.i2c_state_2_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06746_ (
     .CLK(dco_clk),
     .D(_00639_),
-    .Q( dbg_0.dbg_i2c_0.shift_buf_0_ ),
+    .Q(dbg_0.dbg_i2c_0.shift_buf_0_ ),
     .R(1'h1),
     .S(_00614_)
   );
   DFFSR _06747_ (
     .CLK(dco_clk),
     .D(_00640_),
-    .Q( dbg_0.dbg_i2c_0.shift_buf_1_ ),
+    .Q(dbg_0.dbg_i2c_0.shift_buf_1_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06748_ (
     .CLK(dco_clk),
     .D(_00641_),
-    .Q( dbg_0.dbg_i2c_0.shift_buf_2_ ),
+    .Q(dbg_0.dbg_i2c_0.shift_buf_2_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06749_ (
     .CLK(dco_clk),
     .D(_00642_),
-    .Q( dbg_0.dbg_i2c_0.shift_buf_3_ ),
+    .Q(dbg_0.dbg_i2c_0.shift_buf_3_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06750_ (
     .CLK(dco_clk),
     .D(_00643_),
-    .Q( dbg_0.dbg_i2c_0.shift_buf_4_ ),
+    .Q(dbg_0.dbg_i2c_0.shift_buf_4_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06751_ (
     .CLK(dco_clk),
     .D(_00644_),
-    .Q( dbg_0.dbg_i2c_0.shift_buf_5_ ),
+    .Q(dbg_0.dbg_i2c_0.shift_buf_5_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06752_ (
     .CLK(dco_clk),
     .D(_00645_),
-    .Q( dbg_0.dbg_i2c_0.shift_buf_6_ ),
+    .Q(dbg_0.dbg_i2c_0.shift_buf_6_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06753_ (
     .CLK(dco_clk),
     .D(_00646_),
-    .Q( dbg_0.dbg_i2c_0.shift_buf_7_ ),
+    .Q(dbg_0.dbg_i2c_0.shift_buf_7_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06754_ (
     .CLK(dco_clk),
     .D(_00647_),
-    .Q( dbg_0.dbg_i2c_0.shift_buf_8_ ),
+    .Q(dbg_0.dbg_i2c_0.shift_buf_8_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06755_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.scl_re ),
-    .Q( dbg_0.dbg_i2c_0.scl_re_dly_0_ ),
+    .D(dbg_0.dbg_i2c_0.scl_re ),
+    .Q(dbg_0.dbg_i2c_0.scl_re_dly_0_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06756_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.scl_re_dly_0_ ),
-    .Q( dbg_0.dbg_i2c_0.scl_re_dly_1_ ),
+    .D(dbg_0.dbg_i2c_0.scl_re_dly_0_ ),
+    .Q(dbg_0.dbg_i2c_0.scl_re_dly_1_ ),
     .R(_00614_),
     .S(1'h1)
   );
   DFFSR _06757_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.scl ),
-    .Q( dbg_0.dbg_i2c_0.scl_dly ),
+    .D(dbg_0.dbg_i2c_0.scl ),
+    .Q(dbg_0.dbg_i2c_0.scl_dly ),
     .R(1'h1),
     .S(_00614_)
   );
   DFFSR _06758_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.sda_in ),
-    .Q( dbg_0.dbg_i2c_0.sda_in_dly ),
+    .D(dbg_0.dbg_i2c_0.sda_in ),
+    .Q(dbg_0.dbg_i2c_0.sda_in_dly ),
     .R(1'h1),
     .S(_00614_)
   );
   DFFSR _06759_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.sda_in_sync ),
-    .Q( dbg_0.dbg_i2c_0.sda_in_buf_0_ ),
+    .D(dbg_0.dbg_i2c_0.sda_in_sync ),
+    .Q(dbg_0.dbg_i2c_0.sda_in_buf_0_ ),
     .R(1'h1),
     .S(_00614_)
   );
   DFFSR _06760_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.sda_in_buf_0_ ),
-    .Q( dbg_0.dbg_i2c_0.sda_in_buf_1_ ),
+    .D(dbg_0.dbg_i2c_0.sda_in_buf_0_ ),
+    .Q(dbg_0.dbg_i2c_0.sda_in_buf_1_ ),
     .R(1'h1),
     .S(_00614_)
   );
   DFFSR _06761_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.scl_sync ),
-    .Q( dbg_0.dbg_i2c_0.scl_buf_0_ ),
+    .D(dbg_0.dbg_i2c_0.scl_sync ),
+    .Q(dbg_0.dbg_i2c_0.scl_buf_0_ ),
     .R(1'h1),
     .S(_00614_)
   );
   DFFSR _06762_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.scl_buf_0_ ),
-    .Q( dbg_0.dbg_i2c_0.scl_buf_1_ ),
+    .D(dbg_0.dbg_i2c_0.scl_buf_0_ ),
+    .Q(dbg_0.dbg_i2c_0.scl_buf_1_ ),
     .R(1'h1),
     .S(_00614_)
   );
   DFFSR _06763_ (
     .CLK(dco_clk),
     .D(_00648_),
-    .Q( dbg_0.dbg_i2c_0.i2c_active_seq ),
+    .Q(dbg_0.dbg_i2c_0.i2c_active_seq ),
     .R(_00614_),
     .S(1'h1)
   );
   INVX1 _06764_ (
-    .A( clock_module_0.dbg_rst ),
+    .A(clock_module_0.dbg_rst ),
     .Y(_00845_)
   );
   DFFSR _06765_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_in ),
-    .Q( dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_sync_0_ ),
+    .D(dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_in ),
+    .Q(dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_sync_0_ ),
     .R(_00845_),
     .S(1'h1)
   );
   DFFSR _06766_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_sync_0_ ),
-    .Q( dbg_0.dbg_i2c_0.scl_sync_n ),
+    .D(dbg_0.dbg_i2c_0.sync_cell_i2c_scl.data_sync_0_ ),
+    .Q(dbg_0.dbg_i2c_0.scl_sync_n ),
     .R(_00845_),
     .S(1'h1)
   );
   INVX1 _06767_ (
-    .A( clock_module_0.dbg_rst ),
+    .A(clock_module_0.dbg_rst ),
     .Y(_00846_)
   );
   DFFSR _06768_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_in ),
-    .Q( dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_sync_0_ ),
+    .D(dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_in ),
+    .Q(dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_sync_0_ ),
     .R(_00846_),
     .S(1'h1)
   );
   DFFSR _06769_ (
     .CLK(dco_clk),
-    .D( dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_sync_0_ ),
-    .Q( dbg_0.dbg_i2c_0.sda_in_sync_n ),
+    .D(dbg_0.dbg_i2c_0.sync_cell_i2c_sda.data_sync_0_ ),
+    .Q(dbg_0.dbg_i2c_0.sda_in_sync_n ),
     .R(_00846_),
     .S(1'h1)
   );
   INVX1 _06770_ (
-    .A( execution_unit_0.e_state_0_ ),
+    .A(execution_unit_0.e_state_0_ ),
     .Y(_00883_)
   );
   INVX1 _06771_ (
-    .A( execution_unit_0.e_state_2_ ),
+    .A(execution_unit_0.e_state_2_ ),
     .Y(_00884_)
   );
   INVX1 _06772_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_call ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_call ),
     .Y(_00885_)
   );
   INVX1 _06773_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .Y(_00886_)
   );
   INVX1 _06774_ (
-    .A( execution_unit_0.inst_as_1_ ),
+    .A(execution_unit_0.inst_as_1_ ),
     .Y(_00887_)
   );
   INVX1 _06775_ (
-    .A( execution_unit_0.mdb_in_8_ ),
+    .A(execution_unit_0.mdb_in_8_ ),
     .Y(_00888_)
   );
   INVX1 _06776_ (
-    .A( execution_unit_0.mab_lsb ),
+    .A(execution_unit_0.mab_lsb ),
     .Y(_00889_)
   );
   INVX1 _06777_ (
-    .A( execution_unit_0.mdb_in_9_ ),
+    .A(execution_unit_0.mdb_in_9_ ),
     .Y(_00890_)
   );
   INVX1 _06778_ (
-    .A( execution_unit_0.mdb_in_10_ ),
+    .A(execution_unit_0.mdb_in_10_ ),
     .Y(_00891_)
   );
   INVX1 _06779_ (
-    .A( execution_unit_0.mdb_in_11_ ),
+    .A(execution_unit_0.mdb_in_11_ ),
     .Y(_00892_)
   );
   INVX1 _06780_ (
-    .A( execution_unit_0.mdb_in_12_ ),
+    .A(execution_unit_0.mdb_in_12_ ),
     .Y(_00893_)
   );
   INVX1 _06781_ (
-    .A( execution_unit_0.mdb_in_13_ ),
+    .A(execution_unit_0.mdb_in_13_ ),
     .Y(_00894_)
   );
   INVX1 _06782_ (
-    .A( execution_unit_0.mdb_in_14_ ),
+    .A(execution_unit_0.mdb_in_14_ ),
     .Y(_00895_)
   );
   INVX1 _06783_ (
-    .A( execution_unit_0.mdb_in_15_ ),
+    .A(execution_unit_0.mdb_in_15_ ),
     .Y(_00896_)
   );
   INVX1 _06784_ (
-    .A( execution_unit_0.mdb_in_buf_8_ ),
+    .A(execution_unit_0.mdb_in_buf_8_ ),
     .Y(_00897_)
   );
   INVX1 _06785_ (
-    .A( execution_unit_0.mdb_in_buf_9_ ),
+    .A(execution_unit_0.mdb_in_buf_9_ ),
     .Y(_00898_)
   );
   INVX1 _06786_ (
-    .A( execution_unit_0.mdb_in_buf_10_ ),
+    .A(execution_unit_0.mdb_in_buf_10_ ),
     .Y(_00899_)
   );
   INVX1 _06787_ (
-    .A( execution_unit_0.mdb_in_buf_11_ ),
+    .A(execution_unit_0.mdb_in_buf_11_ ),
     .Y(_00900_)
   );
   INVX1 _06788_ (
-    .A( execution_unit_0.mdb_in_buf_12_ ),
+    .A(execution_unit_0.mdb_in_buf_12_ ),
     .Y(_00901_)
   );
   INVX1 _06789_ (
-    .A( execution_unit_0.mdb_in_buf_13_ ),
+    .A(execution_unit_0.mdb_in_buf_13_ ),
     .Y(_00902_)
   );
   INVX1 _06790_ (
-    .A( execution_unit_0.mdb_in_buf_14_ ),
+    .A(execution_unit_0.mdb_in_buf_14_ ),
     .Y(_00903_)
   );
   INVX1 _06791_ (
-    .A( execution_unit_0.mdb_in_buf_15_ ),
+    .A(execution_unit_0.mdb_in_buf_15_ ),
     .Y(_00904_)
   );
   INVX1 _06792_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .Y(_00905_)
   );
   INVX1 _06793_ (
-    .A( execution_unit_0.mdb_out_nxt_8_ ),
+    .A(execution_unit_0.mdb_out_nxt_8_ ),
     .Y(_00906_)
   );
   INVX1 _06794_ (
-    .A( execution_unit_0.mdb_out_nxt_9_ ),
+    .A(execution_unit_0.mdb_out_nxt_9_ ),
     .Y(_00907_)
   );
   INVX1 _06795_ (
-    .A( execution_unit_0.mdb_out_nxt_10_ ),
+    .A(execution_unit_0.mdb_out_nxt_10_ ),
     .Y(_00908_)
   );
   INVX1 _06796_ (
-    .A( execution_unit_0.mdb_out_nxt_11_ ),
+    .A(execution_unit_0.mdb_out_nxt_11_ ),
     .Y(_00909_)
   );
   INVX1 _06797_ (
-    .A( execution_unit_0.mdb_out_nxt_12_ ),
+    .A(execution_unit_0.mdb_out_nxt_12_ ),
     .Y(_00910_)
   );
   INVX1 _06798_ (
-    .A( execution_unit_0.mdb_out_nxt_13_ ),
+    .A(execution_unit_0.mdb_out_nxt_13_ ),
     .Y(_00911_)
   );
   INVX1 _06799_ (
-    .A( execution_unit_0.mdb_out_nxt_14_ ),
+    .A(execution_unit_0.mdb_out_nxt_14_ ),
     .Y(_00912_)
   );
   INVX1 _06800_ (
-    .A( execution_unit_0.mdb_out_nxt_15_ ),
+    .A(execution_unit_0.mdb_out_nxt_15_ ),
     .Y(_00913_)
   );
   INVX1 _06801_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_alu ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_alu ),
     .Y(_00914_)
   );
   INVX1 _06802_ (
-    .A( dbg_0.dbg_reg_wr ),
+    .A(dbg_0.dbg_reg_wr ),
     .Y(_00915_)
   );
   INVX1 _06803_ (
-    .A( execution_unit_0.inst_irq_rst ),
+    .A(execution_unit_0.inst_irq_rst ),
     .Y(_00916_)
   );
   INVX1 _06804_ (
-    .A( dbg_0.UNUSED_eu_mab_0_ ),
+    .A(dbg_0.UNUSED_eu_mab_0_ ),
     .Y(_00917_)
   );
   INVX1 _06805_ (
@@ -13347,27 +13347,27 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   AND2X1 _06806_ (
     .A(_00884_),
-    .B( execution_unit_0.e_state_3_ ),
+    .B(execution_unit_0.e_state_3_ ),
     .Y(_00918_)
   );
   AND2X1 _06807_ (
-    .A( execution_unit_0.e_state_1_ ),
-    .B( execution_unit_0.e_state_0_ ),
+    .A(execution_unit_0.e_state_1_ ),
+    .B(execution_unit_0.e_state_0_ ),
     .Y(_00919_)
   );
   NAND3X1 _06808_ (
     .A(_00884_),
-    .B( execution_unit_0.e_state_3_ ),
+    .B(execution_unit_0.e_state_3_ ),
     .C(_00919_),
     .Y(_00920_)
   );
   INVX1 _06809_ (
     .A(_00920_),
-    .Y( execution_unit_0.alu_0.exec_cycle )
+    .Y(execution_unit_0.alu_0.exec_cycle )
   );
   NOR2X1 _06810_ (
-    .A( execution_unit_0.e_state_2_ ),
-    .B( execution_unit_0.e_state_3_ ),
+    .A(execution_unit_0.e_state_2_ ),
+    .B(execution_unit_0.e_state_3_ ),
     .Y(_00921_)
   );
   NAND2X1 _06811_ (
@@ -13376,22 +13376,22 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00922_)
   );
   NOR2X1 _06812_ (
-    .A( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_1_ ),
     .B(_00922_),
-    .Y( execution_unit_0.reg_sr_clr )
+    .Y(execution_unit_0.reg_sr_clr )
   );
   NOR2X1 _06813_ (
     .A(_00884_),
-    .B( execution_unit_0.e_state_3_ ),
+    .B(execution_unit_0.e_state_3_ ),
     .Y(_00923_)
   );
   NAND2X1 _06814_ (
-    .A( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_1_ ),
     .B(_00923_),
     .Y(_00924_)
   );
   AND2X1 _06815_ (
-    .A( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_1_ ),
     .B(_00883_),
     .Y(_00925_)
   );
@@ -13405,7 +13405,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00847_)
   );
   NOR2X1 _06818_ (
-    .A( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_1_ ),
     .B(_00883_),
     .Y(_00927_)
   );
@@ -13420,17 +13420,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00929_)
   );
   NOR2X1 _06821_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_call ),
-    .B( execution_unit_0.alu_0.UNUSED_inst_so_push ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_call ),
+    .B(execution_unit_0.alu_0.UNUSED_inst_so_push ),
     .Y(_00930_)
   );
   OR2X1 _06822_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_call ),
-    .B( execution_unit_0.alu_0.UNUSED_inst_so_push ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_call ),
+    .B(execution_unit_0.alu_0.UNUSED_inst_so_push ),
     .Y(_00931_)
   );
   NOR3X1 _06823_ (
-    .A( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_1_ ),
     .B(_00883_),
     .C(_00930_),
     .Y(_00932_)
@@ -13441,7 +13441,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00933_)
   );
   NAND3X1 _06825_ (
-    .A( execution_unit_0.inst_as_1_ ),
+    .A(execution_unit_0.inst_as_1_ ),
     .B(_00923_),
     .C(_00932_),
     .Y(_00934_)
@@ -13453,7 +13453,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00935_)
   );
   AOI21X1 _06827_ (
-    .A( execution_unit_0.e_state_0_ ),
+    .A(execution_unit_0.e_state_0_ ),
     .B(_00921_),
     .C(_00935_),
     .Y(_00936_)
@@ -13461,20 +13461,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NOR2X1 _06828_ (
     .A(_00886_),
     .B(_00929_),
-    .Y( execution_unit_0.reg_sr_wr )
+    .Y(execution_unit_0.reg_sr_wr )
   );
   NOR2X1 _06829_ (
-    .A( execution_unit_0.inst_as_3_ ),
-    .B( execution_unit_0.inst_as_2_ ),
+    .A(execution_unit_0.inst_as_3_ ),
+    .B(execution_unit_0.inst_as_2_ ),
     .Y(_00937_)
   );
   OR2X1 _06830_ (
-    .A( execution_unit_0.inst_as_6_ ),
-    .B( execution_unit_0.inst_as_1_ ),
+    .A(execution_unit_0.inst_as_6_ ),
+    .B(execution_unit_0.inst_as_1_ ),
     .Y(_00938_)
   );
   NOR2X1 _06831_ (
-    .A( execution_unit_0.inst_as_4_ ),
+    .A(execution_unit_0.inst_as_4_ ),
     .B(_00938_),
     .Y(_00939_)
   );
@@ -13485,7 +13485,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00940_)
   );
   NOR2X1 _06833_ (
-    .A( execution_unit_0.reg_sr_wr ),
+    .A(execution_unit_0.reg_sr_wr ),
     .B(_00940_),
     .Y(_00941_)
   );
@@ -13507,13 +13507,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00944_)
   );
   NOR2X1 _06837_ (
-    .A( execution_unit_0.inst_type_1_ ),
-    .B( execution_unit_0.inst_as_7_ ),
+    .A(execution_unit_0.inst_type_1_ ),
+    .B(execution_unit_0.inst_as_7_ ),
     .Y(_00945_)
   );
   NOR2X1 _06838_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
-    .B( execution_unit_0.inst_as_5_ ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .B(execution_unit_0.inst_as_5_ ),
     .Y(_00946_)
   );
   AOI21X1 _06839_ (
@@ -13523,31 +13523,31 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00947_)
   );
   AOI22X1 _06840_ (
-    .A( execution_unit_0.inst_dext_0_ ),
+    .A(execution_unit_0.inst_dext_0_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_0_ ),
+    .D(execution_unit_0.inst_sext_0_ ),
     .Y(_00948_)
   );
   NAND2X1 _06841_ (
-    .A( execution_unit_0.mab_lsb ),
-    .B( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.mab_lsb ),
+    .B(execution_unit_0.alu_0.inst_bw ),
     .Y(_00949_)
   );
   MUX2X1 _06842_ (
-    .A( execution_unit_0.mdb_in_0_ ),
-    .B( execution_unit_0.mdb_in_8_ ),
+    .A(execution_unit_0.mdb_in_0_ ),
+    .B(execution_unit_0.mdb_in_8_ ),
     .S(_00949_),
     .Y(_00950_)
   );
   NOR2X1 _06843_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
     .B(_00950_),
     .Y(_00951_)
   );
   AOI21X1 _06844_ (
-    .A( execution_unit_0.mdb_in_buf_0_ ),
-    .B( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_0_ ),
+    .B(execution_unit_0.mdb_in_buf_valid ),
     .C(_00951_),
     .Y(_00952_)
   );
@@ -13558,17 +13558,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00953_)
   );
   NOR2X1 _06846_ (
-    .A( execution_unit_0.inst_type_1_ ),
+    .A(execution_unit_0.inst_type_1_ ),
     .B(_00920_),
     .Y(_00954_)
   );
   AND2X1 _06847_ (
-    .A( execution_unit_0.inst_as_0_ ),
+    .A(execution_unit_0.inst_as_0_ ),
     .B(_00954_),
     .Y(_00955_)
   );
   OAI21X1 _06848_ (
-    .A( execution_unit_0.inst_as_6_ ),
+    .A(execution_unit_0.inst_as_6_ ),
     .B(_00924_),
     .C(_00922_),
     .Y(_00956_)
@@ -13580,43 +13580,43 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06850_ (
     .A(_00953_),
-    .B( dbg_0.dbg_reg_din_0_ ),
+    .B(dbg_0.dbg_reg_din_0_ ),
     .S(_00936_),
     .Y(_00958_)
   );
   OAI21X1 _06851_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_0_ ),
+    .C(execution_unit_0.reg_src_0_ ),
     .Y(_00959_)
   );
   OAI21X1 _06852_ (
     .A(_00957_),
     .B(_00958_),
     .C(_00959_),
-    .Y( execution_unit_0.alu_0.alu_swpb_8_ )
+    .Y(execution_unit_0.alu_0.alu_swpb_8_ )
   );
   AOI22X1 _06853_ (
-    .A( execution_unit_0.inst_dext_1_ ),
+    .A(execution_unit_0.inst_dext_1_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_1_ ),
+    .D(execution_unit_0.inst_sext_1_ ),
     .Y(_00960_)
   );
   MUX2X1 _06854_ (
-    .A( execution_unit_0.mdb_in_1_ ),
-    .B( execution_unit_0.mdb_in_9_ ),
+    .A(execution_unit_0.mdb_in_1_ ),
+    .B(execution_unit_0.mdb_in_9_ ),
     .S(_00949_),
     .Y(_00961_)
   );
   NOR2X1 _06855_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
     .B(_00961_),
     .Y(_00962_)
   );
   AOI21X1 _06856_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
-    .B( execution_unit_0.mdb_in_buf_1_ ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
+    .B(execution_unit_0.mdb_in_buf_1_ ),
     .C(_00962_),
     .Y(_00963_)
   );
@@ -13628,43 +13628,43 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06858_ (
     .A(_00964_),
-    .B( dbg_0.dbg_reg_din_1_ ),
+    .B(dbg_0.dbg_reg_din_1_ ),
     .S(_00936_),
     .Y(_00965_)
   );
   OAI21X1 _06859_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_1_ ),
+    .C(execution_unit_0.reg_src_1_ ),
     .Y(_00966_)
   );
   OAI21X1 _06860_ (
     .A(_00957_),
     .B(_00965_),
     .C(_00966_),
-    .Y( execution_unit_0.alu_0.alu_shift_0_ )
+    .Y(execution_unit_0.alu_0.alu_shift_0_ )
   );
   AOI22X1 _06861_ (
-    .A( execution_unit_0.inst_dext_2_ ),
+    .A(execution_unit_0.inst_dext_2_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_2_ ),
+    .D(execution_unit_0.inst_sext_2_ ),
     .Y(_00967_)
   );
   MUX2X1 _06862_ (
-    .A( execution_unit_0.mdb_in_2_ ),
-    .B( execution_unit_0.mdb_in_10_ ),
+    .A(execution_unit_0.mdb_in_2_ ),
+    .B(execution_unit_0.mdb_in_10_ ),
     .S(_00949_),
     .Y(_00968_)
   );
   NOR2X1 _06863_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
     .B(_00968_),
     .Y(_00969_)
   );
   AOI21X1 _06864_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
-    .B( execution_unit_0.mdb_in_buf_2_ ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
+    .B(execution_unit_0.mdb_in_buf_2_ ),
     .C(_00969_),
     .Y(_00970_)
   );
@@ -13676,43 +13676,43 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06866_ (
     .A(_00971_),
-    .B( dbg_0.dbg_reg_din_2_ ),
+    .B(dbg_0.dbg_reg_din_2_ ),
     .S(_00936_),
     .Y(_00972_)
   );
   OAI21X1 _06867_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_2_ ),
+    .C(execution_unit_0.reg_src_2_ ),
     .Y(_00973_)
   );
   OAI21X1 _06868_ (
     .A(_00957_),
     .B(_00972_),
     .C(_00973_),
-    .Y( execution_unit_0.alu_0.alu_shift_1_ )
+    .Y(execution_unit_0.alu_0.alu_shift_1_ )
   );
   AOI22X1 _06869_ (
-    .A( execution_unit_0.inst_dext_3_ ),
+    .A(execution_unit_0.inst_dext_3_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_3_ ),
+    .D(execution_unit_0.inst_sext_3_ ),
     .Y(_00974_)
   );
   MUX2X1 _06870_ (
-    .A( execution_unit_0.mdb_in_3_ ),
-    .B( execution_unit_0.mdb_in_11_ ),
+    .A(execution_unit_0.mdb_in_3_ ),
+    .B(execution_unit_0.mdb_in_11_ ),
     .S(_00949_),
     .Y(_00975_)
   );
   NOR2X1 _06871_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
     .B(_00975_),
     .Y(_00976_)
   );
   AOI21X1 _06872_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
-    .B( execution_unit_0.mdb_in_buf_3_ ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
+    .B(execution_unit_0.mdb_in_buf_3_ ),
     .C(_00976_),
     .Y(_00977_)
   );
@@ -13724,43 +13724,43 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06874_ (
     .A(_00978_),
-    .B( dbg_0.dbg_reg_din_3_ ),
+    .B(dbg_0.dbg_reg_din_3_ ),
     .S(_00936_),
     .Y(_00979_)
   );
   OAI21X1 _06875_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_3_ ),
+    .C(execution_unit_0.reg_src_3_ ),
     .Y(_00980_)
   );
   OAI21X1 _06876_ (
     .A(_00957_),
     .B(_00979_),
     .C(_00980_),
-    .Y( execution_unit_0.alu_0.alu_shift_2_ )
+    .Y(execution_unit_0.alu_0.alu_shift_2_ )
   );
   AOI22X1 _06877_ (
-    .A( execution_unit_0.inst_dext_4_ ),
+    .A(execution_unit_0.inst_dext_4_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_4_ ),
+    .D(execution_unit_0.inst_sext_4_ ),
     .Y(_00981_)
   );
   MUX2X1 _06878_ (
-    .A( execution_unit_0.mdb_in_4_ ),
-    .B( execution_unit_0.mdb_in_12_ ),
+    .A(execution_unit_0.mdb_in_4_ ),
+    .B(execution_unit_0.mdb_in_12_ ),
     .S(_00949_),
     .Y(_00982_)
   );
   NOR2X1 _06879_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
     .B(_00982_),
     .Y(_00983_)
   );
   AOI21X1 _06880_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
-    .B( execution_unit_0.mdb_in_buf_4_ ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
+    .B(execution_unit_0.mdb_in_buf_4_ ),
     .C(_00983_),
     .Y(_00984_)
   );
@@ -13772,43 +13772,43 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06882_ (
     .A(_00985_),
-    .B( dbg_0.dbg_reg_din_4_ ),
+    .B(dbg_0.dbg_reg_din_4_ ),
     .S(_00936_),
     .Y(_00986_)
   );
   OAI21X1 _06883_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_4_ ),
+    .C(execution_unit_0.reg_src_4_ ),
     .Y(_00987_)
   );
   OAI21X1 _06884_ (
     .A(_00957_),
     .B(_00986_),
     .C(_00987_),
-    .Y( execution_unit_0.alu_0.alu_shift_3_ )
+    .Y(execution_unit_0.alu_0.alu_shift_3_ )
   );
   AOI22X1 _06885_ (
-    .A( execution_unit_0.inst_dext_5_ ),
+    .A(execution_unit_0.inst_dext_5_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_5_ ),
+    .D(execution_unit_0.inst_sext_5_ ),
     .Y(_00988_)
   );
   MUX2X1 _06886_ (
-    .A( execution_unit_0.mdb_in_5_ ),
-    .B( execution_unit_0.mdb_in_13_ ),
+    .A(execution_unit_0.mdb_in_5_ ),
+    .B(execution_unit_0.mdb_in_13_ ),
     .S(_00949_),
     .Y(_00989_)
   );
   NOR2X1 _06887_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
     .B(_00989_),
     .Y(_00990_)
   );
   AOI21X1 _06888_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
-    .B( execution_unit_0.mdb_in_buf_5_ ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
+    .B(execution_unit_0.mdb_in_buf_5_ ),
     .C(_00990_),
     .Y(_00991_)
   );
@@ -13820,43 +13820,43 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06890_ (
     .A(_00992_),
-    .B( dbg_0.dbg_reg_din_5_ ),
+    .B(dbg_0.dbg_reg_din_5_ ),
     .S(_00936_),
     .Y(_00993_)
   );
   OAI21X1 _06891_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_5_ ),
+    .C(execution_unit_0.reg_src_5_ ),
     .Y(_00994_)
   );
   OAI21X1 _06892_ (
     .A(_00957_),
     .B(_00993_),
     .C(_00994_),
-    .Y( execution_unit_0.alu_0.alu_shift_4_ )
+    .Y(execution_unit_0.alu_0.alu_shift_4_ )
   );
   AOI22X1 _06893_ (
-    .A( execution_unit_0.inst_dext_6_ ),
+    .A(execution_unit_0.inst_dext_6_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_6_ ),
+    .D(execution_unit_0.inst_sext_6_ ),
     .Y(_00995_)
   );
   MUX2X1 _06894_ (
-    .A( execution_unit_0.mdb_in_6_ ),
-    .B( execution_unit_0.mdb_in_14_ ),
+    .A(execution_unit_0.mdb_in_6_ ),
+    .B(execution_unit_0.mdb_in_14_ ),
     .S(_00949_),
     .Y(_00996_)
   );
   NOR2X1 _06895_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
     .B(_00996_),
     .Y(_00997_)
   );
   AOI21X1 _06896_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
-    .B( execution_unit_0.mdb_in_buf_6_ ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
+    .B(execution_unit_0.mdb_in_buf_6_ ),
     .C(_00997_),
     .Y(_00998_)
   );
@@ -13868,43 +13868,43 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06898_ (
     .A(_00999_),
-    .B( dbg_0.dbg_reg_din_6_ ),
+    .B(dbg_0.dbg_reg_din_6_ ),
     .S(_00936_),
     .Y(_01000_)
   );
   OAI21X1 _06899_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_6_ ),
+    .C(execution_unit_0.reg_src_6_ ),
     .Y(_01001_)
   );
   OAI21X1 _06900_ (
     .A(_00957_),
     .B(_01000_),
     .C(_01001_),
-    .Y( execution_unit_0.alu_0.alu_shift_5_ )
+    .Y(execution_unit_0.alu_0.alu_shift_5_ )
   );
   AOI22X1 _06901_ (
-    .A( execution_unit_0.inst_dext_7_ ),
+    .A(execution_unit_0.inst_dext_7_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_7_ ),
+    .D(execution_unit_0.inst_sext_7_ ),
     .Y(_01002_)
   );
   MUX2X1 _06902_ (
-    .A( execution_unit_0.mdb_in_7_ ),
-    .B( execution_unit_0.mdb_in_15_ ),
+    .A(execution_unit_0.mdb_in_7_ ),
+    .B(execution_unit_0.mdb_in_15_ ),
     .S(_00949_),
     .Y(_01003_)
   );
   NOR2X1 _06903_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
     .B(_01003_),
     .Y(_01004_)
   );
   AOI21X1 _06904_ (
-    .A( execution_unit_0.mdb_in_buf_valid ),
-    .B( execution_unit_0.mdb_in_buf_7_ ),
+    .A(execution_unit_0.mdb_in_buf_valid ),
+    .B(execution_unit_0.mdb_in_buf_7_ ),
     .C(_01004_),
     .Y(_01005_)
   );
@@ -13916,33 +13916,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06906_ (
     .A(_01006_),
-    .B( dbg_0.dbg_reg_din_7_ ),
+    .B(dbg_0.dbg_reg_din_7_ ),
     .S(_00936_),
     .Y(_01007_)
   );
   OAI21X1 _06907_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_7_ ),
+    .C(execution_unit_0.reg_src_7_ ),
     .Y(_01008_)
   );
   OAI21X1 _06908_ (
     .A(_00957_),
     .B(_01007_),
     .C(_01008_),
-    .Y( execution_unit_0.alu_0.alu_shift_6_ )
+    .Y(execution_unit_0.alu_0.alu_shift_6_ )
   );
   AOI22X1 _06909_ (
-    .A( execution_unit_0.inst_dext_8_ ),
+    .A(execution_unit_0.inst_dext_8_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_8_ ),
+    .D(execution_unit_0.inst_sext_8_ ),
     .Y(_01009_)
   );
   MUX2X1 _06910_ (
-    .A( execution_unit_0.mdb_in_buf_8_ ),
-    .B( execution_unit_0.mdb_in_8_ ),
-    .S( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_8_ ),
+    .B(execution_unit_0.mdb_in_8_ ),
+    .S(execution_unit_0.mdb_in_buf_valid ),
     .Y(_01010_)
   );
   MUX2X1 _06911_ (
@@ -13953,33 +13953,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06912_ (
     .A(_01011_),
-    .B( dbg_0.dbg_reg_din_8_ ),
+    .B(dbg_0.dbg_reg_din_8_ ),
     .S(_00936_),
     .Y(_01012_)
   );
   OAI21X1 _06913_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_8_ ),
+    .C(execution_unit_0.reg_src_8_ ),
     .Y(_01013_)
   );
   OAI21X1 _06914_ (
     .A(_00957_),
     .B(_01012_),
     .C(_01013_),
-    .Y( execution_unit_0.alu_0.alu_swpb_0_ )
+    .Y(execution_unit_0.alu_0.alu_swpb_0_ )
   );
   AOI22X1 _06915_ (
-    .A( execution_unit_0.inst_dext_9_ ),
+    .A(execution_unit_0.inst_dext_9_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_9_ ),
+    .D(execution_unit_0.inst_sext_9_ ),
     .Y(_01014_)
   );
   MUX2X1 _06916_ (
-    .A( execution_unit_0.mdb_in_buf_9_ ),
-    .B( execution_unit_0.mdb_in_9_ ),
-    .S( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_9_ ),
+    .B(execution_unit_0.mdb_in_9_ ),
+    .S(execution_unit_0.mdb_in_buf_valid ),
     .Y(_01015_)
   );
   MUX2X1 _06917_ (
@@ -13990,33 +13990,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06918_ (
     .A(_01016_),
-    .B( dbg_0.dbg_reg_din_9_ ),
+    .B(dbg_0.dbg_reg_din_9_ ),
     .S(_00936_),
     .Y(_01017_)
   );
   OAI21X1 _06919_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_9_ ),
+    .C(execution_unit_0.reg_src_9_ ),
     .Y(_01018_)
   );
   OAI21X1 _06920_ (
     .A(_00957_),
     .B(_01017_),
     .C(_01018_),
-    .Y( execution_unit_0.alu_0.alu_shift_8_ )
+    .Y(execution_unit_0.alu_0.alu_shift_8_ )
   );
   AOI22X1 _06921_ (
-    .A( execution_unit_0.inst_dext_10_ ),
+    .A(execution_unit_0.inst_dext_10_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_10_ ),
+    .D(execution_unit_0.inst_sext_10_ ),
     .Y(_01019_)
   );
   MUX2X1 _06922_ (
-    .A( execution_unit_0.mdb_in_buf_10_ ),
-    .B( execution_unit_0.mdb_in_10_ ),
-    .S( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_10_ ),
+    .B(execution_unit_0.mdb_in_10_ ),
+    .S(execution_unit_0.mdb_in_buf_valid ),
     .Y(_01020_)
   );
   MUX2X1 _06923_ (
@@ -14027,33 +14027,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06924_ (
     .A(_01021_),
-    .B( dbg_0.dbg_reg_din_10_ ),
+    .B(dbg_0.dbg_reg_din_10_ ),
     .S(_00936_),
     .Y(_01022_)
   );
   OAI21X1 _06925_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_10_ ),
+    .C(execution_unit_0.reg_src_10_ ),
     .Y(_01023_)
   );
   OAI21X1 _06926_ (
     .A(_00957_),
     .B(_01022_),
     .C(_01023_),
-    .Y( execution_unit_0.alu_0.alu_shift_9_ )
+    .Y(execution_unit_0.alu_0.alu_shift_9_ )
   );
   AOI22X1 _06927_ (
-    .A( execution_unit_0.inst_dext_11_ ),
+    .A(execution_unit_0.inst_dext_11_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_11_ ),
+    .D(execution_unit_0.inst_sext_11_ ),
     .Y(_01024_)
   );
   MUX2X1 _06928_ (
-    .A( execution_unit_0.mdb_in_buf_11_ ),
-    .B( execution_unit_0.mdb_in_11_ ),
-    .S( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_11_ ),
+    .B(execution_unit_0.mdb_in_11_ ),
+    .S(execution_unit_0.mdb_in_buf_valid ),
     .Y(_01025_)
   );
   MUX2X1 _06929_ (
@@ -14064,33 +14064,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06930_ (
     .A(_01026_),
-    .B( dbg_0.dbg_reg_din_11_ ),
+    .B(dbg_0.dbg_reg_din_11_ ),
     .S(_00936_),
     .Y(_01027_)
   );
   OAI21X1 _06931_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_11_ ),
+    .C(execution_unit_0.reg_src_11_ ),
     .Y(_01028_)
   );
   OAI21X1 _06932_ (
     .A(_00957_),
     .B(_01027_),
     .C(_01028_),
-    .Y( execution_unit_0.alu_0.alu_shift_10_ )
+    .Y(execution_unit_0.alu_0.alu_shift_10_ )
   );
   AOI22X1 _06933_ (
-    .A( execution_unit_0.inst_dext_12_ ),
+    .A(execution_unit_0.inst_dext_12_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_12_ ),
+    .D(execution_unit_0.inst_sext_12_ ),
     .Y(_01029_)
   );
   MUX2X1 _06934_ (
-    .A( execution_unit_0.mdb_in_buf_12_ ),
-    .B( execution_unit_0.mdb_in_12_ ),
-    .S( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_12_ ),
+    .B(execution_unit_0.mdb_in_12_ ),
+    .S(execution_unit_0.mdb_in_buf_valid ),
     .Y(_01030_)
   );
   MUX2X1 _06935_ (
@@ -14101,33 +14101,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06936_ (
     .A(_01031_),
-    .B( dbg_0.dbg_reg_din_12_ ),
+    .B(dbg_0.dbg_reg_din_12_ ),
     .S(_00936_),
     .Y(_01032_)
   );
   OAI21X1 _06937_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_12_ ),
+    .C(execution_unit_0.reg_src_12_ ),
     .Y(_01033_)
   );
   OAI21X1 _06938_ (
     .A(_00957_),
     .B(_01032_),
     .C(_01033_),
-    .Y( execution_unit_0.alu_0.alu_shift_11_ )
+    .Y(execution_unit_0.alu_0.alu_shift_11_ )
   );
   AOI22X1 _06939_ (
-    .A( execution_unit_0.inst_dext_13_ ),
+    .A(execution_unit_0.inst_dext_13_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_13_ ),
+    .D(execution_unit_0.inst_sext_13_ ),
     .Y(_01034_)
   );
   MUX2X1 _06940_ (
-    .A( execution_unit_0.mdb_in_buf_13_ ),
-    .B( execution_unit_0.mdb_in_13_ ),
-    .S( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_13_ ),
+    .B(execution_unit_0.mdb_in_13_ ),
+    .S(execution_unit_0.mdb_in_buf_valid ),
     .Y(_01035_)
   );
   MUX2X1 _06941_ (
@@ -14138,33 +14138,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06942_ (
     .A(_01036_),
-    .B( dbg_0.dbg_reg_din_13_ ),
+    .B(dbg_0.dbg_reg_din_13_ ),
     .S(_00936_),
     .Y(_01037_)
   );
   OAI21X1 _06943_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_13_ ),
+    .C(execution_unit_0.reg_src_13_ ),
     .Y(_01038_)
   );
   OAI21X1 _06944_ (
     .A(_00957_),
     .B(_01037_),
     .C(_01038_),
-    .Y( execution_unit_0.alu_0.alu_shift_12_ )
+    .Y(execution_unit_0.alu_0.alu_shift_12_ )
   );
   AOI22X1 _06945_ (
-    .A( execution_unit_0.inst_dext_14_ ),
+    .A(execution_unit_0.inst_dext_14_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_14_ ),
+    .D(execution_unit_0.inst_sext_14_ ),
     .Y(_01039_)
   );
   MUX2X1 _06946_ (
-    .A( execution_unit_0.mdb_in_buf_14_ ),
-    .B( execution_unit_0.mdb_in_14_ ),
-    .S( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_14_ ),
+    .B(execution_unit_0.mdb_in_14_ ),
+    .S(execution_unit_0.mdb_in_buf_valid ),
     .Y(_01040_)
   );
   MUX2X1 _06947_ (
@@ -14175,33 +14175,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06948_ (
     .A(_01041_),
-    .B( dbg_0.dbg_reg_din_14_ ),
+    .B(dbg_0.dbg_reg_din_14_ ),
     .S(_00936_),
     .Y(_01042_)
   );
   OAI21X1 _06949_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_14_ ),
+    .C(execution_unit_0.reg_src_14_ ),
     .Y(_01043_)
   );
   OAI21X1 _06950_ (
     .A(_00957_),
     .B(_01042_),
     .C(_01043_),
-    .Y( execution_unit_0.alu_0.alu_shift_13_ )
+    .Y(execution_unit_0.alu_0.alu_shift_13_ )
   );
   AOI22X1 _06951_ (
-    .A( execution_unit_0.inst_dext_15_ ),
+    .A(execution_unit_0.inst_dext_15_ ),
     .B(_00944_),
     .C(_00947_),
-    .D( execution_unit_0.inst_sext_15_ ),
+    .D(execution_unit_0.inst_sext_15_ ),
     .Y(_01044_)
   );
   MUX2X1 _06952_ (
-    .A( execution_unit_0.mdb_in_buf_15_ ),
-    .B( execution_unit_0.mdb_in_15_ ),
-    .S( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_15_ ),
+    .B(execution_unit_0.mdb_in_15_ ),
+    .S(execution_unit_0.mdb_in_buf_valid ),
     .Y(_01045_)
   );
   MUX2X1 _06953_ (
@@ -14212,29 +14212,29 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   MUX2X1 _06954_ (
     .A(_01046_),
-    .B( dbg_0.dbg_reg_din_15_ ),
+    .B(dbg_0.dbg_reg_din_15_ ),
     .S(_00936_),
     .Y(_01047_)
   );
   OAI21X1 _06955_ (
     .A(_00955_),
     .B(_00956_),
-    .C( execution_unit_0.reg_src_15_ ),
+    .C(execution_unit_0.reg_src_15_ ),
     .Y(_01048_)
   );
   OAI21X1 _06956_ (
     .A(_00957_),
     .B(_01047_),
     .C(_01048_),
-    .Y( execution_unit_0.alu_0.alu_shift_14_ )
+    .Y(execution_unit_0.alu_0.alu_shift_14_ )
   );
   OR2X1 _06957_ (
-    .A( execution_unit_0.inst_type_1_ ),
-    .B( execution_unit_0.inst_ad_0_ ),
+    .A(execution_unit_0.inst_type_1_ ),
+    .B(execution_unit_0.inst_ad_0_ ),
     .Y(_01049_)
   );
   NOR2X1 _06958_ (
-    .A( execution_unit_0.inst_type_0_ ),
+    .A(execution_unit_0.inst_type_0_ ),
     .B(_01049_),
     .Y(_01050_)
   );
@@ -14243,7 +14243,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01051_)
   );
   OR2X1 _06960_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .B(_00920_),
     .Y(_01052_)
   );
@@ -14253,7 +14253,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01053_)
   );
   NOR2X1 _06962_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .B(_00931_),
     .Y(_01054_)
   );
@@ -14266,7 +14266,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _06964_ (
     .A(_00942_),
     .B(_01055_),
-    .C( execution_unit_0.inst_ad_6_ ),
+    .C(execution_unit_0.inst_ad_6_ ),
     .Y(_01056_)
   );
   NOR2X1 _06965_ (
@@ -14280,7 +14280,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01058_)
   );
   NAND3X1 _06967_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .B(_00918_),
     .C(_00925_),
     .Y(_01059_)
@@ -14316,7 +14316,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01065_)
   );
   NAND2X1 _06974_ (
-    .A( execution_unit_0.inst_sext_0_ ),
+    .A(execution_unit_0.inst_sext_0_ ),
     .B(_01064_),
     .Y(_01066_)
   );
@@ -14327,37 +14327,37 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01067_)
   );
   AOI21X1 _06976_ (
-    .A( dbg_0.dbg_reg_din_0_ ),
+    .A(dbg_0.dbg_reg_din_0_ ),
     .B(_01063_),
     .C(_01067_),
     .Y(_01068_)
   );
   NAND2X1 _06977_ (
     .A(_05677_),
-    .B( dbg_0.cpu_stat_full_0_ ),
+    .B(dbg_0.cpu_stat_full_0_ ),
     .Y(_01069_)
   );
   OAI21X1 _06978_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_01068_),
     .C(_01069_),
-    .Y( execution_unit_0.alu_0.op_dst_0_ )
+    .Y(execution_unit_0.alu_0.op_dst_0_ )
   );
   NAND2X1 _06979_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05684_),
     .Y(_01070_)
   );
   OAI21X1 _06980_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_1_ ),
+    .C(dbg_0.dbg_reg_din_1_ ),
     .Y(_01071_)
   );
   OAI21X1 _06981_ (
-    .A( execution_unit_0.inst_as_3_ ),
-    .B( execution_unit_0.inst_as_2_ ),
-    .C( execution_unit_0.inst_src_1_ ),
+    .A(execution_unit_0.inst_as_3_ ),
+    .B(execution_unit_0.inst_as_2_ ),
+    .C(execution_unit_0.inst_src_1_ ),
     .Y(_01072_)
   );
   OR2X1 _06982_ (
@@ -14372,13 +14372,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01074_)
   );
   OAI21X1 _06984_ (
-    .A( execution_unit_0.e_state_1_ ),
-    .B( execution_unit_0.e_state_0_ ),
+    .A(execution_unit_0.e_state_1_ ),
+    .B(execution_unit_0.e_state_0_ ),
     .C(_00921_),
     .Y(_01075_)
   );
   OAI21X1 _06985_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .B(_00933_),
     .C(_01075_),
     .Y(_01076_)
@@ -14397,26 +14397,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01078_)
   );
   MUX2X1 _06988_ (
-    .A( execution_unit_0.inst_sext_1_ ),
+    .A(execution_unit_0.inst_sext_1_ ),
     .B(_01078_),
     .S(_01064_),
     .Y(_01079_)
   );
   OAI21X1 _06989_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_01079_),
     .C(_01070_),
-    .Y( execution_unit_0.alu_0.op_dst_1_ )
+    .Y(execution_unit_0.alu_0.op_dst_1_ )
   );
   NAND2X1 _06990_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05685_),
     .Y(_01080_)
   );
   OAI21X1 _06991_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_2_ ),
+    .C(dbg_0.dbg_reg_din_2_ ),
     .Y(_01081_)
   );
   AOI22X1 _06992_ (
@@ -14427,26 +14427,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01082_)
   );
   MUX2X1 _06993_ (
-    .A( execution_unit_0.inst_sext_2_ ),
+    .A(execution_unit_0.inst_sext_2_ ),
     .B(_01082_),
     .S(_01064_),
     .Y(_01083_)
   );
   OAI21X1 _06994_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_01083_),
     .C(_01080_),
-    .Y( execution_unit_0.alu_0.op_dst_2_ )
+    .Y(execution_unit_0.alu_0.op_dst_2_ )
   );
   NAND2X1 _06995_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05686_),
     .Y(_01084_)
   );
   OAI21X1 _06996_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_3_ ),
+    .C(dbg_0.dbg_reg_din_3_ ),
     .Y(_01085_)
   );
   AOI22X1 _06997_ (
@@ -14457,26 +14457,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01086_)
   );
   MUX2X1 _06998_ (
-    .A( execution_unit_0.inst_sext_3_ ),
+    .A(execution_unit_0.inst_sext_3_ ),
     .B(_01086_),
     .S(_01064_),
     .Y(_01087_)
   );
   OAI21X1 _06999_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_01087_),
     .C(_01084_),
-    .Y( execution_unit_0.alu_0.op_dst_3_ )
+    .Y(execution_unit_0.alu_0.op_dst_3_ )
   );
   NAND2X1 _07000_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05687_),
     .Y(_01088_)
   );
   OAI21X1 _07001_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_4_ ),
+    .C(dbg_0.dbg_reg_din_4_ ),
     .Y(_01089_)
   );
   AOI22X1 _07002_ (
@@ -14487,26 +14487,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01090_)
   );
   MUX2X1 _07003_ (
-    .A( execution_unit_0.inst_sext_4_ ),
+    .A(execution_unit_0.inst_sext_4_ ),
     .B(_01090_),
     .S(_01064_),
     .Y(_01091_)
   );
   OAI21X1 _07004_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_01091_),
     .C(_01088_),
-    .Y( execution_unit_0.alu_0.op_dst_4_ )
+    .Y(execution_unit_0.alu_0.op_dst_4_ )
   );
   NAND2X1 _07005_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05688_),
     .Y(_01092_)
   );
   OAI21X1 _07006_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_5_ ),
+    .C(dbg_0.dbg_reg_din_5_ ),
     .Y(_01093_)
   );
   AOI22X1 _07007_ (
@@ -14517,26 +14517,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01094_)
   );
   MUX2X1 _07008_ (
-    .A( execution_unit_0.inst_sext_5_ ),
+    .A(execution_unit_0.inst_sext_5_ ),
     .B(_01094_),
     .S(_01064_),
     .Y(_01095_)
   );
   OAI21X1 _07009_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_01095_),
     .C(_01092_),
-    .Y( execution_unit_0.alu_0.op_dst_5_ )
+    .Y(execution_unit_0.alu_0.op_dst_5_ )
   );
   NAND2X1 _07010_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05689_),
     .Y(_01096_)
   );
   OAI21X1 _07011_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_6_ ),
+    .C(dbg_0.dbg_reg_din_6_ ),
     .Y(_01097_)
   );
   AOI22X1 _07012_ (
@@ -14547,26 +14547,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01098_)
   );
   MUX2X1 _07013_ (
-    .A( execution_unit_0.inst_sext_6_ ),
+    .A(execution_unit_0.inst_sext_6_ ),
     .B(_01098_),
     .S(_01064_),
     .Y(_01099_)
   );
   OAI21X1 _07014_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_01099_),
     .C(_01096_),
-    .Y( execution_unit_0.alu_0.op_dst_6_ )
+    .Y(execution_unit_0.alu_0.op_dst_6_ )
   );
   NAND2X1 _07015_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05690_),
     .Y(_01100_)
   );
   OAI21X1 _07016_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_7_ ),
+    .C(dbg_0.dbg_reg_din_7_ ),
     .Y(_01101_)
   );
   AOI22X1 _07017_ (
@@ -14577,26 +14577,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01102_)
   );
   MUX2X1 _07018_ (
-    .A( execution_unit_0.inst_sext_7_ ),
+    .A(execution_unit_0.inst_sext_7_ ),
     .B(_01102_),
     .S(_01064_),
     .Y(_01103_)
   );
   OAI21X1 _07019_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_01103_),
     .C(_01100_),
-    .Y( execution_unit_0.alu_0.op_dst_7_ )
+    .Y(execution_unit_0.alu_0.op_dst_7_ )
   );
   NAND2X1 _07020_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05691_),
     .Y(_01104_)
   );
   OAI21X1 _07021_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_8_ ),
+    .C(dbg_0.dbg_reg_din_8_ ),
     .Y(_01105_)
   );
   AOI22X1 _07022_ (
@@ -14612,7 +14612,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01107_)
   );
   OAI21X1 _07024_ (
-    .A( execution_unit_0.inst_sext_8_ ),
+    .A(execution_unit_0.inst_sext_8_ ),
     .B(_01065_),
     .C(_00905_),
     .Y(_01108_)
@@ -14621,17 +14621,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01107_),
     .B(_01108_),
     .C(_01104_),
-    .Y( execution_unit_0.alu_0.op_dst_8_ )
+    .Y(execution_unit_0.alu_0.op_dst_8_ )
   );
   NAND2X1 _07026_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05692_),
     .Y(_01109_)
   );
   OAI21X1 _07027_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_9_ ),
+    .C(dbg_0.dbg_reg_din_9_ ),
     .Y(_01110_)
   );
   AOI22X1 _07028_ (
@@ -14647,7 +14647,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01112_)
   );
   OAI21X1 _07030_ (
-    .A( execution_unit_0.inst_sext_9_ ),
+    .A(execution_unit_0.inst_sext_9_ ),
     .B(_01065_),
     .C(_00905_),
     .Y(_01113_)
@@ -14656,17 +14656,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01112_),
     .B(_01113_),
     .C(_01109_),
-    .Y( execution_unit_0.alu_0.op_dst_9_ )
+    .Y(execution_unit_0.alu_0.op_dst_9_ )
   );
   NAND2X1 _07032_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05678_),
     .Y(_01114_)
   );
   OAI21X1 _07033_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_10_ ),
+    .C(dbg_0.dbg_reg_din_10_ ),
     .Y(_01115_)
   );
   AOI22X1 _07034_ (
@@ -14682,7 +14682,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01117_)
   );
   OAI21X1 _07036_ (
-    .A( execution_unit_0.inst_sext_10_ ),
+    .A(execution_unit_0.inst_sext_10_ ),
     .B(_01065_),
     .C(_00905_),
     .Y(_01118_)
@@ -14691,17 +14691,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01117_),
     .B(_01118_),
     .C(_01114_),
-    .Y( execution_unit_0.alu_0.op_dst_10_ )
+    .Y(execution_unit_0.alu_0.op_dst_10_ )
   );
   NAND2X1 _07038_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05679_),
     .Y(_01119_)
   );
   OAI21X1 _07039_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_11_ ),
+    .C(dbg_0.dbg_reg_din_11_ ),
     .Y(_01120_)
   );
   AOI22X1 _07040_ (
@@ -14717,7 +14717,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01122_)
   );
   OAI21X1 _07042_ (
-    .A( execution_unit_0.inst_sext_11_ ),
+    .A(execution_unit_0.inst_sext_11_ ),
     .B(_01065_),
     .C(_00905_),
     .Y(_01123_)
@@ -14726,17 +14726,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01122_),
     .B(_01123_),
     .C(_01119_),
-    .Y( execution_unit_0.alu_0.op_dst_11_ )
+    .Y(execution_unit_0.alu_0.op_dst_11_ )
   );
   NAND2X1 _07044_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05680_),
     .Y(_01124_)
   );
   OAI21X1 _07045_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_12_ ),
+    .C(dbg_0.dbg_reg_din_12_ ),
     .Y(_01125_)
   );
   AOI22X1 _07046_ (
@@ -14752,7 +14752,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01127_)
   );
   OAI21X1 _07048_ (
-    .A( execution_unit_0.inst_sext_12_ ),
+    .A(execution_unit_0.inst_sext_12_ ),
     .B(_01065_),
     .C(_00905_),
     .Y(_01128_)
@@ -14761,17 +14761,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01127_),
     .B(_01128_),
     .C(_01124_),
-    .Y( execution_unit_0.alu_0.op_dst_12_ )
+    .Y(execution_unit_0.alu_0.op_dst_12_ )
   );
   NAND2X1 _07050_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05681_),
     .Y(_01129_)
   );
   OAI21X1 _07051_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_13_ ),
+    .C(dbg_0.dbg_reg_din_13_ ),
     .Y(_01130_)
   );
   AOI22X1 _07052_ (
@@ -14787,7 +14787,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01132_)
   );
   OAI21X1 _07054_ (
-    .A( execution_unit_0.inst_sext_13_ ),
+    .A(execution_unit_0.inst_sext_13_ ),
     .B(_01065_),
     .C(_00905_),
     .Y(_01133_)
@@ -14796,17 +14796,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01132_),
     .B(_01133_),
     .C(_01129_),
-    .Y( execution_unit_0.alu_0.op_dst_13_ )
+    .Y(execution_unit_0.alu_0.op_dst_13_ )
   );
   NAND2X1 _07056_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05682_),
     .Y(_01134_)
   );
   OAI21X1 _07057_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_14_ ),
+    .C(dbg_0.dbg_reg_din_14_ ),
     .Y(_01135_)
   );
   AOI22X1 _07058_ (
@@ -14822,7 +14822,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01137_)
   );
   OAI21X1 _07060_ (
-    .A( execution_unit_0.inst_sext_14_ ),
+    .A(execution_unit_0.inst_sext_14_ ),
     .B(_01065_),
     .C(_00905_),
     .Y(_01138_)
@@ -14831,17 +14831,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01137_),
     .B(_01138_),
     .C(_01134_),
-    .Y( execution_unit_0.alu_0.op_dst_14_ )
+    .Y(execution_unit_0.alu_0.op_dst_14_ )
   );
   NAND2X1 _07062_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_05683_),
     .Y(_01139_)
   );
   OAI21X1 _07063_ (
     .A(_01053_),
     .B(_01056_),
-    .C( dbg_0.dbg_reg_din_15_ ),
+    .C(dbg_0.dbg_reg_din_15_ ),
     .Y(_01140_)
   );
   AOI22X1 _07064_ (
@@ -14857,7 +14857,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01142_)
   );
   OAI21X1 _07066_ (
-    .A( execution_unit_0.inst_sext_15_ ),
+    .A(execution_unit_0.inst_sext_15_ ),
     .B(_01065_),
     .C(_00905_),
     .Y(_01143_)
@@ -14866,126 +14866,126 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01142_),
     .B(_01143_),
     .C(_01139_),
-    .Y( execution_unit_0.alu_0.op_dst_15_ )
+    .Y(execution_unit_0.alu_0.op_dst_15_ )
   );
   NAND2X1 _07068_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
-    .B( execution_unit_0.mdb_out_0_ ),
+    .A(execution_unit_0.alu_0.inst_bw ),
+    .B(execution_unit_0.mdb_out_0_ ),
     .Y(_01144_)
   );
   OAI21X1 _07069_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_00906_),
     .C(_01144_),
-    .Y( execution_unit_0.mdb_out_8_ )
+    .Y(execution_unit_0.mdb_out_8_ )
   );
   NAND2X1 _07070_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
-    .B( execution_unit_0.mdb_out_1_ ),
+    .A(execution_unit_0.alu_0.inst_bw ),
+    .B(execution_unit_0.mdb_out_1_ ),
     .Y(_01145_)
   );
   OAI21X1 _07071_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_00907_),
     .C(_01145_),
-    .Y( execution_unit_0.mdb_out_9_ )
+    .Y(execution_unit_0.mdb_out_9_ )
   );
   NAND2X1 _07072_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
-    .B( execution_unit_0.mdb_out_2_ ),
+    .A(execution_unit_0.alu_0.inst_bw ),
+    .B(execution_unit_0.mdb_out_2_ ),
     .Y(_01146_)
   );
   OAI21X1 _07073_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_00908_),
     .C(_01146_),
-    .Y( execution_unit_0.mdb_out_10_ )
+    .Y(execution_unit_0.mdb_out_10_ )
   );
   NAND2X1 _07074_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
-    .B( execution_unit_0.mdb_out_3_ ),
+    .A(execution_unit_0.alu_0.inst_bw ),
+    .B(execution_unit_0.mdb_out_3_ ),
     .Y(_01147_)
   );
   OAI21X1 _07075_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_00909_),
     .C(_01147_),
-    .Y( execution_unit_0.mdb_out_11_ )
+    .Y(execution_unit_0.mdb_out_11_ )
   );
   NAND2X1 _07076_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
-    .B( execution_unit_0.mdb_out_4_ ),
+    .A(execution_unit_0.alu_0.inst_bw ),
+    .B(execution_unit_0.mdb_out_4_ ),
     .Y(_01148_)
   );
   OAI21X1 _07077_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_00910_),
     .C(_01148_),
-    .Y( execution_unit_0.mdb_out_12_ )
+    .Y(execution_unit_0.mdb_out_12_ )
   );
   NAND2X1 _07078_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
-    .B( execution_unit_0.mdb_out_5_ ),
+    .A(execution_unit_0.alu_0.inst_bw ),
+    .B(execution_unit_0.mdb_out_5_ ),
     .Y(_01149_)
   );
   OAI21X1 _07079_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_00911_),
     .C(_01149_),
-    .Y( execution_unit_0.mdb_out_13_ )
+    .Y(execution_unit_0.mdb_out_13_ )
   );
   NAND2X1 _07080_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
-    .B( execution_unit_0.mdb_out_6_ ),
+    .A(execution_unit_0.alu_0.inst_bw ),
+    .B(execution_unit_0.mdb_out_6_ ),
     .Y(_01150_)
   );
   OAI21X1 _07081_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_00912_),
     .C(_01150_),
-    .Y( execution_unit_0.mdb_out_14_ )
+    .Y(execution_unit_0.mdb_out_14_ )
   );
   NAND2X1 _07082_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
-    .B( execution_unit_0.mdb_out_7_ ),
+    .A(execution_unit_0.alu_0.inst_bw ),
+    .B(execution_unit_0.mdb_out_7_ ),
     .Y(_01151_)
   );
   OAI21X1 _07083_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_00913_),
     .C(_01151_),
-    .Y( execution_unit_0.mdb_out_15_ )
+    .Y(execution_unit_0.mdb_out_15_ )
   );
   NAND3X1 _07084_ (
-    .A( execution_unit_0.inst_as_0_ ),
-    .B( execution_unit_0.inst_type_0_ ),
+    .A(execution_unit_0.inst_as_0_ ),
+    .B(execution_unit_0.inst_type_0_ ),
     .C(_01054_),
     .Y(_01152_)
   );
   NAND2X1 _07085_ (
-    .A( execution_unit_0.inst_ad_0_ ),
-    .B( execution_unit_0.inst_type_2_ ),
+    .A(execution_unit_0.inst_ad_0_ ),
+    .B(execution_unit_0.inst_type_2_ ),
     .Y(_01153_)
   );
   OAI21X1 _07086_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_alu ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_alu ),
     .B(_01153_),
     .C(_01152_),
     .Y(_01154_)
   );
   OAI21X1 _07087_ (
-    .A( execution_unit_0.inst_type_1_ ),
+    .A(execution_unit_0.inst_type_1_ ),
     .B(_01154_),
-    .C( execution_unit_0.alu_0.exec_cycle ),
+    .C(execution_unit_0.alu_0.exec_cycle ),
     .Y(_01155_)
   );
   NAND2X1 _07088_ (
     .A(_00915_),
     .B(_01155_),
-    .Y( execution_unit_0.reg_dest_wr )
+    .Y(execution_unit_0.reg_dest_wr )
   );
   NAND3X1 _07089_ (
-    .A( execution_unit_0.e_state_0_ ),
+    .A(execution_unit_0.e_state_0_ ),
     .B(_00916_),
     .C(_00921_),
     .Y(_01156_)
@@ -15004,26 +15004,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OR2X1 _07092_ (
     .A(_01074_),
     .B(_01158_),
-    .Y( execution_unit_0.reg_sp_wr )
+    .Y(execution_unit_0.reg_sp_wr )
   );
   OAI21X1 _07093_ (
     .A(_00885_),
     .B(_00920_),
     .C(_01059_),
-    .Y( execution_unit_0.reg_pc_call )
+    .Y(execution_unit_0.reg_pc_call )
   );
   AOI22X1 _07094_ (
-    .A( execution_unit_0.inst_as_3_ ),
-    .B( execution_unit_0.exec_done ),
-    .C( execution_unit_0.alu_0.exec_cycle ),
-    .D( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .A(execution_unit_0.inst_as_3_ ),
+    .B(execution_unit_0.exec_done ),
+    .C(execution_unit_0.alu_0.exec_cycle ),
+    .D(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .Y(_01159_)
   );
   OAI21X1 _07095_ (
     .A(_00886_),
     .B(_00926_),
     .C(_01159_),
-    .Y( execution_unit_0.reg_incr )
+    .Y(execution_unit_0.reg_incr )
   );
   AND2X1 _07096_ (
     .A(_00919_),
@@ -15031,7 +15031,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01160_)
   );
   OAI21X1 _07097_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .B(_00942_),
     .C(_01156_),
     .Y(_01161_)
@@ -15043,15 +15043,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01162_)
   );
   OR2X1 _07099_ (
-    .A( execution_unit_0.inst_type_0_ ),
-    .B( execution_unit_0.inst_mov ),
+    .A(execution_unit_0.inst_type_0_ ),
+    .B(execution_unit_0.inst_mov ),
     .Y(_01163_)
   );
   OAI22X1 _07100_ (
     .A(_00886_),
     .B(_00920_),
     .C(_00926_),
-    .D( execution_unit_0.inst_as_5_ ),
+    .D(execution_unit_0.inst_as_5_ ),
     .Y(_01164_)
   );
   OAI21X1 _07101_ (
@@ -15063,22 +15063,22 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OR2X1 _07102_ (
     .A(_01164_),
     .B(_01165_),
-    .Y( dbg_0.UNUSED_eu_mb_en )
+    .Y(dbg_0.UNUSED_eu_mb_en )
   );
   AOI21X1 _07103_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
-    .B( dbg_0.UNUSED_eu_mab_0_ ),
+    .A(execution_unit_0.alu_0.inst_bw ),
+    .B(dbg_0.UNUSED_eu_mab_0_ ),
     .C(_01162_),
-    .Y( dbg_0.UNUSED_eu_mb_wr_0_ )
+    .Y(dbg_0.UNUSED_eu_mb_wr_0_ )
   );
   AOI21X1 _07104_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_00917_),
     .C(_01162_),
-    .Y( dbg_0.UNUSED_eu_mb_wr_1_ )
+    .Y(dbg_0.UNUSED_eu_mb_wr_1_ )
   );
   OAI21X1 _07105_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_call ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_call ),
     .B(_00920_),
     .C(_00922_),
     .Y(_01166_)
@@ -15089,13 +15089,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01167_)
   );
   MUX2X1 _07107_ (
-    .A( execution_unit_0.pc_nxt_0_ ),
-    .B( execution_unit_0.alu_0.alu_out_0_ ),
+    .A(execution_unit_0.pc_nxt_0_ ),
+    .B(execution_unit_0.alu_0.alu_out_0_ ),
     .S(_00928_),
     .Y(_01168_)
   );
   NAND2X1 _07108_ (
-    .A( execution_unit_0.mdb_out_0_ ),
+    .A(execution_unit_0.mdb_out_0_ ),
     .B(_01167_),
     .Y(_01169_)
   );
@@ -15106,13 +15106,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00849_)
   );
   MUX2X1 _07110_ (
-    .A( execution_unit_0.pc_nxt_1_ ),
-    .B( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.pc_nxt_1_ ),
+    .B(execution_unit_0.alu_0.alu_out_1_ ),
     .S(_00928_),
     .Y(_01170_)
   );
   NAND2X1 _07111_ (
-    .A( execution_unit_0.mdb_out_1_ ),
+    .A(execution_unit_0.mdb_out_1_ ),
     .B(_01167_),
     .Y(_01171_)
   );
@@ -15123,13 +15123,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00850_)
   );
   MUX2X1 _07113_ (
-    .A( execution_unit_0.pc_nxt_2_ ),
-    .B( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.pc_nxt_2_ ),
+    .B(execution_unit_0.alu_0.alu_out_2_ ),
     .S(_00928_),
     .Y(_01172_)
   );
   NAND2X1 _07114_ (
-    .A( execution_unit_0.mdb_out_2_ ),
+    .A(execution_unit_0.mdb_out_2_ ),
     .B(_01167_),
     .Y(_01173_)
   );
@@ -15140,13 +15140,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00851_)
   );
   MUX2X1 _07116_ (
-    .A( execution_unit_0.pc_nxt_3_ ),
-    .B( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.pc_nxt_3_ ),
+    .B(execution_unit_0.alu_0.alu_out_3_ ),
     .S(_00928_),
     .Y(_01174_)
   );
   NAND2X1 _07117_ (
-    .A( execution_unit_0.mdb_out_3_ ),
+    .A(execution_unit_0.mdb_out_3_ ),
     .B(_01167_),
     .Y(_01175_)
   );
@@ -15157,13 +15157,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00852_)
   );
   MUX2X1 _07119_ (
-    .A( execution_unit_0.pc_nxt_4_ ),
-    .B( execution_unit_0.alu_0.alu_out_4_ ),
+    .A(execution_unit_0.pc_nxt_4_ ),
+    .B(execution_unit_0.alu_0.alu_out_4_ ),
     .S(_00928_),
     .Y(_01176_)
   );
   NAND2X1 _07120_ (
-    .A( execution_unit_0.mdb_out_4_ ),
+    .A(execution_unit_0.mdb_out_4_ ),
     .B(_01167_),
     .Y(_01177_)
   );
@@ -15174,13 +15174,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00853_)
   );
   MUX2X1 _07122_ (
-    .A( execution_unit_0.pc_nxt_5_ ),
-    .B( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.pc_nxt_5_ ),
+    .B(execution_unit_0.alu_0.alu_out_5_ ),
     .S(_00928_),
     .Y(_01178_)
   );
   NAND2X1 _07123_ (
-    .A( execution_unit_0.mdb_out_5_ ),
+    .A(execution_unit_0.mdb_out_5_ ),
     .B(_01167_),
     .Y(_01179_)
   );
@@ -15191,13 +15191,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00854_)
   );
   MUX2X1 _07125_ (
-    .A( execution_unit_0.pc_nxt_6_ ),
-    .B( execution_unit_0.alu_0.alu_out_6_ ),
+    .A(execution_unit_0.pc_nxt_6_ ),
+    .B(execution_unit_0.alu_0.alu_out_6_ ),
     .S(_00928_),
     .Y(_01180_)
   );
   NAND2X1 _07126_ (
-    .A( execution_unit_0.mdb_out_6_ ),
+    .A(execution_unit_0.mdb_out_6_ ),
     .B(_01167_),
     .Y(_01181_)
   );
@@ -15208,13 +15208,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00855_)
   );
   MUX2X1 _07128_ (
-    .A( execution_unit_0.pc_nxt_7_ ),
-    .B( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.pc_nxt_7_ ),
+    .B(execution_unit_0.alu_0.alu_out_7_ ),
     .S(_00928_),
     .Y(_01182_)
   );
   NAND2X1 _07129_ (
-    .A( execution_unit_0.mdb_out_7_ ),
+    .A(execution_unit_0.mdb_out_7_ ),
     .B(_01167_),
     .Y(_01183_)
   );
@@ -15225,13 +15225,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00856_)
   );
   MUX2X1 _07131_ (
-    .A( execution_unit_0.pc_nxt_8_ ),
-    .B( execution_unit_0.alu_0.alu_out_8_ ),
+    .A(execution_unit_0.pc_nxt_8_ ),
+    .B(execution_unit_0.alu_0.alu_out_8_ ),
     .S(_00928_),
     .Y(_01184_)
   );
   NAND2X1 _07132_ (
-    .A( execution_unit_0.mdb_out_nxt_8_ ),
+    .A(execution_unit_0.mdb_out_nxt_8_ ),
     .B(_01167_),
     .Y(_01185_)
   );
@@ -15242,13 +15242,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00857_)
   );
   MUX2X1 _07134_ (
-    .A( execution_unit_0.pc_nxt_9_ ),
-    .B( execution_unit_0.alu_0.alu_out_9_ ),
+    .A(execution_unit_0.pc_nxt_9_ ),
+    .B(execution_unit_0.alu_0.alu_out_9_ ),
     .S(_00928_),
     .Y(_01186_)
   );
   NAND2X1 _07135_ (
-    .A( execution_unit_0.mdb_out_nxt_9_ ),
+    .A(execution_unit_0.mdb_out_nxt_9_ ),
     .B(_01167_),
     .Y(_01187_)
   );
@@ -15259,13 +15259,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00858_)
   );
   MUX2X1 _07137_ (
-    .A( execution_unit_0.pc_nxt_10_ ),
-    .B( execution_unit_0.alu_0.alu_out_10_ ),
+    .A(execution_unit_0.pc_nxt_10_ ),
+    .B(execution_unit_0.alu_0.alu_out_10_ ),
     .S(_00928_),
     .Y(_01188_)
   );
   NAND2X1 _07138_ (
-    .A( execution_unit_0.mdb_out_nxt_10_ ),
+    .A(execution_unit_0.mdb_out_nxt_10_ ),
     .B(_01167_),
     .Y(_01189_)
   );
@@ -15276,13 +15276,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00859_)
   );
   MUX2X1 _07140_ (
-    .A( execution_unit_0.pc_nxt_11_ ),
-    .B( execution_unit_0.alu_0.alu_out_11_ ),
+    .A(execution_unit_0.pc_nxt_11_ ),
+    .B(execution_unit_0.alu_0.alu_out_11_ ),
     .S(_00928_),
     .Y(_01190_)
   );
   NAND2X1 _07141_ (
-    .A( execution_unit_0.mdb_out_nxt_11_ ),
+    .A(execution_unit_0.mdb_out_nxt_11_ ),
     .B(_01167_),
     .Y(_01191_)
   );
@@ -15293,13 +15293,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00860_)
   );
   MUX2X1 _07143_ (
-    .A( execution_unit_0.pc_nxt_12_ ),
-    .B( execution_unit_0.alu_0.alu_out_12_ ),
+    .A(execution_unit_0.pc_nxt_12_ ),
+    .B(execution_unit_0.alu_0.alu_out_12_ ),
     .S(_00928_),
     .Y(_01192_)
   );
   NAND2X1 _07144_ (
-    .A( execution_unit_0.mdb_out_nxt_12_ ),
+    .A(execution_unit_0.mdb_out_nxt_12_ ),
     .B(_01167_),
     .Y(_01193_)
   );
@@ -15310,13 +15310,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00861_)
   );
   MUX2X1 _07146_ (
-    .A( execution_unit_0.pc_nxt_13_ ),
-    .B( execution_unit_0.alu_0.alu_out_13_ ),
+    .A(execution_unit_0.pc_nxt_13_ ),
+    .B(execution_unit_0.alu_0.alu_out_13_ ),
     .S(_00928_),
     .Y(_01194_)
   );
   NAND2X1 _07147_ (
-    .A( execution_unit_0.mdb_out_nxt_13_ ),
+    .A(execution_unit_0.mdb_out_nxt_13_ ),
     .B(_01167_),
     .Y(_01195_)
   );
@@ -15327,13 +15327,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00862_)
   );
   MUX2X1 _07149_ (
-    .A( execution_unit_0.pc_nxt_14_ ),
-    .B( execution_unit_0.alu_0.alu_out_14_ ),
+    .A(execution_unit_0.pc_nxt_14_ ),
+    .B(execution_unit_0.alu_0.alu_out_14_ ),
     .S(_00928_),
     .Y(_01196_)
   );
   NAND2X1 _07150_ (
-    .A( execution_unit_0.mdb_out_nxt_14_ ),
+    .A(execution_unit_0.mdb_out_nxt_14_ ),
     .B(_01167_),
     .Y(_01197_)
   );
@@ -15344,13 +15344,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00863_)
   );
   MUX2X1 _07152_ (
-    .A( execution_unit_0.pc_nxt_15_ ),
-    .B( execution_unit_0.alu_0.alu_out_15_ ),
+    .A(execution_unit_0.pc_nxt_15_ ),
+    .B(execution_unit_0.alu_0.alu_out_15_ ),
     .S(_00928_),
     .Y(_01198_)
   );
   NAND2X1 _07153_ (
-    .A( execution_unit_0.mdb_out_nxt_15_ ),
+    .A(execution_unit_0.mdb_out_nxt_15_ ),
     .B(_01167_),
     .Y(_01199_)
   );
@@ -15361,184 +15361,184 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_00864_)
   );
   NOR2X1 _07155_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_buf_0_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_buf_0_ ),
     .Y(_01200_)
   );
   AOI21X1 _07156_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00950_),
     .C(_01200_),
     .Y(_00865_)
   );
   NOR2X1 _07157_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_buf_1_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_buf_1_ ),
     .Y(_01201_)
   );
   AOI21X1 _07158_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00961_),
     .C(_01201_),
     .Y(_00866_)
   );
   NOR2X1 _07159_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_buf_2_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_buf_2_ ),
     .Y(_01202_)
   );
   AOI21X1 _07160_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00968_),
     .C(_01202_),
     .Y(_00867_)
   );
   NOR2X1 _07161_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_buf_3_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_buf_3_ ),
     .Y(_01203_)
   );
   AOI21X1 _07162_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00975_),
     .C(_01203_),
     .Y(_00868_)
   );
   NOR2X1 _07163_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_buf_4_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_buf_4_ ),
     .Y(_01204_)
   );
   AOI21X1 _07164_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00982_),
     .C(_01204_),
     .Y(_00869_)
   );
   NOR2X1 _07165_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_buf_5_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_buf_5_ ),
     .Y(_01205_)
   );
   AOI21X1 _07166_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00989_),
     .C(_01205_),
     .Y(_00870_)
   );
   NOR2X1 _07167_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_buf_6_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_buf_6_ ),
     .Y(_01206_)
   );
   AOI21X1 _07168_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00996_),
     .C(_01206_),
     .Y(_00871_)
   );
   NOR2X1 _07169_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_buf_7_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_buf_7_ ),
     .Y(_01207_)
   );
   AOI21X1 _07170_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_01003_),
     .C(_01207_),
     .Y(_00872_)
   );
   NAND2X1 _07171_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_8_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_8_ ),
     .Y(_01208_)
   );
   OAI21X1 _07172_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00897_),
     .C(_01208_),
     .Y(_00873_)
   );
   NAND2X1 _07173_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_9_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_9_ ),
     .Y(_01209_)
   );
   OAI21X1 _07174_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00898_),
     .C(_01209_),
     .Y(_00874_)
   );
   NAND2X1 _07175_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_10_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_10_ ),
     .Y(_01210_)
   );
   OAI21X1 _07176_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00899_),
     .C(_01210_),
     .Y(_00875_)
   );
   NAND2X1 _07177_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_11_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_11_ ),
     .Y(_01211_)
   );
   OAI21X1 _07178_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00900_),
     .C(_01211_),
     .Y(_00876_)
   );
   NAND2X1 _07179_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_12_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_12_ ),
     .Y(_01212_)
   );
   OAI21X1 _07180_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00901_),
     .C(_01212_),
     .Y(_00877_)
   );
   NAND2X1 _07181_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_13_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_13_ ),
     .Y(_01213_)
   );
   OAI21X1 _07182_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00902_),
     .C(_01213_),
     .Y(_00878_)
   );
   NAND2X1 _07183_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_14_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_14_ ),
     .Y(_01214_)
   );
   OAI21X1 _07184_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00903_),
     .C(_01214_),
     .Y(_00879_)
   );
   NAND2X1 _07185_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_15_ ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_15_ ),
     .Y(_01215_)
   );
   OAI21X1 _07186_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
+    .A(execution_unit_0.mdb_in_buf_en ),
     .B(_00904_),
     .C(_01215_),
     .Y(_00880_)
   );
   OAI21X1 _07187_ (
-    .A( execution_unit_0.mdb_in_buf_en ),
-    .B( execution_unit_0.mdb_in_buf_valid ),
+    .A(execution_unit_0.mdb_in_buf_en ),
+    .B(execution_unit_0.mdb_in_buf_valid ),
     .C(_00920_),
     .Y(_01216_)
   );
@@ -15549,319 +15549,319 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _07189_ (
     .A(_01164_),
     .B(_01165_),
-    .C( dbg_0.UNUSED_eu_mab_0_ ),
+    .C(dbg_0.UNUSED_eu_mab_0_ ),
     .Y(_01217_)
   );
   OAI21X1 _07190_ (
     .A(_00889_),
-    .B( dbg_0.UNUSED_eu_mb_en ),
+    .B(dbg_0.UNUSED_eu_mb_en ),
     .C(_01217_),
     .Y(_00882_)
   );
   DFFSR _07191_ (
     .CLK(dco_clk),
     .D(_00849_),
-    .Q( execution_unit_0.mdb_out_0_ ),
+    .Q(execution_unit_0.mdb_out_0_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07192_ (
     .CLK(dco_clk),
     .D(_00850_),
-    .Q( execution_unit_0.mdb_out_1_ ),
+    .Q(execution_unit_0.mdb_out_1_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07193_ (
     .CLK(dco_clk),
     .D(_00851_),
-    .Q( execution_unit_0.mdb_out_2_ ),
+    .Q(execution_unit_0.mdb_out_2_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07194_ (
     .CLK(dco_clk),
     .D(_00852_),
-    .Q( execution_unit_0.mdb_out_3_ ),
+    .Q(execution_unit_0.mdb_out_3_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07195_ (
     .CLK(dco_clk),
     .D(_00853_),
-    .Q( execution_unit_0.mdb_out_4_ ),
+    .Q(execution_unit_0.mdb_out_4_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07196_ (
     .CLK(dco_clk),
     .D(_00854_),
-    .Q( execution_unit_0.mdb_out_5_ ),
+    .Q(execution_unit_0.mdb_out_5_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07197_ (
     .CLK(dco_clk),
     .D(_00855_),
-    .Q( execution_unit_0.mdb_out_6_ ),
+    .Q(execution_unit_0.mdb_out_6_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07198_ (
     .CLK(dco_clk),
     .D(_00856_),
-    .Q( execution_unit_0.mdb_out_7_ ),
+    .Q(execution_unit_0.mdb_out_7_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07199_ (
     .CLK(dco_clk),
     .D(_00857_),
-    .Q( execution_unit_0.mdb_out_nxt_8_ ),
+    .Q(execution_unit_0.mdb_out_nxt_8_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07200_ (
     .CLK(dco_clk),
     .D(_00858_),
-    .Q( execution_unit_0.mdb_out_nxt_9_ ),
+    .Q(execution_unit_0.mdb_out_nxt_9_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07201_ (
     .CLK(dco_clk),
     .D(_00859_),
-    .Q( execution_unit_0.mdb_out_nxt_10_ ),
+    .Q(execution_unit_0.mdb_out_nxt_10_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07202_ (
     .CLK(dco_clk),
     .D(_00860_),
-    .Q( execution_unit_0.mdb_out_nxt_11_ ),
+    .Q(execution_unit_0.mdb_out_nxt_11_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07203_ (
     .CLK(dco_clk),
     .D(_00861_),
-    .Q( execution_unit_0.mdb_out_nxt_12_ ),
+    .Q(execution_unit_0.mdb_out_nxt_12_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07204_ (
     .CLK(dco_clk),
     .D(_00862_),
-    .Q( execution_unit_0.mdb_out_nxt_13_ ),
+    .Q(execution_unit_0.mdb_out_nxt_13_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07205_ (
     .CLK(dco_clk),
     .D(_00863_),
-    .Q( execution_unit_0.mdb_out_nxt_14_ ),
+    .Q(execution_unit_0.mdb_out_nxt_14_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07206_ (
     .CLK(dco_clk),
     .D(_00864_),
-    .Q( execution_unit_0.mdb_out_nxt_15_ ),
+    .Q(execution_unit_0.mdb_out_nxt_15_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07207_ (
     .CLK(dco_clk),
     .D(_00865_),
-    .Q( execution_unit_0.mdb_in_buf_0_ ),
+    .Q(execution_unit_0.mdb_in_buf_0_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07208_ (
     .CLK(dco_clk),
     .D(_00866_),
-    .Q( execution_unit_0.mdb_in_buf_1_ ),
+    .Q(execution_unit_0.mdb_in_buf_1_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07209_ (
     .CLK(dco_clk),
     .D(_00867_),
-    .Q( execution_unit_0.mdb_in_buf_2_ ),
+    .Q(execution_unit_0.mdb_in_buf_2_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07210_ (
     .CLK(dco_clk),
     .D(_00868_),
-    .Q( execution_unit_0.mdb_in_buf_3_ ),
+    .Q(execution_unit_0.mdb_in_buf_3_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07211_ (
     .CLK(dco_clk),
     .D(_00869_),
-    .Q( execution_unit_0.mdb_in_buf_4_ ),
+    .Q(execution_unit_0.mdb_in_buf_4_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07212_ (
     .CLK(dco_clk),
     .D(_00870_),
-    .Q( execution_unit_0.mdb_in_buf_5_ ),
+    .Q(execution_unit_0.mdb_in_buf_5_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07213_ (
     .CLK(dco_clk),
     .D(_00871_),
-    .Q( execution_unit_0.mdb_in_buf_6_ ),
+    .Q(execution_unit_0.mdb_in_buf_6_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07214_ (
     .CLK(dco_clk),
     .D(_00872_),
-    .Q( execution_unit_0.mdb_in_buf_7_ ),
+    .Q(execution_unit_0.mdb_in_buf_7_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07215_ (
     .CLK(dco_clk),
     .D(_00873_),
-    .Q( execution_unit_0.mdb_in_buf_8_ ),
+    .Q(execution_unit_0.mdb_in_buf_8_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07216_ (
     .CLK(dco_clk),
     .D(_00874_),
-    .Q( execution_unit_0.mdb_in_buf_9_ ),
+    .Q(execution_unit_0.mdb_in_buf_9_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07217_ (
     .CLK(dco_clk),
     .D(_00875_),
-    .Q( execution_unit_0.mdb_in_buf_10_ ),
+    .Q(execution_unit_0.mdb_in_buf_10_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07218_ (
     .CLK(dco_clk),
     .D(_00876_),
-    .Q( execution_unit_0.mdb_in_buf_11_ ),
+    .Q(execution_unit_0.mdb_in_buf_11_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07219_ (
     .CLK(dco_clk),
     .D(_00877_),
-    .Q( execution_unit_0.mdb_in_buf_12_ ),
+    .Q(execution_unit_0.mdb_in_buf_12_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07220_ (
     .CLK(dco_clk),
     .D(_00878_),
-    .Q( execution_unit_0.mdb_in_buf_13_ ),
+    .Q(execution_unit_0.mdb_in_buf_13_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07221_ (
     .CLK(dco_clk),
     .D(_00879_),
-    .Q( execution_unit_0.mdb_in_buf_14_ ),
+    .Q(execution_unit_0.mdb_in_buf_14_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07222_ (
     .CLK(dco_clk),
     .D(_00880_),
-    .Q( execution_unit_0.mdb_in_buf_15_ ),
+    .Q(execution_unit_0.mdb_in_buf_15_ ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07223_ (
     .CLK(dco_clk),
     .D(_00847_),
-    .Q( execution_unit_0.mdb_in_buf_en ),
+    .Q(execution_unit_0.mdb_in_buf_en ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07224_ (
     .CLK(dco_clk),
     .D(_00881_),
-    .Q( execution_unit_0.mdb_in_buf_valid ),
+    .Q(execution_unit_0.mdb_in_buf_valid ),
     .R(_00848_),
     .S(1'h1)
   );
   DFFSR _07225_ (
     .CLK(dco_clk),
     .D(_00882_),
-    .Q( execution_unit_0.mab_lsb ),
+    .Q(execution_unit_0.mab_lsb ),
     .R(_00848_),
     .S(1'h1)
   );
   INVX1 _07226_ (
-    .A( execution_unit_0.alu_0.exec_cycle ),
+    .A(execution_unit_0.alu_0.exec_cycle ),
     .Y(_01754_)
   );
   INVX1 _07227_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .Y(_01218_)
   );
   INVX1 _07228_ (
-    .A( execution_unit_0.alu_0.inst_alu_5_ ),
+    .A(execution_unit_0.alu_0.inst_alu_5_ ),
     .Y(_01219_)
   );
   INVX1 _07229_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .Y(_01220_)
   );
   INVX1 _07230_ (
-    .A( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01221_)
   );
   INVX1 _07231_ (
-    .A( execution_unit_0.alu_0.status_0_ ),
+    .A(execution_unit_0.alu_0.status_0_ ),
     .Y(_01222_)
   );
   INVX1 _07232_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01223_)
   );
   INVX1 _07233_ (
-    .A( execution_unit_0.alu_0.inst_jmp_4_ ),
+    .A(execution_unit_0.alu_0.inst_jmp_4_ ),
     .Y(_01224_)
   );
   INVX1 _07234_ (
-    .A( execution_unit_0.alu_0.op_dst_3_ ),
+    .A(execution_unit_0.alu_0.op_dst_3_ ),
     .Y(_01225_)
   );
   INVX1 _07235_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .Y(_01226_)
   );
   OR2X1 _07236_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
-    .B( execution_unit_0.alu_0.inst_so_7_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
+    .B(execution_unit_0.alu_0.inst_so_7_ ),
     .Y(_01227_)
   );
   NOR2X1 _07237_ (
-    .A( execution_unit_0.alu_0.inst_alu_3_ ),
+    .A(execution_unit_0.alu_0.inst_alu_3_ ),
     .B(_01227_),
     .Y(_01228_)
   );
   OR2X1 _07238_ (
-    .A( execution_unit_0.alu_0.inst_alu_3_ ),
+    .A(execution_unit_0.alu_0.inst_alu_3_ ),
     .B(_01227_),
     .Y(_01229_)
   );
   AOI21X1 _07239_ (
-    .A( execution_unit_0.alu_0.status_0_ ),
-    .B( execution_unit_0.alu_0.inst_alu_2_ ),
-    .C( execution_unit_0.alu_0.inst_alu_1_ ),
+    .A(execution_unit_0.alu_0.status_0_ ),
+    .B(execution_unit_0.alu_0.inst_alu_2_ ),
+    .C(execution_unit_0.alu_0.inst_alu_1_ ),
     .Y(_01230_)
   );
   NOR2X1 _07240_ (
@@ -15870,9 +15870,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01231_)
   );
   MUX2X1 _07241_ (
-    .A( execution_unit_0.alu_0.inst_jmp_0_ ),
-    .B( execution_unit_0.alu_0.inst_jmp_1_ ),
-    .S( execution_unit_0.alu_0.status_1_ ),
+    .A(execution_unit_0.alu_0.inst_jmp_0_ ),
+    .B(execution_unit_0.alu_0.inst_jmp_1_ ),
+    .S(execution_unit_0.alu_0.status_1_ ),
     .Y(_01232_)
   );
   INVX1 _07242_ (
@@ -15880,13 +15880,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01233_)
   );
   MUX2X1 _07243_ (
-    .A( execution_unit_0.alu_0.inst_jmp_2_ ),
-    .B( execution_unit_0.alu_0.inst_jmp_3_ ),
-    .S( execution_unit_0.alu_0.status_0_ ),
+    .A(execution_unit_0.alu_0.inst_jmp_2_ ),
+    .B(execution_unit_0.alu_0.inst_jmp_3_ ),
+    .S(execution_unit_0.alu_0.status_0_ ),
     .Y(_01234_)
   );
   OAI21X1 _07244_ (
-    .A( execution_unit_0.alu_0.status_2_ ),
+    .A(execution_unit_0.alu_0.status_2_ ),
     .B(_01224_),
     .C(_01234_),
     .Y(_01235_)
@@ -15897,13 +15897,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01236_)
   );
   XOR2X1 _07246_ (
-    .A( execution_unit_0.alu_0.status_3_ ),
-    .B( execution_unit_0.alu_0.status_2_ ),
+    .A(execution_unit_0.alu_0.status_3_ ),
+    .B(execution_unit_0.alu_0.status_2_ ),
     .Y(_01237_)
   );
   MUX2X1 _07247_ (
-    .A( execution_unit_0.alu_0.inst_jmp_5_ ),
-    .B( execution_unit_0.alu_0.inst_jmp_6_ ),
+    .A(execution_unit_0.alu_0.inst_jmp_5_ ),
+    .B(execution_unit_0.alu_0.inst_jmp_6_ ),
     .S(_01237_),
     .Y(_01238_)
   );
@@ -15918,32 +15918,32 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01240_)
   );
   NAND2X1 _07250_ (
-    .A( execution_unit_0.alu_0.inst_alu_0_ ),
-    .B( execution_unit_0.alu_0.exec_cycle ),
+    .A(execution_unit_0.alu_0.inst_alu_0_ ),
+    .B(execution_unit_0.alu_0.exec_cycle ),
     .Y(_01241_)
   );
   XNOR2X1 _07251_ (
-    .A( execution_unit_0.alu_0.alu_swpb_8_ ),
+    .A(execution_unit_0.alu_0.alu_swpb_8_ ),
     .B(_01241_),
     .Y(_01242_)
   );
   NOR2X1 _07252_ (
-    .A( execution_unit_0.alu_0.op_dst_0_ ),
+    .A(execution_unit_0.alu_0.op_dst_0_ ),
     .B(_01242_),
     .Y(_01243_)
   );
   OR2X1 _07253_ (
-    .A( execution_unit_0.alu_0.op_dst_0_ ),
+    .A(execution_unit_0.alu_0.op_dst_0_ ),
     .B(_01242_),
     .Y(_01244_)
   );
   AND2X1 _07254_ (
-    .A( execution_unit_0.alu_0.op_dst_0_ ),
+    .A(execution_unit_0.alu_0.op_dst_0_ ),
     .B(_01242_),
     .Y(_01245_)
   );
   NAND2X1 _07255_ (
-    .A( execution_unit_0.alu_0.op_dst_0_ ),
+    .A(execution_unit_0.alu_0.op_dst_0_ ),
     .B(_01242_),
     .Y(_01246_)
   );
@@ -15953,7 +15953,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01247_)
   );
   OAI21X1 _07257_ (
-    .A( execution_unit_0.alu_0.op_dst_0_ ),
+    .A(execution_unit_0.alu_0.op_dst_0_ ),
     .B(_01239_),
     .C(_01244_),
     .Y(_01248_)
@@ -15962,16 +15962,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01239_),
     .B(_01245_),
     .C(_01248_),
-    .Y( dbg_0.UNUSED_eu_mab_0_ )
+    .Y(dbg_0.UNUSED_eu_mab_0_ )
   );
   NAND2X1 _07259_ (
     .A(_01231_),
-    .B( dbg_0.UNUSED_eu_mab_0_ ),
+    .B(dbg_0.UNUSED_eu_mab_0_ ),
     .Y(_01249_)
   );
   XNOR2X1 _07260_ (
     .A(_01231_),
-    .B( dbg_0.UNUSED_eu_mab_0_ ),
+    .B(dbg_0.UNUSED_eu_mab_0_ ),
     .Y(_01250_)
   );
   NAND2X1 _07261_ (
@@ -15980,13 +15980,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01251_)
   );
   OR2X1 _07262_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.inst_so_3_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.inst_so_3_ ),
     .Y(_01252_)
   );
   NOR2X1 _07263_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
-    .B( execution_unit_0.alu_0.inst_alu_5_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
+    .B(execution_unit_0.alu_0.inst_alu_5_ ),
     .Y(_01253_)
   );
   NAND3X1 _07264_ (
@@ -16001,16 +16001,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01255_)
   );
   AOI21X1 _07266_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.alu_swpb_0_ ),
-    .C( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.alu_swpb_0_ ),
+    .C(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01256_)
   );
   AOI22X1 _07267_ (
-    .A( execution_unit_0.alu_0.alu_shift_0_ ),
-    .B( execution_unit_0.alu_0.inst_alu_10_ ),
-    .C( execution_unit_0.alu_0.inst_so_3_ ),
-    .D( execution_unit_0.alu_0.alu_swpb_8_ ),
+    .A(execution_unit_0.alu_0.alu_shift_0_ ),
+    .B(execution_unit_0.alu_0.inst_alu_10_ ),
+    .C(execution_unit_0.alu_0.inst_so_3_ ),
+    .D(execution_unit_0.alu_0.alu_swpb_8_ ),
     .Y(_01257_)
   );
   NAND2X1 _07268_ (
@@ -16019,13 +16019,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01258_)
   );
   AOI21X1 _07269_ (
-    .A( execution_unit_0.alu_0.inst_alu_5_ ),
+    .A(execution_unit_0.alu_0.inst_alu_5_ ),
     .B(_01244_),
     .C(_01258_),
     .Y(_01259_)
   );
   AOI22X1 _07270_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .B(_01245_),
     .C(_01255_),
     .D(_01242_),
@@ -16048,7 +16048,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01263_)
   );
   AOI21X1 _07274_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .B(_01263_),
     .C(_01229_),
     .Y(_01264_)
@@ -16062,20 +16062,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01228_),
     .B(_01250_),
     .C(_01265_),
-    .Y( execution_unit_0.alu_0.alu_out_0_ )
+    .Y(execution_unit_0.alu_0.alu_out_0_ )
   );
   XNOR2X1 _07277_ (
-    .A( execution_unit_0.alu_0.alu_shift_0_ ),
+    .A(execution_unit_0.alu_0.alu_shift_0_ ),
     .B(_01241_),
     .Y(_01266_)
   );
   NOR2X1 _07278_ (
-    .A( execution_unit_0.alu_0.op_dst_1_ ),
+    .A(execution_unit_0.alu_0.op_dst_1_ ),
     .B(_01266_),
     .Y(_01267_)
   );
   AND2X1 _07279_ (
-    .A( execution_unit_0.alu_0.op_dst_1_ ),
+    .A(execution_unit_0.alu_0.op_dst_1_ ),
     .B(_01266_),
     .Y(_01268_)
   );
@@ -16089,12 +16089,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01270_)
   );
   XNOR2X1 _07282_ (
-    .A( execution_unit_0.alu_0.op_dst_1_ ),
+    .A(execution_unit_0.alu_0.op_dst_1_ ),
     .B(_01266_),
     .Y(_01271_)
   );
   NAND2X1 _07283_ (
-    .A( execution_unit_0.alu_0.op_dst_1_ ),
+    .A(execution_unit_0.alu_0.op_dst_1_ ),
     .B(_01240_),
     .Y(_01272_)
   );
@@ -16117,7 +16117,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07287_ (
     .A(_01275_),
-    .Y( dbg_0.UNUSED_eu_mab_1_ )
+    .Y(dbg_0.UNUSED_eu_mab_1_ )
   );
   NOR2X1 _07288_ (
     .A(_01249_),
@@ -16130,13 +16130,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01277_)
   );
   OAI21X1 _07290_ (
-    .A( execution_unit_0.alu_0.inst_alu_3_ ),
+    .A(execution_unit_0.alu_0.inst_alu_3_ ),
     .B(_01227_),
     .C(_01277_),
     .Y(_01278_)
   );
   AOI21X1 _07291_ (
-    .A( execution_unit_0.alu_0.status_0_ ),
+    .A(execution_unit_0.alu_0.status_0_ ),
     .B(_01244_),
     .C(_01245_),
     .Y(_01279_)
@@ -16157,7 +16157,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01282_)
   );
   XNOR2X1 _07295_ (
-    .A( execution_unit_0.alu_0.alu_shift_2_ ),
+    .A(execution_unit_0.alu_0.alu_shift_2_ ),
     .B(_01241_),
     .Y(_01283_)
   );
@@ -16166,7 +16166,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01284_)
   );
   NAND2X1 _07297_ (
-    .A( execution_unit_0.alu_0.op_dst_3_ ),
+    .A(execution_unit_0.alu_0.op_dst_3_ ),
     .B(_01283_),
     .Y(_01285_)
   );
@@ -16185,12 +16185,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01288_)
   );
   XNOR2X1 _07301_ (
-    .A( execution_unit_0.alu_0.alu_shift_1_ ),
+    .A(execution_unit_0.alu_0.alu_shift_1_ ),
     .B(_01241_),
     .Y(_01289_)
   );
   AND2X1 _07302_ (
-    .A( execution_unit_0.alu_0.op_dst_2_ ),
+    .A(execution_unit_0.alu_0.op_dst_2_ ),
     .B(_01289_),
     .Y(_01290_)
   );
@@ -16211,7 +16211,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01293_)
   );
   NOR2X1 _07306_ (
-    .A( execution_unit_0.alu_0.op_dst_2_ ),
+    .A(execution_unit_0.alu_0.op_dst_2_ ),
     .B(_01289_),
     .Y(_01294_)
   );
@@ -16293,20 +16293,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _07321_ (
     .A(_01282_),
     .B(_01307_),
-    .C( execution_unit_0.alu_0.inst_alu_7_ ),
+    .C(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01309_)
   );
   OAI21X1 _07322_ (
-    .A( execution_unit_0.alu_0.op_dst_1_ ),
+    .A(execution_unit_0.alu_0.op_dst_1_ ),
     .B(_01266_),
-    .C( execution_unit_0.alu_0.inst_alu_5_ ),
+    .C(execution_unit_0.alu_0.inst_alu_5_ ),
     .Y(_01310_)
   );
   AOI22X1 _07323_ (
-    .A( execution_unit_0.alu_0.alu_shift_0_ ),
-    .B( execution_unit_0.alu_0.inst_so_3_ ),
-    .C( execution_unit_0.alu_0.alu_shift_1_ ),
-    .D( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.alu_shift_0_ ),
+    .B(execution_unit_0.alu_0.inst_so_3_ ),
+    .C(execution_unit_0.alu_0.alu_shift_1_ ),
+    .D(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01311_)
   );
   NAND2X1 _07324_ (
@@ -16315,8 +16315,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01312_)
   );
   AOI21X1 _07325_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.alu_shift_8_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.alu_shift_8_ ),
     .C(_01312_),
     .Y(_01313_)
   );
@@ -16324,7 +16324,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01255_),
     .B(_01266_),
     .C(_01268_),
-    .D( execution_unit_0.alu_0.inst_alu_4_ ),
+    .D(execution_unit_0.alu_0.inst_alu_4_ ),
     .Y(_01314_)
   );
   NAND3X1 _07327_ (
@@ -16334,7 +16334,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01315_)
   );
   AOI21X1 _07328_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .B(_01270_),
     .C(_01315_),
     .Y(_01316_)
@@ -16354,7 +16354,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01276_),
     .B(_01278_),
     .C(_01318_),
-    .Y( execution_unit_0.alu_0.alu_out_1_ )
+    .Y(execution_unit_0.alu_0.alu_out_1_ )
   );
   AOI21X1 _07332_ (
     .A(_01239_),
@@ -16363,7 +16363,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01319_)
   );
   OAI21X1 _07333_ (
-    .A( execution_unit_0.alu_0.op_dst_2_ ),
+    .A(execution_unit_0.alu_0.op_dst_2_ ),
     .B(_01239_),
     .C(_01319_),
     .Y(_01320_)
@@ -16377,33 +16377,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   XOR2X1 _07335_ (
     .A(_01320_),
     .B(_01321_),
-    .Y( dbg_0.UNUSED_eu_mab_2_ )
+    .Y(dbg_0.UNUSED_eu_mab_2_ )
   );
   NAND2X1 _07336_ (
     .A(_01276_),
-    .B( dbg_0.UNUSED_eu_mab_2_ ),
+    .B(dbg_0.UNUSED_eu_mab_2_ ),
     .Y(_01322_)
   );
   XNOR2X1 _07337_ (
     .A(_01276_),
-    .B( dbg_0.UNUSED_eu_mab_2_ ),
+    .B(dbg_0.UNUSED_eu_mab_2_ ),
     .Y(_01323_)
   );
   NAND2X1 _07338_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .B(_01228_),
     .Y(_01324_)
   );
   NAND2X1 _07339_ (
-    .A( execution_unit_0.alu_0.inst_so_3_ ),
-    .B( execution_unit_0.alu_0.alu_shift_1_ ),
+    .A(execution_unit_0.alu_0.inst_so_3_ ),
+    .B(execution_unit_0.alu_0.alu_shift_1_ ),
     .Y(_01325_)
   );
   AOI22X1 _07340_ (
-    .A( execution_unit_0.alu_0.inst_alu_10_ ),
-    .B( execution_unit_0.alu_0.alu_shift_2_ ),
-    .C( execution_unit_0.alu_0.alu_shift_9_ ),
-    .D( execution_unit_0.alu_0.inst_so_1_ ),
+    .A(execution_unit_0.alu_0.inst_alu_10_ ),
+    .B(execution_unit_0.alu_0.alu_shift_2_ ),
+    .C(execution_unit_0.alu_0.alu_shift_9_ ),
+    .D(execution_unit_0.alu_0.inst_so_1_ ),
     .Y(_01326_)
   );
   NAND3X1 _07341_ (
@@ -16425,7 +16425,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01329_)
   );
   AOI21X1 _07344_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .B(_01290_),
     .C(_01329_),
     .Y(_01330_)
@@ -16445,14 +16445,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01324_),
     .B(_01331_),
     .C(_01332_),
-    .D( execution_unit_0.alu_0.inst_alu_7_ ),
+    .D(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01333_)
   );
   AOI21X1 _07348_ (
     .A(_01229_),
     .B(_01323_),
     .C(_01333_),
-    .Y( execution_unit_0.alu_0.alu_out_2_ )
+    .Y(execution_unit_0.alu_0.alu_out_2_ )
   );
   OAI22X1 _07349_ (
     .A(_01240_),
@@ -16480,7 +16480,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07353_ (
     .A(_01337_),
-    .Y( dbg_0.UNUSED_eu_mab_3_ )
+    .Y(dbg_0.UNUSED_eu_mab_3_ )
   );
   NOR2X1 _07354_ (
     .A(_01322_),
@@ -16499,7 +16499,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01340_)
   );
   AND2X1 _07357_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .B(_01340_),
     .Y(_01341_)
   );
@@ -16510,21 +16510,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01342_)
   );
   OAI21X1 _07359_ (
-    .A( execution_unit_0.alu_0.op_dst_3_ ),
+    .A(execution_unit_0.alu_0.op_dst_3_ ),
     .B(_01283_),
-    .C( execution_unit_0.alu_0.inst_alu_5_ ),
+    .C(execution_unit_0.alu_0.inst_alu_5_ ),
     .Y(_01343_)
   );
   AOI22X1 _07360_ (
-    .A( execution_unit_0.alu_0.inst_so_3_ ),
-    .B( execution_unit_0.alu_0.alu_shift_2_ ),
-    .C( execution_unit_0.alu_0.alu_shift_3_ ),
-    .D( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.inst_so_3_ ),
+    .B(execution_unit_0.alu_0.alu_shift_2_ ),
+    .C(execution_unit_0.alu_0.alu_shift_3_ ),
+    .D(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01344_)
   );
   AOI22X1 _07361_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.alu_shift_10_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.alu_shift_10_ ),
     .C(_01255_),
     .D(_01283_),
     .Y(_01345_)
@@ -16562,20 +16562,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_01339_),
     .C(_01342_),
     .D(_01350_),
-    .Y( execution_unit_0.alu_0.alu_out_3_ )
+    .Y(execution_unit_0.alu_0.alu_out_3_ )
   );
   XNOR2X1 _07368_ (
-    .A( execution_unit_0.alu_0.alu_shift_3_ ),
+    .A(execution_unit_0.alu_0.alu_shift_3_ ),
     .B(_01241_),
     .Y(_01351_)
   );
   AND2X1 _07369_ (
-    .A( execution_unit_0.alu_0.op_dst_4_ ),
+    .A(execution_unit_0.alu_0.op_dst_4_ ),
     .B(_01351_),
     .Y(_01352_)
   );
   NAND2X1 _07370_ (
-    .A( execution_unit_0.alu_0.op_dst_4_ ),
+    .A(execution_unit_0.alu_0.op_dst_4_ ),
     .B(_01351_),
     .Y(_01353_)
   );
@@ -16585,7 +16585,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01354_)
   );
   XOR2X1 _07372_ (
-    .A( execution_unit_0.alu_0.op_dst_4_ ),
+    .A(execution_unit_0.alu_0.op_dst_4_ ),
     .B(_01354_),
     .Y(_01355_)
   );
@@ -16599,10 +16599,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   XOR2X1 _07374_ (
     .A(_01355_),
     .B(_01356_),
-    .Y( dbg_0.UNUSED_eu_mab_4_ )
+    .Y(dbg_0.UNUSED_eu_mab_4_ )
   );
   NOR2X1 _07375_ (
-    .A( execution_unit_0.alu_0.op_dst_4_ ),
+    .A(execution_unit_0.alu_0.op_dst_4_ ),
     .B(_01351_),
     .Y(_01357_)
   );
@@ -16652,25 +16652,25 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND2X1 _07384_ (
     .A(_01338_),
-    .B( dbg_0.UNUSED_eu_mab_4_ ),
+    .B(dbg_0.UNUSED_eu_mab_4_ ),
     .Y(_01366_)
   );
   XNOR2X1 _07385_ (
     .A(_01338_),
-    .B( dbg_0.UNUSED_eu_mab_4_ ),
+    .B(dbg_0.UNUSED_eu_mab_4_ ),
     .Y(_01367_)
   );
   AOI21X1 _07386_ (
-    .A( execution_unit_0.alu_0.inst_so_3_ ),
-    .B( execution_unit_0.alu_0.alu_shift_3_ ),
-    .C( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_so_3_ ),
+    .B(execution_unit_0.alu_0.alu_shift_3_ ),
+    .C(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01368_)
   );
   AOI22X1 _07387_ (
-    .A( execution_unit_0.alu_0.inst_alu_10_ ),
-    .B( execution_unit_0.alu_0.alu_shift_4_ ),
-    .C( execution_unit_0.alu_0.alu_shift_11_ ),
-    .D( execution_unit_0.alu_0.inst_so_1_ ),
+    .A(execution_unit_0.alu_0.inst_alu_10_ ),
+    .B(execution_unit_0.alu_0.alu_shift_4_ ),
+    .C(execution_unit_0.alu_0.alu_shift_11_ ),
+    .D(execution_unit_0.alu_0.inst_so_1_ ),
     .Y(_01369_)
   );
   NAND3X1 _07388_ (
@@ -16692,7 +16692,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01372_)
   );
   AOI21X1 _07391_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .B(_01352_),
     .C(_01372_),
     .Y(_01373_)
@@ -16713,7 +16713,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01229_),
     .B(_01367_),
     .C(_01375_),
-    .Y( execution_unit_0.alu_0.alu_out_4_ )
+    .Y(execution_unit_0.alu_0.alu_out_4_ )
   );
   OAI22X1 _07395_ (
     .A(_01240_),
@@ -16727,17 +16727,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01377_)
   );
   XNOR2X1 _07397_ (
-    .A( execution_unit_0.alu_0.alu_shift_4_ ),
+    .A(execution_unit_0.alu_0.alu_shift_4_ ),
     .B(_01241_),
     .Y(_01378_)
   );
   AND2X1 _07398_ (
-    .A( execution_unit_0.alu_0.op_dst_5_ ),
+    .A(execution_unit_0.alu_0.op_dst_5_ ),
     .B(_01378_),
     .Y(_01379_)
   );
   NAND2X1 _07399_ (
-    .A( execution_unit_0.alu_0.op_dst_5_ ),
+    .A(execution_unit_0.alu_0.op_dst_5_ ),
     .B(_01378_),
     .Y(_01380_)
   );
@@ -16749,7 +16749,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _07401_ (
     .A(_01239_),
     .B(_01378_),
-    .C( execution_unit_0.alu_0.op_dst_5_ ),
+    .C(execution_unit_0.alu_0.op_dst_5_ ),
     .Y(_01382_)
   );
   OR2X1 _07402_ (
@@ -16769,7 +16769,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07405_ (
     .A(_01385_),
-    .Y( dbg_0.UNUSED_eu_mab_5_ )
+    .Y(dbg_0.UNUSED_eu_mab_5_ )
   );
   NOR2X1 _07406_ (
     .A(_01366_),
@@ -16787,7 +16787,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01388_)
   );
   OR2X1 _07409_ (
-    .A( execution_unit_0.alu_0.op_dst_5_ ),
+    .A(execution_unit_0.alu_0.op_dst_5_ ),
     .B(_01378_),
     .Y(_01389_)
   );
@@ -16825,22 +16825,22 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01395_)
   );
   XNOR2X1 _07416_ (
-    .A( execution_unit_0.alu_0.alu_shift_5_ ),
+    .A(execution_unit_0.alu_0.alu_shift_5_ ),
     .B(_01241_),
     .Y(_01396_)
   );
   AND2X1 _07417_ (
-    .A( execution_unit_0.alu_0.op_dst_6_ ),
+    .A(execution_unit_0.alu_0.op_dst_6_ ),
     .B(_01396_),
     .Y(_01397_)
   );
   NAND2X1 _07418_ (
-    .A( execution_unit_0.alu_0.op_dst_6_ ),
+    .A(execution_unit_0.alu_0.op_dst_6_ ),
     .B(_01396_),
     .Y(_01398_)
   );
   XNOR2X1 _07419_ (
-    .A( execution_unit_0.alu_0.op_dst_6_ ),
+    .A(execution_unit_0.alu_0.op_dst_6_ ),
     .B(_01396_),
     .Y(_01399_)
   );
@@ -16882,22 +16882,22 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01406_)
   );
   XNOR2X1 _07427_ (
-    .A( execution_unit_0.alu_0.alu_shift_6_ ),
+    .A(execution_unit_0.alu_0.alu_shift_6_ ),
     .B(_01241_),
     .Y(_01407_)
   );
   AND2X1 _07428_ (
-    .A( execution_unit_0.alu_0.op_dst_7_ ),
+    .A(execution_unit_0.alu_0.op_dst_7_ ),
     .B(_01407_),
     .Y(_01408_)
   );
   NAND2X1 _07429_ (
-    .A( execution_unit_0.alu_0.op_dst_7_ ),
+    .A(execution_unit_0.alu_0.op_dst_7_ ),
     .B(_01407_),
     .Y(_01409_)
   );
   OR2X1 _07430_ (
-    .A( execution_unit_0.alu_0.op_dst_7_ ),
+    .A(execution_unit_0.alu_0.op_dst_7_ ),
     .B(_01407_),
     .Y(_01410_)
   );
@@ -16961,16 +16961,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01421_)
   );
   AOI21X1 _07442_ (
-    .A( execution_unit_0.alu_0.inst_alu_10_ ),
-    .B( execution_unit_0.alu_0.alu_shift_5_ ),
-    .C( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_10_ ),
+    .B(execution_unit_0.alu_0.alu_shift_5_ ),
+    .C(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01422_)
   );
   AOI22X1 _07443_ (
-    .A( execution_unit_0.alu_0.inst_so_3_ ),
-    .B( execution_unit_0.alu_0.alu_shift_4_ ),
-    .C( execution_unit_0.alu_0.alu_shift_12_ ),
-    .D( execution_unit_0.alu_0.inst_so_1_ ),
+    .A(execution_unit_0.alu_0.inst_so_3_ ),
+    .B(execution_unit_0.alu_0.alu_shift_4_ ),
+    .C(execution_unit_0.alu_0.alu_shift_12_ ),
+    .D(execution_unit_0.alu_0.inst_so_1_ ),
     .Y(_01423_)
   );
   NAND2X1 _07444_ (
@@ -16991,7 +16991,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01426_)
   );
   AOI21X1 _07447_ (
-    .A( execution_unit_0.alu_0.inst_alu_5_ ),
+    .A(execution_unit_0.alu_0.inst_alu_5_ ),
     .B(_01389_),
     .C(_01426_),
     .Y(_01427_)
@@ -17008,7 +17008,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01429_)
   );
   AOI21X1 _07450_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .B(_01421_),
     .C(_01429_),
     .Y(_01430_)
@@ -17021,7 +17021,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07452_ (
     .A(_01431_),
-    .Y( execution_unit_0.alu_0.alu_out_5_ )
+    .Y(execution_unit_0.alu_0.alu_out_5_ )
   );
   NOR2X1 _07453_ (
     .A(_01381_),
@@ -17036,7 +17036,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _07455_ (
     .A(_01239_),
     .B(_01396_),
-    .C( execution_unit_0.alu_0.op_dst_6_ ),
+    .C(execution_unit_0.alu_0.op_dst_6_ ),
     .Y(_01434_)
   );
   OR2X1 _07456_ (
@@ -17062,7 +17062,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07460_ (
     .A(_01438_),
-    .Y( dbg_0.UNUSED_eu_mab_6_ )
+    .Y(dbg_0.UNUSED_eu_mab_6_ )
   );
   NOR2X1 _07461_ (
     .A(_01387_),
@@ -17075,9 +17075,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01440_)
   );
   OAI21X1 _07463_ (
-    .A( execution_unit_0.alu_0.op_dst_6_ ),
+    .A(execution_unit_0.alu_0.op_dst_6_ ),
     .B(_01396_),
-    .C( execution_unit_0.alu_0.inst_alu_5_ ),
+    .C(execution_unit_0.alu_0.inst_alu_5_ ),
     .Y(_01441_)
   );
   NAND2X1 _07464_ (
@@ -17086,10 +17086,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01442_)
   );
   AOI22X1 _07465_ (
-    .A( execution_unit_0.alu_0.inst_so_3_ ),
-    .B( execution_unit_0.alu_0.alu_shift_5_ ),
-    .C( execution_unit_0.alu_0.alu_shift_13_ ),
-    .D( execution_unit_0.alu_0.inst_so_1_ ),
+    .A(execution_unit_0.alu_0.inst_so_3_ ),
+    .B(execution_unit_0.alu_0.alu_shift_5_ ),
+    .C(execution_unit_0.alu_0.alu_shift_13_ ),
+    .D(execution_unit_0.alu_0.inst_so_1_ ),
     .Y(_01443_)
   );
   NAND2X1 _07466_ (
@@ -17098,8 +17098,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01444_)
   );
   AOI21X1 _07467_ (
-    .A( execution_unit_0.alu_0.inst_alu_10_ ),
-    .B( execution_unit_0.alu_0.alu_shift_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_10_ ),
+    .B(execution_unit_0.alu_0.alu_shift_6_ ),
     .C(_01444_),
     .Y(_01445_)
   );
@@ -17134,14 +17134,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01324_),
     .B(_01449_),
     .C(_01450_),
-    .D( execution_unit_0.alu_0.inst_alu_7_ ),
+    .D(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01451_)
   );
   AOI21X1 _07474_ (
     .A(_01229_),
     .B(_01440_),
     .C(_01451_),
-    .Y( execution_unit_0.alu_0.alu_out_6_ )
+    .Y(execution_unit_0.alu_0.alu_out_6_ )
   );
   AOI21X1 _07475_ (
     .A(_01405_),
@@ -17166,7 +17166,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01455_)
   );
   OAI21X1 _07479_ (
-    .A( execution_unit_0.alu_0.op_dst_7_ ),
+    .A(execution_unit_0.alu_0.op_dst_7_ ),
     .B(_01239_),
     .C(_01410_),
     .Y(_01456_)
@@ -17179,16 +17179,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   XOR2X1 _07481_ (
     .A(_01454_),
     .B(_01457_),
-    .Y( dbg_0.UNUSED_eu_mab_7_ )
+    .Y(dbg_0.UNUSED_eu_mab_7_ )
   );
   NAND2X1 _07482_ (
     .A(_01439_),
-    .B( dbg_0.UNUSED_eu_mab_7_ ),
+    .B(dbg_0.UNUSED_eu_mab_7_ ),
     .Y(_01458_)
   );
   XNOR2X1 _07483_ (
     .A(_01439_),
-    .B( dbg_0.UNUSED_eu_mab_7_ ),
+    .B(dbg_0.UNUSED_eu_mab_7_ ),
     .Y(_01459_)
   );
   OAI21X1 _07484_ (
@@ -17198,49 +17198,49 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01460_)
   );
   OAI21X1 _07485_ (
-    .A( execution_unit_0.alu_0.op_dst_7_ ),
+    .A(execution_unit_0.alu_0.op_dst_7_ ),
     .B(_01407_),
     .C(_01460_),
     .Y(_01461_)
   );
   MUX2X1 _07486_ (
-    .A( execution_unit_0.alu_0.alu_shift_6_ ),
-    .B( execution_unit_0.alu_0.alu_shift_14_ ),
-    .S( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.alu_shift_6_ ),
+    .B(execution_unit_0.alu_0.alu_shift_14_ ),
+    .S(execution_unit_0.alu_0.inst_bw ),
     .Y(_01462_)
   );
   NOR2X1 _07487_ (
-    .A( execution_unit_0.alu_0.inst_so_0_ ),
+    .A(execution_unit_0.alu_0.inst_so_0_ ),
     .B(_01462_),
     .Y(_01463_)
   );
   AOI21X1 _07488_ (
-    .A( execution_unit_0.alu_0.status_0_ ),
-    .B( execution_unit_0.alu_0.inst_so_0_ ),
+    .A(execution_unit_0.alu_0.status_0_ ),
+    .B(execution_unit_0.alu_0.inst_so_0_ ),
     .C(_01463_),
     .Y(_01464_)
   );
   OAI21X1 _07489_ (
-    .A( execution_unit_0.alu_0.alu_swpb_0_ ),
-    .B( execution_unit_0.alu_0.inst_bw ),
-    .C( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.alu_swpb_0_ ),
+    .B(execution_unit_0.alu_0.inst_bw ),
+    .C(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01465_)
   );
   AOI21X1 _07490_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_01464_),
     .C(_01465_),
     .Y(_01466_)
   );
   AOI21X1 _07491_ (
-    .A( execution_unit_0.alu_0.inst_so_3_ ),
-    .B( execution_unit_0.alu_0.alu_shift_6_ ),
-    .C( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_so_3_ ),
+    .B(execution_unit_0.alu_0.alu_shift_6_ ),
+    .C(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01467_)
   );
   AOI21X1 _07492_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.alu_shift_14_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.alu_shift_14_ ),
     .C(_01229_),
     .Y(_01468_)
   );
@@ -17281,7 +17281,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07499_ (
     .A(_01474_),
-    .Y( execution_unit_0.alu_0.alu_out_7_ )
+    .Y(execution_unit_0.alu_0.alu_out_7_ )
   );
   AOI21X1 _07500_ (
     .A(_01410_),
@@ -17301,12 +17301,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01477_)
   );
   NAND2X1 _07503_ (
-    .A( execution_unit_0.alu_0.exec_cycle ),
-    .B( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.exec_cycle ),
+    .B(execution_unit_0.alu_0.inst_bw ),
     .Y(_01478_)
   );
   XOR2X1 _07504_ (
-    .A( execution_unit_0.alu_0.alu_swpb_0_ ),
+    .A(execution_unit_0.alu_0.alu_swpb_0_ ),
     .B(_01241_),
     .Y(_01479_)
   );
@@ -17318,7 +17318,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _07506_ (
     .A(_01754_),
     .B(_01226_),
-    .C( execution_unit_0.alu_0.op_dst_8_ ),
+    .C(execution_unit_0.alu_0.op_dst_8_ ),
     .Y(_01481_)
   );
   NOR2X1 _07507_ (
@@ -17336,7 +17336,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01484_)
   );
   AOI21X1 _07510_ (
-    .A( execution_unit_0.alu_0.op_dst_8_ ),
+    .A(execution_unit_0.alu_0.op_dst_8_ ),
     .B(_01478_),
     .C(_01480_),
     .Y(_01485_)
@@ -17364,7 +17364,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07515_ (
     .A(_01489_),
-    .Y( dbg_0.UNUSED_eu_mab_8_ )
+    .Y(dbg_0.UNUSED_eu_mab_8_ )
   );
   NOR2X1 _07516_ (
     .A(_01482_),
@@ -17387,7 +17387,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01493_)
   );
   AND2X1 _07520_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .B(_01490_),
     .Y(_01494_)
   );
@@ -17397,10 +17397,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01495_)
   );
   AOI22X1 _07522_ (
-    .A( execution_unit_0.alu_0.alu_swpb_8_ ),
-    .B( execution_unit_0.alu_0.inst_so_1_ ),
-    .C( execution_unit_0.alu_0.alu_shift_8_ ),
-    .D( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.alu_swpb_8_ ),
+    .B(execution_unit_0.alu_0.inst_so_1_ ),
+    .C(execution_unit_0.alu_0.alu_shift_8_ ),
+    .D(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01496_)
   );
   NAND3X1 _07523_ (
@@ -17410,7 +17410,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01497_)
   );
   AOI21X1 _07524_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .B(_01482_),
     .C(_01497_),
     .Y(_01498_)
@@ -17428,7 +17428,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01500_)
   );
   AOI21X1 _07527_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .B(_01493_),
     .C(_01500_),
     .Y(_01501_)
@@ -17439,8 +17439,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   AOI21X1 _07529_ (
     .A(_01439_),
-    .B( dbg_0.UNUSED_eu_mab_7_ ),
-    .C( dbg_0.UNUSED_eu_mab_8_ ),
+    .B(dbg_0.UNUSED_eu_mab_7_ ),
+    .C(dbg_0.UNUSED_eu_mab_8_ ),
     .Y(_01503_)
   );
   OR2X1 _07530_ (
@@ -17458,10 +17458,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01503_),
     .B(_01505_),
     .C(_01502_),
-    .Y( execution_unit_0.alu_0.alu_out_8_ )
+    .Y(execution_unit_0.alu_0.alu_out_8_ )
   );
   INVX1 _07533_ (
-    .A( execution_unit_0.alu_0.alu_out_8_ ),
+    .A(execution_unit_0.alu_0.alu_out_8_ ),
     .Y(_01506_)
   );
   OAI21X1 _07534_ (
@@ -17471,7 +17471,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01507_)
   );
   XOR2X1 _07535_ (
-    .A( execution_unit_0.alu_0.alu_shift_8_ ),
+    .A(execution_unit_0.alu_0.alu_shift_8_ ),
     .B(_01241_),
     .Y(_01508_)
   );
@@ -17481,12 +17481,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01509_)
   );
   AND2X1 _07537_ (
-    .A( execution_unit_0.alu_0.op_dst_9_ ),
+    .A(execution_unit_0.alu_0.op_dst_9_ ),
     .B(_01509_),
     .Y(_01510_)
   );
   NAND2X1 _07538_ (
-    .A( execution_unit_0.alu_0.op_dst_9_ ),
+    .A(execution_unit_0.alu_0.op_dst_9_ ),
     .B(_01509_),
     .Y(_01511_)
   );
@@ -17496,13 +17496,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01512_)
   );
   AOI21X1 _07540_ (
-    .A( execution_unit_0.alu_0.op_dst_9_ ),
+    .A(execution_unit_0.alu_0.op_dst_9_ ),
     .B(_01478_),
     .C(_01509_),
     .Y(_01513_)
   );
   AOI22X1 _07541_ (
-    .A( execution_unit_0.alu_0.op_dst_9_ ),
+    .A(execution_unit_0.alu_0.op_dst_9_ ),
     .B(_01478_),
     .C(_01509_),
     .D(_01239_),
@@ -17520,7 +17520,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07544_ (
     .A(_01516_),
-    .Y( dbg_0.UNUSED_eu_mab_9_ )
+    .Y(dbg_0.UNUSED_eu_mab_9_ )
   );
   AND2X1 _07545_ (
     .A(_01504_),
@@ -17561,7 +17561,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01523_)
   );
   XOR2X1 _07552_ (
-    .A( execution_unit_0.alu_0.alu_shift_10_ ),
+    .A(execution_unit_0.alu_0.alu_shift_10_ ),
     .B(_01241_),
     .Y(_01524_)
   );
@@ -17573,7 +17573,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _07554_ (
     .A(_01754_),
     .B(_01226_),
-    .C( execution_unit_0.alu_0.op_dst_11_ ),
+    .C(execution_unit_0.alu_0.op_dst_11_ ),
     .Y(_01526_)
   );
   NOR2X1 _07555_ (
@@ -17582,12 +17582,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01527_)
   );
   NAND2X1 _07556_ (
-    .A( execution_unit_0.alu_0.op_dst_11_ ),
+    .A(execution_unit_0.alu_0.op_dst_11_ ),
     .B(_01525_),
     .Y(_01528_)
   );
   AOI21X1 _07557_ (
-    .A( execution_unit_0.alu_0.op_dst_11_ ),
+    .A(execution_unit_0.alu_0.op_dst_11_ ),
     .B(_01478_),
     .C(_01525_),
     .Y(_01529_)
@@ -17598,7 +17598,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01530_)
   );
   XOR2X1 _07559_ (
-    .A( execution_unit_0.alu_0.alu_shift_9_ ),
+    .A(execution_unit_0.alu_0.alu_shift_9_ ),
     .B(_01241_),
     .Y(_01531_)
   );
@@ -17608,7 +17608,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01532_)
   );
   AND2X1 _07561_ (
-    .A( execution_unit_0.alu_0.op_dst_10_ ),
+    .A(execution_unit_0.alu_0.op_dst_10_ ),
     .B(_01532_),
     .Y(_01533_)
   );
@@ -17617,7 +17617,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01534_)
   );
   AOI21X1 _07563_ (
-    .A( execution_unit_0.alu_0.op_dst_10_ ),
+    .A(execution_unit_0.alu_0.op_dst_10_ ),
     .B(_01478_),
     .C(_01532_),
     .Y(_01535_)
@@ -17711,10 +17711,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01551_)
   );
   AOI22X1 _07580_ (
-    .A( execution_unit_0.alu_0.alu_shift_0_ ),
-    .B( execution_unit_0.alu_0.inst_so_1_ ),
-    .C( execution_unit_0.alu_0.alu_shift_9_ ),
-    .D( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.alu_shift_0_ ),
+    .B(execution_unit_0.alu_0.inst_so_1_ ),
+    .C(execution_unit_0.alu_0.alu_shift_9_ ),
+    .D(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01552_)
   );
   NAND3X1 _07581_ (
@@ -17724,7 +17724,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01553_)
   );
   AOI21X1 _07582_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .B(_01510_),
     .C(_01553_),
     .Y(_01554_)
@@ -17736,7 +17736,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01555_)
   );
   AOI21X1 _07584_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .B(_01520_),
     .C(_01555_),
     .Y(_01556_)
@@ -17756,10 +17756,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01517_),
     .B(_01519_),
     .C(_01558_),
-    .Y( execution_unit_0.alu_0.alu_out_9_ )
+    .Y(execution_unit_0.alu_0.alu_out_9_ )
   );
   INVX1 _07588_ (
-    .A( execution_unit_0.alu_0.alu_out_9_ ),
+    .A(execution_unit_0.alu_0.alu_out_9_ ),
     .Y(_01559_)
   );
   NOR2X1 _07589_ (
@@ -17779,7 +17779,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01562_)
   );
   AOI22X1 _07592_ (
-    .A( execution_unit_0.alu_0.op_dst_10_ ),
+    .A(execution_unit_0.alu_0.op_dst_10_ ),
     .B(_01478_),
     .C(_01532_),
     .D(_01239_),
@@ -17803,7 +17803,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07596_ (
     .A(_01566_),
-    .Y( dbg_0.UNUSED_eu_mab_10_ )
+    .Y(dbg_0.UNUSED_eu_mab_10_ )
   );
   NOR2X1 _07597_ (
     .A(_01518_),
@@ -17817,7 +17817,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01568_)
   );
   OAI21X1 _07599_ (
-    .A( execution_unit_0.alu_0.inst_alu_3_ ),
+    .A(execution_unit_0.alu_0.inst_alu_3_ ),
     .B(_01227_),
     .C(_01568_),
     .Y(_01569_)
@@ -17845,10 +17845,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01573_)
   );
   AOI22X1 _07604_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.alu_shift_1_ ),
-    .C( execution_unit_0.alu_0.alu_shift_10_ ),
-    .D( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.alu_shift_1_ ),
+    .C(execution_unit_0.alu_0.alu_shift_10_ ),
+    .D(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01574_)
   );
   NAND3X1 _07605_ (
@@ -17858,7 +17858,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01575_)
   );
   AOI21X1 _07606_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .B(_01533_),
     .C(_01575_),
     .Y(_01576_)
@@ -17870,7 +17870,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01577_)
   );
   AOI21X1 _07608_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .B(_01536_),
     .C(_01577_),
     .Y(_01578_)
@@ -17889,7 +17889,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01567_),
     .B(_01569_),
     .C(_01580_),
-    .Y( execution_unit_0.alu_0.alu_out_10_ )
+    .Y(execution_unit_0.alu_0.alu_out_10_ )
   );
   NAND2X1 _07612_ (
     .A(_01239_),
@@ -17917,28 +17917,28 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   XOR2X1 _07616_ (
     .A(_01582_),
     .B(_01583_),
-    .Y( dbg_0.UNUSED_eu_mab_11_ )
+    .Y(dbg_0.UNUSED_eu_mab_11_ )
   );
   NAND2X1 _07617_ (
     .A(_01567_),
-    .B( dbg_0.UNUSED_eu_mab_11_ ),
+    .B(dbg_0.UNUSED_eu_mab_11_ ),
     .Y(_01585_)
   );
   XOR2X1 _07618_ (
     .A(_01567_),
-    .B( dbg_0.UNUSED_eu_mab_11_ ),
+    .B(dbg_0.UNUSED_eu_mab_11_ ),
     .Y(_01586_)
   );
   AOI22X1 _07619_ (
-    .A( execution_unit_0.alu_0.inst_alu_10_ ),
-    .B( execution_unit_0.alu_0.alu_shift_11_ ),
-    .C( execution_unit_0.alu_0.alu_shift_6_ ),
-    .D( execution_unit_0.alu_0.inst_so_3_ ),
+    .A(execution_unit_0.alu_0.inst_alu_10_ ),
+    .B(execution_unit_0.alu_0.alu_shift_11_ ),
+    .C(execution_unit_0.alu_0.alu_shift_6_ ),
+    .D(execution_unit_0.alu_0.inst_so_3_ ),
     .Y(_01587_)
   );
   AOI22X1 _07620_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.alu_shift_2_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.alu_shift_2_ ),
     .C(_01255_),
     .D(_01525_),
     .Y(_01588_)
@@ -17961,13 +17961,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01591_)
   );
   AOI21X1 _07624_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .B(_01530_),
     .C(_01229_),
     .Y(_01592_)
   );
   AOI22X1 _07625_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .B(_01228_),
     .C(_01591_),
     .D(_01592_),
@@ -17982,7 +17982,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _07627_ (
     .A(_01544_),
     .B(_01546_),
-    .C( execution_unit_0.alu_0.inst_alu_7_ ),
+    .C(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01595_)
   );
   NOR2X1 _07628_ (
@@ -17999,7 +17999,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07630_ (
     .A(_01597_),
-    .Y( execution_unit_0.alu_0.alu_out_11_ )
+    .Y(execution_unit_0.alu_0.alu_out_11_ )
   );
   OAI21X1 _07631_ (
     .A(_01240_),
@@ -18008,7 +18008,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01598_)
   );
   XOR2X1 _07632_ (
-    .A( execution_unit_0.alu_0.alu_shift_11_ ),
+    .A(execution_unit_0.alu_0.alu_shift_11_ ),
     .B(_01241_),
     .Y(_01599_)
   );
@@ -18018,12 +18018,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01600_)
   );
   AND2X1 _07634_ (
-    .A( execution_unit_0.alu_0.op_dst_12_ ),
+    .A(execution_unit_0.alu_0.op_dst_12_ ),
     .B(_01600_),
     .Y(_01601_)
   );
   NAND2X1 _07635_ (
-    .A( execution_unit_0.alu_0.op_dst_12_ ),
+    .A(execution_unit_0.alu_0.op_dst_12_ ),
     .B(_01600_),
     .Y(_01602_)
   );
@@ -18033,13 +18033,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01603_)
   );
   AOI21X1 _07637_ (
-    .A( execution_unit_0.alu_0.op_dst_12_ ),
+    .A(execution_unit_0.alu_0.op_dst_12_ ),
     .B(_01478_),
     .C(_01600_),
     .Y(_01604_)
   );
   AOI22X1 _07638_ (
-    .A( execution_unit_0.alu_0.op_dst_12_ ),
+    .A(execution_unit_0.alu_0.op_dst_12_ ),
     .B(_01478_),
     .C(_01600_),
     .D(_01239_),
@@ -18063,7 +18063,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07642_ (
     .A(_01608_),
-    .Y( dbg_0.UNUSED_eu_mab_12_ )
+    .Y(dbg_0.UNUSED_eu_mab_12_ )
   );
   NOR2X1 _07643_ (
     .A(_01585_),
@@ -18076,7 +18076,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01610_)
   );
   OAI21X1 _07645_ (
-    .A( execution_unit_0.alu_0.inst_alu_3_ ),
+    .A(execution_unit_0.alu_0.inst_alu_3_ ),
     .B(_01227_),
     .C(_01610_),
     .Y(_01611_)
@@ -18131,10 +18131,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01620_)
   );
   AOI22X1 _07655_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.alu_shift_3_ ),
-    .C( execution_unit_0.alu_0.alu_shift_12_ ),
-    .D( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.alu_shift_3_ ),
+    .C(execution_unit_0.alu_0.alu_shift_12_ ),
+    .D(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01621_)
   );
   NAND3X1 _07656_ (
@@ -18144,7 +18144,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01622_)
   );
   AOI21X1 _07657_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .B(_01601_),
     .C(_01622_),
     .Y(_01623_)
@@ -18156,7 +18156,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01624_)
   );
   AOI21X1 _07659_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .B(_01612_),
     .C(_01624_),
     .Y(_01625_)
@@ -18176,7 +18176,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01609_),
     .B(_01611_),
     .C(_01627_),
-    .Y( execution_unit_0.alu_0.alu_out_12_ )
+    .Y(execution_unit_0.alu_0.alu_out_12_ )
   );
   OAI21X1 _07663_ (
     .A(_01240_),
@@ -18185,7 +18185,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01628_)
   );
   XOR2X1 _07664_ (
-    .A( execution_unit_0.alu_0.alu_shift_12_ ),
+    .A(execution_unit_0.alu_0.alu_shift_12_ ),
     .B(_01241_),
     .Y(_01629_)
   );
@@ -18195,23 +18195,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01630_)
   );
   AND2X1 _07666_ (
-    .A( execution_unit_0.alu_0.op_dst_13_ ),
+    .A(execution_unit_0.alu_0.op_dst_13_ ),
     .B(_01630_),
     .Y(_01631_)
   );
   NAND2X1 _07667_ (
-    .A( execution_unit_0.alu_0.op_dst_13_ ),
+    .A(execution_unit_0.alu_0.op_dst_13_ ),
     .B(_01630_),
     .Y(_01632_)
   );
   AOI21X1 _07668_ (
-    .A( execution_unit_0.alu_0.op_dst_13_ ),
+    .A(execution_unit_0.alu_0.op_dst_13_ ),
     .B(_01478_),
     .C(_01630_),
     .Y(_01633_)
   );
   AOI22X1 _07669_ (
-    .A( execution_unit_0.alu_0.op_dst_13_ ),
+    .A(execution_unit_0.alu_0.op_dst_13_ ),
     .B(_01478_),
     .C(_01630_),
     .D(_01239_),
@@ -18226,16 +18226,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   XOR2X1 _07671_ (
     .A(_01628_),
     .B(_01635_),
-    .Y( dbg_0.UNUSED_eu_mab_13_ )
+    .Y(dbg_0.UNUSED_eu_mab_13_ )
   );
   AND2X1 _07672_ (
     .A(_01609_),
-    .B( dbg_0.UNUSED_eu_mab_13_ ),
+    .B(dbg_0.UNUSED_eu_mab_13_ ),
     .Y(_01636_)
   );
   XNOR2X1 _07673_ (
     .A(_01609_),
-    .B( dbg_0.UNUSED_eu_mab_13_ ),
+    .B(dbg_0.UNUSED_eu_mab_13_ ),
     .Y(_01637_)
   );
   NOR2X1 _07674_ (
@@ -18275,7 +18275,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01644_)
   );
   XOR2X1 _07681_ (
-    .A( execution_unit_0.alu_0.alu_shift_14_ ),
+    .A(execution_unit_0.alu_0.alu_shift_14_ ),
     .B(_01241_),
     .Y(_01645_)
   );
@@ -18287,7 +18287,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _07683_ (
     .A(_01754_),
     .B(_01226_),
-    .C( execution_unit_0.alu_0.op_dst_15_ ),
+    .C(execution_unit_0.alu_0.op_dst_15_ ),
     .Y(_01647_)
   );
   NOR2X1 _07684_ (
@@ -18296,7 +18296,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01648_)
   );
   NAND2X1 _07685_ (
-    .A( execution_unit_0.alu_0.op_dst_15_ ),
+    .A(execution_unit_0.alu_0.op_dst_15_ ),
     .B(_01646_),
     .Y(_01649_)
   );
@@ -18307,7 +18307,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01650_)
   );
   XOR2X1 _07687_ (
-    .A( execution_unit_0.alu_0.alu_shift_13_ ),
+    .A(execution_unit_0.alu_0.alu_shift_13_ ),
     .B(_01241_),
     .Y(_01651_)
   );
@@ -18317,17 +18317,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01652_)
   );
   AND2X1 _07689_ (
-    .A( execution_unit_0.alu_0.op_dst_14_ ),
+    .A(execution_unit_0.alu_0.op_dst_14_ ),
     .B(_01478_),
     .Y(_01653_)
   );
   AND2X1 _07690_ (
-    .A( execution_unit_0.alu_0.op_dst_14_ ),
+    .A(execution_unit_0.alu_0.op_dst_14_ ),
     .B(_01652_),
     .Y(_01654_)
   );
   NAND2X1 _07691_ (
-    .A( execution_unit_0.alu_0.op_dst_14_ ),
+    .A(execution_unit_0.alu_0.op_dst_14_ ),
     .B(_01652_),
     .Y(_01655_)
   );
@@ -18487,10 +18487,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01682_)
   );
   AOI22X1 _07719_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.alu_shift_4_ ),
-    .C( execution_unit_0.alu_0.alu_shift_13_ ),
-    .D( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.alu_shift_4_ ),
+    .C(execution_unit_0.alu_0.alu_shift_13_ ),
+    .D(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01683_)
   );
   NAND3X1 _07720_ (
@@ -18500,7 +18500,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01684_)
   );
   AOI21X1 _07721_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .B(_01631_),
     .C(_01684_),
     .Y(_01685_)
@@ -18522,7 +18522,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_01637_),
     .C(_01680_),
     .D(_01687_),
-    .Y( execution_unit_0.alu_0.alu_out_13_ )
+    .Y(execution_unit_0.alu_0.alu_out_13_ )
   );
   OAI22X1 _07725_ (
     .A(_01240_),
@@ -18561,12 +18561,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   XOR2X1 _07731_ (
     .A(_01690_),
     .B(_01692_),
-    .Y( dbg_0.UNUSED_eu_mab_14_ )
+    .Y(dbg_0.UNUSED_eu_mab_14_ )
   );
   OAI21X1 _07732_ (
     .A(_01662_),
     .B(_01668_),
-    .C( execution_unit_0.alu_0.inst_alu_7_ ),
+    .C(execution_unit_0.alu_0.inst_alu_7_ ),
     .Y(_01694_)
   );
   AOI21X1 _07733_ (
@@ -18578,19 +18578,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _07734_ (
     .A(_01652_),
     .B(_01653_),
-    .C( execution_unit_0.alu_0.inst_alu_5_ ),
+    .C(execution_unit_0.alu_0.inst_alu_5_ ),
     .Y(_01696_)
   );
   AOI22X1 _07735_ (
-    .A( execution_unit_0.alu_0.inst_so_3_ ),
-    .B( execution_unit_0.alu_0.alu_shift_6_ ),
-    .C( execution_unit_0.alu_0.alu_shift_14_ ),
-    .D( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.inst_so_3_ ),
+    .B(execution_unit_0.alu_0.alu_shift_6_ ),
+    .C(execution_unit_0.alu_0.alu_shift_14_ ),
+    .D(execution_unit_0.alu_0.inst_alu_10_ ),
     .Y(_01697_)
   );
   AOI22X1 _07736_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.alu_shift_5_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.alu_shift_5_ ),
     .C(_01255_),
     .D(_01652_),
     .Y(_01698_)
@@ -18602,7 +18602,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01699_)
   );
   AOI21X1 _07738_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .B(_01657_),
     .C(_01699_),
     .Y(_01700_)
@@ -18614,24 +18614,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01701_)
   );
   OAI21X1 _07740_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .B(_01701_),
     .C(_01228_),
     .Y(_01702_)
   );
   AND2X1 _07741_ (
     .A(_01636_),
-    .B( dbg_0.UNUSED_eu_mab_14_ ),
+    .B(dbg_0.UNUSED_eu_mab_14_ ),
     .Y(_01703_)
   );
   NAND2X1 _07742_ (
     .A(_01636_),
-    .B( dbg_0.UNUSED_eu_mab_14_ ),
+    .B(dbg_0.UNUSED_eu_mab_14_ ),
     .Y(_01704_)
   );
   OAI21X1 _07743_ (
     .A(_01636_),
-    .B( dbg_0.UNUSED_eu_mab_14_ ),
+    .B(dbg_0.UNUSED_eu_mab_14_ ),
     .C(_01229_),
     .Y(_01705_)
   );
@@ -18640,7 +18640,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_01702_),
     .C(_01703_),
     .D(_01705_),
-    .Y( execution_unit_0.alu_0.alu_out_14_ )
+    .Y(execution_unit_0.alu_0.alu_out_14_ )
   );
   NAND2X1 _07745_ (
     .A(_01239_),
@@ -18663,15 +18663,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   XOR2X1 _07748_ (
     .A(_01707_),
     .B(_01708_),
-    .Y( dbg_0.UNUSED_eu_mab_15_ )
+    .Y(dbg_0.UNUSED_eu_mab_15_ )
   );
   INVX1 _07749_ (
-    .A( dbg_0.UNUSED_eu_mab_15_ ),
+    .A(dbg_0.UNUSED_eu_mab_15_ ),
     .Y(_01709_)
   );
   XNOR2X1 _07750_ (
     .A(_01704_),
-    .B( dbg_0.UNUSED_eu_mab_15_ ),
+    .B(dbg_0.UNUSED_eu_mab_15_ ),
     .Y(_01710_)
   );
   NOR2X1 _07751_ (
@@ -18685,13 +18685,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01712_)
   );
   OAI21X1 _07753_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
-    .B( execution_unit_0.alu_0.inst_so_3_ ),
-    .C( execution_unit_0.alu_0.alu_shift_6_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
+    .B(execution_unit_0.alu_0.inst_so_3_ ),
+    .C(execution_unit_0.alu_0.alu_shift_6_ ),
     .Y(_01713_)
   );
   OAI21X1 _07754_ (
-    .A( execution_unit_0.alu_0.inst_alu_5_ ),
+    .A(execution_unit_0.alu_0.inst_alu_5_ ),
     .B(_01712_),
     .C(_01650_),
     .Y(_01714_)
@@ -18704,7 +18704,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01715_)
   );
   AOI21X1 _07756_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .B(_01669_),
     .C(_01715_),
     .Y(_01716_)
@@ -18720,7 +18720,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01718_)
   );
   OAI21X1 _07759_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .B(_01718_),
     .C(_01228_),
     .Y(_01719_)
@@ -18746,18 +18746,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NOR2X1 _07763_ (
     .A(_01711_),
     .B(_01722_),
-    .Y( execution_unit_0.alu_0.alu_out_15_ )
+    .Y(execution_unit_0.alu_0.alu_out_15_ )
   );
   NAND2X1 _07764_ (
     .A(_01226_),
-    .B( execution_unit_0.alu_0.alu_out_15_ ),
+    .B(execution_unit_0.alu_0.alu_out_15_ ),
     .Y(_01723_)
   );
   OAI21X1 _07765_ (
     .A(_01226_),
     .B(_01474_),
     .C(_01723_),
-    .Y( execution_unit_0.alu_0.N )
+    .Y(execution_unit_0.alu_0.N )
   );
   NAND3X1 _07766_ (
     .A(_01506_),
@@ -18766,12 +18766,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01724_)
   );
   OR2X1 _07767_ (
-    .A( execution_unit_0.alu_0.alu_out_10_ ),
+    .A(execution_unit_0.alu_0.alu_out_10_ ),
     .B(_01724_),
     .Y(_01725_)
   );
   NOR2X1 _07768_ (
-    .A( execution_unit_0.alu_0.alu_out_12_ ),
+    .A(execution_unit_0.alu_0.alu_out_12_ ),
     .B(_01725_),
     .Y(_01726_)
   );
@@ -18782,24 +18782,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01727_)
   );
   NOR3X1 _07770_ (
-    .A( execution_unit_0.alu_0.alu_out_13_ ),
-    .B( execution_unit_0.alu_0.alu_out_14_ ),
+    .A(execution_unit_0.alu_0.alu_out_13_ ),
+    .B(execution_unit_0.alu_0.alu_out_14_ ),
     .C(_01727_),
     .Y(_01728_)
   );
   OR2X1 _07771_ (
-    .A( execution_unit_0.alu_0.alu_out_0_ ),
-    .B( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_0_ ),
+    .B(execution_unit_0.alu_0.alu_out_3_ ),
     .Y(_01729_)
   );
   NOR2X1 _07772_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_01729_),
     .Y(_01730_)
   );
   NOR2X1 _07773_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
-    .B( execution_unit_0.alu_0.alu_out_4_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
+    .B(execution_unit_0.alu_0.alu_out_4_ ),
     .Y(_01731_)
   );
   NAND3X1 _07774_ (
@@ -18809,29 +18809,29 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01732_)
   );
   NOR3X1 _07775_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
-    .B( execution_unit_0.alu_0.alu_out_6_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
+    .B(execution_unit_0.alu_0.alu_out_6_ ),
     .C(_01732_),
     .Y(_01733_)
   );
   OAI21X1 _07776_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_01728_),
     .C(_01733_),
     .Y(_01734_)
   );
   INVX1 _07777_ (
     .A(_01734_),
-    .Y( execution_unit_0.alu_0.Z )
+    .Y(execution_unit_0.alu_0.Z )
   );
   NAND2X1 _07778_ (
-    .A( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.inst_alu_10_ ),
     .B(_01242_),
     .Y(_01735_)
   );
   NOR2X1 _07779_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
-    .B( execution_unit_0.alu_0.inst_alu_8_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
+    .B(execution_unit_0.alu_0.inst_alu_8_ ),
     .Y(_01736_)
   );
   NOR2X1 _07780_ (
@@ -18853,7 +18853,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01739_)
   );
   OAI21X1 _07783_ (
-    .A( execution_unit_0.alu_0.inst_alu_3_ ),
+    .A(execution_unit_0.alu_0.inst_alu_3_ ),
     .B(_01227_),
     .C(_01739_),
     .Y(_01740_)
@@ -18873,7 +18873,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _07786_ (
     .A(_01740_),
     .B(_01742_),
-    .C( execution_unit_0.alu_0.inst_bw ),
+    .C(execution_unit_0.alu_0.inst_bw ),
     .Y(_01743_)
   );
   OAI21X1 _07787_ (
@@ -18892,46 +18892,46 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01737_),
     .B(_01745_),
     .C(_01735_),
-    .Y( execution_unit_0.alu_0.alu_stat_0_ )
+    .Y(execution_unit_0.alu_0.alu_stat_0_ )
   );
   NOR2X1 _07790_ (
     .A(_01409_),
-    .B( execution_unit_0.alu_0.alu_out_7_ ),
+    .B(execution_unit_0.alu_0.alu_out_7_ ),
     .Y(_01746_)
   );
   OAI21X1 _07791_ (
     .A(_01410_),
     .B(_01474_),
-    .C( execution_unit_0.alu_0.inst_bw ),
+    .C(execution_unit_0.alu_0.inst_bw ),
     .Y(_01747_)
   );
   MUX2X1 _07792_ (
     .A(_01650_),
     .B(_01649_),
-    .S( execution_unit_0.alu_0.alu_out_15_ ),
+    .S(execution_unit_0.alu_0.alu_out_15_ ),
     .Y(_01748_)
   );
   OAI22X1 _07793_ (
     .A(_01746_),
     .B(_01747_),
     .C(_01748_),
-    .D( execution_unit_0.alu_0.inst_bw ),
+    .D(execution_unit_0.alu_0.inst_bw ),
     .Y(_01749_)
   );
   NOR2X1 _07794_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_01649_),
     .Y(_01750_)
   );
   OAI21X1 _07795_ (
     .A(_01226_),
     .B(_01409_),
-    .C( execution_unit_0.alu_0.inst_alu_6_ ),
+    .C(execution_unit_0.alu_0.inst_alu_6_ ),
     .Y(_01751_)
   );
   NOR2X1 _07796_ (
-    .A( execution_unit_0.alu_0.inst_alu_10_ ),
-    .B( execution_unit_0.alu_0.inst_alu_8_ ),
+    .A(execution_unit_0.alu_0.inst_alu_10_ ),
+    .B(execution_unit_0.alu_0.inst_alu_8_ ),
     .Y(_01752_)
   );
   OAI21X1 _07797_ (
@@ -18944,115 +18944,115 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_01220_),
     .B(_01749_),
     .C(_01753_),
-    .Y( execution_unit_0.alu_0.alu_stat_3_ )
+    .Y(execution_unit_0.alu_0.alu_stat_3_ )
   );
   AND2X1 _07799_ (
-    .A( execution_unit_0.alu_0.exec_cycle ),
-    .B( execution_unit_0.alu_0.inst_alu_9_ ),
-    .Y( execution_unit_0.alu_0.alu_stat_wr_0_ )
+    .A(execution_unit_0.alu_0.exec_cycle ),
+    .B(execution_unit_0.alu_0.inst_alu_9_ ),
+    .Y(execution_unit_0.alu_0.alu_stat_wr_0_ )
   );
   INVX1 _07800_ (
-    .A( execution_unit_0.reg_sp_wr ),
+    .A(execution_unit_0.reg_sp_wr ),
     .Y(_02539_)
   );
   INVX1 _07801_ (
-    .A( execution_unit_0.reg_sr_clr ),
+    .A(execution_unit_0.reg_sr_clr ),
     .Y(_02540_)
   );
   INVX1 _07802_ (
-    .A( execution_unit_0.inst_src_1_ ),
+    .A(execution_unit_0.inst_src_1_ ),
     .Y(_02541_)
   );
   INVX1 _07803_ (
-    .A( execution_unit_0.alu_0.alu_stat_wr_0_ ),
+    .A(execution_unit_0.alu_0.alu_stat_wr_0_ ),
     .Y(_02542_)
   );
   INVX1 _07804_ (
-    .A( execution_unit_0.alu_0.alu_stat_wr_0_ ),
+    .A(execution_unit_0.alu_0.alu_stat_wr_0_ ),
     .Y(_02543_)
   );
   INVX1 _07805_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .Y(_02544_)
   );
   INVX1 _07806_ (
-    .A( execution_unit_0.register_file_0.r5_0_ ),
+    .A(execution_unit_0.register_file_0.r5_0_ ),
     .Y(_02545_)
   );
   INVX1 _07807_ (
-    .A( execution_unit_0.register_file_0.r6_0_ ),
+    .A(execution_unit_0.register_file_0.r6_0_ ),
     .Y(_02546_)
   );
   INVX1 _07808_ (
-    .A( execution_unit_0.register_file_0.r7_0_ ),
+    .A(execution_unit_0.register_file_0.r7_0_ ),
     .Y(_02547_)
   );
   INVX1 _07809_ (
-    .A( execution_unit_0.register_file_0.r8_0_ ),
+    .A(execution_unit_0.register_file_0.r8_0_ ),
     .Y(_02548_)
   );
   INVX1 _07810_ (
-    .A( execution_unit_0.register_file_0.r10_0_ ),
+    .A(execution_unit_0.register_file_0.r10_0_ ),
     .Y(_02549_)
   );
   INVX1 _07811_ (
-    .A( execution_unit_0.register_file_0.r11_0_ ),
+    .A(execution_unit_0.register_file_0.r11_0_ ),
     .Y(_02550_)
   );
   INVX1 _07812_ (
-    .A( execution_unit_0.alu_0.alu_out_0_ ),
+    .A(execution_unit_0.alu_0.alu_out_0_ ),
     .Y(_02551_)
   );
   INVX1 _07813_ (
-    .A( execution_unit_0.register_file_0.r6_1_ ),
+    .A(execution_unit_0.register_file_0.r6_1_ ),
     .Y(_02552_)
   );
   INVX1 _07814_ (
-    .A( execution_unit_0.register_file_0.r7_1_ ),
+    .A(execution_unit_0.register_file_0.r7_1_ ),
     .Y(_02553_)
   );
   INVX1 _07815_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .Y(_02554_)
   );
   INVX1 _07816_ (
-    .A( execution_unit_0.register_file_0.r10_2_ ),
+    .A(execution_unit_0.register_file_0.r10_2_ ),
     .Y(_02555_)
   );
   INVX1 _07817_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .Y(_02556_)
   );
   INVX1 _07818_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .Y(_02557_)
   );
   INVX1 _07819_ (
-    .A( execution_unit_0.register_file_0.r2_4_ ),
+    .A(execution_unit_0.register_file_0.r2_4_ ),
     .Y(_02558_)
   );
   INVX1 _07820_ (
-    .A( execution_unit_0.alu_0.alu_out_4_ ),
+    .A(execution_unit_0.alu_0.alu_out_4_ ),
     .Y(_02559_)
   );
   INVX1 _07821_ (
-    .A( execution_unit_0.register_file_0.r11_5_ ),
+    .A(execution_unit_0.register_file_0.r11_5_ ),
     .Y(_02560_)
   );
   INVX1 _07822_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .Y(_02561_)
   );
   INVX1 _07823_ (
-    .A( execution_unit_0.alu_0.alu_out_6_ ),
+    .A(execution_unit_0.alu_0.alu_out_6_ ),
     .Y(_02562_)
   );
   INVX1 _07824_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .Y(_02563_)
   );
   INVX1 _07825_ (
-    .A( execution_unit_0.register_file_0.r6_15_ ),
+    .A(execution_unit_0.register_file_0.r6_15_ ),
     .Y(_02564_)
   );
   INVX1 _07826_ (
@@ -19060,76 +19060,76 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01756_)
   );
   OR2X1 _07827_ (
-    .A( execution_unit_0.reg_sr_clr ),
-    .B( execution_unit_0.inst_src_2_ ),
+    .A(execution_unit_0.reg_sr_clr ),
+    .B(execution_unit_0.inst_src_2_ ),
     .Y(_02565_)
   );
   NOR2X1 _07828_ (
-    .A( execution_unit_0.reg_sr_clr ),
+    .A(execution_unit_0.reg_sr_clr ),
     .B(_02541_),
     .Y(_02566_)
   );
   AOI22X1 _07829_ (
-    .A( execution_unit_0.gie ),
+    .A(execution_unit_0.gie ),
     .B(_02565_),
     .C(_02566_),
-    .D( execution_unit_0.register_file_0.r1_3_ ),
+    .D(execution_unit_0.register_file_0.r1_3_ ),
     .Y(_02567_)
   );
   AND2X1 _07830_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_13_ ),
+    .B(execution_unit_0.inst_src_13_ ),
     .Y(_02568_)
   );
   AND2X1 _07831_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_15_ ),
+    .B(execution_unit_0.inst_src_15_ ),
     .Y(_02569_)
   );
   AOI22X1 _07832_ (
-    .A( execution_unit_0.register_file_0.r13_3_ ),
+    .A(execution_unit_0.register_file_0.r13_3_ ),
     .B(_02568_),
     .C(_02569_),
-    .D( execution_unit_0.register_file_0.r15_3_ ),
+    .D(execution_unit_0.register_file_0.r15_3_ ),
     .Y(_02570_)
   );
   AND2X1 _07833_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_4_ ),
+    .B(execution_unit_0.inst_src_4_ ),
     .Y(_02571_)
   );
   AND2X1 _07834_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_0_ ),
+    .B(execution_unit_0.inst_src_0_ ),
     .Y(_02572_)
   );
   AOI22X1 _07835_ (
-    .A( execution_unit_0.register_file_0.r4_3_ ),
+    .A(execution_unit_0.register_file_0.r4_3_ ),
     .B(_02571_),
     .C(_02572_),
-    .D( dbg_0.UNUSED_pc_3_ ),
+    .D(dbg_0.UNUSED_pc_3_ ),
     .Y(_02573_)
   );
   AND2X1 _07836_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_3_ ),
+    .B(execution_unit_0.inst_src_3_ ),
     .Y(_02574_)
   );
   AND2X1 _07837_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_6_ ),
+    .B(execution_unit_0.inst_src_6_ ),
     .Y(_02575_)
   );
   NAND2X1 _07838_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_6_ ),
+    .B(execution_unit_0.inst_src_6_ ),
     .Y(_02576_)
   );
   AOI22X1 _07839_ (
-    .A( execution_unit_0.register_file_0.r3_3_ ),
+    .A(execution_unit_0.register_file_0.r3_3_ ),
     .B(_02574_),
     .C(_02575_),
-    .D( execution_unit_0.register_file_0.r6_3_ ),
+    .D(execution_unit_0.register_file_0.r6_3_ ),
     .Y(_02577_)
   );
   AND2X1 _07840_ (
@@ -19145,85 +19145,85 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   AND2X1 _07842_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_14_ ),
+    .B(execution_unit_0.inst_src_14_ ),
     .Y(_02580_)
   );
   AND2X1 _07843_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_8_ ),
+    .B(execution_unit_0.inst_src_8_ ),
     .Y(_02581_)
   );
   AOI22X1 _07844_ (
-    .A( execution_unit_0.register_file_0.r14_3_ ),
+    .A(execution_unit_0.register_file_0.r14_3_ ),
     .B(_02580_),
     .C(_02581_),
-    .D( execution_unit_0.register_file_0.r8_3_ ),
+    .D(execution_unit_0.register_file_0.r8_3_ ),
     .Y(_02582_)
   );
   AND2X1 _07845_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_10_ ),
+    .B(execution_unit_0.inst_src_10_ ),
     .Y(_02583_)
   );
   NAND2X1 _07846_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_10_ ),
+    .B(execution_unit_0.inst_src_10_ ),
     .Y(_02584_)
   );
   AND2X1 _07847_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_7_ ),
+    .B(execution_unit_0.inst_src_7_ ),
     .Y(_02585_)
   );
   NAND2X1 _07848_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_7_ ),
+    .B(execution_unit_0.inst_src_7_ ),
     .Y(_02586_)
   );
   AOI22X1 _07849_ (
-    .A( execution_unit_0.register_file_0.r10_3_ ),
+    .A(execution_unit_0.register_file_0.r10_3_ ),
     .B(_02583_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_3_ ),
+    .D(execution_unit_0.register_file_0.r7_3_ ),
     .Y(_02587_)
   );
   AND2X1 _07850_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_9_ ),
+    .B(execution_unit_0.inst_src_9_ ),
     .Y(_02588_)
   );
   AND2X1 _07851_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_5_ ),
+    .B(execution_unit_0.inst_src_5_ ),
     .Y(_02589_)
   );
   AOI22X1 _07852_ (
-    .A( execution_unit_0.register_file_0.r9_3_ ),
+    .A(execution_unit_0.register_file_0.r9_3_ ),
     .B(_02588_),
     .C(_02589_),
-    .D( execution_unit_0.register_file_0.r5_3_ ),
+    .D(execution_unit_0.register_file_0.r5_3_ ),
     .Y(_02590_)
   );
   AND2X1 _07853_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_11_ ),
+    .B(execution_unit_0.inst_src_11_ ),
     .Y(_02591_)
   );
   NAND2X1 _07854_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_11_ ),
+    .B(execution_unit_0.inst_src_11_ ),
     .Y(_02592_)
   );
   AND2X1 _07855_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_12_ ),
+    .B(execution_unit_0.inst_src_12_ ),
     .Y(_02593_)
   );
   AOI22X1 _07856_ (
-    .A( execution_unit_0.register_file_0.r11_3_ ),
+    .A(execution_unit_0.register_file_0.r11_3_ ),
     .B(_02591_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_3_ ),
+    .D(execution_unit_0.register_file_0.r12_3_ ),
     .Y(_02594_)
   );
   AND2X1 _07857_ (
@@ -19244,29 +19244,29 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07860_ (
     .A(_02597_),
-    .Y( execution_unit_0.reg_src_3_ )
+    .Y(execution_unit_0.reg_src_3_ )
   );
   NAND2X1 _07861_ (
-    .A( execution_unit_0.register_file_0.r5_2_ ),
+    .A(execution_unit_0.register_file_0.r5_2_ ),
     .B(_02589_),
     .Y(_02598_)
   );
   NAND2X1 _07862_ (
-    .A( execution_unit_0.register_file_0.r13_2_ ),
+    .A(execution_unit_0.register_file_0.r13_2_ ),
     .B(_02568_),
     .Y(_02599_)
   );
   OAI21X1 _07863_ (
-    .A( execution_unit_0.reg_sr_clr ),
-    .B( execution_unit_0.inst_src_2_ ),
-    .C( execution_unit_0.alu_0.status_2_ ),
+    .A(execution_unit_0.reg_sr_clr ),
+    .B(execution_unit_0.inst_src_2_ ),
+    .C(execution_unit_0.alu_0.status_2_ ),
     .Y(_02600_)
   );
   AOI22X1 _07864_ (
-    .A( execution_unit_0.register_file_0.r3_2_ ),
+    .A(execution_unit_0.register_file_0.r3_2_ ),
     .B(_02574_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_2_ ),
+    .D(execution_unit_0.register_file_0.r9_2_ ),
     .Y(_02601_)
   );
   NAND3X1 _07865_ (
@@ -19276,17 +19276,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02602_)
   );
   AOI22X1 _07866_ (
-    .A( execution_unit_0.register_file_0.r4_2_ ),
+    .A(execution_unit_0.register_file_0.r4_2_ ),
     .B(_02571_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_2_ ),
+    .D(execution_unit_0.register_file_0.r7_2_ ),
     .Y(_02603_)
   );
   AOI22X1 _07867_ (
-    .A( dbg_0.UNUSED_pc_2_ ),
+    .A(dbg_0.UNUSED_pc_2_ ),
     .B(_02572_),
     .C(_02575_),
-    .D( execution_unit_0.register_file_0.r6_2_ ),
+    .D(execution_unit_0.register_file_0.r6_2_ ),
     .Y(_02604_)
   );
   NAND2X1 _07868_ (
@@ -19300,10 +19300,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02606_)
   );
   AOI22X1 _07870_ (
-    .A( execution_unit_0.register_file_0.r11_2_ ),
+    .A(execution_unit_0.register_file_0.r11_2_ ),
     .B(_02591_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_2_ ),
+    .D(execution_unit_0.register_file_0.r12_2_ ),
     .Y(_02607_)
   );
   OAI21X1 _07871_ (
@@ -19313,17 +19313,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02608_)
   );
   AOI22X1 _07872_ (
-    .A( execution_unit_0.register_file_0.r14_2_ ),
+    .A(execution_unit_0.register_file_0.r14_2_ ),
     .B(_02580_),
     .C(_02581_),
-    .D( execution_unit_0.register_file_0.r8_2_ ),
+    .D(execution_unit_0.register_file_0.r8_2_ ),
     .Y(_02609_)
   );
   AOI22X1 _07873_ (
-    .A( execution_unit_0.register_file_0.r1_2_ ),
+    .A(execution_unit_0.register_file_0.r1_2_ ),
     .B(_02566_),
     .C(_02569_),
-    .D( execution_unit_0.register_file_0.r15_2_ ),
+    .D(execution_unit_0.register_file_0.r15_2_ ),
     .Y(_02610_)
   );
   NAND3X1 _07874_ (
@@ -19344,33 +19344,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07877_ (
     .A(_02613_),
-    .Y( execution_unit_0.reg_src_2_ )
+    .Y(execution_unit_0.reg_src_2_ )
   );
   OAI21X1 _07878_ (
-    .A( execution_unit_0.reg_sr_clr ),
-    .B( execution_unit_0.inst_src_2_ ),
-    .C( execution_unit_0.register_file_0.r2_4_ ),
+    .A(execution_unit_0.reg_sr_clr ),
+    .B(execution_unit_0.inst_src_2_ ),
+    .C(execution_unit_0.register_file_0.r2_4_ ),
     .Y(_02614_)
   );
   AOI22X1 _07879_ (
-    .A( execution_unit_0.register_file_0.r10_4_ ),
+    .A(execution_unit_0.register_file_0.r10_4_ ),
     .B(_02583_),
     .C(_02589_),
-    .D( execution_unit_0.register_file_0.r5_4_ ),
+    .D(execution_unit_0.register_file_0.r5_4_ ),
     .Y(_02615_)
   );
   AOI22X1 _07880_ (
-    .A( execution_unit_0.register_file_0.r15_4_ ),
+    .A(execution_unit_0.register_file_0.r15_4_ ),
     .B(_02569_),
     .C(_02574_),
-    .D( execution_unit_0.register_file_0.r3_4_ ),
+    .D(execution_unit_0.register_file_0.r3_4_ ),
     .Y(_02616_)
   );
   AOI22X1 _07881_ (
-    .A( execution_unit_0.register_file_0.r13_4_ ),
+    .A(execution_unit_0.register_file_0.r13_4_ ),
     .B(_02568_),
     .C(_02580_),
-    .D( execution_unit_0.register_file_0.r14_4_ ),
+    .D(execution_unit_0.register_file_0.r14_4_ ),
     .Y(_02617_)
   );
   NAND2X1 _07882_ (
@@ -19379,17 +19379,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02618_)
   );
   AOI22X1 _07883_ (
-    .A( execution_unit_0.register_file_0.r4_4_ ),
+    .A(execution_unit_0.register_file_0.r4_4_ ),
     .B(_02571_),
     .C(_02575_),
-    .D( execution_unit_0.register_file_0.r6_4_ ),
+    .D(execution_unit_0.register_file_0.r6_4_ ),
     .Y(_02619_)
   );
   AOI22X1 _07884_ (
-    .A( execution_unit_0.register_file_0.r8_4_ ),
+    .A(execution_unit_0.register_file_0.r8_4_ ),
     .B(_02581_),
     .C(_02591_),
-    .D( execution_unit_0.register_file_0.r11_4_ ),
+    .D(execution_unit_0.register_file_0.r11_4_ ),
     .Y(_02620_)
   );
   NAND2X1 _07885_ (
@@ -19398,10 +19398,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02621_)
   );
   AOI22X1 _07886_ (
-    .A( execution_unit_0.register_file_0.r1_4_ ),
+    .A(execution_unit_0.register_file_0.r1_4_ ),
     .B(_02566_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_4_ ),
+    .D(execution_unit_0.register_file_0.r7_4_ ),
     .Y(_02622_)
   );
   NAND2X1 _07887_ (
@@ -19415,10 +19415,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02624_)
   );
   AOI22X1 _07889_ (
-    .A( execution_unit_0.register_file_0.r9_4_ ),
+    .A(execution_unit_0.register_file_0.r9_4_ ),
     .B(_02588_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_4_ ),
+    .D(execution_unit_0.register_file_0.r12_4_ ),
     .Y(_02625_)
   );
   NAND2X1 _07890_ (
@@ -19427,7 +19427,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02626_)
   );
   AOI21X1 _07891_ (
-    .A( dbg_0.UNUSED_pc_4_ ),
+    .A(dbg_0.UNUSED_pc_4_ ),
     .B(_02572_),
     .C(_02626_),
     .Y(_02627_)
@@ -19444,42 +19444,42 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07894_ (
     .A(_02629_),
-    .Y( execution_unit_0.reg_src_4_ )
+    .Y(execution_unit_0.reg_src_4_ )
   );
   NAND2X1 _07895_ (
-    .A( execution_unit_0.register_file_0.r13_5_ ),
+    .A(execution_unit_0.register_file_0.r13_5_ ),
     .B(_02568_),
     .Y(_02630_)
   );
   NAND2X1 _07896_ (
-    .A( dbg_0.UNUSED_pc_5_ ),
+    .A(dbg_0.UNUSED_pc_5_ ),
     .B(_02572_),
     .Y(_02631_)
   );
   NAND2X1 _07897_ (
-    .A( execution_unit_0.register_file_0.r12_5_ ),
+    .A(execution_unit_0.register_file_0.r12_5_ ),
     .B(_02593_),
     .Y(_02632_)
   );
   AOI22X1 _07898_ (
-    .A( execution_unit_0.register_file_0.r15_5_ ),
+    .A(execution_unit_0.register_file_0.r15_5_ ),
     .B(_02569_),
     .C(_02580_),
-    .D( execution_unit_0.register_file_0.r14_5_ ),
+    .D(execution_unit_0.register_file_0.r14_5_ ),
     .Y(_02633_)
   );
   AOI22X1 _07899_ (
-    .A( clock_module_0.oscoff ),
+    .A(clock_module_0.oscoff ),
     .B(_02565_),
     .C(_02571_),
-    .D( execution_unit_0.register_file_0.r4_5_ ),
+    .D(execution_unit_0.register_file_0.r4_5_ ),
     .Y(_02634_)
   );
   AOI22X1 _07900_ (
-    .A( execution_unit_0.register_file_0.r3_5_ ),
+    .A(execution_unit_0.register_file_0.r3_5_ ),
     .B(_02574_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_5_ ),
+    .D(execution_unit_0.register_file_0.r7_5_ ),
     .Y(_02635_)
   );
   NAND2X1 _07901_ (
@@ -19488,16 +19488,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02636_)
   );
   AOI21X1 _07902_ (
-    .A( execution_unit_0.register_file_0.r1_5_ ),
+    .A(execution_unit_0.register_file_0.r1_5_ ),
     .B(_02566_),
     .C(_02636_),
     .Y(_02637_)
   );
   AOI22X1 _07903_ (
-    .A( execution_unit_0.register_file_0.r10_5_ ),
+    .A(execution_unit_0.register_file_0.r10_5_ ),
     .B(_02583_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_5_ ),
+    .D(execution_unit_0.register_file_0.r9_5_ ),
     .Y(_02638_)
   );
   NAND2X1 _07904_ (
@@ -19506,7 +19506,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02639_)
   );
   AOI21X1 _07905_ (
-    .A( execution_unit_0.register_file_0.r8_5_ ),
+    .A(execution_unit_0.register_file_0.r8_5_ ),
     .B(_02581_),
     .C(_02639_),
     .Y(_02640_)
@@ -19518,10 +19518,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02641_)
   );
   AOI22X1 _07907_ (
-    .A( execution_unit_0.register_file_0.r6_5_ ),
+    .A(execution_unit_0.register_file_0.r6_5_ ),
     .B(_02575_),
     .C(_02589_),
-    .D( execution_unit_0.register_file_0.r5_5_ ),
+    .D(execution_unit_0.register_file_0.r5_5_ ),
     .Y(_02642_)
   );
   NAND2X1 _07908_ (
@@ -19551,20 +19551,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _07913_ (
     .A(_02647_),
-    .Y( execution_unit_0.reg_src_5_ )
+    .Y(execution_unit_0.reg_src_5_ )
   );
   AOI22X1 _07914_ (
-    .A( execution_unit_0.register_file_0.r10_6_ ),
+    .A(execution_unit_0.register_file_0.r10_6_ ),
     .B(_02583_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_6_ ),
+    .D(execution_unit_0.register_file_0.r7_6_ ),
     .Y(_02648_)
   );
   AOI22X1 _07915_ (
-    .A( execution_unit_0.register_file_0.r3_6_ ),
+    .A(execution_unit_0.register_file_0.r3_6_ ),
     .B(_02574_),
     .C(_02581_),
-    .D( execution_unit_0.register_file_0.r8_6_ ),
+    .D(execution_unit_0.register_file_0.r8_6_ ),
     .Y(_02649_)
   );
   NAND2X1 _07916_ (
@@ -19573,17 +19573,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02650_)
   );
   AOI22X1 _07917_ (
-    .A( execution_unit_0.register_file_0.r4_6_ ),
+    .A(execution_unit_0.register_file_0.r4_6_ ),
     .B(_02571_),
     .C(_02591_),
-    .D( execution_unit_0.register_file_0.r11_6_ ),
+    .D(execution_unit_0.register_file_0.r11_6_ ),
     .Y(_02651_)
   );
   AOI22X1 _07918_ (
-    .A( execution_unit_0.register_file_0.r15_6_ ),
+    .A(execution_unit_0.register_file_0.r15_6_ ),
     .B(_02569_),
     .C(_02580_),
-    .D( execution_unit_0.register_file_0.r14_6_ ),
+    .D(execution_unit_0.register_file_0.r14_6_ ),
     .Y(_02652_)
   );
   NAND2X1 _07919_ (
@@ -19597,15 +19597,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02654_)
   );
   NAND2X1 _07921_ (
-    .A( dbg_0.UNUSED_pc_6_ ),
+    .A(dbg_0.UNUSED_pc_6_ ),
     .B(_02572_),
     .Y(_02655_)
   );
   AOI22X1 _07922_ (
-    .A( execution_unit_0.register_file_0.r1_6_ ),
+    .A(execution_unit_0.register_file_0.r1_6_ ),
     .B(_02566_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_6_ ),
+    .D(execution_unit_0.register_file_0.r9_6_ ),
     .Y(_02656_)
   );
   NAND2X1 _07923_ (
@@ -19614,17 +19614,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02657_)
   );
   AOI22X1 _07924_ (
-    .A( execution_unit_0.register_file_0.r13_6_ ),
+    .A(execution_unit_0.register_file_0.r13_6_ ),
     .B(_02568_),
     .C(_02589_),
-    .D( execution_unit_0.register_file_0.r5_6_ ),
+    .D(execution_unit_0.register_file_0.r5_6_ ),
     .Y(_02658_)
   );
   AOI22X1 _07925_ (
-    .A( execution_unit_0.register_file_0.r6_6_ ),
+    .A(execution_unit_0.register_file_0.r6_6_ ),
     .B(_02575_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_6_ ),
+    .D(execution_unit_0.register_file_0.r12_6_ ),
     .Y(_02659_)
   );
   NAND2X1 _07926_ (
@@ -19640,24 +19640,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _07928_ (
     .A(_02654_),
     .B(_02661_),
-    .Y( execution_unit_0.reg_src_6_ )
+    .Y(execution_unit_0.reg_src_6_ )
   );
   INVX1 _07929_ (
-    .A( execution_unit_0.reg_src_6_ ),
+    .A(execution_unit_0.reg_src_6_ ),
     .Y(_02662_)
   );
   AOI22X1 _07930_ (
-    .A( execution_unit_0.register_file_0.r15_7_ ),
+    .A(execution_unit_0.register_file_0.r15_7_ ),
     .B(_02569_),
     .C(_02571_),
-    .D( execution_unit_0.register_file_0.r4_7_ ),
+    .D(execution_unit_0.register_file_0.r4_7_ ),
     .Y(_02663_)
   );
   AOI22X1 _07931_ (
-    .A( execution_unit_0.register_file_0.r8_7_ ),
+    .A(execution_unit_0.register_file_0.r8_7_ ),
     .B(_02581_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_7_ ),
+    .D(execution_unit_0.register_file_0.r7_7_ ),
     .Y(_02664_)
   );
   NAND2X1 _07932_ (
@@ -19666,17 +19666,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02665_)
   );
   AOI22X1 _07933_ (
-    .A( clock_module_0.scg1 ),
+    .A(clock_module_0.scg1 ),
     .B(_02565_),
     .C(_02574_),
-    .D( execution_unit_0.register_file_0.r3_7_ ),
+    .D(execution_unit_0.register_file_0.r3_7_ ),
     .Y(_02666_)
   );
   AOI22X1 _07934_ (
-    .A( execution_unit_0.register_file_0.r13_7_ ),
+    .A(execution_unit_0.register_file_0.r13_7_ ),
     .B(_02568_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_7_ ),
+    .D(execution_unit_0.register_file_0.r9_7_ ),
     .Y(_02667_)
   );
   NAND2X1 _07935_ (
@@ -19690,17 +19690,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02669_)
   );
   AOI22X1 _07937_ (
-    .A( execution_unit_0.register_file_0.r6_7_ ),
+    .A(execution_unit_0.register_file_0.r6_7_ ),
     .B(_02575_),
     .C(_02583_),
-    .D( execution_unit_0.register_file_0.r10_7_ ),
+    .D(execution_unit_0.register_file_0.r10_7_ ),
     .Y(_02670_)
   );
   AOI22X1 _07938_ (
-    .A( execution_unit_0.register_file_0.r1_7_ ),
+    .A(execution_unit_0.register_file_0.r1_7_ ),
     .B(_02566_),
     .C(_02572_),
-    .D( dbg_0.UNUSED_pc_7_ ),
+    .D(dbg_0.UNUSED_pc_7_ ),
     .Y(_02671_)
   );
   NAND2X1 _07939_ (
@@ -19709,17 +19709,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02672_)
   );
   AOI22X1 _07940_ (
-    .A( execution_unit_0.register_file_0.r5_7_ ),
+    .A(execution_unit_0.register_file_0.r5_7_ ),
     .B(_02589_),
     .C(_02591_),
-    .D( execution_unit_0.register_file_0.r11_7_ ),
+    .D(execution_unit_0.register_file_0.r11_7_ ),
     .Y(_02673_)
   );
   AOI22X1 _07941_ (
-    .A( execution_unit_0.register_file_0.r14_7_ ),
+    .A(execution_unit_0.register_file_0.r14_7_ ),
     .B(_02580_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_7_ ),
+    .D(execution_unit_0.register_file_0.r12_7_ ),
     .Y(_02674_)
   );
   NAND2X1 _07942_ (
@@ -19735,33 +19735,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _07944_ (
     .A(_02669_),
     .B(_02676_),
-    .Y( execution_unit_0.reg_src_7_ )
+    .Y(execution_unit_0.reg_src_7_ )
   );
   INVX1 _07945_ (
-    .A( execution_unit_0.reg_src_7_ ),
+    .A(execution_unit_0.reg_src_7_ ),
     .Y(_02677_)
   );
   NAND2X1 _07946_ (
     .A(_02544_),
-    .B( execution_unit_0.alu_0.alu_out_8_ ),
+    .B(execution_unit_0.alu_0.alu_out_8_ ),
     .Y(_02678_)
   );
   INVX1 _07947_ (
     .A(_02678_),
-    .Y( execution_unit_0.pc_sw_8_ )
+    .Y(execution_unit_0.pc_sw_8_ )
   );
   AOI22X1 _07948_ (
-    .A( execution_unit_0.register_file_0.r15_8_ ),
+    .A(execution_unit_0.register_file_0.r15_8_ ),
     .B(_02569_),
     .C(_02571_),
-    .D( execution_unit_0.register_file_0.r4_8_ ),
+    .D(execution_unit_0.register_file_0.r4_8_ ),
     .Y(_02679_)
   );
   AOI22X1 _07949_ (
-    .A( execution_unit_0.register_file_0.r8_8_ ),
+    .A(execution_unit_0.register_file_0.r8_8_ ),
     .B(_02581_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_8_ ),
+    .D(execution_unit_0.register_file_0.r7_8_ ),
     .Y(_02680_)
   );
   NAND2X1 _07950_ (
@@ -19770,17 +19770,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02681_)
   );
   AOI22X1 _07951_ (
-    .A( dbg_0.UNUSED_pc_8_ ),
+    .A(dbg_0.UNUSED_pc_8_ ),
     .B(_02572_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_8_ ),
+    .D(execution_unit_0.register_file_0.r12_8_ ),
     .Y(_02682_)
   );
   AOI22X1 _07952_ (
-    .A( execution_unit_0.register_file_0.r6_8_ ),
+    .A(execution_unit_0.register_file_0.r6_8_ ),
     .B(_02575_),
     .C(_02591_),
-    .D( execution_unit_0.register_file_0.r11_8_ ),
+    .D(execution_unit_0.register_file_0.r11_8_ ),
     .Y(_02683_)
   );
   NAND2X1 _07953_ (
@@ -19794,17 +19794,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02685_)
   );
   AOI22X1 _07955_ (
-    .A( execution_unit_0.register_file_0.r10_8_ ),
+    .A(execution_unit_0.register_file_0.r10_8_ ),
     .B(_02583_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_8_ ),
+    .D(execution_unit_0.register_file_0.r9_8_ ),
     .Y(_02686_)
   );
   AOI22X1 _07956_ (
-    .A( execution_unit_0.alu_0.status_3_ ),
+    .A(execution_unit_0.alu_0.status_3_ ),
     .B(_02565_),
     .C(_02566_),
-    .D( execution_unit_0.register_file_0.r1_8_ ),
+    .D(execution_unit_0.register_file_0.r1_8_ ),
     .Y(_02687_)
   );
   NAND2X1 _07957_ (
@@ -19813,17 +19813,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02688_)
   );
   AOI22X1 _07958_ (
-    .A( execution_unit_0.register_file_0.r3_8_ ),
+    .A(execution_unit_0.register_file_0.r3_8_ ),
     .B(_02574_),
     .C(_02580_),
-    .D( execution_unit_0.register_file_0.r14_8_ ),
+    .D(execution_unit_0.register_file_0.r14_8_ ),
     .Y(_02689_)
   );
   AOI22X1 _07959_ (
-    .A( execution_unit_0.register_file_0.r13_8_ ),
+    .A(execution_unit_0.register_file_0.r13_8_ ),
     .B(_02568_),
     .C(_02589_),
-    .D( execution_unit_0.register_file_0.r5_8_ ),
+    .D(execution_unit_0.register_file_0.r5_8_ ),
     .Y(_02690_)
   );
   NAND2X1 _07960_ (
@@ -19839,57 +19839,57 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _07962_ (
     .A(_02685_),
     .B(_02692_),
-    .Y( execution_unit_0.reg_src_8_ )
+    .Y(execution_unit_0.reg_src_8_ )
   );
   INVX1 _07963_ (
-    .A( execution_unit_0.reg_src_8_ ),
+    .A(execution_unit_0.reg_src_8_ ),
     .Y(_02693_)
   );
   AND2X1 _07964_ (
     .A(_02544_),
-    .B( execution_unit_0.alu_0.alu_out_9_ ),
-    .Y( execution_unit_0.pc_sw_9_ )
+    .B(execution_unit_0.alu_0.alu_out_9_ ),
+    .Y(execution_unit_0.pc_sw_9_ )
   );
   INVX1 _07965_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .Y(_02694_)
   );
   NAND2X1 _07966_ (
-    .A( execution_unit_0.register_file_0.r5_9_ ),
+    .A(execution_unit_0.register_file_0.r5_9_ ),
     .B(_02589_),
     .Y(_02695_)
   );
   NAND2X1 _07967_ (
-    .A( execution_unit_0.register_file_0.r3_9_ ),
+    .A(execution_unit_0.register_file_0.r3_9_ ),
     .B(_02574_),
     .Y(_02696_)
   );
   AOI22X1 _07968_ (
-    .A( execution_unit_0.register_file_0.r1_9_ ),
+    .A(execution_unit_0.register_file_0.r1_9_ ),
     .B(_02566_),
     .C(_02572_),
-    .D( dbg_0.UNUSED_pc_9_ ),
+    .D(dbg_0.UNUSED_pc_9_ ),
     .Y(_02697_)
   );
   AOI22X1 _07969_ (
-    .A( execution_unit_0.register_file_0.r15_9_ ),
+    .A(execution_unit_0.register_file_0.r15_9_ ),
     .B(_02569_),
     .C(_02583_),
-    .D( execution_unit_0.register_file_0.r10_9_ ),
+    .D(execution_unit_0.register_file_0.r10_9_ ),
     .Y(_02698_)
   );
   AOI22X1 _07970_ (
-    .A( execution_unit_0.register_file_0.r14_9_ ),
+    .A(execution_unit_0.register_file_0.r14_9_ ),
     .B(_02580_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_9_ ),
+    .D(execution_unit_0.register_file_0.r12_9_ ),
     .Y(_02699_)
   );
   AOI22X1 _07971_ (
-    .A( execution_unit_0.register_file_0.r6_9_ ),
+    .A(execution_unit_0.register_file_0.r6_9_ ),
     .B(_02575_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_9_ ),
+    .D(execution_unit_0.register_file_0.r7_9_ ),
     .Y(_02700_)
   );
   NAND2X1 _07972_ (
@@ -19898,16 +19898,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02701_)
   );
   AOI21X1 _07973_ (
-    .A( execution_unit_0.register_file_0.r4_9_ ),
+    .A(execution_unit_0.register_file_0.r4_9_ ),
     .B(_02571_),
     .C(_02701_),
     .Y(_02702_)
   );
   AOI22X1 _07974_ (
-    .A( execution_unit_0.register_file_0.r13_9_ ),
+    .A(execution_unit_0.register_file_0.r13_9_ ),
     .B(_02568_),
     .C(_02581_),
-    .D( execution_unit_0.register_file_0.r8_9_ ),
+    .D(execution_unit_0.register_file_0.r8_9_ ),
     .Y(_02703_)
   );
   NAND3X1 _07975_ (
@@ -19917,10 +19917,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02704_)
   );
   AOI22X1 _07976_ (
-    .A( execution_unit_0.register_file_0.r9_9_ ),
+    .A(execution_unit_0.register_file_0.r9_9_ ),
     .B(_02588_),
     .C(_02591_),
-    .D( execution_unit_0.register_file_0.r11_9_ ),
+    .D(execution_unit_0.register_file_0.r11_9_ ),
     .Y(_02705_)
   );
   NAND3X1 _07977_ (
@@ -19937,33 +19937,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _07979_ (
     .A(_02702_),
     .B(_02707_),
-    .Y( execution_unit_0.reg_src_9_ )
+    .Y(execution_unit_0.reg_src_9_ )
   );
   INVX1 _07980_ (
-    .A( execution_unit_0.reg_src_9_ ),
+    .A(execution_unit_0.reg_src_9_ ),
     .Y(_02708_)
   );
   NAND2X1 _07981_ (
     .A(_02544_),
-    .B( execution_unit_0.alu_0.alu_out_10_ ),
+    .B(execution_unit_0.alu_0.alu_out_10_ ),
     .Y(_02709_)
   );
   INVX1 _07982_ (
     .A(_02709_),
-    .Y( execution_unit_0.pc_sw_10_ )
+    .Y(execution_unit_0.pc_sw_10_ )
   );
   AOI22X1 _07983_ (
-    .A( execution_unit_0.register_file_0.r15_10_ ),
+    .A(execution_unit_0.register_file_0.r15_10_ ),
     .B(_02569_),
     .C(_02581_),
-    .D( execution_unit_0.register_file_0.r8_10_ ),
+    .D(execution_unit_0.register_file_0.r8_10_ ),
     .Y(_02710_)
   );
   AOI22X1 _07984_ (
-    .A( dbg_0.UNUSED_pc_10_ ),
+    .A(dbg_0.UNUSED_pc_10_ ),
     .B(_02572_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_10_ ),
+    .D(execution_unit_0.register_file_0.r12_10_ ),
     .Y(_02711_)
   );
   NAND2X1 _07985_ (
@@ -19972,17 +19972,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02712_)
   );
   AOI22X1 _07986_ (
-    .A( execution_unit_0.register_file_0.r1_10_ ),
+    .A(execution_unit_0.register_file_0.r1_10_ ),
     .B(_02566_),
     .C(_02591_),
-    .D( execution_unit_0.register_file_0.r11_10_ ),
+    .D(execution_unit_0.register_file_0.r11_10_ ),
     .Y(_02713_)
   );
   AOI22X1 _07987_ (
-    .A( execution_unit_0.register_file_0.r13_10_ ),
+    .A(execution_unit_0.register_file_0.r13_10_ ),
     .B(_02568_),
     .C(_02580_),
-    .D( execution_unit_0.register_file_0.r14_10_ ),
+    .D(execution_unit_0.register_file_0.r14_10_ ),
     .Y(_02714_)
   );
   NAND2X1 _07988_ (
@@ -19996,15 +19996,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02716_)
   );
   NAND2X1 _07990_ (
-    .A( execution_unit_0.register_file_0.r5_10_ ),
+    .A(execution_unit_0.register_file_0.r5_10_ ),
     .B(_02589_),
     .Y(_02717_)
   );
   AOI22X1 _07991_ (
-    .A( execution_unit_0.register_file_0.r3_10_ ),
+    .A(execution_unit_0.register_file_0.r3_10_ ),
     .B(_02574_),
     .C(_02583_),
-    .D( execution_unit_0.register_file_0.r10_10_ ),
+    .D(execution_unit_0.register_file_0.r10_10_ ),
     .Y(_02718_)
   );
   NAND2X1 _07992_ (
@@ -20013,17 +20013,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02719_)
   );
   AOI22X1 _07993_ (
-    .A( execution_unit_0.register_file_0.r4_10_ ),
+    .A(execution_unit_0.register_file_0.r4_10_ ),
     .B(_02571_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_10_ ),
+    .D(execution_unit_0.register_file_0.r7_10_ ),
     .Y(_02720_)
   );
   AOI22X1 _07994_ (
-    .A( execution_unit_0.register_file_0.r6_10_ ),
+    .A(execution_unit_0.register_file_0.r6_10_ ),
     .B(_02575_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_10_ ),
+    .D(execution_unit_0.register_file_0.r9_10_ ),
     .Y(_02721_)
   );
   NAND2X1 _07995_ (
@@ -20039,45 +20039,45 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _07997_ (
     .A(_02716_),
     .B(_02723_),
-    .Y( execution_unit_0.reg_src_10_ )
+    .Y(execution_unit_0.reg_src_10_ )
   );
   INVX1 _07998_ (
-    .A( execution_unit_0.reg_src_10_ ),
+    .A(execution_unit_0.reg_src_10_ ),
     .Y(_02724_)
   );
   AND2X1 _07999_ (
     .A(_02544_),
-    .B( execution_unit_0.alu_0.alu_out_11_ ),
-    .Y( execution_unit_0.pc_sw_11_ )
+    .B(execution_unit_0.alu_0.alu_out_11_ ),
+    .Y(execution_unit_0.pc_sw_11_ )
   );
   INVX1 _08000_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .Y(_02725_)
   );
   NAND2X1 _08001_ (
-    .A( execution_unit_0.register_file_0.r1_11_ ),
+    .A(execution_unit_0.register_file_0.r1_11_ ),
     .B(_02566_),
     .Y(_02726_)
   );
   AOI22X1 _08002_ (
-    .A( execution_unit_0.register_file_0.r13_11_ ),
+    .A(execution_unit_0.register_file_0.r13_11_ ),
     .B(_02568_),
     .C(_02581_),
-    .D( execution_unit_0.register_file_0.r8_11_ ),
+    .D(execution_unit_0.register_file_0.r8_11_ ),
     .Y(_02727_)
   );
   AOI22X1 _08003_ (
-    .A( execution_unit_0.register_file_0.r7_11_ ),
+    .A(execution_unit_0.register_file_0.r7_11_ ),
     .B(_02585_),
     .C(_02589_),
-    .D( execution_unit_0.register_file_0.r5_11_ ),
+    .D(execution_unit_0.register_file_0.r5_11_ ),
     .Y(_02728_)
   );
   AOI22X1 _08004_ (
-    .A( execution_unit_0.register_file_0.r4_11_ ),
+    .A(execution_unit_0.register_file_0.r4_11_ ),
     .B(_02571_),
     .C(_02572_),
-    .D( dbg_0.UNUSED_pc_11_ ),
+    .D(dbg_0.UNUSED_pc_11_ ),
     .Y(_02729_)
   );
   NAND2X1 _08005_ (
@@ -20086,7 +20086,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02730_)
   );
   AOI21X1 _08006_ (
-    .A( execution_unit_0.register_file_0.r6_11_ ),
+    .A(execution_unit_0.register_file_0.r6_11_ ),
     .B(_02575_),
     .C(_02730_),
     .Y(_02731_)
@@ -20097,24 +20097,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02732_)
   );
   AOI22X1 _08008_ (
-    .A( execution_unit_0.register_file_0.r15_11_ ),
+    .A(execution_unit_0.register_file_0.r15_11_ ),
     .B(_02569_),
     .C(_02583_),
-    .D( execution_unit_0.register_file_0.r10_11_ ),
+    .D(execution_unit_0.register_file_0.r10_11_ ),
     .Y(_02733_)
   );
   AOI22X1 _08009_ (
-    .A( execution_unit_0.register_file_0.r14_11_ ),
+    .A(execution_unit_0.register_file_0.r14_11_ ),
     .B(_02580_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_11_ ),
+    .D(execution_unit_0.register_file_0.r12_11_ ),
     .Y(_02734_)
   );
   AOI22X1 _08010_ (
-    .A( execution_unit_0.register_file_0.r3_11_ ),
+    .A(execution_unit_0.register_file_0.r3_11_ ),
     .B(_02574_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_11_ ),
+    .D(execution_unit_0.register_file_0.r9_11_ ),
     .Y(_02735_)
   );
   NAND3X1 _08011_ (
@@ -20124,7 +20124,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02736_)
   );
   AOI21X1 _08012_ (
-    .A( execution_unit_0.register_file_0.r11_11_ ),
+    .A(execution_unit_0.register_file_0.r11_11_ ),
     .B(_02591_),
     .C(_02736_),
     .Y(_02737_)
@@ -20133,33 +20133,33 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02731_),
     .B(_02732_),
     .C(_02737_),
-    .Y( execution_unit_0.reg_src_11_ )
+    .Y(execution_unit_0.reg_src_11_ )
   );
   INVX1 _08014_ (
-    .A( execution_unit_0.reg_src_11_ ),
+    .A(execution_unit_0.reg_src_11_ ),
     .Y(_02738_)
   );
   NAND2X1 _08015_ (
     .A(_02544_),
-    .B( execution_unit_0.alu_0.alu_out_12_ ),
+    .B(execution_unit_0.alu_0.alu_out_12_ ),
     .Y(_02739_)
   );
   INVX1 _08016_ (
     .A(_02739_),
-    .Y( execution_unit_0.pc_sw_12_ )
+    .Y(execution_unit_0.pc_sw_12_ )
   );
   AOI22X1 _08017_ (
-    .A( execution_unit_0.register_file_0.r1_12_ ),
+    .A(execution_unit_0.register_file_0.r1_12_ ),
     .B(_02566_),
     .C(_02580_),
-    .D( execution_unit_0.register_file_0.r14_12_ ),
+    .D(execution_unit_0.register_file_0.r14_12_ ),
     .Y(_02740_)
   );
   AOI22X1 _08018_ (
-    .A( execution_unit_0.register_file_0.r3_12_ ),
+    .A(execution_unit_0.register_file_0.r3_12_ ),
     .B(_02574_),
     .C(_02583_),
-    .D( execution_unit_0.register_file_0.r10_12_ ),
+    .D(execution_unit_0.register_file_0.r10_12_ ),
     .Y(_02741_)
   );
   AND2X1 _08019_ (
@@ -20168,17 +20168,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02742_)
   );
   AOI22X1 _08020_ (
-    .A( execution_unit_0.register_file_0.r11_12_ ),
+    .A(execution_unit_0.register_file_0.r11_12_ ),
     .B(_02591_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_12_ ),
+    .D(execution_unit_0.register_file_0.r12_12_ ),
     .Y(_02743_)
   );
   AOI22X1 _08021_ (
-    .A( execution_unit_0.register_file_0.r7_12_ ),
+    .A(execution_unit_0.register_file_0.r7_12_ ),
     .B(_02585_),
     .C(_02589_),
-    .D( execution_unit_0.register_file_0.r5_12_ ),
+    .D(execution_unit_0.register_file_0.r5_12_ ),
     .Y(_02744_)
   );
   NAND3X1 _08022_ (
@@ -20188,10 +20188,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02745_)
   );
   AOI22X1 _08023_ (
-    .A( execution_unit_0.register_file_0.r8_12_ ),
+    .A(execution_unit_0.register_file_0.r8_12_ ),
     .B(_02581_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_12_ ),
+    .D(execution_unit_0.register_file_0.r9_12_ ),
     .Y(_02746_)
   );
   INVX1 _08024_ (
@@ -20199,23 +20199,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02747_)
   );
   AOI21X1 _08025_ (
-    .A( execution_unit_0.register_file_0.r4_12_ ),
+    .A(execution_unit_0.register_file_0.r4_12_ ),
     .B(_02571_),
     .C(_02747_),
     .Y(_02748_)
   );
   AOI22X1 _08026_ (
-    .A( dbg_0.UNUSED_pc_12_ ),
+    .A(dbg_0.UNUSED_pc_12_ ),
     .B(_02572_),
     .C(_02575_),
-    .D( execution_unit_0.register_file_0.r6_12_ ),
+    .D(execution_unit_0.register_file_0.r6_12_ ),
     .Y(_02749_)
   );
   AOI22X1 _08027_ (
-    .A( execution_unit_0.register_file_0.r13_12_ ),
+    .A(execution_unit_0.register_file_0.r13_12_ ),
     .B(_02568_),
     .C(_02569_),
-    .D( execution_unit_0.register_file_0.r15_12_ ),
+    .D(execution_unit_0.register_file_0.r15_12_ ),
     .Y(_02750_)
   );
   NAND3X1 _08028_ (
@@ -20227,31 +20227,31 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OR2X1 _08029_ (
     .A(_02745_),
     .B(_02751_),
-    .Y( execution_unit_0.reg_src_12_ )
+    .Y(execution_unit_0.reg_src_12_ )
   );
   INVX1 _08030_ (
-    .A( execution_unit_0.reg_src_12_ ),
+    .A(execution_unit_0.reg_src_12_ ),
     .Y(_02752_)
   );
   NAND2X1 _08031_ (
     .A(_02544_),
-    .B( execution_unit_0.alu_0.alu_out_13_ ),
+    .B(execution_unit_0.alu_0.alu_out_13_ ),
     .Y(_02753_)
   );
   INVX1 _08032_ (
     .A(_02753_),
-    .Y( execution_unit_0.pc_sw_13_ )
+    .Y(execution_unit_0.pc_sw_13_ )
   );
   NAND2X1 _08033_ (
-    .A( execution_unit_0.register_file_0.r4_13_ ),
+    .A(execution_unit_0.register_file_0.r4_13_ ),
     .B(_02571_),
     .Y(_02754_)
   );
   AOI22X1 _08034_ (
-    .A( execution_unit_0.register_file_0.r1_13_ ),
+    .A(execution_unit_0.register_file_0.r1_13_ ),
     .B(_02566_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_13_ ),
+    .D(execution_unit_0.register_file_0.r9_13_ ),
     .Y(_02755_)
   );
   NAND2X1 _08035_ (
@@ -20260,23 +20260,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02756_)
   );
   AOI21X1 _08036_ (
-    .A( execution_unit_0.register_file_0.r5_13_ ),
+    .A(execution_unit_0.register_file_0.r5_13_ ),
     .B(_02589_),
     .C(_02756_),
     .Y(_02757_)
   );
   AOI22X1 _08037_ (
-    .A( dbg_0.UNUSED_pc_13_ ),
+    .A(dbg_0.UNUSED_pc_13_ ),
     .B(_02572_),
     .C(_02574_),
-    .D( execution_unit_0.register_file_0.r3_13_ ),
+    .D(execution_unit_0.register_file_0.r3_13_ ),
     .Y(_02758_)
   );
   AOI22X1 _08038_ (
-    .A( execution_unit_0.register_file_0.r8_13_ ),
+    .A(execution_unit_0.register_file_0.r8_13_ ),
     .B(_02581_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_13_ ),
+    .D(execution_unit_0.register_file_0.r7_13_ ),
     .Y(_02759_)
   );
   AND2X1 _08039_ (
@@ -20285,24 +20285,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02760_)
   );
   AOI22X1 _08040_ (
-    .A( execution_unit_0.register_file_0.r15_13_ ),
+    .A(execution_unit_0.register_file_0.r15_13_ ),
     .B(_02569_),
     .C(_02575_),
-    .D( execution_unit_0.register_file_0.r6_13_ ),
+    .D(execution_unit_0.register_file_0.r6_13_ ),
     .Y(_02761_)
   );
   AOI22X1 _08041_ (
-    .A( execution_unit_0.register_file_0.r13_13_ ),
+    .A(execution_unit_0.register_file_0.r13_13_ ),
     .B(_02568_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_13_ ),
+    .D(execution_unit_0.register_file_0.r12_13_ ),
     .Y(_02762_)
   );
   AOI22X1 _08042_ (
-    .A( execution_unit_0.register_file_0.r14_13_ ),
+    .A(execution_unit_0.register_file_0.r14_13_ ),
     .B(_02580_),
     .C(_02583_),
-    .D( execution_unit_0.register_file_0.r10_13_ ),
+    .D(execution_unit_0.register_file_0.r10_13_ ),
     .Y(_02763_)
   );
   NAND3X1 _08043_ (
@@ -20312,7 +20312,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02764_)
   );
   AOI21X1 _08044_ (
-    .A( execution_unit_0.register_file_0.r11_13_ ),
+    .A(execution_unit_0.register_file_0.r11_13_ ),
     .B(_02591_),
     .C(_02764_),
     .Y(_02765_)
@@ -20321,45 +20321,45 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02757_),
     .B(_02760_),
     .C(_02765_),
-    .Y( execution_unit_0.reg_src_13_ )
+    .Y(execution_unit_0.reg_src_13_ )
   );
   INVX1 _08046_ (
-    .A( execution_unit_0.reg_src_13_ ),
+    .A(execution_unit_0.reg_src_13_ ),
     .Y(_02766_)
   );
   AND2X1 _08047_ (
     .A(_02544_),
-    .B( execution_unit_0.alu_0.alu_out_14_ ),
-    .Y( execution_unit_0.pc_sw_14_ )
+    .B(execution_unit_0.alu_0.alu_out_14_ ),
+    .Y(execution_unit_0.pc_sw_14_ )
   );
   INVX1 _08048_ (
-    .A( execution_unit_0.pc_sw_14_ ),
+    .A(execution_unit_0.pc_sw_14_ ),
     .Y(_02767_)
   );
   NAND2X1 _08049_ (
-    .A( execution_unit_0.register_file_0.r9_14_ ),
+    .A(execution_unit_0.register_file_0.r9_14_ ),
     .B(_02588_),
     .Y(_02768_)
   );
   AOI22X1 _08050_ (
-    .A( execution_unit_0.register_file_0.r13_14_ ),
+    .A(execution_unit_0.register_file_0.r13_14_ ),
     .B(_02568_),
     .C(_02575_),
-    .D( execution_unit_0.register_file_0.r6_14_ ),
+    .D(execution_unit_0.register_file_0.r6_14_ ),
     .Y(_02769_)
   );
   AOI22X1 _08051_ (
-    .A( execution_unit_0.register_file_0.r3_14_ ),
+    .A(execution_unit_0.register_file_0.r3_14_ ),
     .B(_02574_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_14_ ),
+    .D(execution_unit_0.register_file_0.r7_14_ ),
     .Y(_02770_)
   );
   AOI22X1 _08052_ (
-    .A( execution_unit_0.register_file_0.r14_14_ ),
+    .A(execution_unit_0.register_file_0.r14_14_ ),
     .B(_02580_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_14_ ),
+    .D(execution_unit_0.register_file_0.r12_14_ ),
     .Y(_02771_)
   );
   NAND2X1 _08053_ (
@@ -20368,7 +20368,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02772_)
   );
   AOI21X1 _08054_ (
-    .A( execution_unit_0.register_file_0.r10_14_ ),
+    .A(execution_unit_0.register_file_0.r10_14_ ),
     .B(_02583_),
     .C(_02772_),
     .Y(_02773_)
@@ -20379,30 +20379,30 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02774_)
   );
   AOI21X1 _08056_ (
-    .A( execution_unit_0.register_file_0.r11_14_ ),
+    .A(execution_unit_0.register_file_0.r11_14_ ),
     .B(_02591_),
     .C(_02774_),
     .Y(_02775_)
   );
   AOI22X1 _08057_ (
-    .A( execution_unit_0.register_file_0.r1_14_ ),
+    .A(execution_unit_0.register_file_0.r1_14_ ),
     .B(_02566_),
     .C(_02569_),
-    .D( execution_unit_0.register_file_0.r15_14_ ),
+    .D(execution_unit_0.register_file_0.r15_14_ ),
     .Y(_02776_)
   );
   AOI22X1 _08058_ (
-    .A( execution_unit_0.register_file_0.r8_14_ ),
+    .A(execution_unit_0.register_file_0.r8_14_ ),
     .B(_02581_),
     .C(_02589_),
-    .D( execution_unit_0.register_file_0.r5_14_ ),
+    .D(execution_unit_0.register_file_0.r5_14_ ),
     .Y(_02777_)
   );
   AOI22X1 _08059_ (
-    .A( execution_unit_0.register_file_0.r4_14_ ),
+    .A(execution_unit_0.register_file_0.r4_14_ ),
     .B(_02571_),
     .C(_02572_),
-    .D( dbg_0.UNUSED_pc_14_ ),
+    .D(dbg_0.UNUSED_pc_14_ ),
     .Y(_02778_)
   );
   NAND3X1 _08060_ (
@@ -20419,40 +20419,40 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02775_),
     .B(_02776_),
     .C(_02780_),
-    .Y( execution_unit_0.reg_src_14_ )
+    .Y(execution_unit_0.reg_src_14_ )
   );
   INVX1 _08063_ (
-    .A( execution_unit_0.reg_src_14_ ),
+    .A(execution_unit_0.reg_src_14_ ),
     .Y(_02781_)
   );
   AND2X1 _08064_ (
     .A(_02544_),
-    .B( execution_unit_0.alu_0.alu_out_15_ ),
-    .Y( execution_unit_0.pc_sw_15_ )
+    .B(execution_unit_0.alu_0.alu_out_15_ ),
+    .Y(execution_unit_0.pc_sw_15_ )
   );
   INVX1 _08065_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .Y(_02782_)
   );
   AOI22X1 _08066_ (
-    .A( execution_unit_0.register_file_0.r14_15_ ),
+    .A(execution_unit_0.register_file_0.r14_15_ ),
     .B(_02580_),
     .C(_02583_),
-    .D( execution_unit_0.register_file_0.r10_15_ ),
+    .D(execution_unit_0.register_file_0.r10_15_ ),
     .Y(_02783_)
   );
   AOI22X1 _08067_ (
-    .A( execution_unit_0.register_file_0.r15_15_ ),
+    .A(execution_unit_0.register_file_0.r15_15_ ),
     .B(_02569_),
     .C(_02591_),
-    .D( execution_unit_0.register_file_0.r11_15_ ),
+    .D(execution_unit_0.register_file_0.r11_15_ ),
     .Y(_02784_)
   );
   AOI22X1 _08068_ (
-    .A( execution_unit_0.register_file_0.r7_15_ ),
+    .A(execution_unit_0.register_file_0.r7_15_ ),
     .B(_02585_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_15_ ),
+    .D(execution_unit_0.register_file_0.r12_15_ ),
     .Y(_02785_)
   );
   OAI21X1 _08069_ (
@@ -20462,7 +20462,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02786_)
   );
   AOI21X1 _08070_ (
-    .A( execution_unit_0.register_file_0.r9_15_ ),
+    .A(execution_unit_0.register_file_0.r9_15_ ),
     .B(_02588_),
     .C(_02786_),
     .Y(_02787_)
@@ -20473,24 +20473,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02788_)
   );
   AOI22X1 _08072_ (
-    .A( execution_unit_0.register_file_0.r13_15_ ),
+    .A(execution_unit_0.register_file_0.r13_15_ ),
     .B(_02568_),
     .C(_02574_),
-    .D( execution_unit_0.register_file_0.r3_15_ ),
+    .D(execution_unit_0.register_file_0.r3_15_ ),
     .Y(_02789_)
   );
   AOI22X1 _08073_ (
-    .A( dbg_0.UNUSED_pc_15_ ),
+    .A(dbg_0.UNUSED_pc_15_ ),
     .B(_02572_),
     .C(_02589_),
-    .D( execution_unit_0.register_file_0.r5_15_ ),
+    .D(execution_unit_0.register_file_0.r5_15_ ),
     .Y(_02790_)
   );
   AOI22X1 _08074_ (
-    .A( execution_unit_0.register_file_0.r4_15_ ),
+    .A(execution_unit_0.register_file_0.r4_15_ ),
     .B(_02571_),
     .C(_02581_),
-    .D( execution_unit_0.register_file_0.r8_15_ ),
+    .D(execution_unit_0.register_file_0.r8_15_ ),
     .Y(_02791_)
   );
   NAND3X1 _08075_ (
@@ -20500,7 +20500,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02792_)
   );
   AOI21X1 _08076_ (
-    .A( execution_unit_0.register_file_0.r1_15_ ),
+    .A(execution_unit_0.register_file_0.r1_15_ ),
     .B(_02566_),
     .C(_02792_),
     .Y(_02793_)
@@ -20509,77 +20509,77 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02787_),
     .B(_02788_),
     .C(_02793_),
-    .Y( execution_unit_0.reg_src_15_ )
+    .Y(execution_unit_0.reg_src_15_ )
   );
   INVX1 _08078_ (
-    .A( execution_unit_0.reg_src_15_ ),
+    .A(execution_unit_0.reg_src_15_ ),
     .Y(_02794_)
   );
   AOI21X1 _08079_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_2_ ),
-    .C( execution_unit_0.reg_sr_wr ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_2_ ),
+    .C(execution_unit_0.reg_sr_wr ),
     .Y(_02795_)
   );
   OAI21X1 _08080_ (
     .A(_02559_),
     .B(_02795_),
     .C(_02558_),
-    .Y( clock_module_0.UNUSED_cpuoff )
+    .Y(clock_module_0.UNUSED_cpuoff )
   );
   MUX2X1 _08081_ (
-    .A( execution_unit_0.register_file_0.r2_4_ ),
-    .B( execution_unit_0.alu_0.alu_out_4_ ),
+    .A(execution_unit_0.register_file_0.r2_4_ ),
+    .B(execution_unit_0.alu_0.alu_out_4_ ),
     .S(_02795_),
     .Y(_02796_)
   );
   NOR2X1 _08082_ (
-    .A( execution_unit_0.reg_sr_clr ),
+    .A(execution_unit_0.reg_sr_clr ),
     .B(_02796_),
     .Y(_01755_)
   );
   AOI21X1 _08083_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_0_ ),
-    .C( execution_unit_0.reg_pc_call ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_0_ ),
+    .C(execution_unit_0.reg_pc_call ),
     .Y(_02797_)
   );
   INVX1 _08084_ (
     .A(_02797_),
-    .Y( execution_unit_0.pc_sw_wr )
+    .Y(execution_unit_0.pc_sw_wr )
   );
   NAND2X1 _08085_ (
-    .A( execution_unit_0.register_file_0.r5_0_ ),
+    .A(execution_unit_0.register_file_0.r5_0_ ),
     .B(_02589_),
     .Y(_02798_)
   );
   AND2X1 _08086_ (
-    .A( execution_unit_0.register_file_0.r8_0_ ),
+    .A(execution_unit_0.register_file_0.r8_0_ ),
     .B(_02581_),
     .Y(_02799_)
   );
   NAND3X1 _08087_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_4_ ),
-    .C( execution_unit_0.register_file_0.r4_0_ ),
+    .B(execution_unit_0.inst_src_4_ ),
+    .C(execution_unit_0.register_file_0.r4_0_ ),
     .Y(_02800_)
   );
   NAND3X1 _08088_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_15_ ),
-    .C( execution_unit_0.register_file_0.r15_0_ ),
+    .B(execution_unit_0.inst_src_15_ ),
+    .C(execution_unit_0.register_file_0.r15_0_ ),
     .Y(_02801_)
   );
   OAI21X1 _08089_ (
-    .A( execution_unit_0.reg_sr_clr ),
-    .B( execution_unit_0.inst_src_2_ ),
-    .C( execution_unit_0.alu_0.status_0_ ),
+    .A(execution_unit_0.reg_sr_clr ),
+    .B(execution_unit_0.inst_src_2_ ),
+    .C(execution_unit_0.alu_0.status_0_ ),
     .Y(_02802_)
   );
   NAND3X1 _08090_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_0_ ),
-    .C( dbg_0.UNUSED_pc_0_ ),
+    .B(execution_unit_0.inst_src_0_ ),
+    .C(dbg_0.UNUSED_pc_0_ ),
     .Y(_02803_)
   );
   AND2X1 _08091_ (
@@ -20588,23 +20588,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02804_)
   );
   AOI22X1 _08092_ (
-    .A( execution_unit_0.register_file_0.r13_0_ ),
+    .A(execution_unit_0.register_file_0.r13_0_ ),
     .B(_02568_),
     .C(_02583_),
-    .D( execution_unit_0.register_file_0.r10_0_ ),
+    .D(execution_unit_0.register_file_0.r10_0_ ),
     .Y(_02805_)
   );
   NAND3X1 _08093_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_14_ ),
-    .C( execution_unit_0.register_file_0.r14_0_ ),
+    .B(execution_unit_0.inst_src_14_ ),
+    .C(execution_unit_0.register_file_0.r14_0_ ),
     .Y(_02806_)
   );
   AOI22X1 _08094_ (
-    .A( execution_unit_0.register_file_0.r3_0_ ),
+    .A(execution_unit_0.register_file_0.r3_0_ ),
     .B(_02574_),
     .C(_02575_),
-    .D( execution_unit_0.register_file_0.r6_0_ ),
+    .D(execution_unit_0.register_file_0.r6_0_ ),
     .Y(_02807_)
   );
   NAND3X1 _08095_ (
@@ -20625,17 +20625,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02810_)
   );
   AOI22X1 _08098_ (
-    .A( execution_unit_0.register_file_0.r11_0_ ),
+    .A(execution_unit_0.register_file_0.r11_0_ ),
     .B(_02591_),
     .C(_02593_),
-    .D( execution_unit_0.register_file_0.r12_0_ ),
+    .D(execution_unit_0.register_file_0.r12_0_ ),
     .Y(_02811_)
   );
   AOI22X1 _08099_ (
-    .A( execution_unit_0.register_file_0.r7_0_ ),
+    .A(execution_unit_0.register_file_0.r7_0_ ),
     .B(_02585_),
     .C(_02588_),
-    .D( execution_unit_0.register_file_0.r9_0_ ),
+    .D(execution_unit_0.register_file_0.r9_0_ ),
     .Y(_02812_)
   );
   NAND3X1 _08100_ (
@@ -20652,18 +20652,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _08102_ (
     .A(_02814_),
-    .Y( execution_unit_0.reg_src_0_ )
+    .Y(execution_unit_0.reg_src_0_ )
   );
   NAND3X1 _08103_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_14_ ),
-    .C( execution_unit_0.register_file_0.r14_1_ ),
+    .B(execution_unit_0.inst_src_14_ ),
+    .C(execution_unit_0.register_file_0.r14_1_ ),
     .Y(_02815_)
   );
   NAND3X1 _08104_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_0_ ),
-    .C( dbg_0.UNUSED_pc_1_ ),
+    .B(execution_unit_0.inst_src_0_ ),
+    .C(dbg_0.UNUSED_pc_1_ ),
     .Y(_02816_)
   );
   NAND2X1 _08105_ (
@@ -20673,14 +20673,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _08106_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_9_ ),
-    .C( execution_unit_0.register_file_0.r9_1_ ),
+    .B(execution_unit_0.inst_src_9_ ),
+    .C(execution_unit_0.register_file_0.r9_1_ ),
     .Y(_02818_)
   );
   OAI21X1 _08107_ (
-    .A( execution_unit_0.reg_sr_clr ),
-    .B( execution_unit_0.inst_src_2_ ),
-    .C( execution_unit_0.alu_0.status_1_ ),
+    .A(execution_unit_0.reg_sr_clr ),
+    .B(execution_unit_0.inst_src_2_ ),
+    .C(execution_unit_0.alu_0.status_1_ ),
     .Y(_02819_)
   );
   NAND2X1 _08108_ (
@@ -20695,8 +20695,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _08110_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_15_ ),
-    .C( execution_unit_0.register_file_0.r15_1_ ),
+    .B(execution_unit_0.inst_src_15_ ),
+    .C(execution_unit_0.register_file_0.r15_1_ ),
     .Y(_02822_)
   );
   OAI21X1 _08111_ (
@@ -20707,14 +20707,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _08112_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_12_ ),
-    .C( execution_unit_0.register_file_0.r12_1_ ),
+    .B(execution_unit_0.inst_src_12_ ),
+    .C(execution_unit_0.register_file_0.r12_1_ ),
     .Y(_02824_)
   );
   NAND3X1 _08113_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_1_ ),
-    .C( execution_unit_0.register_file_0.r1_1_ ),
+    .B(execution_unit_0.inst_src_1_ ),
+    .C(execution_unit_0.register_file_0.r1_1_ ),
     .Y(_02825_)
   );
   NAND2X1 _08114_ (
@@ -20734,28 +20734,28 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _08117_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_10_ ),
-    .C( execution_unit_0.register_file_0.r10_1_ ),
+    .B(execution_unit_0.inst_src_10_ ),
+    .C(execution_unit_0.register_file_0.r10_1_ ),
     .Y(_02829_)
   );
   AOI22X1 _08118_ (
-    .A( execution_unit_0.register_file_0.r10_1_ ),
+    .A(execution_unit_0.register_file_0.r10_1_ ),
     .B(_02583_),
     .C(_02591_),
-    .D( execution_unit_0.register_file_0.r11_1_ ),
+    .D(execution_unit_0.register_file_0.r11_1_ ),
     .Y(_02830_)
   );
   NAND3X1 _08119_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_3_ ),
-    .C( execution_unit_0.register_file_0.r3_1_ ),
+    .B(execution_unit_0.inst_src_3_ ),
+    .C(execution_unit_0.register_file_0.r3_1_ ),
     .Y(_02831_)
   );
   AOI22X1 _08120_ (
-    .A( execution_unit_0.register_file_0.r3_1_ ),
+    .A(execution_unit_0.register_file_0.r3_1_ ),
     .B(_02574_),
     .C(_02585_),
-    .D( execution_unit_0.register_file_0.r7_1_ ),
+    .D(execution_unit_0.register_file_0.r7_1_ ),
     .Y(_02832_)
   );
   AND2X1 _08121_ (
@@ -20765,14 +20765,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _08122_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_8_ ),
-    .C( execution_unit_0.register_file_0.r8_1_ ),
+    .B(execution_unit_0.inst_src_8_ ),
+    .C(execution_unit_0.register_file_0.r8_1_ ),
     .Y(_02834_)
   );
   NAND3X1 _08123_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_5_ ),
-    .C( execution_unit_0.register_file_0.r5_1_ ),
+    .B(execution_unit_0.inst_src_5_ ),
+    .C(execution_unit_0.register_file_0.r5_1_ ),
     .Y(_02835_)
   );
   NAND2X1 _08124_ (
@@ -20782,14 +20782,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _08125_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_13_ ),
-    .C( execution_unit_0.register_file_0.r13_1_ ),
+    .B(execution_unit_0.inst_src_13_ ),
+    .C(execution_unit_0.register_file_0.r13_1_ ),
     .Y(_02837_)
   );
   NAND3X1 _08126_ (
     .A(_02540_),
-    .B( execution_unit_0.inst_src_4_ ),
-    .C( execution_unit_0.register_file_0.r4_1_ ),
+    .B(execution_unit_0.inst_src_4_ ),
+    .C(execution_unit_0.register_file_0.r4_1_ ),
     .Y(_02838_)
   );
   NAND2X1 _08127_ (
@@ -20831,7 +20831,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02845_)
   );
   AOI21X1 _08134_ (
-    .A( execution_unit_0.register_file_0.r11_1_ ),
+    .A(execution_unit_0.register_file_0.r11_1_ ),
     .B(_02591_),
     .C(_02845_),
     .Y(_02846_)
@@ -20857,32 +20857,32 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02844_),
     .B(_02846_),
     .C(_02849_),
-    .Y( execution_unit_0.reg_src_1_ )
+    .Y(execution_unit_0.reg_src_1_ )
   );
   AOI22X1 _08139_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_0_ ),
-    .C( execution_unit_0.register_file_0.r14_0_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_0_ ),
+    .C(execution_unit_0.register_file_0.r14_0_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02850_)
   );
   NAND2X1 _08140_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_0_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_0_ ),
     .Y(_02851_)
   );
   AOI22X1 _08141_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_0_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_0_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_0_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_0_ ),
     .Y(_02852_)
   );
   AOI22X1 _08142_ (
-    .A( execution_unit_0.inst_dest_2_ ),
-    .B( execution_unit_0.alu_0.status_0_ ),
-    .C( execution_unit_0.register_file_0.r15_0_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_2_ ),
+    .B(execution_unit_0.alu_0.status_0_ ),
+    .C(execution_unit_0.register_file_0.r15_0_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02853_)
   );
   AND2X1 _08143_ (
@@ -20891,17 +20891,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02854_)
   );
   AOI22X1 _08144_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_0_ ),
-    .C( execution_unit_0.register_file_0.r13_0_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_0_ ),
+    .C(execution_unit_0.register_file_0.r13_0_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02855_)
   );
   AOI22X1 _08145_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_0_ ),
-    .C( execution_unit_0.register_file_0.r11_0_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_0_ ),
+    .C(execution_unit_0.register_file_0.r11_0_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02856_)
   );
   NAND3X1 _08146_ (
@@ -20911,16 +20911,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02857_)
   );
   AOI21X1 _08147_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_0_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_0_ ),
     .C(_02857_),
     .Y(_02858_)
   );
   AOI22X1 _08148_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_0_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_0_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_0_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_0_ ),
     .Y(_02859_)
   );
   NAND2X1 _08149_ (
@@ -20929,8 +20929,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02860_)
   );
   AOI21X1 _08150_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_0_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_0_ ),
     .C(_02860_),
     .Y(_02861_)
   );
@@ -20938,20 +20938,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02854_),
     .B(_02858_),
     .C(_02861_),
-    .Y( dbg_0.dbg_reg_din_0_ )
+    .Y(dbg_0.dbg_reg_din_0_ )
   );
   AOI22X1 _08152_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_1_ ),
-    .C( execution_unit_0.register_file_0.r4_1_ ),
-    .D( execution_unit_0.inst_dest_4_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_1_ ),
+    .C(execution_unit_0.register_file_0.r4_1_ ),
+    .D(execution_unit_0.inst_dest_4_ ),
     .Y(_02862_)
   );
   AOI22X1 _08153_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_1_ ),
-    .C( execution_unit_0.register_file_0.r10_1_ ),
-    .D( execution_unit_0.inst_dest_10_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_1_ ),
+    .C(execution_unit_0.register_file_0.r10_1_ ),
+    .D(execution_unit_0.inst_dest_10_ ),
     .Y(_02863_)
   );
   NAND2X1 _08154_ (
@@ -20960,17 +20960,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02864_)
   );
   AOI22X1 _08155_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_1_ ),
-    .C( execution_unit_0.register_file_0.r11_1_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_1_ ),
+    .C(execution_unit_0.register_file_0.r11_1_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02865_)
   );
   AOI22X1 _08156_ (
-    .A( execution_unit_0.inst_dest_2_ ),
-    .B( execution_unit_0.alu_0.status_1_ ),
-    .C( execution_unit_0.register_file_0.r14_1_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_2_ ),
+    .B(execution_unit_0.alu_0.status_1_ ),
+    .C(execution_unit_0.register_file_0.r14_1_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02866_)
   );
   NAND2X1 _08157_ (
@@ -20984,17 +20984,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02868_)
   );
   AOI22X1 _08159_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_1_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_1_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_1_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_1_ ),
     .Y(_02869_)
   );
   AOI22X1 _08160_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_1_ ),
-    .C( execution_unit_0.register_file_0.r15_1_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_1_ ),
+    .C(execution_unit_0.register_file_0.r15_1_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02870_)
   );
   NAND2X1 _08161_ (
@@ -21003,17 +21003,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02871_)
   );
   AOI22X1 _08162_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_1_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_1_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_1_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_1_ ),
     .Y(_02872_)
   );
   AOI22X1 _08163_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_1_ ),
-    .C( execution_unit_0.register_file_0.r13_1_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_1_ ),
+    .C(execution_unit_0.register_file_0.r13_1_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02873_)
   );
   NAND2X1 _08164_ (
@@ -21029,20 +21029,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _08166_ (
     .A(_02868_),
     .B(_02875_),
-    .Y( dbg_0.dbg_reg_din_1_ )
+    .Y(dbg_0.dbg_reg_din_1_ )
   );
   AOI22X1 _08167_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_2_ ),
-    .C( execution_unit_0.register_file_0.r8_2_ ),
-    .D( execution_unit_0.inst_dest_8_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_2_ ),
+    .C(execution_unit_0.register_file_0.r8_2_ ),
+    .D(execution_unit_0.inst_dest_8_ ),
     .Y(_02876_)
   );
   AOI22X1 _08168_ (
-    .A( execution_unit_0.inst_dest_2_ ),
-    .B( execution_unit_0.alu_0.status_2_ ),
-    .C( execution_unit_0.register_file_0.r14_2_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_2_ ),
+    .B(execution_unit_0.alu_0.status_2_ ),
+    .C(execution_unit_0.register_file_0.r14_2_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02877_)
   );
   NAND2X1 _08169_ (
@@ -21051,17 +21051,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02878_)
   );
   AOI22X1 _08170_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_2_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_2_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_2_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_2_ ),
     .Y(_02879_)
   );
   AOI22X1 _08171_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_2_ ),
-    .C( execution_unit_0.register_file_0.r12_2_ ),
-    .D( execution_unit_0.inst_dest_12_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_2_ ),
+    .C(execution_unit_0.register_file_0.r12_2_ ),
+    .D(execution_unit_0.inst_dest_12_ ),
     .Y(_02880_)
   );
   NAND2X1 _08172_ (
@@ -21075,17 +21075,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02882_)
   );
   AOI22X1 _08174_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_2_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_2_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_2_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_2_ ),
     .Y(_02883_)
   );
   AOI22X1 _08175_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_2_ ),
-    .C( execution_unit_0.register_file_0.r15_2_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_2_ ),
+    .C(execution_unit_0.register_file_0.r15_2_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02884_)
   );
   NAND2X1 _08176_ (
@@ -21094,17 +21094,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02885_)
   );
   AOI22X1 _08177_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_2_ ),
-    .C( execution_unit_0.register_file_0.r13_2_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_2_ ),
+    .C(execution_unit_0.register_file_0.r13_2_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02886_)
   );
   AOI22X1 _08178_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_2_ ),
-    .C( execution_unit_0.register_file_0.r11_2_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_2_ ),
+    .C(execution_unit_0.register_file_0.r11_2_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02887_)
   );
   NAND2X1 _08179_ (
@@ -21120,20 +21120,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _08181_ (
     .A(_02882_),
     .B(_02889_),
-    .Y( dbg_0.dbg_reg_din_2_ )
+    .Y(dbg_0.dbg_reg_din_2_ )
   );
   AOI22X1 _08182_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_3_ ),
-    .C( execution_unit_0.register_file_0.r7_3_ ),
-    .D( execution_unit_0.inst_dest_7_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_3_ ),
+    .C(execution_unit_0.register_file_0.r7_3_ ),
+    .D(execution_unit_0.inst_dest_7_ ),
     .Y(_02890_)
   );
   AOI22X1 _08183_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_3_ ),
-    .C( execution_unit_0.register_file_0.r9_3_ ),
-    .D( execution_unit_0.inst_dest_9_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_3_ ),
+    .C(execution_unit_0.register_file_0.r9_3_ ),
+    .D(execution_unit_0.inst_dest_9_ ),
     .Y(_02891_)
   );
   NAND2X1 _08184_ (
@@ -21142,17 +21142,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02892_)
   );
   AOI22X1 _08185_ (
-    .A( execution_unit_0.inst_dest_2_ ),
-    .B( execution_unit_0.gie ),
-    .C( execution_unit_0.register_file_0.r3_3_ ),
-    .D( execution_unit_0.inst_dest_3_ ),
+    .A(execution_unit_0.inst_dest_2_ ),
+    .B(execution_unit_0.gie ),
+    .C(execution_unit_0.register_file_0.r3_3_ ),
+    .D(execution_unit_0.inst_dest_3_ ),
     .Y(_02893_)
   );
   AOI22X1 _08186_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_3_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_3_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_3_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_3_ ),
     .Y(_02894_)
   );
   NAND2X1 _08187_ (
@@ -21166,17 +21166,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02896_)
   );
   AOI22X1 _08189_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_3_ ),
-    .C( execution_unit_0.register_file_0.r15_3_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_3_ ),
+    .C(execution_unit_0.register_file_0.r15_3_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02897_)
   );
   AOI22X1 _08190_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_3_ ),
-    .C( execution_unit_0.register_file_0.r13_3_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_3_ ),
+    .C(execution_unit_0.register_file_0.r13_3_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02898_)
   );
   NAND2X1 _08191_ (
@@ -21185,17 +21185,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02899_)
   );
   AOI22X1 _08192_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_3_ ),
-    .C( execution_unit_0.register_file_0.r14_3_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_3_ ),
+    .C(execution_unit_0.register_file_0.r14_3_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02900_)
   );
   AOI22X1 _08193_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_3_ ),
-    .C( execution_unit_0.register_file_0.r11_3_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_3_ ),
+    .C(execution_unit_0.register_file_0.r11_3_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02901_)
   );
   NAND2X1 _08194_ (
@@ -21211,20 +21211,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _08196_ (
     .A(_02896_),
     .B(_02903_),
-    .Y( dbg_0.dbg_reg_din_3_ )
+    .Y(dbg_0.dbg_reg_din_3_ )
   );
   AOI22X1 _08197_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_4_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_4_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_4_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_4_ ),
     .Y(_02904_)
   );
   AOI22X1 _08198_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_4_ ),
-    .C( execution_unit_0.register_file_0.r8_4_ ),
-    .D( execution_unit_0.inst_dest_8_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_4_ ),
+    .C(execution_unit_0.register_file_0.r8_4_ ),
+    .D(execution_unit_0.inst_dest_8_ ),
     .Y(_02905_)
   );
   NAND2X1 _08199_ (
@@ -21233,17 +21233,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01987_)
   );
   AOI22X1 _08200_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_4_ ),
-    .C( execution_unit_0.register_file_0.r12_4_ ),
-    .D( execution_unit_0.inst_dest_12_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_4_ ),
+    .C(execution_unit_0.register_file_0.r12_4_ ),
+    .D(execution_unit_0.inst_dest_12_ ),
     .Y(_01988_)
   );
   AOI22X1 _08201_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_4_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_4_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_4_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_4_ ),
     .Y(_01989_)
   );
   NAND2X1 _08202_ (
@@ -21257,17 +21257,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01991_)
   );
   AOI22X1 _08204_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_4_ ),
-    .C( execution_unit_0.register_file_0.r13_4_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_4_ ),
+    .C(execution_unit_0.register_file_0.r13_4_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_01992_)
   );
   AOI22X1 _08205_ (
-    .A( execution_unit_0.inst_dest_11_ ),
-    .B( execution_unit_0.register_file_0.r11_4_ ),
-    .C( execution_unit_0.register_file_0.r15_4_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_11_ ),
+    .B(execution_unit_0.register_file_0.r11_4_ ),
+    .C(execution_unit_0.register_file_0.r15_4_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_01993_)
   );
   NAND2X1 _08206_ (
@@ -21276,17 +21276,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01994_)
   );
   AOI22X1 _08207_ (
-    .A( execution_unit_0.inst_dest_2_ ),
-    .B( execution_unit_0.register_file_0.r2_4_ ),
-    .C( execution_unit_0.register_file_0.r6_4_ ),
-    .D( execution_unit_0.inst_dest_6_ ),
+    .A(execution_unit_0.inst_dest_2_ ),
+    .B(execution_unit_0.register_file_0.r2_4_ ),
+    .C(execution_unit_0.register_file_0.r6_4_ ),
+    .D(execution_unit_0.inst_dest_6_ ),
     .Y(_01995_)
   );
   AOI22X1 _08208_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_4_ ),
-    .C( execution_unit_0.register_file_0.r14_4_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_4_ ),
+    .C(execution_unit_0.register_file_0.r14_4_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_01996_)
   );
   NAND2X1 _08209_ (
@@ -21302,20 +21302,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _08211_ (
     .A(_01991_),
     .B(_01998_),
-    .Y( dbg_0.dbg_reg_din_4_ )
+    .Y(dbg_0.dbg_reg_din_4_ )
   );
   AOI22X1 _08212_ (
-    .A( execution_unit_0.inst_dest_2_ ),
-    .B( clock_module_0.oscoff ),
-    .C( execution_unit_0.register_file_0.r13_5_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_2_ ),
+    .B(clock_module_0.oscoff ),
+    .C(execution_unit_0.register_file_0.r13_5_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_01999_)
   );
   AOI22X1 _08213_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_5_ ),
-    .C( execution_unit_0.register_file_0.r10_5_ ),
-    .D( execution_unit_0.inst_dest_10_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_5_ ),
+    .C(execution_unit_0.register_file_0.r10_5_ ),
+    .D(execution_unit_0.inst_dest_10_ ),
     .Y(_02000_)
   );
   NAND2X1 _08214_ (
@@ -21324,17 +21324,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02001_)
   );
   AOI22X1 _08215_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_5_ ),
-    .C( execution_unit_0.register_file_0.r9_5_ ),
-    .D( execution_unit_0.inst_dest_9_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_5_ ),
+    .C(execution_unit_0.register_file_0.r9_5_ ),
+    .D(execution_unit_0.inst_dest_9_ ),
     .Y(_02002_)
   );
   AOI22X1 _08216_ (
-    .A( execution_unit_0.inst_dest_11_ ),
-    .B( execution_unit_0.register_file_0.r11_5_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_5_ ),
+    .A(execution_unit_0.inst_dest_11_ ),
+    .B(execution_unit_0.register_file_0.r11_5_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_5_ ),
     .Y(_02003_)
   );
   NAND2X1 _08217_ (
@@ -21348,17 +21348,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02005_)
   );
   AOI22X1 _08219_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_5_ ),
-    .C( execution_unit_0.register_file_0.r14_5_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_5_ ),
+    .C(execution_unit_0.register_file_0.r14_5_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02006_)
   );
   AOI22X1 _08220_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_5_ ),
-    .C( execution_unit_0.register_file_0.r6_5_ ),
-    .D( execution_unit_0.inst_dest_6_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_5_ ),
+    .C(execution_unit_0.register_file_0.r6_5_ ),
+    .D(execution_unit_0.inst_dest_6_ ),
     .Y(_02007_)
   );
   NAND2X1 _08221_ (
@@ -21367,17 +21367,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02008_)
   );
   AOI22X1 _08222_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_5_ ),
-    .C( execution_unit_0.register_file_0.r8_5_ ),
-    .D( execution_unit_0.inst_dest_8_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_5_ ),
+    .C(execution_unit_0.register_file_0.r8_5_ ),
+    .D(execution_unit_0.inst_dest_8_ ),
     .Y(_02009_)
   );
   AOI22X1 _08223_ (
-    .A( execution_unit_0.inst_dest_15_ ),
-    .B( execution_unit_0.register_file_0.r15_5_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_5_ ),
+    .A(execution_unit_0.inst_dest_15_ ),
+    .B(execution_unit_0.register_file_0.r15_5_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_5_ ),
     .Y(_02010_)
   );
   NAND2X1 _08224_ (
@@ -21393,44 +21393,44 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _08226_ (
     .A(_02005_),
     .B(_02012_),
-    .Y( dbg_0.dbg_reg_din_5_ )
+    .Y(dbg_0.dbg_reg_din_5_ )
   );
   AOI22X1 _08227_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_6_ ),
-    .C( execution_unit_0.register_file_0.r9_6_ ),
-    .D( execution_unit_0.inst_dest_9_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_6_ ),
+    .C(execution_unit_0.register_file_0.r9_6_ ),
+    .D(execution_unit_0.inst_dest_9_ ),
     .Y(_02013_)
   );
   AOI22X1 _08228_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_6_ ),
-    .C( execution_unit_0.register_file_0.r14_6_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_6_ ),
+    .C(execution_unit_0.register_file_0.r14_6_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02014_)
   );
   NAND2X1 _08229_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_6_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_6_ ),
     .Y(_02015_)
   );
   NAND2X1 _08230_ (
-    .A( dbg_0.UNUSED_pc_6_ ),
-    .B( execution_unit_0.inst_dest_0_ ),
+    .A(dbg_0.UNUSED_pc_6_ ),
+    .B(execution_unit_0.inst_dest_0_ ),
     .Y(_02016_)
   );
   AOI22X1 _08231_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_6_ ),
-    .C( execution_unit_0.register_file_0.r5_6_ ),
-    .D( execution_unit_0.inst_dest_5_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_6_ ),
+    .C(execution_unit_0.register_file_0.r5_6_ ),
+    .D(execution_unit_0.inst_dest_5_ ),
     .Y(_02017_)
   );
   AOI22X1 _08232_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_6_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_6_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_6_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_6_ ),
     .Y(_02018_)
   );
   NAND2X1 _08233_ (
@@ -21439,8 +21439,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02019_)
   );
   AOI21X1 _08234_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_6_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_6_ ),
     .C(_02019_),
     .Y(_02020_)
   );
@@ -21451,17 +21451,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02021_)
   );
   AOI22X1 _08236_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_6_ ),
-    .C( execution_unit_0.register_file_0.r15_6_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_6_ ),
+    .C(execution_unit_0.register_file_0.r15_6_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02022_)
   );
   AOI22X1 _08237_ (
-    .A( execution_unit_0.inst_dest_11_ ),
-    .B( execution_unit_0.register_file_0.r11_6_ ),
-    .C( execution_unit_0.register_file_0.r13_6_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_11_ ),
+    .B(execution_unit_0.register_file_0.r11_6_ ),
+    .C(execution_unit_0.register_file_0.r13_6_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02023_)
   );
   NAND3X1 _08238_ (
@@ -21478,20 +21478,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _08240_ (
     .A(_02020_),
     .B(_02025_),
-    .Y( dbg_0.dbg_reg_din_6_ )
+    .Y(dbg_0.dbg_reg_din_6_ )
   );
   AOI22X1 _08241_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_7_ ),
-    .C( execution_unit_0.register_file_0.r12_7_ ),
-    .D( execution_unit_0.inst_dest_12_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_7_ ),
+    .C(execution_unit_0.register_file_0.r12_7_ ),
+    .D(execution_unit_0.inst_dest_12_ ),
     .Y(_02026_)
   );
   AOI22X1 _08242_ (
-    .A( execution_unit_0.inst_dest_11_ ),
-    .B( execution_unit_0.register_file_0.r11_7_ ),
-    .C( execution_unit_0.register_file_0.r13_7_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_11_ ),
+    .B(execution_unit_0.register_file_0.r11_7_ ),
+    .C(execution_unit_0.register_file_0.r13_7_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02027_)
   );
   NAND2X1 _08243_ (
@@ -21500,17 +21500,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02028_)
   );
   AOI22X1 _08244_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_7_ ),
-    .C( execution_unit_0.register_file_0.r14_7_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_7_ ),
+    .C(execution_unit_0.register_file_0.r14_7_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02029_)
   );
   AOI22X1 _08245_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_7_ ),
-    .C( execution_unit_0.register_file_0.r5_7_ ),
-    .D( execution_unit_0.inst_dest_5_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_7_ ),
+    .C(execution_unit_0.register_file_0.r5_7_ ),
+    .D(execution_unit_0.inst_dest_5_ ),
     .Y(_02030_)
   );
   NAND2X1 _08246_ (
@@ -21524,17 +21524,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02032_)
   );
   AOI22X1 _08248_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_7_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_7_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_7_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_7_ ),
     .Y(_02033_)
   );
   AOI22X1 _08249_ (
-    .A( execution_unit_0.inst_dest_2_ ),
-    .B( clock_module_0.scg1 ),
-    .C( execution_unit_0.register_file_0.r15_7_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_2_ ),
+    .B(clock_module_0.scg1 ),
+    .C(execution_unit_0.register_file_0.r15_7_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02034_)
   );
   NAND2X1 _08250_ (
@@ -21543,17 +21543,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02035_)
   );
   AOI22X1 _08251_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_7_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_7_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_7_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_7_ ),
     .Y(_02036_)
   );
   AOI22X1 _08252_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_7_ ),
-    .C( execution_unit_0.register_file_0.r10_7_ ),
-    .D( execution_unit_0.inst_dest_10_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_7_ ),
+    .C(execution_unit_0.register_file_0.r10_7_ ),
+    .D(execution_unit_0.inst_dest_10_ ),
     .Y(_02037_)
   );
   NAND2X1 _08253_ (
@@ -21569,20 +21569,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _08255_ (
     .A(_02032_),
     .B(_02039_),
-    .Y( dbg_0.dbg_reg_din_7_ )
+    .Y(dbg_0.dbg_reg_din_7_ )
   );
   AOI22X1 _08256_ (
-    .A( execution_unit_0.inst_dest_2_ ),
-    .B( execution_unit_0.alu_0.status_3_ ),
-    .C( execution_unit_0.register_file_0.r10_8_ ),
-    .D( execution_unit_0.inst_dest_10_ ),
+    .A(execution_unit_0.inst_dest_2_ ),
+    .B(execution_unit_0.alu_0.status_3_ ),
+    .C(execution_unit_0.register_file_0.r10_8_ ),
+    .D(execution_unit_0.inst_dest_10_ ),
     .Y(_02040_)
   );
   AOI22X1 _08257_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_8_ ),
-    .C( execution_unit_0.register_file_0.r13_8_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_8_ ),
+    .C(execution_unit_0.register_file_0.r13_8_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02041_)
   );
   NAND2X1 _08258_ (
@@ -21591,17 +21591,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02042_)
   );
   AOI22X1 _08259_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_8_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_8_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_8_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_8_ ),
     .Y(_02043_)
   );
   AOI22X1 _08260_ (
-    .A( execution_unit_0.inst_dest_14_ ),
-    .B( execution_unit_0.register_file_0.r14_8_ ),
-    .C( execution_unit_0.register_file_0.r15_8_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_14_ ),
+    .B(execution_unit_0.register_file_0.r14_8_ ),
+    .C(execution_unit_0.register_file_0.r15_8_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02044_)
   );
   NAND2X1 _08261_ (
@@ -21615,17 +21615,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02046_)
   );
   AOI22X1 _08263_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_8_ ),
-    .C( execution_unit_0.register_file_0.r12_8_ ),
-    .D( execution_unit_0.inst_dest_12_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_8_ ),
+    .C(execution_unit_0.register_file_0.r12_8_ ),
+    .D(execution_unit_0.inst_dest_12_ ),
     .Y(_02047_)
   );
   AOI22X1 _08264_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_8_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_8_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_8_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_8_ ),
     .Y(_02048_)
   );
   NAND2X1 _08265_ (
@@ -21634,17 +21634,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02049_)
   );
   AOI22X1 _08266_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_8_ ),
-    .C( execution_unit_0.register_file_0.r11_8_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_8_ ),
+    .C(execution_unit_0.register_file_0.r11_8_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02050_)
   );
   AOI22X1 _08267_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_8_ ),
-    .C( execution_unit_0.register_file_0.r8_8_ ),
-    .D( execution_unit_0.inst_dest_8_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_8_ ),
+    .C(execution_unit_0.register_file_0.r8_8_ ),
+    .D(execution_unit_0.inst_dest_8_ ),
     .Y(_02051_)
   );
   NAND2X1 _08268_ (
@@ -21660,30 +21660,30 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _08270_ (
     .A(_02046_),
     .B(_02053_),
-    .Y( dbg_0.dbg_reg_din_8_ )
+    .Y(dbg_0.dbg_reg_din_8_ )
   );
   NAND2X1 _08271_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_9_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_9_ ),
     .Y(_02054_)
   );
   NAND2X1 _08272_ (
-    .A( execution_unit_0.inst_dest_15_ ),
-    .B( execution_unit_0.register_file_0.r15_9_ ),
+    .A(execution_unit_0.inst_dest_15_ ),
+    .B(execution_unit_0.register_file_0.r15_9_ ),
     .Y(_02055_)
   );
   AOI22X1 _08273_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_9_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_9_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_9_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_9_ ),
     .Y(_02056_)
   );
   AOI22X1 _08274_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_9_ ),
-    .C( execution_unit_0.register_file_0.r8_9_ ),
-    .D( execution_unit_0.inst_dest_8_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_9_ ),
+    .C(execution_unit_0.register_file_0.r8_9_ ),
+    .D(execution_unit_0.inst_dest_8_ ),
     .Y(_02057_)
   );
   NAND2X1 _08275_ (
@@ -21692,10 +21692,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02058_)
   );
   AOI22X1 _08276_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_9_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_9_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_9_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_9_ ),
     .Y(_02059_)
   );
   NAND2X1 _08277_ (
@@ -21709,24 +21709,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02061_)
   );
   AOI22X1 _08279_ (
-    .A( execution_unit_0.inst_dest_13_ ),
-    .B( execution_unit_0.register_file_0.r13_9_ ),
-    .C( execution_unit_0.register_file_0.r14_9_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_13_ ),
+    .B(execution_unit_0.register_file_0.r13_9_ ),
+    .C(execution_unit_0.register_file_0.r14_9_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02062_)
   );
   AOI22X1 _08280_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_9_ ),
-    .C( execution_unit_0.register_file_0.r12_9_ ),
-    .D( execution_unit_0.inst_dest_12_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_9_ ),
+    .C(execution_unit_0.register_file_0.r12_9_ ),
+    .D(execution_unit_0.inst_dest_12_ ),
     .Y(_02063_)
   );
   AOI22X1 _08281_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_9_ ),
-    .C( execution_unit_0.register_file_0.r11_9_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_9_ ),
+    .C(execution_unit_0.register_file_0.r11_9_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02064_)
   );
   NAND3X1 _08282_ (
@@ -21736,8 +21736,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02065_)
   );
   AOI21X1 _08283_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_9_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_9_ ),
     .C(_02065_),
     .Y(_02066_)
   );
@@ -21745,20 +21745,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02056_),
     .B(_02061_),
     .C(_02066_),
-    .Y( dbg_0.dbg_reg_din_9_ )
+    .Y(dbg_0.dbg_reg_din_9_ )
   );
   AOI22X1 _08285_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_10_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_10_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_10_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_10_ ),
     .Y(_02067_)
   );
   AOI22X1 _08286_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_10_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_10_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_10_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_10_ ),
     .Y(_02068_)
   );
   AND2X1 _08287_ (
@@ -21767,17 +21767,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02069_)
   );
   AOI22X1 _08288_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_10_ ),
-    .C( execution_unit_0.register_file_0.r14_10_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_10_ ),
+    .C(execution_unit_0.register_file_0.r14_10_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02070_)
   );
   AOI22X1 _08289_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_10_ ),
-    .C( execution_unit_0.register_file_0.r15_10_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_10_ ),
+    .C(execution_unit_0.register_file_0.r15_10_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02071_)
   );
   NAND3X1 _08290_ (
@@ -21787,10 +21787,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02072_)
   );
   AOI22X1 _08291_ (
-    .A( execution_unit_0.inst_dest_11_ ),
-    .B( execution_unit_0.register_file_0.r11_10_ ),
-    .C( execution_unit_0.register_file_0.r13_10_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_11_ ),
+    .B(execution_unit_0.register_file_0.r11_10_ ),
+    .C(execution_unit_0.register_file_0.r13_10_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02073_)
   );
   INVX1 _08292_ (
@@ -21798,23 +21798,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02074_)
   );
   AOI21X1 _08293_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_10_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_10_ ),
     .C(_02074_),
     .Y(_02075_)
   );
   AOI22X1 _08294_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_10_ ),
-    .C( execution_unit_0.register_file_0.r9_10_ ),
-    .D( execution_unit_0.inst_dest_9_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_10_ ),
+    .C(execution_unit_0.register_file_0.r9_10_ ),
+    .D(execution_unit_0.inst_dest_9_ ),
     .Y(_02076_)
   );
   AOI22X1 _08295_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_10_ ),
-    .C( execution_unit_0.register_file_0.r6_10_ ),
-    .D( execution_unit_0.inst_dest_6_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_10_ ),
+    .C(execution_unit_0.register_file_0.r6_10_ ),
+    .D(execution_unit_0.inst_dest_6_ ),
     .Y(_02077_)
   );
   NAND3X1 _08296_ (
@@ -21826,23 +21826,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OR2X1 _08297_ (
     .A(_02072_),
     .B(_02078_),
-    .Y( dbg_0.dbg_reg_din_10_ )
+    .Y(dbg_0.dbg_reg_din_10_ )
   );
   NAND2X1 _08298_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_11_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_11_ ),
     .Y(_02079_)
   );
   NAND2X1 _08299_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_11_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_11_ ),
     .Y(_02080_)
   );
   AOI22X1 _08300_ (
-    .A( execution_unit_0.inst_dest_13_ ),
-    .B( execution_unit_0.register_file_0.r13_11_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_11_ ),
+    .A(execution_unit_0.inst_dest_13_ ),
+    .B(execution_unit_0.register_file_0.r13_11_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_11_ ),
     .Y(_02081_)
   );
   NAND2X1 _08301_ (
@@ -21851,23 +21851,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02082_)
   );
   AOI21X1 _08302_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_11_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_11_ ),
     .C(_02082_),
     .Y(_02083_)
   );
   AOI22X1 _08303_ (
-    .A( execution_unit_0.inst_dest_14_ ),
-    .B( execution_unit_0.register_file_0.r14_11_ ),
-    .C( execution_unit_0.register_file_0.r15_11_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_14_ ),
+    .B(execution_unit_0.register_file_0.r14_11_ ),
+    .C(execution_unit_0.register_file_0.r15_11_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02084_)
   );
   AOI22X1 _08304_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_11_ ),
-    .C( execution_unit_0.register_file_0.r11_11_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_11_ ),
+    .C(execution_unit_0.register_file_0.r11_11_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02085_)
   );
   NAND2X1 _08305_ (
@@ -21876,23 +21876,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02086_)
   );
   AOI21X1 _08306_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_11_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_11_ ),
     .C(_02086_),
     .Y(_02087_)
   );
   AOI22X1 _08307_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_11_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_11_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_11_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_11_ ),
     .Y(_02088_)
   );
   AOI22X1 _08308_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_11_ ),
-    .C( execution_unit_0.register_file_0.r8_11_ ),
-    .D( execution_unit_0.inst_dest_8_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_11_ ),
+    .C(execution_unit_0.register_file_0.r8_11_ ),
+    .D(execution_unit_0.inst_dest_8_ ),
     .Y(_02089_)
   );
   NAND3X1 _08309_ (
@@ -21902,8 +21902,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02090_)
   );
   AOI21X1 _08310_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_11_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_11_ ),
     .C(_02090_),
     .Y(_02091_)
   );
@@ -21911,23 +21911,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02083_),
     .B(_02087_),
     .C(_02091_),
-    .Y( dbg_0.dbg_reg_din_11_ )
+    .Y(dbg_0.dbg_reg_din_11_ )
   );
   NAND2X1 _08312_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_12_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_12_ ),
     .Y(_02092_)
   );
   NAND2X1 _08313_ (
-    .A( dbg_0.UNUSED_pc_12_ ),
-    .B( execution_unit_0.inst_dest_0_ ),
+    .A(dbg_0.UNUSED_pc_12_ ),
+    .B(execution_unit_0.inst_dest_0_ ),
     .Y(_02093_)
   );
   AOI22X1 _08314_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_12_ ),
-    .C( execution_unit_0.register_file_0.r14_12_ ),
-    .D( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_12_ ),
+    .C(execution_unit_0.register_file_0.r14_12_ ),
+    .D(execution_unit_0.inst_dest_14_ ),
     .Y(_02094_)
   );
   NAND2X1 _08315_ (
@@ -21936,23 +21936,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02095_)
   );
   AOI21X1 _08316_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_12_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_12_ ),
     .C(_02095_),
     .Y(_02096_)
   );
   AOI22X1 _08317_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_12_ ),
-    .C( execution_unit_0.register_file_0.r5_12_ ),
-    .D( execution_unit_0.inst_dest_5_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_12_ ),
+    .C(execution_unit_0.register_file_0.r5_12_ ),
+    .D(execution_unit_0.inst_dest_5_ ),
     .Y(_02097_)
   );
   AOI22X1 _08318_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_12_ ),
-    .C( execution_unit_0.register_file_0.r3_12_ ),
-    .D( execution_unit_0.inst_dest_3_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_12_ ),
+    .C(execution_unit_0.register_file_0.r3_12_ ),
+    .D(execution_unit_0.inst_dest_3_ ),
     .Y(_02098_)
   );
   NAND2X1 _08319_ (
@@ -21961,23 +21961,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02099_)
   );
   AOI21X1 _08320_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_12_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_12_ ),
     .C(_02099_),
     .Y(_02100_)
   );
   AOI22X1 _08321_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_12_ ),
-    .C( execution_unit_0.register_file_0.r15_12_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_12_ ),
+    .C(execution_unit_0.register_file_0.r15_12_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02101_)
   );
   AOI22X1 _08322_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_12_ ),
-    .C( execution_unit_0.register_file_0.r11_12_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_12_ ),
+    .C(execution_unit_0.register_file_0.r11_12_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02102_)
   );
   NAND3X1 _08323_ (
@@ -21987,8 +21987,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02103_)
   );
   AOI21X1 _08324_ (
-    .A( execution_unit_0.inst_dest_13_ ),
-    .B( execution_unit_0.register_file_0.r13_12_ ),
+    .A(execution_unit_0.inst_dest_13_ ),
+    .B(execution_unit_0.register_file_0.r13_12_ ),
     .C(_02103_),
     .Y(_02104_)
   );
@@ -21996,20 +21996,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02096_),
     .B(_02100_),
     .C(_02104_),
-    .Y( dbg_0.dbg_reg_din_12_ )
+    .Y(dbg_0.dbg_reg_din_12_ )
   );
   AOI22X1 _08326_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_13_ ),
-    .C( execution_unit_0.register_file_0.r11_13_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_13_ ),
+    .C(execution_unit_0.register_file_0.r11_13_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02105_)
   );
   AOI22X1 _08327_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_13_ ),
-    .C( execution_unit_0.register_file_0.r5_13_ ),
-    .D( execution_unit_0.inst_dest_5_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_13_ ),
+    .C(execution_unit_0.register_file_0.r5_13_ ),
+    .D(execution_unit_0.inst_dest_5_ ),
     .Y(_02106_)
   );
   AND2X1 _08328_ (
@@ -22018,17 +22018,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02107_)
   );
   AOI22X1 _08329_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_13_ ),
-    .C( execution_unit_0.register_file_0.r13_13_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_13_ ),
+    .C(execution_unit_0.register_file_0.r13_13_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02108_)
   );
   AOI22X1 _08330_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_13_ ),
-    .C( execution_unit_0.register_file_0.r9_13_ ),
-    .D( execution_unit_0.inst_dest_9_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_13_ ),
+    .C(execution_unit_0.register_file_0.r9_13_ ),
+    .D(execution_unit_0.inst_dest_9_ ),
     .Y(_02109_)
   );
   NAND3X1 _08331_ (
@@ -22038,10 +22038,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02110_)
   );
   AOI22X1 _08332_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_13_ ),
-    .C( execution_unit_0.register_file_0.r10_13_ ),
-    .D( execution_unit_0.inst_dest_10_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_13_ ),
+    .C(execution_unit_0.register_file_0.r10_13_ ),
+    .D(execution_unit_0.inst_dest_10_ ),
     .Y(_02111_)
   );
   INVX1 _08333_ (
@@ -22049,23 +22049,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02112_)
   );
   AOI21X1 _08334_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_13_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_13_ ),
     .C(_02112_),
     .Y(_02113_)
   );
   AOI22X1 _08335_ (
-    .A( execution_unit_0.inst_dest_14_ ),
-    .B( execution_unit_0.register_file_0.r14_13_ ),
-    .C( execution_unit_0.register_file_0.r15_13_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_14_ ),
+    .B(execution_unit_0.register_file_0.r14_13_ ),
+    .C(execution_unit_0.register_file_0.r15_13_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02114_)
   );
   AOI22X1 _08336_ (
-    .A( dbg_0.UNUSED_pc_13_ ),
-    .B( execution_unit_0.inst_dest_0_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_13_ ),
+    .A(dbg_0.UNUSED_pc_13_ ),
+    .B(execution_unit_0.inst_dest_0_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_13_ ),
     .Y(_02115_)
   );
   NAND3X1 _08337_ (
@@ -22077,30 +22077,30 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OR2X1 _08338_ (
     .A(_02110_),
     .B(_02116_),
-    .Y( dbg_0.dbg_reg_din_13_ )
+    .Y(dbg_0.dbg_reg_din_13_ )
   );
   AOI22X1 _08339_ (
-    .A( execution_unit_0.inst_dest_9_ ),
-    .B( execution_unit_0.register_file_0.r9_14_ ),
-    .C( execution_unit_0.register_file_0.r15_14_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_9_ ),
+    .B(execution_unit_0.register_file_0.r9_14_ ),
+    .C(execution_unit_0.register_file_0.r15_14_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02117_)
   );
   NAND2X1 _08340_ (
-    .A( execution_unit_0.inst_dest_12_ ),
-    .B( execution_unit_0.register_file_0.r12_14_ ),
+    .A(execution_unit_0.inst_dest_12_ ),
+    .B(execution_unit_0.register_file_0.r12_14_ ),
     .Y(_02118_)
   );
   NAND2X1 _08341_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_14_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_14_ ),
     .Y(_02119_)
   );
   AOI22X1 _08342_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_14_ ),
-    .C( execution_unit_0.register_file_0.r13_14_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_14_ ),
+    .C(execution_unit_0.register_file_0.r13_14_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02120_)
   );
   NAND2X1 _08343_ (
@@ -22109,24 +22109,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02121_)
   );
   AOI22X1 _08344_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_14_ ),
-    .C( execution_unit_0.register_file_0.r6_14_ ),
-    .D( execution_unit_0.inst_dest_6_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_14_ ),
+    .C(execution_unit_0.register_file_0.r6_14_ ),
+    .D(execution_unit_0.inst_dest_6_ ),
     .Y(_02122_)
   );
   AOI22X1 _08345_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_14_ ),
-    .C( execution_unit_0.register_file_0.r5_14_ ),
-    .D( execution_unit_0.inst_dest_5_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_14_ ),
+    .C(execution_unit_0.register_file_0.r5_14_ ),
+    .D(execution_unit_0.inst_dest_5_ ),
     .Y(_02123_)
   );
   AOI22X1 _08346_ (
-    .A( dbg_0.UNUSED_pc_14_ ),
-    .B( execution_unit_0.inst_dest_0_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_14_ ),
+    .A(dbg_0.UNUSED_pc_14_ ),
+    .B(execution_unit_0.inst_dest_0_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_14_ ),
     .Y(_02124_)
   );
   NAND3X1 _08347_ (
@@ -22136,16 +22136,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02125_)
   );
   AOI21X1 _08348_ (
-    .A( execution_unit_0.inst_dest_14_ ),
-    .B( execution_unit_0.register_file_0.r14_14_ ),
+    .A(execution_unit_0.inst_dest_14_ ),
+    .B(execution_unit_0.register_file_0.r14_14_ ),
     .C(_02125_),
     .Y(_02126_)
   );
   AOI22X1 _08349_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_14_ ),
-    .C( execution_unit_0.register_file_0.r11_14_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_14_ ),
+    .C(execution_unit_0.register_file_0.r11_14_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02127_)
   );
   NAND2X1 _08350_ (
@@ -22162,20 +22162,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02117_),
     .B(_02126_),
     .C(_02129_),
-    .Y( dbg_0.dbg_reg_din_14_ )
+    .Y(dbg_0.dbg_reg_din_14_ )
   );
   AOI22X1 _08353_ (
-    .A( execution_unit_0.inst_dest_14_ ),
-    .B( execution_unit_0.register_file_0.r14_15_ ),
-    .C( execution_unit_0.inst_dest_3_ ),
-    .D( execution_unit_0.register_file_0.r3_15_ ),
+    .A(execution_unit_0.inst_dest_14_ ),
+    .B(execution_unit_0.register_file_0.r14_15_ ),
+    .C(execution_unit_0.inst_dest_3_ ),
+    .D(execution_unit_0.register_file_0.r3_15_ ),
     .Y(_02130_)
   );
   AOI22X1 _08354_ (
-    .A( execution_unit_0.inst_dest_8_ ),
-    .B( execution_unit_0.register_file_0.r8_15_ ),
-    .C( execution_unit_0.register_file_0.r15_15_ ),
-    .D( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.inst_dest_8_ ),
+    .B(execution_unit_0.register_file_0.r8_15_ ),
+    .C(execution_unit_0.register_file_0.r15_15_ ),
+    .D(execution_unit_0.inst_dest_15_ ),
     .Y(_02131_)
   );
   AND2X1 _08355_ (
@@ -22184,17 +22184,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02132_)
   );
   AOI22X1 _08356_ (
-    .A( execution_unit_0.inst_dest_10_ ),
-    .B( execution_unit_0.register_file_0.r10_15_ ),
-    .C( execution_unit_0.register_file_0.r13_15_ ),
-    .D( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.inst_dest_10_ ),
+    .B(execution_unit_0.register_file_0.r10_15_ ),
+    .C(execution_unit_0.register_file_0.r13_15_ ),
+    .D(execution_unit_0.inst_dest_13_ ),
     .Y(_02133_)
   );
   AOI22X1 _08357_ (
-    .A( execution_unit_0.inst_dest_7_ ),
-    .B( execution_unit_0.register_file_0.r7_15_ ),
-    .C( execution_unit_0.register_file_0.r9_15_ ),
-    .D( execution_unit_0.inst_dest_9_ ),
+    .A(execution_unit_0.inst_dest_7_ ),
+    .B(execution_unit_0.register_file_0.r7_15_ ),
+    .C(execution_unit_0.register_file_0.r9_15_ ),
+    .D(execution_unit_0.inst_dest_9_ ),
     .Y(_02134_)
   );
   NAND3X1 _08358_ (
@@ -22204,10 +22204,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02135_)
   );
   AOI22X1 _08359_ (
-    .A( execution_unit_0.inst_dest_5_ ),
-    .B( execution_unit_0.register_file_0.r5_15_ ),
-    .C( execution_unit_0.register_file_0.r12_15_ ),
-    .D( execution_unit_0.inst_dest_12_ ),
+    .A(execution_unit_0.inst_dest_5_ ),
+    .B(execution_unit_0.register_file_0.r5_15_ ),
+    .C(execution_unit_0.register_file_0.r12_15_ ),
+    .D(execution_unit_0.inst_dest_12_ ),
     .Y(_02136_)
   );
   INVX1 _08360_ (
@@ -22215,23 +22215,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02137_)
   );
   AOI21X1 _08361_ (
-    .A( execution_unit_0.inst_dest_4_ ),
-    .B( execution_unit_0.register_file_0.r4_15_ ),
+    .A(execution_unit_0.inst_dest_4_ ),
+    .B(execution_unit_0.register_file_0.r4_15_ ),
     .C(_02137_),
     .Y(_02138_)
   );
   AOI22X1 _08362_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.register_file_0.r1_15_ ),
-    .C( execution_unit_0.register_file_0.r11_15_ ),
-    .D( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.register_file_0.r1_15_ ),
+    .C(execution_unit_0.register_file_0.r11_15_ ),
+    .D(execution_unit_0.inst_dest_11_ ),
     .Y(_02139_)
   );
   AOI22X1 _08363_ (
-    .A( execution_unit_0.inst_dest_6_ ),
-    .B( execution_unit_0.register_file_0.r6_15_ ),
-    .C( execution_unit_0.inst_dest_0_ ),
-    .D( dbg_0.UNUSED_pc_15_ ),
+    .A(execution_unit_0.inst_dest_6_ ),
+    .B(execution_unit_0.register_file_0.r6_15_ ),
+    .C(execution_unit_0.inst_dest_0_ ),
+    .D(dbg_0.UNUSED_pc_15_ ),
     .Y(_02140_)
   );
   NAND3X1 _08364_ (
@@ -22243,17 +22243,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OR2X1 _08365_ (
     .A(_02135_),
     .B(_02141_),
-    .Y( dbg_0.dbg_reg_din_15_ )
+    .Y(dbg_0.dbg_reg_din_15_ )
   );
   MUX2X1 _08366_ (
-    .A( execution_unit_0.alu_0.status_1_ ),
-    .B( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.status_1_ ),
+    .B(execution_unit_0.alu_0.alu_out_1_ ),
     .S(_02795_),
     .Y(_02142_)
   );
   OAI21X1 _08367_ (
     .A(_02542_),
-    .B( execution_unit_0.alu_0.Z ),
+    .B(execution_unit_0.alu_0.Z ),
     .C(_02540_),
     .Y(_02143_)
   );
@@ -22264,14 +22264,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01757_)
   );
   MUX2X1 _08369_ (
-    .A( execution_unit_0.alu_0.status_2_ ),
-    .B( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.status_2_ ),
+    .B(execution_unit_0.alu_0.alu_out_2_ ),
     .S(_02795_),
     .Y(_02144_)
   );
   OAI21X1 _08370_ (
     .A(_02543_),
-    .B( execution_unit_0.alu_0.N ),
+    .B(execution_unit_0.alu_0.N ),
     .C(_02540_),
     .Y(_02145_)
   );
@@ -22287,13 +22287,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02146_)
   );
   NAND2X1 _08373_ (
-    .A( execution_unit_0.gie ),
+    .A(execution_unit_0.gie ),
     .B(_02146_),
     .Y(_02147_)
   );
   NAND2X1 _08374_ (
     .A(_02540_),
-    .B( execution_unit_0.alu_0.alu_out_3_ ),
+    .B(execution_unit_0.alu_0.alu_out_3_ ),
     .Y(_02148_)
   );
   OAI21X1 _08375_ (
@@ -22303,13 +22303,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01759_)
   );
   NAND2X1 _08376_ (
-    .A( clock_module_0.oscoff ),
+    .A(clock_module_0.oscoff ),
     .B(_02146_),
     .Y(_02149_)
   );
   NAND2X1 _08377_ (
     .A(_02540_),
-    .B( execution_unit_0.alu_0.alu_out_5_ ),
+    .B(execution_unit_0.alu_0.alu_out_5_ ),
     .Y(_02150_)
   );
   OAI21X1 _08378_ (
@@ -22319,13 +22319,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01760_)
   );
   NAND2X1 _08379_ (
-    .A( clock_module_0.scg1 ),
+    .A(clock_module_0.scg1 ),
     .B(_02146_),
     .Y(_02151_)
   );
   NAND2X1 _08380_ (
     .A(_02540_),
-    .B( execution_unit_0.alu_0.alu_out_7_ ),
+    .B(execution_unit_0.alu_0.alu_out_7_ ),
     .Y(_02152_)
   );
   OAI21X1 _08381_ (
@@ -22340,7 +22340,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02153_)
   );
   AOI22X1 _08383_ (
-    .A( execution_unit_0.alu_0.status_3_ ),
+    .A(execution_unit_0.alu_0.status_3_ ),
     .B(_02146_),
     .C(_02153_),
     .D(_02540_),
@@ -22348,19 +22348,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _08384_ (
     .A(_02540_),
-    .B( execution_unit_0.alu_0.alu_stat_wr_0_ ),
-    .C( execution_unit_0.alu_0.alu_stat_3_ ),
+    .B(execution_unit_0.alu_0.alu_stat_wr_0_ ),
+    .C(execution_unit_0.alu_0.alu_stat_3_ ),
     .Y(_02155_)
   );
   OAI21X1 _08385_ (
-    .A( execution_unit_0.alu_0.alu_stat_wr_0_ ),
+    .A(execution_unit_0.alu_0.alu_stat_wr_0_ ),
     .B(_02154_),
     .C(_02155_),
     .Y(_01762_)
   );
   AND2X1 _08386_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_15_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_15_ ),
     .Y(_02156_)
   );
   INVX1 _08387_ (
@@ -22368,7 +22368,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02157_)
   );
   NAND2X1 _08388_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02569_),
     .Y(_02158_)
   );
@@ -22383,9 +22383,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02160_)
   );
   OAI21X1 _08391_ (
-    .A( execution_unit_0.reg_sr_clr ),
+    .A(execution_unit_0.reg_sr_clr ),
     .B(_02541_),
-    .C( execution_unit_0.alu_0.inst_bw ),
+    .C(execution_unit_0.alu_0.inst_bw ),
     .Y(_02161_)
   );
   INVX1 _08392_ (
@@ -22400,7 +22400,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _08394_ (
     .A(_02544_),
     .B(_02566_),
-    .C( execution_unit_0.reg_src_0_ ),
+    .C(execution_unit_0.reg_src_0_ ),
     .Y(_02164_)
   );
   NAND2X1 _08395_ (
@@ -22409,7 +22409,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02165_)
   );
   AOI21X1 _08396_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02569_),
     .C(_02156_),
     .Y(_02166_)
@@ -22418,7 +22418,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02159_),
     .B(_02165_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_0_ ),
+    .D(execution_unit_0.register_file_0.r15_0_ ),
     .Y(_02167_)
   );
   OAI21X1 _08398_ (
@@ -22435,21 +22435,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02168_)
   );
   OAI21X1 _08400_ (
-    .A( execution_unit_0.reg_src_0_ ),
+    .A(execution_unit_0.reg_src_0_ ),
     .B(_02161_),
-    .C( execution_unit_0.reg_src_1_ ),
+    .C(execution_unit_0.reg_src_1_ ),
     .Y(_02169_)
   );
   XNOR2X1 _08401_ (
-    .A( execution_unit_0.reg_src_1_ ),
+    .A(execution_unit_0.reg_src_1_ ),
     .B(_02163_),
     .Y(_02170_)
   );
   AOI22X1 _08402_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_1_ ),
+    .D(execution_unit_0.register_file_0.r15_1_ ),
     .Y(_02171_)
   );
   OAI21X1 _08403_ (
@@ -22459,15 +22459,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01764_)
   );
   XNOR2X1 _08404_ (
-    .A( execution_unit_0.reg_src_2_ ),
+    .A(execution_unit_0.reg_src_2_ ),
     .B(_02168_),
     .Y(_02172_)
   );
   AOI22X1 _08405_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_2_ ),
+    .D(execution_unit_0.register_file_0.r15_2_ ),
     .Y(_02173_)
   );
   OAI21X1 _08406_ (
@@ -22483,8 +22483,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02174_)
   );
   NAND3X1 _08408_ (
-    .A( execution_unit_0.reg_src_3_ ),
-    .B( execution_unit_0.reg_src_2_ ),
+    .A(execution_unit_0.reg_src_3_ ),
+    .B(execution_unit_0.reg_src_2_ ),
     .C(_02168_),
     .Y(_02175_)
   );
@@ -22500,10 +22500,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02177_)
   );
   AOI22X1 _08411_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_3_ ),
+    .D(execution_unit_0.register_file_0.r15_3_ ),
     .Y(_02178_)
   );
   OAI21X1 _08412_ (
@@ -22518,7 +22518,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02179_)
   );
   AOI22X1 _08414_ (
-    .A( execution_unit_0.register_file_0.r15_4_ ),
+    .A(execution_unit_0.register_file_0.r15_4_ ),
     .B(_02166_),
     .C(_02179_),
     .D(_02159_),
@@ -22537,8 +22537,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02181_)
   );
   NAND3X1 _08417_ (
-    .A( execution_unit_0.reg_src_4_ ),
-    .B( execution_unit_0.reg_src_5_ ),
+    .A(execution_unit_0.reg_src_4_ ),
+    .B(execution_unit_0.reg_src_5_ ),
     .C(_02174_),
     .Y(_02182_)
   );
@@ -22554,10 +22554,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02184_)
   );
   AOI22X1 _08420_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_5_ ),
+    .D(execution_unit_0.register_file_0.r15_5_ ),
     .Y(_02185_)
   );
   OAI21X1 _08421_ (
@@ -22572,7 +22572,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02186_)
   );
   AOI22X1 _08423_ (
-    .A( execution_unit_0.register_file_0.r15_6_ ),
+    .A(execution_unit_0.register_file_0.r15_6_ ),
     .B(_02166_),
     .C(_02186_),
     .D(_02159_),
@@ -22591,8 +22591,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02188_)
   );
   NAND3X1 _08426_ (
-    .A( execution_unit_0.reg_src_6_ ),
-    .B( execution_unit_0.reg_src_7_ ),
+    .A(execution_unit_0.reg_src_6_ ),
+    .B(execution_unit_0.reg_src_7_ ),
     .C(_02181_),
     .Y(_02189_)
   );
@@ -22608,10 +22608,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02191_)
   );
   AOI22X1 _08429_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_7_ ),
+    .D(execution_unit_0.register_file_0.r15_7_ ),
     .Y(_02192_)
   );
   OAI21X1 _08430_ (
@@ -22621,15 +22621,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01770_)
   );
   XNOR2X1 _08431_ (
-    .A( execution_unit_0.reg_src_8_ ),
+    .A(execution_unit_0.reg_src_8_ ),
     .B(_02188_),
     .Y(_02193_)
   );
   AOI22X1 _08432_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_8_ ),
+    .D(execution_unit_0.register_file_0.r15_8_ ),
     .Y(_02194_)
   );
   OAI21X1 _08433_ (
@@ -22645,8 +22645,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02195_)
   );
   NAND3X1 _08435_ (
-    .A( execution_unit_0.reg_src_8_ ),
-    .B( execution_unit_0.reg_src_9_ ),
+    .A(execution_unit_0.reg_src_8_ ),
+    .B(execution_unit_0.reg_src_9_ ),
     .C(_02188_),
     .Y(_02196_)
   );
@@ -22662,10 +22662,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02198_)
   );
   AOI22X1 _08438_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_9_ ),
+    .D(execution_unit_0.register_file_0.r15_9_ ),
     .Y(_02199_)
   );
   OAI21X1 _08439_ (
@@ -22675,15 +22675,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01772_)
   );
   XNOR2X1 _08440_ (
-    .A( execution_unit_0.reg_src_10_ ),
+    .A(execution_unit_0.reg_src_10_ ),
     .B(_02195_),
     .Y(_02200_)
   );
   AOI22X1 _08441_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_10_ ),
+    .D(execution_unit_0.register_file_0.r15_10_ ),
     .Y(_02201_)
   );
   OAI21X1 _08442_ (
@@ -22699,8 +22699,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02202_)
   );
   NAND3X1 _08444_ (
-    .A( execution_unit_0.reg_src_10_ ),
-    .B( execution_unit_0.reg_src_11_ ),
+    .A(execution_unit_0.reg_src_10_ ),
+    .B(execution_unit_0.reg_src_11_ ),
     .C(_02195_),
     .Y(_02203_)
   );
@@ -22716,10 +22716,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02205_)
   );
   AOI22X1 _08447_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_11_ ),
+    .D(execution_unit_0.register_file_0.r15_11_ ),
     .Y(_02206_)
   );
   OAI21X1 _08448_ (
@@ -22734,7 +22734,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02207_)
   );
   AOI22X1 _08450_ (
-    .A( execution_unit_0.register_file_0.r15_12_ ),
+    .A(execution_unit_0.register_file_0.r15_12_ ),
     .B(_02166_),
     .C(_02207_),
     .D(_02159_),
@@ -22753,8 +22753,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02209_)
   );
   NAND3X1 _08453_ (
-    .A( execution_unit_0.reg_src_12_ ),
-    .B( execution_unit_0.reg_src_13_ ),
+    .A(execution_unit_0.reg_src_12_ ),
+    .B(execution_unit_0.reg_src_13_ ),
     .C(_02202_),
     .Y(_02210_)
   );
@@ -22770,10 +22770,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02212_)
   );
   AOI22X1 _08456_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_13_ ),
+    .D(execution_unit_0.register_file_0.r15_13_ ),
     .Y(_02213_)
   );
   OAI21X1 _08457_ (
@@ -22788,7 +22788,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02214_)
   );
   AOI22X1 _08459_ (
-    .A( execution_unit_0.register_file_0.r15_14_ ),
+    .A(execution_unit_0.register_file_0.r15_14_ ),
     .B(_02166_),
     .C(_02214_),
     .D(_02159_),
@@ -22807,8 +22807,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02216_)
   );
   NAND3X1 _08462_ (
-    .A( execution_unit_0.reg_src_14_ ),
-    .B( execution_unit_0.reg_src_15_ ),
+    .A(execution_unit_0.reg_src_14_ ),
+    .B(execution_unit_0.reg_src_15_ ),
     .C(_02209_),
     .Y(_02217_)
   );
@@ -22818,10 +22818,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02218_)
   );
   AOI22X1 _08464_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02156_),
     .C(_02166_),
-    .D( execution_unit_0.register_file_0.r15_15_ ),
+    .D(execution_unit_0.register_file_0.r15_15_ ),
     .Y(_02219_)
   );
   OAI21X1 _08465_ (
@@ -22831,17 +22831,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01778_)
   );
   AND2X1 _08466_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_14_ ),
     .Y(_02220_)
   );
   NAND2X1 _08467_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_14_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_14_ ),
     .Y(_02221_)
   );
   NAND2X1 _08468_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02580_),
     .Y(_02222_)
   );
@@ -22856,7 +22856,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02224_)
   );
   AOI21X1 _08471_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02580_),
     .C(_02220_),
     .Y(_02225_)
@@ -22869,7 +22869,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02165_),
     .B(_02224_),
     .C(_02226_),
-    .D( execution_unit_0.register_file_0.r14_0_ ),
+    .D(execution_unit_0.register_file_0.r14_0_ ),
     .Y(_02227_)
   );
   AOI21X1 _08474_ (
@@ -22879,10 +22879,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01779_)
   );
   AOI22X1 _08475_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_1_ ),
+    .D(execution_unit_0.register_file_0.r14_1_ ),
     .Y(_02228_)
   );
   OAI21X1 _08476_ (
@@ -22892,10 +22892,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01780_)
   );
   AOI22X1 _08477_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_2_ ),
+    .D(execution_unit_0.register_file_0.r14_2_ ),
     .Y(_02229_)
   );
   OAI21X1 _08478_ (
@@ -22905,10 +22905,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01781_)
   );
   AOI22X1 _08479_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_3_ ),
+    .D(execution_unit_0.register_file_0.r14_3_ ),
     .Y(_02230_)
   );
   OAI21X1 _08480_ (
@@ -22921,7 +22921,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02223_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_4_ ),
+    .D(execution_unit_0.register_file_0.r14_4_ ),
     .Y(_02231_)
   );
   OAI21X1 _08482_ (
@@ -22931,10 +22931,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01783_)
   );
   AOI22X1 _08483_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_5_ ),
+    .D(execution_unit_0.register_file_0.r14_5_ ),
     .Y(_02232_)
   );
   OAI21X1 _08484_ (
@@ -22947,7 +22947,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02223_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_6_ ),
+    .D(execution_unit_0.register_file_0.r14_6_ ),
     .Y(_02233_)
   );
   OAI21X1 _08486_ (
@@ -22957,10 +22957,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01785_)
   );
   AOI22X1 _08487_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_7_ ),
+    .D(execution_unit_0.register_file_0.r14_7_ ),
     .Y(_02234_)
   );
   OAI21X1 _08488_ (
@@ -22970,10 +22970,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01786_)
   );
   AOI22X1 _08489_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_8_ ),
+    .D(execution_unit_0.register_file_0.r14_8_ ),
     .Y(_02235_)
   );
   OAI21X1 _08490_ (
@@ -22983,10 +22983,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01787_)
   );
   AOI22X1 _08491_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_9_ ),
+    .D(execution_unit_0.register_file_0.r14_9_ ),
     .Y(_02236_)
   );
   OAI21X1 _08492_ (
@@ -22996,10 +22996,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01788_)
   );
   AOI22X1 _08493_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_10_ ),
+    .D(execution_unit_0.register_file_0.r14_10_ ),
     .Y(_02237_)
   );
   OAI21X1 _08494_ (
@@ -23009,10 +23009,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01789_)
   );
   AOI22X1 _08495_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_11_ ),
+    .D(execution_unit_0.register_file_0.r14_11_ ),
     .Y(_02238_)
   );
   OAI21X1 _08496_ (
@@ -23025,7 +23025,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02223_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_12_ ),
+    .D(execution_unit_0.register_file_0.r14_12_ ),
     .Y(_02239_)
   );
   OAI21X1 _08498_ (
@@ -23035,10 +23035,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01791_)
   );
   AOI22X1 _08499_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_13_ ),
+    .D(execution_unit_0.register_file_0.r14_13_ ),
     .Y(_02240_)
   );
   OAI21X1 _08500_ (
@@ -23051,7 +23051,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02223_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_14_ ),
+    .D(execution_unit_0.register_file_0.r14_14_ ),
     .Y(_02241_)
   );
   OAI21X1 _08502_ (
@@ -23061,10 +23061,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01793_)
   );
   AOI22X1 _08503_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02220_),
     .C(_02225_),
-    .D( execution_unit_0.register_file_0.r14_15_ ),
+    .D(execution_unit_0.register_file_0.r14_15_ ),
     .Y(_02242_)
   );
   OAI21X1 _08504_ (
@@ -23074,17 +23074,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01794_)
   );
   AND2X1 _08505_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_13_ ),
     .Y(_02243_)
   );
   NAND2X1 _08506_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_13_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_13_ ),
     .Y(_02244_)
   );
   NAND2X1 _08507_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02568_),
     .Y(_02245_)
   );
@@ -23099,7 +23099,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02247_)
   );
   AOI21X1 _08510_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02568_),
     .C(_02243_),
     .Y(_02248_)
@@ -23112,7 +23112,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02165_),
     .B(_02247_),
     .C(_02249_),
-    .D( execution_unit_0.register_file_0.r13_0_ ),
+    .D(execution_unit_0.register_file_0.r13_0_ ),
     .Y(_02250_)
   );
   AOI21X1 _08513_ (
@@ -23122,10 +23122,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01795_)
   );
   AOI22X1 _08514_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_1_ ),
+    .D(execution_unit_0.register_file_0.r13_1_ ),
     .Y(_02251_)
   );
   OAI21X1 _08515_ (
@@ -23135,10 +23135,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01796_)
   );
   AOI22X1 _08516_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_2_ ),
+    .D(execution_unit_0.register_file_0.r13_2_ ),
     .Y(_02252_)
   );
   OAI21X1 _08517_ (
@@ -23148,10 +23148,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01797_)
   );
   AOI22X1 _08518_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_3_ ),
+    .D(execution_unit_0.register_file_0.r13_3_ ),
     .Y(_02253_)
   );
   OAI21X1 _08519_ (
@@ -23164,7 +23164,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02246_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_4_ ),
+    .D(execution_unit_0.register_file_0.r13_4_ ),
     .Y(_02254_)
   );
   OAI21X1 _08521_ (
@@ -23174,10 +23174,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01799_)
   );
   AOI22X1 _08522_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_5_ ),
+    .D(execution_unit_0.register_file_0.r13_5_ ),
     .Y(_02255_)
   );
   OAI21X1 _08523_ (
@@ -23190,7 +23190,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02246_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_6_ ),
+    .D(execution_unit_0.register_file_0.r13_6_ ),
     .Y(_02256_)
   );
   OAI21X1 _08525_ (
@@ -23200,10 +23200,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01801_)
   );
   AOI22X1 _08526_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_7_ ),
+    .D(execution_unit_0.register_file_0.r13_7_ ),
     .Y(_02257_)
   );
   OAI21X1 _08527_ (
@@ -23213,10 +23213,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01802_)
   );
   AOI22X1 _08528_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_8_ ),
+    .D(execution_unit_0.register_file_0.r13_8_ ),
     .Y(_02258_)
   );
   OAI21X1 _08529_ (
@@ -23226,10 +23226,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01803_)
   );
   AOI22X1 _08530_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_9_ ),
+    .D(execution_unit_0.register_file_0.r13_9_ ),
     .Y(_02259_)
   );
   OAI21X1 _08531_ (
@@ -23239,10 +23239,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01804_)
   );
   AOI22X1 _08532_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_10_ ),
+    .D(execution_unit_0.register_file_0.r13_10_ ),
     .Y(_02260_)
   );
   OAI21X1 _08533_ (
@@ -23252,10 +23252,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01805_)
   );
   AOI22X1 _08534_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_11_ ),
+    .D(execution_unit_0.register_file_0.r13_11_ ),
     .Y(_02261_)
   );
   OAI21X1 _08535_ (
@@ -23268,7 +23268,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02246_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_12_ ),
+    .D(execution_unit_0.register_file_0.r13_12_ ),
     .Y(_02262_)
   );
   OAI21X1 _08537_ (
@@ -23278,10 +23278,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01807_)
   );
   AOI22X1 _08538_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_13_ ),
+    .D(execution_unit_0.register_file_0.r13_13_ ),
     .Y(_02263_)
   );
   OAI21X1 _08539_ (
@@ -23294,7 +23294,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02246_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_14_ ),
+    .D(execution_unit_0.register_file_0.r13_14_ ),
     .Y(_02264_)
   );
   OAI21X1 _08541_ (
@@ -23304,10 +23304,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01809_)
   );
   AOI22X1 _08542_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02243_),
     .C(_02248_),
-    .D( execution_unit_0.register_file_0.r13_15_ ),
+    .D(execution_unit_0.register_file_0.r13_15_ ),
     .Y(_02265_)
   );
   OAI21X1 _08543_ (
@@ -23317,17 +23317,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01810_)
   );
   AND2X1 _08544_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_12_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_12_ ),
     .Y(_02266_)
   );
   NAND2X1 _08545_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_12_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_12_ ),
     .Y(_02267_)
   );
   NAND2X1 _08546_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02593_),
     .Y(_02268_)
   );
@@ -23342,7 +23342,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02270_)
   );
   AOI21X1 _08549_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02593_),
     .C(_02266_),
     .Y(_02271_)
@@ -23355,7 +23355,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02165_),
     .B(_02270_),
     .C(_02272_),
-    .D( execution_unit_0.register_file_0.r12_0_ ),
+    .D(execution_unit_0.register_file_0.r12_0_ ),
     .Y(_02273_)
   );
   AOI21X1 _08552_ (
@@ -23365,10 +23365,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01811_)
   );
   AOI22X1 _08553_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_1_ ),
+    .D(execution_unit_0.register_file_0.r12_1_ ),
     .Y(_02274_)
   );
   OAI21X1 _08554_ (
@@ -23378,10 +23378,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01812_)
   );
   AOI22X1 _08555_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_2_ ),
+    .D(execution_unit_0.register_file_0.r12_2_ ),
     .Y(_02275_)
   );
   OAI21X1 _08556_ (
@@ -23391,10 +23391,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01813_)
   );
   AOI22X1 _08557_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_3_ ),
+    .D(execution_unit_0.register_file_0.r12_3_ ),
     .Y(_02276_)
   );
   OAI21X1 _08558_ (
@@ -23407,7 +23407,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02269_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_4_ ),
+    .D(execution_unit_0.register_file_0.r12_4_ ),
     .Y(_02277_)
   );
   OAI21X1 _08560_ (
@@ -23417,10 +23417,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01815_)
   );
   AOI22X1 _08561_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_5_ ),
+    .D(execution_unit_0.register_file_0.r12_5_ ),
     .Y(_02278_)
   );
   OAI21X1 _08562_ (
@@ -23433,7 +23433,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02269_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_6_ ),
+    .D(execution_unit_0.register_file_0.r12_6_ ),
     .Y(_02279_)
   );
   OAI21X1 _08564_ (
@@ -23443,10 +23443,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01817_)
   );
   AOI22X1 _08565_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_7_ ),
+    .D(execution_unit_0.register_file_0.r12_7_ ),
     .Y(_02280_)
   );
   OAI21X1 _08566_ (
@@ -23456,10 +23456,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01818_)
   );
   AOI22X1 _08567_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_8_ ),
+    .D(execution_unit_0.register_file_0.r12_8_ ),
     .Y(_02281_)
   );
   OAI21X1 _08568_ (
@@ -23469,10 +23469,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01819_)
   );
   AOI22X1 _08569_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_9_ ),
+    .D(execution_unit_0.register_file_0.r12_9_ ),
     .Y(_02282_)
   );
   OAI21X1 _08570_ (
@@ -23482,10 +23482,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01820_)
   );
   AOI22X1 _08571_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_10_ ),
+    .D(execution_unit_0.register_file_0.r12_10_ ),
     .Y(_02283_)
   );
   OAI21X1 _08572_ (
@@ -23495,10 +23495,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01821_)
   );
   AOI22X1 _08573_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_11_ ),
+    .D(execution_unit_0.register_file_0.r12_11_ ),
     .Y(_02284_)
   );
   OAI21X1 _08574_ (
@@ -23511,7 +23511,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02269_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_12_ ),
+    .D(execution_unit_0.register_file_0.r12_12_ ),
     .Y(_02285_)
   );
   OAI21X1 _08576_ (
@@ -23521,10 +23521,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01823_)
   );
   AOI22X1 _08577_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_13_ ),
+    .D(execution_unit_0.register_file_0.r12_13_ ),
     .Y(_02286_)
   );
   OAI21X1 _08578_ (
@@ -23537,7 +23537,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02269_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_14_ ),
+    .D(execution_unit_0.register_file_0.r12_14_ ),
     .Y(_02287_)
   );
   OAI21X1 _08580_ (
@@ -23547,10 +23547,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01825_)
   );
   AOI22X1 _08581_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02266_),
     .C(_02271_),
-    .D( execution_unit_0.register_file_0.r12_15_ ),
+    .D(execution_unit_0.register_file_0.r12_15_ ),
     .Y(_02288_)
   );
   OAI21X1 _08582_ (
@@ -23560,17 +23560,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01826_)
   );
   AND2X1 _08583_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_11_ ),
     .Y(_02289_)
   );
   NAND2X1 _08584_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_11_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_11_ ),
     .Y(_02290_)
   );
   NAND2X1 _08585_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02591_),
     .Y(_02291_)
   );
@@ -23585,7 +23585,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02293_)
   );
   AOI21X1 _08588_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02591_),
     .C(_02289_),
     .Y(_02294_)
@@ -23608,10 +23608,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01827_)
   );
   AOI22X1 _08592_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_1_ ),
+    .D(execution_unit_0.register_file_0.r11_1_ ),
     .Y(_02297_)
   );
   OAI21X1 _08593_ (
@@ -23621,10 +23621,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01828_)
   );
   AOI22X1 _08594_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_2_ ),
+    .D(execution_unit_0.register_file_0.r11_2_ ),
     .Y(_02298_)
   );
   OAI21X1 _08595_ (
@@ -23634,10 +23634,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01829_)
   );
   AOI22X1 _08596_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_3_ ),
+    .D(execution_unit_0.register_file_0.r11_3_ ),
     .Y(_02299_)
   );
   OAI21X1 _08597_ (
@@ -23650,7 +23650,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02292_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_4_ ),
+    .D(execution_unit_0.register_file_0.r11_4_ ),
     .Y(_02300_)
   );
   OAI21X1 _08599_ (
@@ -23660,10 +23660,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01831_)
   );
   AOI22X1 _08600_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_5_ ),
+    .D(execution_unit_0.register_file_0.r11_5_ ),
     .Y(_02301_)
   );
   OAI21X1 _08601_ (
@@ -23676,7 +23676,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02292_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_6_ ),
+    .D(execution_unit_0.register_file_0.r11_6_ ),
     .Y(_02302_)
   );
   OAI21X1 _08603_ (
@@ -23686,10 +23686,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01833_)
   );
   AOI22X1 _08604_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_7_ ),
+    .D(execution_unit_0.register_file_0.r11_7_ ),
     .Y(_02303_)
   );
   OAI21X1 _08605_ (
@@ -23699,10 +23699,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01834_)
   );
   AOI22X1 _08606_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_8_ ),
+    .D(execution_unit_0.register_file_0.r11_8_ ),
     .Y(_02304_)
   );
   OAI21X1 _08607_ (
@@ -23712,10 +23712,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01835_)
   );
   AOI22X1 _08608_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_9_ ),
+    .D(execution_unit_0.register_file_0.r11_9_ ),
     .Y(_02305_)
   );
   OAI21X1 _08609_ (
@@ -23725,10 +23725,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01836_)
   );
   AOI22X1 _08610_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_10_ ),
+    .D(execution_unit_0.register_file_0.r11_10_ ),
     .Y(_02306_)
   );
   OAI21X1 _08611_ (
@@ -23738,10 +23738,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01837_)
   );
   AOI22X1 _08612_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_11_ ),
+    .D(execution_unit_0.register_file_0.r11_11_ ),
     .Y(_02307_)
   );
   OAI21X1 _08613_ (
@@ -23754,7 +23754,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02292_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_12_ ),
+    .D(execution_unit_0.register_file_0.r11_12_ ),
     .Y(_02308_)
   );
   OAI21X1 _08615_ (
@@ -23764,10 +23764,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01839_)
   );
   AOI22X1 _08616_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_13_ ),
+    .D(execution_unit_0.register_file_0.r11_13_ ),
     .Y(_02309_)
   );
   OAI21X1 _08617_ (
@@ -23780,7 +23780,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02292_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_14_ ),
+    .D(execution_unit_0.register_file_0.r11_14_ ),
     .Y(_02310_)
   );
   OAI21X1 _08619_ (
@@ -23790,10 +23790,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01841_)
   );
   AOI22X1 _08620_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02289_),
     .C(_02294_),
-    .D( execution_unit_0.register_file_0.r11_15_ ),
+    .D(execution_unit_0.register_file_0.r11_15_ ),
     .Y(_02311_)
   );
   OAI21X1 _08621_ (
@@ -23803,17 +23803,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01842_)
   );
   AND2X1 _08622_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_10_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_10_ ),
     .Y(_02312_)
   );
   NAND2X1 _08623_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_10_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_10_ ),
     .Y(_02313_)
   );
   NAND2X1 _08624_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02583_),
     .Y(_02314_)
   );
@@ -23828,7 +23828,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02316_)
   );
   AOI21X1 _08627_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02583_),
     .C(_02312_),
     .Y(_02317_)
@@ -23851,10 +23851,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01843_)
   );
   AOI22X1 _08631_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_1_ ),
+    .D(execution_unit_0.register_file_0.r10_1_ ),
     .Y(_02320_)
   );
   OAI21X1 _08632_ (
@@ -23864,10 +23864,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01844_)
   );
   AOI22X1 _08633_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_2_ ),
+    .D(execution_unit_0.register_file_0.r10_2_ ),
     .Y(_02321_)
   );
   OAI21X1 _08634_ (
@@ -23877,10 +23877,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01845_)
   );
   AOI22X1 _08635_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_3_ ),
+    .D(execution_unit_0.register_file_0.r10_3_ ),
     .Y(_02322_)
   );
   OAI21X1 _08636_ (
@@ -23893,7 +23893,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02315_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_4_ ),
+    .D(execution_unit_0.register_file_0.r10_4_ ),
     .Y(_02323_)
   );
   OAI21X1 _08638_ (
@@ -23903,10 +23903,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01847_)
   );
   AOI22X1 _08639_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_5_ ),
+    .D(execution_unit_0.register_file_0.r10_5_ ),
     .Y(_02324_)
   );
   OAI21X1 _08640_ (
@@ -23919,7 +23919,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02315_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_6_ ),
+    .D(execution_unit_0.register_file_0.r10_6_ ),
     .Y(_02325_)
   );
   OAI21X1 _08642_ (
@@ -23929,10 +23929,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01849_)
   );
   AOI22X1 _08643_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_7_ ),
+    .D(execution_unit_0.register_file_0.r10_7_ ),
     .Y(_02326_)
   );
   OAI21X1 _08644_ (
@@ -23942,10 +23942,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01850_)
   );
   AOI22X1 _08645_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_8_ ),
+    .D(execution_unit_0.register_file_0.r10_8_ ),
     .Y(_02327_)
   );
   OAI21X1 _08646_ (
@@ -23955,10 +23955,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01851_)
   );
   AOI22X1 _08647_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_9_ ),
+    .D(execution_unit_0.register_file_0.r10_9_ ),
     .Y(_02328_)
   );
   OAI21X1 _08648_ (
@@ -23968,10 +23968,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01852_)
   );
   AOI22X1 _08649_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_10_ ),
+    .D(execution_unit_0.register_file_0.r10_10_ ),
     .Y(_02329_)
   );
   OAI21X1 _08650_ (
@@ -23981,10 +23981,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01853_)
   );
   AOI22X1 _08651_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_11_ ),
+    .D(execution_unit_0.register_file_0.r10_11_ ),
     .Y(_02330_)
   );
   OAI21X1 _08652_ (
@@ -23997,7 +23997,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02315_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_12_ ),
+    .D(execution_unit_0.register_file_0.r10_12_ ),
     .Y(_02331_)
   );
   OAI21X1 _08654_ (
@@ -24007,10 +24007,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01855_)
   );
   AOI22X1 _08655_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_13_ ),
+    .D(execution_unit_0.register_file_0.r10_13_ ),
     .Y(_02332_)
   );
   OAI21X1 _08656_ (
@@ -24023,7 +24023,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02315_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_14_ ),
+    .D(execution_unit_0.register_file_0.r10_14_ ),
     .Y(_02333_)
   );
   OAI21X1 _08658_ (
@@ -24033,10 +24033,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01857_)
   );
   AOI22X1 _08659_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02312_),
     .C(_02317_),
-    .D( execution_unit_0.register_file_0.r10_15_ ),
+    .D(execution_unit_0.register_file_0.r10_15_ ),
     .Y(_02334_)
   );
   OAI21X1 _08660_ (
@@ -24046,17 +24046,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01858_)
   );
   AND2X1 _08661_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_9_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_9_ ),
     .Y(_02335_)
   );
   NAND2X1 _08662_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_9_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_9_ ),
     .Y(_02336_)
   );
   NAND2X1 _08663_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02588_),
     .Y(_02337_)
   );
@@ -24071,7 +24071,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02339_)
   );
   AOI21X1 _08666_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02588_),
     .C(_02335_),
     .Y(_02340_)
@@ -24084,7 +24084,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02165_),
     .B(_02339_),
     .C(_02341_),
-    .D( execution_unit_0.register_file_0.r9_0_ ),
+    .D(execution_unit_0.register_file_0.r9_0_ ),
     .Y(_02342_)
   );
   AOI21X1 _08669_ (
@@ -24094,10 +24094,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01859_)
   );
   AOI22X1 _08670_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_1_ ),
+    .D(execution_unit_0.register_file_0.r9_1_ ),
     .Y(_02343_)
   );
   OAI21X1 _08671_ (
@@ -24107,10 +24107,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01860_)
   );
   AOI22X1 _08672_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_2_ ),
+    .D(execution_unit_0.register_file_0.r9_2_ ),
     .Y(_02344_)
   );
   OAI21X1 _08673_ (
@@ -24120,10 +24120,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01861_)
   );
   AOI22X1 _08674_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_3_ ),
+    .D(execution_unit_0.register_file_0.r9_3_ ),
     .Y(_02345_)
   );
   OAI21X1 _08675_ (
@@ -24136,7 +24136,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02338_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_4_ ),
+    .D(execution_unit_0.register_file_0.r9_4_ ),
     .Y(_02346_)
   );
   OAI21X1 _08677_ (
@@ -24146,10 +24146,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01863_)
   );
   AOI22X1 _08678_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_5_ ),
+    .D(execution_unit_0.register_file_0.r9_5_ ),
     .Y(_02347_)
   );
   OAI21X1 _08679_ (
@@ -24162,7 +24162,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02338_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_6_ ),
+    .D(execution_unit_0.register_file_0.r9_6_ ),
     .Y(_02348_)
   );
   OAI21X1 _08681_ (
@@ -24172,10 +24172,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01865_)
   );
   AOI22X1 _08682_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_7_ ),
+    .D(execution_unit_0.register_file_0.r9_7_ ),
     .Y(_02349_)
   );
   OAI21X1 _08683_ (
@@ -24185,10 +24185,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01866_)
   );
   AOI22X1 _08684_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_8_ ),
+    .D(execution_unit_0.register_file_0.r9_8_ ),
     .Y(_02350_)
   );
   OAI21X1 _08685_ (
@@ -24198,10 +24198,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01867_)
   );
   AOI22X1 _08686_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_9_ ),
+    .D(execution_unit_0.register_file_0.r9_9_ ),
     .Y(_02351_)
   );
   OAI21X1 _08687_ (
@@ -24211,10 +24211,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01868_)
   );
   AOI22X1 _08688_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_10_ ),
+    .D(execution_unit_0.register_file_0.r9_10_ ),
     .Y(_02352_)
   );
   OAI21X1 _08689_ (
@@ -24224,10 +24224,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01869_)
   );
   AOI22X1 _08690_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_11_ ),
+    .D(execution_unit_0.register_file_0.r9_11_ ),
     .Y(_02353_)
   );
   OAI21X1 _08691_ (
@@ -24240,7 +24240,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02338_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_12_ ),
+    .D(execution_unit_0.register_file_0.r9_12_ ),
     .Y(_02354_)
   );
   OAI21X1 _08693_ (
@@ -24250,10 +24250,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01871_)
   );
   AOI22X1 _08694_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_13_ ),
+    .D(execution_unit_0.register_file_0.r9_13_ ),
     .Y(_02355_)
   );
   OAI21X1 _08695_ (
@@ -24266,7 +24266,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02338_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_14_ ),
+    .D(execution_unit_0.register_file_0.r9_14_ ),
     .Y(_02356_)
   );
   OAI21X1 _08697_ (
@@ -24276,10 +24276,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01873_)
   );
   AOI22X1 _08698_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02335_),
     .C(_02340_),
-    .D( execution_unit_0.register_file_0.r9_15_ ),
+    .D(execution_unit_0.register_file_0.r9_15_ ),
     .Y(_02357_)
   );
   OAI21X1 _08699_ (
@@ -24289,17 +24289,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01874_)
   );
   AND2X1 _08700_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_8_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_8_ ),
     .Y(_02358_)
   );
   NAND2X1 _08701_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_8_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_8_ ),
     .Y(_02359_)
   );
   NAND2X1 _08702_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02581_),
     .Y(_02360_)
   );
@@ -24314,13 +24314,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02362_)
   );
   AOI21X1 _08705_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02581_),
     .C(_02358_),
     .Y(_02363_)
   );
   OAI22X1 _08706_ (
-    .A( execution_unit_0.alu_0.alu_out_0_ ),
+    .A(execution_unit_0.alu_0.alu_out_0_ ),
     .B(_02359_),
     .C(_02362_),
     .D(_02165_),
@@ -24333,10 +24333,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01875_)
   );
   AOI22X1 _08708_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_1_ ),
+    .D(execution_unit_0.register_file_0.r8_1_ ),
     .Y(_02365_)
   );
   OAI21X1 _08709_ (
@@ -24346,10 +24346,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01876_)
   );
   AOI22X1 _08710_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_2_ ),
+    .D(execution_unit_0.register_file_0.r8_2_ ),
     .Y(_02366_)
   );
   OAI21X1 _08711_ (
@@ -24359,10 +24359,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01877_)
   );
   AOI22X1 _08712_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_3_ ),
+    .D(execution_unit_0.register_file_0.r8_3_ ),
     .Y(_02367_)
   );
   OAI21X1 _08713_ (
@@ -24375,7 +24375,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02361_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_4_ ),
+    .D(execution_unit_0.register_file_0.r8_4_ ),
     .Y(_02368_)
   );
   OAI21X1 _08715_ (
@@ -24385,10 +24385,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01879_)
   );
   AOI22X1 _08716_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_5_ ),
+    .D(execution_unit_0.register_file_0.r8_5_ ),
     .Y(_02369_)
   );
   OAI21X1 _08717_ (
@@ -24401,7 +24401,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02361_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_6_ ),
+    .D(execution_unit_0.register_file_0.r8_6_ ),
     .Y(_02370_)
   );
   OAI21X1 _08719_ (
@@ -24411,10 +24411,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01881_)
   );
   AOI22X1 _08720_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_7_ ),
+    .D(execution_unit_0.register_file_0.r8_7_ ),
     .Y(_02371_)
   );
   OAI21X1 _08721_ (
@@ -24424,10 +24424,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01882_)
   );
   AOI22X1 _08722_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_8_ ),
+    .D(execution_unit_0.register_file_0.r8_8_ ),
     .Y(_02372_)
   );
   OAI21X1 _08723_ (
@@ -24437,10 +24437,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01883_)
   );
   AOI22X1 _08724_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_9_ ),
+    .D(execution_unit_0.register_file_0.r8_9_ ),
     .Y(_02373_)
   );
   OAI21X1 _08725_ (
@@ -24450,10 +24450,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01884_)
   );
   AOI22X1 _08726_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_10_ ),
+    .D(execution_unit_0.register_file_0.r8_10_ ),
     .Y(_02374_)
   );
   OAI21X1 _08727_ (
@@ -24463,10 +24463,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01885_)
   );
   AOI22X1 _08728_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_11_ ),
+    .D(execution_unit_0.register_file_0.r8_11_ ),
     .Y(_02375_)
   );
   OAI21X1 _08729_ (
@@ -24479,7 +24479,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02361_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_12_ ),
+    .D(execution_unit_0.register_file_0.r8_12_ ),
     .Y(_02376_)
   );
   OAI21X1 _08731_ (
@@ -24489,10 +24489,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01887_)
   );
   AOI22X1 _08732_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_13_ ),
+    .D(execution_unit_0.register_file_0.r8_13_ ),
     .Y(_02377_)
   );
   OAI21X1 _08733_ (
@@ -24505,7 +24505,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02361_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_14_ ),
+    .D(execution_unit_0.register_file_0.r8_14_ ),
     .Y(_02378_)
   );
   OAI21X1 _08735_ (
@@ -24515,10 +24515,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01889_)
   );
   AOI22X1 _08736_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02358_),
     .C(_02363_),
-    .D( execution_unit_0.register_file_0.r8_15_ ),
+    .D(execution_unit_0.register_file_0.r8_15_ ),
     .Y(_02379_)
   );
   OAI21X1 _08737_ (
@@ -24528,17 +24528,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01890_)
   );
   AND2X1 _08738_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_7_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_7_ ),
     .Y(_02380_)
   );
   NAND2X1 _08739_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_7_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_7_ ),
     .Y(_02381_)
   );
   NAND2X1 _08740_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02585_),
     .Y(_02382_)
   );
@@ -24553,13 +24553,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02384_)
   );
   AOI21X1 _08743_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02585_),
     .C(_02380_),
     .Y(_02385_)
   );
   OAI22X1 _08744_ (
-    .A( execution_unit_0.alu_0.alu_out_0_ ),
+    .A(execution_unit_0.alu_0.alu_out_0_ ),
     .B(_02381_),
     .C(_02384_),
     .D(_02165_),
@@ -24572,10 +24572,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01891_)
   );
   AOI22X1 _08746_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_1_ ),
+    .D(execution_unit_0.register_file_0.r7_1_ ),
     .Y(_02387_)
   );
   OAI21X1 _08747_ (
@@ -24585,10 +24585,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01892_)
   );
   AOI22X1 _08748_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_2_ ),
+    .D(execution_unit_0.register_file_0.r7_2_ ),
     .Y(_02388_)
   );
   OAI21X1 _08749_ (
@@ -24598,10 +24598,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01893_)
   );
   AOI22X1 _08750_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_3_ ),
+    .D(execution_unit_0.register_file_0.r7_3_ ),
     .Y(_02389_)
   );
   OAI21X1 _08751_ (
@@ -24614,7 +24614,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02383_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_4_ ),
+    .D(execution_unit_0.register_file_0.r7_4_ ),
     .Y(_02390_)
   );
   OAI21X1 _08753_ (
@@ -24624,10 +24624,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01895_)
   );
   AOI22X1 _08754_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_5_ ),
+    .D(execution_unit_0.register_file_0.r7_5_ ),
     .Y(_02391_)
   );
   OAI21X1 _08755_ (
@@ -24640,7 +24640,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02383_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_6_ ),
+    .D(execution_unit_0.register_file_0.r7_6_ ),
     .Y(_02392_)
   );
   OAI21X1 _08757_ (
@@ -24650,10 +24650,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01897_)
   );
   AOI22X1 _08758_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_7_ ),
+    .D(execution_unit_0.register_file_0.r7_7_ ),
     .Y(_02393_)
   );
   OAI21X1 _08759_ (
@@ -24663,10 +24663,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01898_)
   );
   AOI22X1 _08760_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_8_ ),
+    .D(execution_unit_0.register_file_0.r7_8_ ),
     .Y(_02394_)
   );
   OAI21X1 _08761_ (
@@ -24676,10 +24676,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01899_)
   );
   AOI22X1 _08762_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_9_ ),
+    .D(execution_unit_0.register_file_0.r7_9_ ),
     .Y(_02395_)
   );
   OAI21X1 _08763_ (
@@ -24689,10 +24689,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01900_)
   );
   AOI22X1 _08764_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_10_ ),
+    .D(execution_unit_0.register_file_0.r7_10_ ),
     .Y(_02396_)
   );
   OAI21X1 _08765_ (
@@ -24702,10 +24702,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01901_)
   );
   AOI22X1 _08766_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_11_ ),
+    .D(execution_unit_0.register_file_0.r7_11_ ),
     .Y(_02397_)
   );
   OAI21X1 _08767_ (
@@ -24718,7 +24718,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02383_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_12_ ),
+    .D(execution_unit_0.register_file_0.r7_12_ ),
     .Y(_02398_)
   );
   OAI21X1 _08769_ (
@@ -24728,10 +24728,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01903_)
   );
   AOI22X1 _08770_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_13_ ),
+    .D(execution_unit_0.register_file_0.r7_13_ ),
     .Y(_02399_)
   );
   OAI21X1 _08771_ (
@@ -24744,7 +24744,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02383_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_14_ ),
+    .D(execution_unit_0.register_file_0.r7_14_ ),
     .Y(_02400_)
   );
   OAI21X1 _08773_ (
@@ -24754,10 +24754,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01905_)
   );
   AOI22X1 _08774_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02380_),
     .C(_02385_),
-    .D( execution_unit_0.register_file_0.r7_15_ ),
+    .D(execution_unit_0.register_file_0.r7_15_ ),
     .Y(_02401_)
   );
   OAI21X1 _08775_ (
@@ -24767,17 +24767,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01906_)
   );
   AND2X1 _08776_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_6_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_6_ ),
     .Y(_02402_)
   );
   NAND2X1 _08777_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_6_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_6_ ),
     .Y(_02403_)
   );
   NAND2X1 _08778_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02575_),
     .Y(_02404_)
   );
@@ -24792,13 +24792,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02406_)
   );
   AOI21X1 _08781_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02575_),
     .C(_02402_),
     .Y(_02407_)
   );
   OAI22X1 _08782_ (
-    .A( execution_unit_0.alu_0.alu_out_0_ ),
+    .A(execution_unit_0.alu_0.alu_out_0_ ),
     .B(_02403_),
     .C(_02406_),
     .D(_02165_),
@@ -24811,10 +24811,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01907_)
   );
   AOI22X1 _08784_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_1_ ),
+    .D(execution_unit_0.register_file_0.r6_1_ ),
     .Y(_02409_)
   );
   OAI21X1 _08785_ (
@@ -24824,10 +24824,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01908_)
   );
   AOI22X1 _08786_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_2_ ),
+    .D(execution_unit_0.register_file_0.r6_2_ ),
     .Y(_02410_)
   );
   OAI21X1 _08787_ (
@@ -24837,10 +24837,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01909_)
   );
   AOI22X1 _08788_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_3_ ),
+    .D(execution_unit_0.register_file_0.r6_3_ ),
     .Y(_02411_)
   );
   OAI21X1 _08789_ (
@@ -24853,7 +24853,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02405_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_4_ ),
+    .D(execution_unit_0.register_file_0.r6_4_ ),
     .Y(_02412_)
   );
   OAI21X1 _08791_ (
@@ -24863,10 +24863,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01911_)
   );
   AOI22X1 _08792_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_5_ ),
+    .D(execution_unit_0.register_file_0.r6_5_ ),
     .Y(_02413_)
   );
   OAI21X1 _08793_ (
@@ -24879,7 +24879,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02405_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_6_ ),
+    .D(execution_unit_0.register_file_0.r6_6_ ),
     .Y(_02414_)
   );
   OAI21X1 _08795_ (
@@ -24889,10 +24889,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01913_)
   );
   AOI22X1 _08796_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_7_ ),
+    .D(execution_unit_0.register_file_0.r6_7_ ),
     .Y(_02415_)
   );
   OAI21X1 _08797_ (
@@ -24902,10 +24902,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01914_)
   );
   AOI22X1 _08798_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_8_ ),
+    .D(execution_unit_0.register_file_0.r6_8_ ),
     .Y(_02416_)
   );
   OAI21X1 _08799_ (
@@ -24915,10 +24915,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01915_)
   );
   AOI22X1 _08800_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_9_ ),
+    .D(execution_unit_0.register_file_0.r6_9_ ),
     .Y(_02417_)
   );
   OAI21X1 _08801_ (
@@ -24928,10 +24928,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01916_)
   );
   AOI22X1 _08802_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_10_ ),
+    .D(execution_unit_0.register_file_0.r6_10_ ),
     .Y(_02418_)
   );
   OAI21X1 _08803_ (
@@ -24941,10 +24941,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01917_)
   );
   AOI22X1 _08804_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_11_ ),
+    .D(execution_unit_0.register_file_0.r6_11_ ),
     .Y(_02419_)
   );
   OAI21X1 _08805_ (
@@ -24957,7 +24957,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02405_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_12_ ),
+    .D(execution_unit_0.register_file_0.r6_12_ ),
     .Y(_02420_)
   );
   OAI21X1 _08807_ (
@@ -24967,10 +24967,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01919_)
   );
   AOI22X1 _08808_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_13_ ),
+    .D(execution_unit_0.register_file_0.r6_13_ ),
     .Y(_02421_)
   );
   OAI21X1 _08809_ (
@@ -24983,7 +24983,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02405_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_14_ ),
+    .D(execution_unit_0.register_file_0.r6_14_ ),
     .Y(_02422_)
   );
   OAI21X1 _08811_ (
@@ -24993,10 +24993,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01921_)
   );
   AOI22X1 _08812_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02402_),
     .C(_02407_),
-    .D( execution_unit_0.register_file_0.r6_15_ ),
+    .D(execution_unit_0.register_file_0.r6_15_ ),
     .Y(_02423_)
   );
   OAI21X1 _08813_ (
@@ -25006,17 +25006,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01922_)
   );
   AND2X1 _08814_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_5_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_5_ ),
     .Y(_02424_)
   );
   NAND2X1 _08815_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_5_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_5_ ),
     .Y(_02425_)
   );
   NAND2X1 _08816_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02589_),
     .Y(_02426_)
   );
@@ -25031,13 +25031,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02428_)
   );
   AOI21X1 _08819_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02589_),
     .C(_02424_),
     .Y(_02429_)
   );
   OAI22X1 _08820_ (
-    .A( execution_unit_0.alu_0.alu_out_0_ ),
+    .A(execution_unit_0.alu_0.alu_out_0_ ),
     .B(_02425_),
     .C(_02428_),
     .D(_02165_),
@@ -25050,10 +25050,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01923_)
   );
   AOI22X1 _08822_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_1_ ),
+    .D(execution_unit_0.register_file_0.r5_1_ ),
     .Y(_02431_)
   );
   OAI21X1 _08823_ (
@@ -25063,10 +25063,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01924_)
   );
   AOI22X1 _08824_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_2_ ),
+    .D(execution_unit_0.register_file_0.r5_2_ ),
     .Y(_02432_)
   );
   OAI21X1 _08825_ (
@@ -25076,10 +25076,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01925_)
   );
   AOI22X1 _08826_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_3_ ),
+    .D(execution_unit_0.register_file_0.r5_3_ ),
     .Y(_02433_)
   );
   OAI21X1 _08827_ (
@@ -25092,7 +25092,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02427_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_4_ ),
+    .D(execution_unit_0.register_file_0.r5_4_ ),
     .Y(_02434_)
   );
   OAI21X1 _08829_ (
@@ -25102,10 +25102,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01927_)
   );
   AOI22X1 _08830_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_5_ ),
+    .D(execution_unit_0.register_file_0.r5_5_ ),
     .Y(_02435_)
   );
   OAI21X1 _08831_ (
@@ -25118,7 +25118,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02427_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_6_ ),
+    .D(execution_unit_0.register_file_0.r5_6_ ),
     .Y(_02436_)
   );
   OAI21X1 _08833_ (
@@ -25128,10 +25128,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01929_)
   );
   AOI22X1 _08834_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_7_ ),
+    .D(execution_unit_0.register_file_0.r5_7_ ),
     .Y(_02437_)
   );
   OAI21X1 _08835_ (
@@ -25141,10 +25141,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01930_)
   );
   AOI22X1 _08836_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_8_ ),
+    .D(execution_unit_0.register_file_0.r5_8_ ),
     .Y(_02438_)
   );
   OAI21X1 _08837_ (
@@ -25154,10 +25154,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01931_)
   );
   AOI22X1 _08838_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_9_ ),
+    .D(execution_unit_0.register_file_0.r5_9_ ),
     .Y(_02439_)
   );
   OAI21X1 _08839_ (
@@ -25167,10 +25167,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01932_)
   );
   AOI22X1 _08840_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_10_ ),
+    .D(execution_unit_0.register_file_0.r5_10_ ),
     .Y(_02440_)
   );
   OAI21X1 _08841_ (
@@ -25180,10 +25180,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01933_)
   );
   AOI22X1 _08842_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_11_ ),
+    .D(execution_unit_0.register_file_0.r5_11_ ),
     .Y(_02441_)
   );
   OAI21X1 _08843_ (
@@ -25196,7 +25196,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02427_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_12_ ),
+    .D(execution_unit_0.register_file_0.r5_12_ ),
     .Y(_02442_)
   );
   OAI21X1 _08845_ (
@@ -25206,10 +25206,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01935_)
   );
   AOI22X1 _08846_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_13_ ),
+    .D(execution_unit_0.register_file_0.r5_13_ ),
     .Y(_02443_)
   );
   OAI21X1 _08847_ (
@@ -25222,7 +25222,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02427_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_14_ ),
+    .D(execution_unit_0.register_file_0.r5_14_ ),
     .Y(_02444_)
   );
   OAI21X1 _08849_ (
@@ -25232,10 +25232,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01937_)
   );
   AOI22X1 _08850_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02424_),
     .C(_02429_),
-    .D( execution_unit_0.register_file_0.r5_15_ ),
+    .D(execution_unit_0.register_file_0.r5_15_ ),
     .Y(_02445_)
   );
   OAI21X1 _08851_ (
@@ -25245,17 +25245,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01938_)
   );
   AND2X1 _08852_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_4_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_4_ ),
     .Y(_02446_)
   );
   NAND2X1 _08853_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_4_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_4_ ),
     .Y(_02447_)
   );
   NAND2X1 _08854_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02571_),
     .Y(_02448_)
   );
@@ -25270,7 +25270,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02450_)
   );
   AOI21X1 _08857_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02571_),
     .C(_02446_),
     .Y(_02451_)
@@ -25283,7 +25283,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02165_),
     .B(_02450_),
     .C(_02452_),
-    .D( execution_unit_0.register_file_0.r4_0_ ),
+    .D(execution_unit_0.register_file_0.r4_0_ ),
     .Y(_02453_)
   );
   AOI21X1 _08860_ (
@@ -25293,10 +25293,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01939_)
   );
   AOI22X1 _08861_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_1_ ),
+    .D(execution_unit_0.register_file_0.r4_1_ ),
     .Y(_02454_)
   );
   OAI21X1 _08862_ (
@@ -25306,10 +25306,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01940_)
   );
   AOI22X1 _08863_ (
-    .A( execution_unit_0.alu_0.alu_out_2_ ),
+    .A(execution_unit_0.alu_0.alu_out_2_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_2_ ),
+    .D(execution_unit_0.register_file_0.r4_2_ ),
     .Y(_02455_)
   );
   OAI21X1 _08864_ (
@@ -25319,10 +25319,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01941_)
   );
   AOI22X1 _08865_ (
-    .A( execution_unit_0.alu_0.alu_out_3_ ),
+    .A(execution_unit_0.alu_0.alu_out_3_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_3_ ),
+    .D(execution_unit_0.register_file_0.r4_3_ ),
     .Y(_02456_)
   );
   OAI21X1 _08866_ (
@@ -25335,7 +25335,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02179_),
     .B(_02449_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_4_ ),
+    .D(execution_unit_0.register_file_0.r4_4_ ),
     .Y(_02457_)
   );
   OAI21X1 _08868_ (
@@ -25345,10 +25345,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01943_)
   );
   AOI22X1 _08869_ (
-    .A( execution_unit_0.alu_0.alu_out_5_ ),
+    .A(execution_unit_0.alu_0.alu_out_5_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_5_ ),
+    .D(execution_unit_0.register_file_0.r4_5_ ),
     .Y(_02458_)
   );
   OAI21X1 _08870_ (
@@ -25361,7 +25361,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02186_),
     .B(_02449_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_6_ ),
+    .D(execution_unit_0.register_file_0.r4_6_ ),
     .Y(_02459_)
   );
   OAI21X1 _08872_ (
@@ -25371,10 +25371,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01945_)
   );
   AOI22X1 _08873_ (
-    .A( execution_unit_0.alu_0.alu_out_7_ ),
+    .A(execution_unit_0.alu_0.alu_out_7_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_7_ ),
+    .D(execution_unit_0.register_file_0.r4_7_ ),
     .Y(_02460_)
   );
   OAI21X1 _08874_ (
@@ -25384,10 +25384,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01946_)
   );
   AOI22X1 _08875_ (
-    .A( execution_unit_0.pc_sw_8_ ),
+    .A(execution_unit_0.pc_sw_8_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_8_ ),
+    .D(execution_unit_0.register_file_0.r4_8_ ),
     .Y(_02461_)
   );
   OAI21X1 _08876_ (
@@ -25397,10 +25397,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01947_)
   );
   AOI22X1 _08877_ (
-    .A( execution_unit_0.pc_sw_9_ ),
+    .A(execution_unit_0.pc_sw_9_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_9_ ),
+    .D(execution_unit_0.register_file_0.r4_9_ ),
     .Y(_02462_)
   );
   OAI21X1 _08878_ (
@@ -25410,10 +25410,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01948_)
   );
   AOI22X1 _08879_ (
-    .A( execution_unit_0.pc_sw_10_ ),
+    .A(execution_unit_0.pc_sw_10_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_10_ ),
+    .D(execution_unit_0.register_file_0.r4_10_ ),
     .Y(_02463_)
   );
   OAI21X1 _08880_ (
@@ -25423,10 +25423,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01949_)
   );
   AOI22X1 _08881_ (
-    .A( execution_unit_0.pc_sw_11_ ),
+    .A(execution_unit_0.pc_sw_11_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_11_ ),
+    .D(execution_unit_0.register_file_0.r4_11_ ),
     .Y(_02464_)
   );
   OAI21X1 _08882_ (
@@ -25439,7 +25439,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02207_),
     .B(_02449_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_12_ ),
+    .D(execution_unit_0.register_file_0.r4_12_ ),
     .Y(_02465_)
   );
   OAI21X1 _08884_ (
@@ -25449,10 +25449,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01951_)
   );
   AOI22X1 _08885_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_13_ ),
+    .D(execution_unit_0.register_file_0.r4_13_ ),
     .Y(_02466_)
   );
   OAI21X1 _08886_ (
@@ -25465,7 +25465,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_02214_),
     .B(_02449_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_14_ ),
+    .D(execution_unit_0.register_file_0.r4_14_ ),
     .Y(_02467_)
   );
   OAI21X1 _08888_ (
@@ -25475,10 +25475,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01953_)
   );
   AOI22X1 _08889_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02446_),
     .C(_02451_),
-    .D( execution_unit_0.register_file_0.r4_15_ ),
+    .D(execution_unit_0.register_file_0.r4_15_ ),
     .Y(_02468_)
   );
   OAI21X1 _08890_ (
@@ -25488,12 +25488,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01954_)
   );
   NAND2X1 _08891_ (
-    .A( execution_unit_0.reg_dest_wr ),
-    .B( execution_unit_0.inst_dest_3_ ),
+    .A(execution_unit_0.reg_dest_wr ),
+    .B(execution_unit_0.inst_dest_3_ ),
     .Y(_02469_)
   );
   NAND2X1 _08892_ (
-    .A( execution_unit_0.register_file_0.r3_0_ ),
+    .A(execution_unit_0.register_file_0.r3_0_ ),
     .B(_02469_),
     .Y(_02470_)
   );
@@ -25504,7 +25504,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01955_)
   );
   NAND2X1 _08894_ (
-    .A( execution_unit_0.register_file_0.r3_1_ ),
+    .A(execution_unit_0.register_file_0.r3_1_ ),
     .B(_02469_),
     .Y(_02471_)
   );
@@ -25515,7 +25515,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01956_)
   );
   NAND2X1 _08896_ (
-    .A( execution_unit_0.register_file_0.r3_2_ ),
+    .A(execution_unit_0.register_file_0.r3_2_ ),
     .B(_02469_),
     .Y(_02472_)
   );
@@ -25526,7 +25526,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01957_)
   );
   NAND2X1 _08898_ (
-    .A( execution_unit_0.register_file_0.r3_3_ ),
+    .A(execution_unit_0.register_file_0.r3_3_ ),
     .B(_02469_),
     .Y(_02473_)
   );
@@ -25537,7 +25537,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01958_)
   );
   NAND2X1 _08900_ (
-    .A( execution_unit_0.register_file_0.r3_4_ ),
+    .A(execution_unit_0.register_file_0.r3_4_ ),
     .B(_02469_),
     .Y(_02474_)
   );
@@ -25548,7 +25548,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01959_)
   );
   NAND2X1 _08902_ (
-    .A( execution_unit_0.register_file_0.r3_5_ ),
+    .A(execution_unit_0.register_file_0.r3_5_ ),
     .B(_02469_),
     .Y(_02475_)
   );
@@ -25559,7 +25559,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01960_)
   );
   NAND2X1 _08904_ (
-    .A( execution_unit_0.register_file_0.r3_6_ ),
+    .A(execution_unit_0.register_file_0.r3_6_ ),
     .B(_02469_),
     .Y(_02476_)
   );
@@ -25570,7 +25570,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01961_)
   );
   NAND2X1 _08906_ (
-    .A( execution_unit_0.register_file_0.r3_7_ ),
+    .A(execution_unit_0.register_file_0.r3_7_ ),
     .B(_02469_),
     .Y(_02477_)
   );
@@ -25581,7 +25581,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01962_)
   );
   NAND2X1 _08908_ (
-    .A( execution_unit_0.register_file_0.r3_8_ ),
+    .A(execution_unit_0.register_file_0.r3_8_ ),
     .B(_02469_),
     .Y(_02478_)
   );
@@ -25592,7 +25592,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01963_)
   );
   NAND2X1 _08910_ (
-    .A( execution_unit_0.register_file_0.r3_9_ ),
+    .A(execution_unit_0.register_file_0.r3_9_ ),
     .B(_02469_),
     .Y(_02479_)
   );
@@ -25603,7 +25603,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01964_)
   );
   NAND2X1 _08912_ (
-    .A( execution_unit_0.register_file_0.r3_10_ ),
+    .A(execution_unit_0.register_file_0.r3_10_ ),
     .B(_02469_),
     .Y(_02480_)
   );
@@ -25614,7 +25614,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01965_)
   );
   NAND2X1 _08914_ (
-    .A( execution_unit_0.register_file_0.r3_11_ ),
+    .A(execution_unit_0.register_file_0.r3_11_ ),
     .B(_02469_),
     .Y(_02481_)
   );
@@ -25625,7 +25625,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01966_)
   );
   NAND2X1 _08916_ (
-    .A( execution_unit_0.register_file_0.r3_12_ ),
+    .A(execution_unit_0.register_file_0.r3_12_ ),
     .B(_02469_),
     .Y(_02482_)
   );
@@ -25636,7 +25636,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01967_)
   );
   NAND2X1 _08918_ (
-    .A( execution_unit_0.register_file_0.r3_13_ ),
+    .A(execution_unit_0.register_file_0.r3_13_ ),
     .B(_02469_),
     .Y(_02483_)
   );
@@ -25647,7 +25647,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01968_)
   );
   NAND2X1 _08920_ (
-    .A( execution_unit_0.register_file_0.r3_14_ ),
+    .A(execution_unit_0.register_file_0.r3_14_ ),
     .B(_02469_),
     .Y(_02484_)
   );
@@ -25658,7 +25658,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01969_)
   );
   NAND2X1 _08922_ (
-    .A( execution_unit_0.register_file_0.r3_15_ ),
+    .A(execution_unit_0.register_file_0.r3_15_ ),
     .B(_02469_),
     .Y(_02485_)
   );
@@ -25674,7 +25674,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02486_)
   );
   AOI22X1 _08925_ (
-    .A( execution_unit_0.alu_0.status_0_ ),
+    .A(execution_unit_0.alu_0.status_0_ ),
     .B(_02146_),
     .C(_02486_),
     .D(_02540_),
@@ -25682,12 +25682,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _08926_ (
     .A(_02540_),
-    .B( execution_unit_0.alu_0.alu_stat_wr_0_ ),
-    .C( execution_unit_0.alu_0.alu_stat_0_ ),
+    .B(execution_unit_0.alu_0.alu_stat_wr_0_ ),
+    .C(execution_unit_0.alu_0.alu_stat_0_ ),
     .Y(_02488_)
   );
   OAI21X1 _08927_ (
-    .A( execution_unit_0.alu_0.alu_stat_wr_0_ ),
+    .A(execution_unit_0.alu_0.alu_stat_wr_0_ ),
     .B(_02487_),
     .C(_02488_),
     .Y(_01971_)
@@ -25698,19 +25698,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02489_)
   );
   AND2X1 _08929_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.reg_dest_wr ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.reg_dest_wr ),
     .Y(_02490_)
   );
   NAND2X1 _08930_ (
-    .A( execution_unit_0.inst_dest_1_ ),
-    .B( execution_unit_0.reg_dest_wr ),
+    .A(execution_unit_0.inst_dest_1_ ),
+    .B(execution_unit_0.reg_dest_wr ),
     .Y(_02491_)
   );
   AOI21X1 _08931_ (
-    .A( execution_unit_0.reg_incr ),
+    .A(execution_unit_0.reg_incr ),
     .B(_02566_),
-    .C( execution_unit_0.reg_sp_wr ),
+    .C(execution_unit_0.reg_sp_wr ),
     .Y(_02492_)
   );
   NOR2X1 _08932_ (
@@ -25720,7 +25720,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _08933_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_1_ ),
+    .B(dbg_0.UNUSED_eu_mab_1_ ),
     .C(_02493_),
     .Y(_02494_)
   );
@@ -25730,10 +25730,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02495_)
   );
   AOI22X1 _08935_ (
-    .A( execution_unit_0.alu_0.alu_out_1_ ),
+    .A(execution_unit_0.alu_0.alu_out_1_ ),
     .B(_02490_),
     .C(_02495_),
-    .D( execution_unit_0.register_file_0.r1_1_ ),
+    .D(execution_unit_0.register_file_0.r1_1_ ),
     .Y(_02496_)
   );
   OAI21X1 _08936_ (
@@ -25744,7 +25744,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _08937_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_2_ ),
+    .B(dbg_0.UNUSED_eu_mab_2_ ),
     .C(_02493_),
     .Y(_02497_)
   );
@@ -25755,7 +25755,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02498_)
   );
   AOI21X1 _08939_ (
-    .A( execution_unit_0.register_file_0.r1_2_ ),
+    .A(execution_unit_0.register_file_0.r1_2_ ),
     .B(_02495_),
     .C(_02498_),
     .Y(_02499_)
@@ -25768,7 +25768,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _08941_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_3_ ),
+    .B(dbg_0.UNUSED_eu_mab_3_ ),
     .C(_02493_),
     .Y(_02500_)
   );
@@ -25779,7 +25779,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02501_)
   );
   AOI21X1 _08943_ (
-    .A( execution_unit_0.register_file_0.r1_3_ ),
+    .A(execution_unit_0.register_file_0.r1_3_ ),
     .B(_02495_),
     .C(_02501_),
     .Y(_02502_)
@@ -25791,21 +25791,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01974_)
   );
   NOR2X1 _08945_ (
-    .A( execution_unit_0.reg_sp_wr ),
+    .A(execution_unit_0.reg_sp_wr ),
     .B(_02179_),
     .Y(_02503_)
   );
   OAI21X1 _08946_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_4_ ),
+    .B(dbg_0.UNUSED_eu_mab_4_ ),
     .C(_02493_),
     .Y(_02504_)
   );
   AOI22X1 _08947_ (
-    .A( execution_unit_0.alu_0.alu_out_4_ ),
+    .A(execution_unit_0.alu_0.alu_out_4_ ),
     .B(_02490_),
     .C(_02495_),
-    .D( execution_unit_0.register_file_0.r1_4_ ),
+    .D(execution_unit_0.register_file_0.r1_4_ ),
     .Y(_02505_)
   );
   OAI21X1 _08948_ (
@@ -25816,7 +25816,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _08949_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_5_ ),
+    .B(dbg_0.UNUSED_eu_mab_5_ ),
     .C(_02493_),
     .Y(_02506_)
   );
@@ -25827,7 +25827,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02507_)
   );
   AOI21X1 _08951_ (
-    .A( execution_unit_0.register_file_0.r1_5_ ),
+    .A(execution_unit_0.register_file_0.r1_5_ ),
     .B(_02495_),
     .C(_02507_),
     .Y(_02508_)
@@ -25839,21 +25839,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01976_)
   );
   NOR2X1 _08953_ (
-    .A( execution_unit_0.reg_sp_wr ),
+    .A(execution_unit_0.reg_sp_wr ),
     .B(_02186_),
     .Y(_02509_)
   );
   OAI21X1 _08954_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_6_ ),
+    .B(dbg_0.UNUSED_eu_mab_6_ ),
     .C(_02493_),
     .Y(_02510_)
   );
   AOI22X1 _08955_ (
-    .A( execution_unit_0.alu_0.alu_out_6_ ),
+    .A(execution_unit_0.alu_0.alu_out_6_ ),
     .B(_02490_),
     .C(_02495_),
-    .D( execution_unit_0.register_file_0.r1_6_ ),
+    .D(execution_unit_0.register_file_0.r1_6_ ),
     .Y(_02511_)
   );
   OAI21X1 _08956_ (
@@ -25864,7 +25864,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _08957_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_7_ ),
+    .B(dbg_0.UNUSED_eu_mab_7_ ),
     .C(_02493_),
     .Y(_02512_)
   );
@@ -25875,7 +25875,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02513_)
   );
   AOI21X1 _08959_ (
-    .A( execution_unit_0.register_file_0.r1_7_ ),
+    .A(execution_unit_0.register_file_0.r1_7_ ),
     .B(_02495_),
     .C(_02513_),
     .Y(_02514_)
@@ -25888,7 +25888,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _08961_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_8_ ),
+    .B(dbg_0.UNUSED_eu_mab_8_ ),
     .C(_02493_),
     .Y(_02515_)
   );
@@ -25899,7 +25899,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02516_)
   );
   AOI21X1 _08963_ (
-    .A( execution_unit_0.register_file_0.r1_8_ ),
+    .A(execution_unit_0.register_file_0.r1_8_ ),
     .B(_02495_),
     .C(_02516_),
     .Y(_02517_)
@@ -25912,7 +25912,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _08965_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_9_ ),
+    .B(dbg_0.UNUSED_eu_mab_9_ ),
     .C(_02493_),
     .Y(_02518_)
   );
@@ -25923,7 +25923,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02519_)
   );
   AOI21X1 _08967_ (
-    .A( execution_unit_0.register_file_0.r1_9_ ),
+    .A(execution_unit_0.register_file_0.r1_9_ ),
     .B(_02495_),
     .C(_02519_),
     .Y(_02520_)
@@ -25936,7 +25936,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _08969_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_10_ ),
+    .B(dbg_0.UNUSED_eu_mab_10_ ),
     .C(_02493_),
     .Y(_02521_)
   );
@@ -25947,7 +25947,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02522_)
   );
   AOI21X1 _08971_ (
-    .A( execution_unit_0.register_file_0.r1_10_ ),
+    .A(execution_unit_0.register_file_0.r1_10_ ),
     .B(_02495_),
     .C(_02522_),
     .Y(_02523_)
@@ -25960,7 +25960,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _08973_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_11_ ),
+    .B(dbg_0.UNUSED_eu_mab_11_ ),
     .C(_02493_),
     .Y(_02524_)
   );
@@ -25971,7 +25971,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02525_)
   );
   AOI21X1 _08975_ (
-    .A( execution_unit_0.register_file_0.r1_11_ ),
+    .A(execution_unit_0.register_file_0.r1_11_ ),
     .B(_02495_),
     .C(_02525_),
     .Y(_02526_)
@@ -25983,21 +25983,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01982_)
   );
   NOR2X1 _08977_ (
-    .A( execution_unit_0.reg_sp_wr ),
+    .A(execution_unit_0.reg_sp_wr ),
     .B(_02207_),
     .Y(_02527_)
   );
   OAI21X1 _08978_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_12_ ),
+    .B(dbg_0.UNUSED_eu_mab_12_ ),
     .C(_02493_),
     .Y(_02528_)
   );
   AOI22X1 _08979_ (
-    .A( execution_unit_0.pc_sw_12_ ),
+    .A(execution_unit_0.pc_sw_12_ ),
     .B(_02490_),
     .C(_02495_),
-    .D( execution_unit_0.register_file_0.r1_12_ ),
+    .D(execution_unit_0.register_file_0.r1_12_ ),
     .Y(_02529_)
   );
   OAI21X1 _08980_ (
@@ -26009,20 +26009,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _08981_ (
     .A(_02210_),
     .B(_02211_),
-    .C( execution_unit_0.reg_sp_wr ),
+    .C(execution_unit_0.reg_sp_wr ),
     .Y(_02530_)
   );
   OAI21X1 _08982_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_13_ ),
+    .B(dbg_0.UNUSED_eu_mab_13_ ),
     .C(_02493_),
     .Y(_02531_)
   );
   AOI22X1 _08983_ (
-    .A( execution_unit_0.pc_sw_13_ ),
+    .A(execution_unit_0.pc_sw_13_ ),
     .B(_02490_),
     .C(_02495_),
-    .D( execution_unit_0.register_file_0.r1_13_ ),
+    .D(execution_unit_0.register_file_0.r1_13_ ),
     .Y(_02532_)
   );
   OAI21X1 _08984_ (
@@ -26032,21 +26032,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_01984_)
   );
   NOR2X1 _08985_ (
-    .A( execution_unit_0.reg_sp_wr ),
+    .A(execution_unit_0.reg_sp_wr ),
     .B(_02214_),
     .Y(_02533_)
   );
   OAI21X1 _08986_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_14_ ),
+    .B(dbg_0.UNUSED_eu_mab_14_ ),
     .C(_02493_),
     .Y(_02534_)
   );
   AOI22X1 _08987_ (
-    .A( execution_unit_0.pc_sw_14_ ),
+    .A(execution_unit_0.pc_sw_14_ ),
     .B(_02490_),
     .C(_02495_),
-    .D( execution_unit_0.register_file_0.r1_14_ ),
+    .D(execution_unit_0.register_file_0.r1_14_ ),
     .Y(_02535_)
   );
   OAI21X1 _08988_ (
@@ -26058,20 +26058,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _08989_ (
     .A(_02216_),
     .B(_02217_),
-    .C( execution_unit_0.reg_sp_wr ),
+    .C(execution_unit_0.reg_sp_wr ),
     .Y(_02536_)
   );
   OAI21X1 _08990_ (
     .A(_02539_),
-    .B( dbg_0.UNUSED_eu_mab_15_ ),
+    .B(dbg_0.UNUSED_eu_mab_15_ ),
     .C(_02493_),
     .Y(_02537_)
   );
   AOI22X1 _08991_ (
-    .A( execution_unit_0.pc_sw_15_ ),
+    .A(execution_unit_0.pc_sw_15_ ),
     .B(_02490_),
     .C(_02495_),
-    .D( execution_unit_0.register_file_0.r1_15_ ),
+    .D(execution_unit_0.register_file_0.r1_15_ ),
     .Y(_02538_)
   );
   OAI21X1 _08992_ (
@@ -26083,1617 +26083,1617 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   DFFSR _08993_ (
     .CLK(dco_clk),
     .D(_01757_),
-    .Q( execution_unit_0.alu_0.status_1_ ),
+    .Q(execution_unit_0.alu_0.status_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _08994_ (
     .CLK(dco_clk),
     .D(_01758_),
-    .Q( execution_unit_0.alu_0.status_2_ ),
+    .Q(execution_unit_0.alu_0.status_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _08995_ (
     .CLK(dco_clk),
     .D(_01759_),
-    .Q( execution_unit_0.gie ),
+    .Q(execution_unit_0.gie ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _08996_ (
     .CLK(dco_clk),
     .D(_01760_),
-    .Q( clock_module_0.oscoff ),
+    .Q(clock_module_0.oscoff ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _08997_ (
     .CLK(dco_clk),
     .D(_01761_),
-    .Q( clock_module_0.scg1 ),
+    .Q(clock_module_0.scg1 ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _08998_ (
     .CLK(dco_clk),
     .D(_01762_),
-    .Q( execution_unit_0.alu_0.status_3_ ),
+    .Q(execution_unit_0.alu_0.status_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _08999_ (
     .CLK(dco_clk),
     .D(_01763_),
-    .Q( execution_unit_0.register_file_0.r15_0_ ),
+    .Q(execution_unit_0.register_file_0.r15_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09000_ (
     .CLK(dco_clk),
     .D(_01764_),
-    .Q( execution_unit_0.register_file_0.r15_1_ ),
+    .Q(execution_unit_0.register_file_0.r15_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09001_ (
     .CLK(dco_clk),
     .D(_01765_),
-    .Q( execution_unit_0.register_file_0.r15_2_ ),
+    .Q(execution_unit_0.register_file_0.r15_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09002_ (
     .CLK(dco_clk),
     .D(_01766_),
-    .Q( execution_unit_0.register_file_0.r15_3_ ),
+    .Q(execution_unit_0.register_file_0.r15_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09003_ (
     .CLK(dco_clk),
     .D(_01767_),
-    .Q( execution_unit_0.register_file_0.r15_4_ ),
+    .Q(execution_unit_0.register_file_0.r15_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09004_ (
     .CLK(dco_clk),
     .D(_01768_),
-    .Q( execution_unit_0.register_file_0.r15_5_ ),
+    .Q(execution_unit_0.register_file_0.r15_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09005_ (
     .CLK(dco_clk),
     .D(_01769_),
-    .Q( execution_unit_0.register_file_0.r15_6_ ),
+    .Q(execution_unit_0.register_file_0.r15_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09006_ (
     .CLK(dco_clk),
     .D(_01770_),
-    .Q( execution_unit_0.register_file_0.r15_7_ ),
+    .Q(execution_unit_0.register_file_0.r15_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09007_ (
     .CLK(dco_clk),
     .D(_01771_),
-    .Q( execution_unit_0.register_file_0.r15_8_ ),
+    .Q(execution_unit_0.register_file_0.r15_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09008_ (
     .CLK(dco_clk),
     .D(_01772_),
-    .Q( execution_unit_0.register_file_0.r15_9_ ),
+    .Q(execution_unit_0.register_file_0.r15_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09009_ (
     .CLK(dco_clk),
     .D(_01773_),
-    .Q( execution_unit_0.register_file_0.r15_10_ ),
+    .Q(execution_unit_0.register_file_0.r15_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09010_ (
     .CLK(dco_clk),
     .D(_01774_),
-    .Q( execution_unit_0.register_file_0.r15_11_ ),
+    .Q(execution_unit_0.register_file_0.r15_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09011_ (
     .CLK(dco_clk),
     .D(_01775_),
-    .Q( execution_unit_0.register_file_0.r15_12_ ),
+    .Q(execution_unit_0.register_file_0.r15_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09012_ (
     .CLK(dco_clk),
     .D(_01776_),
-    .Q( execution_unit_0.register_file_0.r15_13_ ),
+    .Q(execution_unit_0.register_file_0.r15_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09013_ (
     .CLK(dco_clk),
     .D(_01777_),
-    .Q( execution_unit_0.register_file_0.r15_14_ ),
+    .Q(execution_unit_0.register_file_0.r15_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09014_ (
     .CLK(dco_clk),
     .D(_01778_),
-    .Q( execution_unit_0.register_file_0.r15_15_ ),
+    .Q(execution_unit_0.register_file_0.r15_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09015_ (
     .CLK(dco_clk),
     .D(_01779_),
-    .Q( execution_unit_0.register_file_0.r14_0_ ),
+    .Q(execution_unit_0.register_file_0.r14_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09016_ (
     .CLK(dco_clk),
     .D(_01780_),
-    .Q( execution_unit_0.register_file_0.r14_1_ ),
+    .Q(execution_unit_0.register_file_0.r14_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09017_ (
     .CLK(dco_clk),
     .D(_01781_),
-    .Q( execution_unit_0.register_file_0.r14_2_ ),
+    .Q(execution_unit_0.register_file_0.r14_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09018_ (
     .CLK(dco_clk),
     .D(_01782_),
-    .Q( execution_unit_0.register_file_0.r14_3_ ),
+    .Q(execution_unit_0.register_file_0.r14_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09019_ (
     .CLK(dco_clk),
     .D(_01783_),
-    .Q( execution_unit_0.register_file_0.r14_4_ ),
+    .Q(execution_unit_0.register_file_0.r14_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09020_ (
     .CLK(dco_clk),
     .D(_01784_),
-    .Q( execution_unit_0.register_file_0.r14_5_ ),
+    .Q(execution_unit_0.register_file_0.r14_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09021_ (
     .CLK(dco_clk),
     .D(_01785_),
-    .Q( execution_unit_0.register_file_0.r14_6_ ),
+    .Q(execution_unit_0.register_file_0.r14_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09022_ (
     .CLK(dco_clk),
     .D(_01786_),
-    .Q( execution_unit_0.register_file_0.r14_7_ ),
+    .Q(execution_unit_0.register_file_0.r14_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09023_ (
     .CLK(dco_clk),
     .D(_01787_),
-    .Q( execution_unit_0.register_file_0.r14_8_ ),
+    .Q(execution_unit_0.register_file_0.r14_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09024_ (
     .CLK(dco_clk),
     .D(_01788_),
-    .Q( execution_unit_0.register_file_0.r14_9_ ),
+    .Q(execution_unit_0.register_file_0.r14_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09025_ (
     .CLK(dco_clk),
     .D(_01789_),
-    .Q( execution_unit_0.register_file_0.r14_10_ ),
+    .Q(execution_unit_0.register_file_0.r14_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09026_ (
     .CLK(dco_clk),
     .D(_01790_),
-    .Q( execution_unit_0.register_file_0.r14_11_ ),
+    .Q(execution_unit_0.register_file_0.r14_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09027_ (
     .CLK(dco_clk),
     .D(_01791_),
-    .Q( execution_unit_0.register_file_0.r14_12_ ),
+    .Q(execution_unit_0.register_file_0.r14_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09028_ (
     .CLK(dco_clk),
     .D(_01792_),
-    .Q( execution_unit_0.register_file_0.r14_13_ ),
+    .Q(execution_unit_0.register_file_0.r14_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09029_ (
     .CLK(dco_clk),
     .D(_01793_),
-    .Q( execution_unit_0.register_file_0.r14_14_ ),
+    .Q(execution_unit_0.register_file_0.r14_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09030_ (
     .CLK(dco_clk),
     .D(_01794_),
-    .Q( execution_unit_0.register_file_0.r14_15_ ),
+    .Q(execution_unit_0.register_file_0.r14_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09031_ (
     .CLK(dco_clk),
     .D(_01795_),
-    .Q( execution_unit_0.register_file_0.r13_0_ ),
+    .Q(execution_unit_0.register_file_0.r13_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09032_ (
     .CLK(dco_clk),
     .D(_01796_),
-    .Q( execution_unit_0.register_file_0.r13_1_ ),
+    .Q(execution_unit_0.register_file_0.r13_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09033_ (
     .CLK(dco_clk),
     .D(_01797_),
-    .Q( execution_unit_0.register_file_0.r13_2_ ),
+    .Q(execution_unit_0.register_file_0.r13_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09034_ (
     .CLK(dco_clk),
     .D(_01798_),
-    .Q( execution_unit_0.register_file_0.r13_3_ ),
+    .Q(execution_unit_0.register_file_0.r13_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09035_ (
     .CLK(dco_clk),
     .D(_01799_),
-    .Q( execution_unit_0.register_file_0.r13_4_ ),
+    .Q(execution_unit_0.register_file_0.r13_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09036_ (
     .CLK(dco_clk),
     .D(_01800_),
-    .Q( execution_unit_0.register_file_0.r13_5_ ),
+    .Q(execution_unit_0.register_file_0.r13_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09037_ (
     .CLK(dco_clk),
     .D(_01801_),
-    .Q( execution_unit_0.register_file_0.r13_6_ ),
+    .Q(execution_unit_0.register_file_0.r13_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09038_ (
     .CLK(dco_clk),
     .D(_01802_),
-    .Q( execution_unit_0.register_file_0.r13_7_ ),
+    .Q(execution_unit_0.register_file_0.r13_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09039_ (
     .CLK(dco_clk),
     .D(_01803_),
-    .Q( execution_unit_0.register_file_0.r13_8_ ),
+    .Q(execution_unit_0.register_file_0.r13_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09040_ (
     .CLK(dco_clk),
     .D(_01804_),
-    .Q( execution_unit_0.register_file_0.r13_9_ ),
+    .Q(execution_unit_0.register_file_0.r13_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09041_ (
     .CLK(dco_clk),
     .D(_01805_),
-    .Q( execution_unit_0.register_file_0.r13_10_ ),
+    .Q(execution_unit_0.register_file_0.r13_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09042_ (
     .CLK(dco_clk),
     .D(_01806_),
-    .Q( execution_unit_0.register_file_0.r13_11_ ),
+    .Q(execution_unit_0.register_file_0.r13_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09043_ (
     .CLK(dco_clk),
     .D(_01807_),
-    .Q( execution_unit_0.register_file_0.r13_12_ ),
+    .Q(execution_unit_0.register_file_0.r13_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09044_ (
     .CLK(dco_clk),
     .D(_01808_),
-    .Q( execution_unit_0.register_file_0.r13_13_ ),
+    .Q(execution_unit_0.register_file_0.r13_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09045_ (
     .CLK(dco_clk),
     .D(_01809_),
-    .Q( execution_unit_0.register_file_0.r13_14_ ),
+    .Q(execution_unit_0.register_file_0.r13_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09046_ (
     .CLK(dco_clk),
     .D(_01810_),
-    .Q( execution_unit_0.register_file_0.r13_15_ ),
+    .Q(execution_unit_0.register_file_0.r13_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09047_ (
     .CLK(dco_clk),
     .D(_01811_),
-    .Q( execution_unit_0.register_file_0.r12_0_ ),
+    .Q(execution_unit_0.register_file_0.r12_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09048_ (
     .CLK(dco_clk),
     .D(_01812_),
-    .Q( execution_unit_0.register_file_0.r12_1_ ),
+    .Q(execution_unit_0.register_file_0.r12_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09049_ (
     .CLK(dco_clk),
     .D(_01813_),
-    .Q( execution_unit_0.register_file_0.r12_2_ ),
+    .Q(execution_unit_0.register_file_0.r12_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09050_ (
     .CLK(dco_clk),
     .D(_01814_),
-    .Q( execution_unit_0.register_file_0.r12_3_ ),
+    .Q(execution_unit_0.register_file_0.r12_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09051_ (
     .CLK(dco_clk),
     .D(_01815_),
-    .Q( execution_unit_0.register_file_0.r12_4_ ),
+    .Q(execution_unit_0.register_file_0.r12_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09052_ (
     .CLK(dco_clk),
     .D(_01816_),
-    .Q( execution_unit_0.register_file_0.r12_5_ ),
+    .Q(execution_unit_0.register_file_0.r12_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09053_ (
     .CLK(dco_clk),
     .D(_01817_),
-    .Q( execution_unit_0.register_file_0.r12_6_ ),
+    .Q(execution_unit_0.register_file_0.r12_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09054_ (
     .CLK(dco_clk),
     .D(_01818_),
-    .Q( execution_unit_0.register_file_0.r12_7_ ),
+    .Q(execution_unit_0.register_file_0.r12_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09055_ (
     .CLK(dco_clk),
     .D(_01819_),
-    .Q( execution_unit_0.register_file_0.r12_8_ ),
+    .Q(execution_unit_0.register_file_0.r12_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09056_ (
     .CLK(dco_clk),
     .D(_01820_),
-    .Q( execution_unit_0.register_file_0.r12_9_ ),
+    .Q(execution_unit_0.register_file_0.r12_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09057_ (
     .CLK(dco_clk),
     .D(_01821_),
-    .Q( execution_unit_0.register_file_0.r12_10_ ),
+    .Q(execution_unit_0.register_file_0.r12_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09058_ (
     .CLK(dco_clk),
     .D(_01822_),
-    .Q( execution_unit_0.register_file_0.r12_11_ ),
+    .Q(execution_unit_0.register_file_0.r12_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09059_ (
     .CLK(dco_clk),
     .D(_01823_),
-    .Q( execution_unit_0.register_file_0.r12_12_ ),
+    .Q(execution_unit_0.register_file_0.r12_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09060_ (
     .CLK(dco_clk),
     .D(_01824_),
-    .Q( execution_unit_0.register_file_0.r12_13_ ),
+    .Q(execution_unit_0.register_file_0.r12_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09061_ (
     .CLK(dco_clk),
     .D(_01825_),
-    .Q( execution_unit_0.register_file_0.r12_14_ ),
+    .Q(execution_unit_0.register_file_0.r12_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09062_ (
     .CLK(dco_clk),
     .D(_01826_),
-    .Q( execution_unit_0.register_file_0.r12_15_ ),
+    .Q(execution_unit_0.register_file_0.r12_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09063_ (
     .CLK(dco_clk),
     .D(_01827_),
-    .Q( execution_unit_0.register_file_0.r11_0_ ),
+    .Q(execution_unit_0.register_file_0.r11_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09064_ (
     .CLK(dco_clk),
     .D(_01828_),
-    .Q( execution_unit_0.register_file_0.r11_1_ ),
+    .Q(execution_unit_0.register_file_0.r11_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09065_ (
     .CLK(dco_clk),
     .D(_01829_),
-    .Q( execution_unit_0.register_file_0.r11_2_ ),
+    .Q(execution_unit_0.register_file_0.r11_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09066_ (
     .CLK(dco_clk),
     .D(_01830_),
-    .Q( execution_unit_0.register_file_0.r11_3_ ),
+    .Q(execution_unit_0.register_file_0.r11_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09067_ (
     .CLK(dco_clk),
     .D(_01831_),
-    .Q( execution_unit_0.register_file_0.r11_4_ ),
+    .Q(execution_unit_0.register_file_0.r11_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09068_ (
     .CLK(dco_clk),
     .D(_01832_),
-    .Q( execution_unit_0.register_file_0.r11_5_ ),
+    .Q(execution_unit_0.register_file_0.r11_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09069_ (
     .CLK(dco_clk),
     .D(_01833_),
-    .Q( execution_unit_0.register_file_0.r11_6_ ),
+    .Q(execution_unit_0.register_file_0.r11_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09070_ (
     .CLK(dco_clk),
     .D(_01834_),
-    .Q( execution_unit_0.register_file_0.r11_7_ ),
+    .Q(execution_unit_0.register_file_0.r11_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09071_ (
     .CLK(dco_clk),
     .D(_01835_),
-    .Q( execution_unit_0.register_file_0.r11_8_ ),
+    .Q(execution_unit_0.register_file_0.r11_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09072_ (
     .CLK(dco_clk),
     .D(_01836_),
-    .Q( execution_unit_0.register_file_0.r11_9_ ),
+    .Q(execution_unit_0.register_file_0.r11_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09073_ (
     .CLK(dco_clk),
     .D(_01837_),
-    .Q( execution_unit_0.register_file_0.r11_10_ ),
+    .Q(execution_unit_0.register_file_0.r11_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09074_ (
     .CLK(dco_clk),
     .D(_01838_),
-    .Q( execution_unit_0.register_file_0.r11_11_ ),
+    .Q(execution_unit_0.register_file_0.r11_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09075_ (
     .CLK(dco_clk),
     .D(_01839_),
-    .Q( execution_unit_0.register_file_0.r11_12_ ),
+    .Q(execution_unit_0.register_file_0.r11_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09076_ (
     .CLK(dco_clk),
     .D(_01840_),
-    .Q( execution_unit_0.register_file_0.r11_13_ ),
+    .Q(execution_unit_0.register_file_0.r11_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09077_ (
     .CLK(dco_clk),
     .D(_01841_),
-    .Q( execution_unit_0.register_file_0.r11_14_ ),
+    .Q(execution_unit_0.register_file_0.r11_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09078_ (
     .CLK(dco_clk),
     .D(_01842_),
-    .Q( execution_unit_0.register_file_0.r11_15_ ),
+    .Q(execution_unit_0.register_file_0.r11_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09079_ (
     .CLK(dco_clk),
     .D(_01843_),
-    .Q( execution_unit_0.register_file_0.r10_0_ ),
+    .Q(execution_unit_0.register_file_0.r10_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09080_ (
     .CLK(dco_clk),
     .D(_01844_),
-    .Q( execution_unit_0.register_file_0.r10_1_ ),
+    .Q(execution_unit_0.register_file_0.r10_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09081_ (
     .CLK(dco_clk),
     .D(_01845_),
-    .Q( execution_unit_0.register_file_0.r10_2_ ),
+    .Q(execution_unit_0.register_file_0.r10_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09082_ (
     .CLK(dco_clk),
     .D(_01846_),
-    .Q( execution_unit_0.register_file_0.r10_3_ ),
+    .Q(execution_unit_0.register_file_0.r10_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09083_ (
     .CLK(dco_clk),
     .D(_01847_),
-    .Q( execution_unit_0.register_file_0.r10_4_ ),
+    .Q(execution_unit_0.register_file_0.r10_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09084_ (
     .CLK(dco_clk),
     .D(_01848_),
-    .Q( execution_unit_0.register_file_0.r10_5_ ),
+    .Q(execution_unit_0.register_file_0.r10_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09085_ (
     .CLK(dco_clk),
     .D(_01849_),
-    .Q( execution_unit_0.register_file_0.r10_6_ ),
+    .Q(execution_unit_0.register_file_0.r10_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09086_ (
     .CLK(dco_clk),
     .D(_01850_),
-    .Q( execution_unit_0.register_file_0.r10_7_ ),
+    .Q(execution_unit_0.register_file_0.r10_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09087_ (
     .CLK(dco_clk),
     .D(_01851_),
-    .Q( execution_unit_0.register_file_0.r10_8_ ),
+    .Q(execution_unit_0.register_file_0.r10_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09088_ (
     .CLK(dco_clk),
     .D(_01852_),
-    .Q( execution_unit_0.register_file_0.r10_9_ ),
+    .Q(execution_unit_0.register_file_0.r10_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09089_ (
     .CLK(dco_clk),
     .D(_01853_),
-    .Q( execution_unit_0.register_file_0.r10_10_ ),
+    .Q(execution_unit_0.register_file_0.r10_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09090_ (
     .CLK(dco_clk),
     .D(_01854_),
-    .Q( execution_unit_0.register_file_0.r10_11_ ),
+    .Q(execution_unit_0.register_file_0.r10_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09091_ (
     .CLK(dco_clk),
     .D(_01855_),
-    .Q( execution_unit_0.register_file_0.r10_12_ ),
+    .Q(execution_unit_0.register_file_0.r10_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09092_ (
     .CLK(dco_clk),
     .D(_01856_),
-    .Q( execution_unit_0.register_file_0.r10_13_ ),
+    .Q(execution_unit_0.register_file_0.r10_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09093_ (
     .CLK(dco_clk),
     .D(_01857_),
-    .Q( execution_unit_0.register_file_0.r10_14_ ),
+    .Q(execution_unit_0.register_file_0.r10_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09094_ (
     .CLK(dco_clk),
     .D(_01858_),
-    .Q( execution_unit_0.register_file_0.r10_15_ ),
+    .Q(execution_unit_0.register_file_0.r10_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09095_ (
     .CLK(dco_clk),
     .D(_01859_),
-    .Q( execution_unit_0.register_file_0.r9_0_ ),
+    .Q(execution_unit_0.register_file_0.r9_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09096_ (
     .CLK(dco_clk),
     .D(_01860_),
-    .Q( execution_unit_0.register_file_0.r9_1_ ),
+    .Q(execution_unit_0.register_file_0.r9_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09097_ (
     .CLK(dco_clk),
     .D(_01861_),
-    .Q( execution_unit_0.register_file_0.r9_2_ ),
+    .Q(execution_unit_0.register_file_0.r9_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09098_ (
     .CLK(dco_clk),
     .D(_01862_),
-    .Q( execution_unit_0.register_file_0.r9_3_ ),
+    .Q(execution_unit_0.register_file_0.r9_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09099_ (
     .CLK(dco_clk),
     .D(_01863_),
-    .Q( execution_unit_0.register_file_0.r9_4_ ),
+    .Q(execution_unit_0.register_file_0.r9_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09100_ (
     .CLK(dco_clk),
     .D(_01864_),
-    .Q( execution_unit_0.register_file_0.r9_5_ ),
+    .Q(execution_unit_0.register_file_0.r9_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09101_ (
     .CLK(dco_clk),
     .D(_01865_),
-    .Q( execution_unit_0.register_file_0.r9_6_ ),
+    .Q(execution_unit_0.register_file_0.r9_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09102_ (
     .CLK(dco_clk),
     .D(_01866_),
-    .Q( execution_unit_0.register_file_0.r9_7_ ),
+    .Q(execution_unit_0.register_file_0.r9_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09103_ (
     .CLK(dco_clk),
     .D(_01867_),
-    .Q( execution_unit_0.register_file_0.r9_8_ ),
+    .Q(execution_unit_0.register_file_0.r9_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09104_ (
     .CLK(dco_clk),
     .D(_01868_),
-    .Q( execution_unit_0.register_file_0.r9_9_ ),
+    .Q(execution_unit_0.register_file_0.r9_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09105_ (
     .CLK(dco_clk),
     .D(_01869_),
-    .Q( execution_unit_0.register_file_0.r9_10_ ),
+    .Q(execution_unit_0.register_file_0.r9_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09106_ (
     .CLK(dco_clk),
     .D(_01870_),
-    .Q( execution_unit_0.register_file_0.r9_11_ ),
+    .Q(execution_unit_0.register_file_0.r9_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09107_ (
     .CLK(dco_clk),
     .D(_01871_),
-    .Q( execution_unit_0.register_file_0.r9_12_ ),
+    .Q(execution_unit_0.register_file_0.r9_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09108_ (
     .CLK(dco_clk),
     .D(_01872_),
-    .Q( execution_unit_0.register_file_0.r9_13_ ),
+    .Q(execution_unit_0.register_file_0.r9_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09109_ (
     .CLK(dco_clk),
     .D(_01873_),
-    .Q( execution_unit_0.register_file_0.r9_14_ ),
+    .Q(execution_unit_0.register_file_0.r9_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09110_ (
     .CLK(dco_clk),
     .D(_01874_),
-    .Q( execution_unit_0.register_file_0.r9_15_ ),
+    .Q(execution_unit_0.register_file_0.r9_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09111_ (
     .CLK(dco_clk),
     .D(_01875_),
-    .Q( execution_unit_0.register_file_0.r8_0_ ),
+    .Q(execution_unit_0.register_file_0.r8_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09112_ (
     .CLK(dco_clk),
     .D(_01876_),
-    .Q( execution_unit_0.register_file_0.r8_1_ ),
+    .Q(execution_unit_0.register_file_0.r8_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09113_ (
     .CLK(dco_clk),
     .D(_01877_),
-    .Q( execution_unit_0.register_file_0.r8_2_ ),
+    .Q(execution_unit_0.register_file_0.r8_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09114_ (
     .CLK(dco_clk),
     .D(_01878_),
-    .Q( execution_unit_0.register_file_0.r8_3_ ),
+    .Q(execution_unit_0.register_file_0.r8_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09115_ (
     .CLK(dco_clk),
     .D(_01879_),
-    .Q( execution_unit_0.register_file_0.r8_4_ ),
+    .Q(execution_unit_0.register_file_0.r8_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09116_ (
     .CLK(dco_clk),
     .D(_01880_),
-    .Q( execution_unit_0.register_file_0.r8_5_ ),
+    .Q(execution_unit_0.register_file_0.r8_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09117_ (
     .CLK(dco_clk),
     .D(_01881_),
-    .Q( execution_unit_0.register_file_0.r8_6_ ),
+    .Q(execution_unit_0.register_file_0.r8_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09118_ (
     .CLK(dco_clk),
     .D(_01882_),
-    .Q( execution_unit_0.register_file_0.r8_7_ ),
+    .Q(execution_unit_0.register_file_0.r8_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09119_ (
     .CLK(dco_clk),
     .D(_01883_),
-    .Q( execution_unit_0.register_file_0.r8_8_ ),
+    .Q(execution_unit_0.register_file_0.r8_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09120_ (
     .CLK(dco_clk),
     .D(_01884_),
-    .Q( execution_unit_0.register_file_0.r8_9_ ),
+    .Q(execution_unit_0.register_file_0.r8_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09121_ (
     .CLK(dco_clk),
     .D(_01885_),
-    .Q( execution_unit_0.register_file_0.r8_10_ ),
+    .Q(execution_unit_0.register_file_0.r8_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09122_ (
     .CLK(dco_clk),
     .D(_01886_),
-    .Q( execution_unit_0.register_file_0.r8_11_ ),
+    .Q(execution_unit_0.register_file_0.r8_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09123_ (
     .CLK(dco_clk),
     .D(_01887_),
-    .Q( execution_unit_0.register_file_0.r8_12_ ),
+    .Q(execution_unit_0.register_file_0.r8_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09124_ (
     .CLK(dco_clk),
     .D(_01888_),
-    .Q( execution_unit_0.register_file_0.r8_13_ ),
+    .Q(execution_unit_0.register_file_0.r8_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09125_ (
     .CLK(dco_clk),
     .D(_01889_),
-    .Q( execution_unit_0.register_file_0.r8_14_ ),
+    .Q(execution_unit_0.register_file_0.r8_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09126_ (
     .CLK(dco_clk),
     .D(_01890_),
-    .Q( execution_unit_0.register_file_0.r8_15_ ),
+    .Q(execution_unit_0.register_file_0.r8_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09127_ (
     .CLK(dco_clk),
     .D(_01891_),
-    .Q( execution_unit_0.register_file_0.r7_0_ ),
+    .Q(execution_unit_0.register_file_0.r7_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09128_ (
     .CLK(dco_clk),
     .D(_01892_),
-    .Q( execution_unit_0.register_file_0.r7_1_ ),
+    .Q(execution_unit_0.register_file_0.r7_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09129_ (
     .CLK(dco_clk),
     .D(_01893_),
-    .Q( execution_unit_0.register_file_0.r7_2_ ),
+    .Q(execution_unit_0.register_file_0.r7_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09130_ (
     .CLK(dco_clk),
     .D(_01894_),
-    .Q( execution_unit_0.register_file_0.r7_3_ ),
+    .Q(execution_unit_0.register_file_0.r7_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09131_ (
     .CLK(dco_clk),
     .D(_01895_),
-    .Q( execution_unit_0.register_file_0.r7_4_ ),
+    .Q(execution_unit_0.register_file_0.r7_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09132_ (
     .CLK(dco_clk),
     .D(_01896_),
-    .Q( execution_unit_0.register_file_0.r7_5_ ),
+    .Q(execution_unit_0.register_file_0.r7_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09133_ (
     .CLK(dco_clk),
     .D(_01897_),
-    .Q( execution_unit_0.register_file_0.r7_6_ ),
+    .Q(execution_unit_0.register_file_0.r7_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09134_ (
     .CLK(dco_clk),
     .D(_01898_),
-    .Q( execution_unit_0.register_file_0.r7_7_ ),
+    .Q(execution_unit_0.register_file_0.r7_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09135_ (
     .CLK(dco_clk),
     .D(_01899_),
-    .Q( execution_unit_0.register_file_0.r7_8_ ),
+    .Q(execution_unit_0.register_file_0.r7_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09136_ (
     .CLK(dco_clk),
     .D(_01900_),
-    .Q( execution_unit_0.register_file_0.r7_9_ ),
+    .Q(execution_unit_0.register_file_0.r7_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09137_ (
     .CLK(dco_clk),
     .D(_01901_),
-    .Q( execution_unit_0.register_file_0.r7_10_ ),
+    .Q(execution_unit_0.register_file_0.r7_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09138_ (
     .CLK(dco_clk),
     .D(_01902_),
-    .Q( execution_unit_0.register_file_0.r7_11_ ),
+    .Q(execution_unit_0.register_file_0.r7_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09139_ (
     .CLK(dco_clk),
     .D(_01903_),
-    .Q( execution_unit_0.register_file_0.r7_12_ ),
+    .Q(execution_unit_0.register_file_0.r7_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09140_ (
     .CLK(dco_clk),
     .D(_01904_),
-    .Q( execution_unit_0.register_file_0.r7_13_ ),
+    .Q(execution_unit_0.register_file_0.r7_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09141_ (
     .CLK(dco_clk),
     .D(_01905_),
-    .Q( execution_unit_0.register_file_0.r7_14_ ),
+    .Q(execution_unit_0.register_file_0.r7_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09142_ (
     .CLK(dco_clk),
     .D(_01906_),
-    .Q( execution_unit_0.register_file_0.r7_15_ ),
+    .Q(execution_unit_0.register_file_0.r7_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09143_ (
     .CLK(dco_clk),
     .D(_01907_),
-    .Q( execution_unit_0.register_file_0.r6_0_ ),
+    .Q(execution_unit_0.register_file_0.r6_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09144_ (
     .CLK(dco_clk),
     .D(_01908_),
-    .Q( execution_unit_0.register_file_0.r6_1_ ),
+    .Q(execution_unit_0.register_file_0.r6_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09145_ (
     .CLK(dco_clk),
     .D(_01909_),
-    .Q( execution_unit_0.register_file_0.r6_2_ ),
+    .Q(execution_unit_0.register_file_0.r6_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09146_ (
     .CLK(dco_clk),
     .D(_01910_),
-    .Q( execution_unit_0.register_file_0.r6_3_ ),
+    .Q(execution_unit_0.register_file_0.r6_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09147_ (
     .CLK(dco_clk),
     .D(_01911_),
-    .Q( execution_unit_0.register_file_0.r6_4_ ),
+    .Q(execution_unit_0.register_file_0.r6_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09148_ (
     .CLK(dco_clk),
     .D(_01912_),
-    .Q( execution_unit_0.register_file_0.r6_5_ ),
+    .Q(execution_unit_0.register_file_0.r6_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09149_ (
     .CLK(dco_clk),
     .D(_01913_),
-    .Q( execution_unit_0.register_file_0.r6_6_ ),
+    .Q(execution_unit_0.register_file_0.r6_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09150_ (
     .CLK(dco_clk),
     .D(_01914_),
-    .Q( execution_unit_0.register_file_0.r6_7_ ),
+    .Q(execution_unit_0.register_file_0.r6_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09151_ (
     .CLK(dco_clk),
     .D(_01915_),
-    .Q( execution_unit_0.register_file_0.r6_8_ ),
+    .Q(execution_unit_0.register_file_0.r6_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09152_ (
     .CLK(dco_clk),
     .D(_01916_),
-    .Q( execution_unit_0.register_file_0.r6_9_ ),
+    .Q(execution_unit_0.register_file_0.r6_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09153_ (
     .CLK(dco_clk),
     .D(_01917_),
-    .Q( execution_unit_0.register_file_0.r6_10_ ),
+    .Q(execution_unit_0.register_file_0.r6_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09154_ (
     .CLK(dco_clk),
     .D(_01918_),
-    .Q( execution_unit_0.register_file_0.r6_11_ ),
+    .Q(execution_unit_0.register_file_0.r6_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09155_ (
     .CLK(dco_clk),
     .D(_01919_),
-    .Q( execution_unit_0.register_file_0.r6_12_ ),
+    .Q(execution_unit_0.register_file_0.r6_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09156_ (
     .CLK(dco_clk),
     .D(_01920_),
-    .Q( execution_unit_0.register_file_0.r6_13_ ),
+    .Q(execution_unit_0.register_file_0.r6_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09157_ (
     .CLK(dco_clk),
     .D(_01921_),
-    .Q( execution_unit_0.register_file_0.r6_14_ ),
+    .Q(execution_unit_0.register_file_0.r6_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09158_ (
     .CLK(dco_clk),
     .D(_01922_),
-    .Q( execution_unit_0.register_file_0.r6_15_ ),
+    .Q(execution_unit_0.register_file_0.r6_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09159_ (
     .CLK(dco_clk),
     .D(_01923_),
-    .Q( execution_unit_0.register_file_0.r5_0_ ),
+    .Q(execution_unit_0.register_file_0.r5_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09160_ (
     .CLK(dco_clk),
     .D(_01924_),
-    .Q( execution_unit_0.register_file_0.r5_1_ ),
+    .Q(execution_unit_0.register_file_0.r5_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09161_ (
     .CLK(dco_clk),
     .D(_01925_),
-    .Q( execution_unit_0.register_file_0.r5_2_ ),
+    .Q(execution_unit_0.register_file_0.r5_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09162_ (
     .CLK(dco_clk),
     .D(_01926_),
-    .Q( execution_unit_0.register_file_0.r5_3_ ),
+    .Q(execution_unit_0.register_file_0.r5_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09163_ (
     .CLK(dco_clk),
     .D(_01927_),
-    .Q( execution_unit_0.register_file_0.r5_4_ ),
+    .Q(execution_unit_0.register_file_0.r5_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09164_ (
     .CLK(dco_clk),
     .D(_01928_),
-    .Q( execution_unit_0.register_file_0.r5_5_ ),
+    .Q(execution_unit_0.register_file_0.r5_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09165_ (
     .CLK(dco_clk),
     .D(_01929_),
-    .Q( execution_unit_0.register_file_0.r5_6_ ),
+    .Q(execution_unit_0.register_file_0.r5_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09166_ (
     .CLK(dco_clk),
     .D(_01930_),
-    .Q( execution_unit_0.register_file_0.r5_7_ ),
+    .Q(execution_unit_0.register_file_0.r5_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09167_ (
     .CLK(dco_clk),
     .D(_01931_),
-    .Q( execution_unit_0.register_file_0.r5_8_ ),
+    .Q(execution_unit_0.register_file_0.r5_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09168_ (
     .CLK(dco_clk),
     .D(_01932_),
-    .Q( execution_unit_0.register_file_0.r5_9_ ),
+    .Q(execution_unit_0.register_file_0.r5_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09169_ (
     .CLK(dco_clk),
     .D(_01933_),
-    .Q( execution_unit_0.register_file_0.r5_10_ ),
+    .Q(execution_unit_0.register_file_0.r5_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09170_ (
     .CLK(dco_clk),
     .D(_01934_),
-    .Q( execution_unit_0.register_file_0.r5_11_ ),
+    .Q(execution_unit_0.register_file_0.r5_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09171_ (
     .CLK(dco_clk),
     .D(_01935_),
-    .Q( execution_unit_0.register_file_0.r5_12_ ),
+    .Q(execution_unit_0.register_file_0.r5_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09172_ (
     .CLK(dco_clk),
     .D(_01936_),
-    .Q( execution_unit_0.register_file_0.r5_13_ ),
+    .Q(execution_unit_0.register_file_0.r5_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09173_ (
     .CLK(dco_clk),
     .D(_01937_),
-    .Q( execution_unit_0.register_file_0.r5_14_ ),
+    .Q(execution_unit_0.register_file_0.r5_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09174_ (
     .CLK(dco_clk),
     .D(_01938_),
-    .Q( execution_unit_0.register_file_0.r5_15_ ),
+    .Q(execution_unit_0.register_file_0.r5_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09175_ (
     .CLK(dco_clk),
     .D(_01939_),
-    .Q( execution_unit_0.register_file_0.r4_0_ ),
+    .Q(execution_unit_0.register_file_0.r4_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09176_ (
     .CLK(dco_clk),
     .D(_01940_),
-    .Q( execution_unit_0.register_file_0.r4_1_ ),
+    .Q(execution_unit_0.register_file_0.r4_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09177_ (
     .CLK(dco_clk),
     .D(_01941_),
-    .Q( execution_unit_0.register_file_0.r4_2_ ),
+    .Q(execution_unit_0.register_file_0.r4_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09178_ (
     .CLK(dco_clk),
     .D(_01942_),
-    .Q( execution_unit_0.register_file_0.r4_3_ ),
+    .Q(execution_unit_0.register_file_0.r4_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09179_ (
     .CLK(dco_clk),
     .D(_01943_),
-    .Q( execution_unit_0.register_file_0.r4_4_ ),
+    .Q(execution_unit_0.register_file_0.r4_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09180_ (
     .CLK(dco_clk),
     .D(_01944_),
-    .Q( execution_unit_0.register_file_0.r4_5_ ),
+    .Q(execution_unit_0.register_file_0.r4_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09181_ (
     .CLK(dco_clk),
     .D(_01945_),
-    .Q( execution_unit_0.register_file_0.r4_6_ ),
+    .Q(execution_unit_0.register_file_0.r4_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09182_ (
     .CLK(dco_clk),
     .D(_01946_),
-    .Q( execution_unit_0.register_file_0.r4_7_ ),
+    .Q(execution_unit_0.register_file_0.r4_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09183_ (
     .CLK(dco_clk),
     .D(_01947_),
-    .Q( execution_unit_0.register_file_0.r4_8_ ),
+    .Q(execution_unit_0.register_file_0.r4_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09184_ (
     .CLK(dco_clk),
     .D(_01948_),
-    .Q( execution_unit_0.register_file_0.r4_9_ ),
+    .Q(execution_unit_0.register_file_0.r4_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09185_ (
     .CLK(dco_clk),
     .D(_01949_),
-    .Q( execution_unit_0.register_file_0.r4_10_ ),
+    .Q(execution_unit_0.register_file_0.r4_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09186_ (
     .CLK(dco_clk),
     .D(_01950_),
-    .Q( execution_unit_0.register_file_0.r4_11_ ),
+    .Q(execution_unit_0.register_file_0.r4_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09187_ (
     .CLK(dco_clk),
     .D(_01951_),
-    .Q( execution_unit_0.register_file_0.r4_12_ ),
+    .Q(execution_unit_0.register_file_0.r4_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09188_ (
     .CLK(dco_clk),
     .D(_01952_),
-    .Q( execution_unit_0.register_file_0.r4_13_ ),
+    .Q(execution_unit_0.register_file_0.r4_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09189_ (
     .CLK(dco_clk),
     .D(_01953_),
-    .Q( execution_unit_0.register_file_0.r4_14_ ),
+    .Q(execution_unit_0.register_file_0.r4_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09190_ (
     .CLK(dco_clk),
     .D(_01954_),
-    .Q( execution_unit_0.register_file_0.r4_15_ ),
+    .Q(execution_unit_0.register_file_0.r4_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09191_ (
     .CLK(dco_clk),
     .D(_01955_),
-    .Q( execution_unit_0.register_file_0.r3_0_ ),
+    .Q(execution_unit_0.register_file_0.r3_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09192_ (
     .CLK(dco_clk),
     .D(_01956_),
-    .Q( execution_unit_0.register_file_0.r3_1_ ),
+    .Q(execution_unit_0.register_file_0.r3_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09193_ (
     .CLK(dco_clk),
     .D(_01957_),
-    .Q( execution_unit_0.register_file_0.r3_2_ ),
+    .Q(execution_unit_0.register_file_0.r3_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09194_ (
     .CLK(dco_clk),
     .D(_01958_),
-    .Q( execution_unit_0.register_file_0.r3_3_ ),
+    .Q(execution_unit_0.register_file_0.r3_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09195_ (
     .CLK(dco_clk),
     .D(_01959_),
-    .Q( execution_unit_0.register_file_0.r3_4_ ),
+    .Q(execution_unit_0.register_file_0.r3_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09196_ (
     .CLK(dco_clk),
     .D(_01960_),
-    .Q( execution_unit_0.register_file_0.r3_5_ ),
+    .Q(execution_unit_0.register_file_0.r3_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09197_ (
     .CLK(dco_clk),
     .D(_01961_),
-    .Q( execution_unit_0.register_file_0.r3_6_ ),
+    .Q(execution_unit_0.register_file_0.r3_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09198_ (
     .CLK(dco_clk),
     .D(_01962_),
-    .Q( execution_unit_0.register_file_0.r3_7_ ),
+    .Q(execution_unit_0.register_file_0.r3_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09199_ (
     .CLK(dco_clk),
     .D(_01963_),
-    .Q( execution_unit_0.register_file_0.r3_8_ ),
+    .Q(execution_unit_0.register_file_0.r3_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09200_ (
     .CLK(dco_clk),
     .D(_01964_),
-    .Q( execution_unit_0.register_file_0.r3_9_ ),
+    .Q(execution_unit_0.register_file_0.r3_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09201_ (
     .CLK(dco_clk),
     .D(_01965_),
-    .Q( execution_unit_0.register_file_0.r3_10_ ),
+    .Q(execution_unit_0.register_file_0.r3_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09202_ (
     .CLK(dco_clk),
     .D(_01966_),
-    .Q( execution_unit_0.register_file_0.r3_11_ ),
+    .Q(execution_unit_0.register_file_0.r3_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09203_ (
     .CLK(dco_clk),
     .D(_01967_),
-    .Q( execution_unit_0.register_file_0.r3_12_ ),
+    .Q(execution_unit_0.register_file_0.r3_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09204_ (
     .CLK(dco_clk),
     .D(_01968_),
-    .Q( execution_unit_0.register_file_0.r3_13_ ),
+    .Q(execution_unit_0.register_file_0.r3_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09205_ (
     .CLK(dco_clk),
     .D(_01969_),
-    .Q( execution_unit_0.register_file_0.r3_14_ ),
+    .Q(execution_unit_0.register_file_0.r3_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09206_ (
     .CLK(dco_clk),
     .D(_01970_),
-    .Q( execution_unit_0.register_file_0.r3_15_ ),
+    .Q(execution_unit_0.register_file_0.r3_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09207_ (
     .CLK(dco_clk),
     .D(_01971_),
-    .Q( execution_unit_0.alu_0.status_0_ ),
+    .Q(execution_unit_0.alu_0.status_0_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09208_ (
     .CLK(dco_clk),
     .D(_01755_),
-    .Q( execution_unit_0.register_file_0.r2_4_ ),
+    .Q(execution_unit_0.register_file_0.r2_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09209_ (
     .CLK(dco_clk),
     .D(_01972_),
-    .Q( execution_unit_0.register_file_0.r1_1_ ),
+    .Q(execution_unit_0.register_file_0.r1_1_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09210_ (
     .CLK(dco_clk),
     .D(_01973_),
-    .Q( execution_unit_0.register_file_0.r1_2_ ),
+    .Q(execution_unit_0.register_file_0.r1_2_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09211_ (
     .CLK(dco_clk),
     .D(_01974_),
-    .Q( execution_unit_0.register_file_0.r1_3_ ),
+    .Q(execution_unit_0.register_file_0.r1_3_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09212_ (
     .CLK(dco_clk),
     .D(_01975_),
-    .Q( execution_unit_0.register_file_0.r1_4_ ),
+    .Q(execution_unit_0.register_file_0.r1_4_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09213_ (
     .CLK(dco_clk),
     .D(_01976_),
-    .Q( execution_unit_0.register_file_0.r1_5_ ),
+    .Q(execution_unit_0.register_file_0.r1_5_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09214_ (
     .CLK(dco_clk),
     .D(_01977_),
-    .Q( execution_unit_0.register_file_0.r1_6_ ),
+    .Q(execution_unit_0.register_file_0.r1_6_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09215_ (
     .CLK(dco_clk),
     .D(_01978_),
-    .Q( execution_unit_0.register_file_0.r1_7_ ),
+    .Q(execution_unit_0.register_file_0.r1_7_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09216_ (
     .CLK(dco_clk),
     .D(_01979_),
-    .Q( execution_unit_0.register_file_0.r1_8_ ),
+    .Q(execution_unit_0.register_file_0.r1_8_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09217_ (
     .CLK(dco_clk),
     .D(_01980_),
-    .Q( execution_unit_0.register_file_0.r1_9_ ),
+    .Q(execution_unit_0.register_file_0.r1_9_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09218_ (
     .CLK(dco_clk),
     .D(_01981_),
-    .Q( execution_unit_0.register_file_0.r1_10_ ),
+    .Q(execution_unit_0.register_file_0.r1_10_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09219_ (
     .CLK(dco_clk),
     .D(_01982_),
-    .Q( execution_unit_0.register_file_0.r1_11_ ),
+    .Q(execution_unit_0.register_file_0.r1_11_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09220_ (
     .CLK(dco_clk),
     .D(_01983_),
-    .Q( execution_unit_0.register_file_0.r1_12_ ),
+    .Q(execution_unit_0.register_file_0.r1_12_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09221_ (
     .CLK(dco_clk),
     .D(_01984_),
-    .Q( execution_unit_0.register_file_0.r1_13_ ),
+    .Q(execution_unit_0.register_file_0.r1_13_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09222_ (
     .CLK(dco_clk),
     .D(_01985_),
-    .Q( execution_unit_0.register_file_0.r1_14_ ),
+    .Q(execution_unit_0.register_file_0.r1_14_ ),
     .R(_01756_),
     .S(1'h1)
   );
   DFFSR _09223_ (
     .CLK(dco_clk),
     .D(_01986_),
-    .Q( execution_unit_0.register_file_0.r1_15_ ),
+    .Q(execution_unit_0.register_file_0.r1_15_ ),
     .R(_01756_),
     .S(1'h1)
   );
@@ -27702,15 +27702,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03167_)
   );
   INVX1 _09225_ (
-    .A( frontend_0.i_state_1_ ),
+    .A(frontend_0.i_state_1_ ),
     .Y(_03168_)
   );
   INVX1 _09226_ (
-    .A( frontend_0.i_state_0_ ),
+    .A(frontend_0.i_state_0_ ),
     .Y(_03169_)
   );
   INVX1 _09227_ (
-    .A( frontend_0.i_state_2_ ),
+    .A(frontend_0.i_state_2_ ),
     .Y(_03170_)
   );
   INVX1 _09228_ (
@@ -27734,7 +27734,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03175_)
   );
   INVX1 _09233_ (
-    .A( execution_unit_0.gie ),
+    .A(execution_unit_0.gie ),
     .Y(_03176_)
   );
   INVX1 _09234_ (
@@ -27742,227 +27742,227 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03177_)
   );
   INVX1 _09235_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .Y(_03178_)
   );
   INVX1 _09236_ (
-    .A( frontend_0.exec_jmp ),
+    .A(frontend_0.exec_jmp ),
     .Y(_03179_)
   );
   INVX1 _09237_ (
-    .A( frontend_0.exec_dst_wr ),
+    .A(frontend_0.exec_dst_wr ),
     .Y(_03180_)
   );
   INVX1 _09238_ (
-    .A( frontend_0.exec_src_wr ),
+    .A(frontend_0.exec_src_wr ),
     .Y(_03181_)
   );
   INVX1 _09239_ (
-    .A( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_1_ ),
     .Y(_03182_)
   );
   INVX1 _09240_ (
-    .A( execution_unit_0.e_state_2_ ),
+    .A(execution_unit_0.e_state_2_ ),
     .Y(_03183_)
   );
   INVX1 _09241_ (
-    .A( execution_unit_0.e_state_3_ ),
+    .A(execution_unit_0.e_state_3_ ),
     .Y(_03184_)
   );
   INVX1 _09242_ (
-    .A( dbg_0.fe_mdb_in_14_ ),
+    .A(dbg_0.fe_mdb_in_14_ ),
     .Y(_03185_)
   );
   INVX1 _09243_ (
-    .A( dbg_0.fe_mdb_in_13_ ),
+    .A(dbg_0.fe_mdb_in_13_ ),
     .Y(_03186_)
   );
   INVX1 _09244_ (
-    .A( dbg_0.fe_mdb_in_15_ ),
+    .A(dbg_0.fe_mdb_in_15_ ),
     .Y(_03187_)
   );
   INVX1 _09245_ (
-    .A( dbg_0.fe_mdb_in_2_ ),
+    .A(dbg_0.fe_mdb_in_2_ ),
     .Y(_03188_)
   );
   INVX1 _09246_ (
-    .A( dbg_0.fe_mdb_in_3_ ),
+    .A(dbg_0.fe_mdb_in_3_ ),
     .Y(_03189_)
   );
   INVX1 _09247_ (
-    .A( dbg_0.fe_mdb_in_8_ ),
+    .A(dbg_0.fe_mdb_in_8_ ),
     .Y(_03190_)
   );
   INVX1 _09248_ (
-    .A( dbg_0.fe_mdb_in_0_ ),
+    .A(dbg_0.fe_mdb_in_0_ ),
     .Y(_03191_)
   );
   INVX1 _09249_ (
-    .A( dbg_0.fe_mdb_in_9_ ),
+    .A(dbg_0.fe_mdb_in_9_ ),
     .Y(_03192_)
   );
   INVX1 _09250_ (
-    .A( dbg_0.fe_mdb_in_1_ ),
+    .A(dbg_0.fe_mdb_in_1_ ),
     .Y(_03193_)
   );
   INVX1 _09251_ (
-    .A( dbg_0.fe_mdb_in_5_ ),
+    .A(dbg_0.fe_mdb_in_5_ ),
     .Y(_03194_)
   );
   INVX1 _09252_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .Y(_03195_)
   );
   INVX1 _09253_ (
-    .A( execution_unit_0.inst_as_4_ ),
+    .A(execution_unit_0.inst_as_4_ ),
     .Y(_03196_)
   );
   INVX1 _09254_ (
-    .A( frontend_0.exec_dext_rdy ),
+    .A(frontend_0.exec_dext_rdy ),
     .Y(_03197_)
   );
   INVX1 _09255_ (
-    .A( execution_unit_0.UNUSED_inst_ad_idx ),
+    .A(execution_unit_0.UNUSED_inst_ad_idx ),
     .Y(_03198_)
   );
   INVX1 _09256_ (
-    .A( execution_unit_0.pc_sw_wr ),
+    .A(execution_unit_0.pc_sw_wr ),
     .Y(_03199_)
   );
   INVX1 _09257_ (
-    .A( frontend_0.inst_sz_1_ ),
+    .A(frontend_0.inst_sz_1_ ),
     .Y(_03200_)
   );
   INVX1 _09258_ (
-    .A( execution_unit_0.inst_type_0_ ),
+    .A(execution_unit_0.inst_type_0_ ),
     .Y(_03201_)
   );
   INVX1 _09259_ (
-    .A( execution_unit_0.alu_0.alu_out_0_ ),
+    .A(execution_unit_0.alu_0.alu_out_0_ ),
     .Y(_03202_)
   );
   INVX1 _09260_ (
-    .A( dbg_0.UNUSED_pc_1_ ),
+    .A(dbg_0.UNUSED_pc_1_ ),
     .Y(_03203_)
   );
   INVX1 _09261_ (
-    .A( frontend_0.irq_addr_1_ ),
+    .A(frontend_0.irq_addr_1_ ),
     .Y(_03204_)
   );
   INVX1 _09262_ (
-    .A( dbg_0.UNUSED_pc_2_ ),
+    .A(dbg_0.UNUSED_pc_2_ ),
     .Y(_03205_)
   );
   INVX1 _09263_ (
-    .A( frontend_0.irq_addr_2_ ),
+    .A(frontend_0.irq_addr_2_ ),
     .Y(_03206_)
   );
   INVX1 _09264_ (
-    .A( dbg_0.UNUSED_pc_3_ ),
+    .A(dbg_0.UNUSED_pc_3_ ),
     .Y(_03207_)
   );
   INVX1 _09265_ (
-    .A( frontend_0.irq_addr_3_ ),
+    .A(frontend_0.irq_addr_3_ ),
     .Y(_03208_)
   );
   INVX1 _09266_ (
-    .A( dbg_0.UNUSED_pc_4_ ),
+    .A(dbg_0.UNUSED_pc_4_ ),
     .Y(_03209_)
   );
   INVX1 _09267_ (
-    .A( dbg_0.UNUSED_pc_5_ ),
+    .A(dbg_0.UNUSED_pc_5_ ),
     .Y(_03210_)
   );
   INVX1 _09268_ (
-    .A( dbg_0.UNUSED_pc_6_ ),
+    .A(dbg_0.UNUSED_pc_6_ ),
     .Y(_03211_)
   );
   INVX1 _09269_ (
-    .A( dbg_0.UNUSED_pc_7_ ),
+    .A(dbg_0.UNUSED_pc_7_ ),
     .Y(_03212_)
   );
   INVX1 _09270_ (
-    .A( dbg_0.UNUSED_pc_8_ ),
+    .A(dbg_0.UNUSED_pc_8_ ),
     .Y(_03213_)
   );
   INVX1 _09271_ (
-    .A( dbg_0.UNUSED_pc_9_ ),
+    .A(dbg_0.UNUSED_pc_9_ ),
     .Y(_03214_)
   );
   INVX1 _09272_ (
-    .A( dbg_0.UNUSED_pc_10_ ),
+    .A(dbg_0.UNUSED_pc_10_ ),
     .Y(_03215_)
   );
   INVX1 _09273_ (
-    .A( dbg_0.UNUSED_pc_11_ ),
+    .A(dbg_0.UNUSED_pc_11_ ),
     .Y(_03216_)
   );
   INVX1 _09274_ (
-    .A( dbg_0.UNUSED_pc_12_ ),
+    .A(dbg_0.UNUSED_pc_12_ ),
     .Y(_03217_)
   );
   INVX1 _09275_ (
-    .A( dbg_0.UNUSED_pc_13_ ),
+    .A(dbg_0.UNUSED_pc_13_ ),
     .Y(_03218_)
   );
   INVX1 _09276_ (
-    .A( dbg_0.UNUSED_pc_14_ ),
+    .A(dbg_0.UNUSED_pc_14_ ),
     .Y(_03219_)
   );
   INVX1 _09277_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
     .Y(_03220_)
   );
   INVX1 _09278_ (
-    .A( frontend_0.inst_dest_bin_2_ ),
+    .A(frontend_0.inst_dest_bin_2_ ),
     .Y(_03221_)
   );
   INVX1 _09279_ (
-    .A( frontend_0.inst_dest_bin_1_ ),
+    .A(frontend_0.inst_dest_bin_1_ ),
     .Y(_03222_)
   );
   INVX1 _09280_ (
-    .A( execution_unit_0.alu_0.inst_so_7_ ),
+    .A(execution_unit_0.alu_0.inst_so_7_ ),
     .Y(_03223_)
   );
   INVX1 _09281_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
     .Y(_03224_)
   );
   INVX1 _09282_ (
-    .A( dbg_0.dbg_mem_addr_1_ ),
+    .A(dbg_0.dbg_mem_addr_1_ ),
     .Y(_03225_)
   );
   INVX1 _09283_ (
-    .A( dbg_0.dbg_mem_addr_0_ ),
+    .A(dbg_0.dbg_mem_addr_0_ ),
     .Y(_03226_)
   );
   INVX1 _09284_ (
-    .A( frontend_0.inst_jmp_bin_1_ ),
+    .A(frontend_0.inst_jmp_bin_1_ ),
     .Y(_03227_)
   );
   INVX1 _09285_ (
-    .A( frontend_0.inst_jmp_bin_0_ ),
+    .A(frontend_0.inst_jmp_bin_0_ ),
     .Y(_03228_)
   );
   INVX1 _09286_ (
-    .A( frontend_0.inst_src_bin_1_ ),
+    .A(frontend_0.inst_src_bin_1_ ),
     .Y(_03229_)
   );
   INVX1 _09287_ (
-    .A( frontend_0.inst_src_bin_0_ ),
+    .A(frontend_0.inst_src_bin_0_ ),
     .Y(_03230_)
   );
   INVX1 _09288_ (
-    .A( execution_unit_0.inst_type_2_ ),
+    .A(execution_unit_0.inst_type_2_ ),
     .Y(_03231_)
   );
   INVX1 _09289_ (
-    .A( frontend_0.pmem_busy ),
+    .A(frontend_0.pmem_busy ),
     .Y(_03232_)
   );
   INVX1 _09290_ (
-    .A( frontend_0.inst_jmp_bin_2_ ),
+    .A(frontend_0.inst_jmp_bin_2_ ),
     .Y(_03233_)
   );
   INVX1 _09291_ (
@@ -27970,97 +27970,97 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02907_)
   );
   INVX1 _09292_ (
-    .A( execution_unit_0.inst_dext_14_ ),
+    .A(execution_unit_0.inst_dext_14_ ),
     .Y(_03234_)
   );
   INVX1 _09293_ (
-    .A( execution_unit_0.inst_sext_2_ ),
+    .A(execution_unit_0.inst_sext_2_ ),
     .Y(_03235_)
   );
   INVX1 _09294_ (
-    .A( execution_unit_0.inst_sext_4_ ),
+    .A(execution_unit_0.inst_sext_4_ ),
     .Y(_03236_)
   );
   INVX1 _09295_ (
-    .A( execution_unit_0.inst_sext_5_ ),
+    .A(execution_unit_0.inst_sext_5_ ),
     .Y(_03237_)
   );
   INVX1 _09296_ (
-    .A( execution_unit_0.inst_sext_6_ ),
+    .A(execution_unit_0.inst_sext_6_ ),
     .Y(_03238_)
   );
   INVX1 _09297_ (
-    .A( execution_unit_0.inst_sext_7_ ),
+    .A(execution_unit_0.inst_sext_7_ ),
     .Y(_03239_)
   );
   INVX1 _09298_ (
-    .A( execution_unit_0.inst_sext_8_ ),
+    .A(execution_unit_0.inst_sext_8_ ),
     .Y(_03240_)
   );
   INVX1 _09299_ (
-    .A( execution_unit_0.inst_sext_9_ ),
+    .A(execution_unit_0.inst_sext_9_ ),
     .Y(_03241_)
   );
   INVX1 _09300_ (
-    .A( execution_unit_0.inst_sext_10_ ),
+    .A(execution_unit_0.inst_sext_10_ ),
     .Y(_03242_)
   );
   INVX1 _09301_ (
-    .A( execution_unit_0.inst_sext_11_ ),
+    .A(execution_unit_0.inst_sext_11_ ),
     .Y(_03243_)
   );
   INVX1 _09302_ (
-    .A( execution_unit_0.inst_sext_12_ ),
+    .A(execution_unit_0.inst_sext_12_ ),
     .Y(_03244_)
   );
   INVX1 _09303_ (
-    .A( execution_unit_0.inst_sext_13_ ),
+    .A(execution_unit_0.inst_sext_13_ ),
     .Y(_03245_)
   );
   INVX1 _09304_ (
-    .A( execution_unit_0.inst_sext_14_ ),
+    .A(execution_unit_0.inst_sext_14_ ),
     .Y(_03246_)
   );
   INVX1 _09305_ (
-    .A( execution_unit_0.inst_sext_15_ ),
+    .A(execution_unit_0.inst_sext_15_ ),
     .Y(_03247_)
   );
   INVX1 _09306_ (
-    .A( execution_unit_0.alu_0.inst_alu_4_ ),
+    .A(execution_unit_0.alu_0.inst_alu_4_ ),
     .Y(_03248_)
   );
   INVX1 _09307_ (
-    .A( execution_unit_0.inst_as_7_ ),
+    .A(execution_unit_0.inst_as_7_ ),
     .Y(_03249_)
   );
   NOR2X1 _09308_ (
-    .A( execution_unit_0.e_state_0_ ),
-    .B( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_0_ ),
+    .B(execution_unit_0.e_state_1_ ),
     .Y(_03250_)
   );
   OR2X1 _09309_ (
-    .A( execution_unit_0.e_state_0_ ),
-    .B( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_0_ ),
+    .B(execution_unit_0.e_state_1_ ),
     .Y(_03251_)
   );
   NAND2X1 _09310_ (
-    .A( execution_unit_0.e_state_2_ ),
-    .B( execution_unit_0.e_state_3_ ),
+    .A(execution_unit_0.e_state_2_ ),
+    .B(execution_unit_0.e_state_3_ ),
     .Y(_03252_)
   );
   OAI21X1 _09311_ (
     .A(_03251_),
     .B(_03252_),
-    .C( frontend_0.exec_jmp ),
+    .C(frontend_0.exec_jmp ),
     .Y(_03253_)
   );
   NAND2X1 _09312_ (
     .A(_03183_),
-    .B( execution_unit_0.e_state_3_ ),
+    .B(execution_unit_0.e_state_3_ ),
     .Y(_03254_)
   );
   OR2X1 _09313_ (
-    .A( execution_unit_0.e_state_0_ ),
+    .A(execution_unit_0.e_state_0_ ),
     .B(_03182_),
     .Y(_03255_)
   );
@@ -28077,77 +28077,77 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _09316_ (
     .A(_03254_),
     .B(_03255_),
-    .C( frontend_0.exec_dst_wr ),
+    .C(frontend_0.exec_dst_wr ),
     .Y(_03258_)
   );
   AND2X1 _09317_ (
-    .A( execution_unit_0.e_state_0_ ),
-    .B( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_0_ ),
+    .B(execution_unit_0.e_state_1_ ),
     .Y(_03259_)
   );
   NAND2X1 _09318_ (
-    .A( execution_unit_0.e_state_0_ ),
-    .B( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_0_ ),
+    .B(execution_unit_0.e_state_1_ ),
     .Y(_03260_)
   );
   NAND2X1 _09319_ (
-    .A( execution_unit_0.e_state_2_ ),
+    .A(execution_unit_0.e_state_2_ ),
     .B(_03184_),
     .Y(_03261_)
   );
   NOR3X1 _09320_ (
     .A(_03183_),
-    .B( execution_unit_0.e_state_3_ ),
+    .B(execution_unit_0.e_state_3_ ),
     .C(_03260_),
     .Y(_03262_)
   );
   NAND3X1 _09321_ (
     .A(_03183_),
-    .B( execution_unit_0.e_state_3_ ),
+    .B(execution_unit_0.e_state_3_ ),
     .C(_03259_),
     .Y(_03263_)
   );
   NOR2X1 _09322_ (
-    .A( frontend_0.exec_src_wr ),
+    .A(frontend_0.exec_src_wr ),
     .B(_03263_),
     .Y(_03264_)
   );
   OR2X1 _09323_ (
-    .A( frontend_0.exec_src_wr ),
+    .A(frontend_0.exec_src_wr ),
     .B(_03263_),
     .Y(_03265_)
   );
   AOI21X1 _09324_ (
-    .A( frontend_0.exec_src_wr ),
+    .A(frontend_0.exec_src_wr ),
     .B(_03262_),
-    .C( frontend_0.exec_dst_wr ),
+    .C(frontend_0.exec_dst_wr ),
     .Y(_03266_)
   );
   AOI22X1 _09325_ (
-    .A( frontend_0.exec_dst_wr ),
+    .A(frontend_0.exec_dst_wr ),
     .B(_03257_),
     .C(_03265_),
     .D(_03266_),
     .Y(_03267_)
   );
   OAI21X1 _09326_ (
-    .A( frontend_0.exec_jmp ),
+    .A(frontend_0.exec_jmp ),
     .B(_03267_),
     .C(_03253_),
     .Y(_03268_)
   );
   INVX1 _09327_ (
     .A(_03268_),
-    .Y( execution_unit_0.exec_done )
+    .Y(execution_unit_0.exec_done )
   );
   NOR2X1 _09328_ (
-    .A( frontend_0.i_state_1_ ),
+    .A(frontend_0.i_state_1_ ),
     .B(_03169_),
     .Y(_03269_)
   );
   NAND2X1 _09329_ (
     .A(_03168_),
-    .B( frontend_0.i_state_0_ ),
+    .B(frontend_0.i_state_0_ ),
     .Y(_03270_)
   );
   NOR2X1 _09330_ (
@@ -28156,14 +28156,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03271_)
   );
   NAND2X1 _09331_ (
-    .A( frontend_0.i_state_2_ ),
+    .A(frontend_0.i_state_2_ ),
     .B(_03269_),
     .Y(_03272_)
   );
   NOR3X1 _09332_ (
     .A(irq_11_),
     .B(irq_10_),
-    .C( frontend_0.wdt_irq ),
+    .C(frontend_0.wdt_irq ),
     .Y(_03273_)
   );
   NOR2X1 _09333_ (
@@ -28230,12 +28230,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03285_)
   );
   OR2X1 _09345_ (
-    .A( dbg_0.dbg_halt_cmd ),
+    .A(dbg_0.dbg_halt_cmd ),
     .B(_03167_),
     .Y(_03286_)
   );
   NOR2X1 _09346_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_03286_),
     .Y(_03287_)
   );
@@ -28256,14 +28256,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03290_)
   );
   OAI21X1 _09350_ (
-    .A( execution_unit_0.exec_done ),
+    .A(execution_unit_0.exec_done ),
     .B(_03271_),
     .C(_03288_),
     .Y(_03291_)
   );
   NOR2X1 _09351_ (
-    .A( dbg_0.fe_mdb_in_14_ ),
-    .B( dbg_0.fe_mdb_in_15_ ),
+    .A(dbg_0.fe_mdb_in_14_ ),
+    .B(dbg_0.fe_mdb_in_15_ ),
     .Y(_03292_)
   );
   INVX1 _09352_ (
@@ -28277,19 +28277,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03294_)
   );
   NAND3X1 _09354_ (
-    .A( dbg_0.fe_mdb_in_13_ ),
+    .A(dbg_0.fe_mdb_in_13_ ),
     .B(_03291_),
     .C(_03292_),
     .Y(_03295_)
   );
   NAND2X1 _09355_ (
-    .A( dbg_0.fe_mdb_in_5_ ),
+    .A(dbg_0.fe_mdb_in_5_ ),
     .B(_03295_),
     .Y(_03296_)
   );
   NAND3X1 _09356_ (
-    .A( dbg_0.fe_mdb_in_5_ ),
-    .B( dbg_0.fe_mdb_in_4_ ),
+    .A(dbg_0.fe_mdb_in_5_ ),
+    .B(dbg_0.fe_mdb_in_4_ ),
     .C(_03295_),
     .Y(_03297_)
   );
@@ -28308,8 +28308,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03300_)
   );
   NOR2X1 _09360_ (
-    .A( dbg_0.fe_mdb_in_2_ ),
-    .B( dbg_0.fe_mdb_in_3_ ),
+    .A(dbg_0.fe_mdb_in_2_ ),
+    .B(dbg_0.fe_mdb_in_3_ ),
     .Y(_03301_)
   );
   NAND2X1 _09361_ (
@@ -28318,8 +28318,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03302_)
   );
   NOR2X1 _09362_ (
-    .A( dbg_0.fe_mdb_in_10_ ),
-    .B( dbg_0.fe_mdb_in_11_ ),
+    .A(dbg_0.fe_mdb_in_10_ ),
+    .B(dbg_0.fe_mdb_in_11_ ),
     .Y(_03303_)
   );
   INVX1 _09363_ (
@@ -28339,8 +28339,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03306_)
   );
   MUX2X1 _09366_ (
-    .A( dbg_0.fe_mdb_in_8_ ),
-    .B( dbg_0.fe_mdb_in_0_ ),
+    .A(dbg_0.fe_mdb_in_8_ ),
+    .B(dbg_0.fe_mdb_in_0_ ),
     .S(_03299_),
     .Y(_03307_)
   );
@@ -28351,8 +28351,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03308_)
   );
   MUX2X1 _09368_ (
-    .A( dbg_0.fe_mdb_in_9_ ),
-    .B( dbg_0.fe_mdb_in_1_ ),
+    .A(dbg_0.fe_mdb_in_9_ ),
+    .B(dbg_0.fe_mdb_in_1_ ),
     .S(_03299_),
     .Y(_03309_)
   );
@@ -28406,7 +28406,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03318_)
   );
   NAND2X1 _09378_ (
-    .A( dbg_0.fe_mdb_in_8_ ),
+    .A(dbg_0.fe_mdb_in_8_ ),
     .B(_03195_),
     .Y(_03319_)
   );
@@ -28427,7 +28427,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NOR3X1 _09382_ (
     .A(_03194_),
-    .B( dbg_0.fe_mdb_in_4_ ),
+    .B(dbg_0.fe_mdb_in_4_ ),
     .C(_03294_),
     .Y(_03323_)
   );
@@ -28466,22 +28466,22 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03329_)
   );
   AND2X1 _09389_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03329_),
     .Y(_03330_)
   );
   NAND2X1 _09390_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03329_),
     .Y(_03331_)
   );
   NOR2X1 _09391_ (
-    .A( clock_module_0.UNUSED_cpuoff ),
+    .A(clock_module_0.UNUSED_cpuoff ),
     .B(_03286_),
     .Y(_03332_)
   );
   OR2X1 _09392_ (
-    .A( clock_module_0.UNUSED_cpuoff ),
+    .A(clock_module_0.UNUSED_cpuoff ),
     .B(_03286_),
     .Y(_03333_)
   );
@@ -28510,7 +28510,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND2X1 _09397_ (
     .A(_03194_),
-    .B( dbg_0.fe_mdb_in_4_ ),
+    .B(dbg_0.fe_mdb_in_4_ ),
     .Y(_03338_)
   );
   NOR2X1 _09398_ (
@@ -28542,7 +28542,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03343_)
   );
   NOR2X1 _09403_ (
-    .A( frontend_0.exec_dst_wr ),
+    .A(frontend_0.exec_dst_wr ),
     .B(_03263_),
     .Y(_03344_)
   );
@@ -28556,7 +28556,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03346_)
   );
   NOR2X1 _09406_ (
-    .A( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_1_ ),
     .B(_03252_),
     .Y(_03347_)
   );
@@ -28572,7 +28572,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03349_)
   );
   NAND2X1 _09409_ (
-    .A( frontend_0.exec_jmp ),
+    .A(frontend_0.exec_jmp ),
     .B(_03348_),
     .Y(_03350_)
   );
@@ -28582,8 +28582,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03351_)
   );
   NAND2X1 _09411_ (
-    .A( dbg_0.fe_mdb_in_8_ ),
-    .B( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_8_ ),
+    .B(dbg_0.fe_mdb_in_7_ ),
     .Y(_03352_)
   );
   OR2X1 _09412_ (
@@ -28620,11 +28620,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NOR2X1 _09418_ (
     .A(_03168_),
-    .B( frontend_0.i_state_2_ ),
+    .B(frontend_0.i_state_2_ ),
     .Y(_03359_)
   );
   NAND2X1 _09419_ (
-    .A( frontend_0.i_state_0_ ),
+    .A(frontend_0.i_state_0_ ),
     .B(_03359_),
     .Y(_03360_)
   );
@@ -28633,13 +28633,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03361_)
   );
   NOR2X1 _09421_ (
-    .A( execution_unit_0.inst_as_1_ ),
-    .B( execution_unit_0.inst_as_4_ ),
+    .A(execution_unit_0.inst_as_1_ ),
+    .B(execution_unit_0.inst_as_4_ ),
     .Y(_03362_)
   );
   NOR2X1 _09422_ (
-    .A( execution_unit_0.inst_as_6_ ),
-    .B( execution_unit_0.inst_as_5_ ),
+    .A(execution_unit_0.inst_as_6_ ),
+    .B(execution_unit_0.inst_as_5_ ),
     .Y(_03363_)
   );
   NAND2X1 _09423_ (
@@ -28653,8 +28653,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03365_)
   );
   NOR2X1 _09425_ (
-    .A( frontend_0.i_state_1_ ),
-    .B( frontend_0.i_state_0_ ),
+    .A(frontend_0.i_state_1_ ),
+    .B(frontend_0.i_state_0_ ),
     .Y(_03366_)
   );
   NAND2X1 _09426_ (
@@ -28663,7 +28663,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03367_)
   );
   AOI21X1 _09427_ (
-    .A( frontend_0.i_state_2_ ),
+    .A(frontend_0.i_state_2_ ),
     .B(_03366_),
     .C(_03365_),
     .Y(_03368_)
@@ -28673,13 +28673,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03369_)
   );
   OAI21X1 _09429_ (
-    .A( frontend_0.exec_dext_rdy ),
+    .A(frontend_0.exec_dext_rdy ),
     .B(_03369_),
     .C(_03358_),
     .Y(_03370_)
   );
   NAND2X1 _09430_ (
-    .A( execution_unit_0.e_state_0_ ),
+    .A(execution_unit_0.e_state_0_ ),
     .B(_03182_),
     .Y(_03371_)
   );
@@ -28703,8 +28703,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03375_)
   );
   NOR2X1 _09435_ (
-    .A( execution_unit_0.UNUSED_inst_ad_symb ),
-    .B( execution_unit_0.inst_ad_6_ ),
+    .A(execution_unit_0.UNUSED_inst_ad_symb ),
+    .B(execution_unit_0.inst_ad_6_ ),
     .Y(_03376_)
   );
   NAND3X1 _09436_ (
@@ -28729,8 +28729,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03380_)
   );
   NOR2X1 _09440_ (
-    .A( execution_unit_0.e_state_2_ ),
-    .B( execution_unit_0.e_state_3_ ),
+    .A(execution_unit_0.e_state_2_ ),
+    .B(execution_unit_0.e_state_3_ ),
     .Y(_03381_)
   );
   INVX1 _09441_ (
@@ -28738,7 +28738,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03382_)
   );
   OAI21X1 _09442_ (
-    .A( execution_unit_0.e_state_0_ ),
+    .A(execution_unit_0.e_state_0_ ),
     .B(_03382_),
     .C(_03377_),
     .Y(_03383_)
@@ -28749,7 +28749,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03384_)
   );
   AOI22X1 _09444_ (
-    .A( frontend_0.exec_src_wr ),
+    .A(frontend_0.exec_src_wr ),
     .B(_03345_),
     .C(_03373_),
     .D(_03374_),
@@ -28769,7 +28769,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _09447_ (
     .A(_03387_),
-    .Y( frontend_0.e_state_nxt_0_ )
+    .Y(frontend_0.e_state_nxt_0_ )
   );
   AOI22X1 _09448_ (
     .A(_03298_),
@@ -28826,7 +28826,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03396_)
   );
   NAND2X1 _09457_ (
-    .A( frontend_0.exec_jmp ),
+    .A(frontend_0.exec_jmp ),
     .B(_03256_),
     .Y(_03397_)
   );
@@ -28847,8 +28847,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03400_)
   );
   OAI21X1 _09461_ (
-    .A( frontend_0.exec_jmp ),
-    .B( frontend_0.exec_src_wr ),
+    .A(frontend_0.exec_jmp ),
+    .B(frontend_0.exec_src_wr ),
     .C(_03344_),
     .Y(_03401_)
   );
@@ -28865,7 +28865,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _09464_ (
     .A(_03396_),
     .B(_03402_),
-    .Y( frontend_0.e_state_nxt_2_ )
+    .Y(frontend_0.e_state_nxt_2_ )
   );
   NOR2X1 _09465_ (
     .A(_03264_),
@@ -28903,10 +28903,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03409_)
   );
   OAI22X1 _09471_ (
-    .A( execution_unit_0.e_state_1_ ),
+    .A(execution_unit_0.e_state_1_ ),
     .B(_03254_),
     .C(_03261_),
-    .D( execution_unit_0.e_state_0_ ),
+    .D(execution_unit_0.e_state_0_ ),
     .Y(_03410_)
   );
   NOR2X1 _09472_ (
@@ -28921,7 +28921,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _09474_ (
     .A(_03408_),
     .B(_03411_),
-    .Y( frontend_0.e_state_nxt_3_ )
+    .Y(frontend_0.e_state_nxt_3_ )
   );
   NAND2X1 _09475_ (
     .A(_03331_),
@@ -28954,7 +28954,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _09481_ (
     .A(_03418_),
-    .Y( dbg_0.decode_noirq )
+    .Y(dbg_0.decode_noirq )
   );
   AND2X1 _09482_ (
     .A(_03291_),
@@ -28968,7 +28968,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND2X1 _09484_ (
     .A(_03291_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .Y(_03421_)
   );
   NAND3X1 _09485_ (
@@ -28978,7 +28978,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03422_)
   );
   NOR2X1 _09486_ (
-    .A( frontend_0.i_state_2_ ),
+    .A(frontend_0.i_state_2_ ),
     .B(_03367_),
     .Y(_03423_)
   );
@@ -28993,7 +28993,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03425_)
   );
   NAND3X1 _09489_ (
-    .A( execution_unit_0.e_state_0_ ),
+    .A(execution_unit_0.e_state_0_ ),
     .B(_03286_),
     .C(_03347_),
     .Y(_03426_)
@@ -29019,12 +29019,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _09493_ (
     .A(_03422_),
     .B(_03429_),
-    .Y( frontend_0.i_state_nxt_0_ )
+    .Y(frontend_0.i_state_nxt_0_ )
   );
   AOI21X1 _09494_ (
-    .A( frontend_0.inst_sz_0_ ),
+    .A(frontend_0.inst_sz_0_ ),
     .B(_03200_),
-    .C( execution_unit_0.pc_sw_wr ),
+    .C(execution_unit_0.pc_sw_wr ),
     .Y(_03430_)
   );
   INVX1 _09495_ (
@@ -29035,7 +29035,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03360_),
     .B(_03431_),
     .C(_03428_),
-    .Y( frontend_0.i_state_nxt_2_ )
+    .Y(frontend_0.i_state_nxt_2_ )
   );
   NOR2X1 _09497_ (
     .A(_03272_),
@@ -29054,7 +29054,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03434_)
   );
   NOR2X1 _09500_ (
-    .A( frontend_0.i_state_2_ ),
+    .A(frontend_0.i_state_2_ ),
     .B(_03270_),
     .Y(_03435_)
   );
@@ -29070,7 +29070,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03437_)
   );
   AOI21X1 _09503_ (
-    .A( frontend_0.i_state_2_ ),
+    .A(frontend_0.i_state_2_ ),
     .B(_03366_),
     .C(_03437_),
     .Y(_03438_)
@@ -29079,10 +29079,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03427_),
     .B(_03433_),
     .C(_03438_),
-    .Y( frontend_0.i_state_nxt_1_ )
+    .Y(frontend_0.i_state_nxt_1_ )
   );
   OAI21X1 _09505_ (
-    .A( dbg_0.fe_mdb_in_8_ ),
+    .A(dbg_0.fe_mdb_in_8_ ),
     .B(_03321_),
     .C(_03331_),
     .Y(_03439_)
@@ -29101,17 +29101,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _09508_ (
     .A(_03181_),
     .B(_03441_),
-    .C( frontend_0.exec_jmp ),
+    .C(frontend_0.exec_jmp ),
     .Y(_03442_)
   );
   NOR2X1 _09509_ (
-    .A( frontend_0.exec_dst_wr ),
+    .A(frontend_0.exec_dst_wr ),
     .B(_03442_),
     .Y(_03443_)
   );
   NOR2X1 _09510_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_push ),
-    .B( execution_unit_0.alu_0.UNUSED_inst_so_call ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_push ),
+    .B(execution_unit_0.alu_0.UNUSED_inst_so_call ),
     .Y(_03444_)
   );
   NOR2X1 _09511_ (
@@ -29120,7 +29120,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03445_)
   );
   NOR2X1 _09512_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .B(_03377_),
     .Y(_03446_)
   );
@@ -29157,10 +29157,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03263_),
     .B(_03443_),
     .C(_03451_),
-    .Y( frontend_0.e_state_nxt_1_ )
+    .Y(frontend_0.e_state_nxt_1_ )
   );
   OAI21X1 _09519_ (
-    .A( frontend_0.i_state_2_ ),
+    .A(frontend_0.i_state_2_ ),
     .B(_03367_),
     .C(_03199_),
     .Y(_03452_)
@@ -29172,7 +29172,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03453_)
   );
   OAI21X1 _09521_ (
-    .A( dbg_0.UNUSED_pc_0_ ),
+    .A(dbg_0.UNUSED_pc_0_ ),
     .B(_03435_),
     .C(_03453_),
     .Y(_03454_)
@@ -29181,11 +29181,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03199_),
     .B(_03202_),
     .C(_03454_),
-    .Y( execution_unit_0.pc_nxt_0_ )
+    .Y(execution_unit_0.pc_nxt_0_ )
   );
   NOR2X1 _09523_ (
     .A(_03199_),
-    .B( execution_unit_0.alu_0.alu_out_1_ ),
+    .B(execution_unit_0.alu_0.alu_out_1_ ),
     .Y(_03455_)
   );
   NAND2X1 _09524_ (
@@ -29211,7 +29211,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03415_),
     .B(_03417_),
     .C(_03457_),
-    .D( frontend_0.e_state_nxt_0_ ),
+    .D(frontend_0.e_state_nxt_0_ ),
     .Y(_03459_)
   );
   OAI21X1 _09528_ (
@@ -29238,20 +29238,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03463_)
   );
   AOI21X1 _09532_ (
-    .A( frontend_0.irq_addr_1_ ),
+    .A(frontend_0.irq_addr_1_ ),
     .B(_03423_),
-    .C( execution_unit_0.pc_sw_wr ),
+    .C(execution_unit_0.pc_sw_wr ),
     .Y(_03464_)
   );
   AOI21X1 _09533_ (
     .A(_03463_),
     .B(_03464_),
     .C(_03455_),
-    .Y( execution_unit_0.pc_nxt_1_ )
+    .Y(execution_unit_0.pc_nxt_1_ )
   );
   NOR2X1 _09534_ (
     .A(_03199_),
-    .B( execution_unit_0.alu_0.alu_out_2_ ),
+    .B(execution_unit_0.alu_0.alu_out_2_ ),
     .Y(_03465_)
   );
   OAI21X1 _09535_ (
@@ -29267,8 +29267,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03467_)
   );
   NAND3X1 _09537_ (
-    .A( dbg_0.UNUSED_pc_1_ ),
-    .B( dbg_0.UNUSED_pc_2_ ),
+    .A(dbg_0.UNUSED_pc_1_ ),
+    .B(dbg_0.UNUSED_pc_2_ ),
     .C(_03459_),
     .Y(_03468_)
   );
@@ -29279,7 +29279,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03469_)
   );
   OAI21X1 _09539_ (
-    .A( dbg_0.fe_mdb_in_2_ ),
+    .A(dbg_0.fe_mdb_in_2_ ),
     .B(_03436_),
     .C(_03424_),
     .Y(_03470_)
@@ -29290,20 +29290,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03471_)
   );
   AOI21X1 _09541_ (
-    .A( frontend_0.irq_addr_2_ ),
+    .A(frontend_0.irq_addr_2_ ),
     .B(_03423_),
-    .C( execution_unit_0.pc_sw_wr ),
+    .C(execution_unit_0.pc_sw_wr ),
     .Y(_03472_)
   );
   AOI21X1 _09542_ (
     .A(_03471_),
     .B(_03472_),
     .C(_03465_),
-    .Y( execution_unit_0.pc_nxt_2_ )
+    .Y(execution_unit_0.pc_nxt_2_ )
   );
   NOR2X1 _09543_ (
     .A(_03199_),
-    .B( execution_unit_0.alu_0.alu_out_3_ ),
+    .B(execution_unit_0.alu_0.alu_out_3_ ),
     .Y(_03473_)
   );
   XNOR2X1 _09544_ (
@@ -29317,13 +29317,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03475_)
   );
   OAI21X1 _09546_ (
-    .A( dbg_0.fe_mdb_in_3_ ),
+    .A(dbg_0.fe_mdb_in_3_ ),
     .B(_03436_),
     .C(_03424_),
     .Y(_03476_)
   );
   NAND2X1 _09547_ (
-    .A( frontend_0.irq_addr_3_ ),
+    .A(frontend_0.irq_addr_3_ ),
     .B(_03423_),
     .Y(_03477_)
   );
@@ -29334,14 +29334,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03478_)
   );
   NOR2X1 _09549_ (
-    .A( execution_unit_0.pc_sw_wr ),
+    .A(execution_unit_0.pc_sw_wr ),
     .B(_03478_),
     .Y(_03479_)
   );
   NOR2X1 _09550_ (
     .A(_03473_),
     .B(_03479_),
-    .Y( execution_unit_0.pc_nxt_3_ )
+    .Y(execution_unit_0.pc_nxt_3_ )
   );
   OAI21X1 _09551_ (
     .A(_03207_),
@@ -29356,8 +29356,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03481_)
   );
   NAND3X1 _09553_ (
-    .A( dbg_0.UNUSED_pc_3_ ),
-    .B( dbg_0.UNUSED_pc_4_ ),
+    .A(dbg_0.UNUSED_pc_3_ ),
+    .B(dbg_0.UNUSED_pc_4_ ),
     .C(_03467_),
     .Y(_03482_)
   );
@@ -29368,13 +29368,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03483_)
   );
   OAI21X1 _09555_ (
-    .A( dbg_0.fe_mdb_in_4_ ),
+    .A(dbg_0.fe_mdb_in_4_ ),
     .B(_03436_),
     .C(_03424_),
     .Y(_03484_)
   );
   NAND2X1 _09556_ (
-    .A( frontend_0.irq_addr_4_ ),
+    .A(frontend_0.irq_addr_4_ ),
     .B(_03423_),
     .Y(_03485_)
   );
@@ -29385,14 +29385,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03486_)
   );
   MUX2X1 _09558_ (
-    .A( execution_unit_0.alu_0.alu_out_4_ ),
+    .A(execution_unit_0.alu_0.alu_out_4_ ),
     .B(_03486_),
-    .S( execution_unit_0.pc_sw_wr ),
+    .S(execution_unit_0.pc_sw_wr ),
     .Y(_03487_)
   );
   INVX1 _09559_ (
     .A(_03487_),
-    .Y( execution_unit_0.pc_nxt_4_ )
+    .Y(execution_unit_0.pc_nxt_4_ )
   );
   NOR2X1 _09560_ (
     .A(_03210_),
@@ -29400,13 +29400,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03488_)
   );
   OAI21X1 _09561_ (
-    .A( dbg_0.UNUSED_pc_5_ ),
+    .A(dbg_0.UNUSED_pc_5_ ),
     .B(_03481_),
     .C(_03436_),
     .Y(_03489_)
   );
   AOI21X1 _09562_ (
-    .A( dbg_0.fe_mdb_in_5_ ),
+    .A(dbg_0.fe_mdb_in_5_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03490_)
@@ -29419,13 +29419,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09564_ (
     .A(_03199_),
-    .B( execution_unit_0.alu_0.alu_out_5_ ),
+    .B(execution_unit_0.alu_0.alu_out_5_ ),
     .C(_03491_),
     .Y(_03492_)
   );
   INVX1 _09565_ (
     .A(_03492_),
-    .Y( execution_unit_0.pc_nxt_5_ )
+    .Y(execution_unit_0.pc_nxt_5_ )
   );
   NOR3X1 _09566_ (
     .A(_03210_),
@@ -29434,19 +29434,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03493_)
   );
   NAND3X1 _09567_ (
-    .A( dbg_0.UNUSED_pc_5_ ),
-    .B( dbg_0.UNUSED_pc_6_ ),
+    .A(dbg_0.UNUSED_pc_5_ ),
+    .B(dbg_0.UNUSED_pc_6_ ),
     .C(_03481_),
     .Y(_03494_)
   );
   OAI21X1 _09568_ (
-    .A( dbg_0.UNUSED_pc_6_ ),
+    .A(dbg_0.UNUSED_pc_6_ ),
     .B(_03488_),
     .C(_03436_),
     .Y(_03495_)
   );
   AOI21X1 _09569_ (
-    .A( dbg_0.fe_mdb_in_6_ ),
+    .A(dbg_0.fe_mdb_in_6_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03496_)
@@ -29459,13 +29459,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09571_ (
     .A(_03199_),
-    .B( execution_unit_0.alu_0.alu_out_6_ ),
+    .B(execution_unit_0.alu_0.alu_out_6_ ),
     .C(_03497_),
     .Y(_03498_)
   );
   INVX1 _09572_ (
     .A(_03498_),
-    .Y( execution_unit_0.pc_nxt_6_ )
+    .Y(execution_unit_0.pc_nxt_6_ )
   );
   NOR2X1 _09573_ (
     .A(_03212_),
@@ -29473,13 +29473,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03499_)
   );
   OAI21X1 _09574_ (
-    .A( dbg_0.UNUSED_pc_7_ ),
+    .A(dbg_0.UNUSED_pc_7_ ),
     .B(_03493_),
     .C(_03436_),
     .Y(_03500_)
   );
   AOI21X1 _09575_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03501_)
@@ -29492,13 +29492,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09577_ (
     .A(_03199_),
-    .B( execution_unit_0.alu_0.alu_out_7_ ),
+    .B(execution_unit_0.alu_0.alu_out_7_ ),
     .C(_03502_),
     .Y(_03503_)
   );
   INVX1 _09578_ (
     .A(_03503_),
-    .Y( execution_unit_0.pc_nxt_7_ )
+    .Y(execution_unit_0.pc_nxt_7_ )
   );
   NOR3X1 _09579_ (
     .A(_03212_),
@@ -29507,19 +29507,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03504_)
   );
   NAND3X1 _09580_ (
-    .A( dbg_0.UNUSED_pc_7_ ),
-    .B( dbg_0.UNUSED_pc_8_ ),
+    .A(dbg_0.UNUSED_pc_7_ ),
+    .B(dbg_0.UNUSED_pc_8_ ),
     .C(_03493_),
     .Y(_03505_)
   );
   OAI21X1 _09581_ (
-    .A( dbg_0.UNUSED_pc_8_ ),
+    .A(dbg_0.UNUSED_pc_8_ ),
     .B(_03499_),
     .C(_03436_),
     .Y(_03506_)
   );
   AOI21X1 _09582_ (
-    .A( dbg_0.fe_mdb_in_8_ ),
+    .A(dbg_0.fe_mdb_in_8_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03507_)
@@ -29532,13 +29532,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09584_ (
     .A(_03199_),
-    .B( execution_unit_0.pc_sw_8_ ),
+    .B(execution_unit_0.pc_sw_8_ ),
     .C(_03508_),
     .Y(_03509_)
   );
   INVX1 _09585_ (
     .A(_03509_),
-    .Y( execution_unit_0.pc_nxt_8_ )
+    .Y(execution_unit_0.pc_nxt_8_ )
   );
   NOR2X1 _09586_ (
     .A(_03214_),
@@ -29546,13 +29546,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03510_)
   );
   OAI21X1 _09587_ (
-    .A( dbg_0.UNUSED_pc_9_ ),
+    .A(dbg_0.UNUSED_pc_9_ ),
     .B(_03504_),
     .C(_03436_),
     .Y(_03511_)
   );
   AOI21X1 _09588_ (
-    .A( dbg_0.fe_mdb_in_9_ ),
+    .A(dbg_0.fe_mdb_in_9_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03512_)
@@ -29565,13 +29565,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09590_ (
     .A(_03199_),
-    .B( execution_unit_0.pc_sw_9_ ),
+    .B(execution_unit_0.pc_sw_9_ ),
     .C(_03513_),
     .Y(_03514_)
   );
   INVX1 _09591_ (
     .A(_03514_),
-    .Y( execution_unit_0.pc_nxt_9_ )
+    .Y(execution_unit_0.pc_nxt_9_ )
   );
   NOR3X1 _09592_ (
     .A(_03214_),
@@ -29580,19 +29580,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03515_)
   );
   NAND3X1 _09593_ (
-    .A( dbg_0.UNUSED_pc_9_ ),
-    .B( dbg_0.UNUSED_pc_10_ ),
+    .A(dbg_0.UNUSED_pc_9_ ),
+    .B(dbg_0.UNUSED_pc_10_ ),
     .C(_03504_),
     .Y(_03516_)
   );
   OAI21X1 _09594_ (
-    .A( dbg_0.UNUSED_pc_10_ ),
+    .A(dbg_0.UNUSED_pc_10_ ),
     .B(_03510_),
     .C(_03436_),
     .Y(_03517_)
   );
   AOI21X1 _09595_ (
-    .A( dbg_0.fe_mdb_in_10_ ),
+    .A(dbg_0.fe_mdb_in_10_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03518_)
@@ -29605,21 +29605,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09597_ (
     .A(_03199_),
-    .B( execution_unit_0.pc_sw_10_ ),
+    .B(execution_unit_0.pc_sw_10_ ),
     .C(_03519_),
     .Y(_03520_)
   );
   INVX1 _09598_ (
     .A(_03520_),
-    .Y( execution_unit_0.pc_nxt_10_ )
+    .Y(execution_unit_0.pc_nxt_10_ )
   );
   XNOR2X1 _09599_ (
-    .A( dbg_0.UNUSED_pc_11_ ),
+    .A(dbg_0.UNUSED_pc_11_ ),
     .B(_03515_),
     .Y(_03521_)
   );
   AOI21X1 _09600_ (
-    .A( dbg_0.fe_mdb_in_11_ ),
+    .A(dbg_0.fe_mdb_in_11_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03522_)
@@ -29632,17 +29632,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09602_ (
     .A(_03199_),
-    .B( execution_unit_0.pc_sw_11_ ),
+    .B(execution_unit_0.pc_sw_11_ ),
     .C(_03523_),
     .Y(_03524_)
   );
   INVX1 _09603_ (
     .A(_03524_),
-    .Y( execution_unit_0.pc_nxt_11_ )
+    .Y(execution_unit_0.pc_nxt_11_ )
   );
   NAND3X1 _09604_ (
-    .A( dbg_0.UNUSED_pc_11_ ),
-    .B( dbg_0.UNUSED_pc_12_ ),
+    .A(dbg_0.UNUSED_pc_11_ ),
+    .B(dbg_0.UNUSED_pc_12_ ),
     .C(_03515_),
     .Y(_03525_)
   );
@@ -29658,7 +29658,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03527_)
   );
   AOI21X1 _09607_ (
-    .A( dbg_0.fe_mdb_in_12_ ),
+    .A(dbg_0.fe_mdb_in_12_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03528_)
@@ -29671,13 +29671,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09609_ (
     .A(_03199_),
-    .B( execution_unit_0.pc_sw_12_ ),
+    .B(execution_unit_0.pc_sw_12_ ),
     .C(_03529_),
     .Y(_03530_)
   );
   INVX1 _09610_ (
     .A(_03530_),
-    .Y( execution_unit_0.pc_nxt_12_ )
+    .Y(execution_unit_0.pc_nxt_12_ )
   );
   XNOR2X1 _09611_ (
     .A(_03218_),
@@ -29685,7 +29685,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03531_)
   );
   AOI21X1 _09612_ (
-    .A( dbg_0.fe_mdb_in_13_ ),
+    .A(dbg_0.fe_mdb_in_13_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03532_)
@@ -29698,17 +29698,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09614_ (
     .A(_03199_),
-    .B( execution_unit_0.pc_sw_13_ ),
+    .B(execution_unit_0.pc_sw_13_ ),
     .C(_03533_),
     .Y(_03534_)
   );
   INVX1 _09615_ (
     .A(_03534_),
-    .Y( execution_unit_0.pc_nxt_13_ )
+    .Y(execution_unit_0.pc_nxt_13_ )
   );
   NOR2X1 _09616_ (
     .A(_03199_),
-    .B( execution_unit_0.pc_sw_14_ ),
+    .B(execution_unit_0.pc_sw_14_ ),
     .Y(_03535_)
   );
   NOR3X1 _09617_ (
@@ -29724,7 +29724,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03537_)
   );
   OAI21X1 _09619_ (
-    .A( frontend_0.i_state_2_ ),
+    .A(frontend_0.i_state_2_ ),
     .B(_03270_),
     .C(_03537_),
     .Y(_03538_)
@@ -29735,7 +29735,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03539_)
   );
   AOI21X1 _09621_ (
-    .A( dbg_0.fe_mdb_in_14_ ),
+    .A(dbg_0.fe_mdb_in_14_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03540_)
@@ -29744,20 +29744,20 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03539_),
     .B(_03540_),
     .C(_03535_),
-    .Y( execution_unit_0.pc_nxt_14_ )
+    .Y(execution_unit_0.pc_nxt_14_ )
   );
   OR2X1 _09623_ (
     .A(_03199_),
-    .B( execution_unit_0.pc_sw_15_ ),
+    .B(execution_unit_0.pc_sw_15_ ),
     .Y(_03541_)
   );
   XNOR2X1 _09624_ (
-    .A( dbg_0.UNUSED_pc_15_ ),
+    .A(dbg_0.UNUSED_pc_15_ ),
     .B(_03536_),
     .Y(_03542_)
   );
   AOI21X1 _09625_ (
-    .A( dbg_0.fe_mdb_in_15_ ),
+    .A(dbg_0.fe_mdb_in_15_ ),
     .B(_03435_),
     .C(_03452_),
     .Y(_03543_)
@@ -29771,11 +29771,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AND2X1 _09627_ (
     .A(_03541_),
     .B(_03544_),
-    .Y( execution_unit_0.pc_nxt_15_ )
+    .Y(execution_unit_0.pc_nxt_15_ )
   );
   NOR2X1 _09628_ (
-    .A( frontend_0.inst_dest_bin_1_ ),
-    .B( frontend_0.inst_dest_bin_0_ ),
+    .A(frontend_0.inst_dest_bin_1_ ),
+    .B(frontend_0.inst_dest_bin_0_ ),
     .Y(_03545_)
   );
   NAND2X1 _09629_ (
@@ -29784,7 +29784,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03546_)
   );
   OR2X1 _09630_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
     .B(_03546_),
     .Y(_03547_)
   );
@@ -29794,8 +29794,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03548_)
   );
   NOR2X1 _09632_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
-    .B( execution_unit_0.inst_type_1_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
+    .B(execution_unit_0.inst_type_1_ ),
     .Y(_03549_)
   );
   OAI21X1 _09633_ (
@@ -29810,24 +29810,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03551_)
   );
   OR2X1 _09635_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
     .B(_03551_),
     .Y(_03552_)
   );
   OAI21X1 _09636_ (
-    .A( dbg_0.dbg_mem_addr_3_ ),
+    .A(dbg_0.dbg_mem_addr_3_ ),
     .B(_03552_),
-    .C( dbg_0.cpu_stat_full_0_ ),
+    .C(dbg_0.cpu_stat_full_0_ ),
     .Y(_03553_)
   );
   AND2X1 _09637_ (
     .A(_03550_),
     .B(_03553_),
-    .Y( execution_unit_0.inst_dest_0_ )
+    .Y(execution_unit_0.inst_dest_0_ )
   );
   AND2X1 _09638_ (
     .A(_03222_),
-    .B( frontend_0.inst_dest_bin_0_ ),
+    .B(frontend_0.inst_dest_bin_0_ ),
     .Y(_03554_)
   );
   NAND2X1 _09639_ (
@@ -29836,7 +29836,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03555_)
   );
   NOR2X1 _09640_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
     .B(_03555_),
     .Y(_03556_)
   );
@@ -29849,16 +29849,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND3X1 _09642_ (
     .A(_03224_),
     .B(_03225_),
-    .C( dbg_0.dbg_mem_addr_0_ ),
+    .C(dbg_0.dbg_mem_addr_0_ ),
     .Y(_03558_)
   );
   XOR2X1 _09643_ (
-    .A( dbg_0.dbg_mem_addr_3_ ),
+    .A(dbg_0.dbg_mem_addr_3_ ),
     .B(_03552_),
     .Y(_03559_)
   );
   NAND2X1 _09644_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .B(_03559_),
     .Y(_03560_)
   );
@@ -29866,11 +29866,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03558_),
     .B(_03560_),
     .C(_03557_),
-    .Y( execution_unit_0.inst_dest_1_ )
+    .Y(execution_unit_0.inst_dest_1_ )
   );
   NOR2X1 _09646_ (
     .A(_03222_),
-    .B( frontend_0.inst_dest_bin_0_ ),
+    .B(frontend_0.inst_dest_bin_0_ ),
     .Y(_03561_)
   );
   NAND2X1 _09647_ (
@@ -29879,7 +29879,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03562_)
   );
   OR2X1 _09648_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
     .B(_03562_),
     .Y(_03563_)
   );
@@ -29891,7 +29891,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _09650_ (
     .A(_03224_),
-    .B( dbg_0.dbg_mem_addr_1_ ),
+    .B(dbg_0.dbg_mem_addr_1_ ),
     .C(_03226_),
     .Y(_03565_)
   );
@@ -29900,15 +29900,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03564_),
     .C(_03565_),
     .D(_03560_),
-    .Y( execution_unit_0.inst_dest_2_ )
+    .Y(execution_unit_0.inst_dest_2_ )
   );
   NAND2X1 _09652_ (
-    .A( frontend_0.inst_dest_bin_1_ ),
-    .B( frontend_0.inst_dest_bin_0_ ),
+    .A(frontend_0.inst_dest_bin_1_ ),
+    .B(frontend_0.inst_dest_bin_0_ ),
     .Y(_03566_)
   );
   NOR2X1 _09653_ (
-    .A( frontend_0.inst_dest_bin_2_ ),
+    .A(frontend_0.inst_dest_bin_2_ ),
     .B(_03566_),
     .Y(_03567_)
   );
@@ -29919,8 +29919,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _09655_ (
     .A(_03224_),
-    .B( dbg_0.dbg_mem_addr_1_ ),
-    .C( dbg_0.dbg_mem_addr_0_ ),
+    .B(dbg_0.dbg_mem_addr_1_ ),
+    .C(dbg_0.dbg_mem_addr_0_ ),
     .Y(_03569_)
   );
   OAI22X1 _09656_ (
@@ -29928,11 +29928,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03568_),
     .C(_03569_),
     .D(_03560_),
-    .Y( execution_unit_0.inst_dest_3_ )
+    .Y(execution_unit_0.inst_dest_3_ )
   );
   NAND3X1 _09657_ (
     .A(_03220_),
-    .B( frontend_0.inst_dest_bin_2_ ),
+    .B(frontend_0.inst_dest_bin_2_ ),
     .C(_03545_),
     .Y(_03570_)
   );
@@ -29946,18 +29946,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03570_),
     .C(_03571_),
     .D(_03560_),
-    .Y( execution_unit_0.inst_dest_4_ )
+    .Y(execution_unit_0.inst_dest_4_ )
   );
   NAND3X1 _09660_ (
     .A(_03220_),
-    .B( frontend_0.inst_dest_bin_2_ ),
+    .B(frontend_0.inst_dest_bin_2_ ),
     .C(_03554_),
     .Y(_03572_)
   );
   NAND3X1 _09661_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
     .B(_03225_),
-    .C( dbg_0.dbg_mem_addr_0_ ),
+    .C(dbg_0.dbg_mem_addr_0_ ),
     .Y(_03573_)
   );
   OAI22X1 _09662_ (
@@ -29965,17 +29965,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03572_),
     .C(_03573_),
     .D(_03560_),
-    .Y( execution_unit_0.inst_dest_5_ )
+    .Y(execution_unit_0.inst_dest_5_ )
   );
   NAND3X1 _09663_ (
     .A(_03220_),
-    .B( frontend_0.inst_dest_bin_2_ ),
+    .B(frontend_0.inst_dest_bin_2_ ),
     .C(_03561_),
     .Y(_03574_)
   );
   NAND3X1 _09664_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
-    .B( dbg_0.dbg_mem_addr_1_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
+    .B(dbg_0.dbg_mem_addr_1_ ),
     .C(_03226_),
     .Y(_03575_)
   );
@@ -29984,7 +29984,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03574_),
     .C(_03575_),
     .D(_03560_),
-    .Y( execution_unit_0.inst_dest_6_ )
+    .Y(execution_unit_0.inst_dest_6_ )
   );
   OR2X1 _09666_ (
     .A(_03221_),
@@ -29992,14 +29992,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03576_)
   );
   OR2X1 _09667_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
     .B(_03576_),
     .Y(_03577_)
   );
   NAND3X1 _09668_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
-    .B( dbg_0.dbg_mem_addr_1_ ),
-    .C( dbg_0.dbg_mem_addr_0_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
+    .B(dbg_0.dbg_mem_addr_1_ ),
+    .C(dbg_0.dbg_mem_addr_0_ ),
     .Y(_03578_)
   );
   OAI22X1 _09669_ (
@@ -30007,7 +30007,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03577_),
     .C(_03578_),
     .D(_03560_),
-    .Y( execution_unit_0.inst_dest_7_ )
+    .Y(execution_unit_0.inst_dest_7_ )
   );
   OR2X1 _09670_ (
     .A(_03220_),
@@ -30019,7 +30019,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03553_),
     .C(_03564_),
     .D(_03579_),
-    .Y( execution_unit_0.inst_dest_8_ )
+    .Y(execution_unit_0.inst_dest_8_ )
   );
   OR2X1 _09672_ (
     .A(_03220_),
@@ -30036,7 +30036,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03580_),
     .C(_03581_),
     .D(_03558_),
-    .Y( execution_unit_0.inst_dest_9_ )
+    .Y(execution_unit_0.inst_dest_9_ )
   );
   OR2X1 _09675_ (
     .A(_03220_),
@@ -30048,10 +30048,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03581_),
     .C(_03582_),
     .D(_03564_),
-    .Y( execution_unit_0.inst_dest_10_ )
+    .Y(execution_unit_0.inst_dest_10_ )
   );
   NAND2X1 _09677_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
     .B(_03567_),
     .Y(_03583_)
   );
@@ -30060,11 +30060,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03581_),
     .C(_03583_),
     .D(_03564_),
-    .Y( execution_unit_0.inst_dest_11_ )
+    .Y(execution_unit_0.inst_dest_11_ )
   );
   NAND3X1 _09679_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
-    .B( frontend_0.inst_dest_bin_2_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
+    .B(frontend_0.inst_dest_bin_2_ ),
     .C(_03545_),
     .Y(_03584_)
   );
@@ -30073,11 +30073,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03581_),
     .C(_03584_),
     .D(_03564_),
-    .Y( execution_unit_0.inst_dest_12_ )
+    .Y(execution_unit_0.inst_dest_12_ )
   );
   NAND3X1 _09681_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
-    .B( frontend_0.inst_dest_bin_2_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
+    .B(frontend_0.inst_dest_bin_2_ ),
     .C(_03554_),
     .Y(_03585_)
   );
@@ -30086,11 +30086,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03581_),
     .C(_03585_),
     .D(_03564_),
-    .Y( execution_unit_0.inst_dest_13_ )
+    .Y(execution_unit_0.inst_dest_13_ )
   );
   NAND3X1 _09683_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
-    .B( frontend_0.inst_dest_bin_2_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
+    .B(frontend_0.inst_dest_bin_2_ ),
     .C(_03561_),
     .Y(_03586_)
   );
@@ -30099,7 +30099,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03581_),
     .C(_03586_),
     .D(_03564_),
-    .Y( execution_unit_0.inst_dest_14_ )
+    .Y(execution_unit_0.inst_dest_14_ )
   );
   OR2X1 _09685_ (
     .A(_03220_),
@@ -30111,7 +30111,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03581_),
     .C(_03587_),
     .D(_03564_),
-    .Y( execution_unit_0.inst_dest_15_ )
+    .Y(execution_unit_0.inst_dest_15_ )
   );
   OAI21X1 _09687_ (
     .A(_03201_),
@@ -30120,8 +30120,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03588_)
   );
   NOR2X1 _09688_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
-    .B( execution_unit_0.inst_type_2_ ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .B(execution_unit_0.inst_type_2_ ),
     .Y(_03589_)
   );
   NAND2X1 _09689_ (
@@ -30135,12 +30135,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03591_)
   );
   OR2X1 _09691_ (
-    .A( frontend_0.inst_jmp_bin_0_ ),
+    .A(frontend_0.inst_jmp_bin_0_ ),
     .B(_03591_),
     .Y(_03592_)
   );
   OR2X1 _09692_ (
-    .A( frontend_0.inst_jmp_bin_1_ ),
+    .A(frontend_0.inst_jmp_bin_1_ ),
     .B(_03592_),
     .Y(_03593_)
   );
@@ -30148,23 +30148,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03231_),
     .B(_03593_),
     .C(_03590_),
-    .Y( execution_unit_0.inst_src_0_ )
+    .Y(execution_unit_0.inst_src_0_ )
   );
   NOR2X1 _09694_ (
     .A(_03201_),
-    .B( execution_unit_0.alu_0.inst_so_7_ ),
+    .B(execution_unit_0.alu_0.inst_so_7_ ),
     .Y(_03594_)
   );
   AOI21X1 _09695_ (
     .A(_03556_),
     .B(_03594_),
-    .C( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .C(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .Y(_03595_)
   );
   NAND3X1 _09696_ (
     .A(_03228_),
     .B(_03229_),
-    .C( frontend_0.inst_src_bin_0_ ),
+    .C(frontend_0.inst_src_bin_0_ ),
     .Y(_03596_)
   );
   XNOR2X1 _09697_ (
@@ -30173,16 +30173,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03597_)
   );
   NAND2X1 _09698_ (
-    .A( execution_unit_0.inst_type_2_ ),
+    .A(execution_unit_0.inst_type_2_ ),
     .B(_03597_),
     .Y(_03598_)
   );
   OAI22X1 _09699_ (
-    .A( execution_unit_0.inst_type_2_ ),
+    .A(execution_unit_0.inst_type_2_ ),
     .B(_03595_),
     .C(_03596_),
     .D(_03598_),
-    .Y( execution_unit_0.inst_src_1_ )
+    .Y(execution_unit_0.inst_src_1_ )
   );
   NAND2X1 _09700_ (
     .A(_03589_),
@@ -30191,7 +30191,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _09701_ (
     .A(_03228_),
-    .B( frontend_0.inst_src_bin_1_ ),
+    .B(frontend_0.inst_src_bin_1_ ),
     .C(_03230_),
     .Y(_03600_)
   );
@@ -30200,12 +30200,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03599_),
     .C(_03600_),
     .D(_03598_),
-    .Y( execution_unit_0.inst_src_2_ )
+    .Y(execution_unit_0.inst_src_2_ )
   );
   NAND3X1 _09703_ (
     .A(_03228_),
-    .B( frontend_0.inst_src_bin_1_ ),
-    .C( frontend_0.inst_src_bin_0_ ),
+    .B(frontend_0.inst_src_bin_1_ ),
+    .C(frontend_0.inst_src_bin_0_ ),
     .Y(_03601_)
   );
   OAI22X1 _09704_ (
@@ -30213,7 +30213,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03599_),
     .C(_03601_),
     .D(_03598_),
-    .Y( execution_unit_0.inst_src_3_ )
+    .Y(execution_unit_0.inst_src_3_ )
   );
   OR2X1 _09705_ (
     .A(_03228_),
@@ -30225,12 +30225,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03599_),
     .C(_03602_),
     .D(_03598_),
-    .Y( execution_unit_0.inst_src_4_ )
+    .Y(execution_unit_0.inst_src_4_ )
   );
   NAND3X1 _09707_ (
-    .A( frontend_0.inst_jmp_bin_0_ ),
+    .A(frontend_0.inst_jmp_bin_0_ ),
     .B(_03229_),
-    .C( frontend_0.inst_src_bin_0_ ),
+    .C(frontend_0.inst_src_bin_0_ ),
     .Y(_03603_)
   );
   OAI22X1 _09708_ (
@@ -30238,11 +30238,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03599_),
     .C(_03603_),
     .D(_03598_),
-    .Y( execution_unit_0.inst_src_5_ )
+    .Y(execution_unit_0.inst_src_5_ )
   );
   NAND3X1 _09709_ (
-    .A( frontend_0.inst_jmp_bin_0_ ),
-    .B( frontend_0.inst_src_bin_1_ ),
+    .A(frontend_0.inst_jmp_bin_0_ ),
+    .B(frontend_0.inst_src_bin_1_ ),
     .C(_03230_),
     .Y(_03604_)
   );
@@ -30251,12 +30251,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03599_),
     .C(_03604_),
     .D(_03598_),
-    .Y( execution_unit_0.inst_src_6_ )
+    .Y(execution_unit_0.inst_src_6_ )
   );
   NAND3X1 _09711_ (
-    .A( frontend_0.inst_jmp_bin_0_ ),
-    .B( frontend_0.inst_src_bin_1_ ),
-    .C( frontend_0.inst_src_bin_0_ ),
+    .A(frontend_0.inst_jmp_bin_0_ ),
+    .B(frontend_0.inst_src_bin_1_ ),
+    .C(frontend_0.inst_src_bin_0_ ),
     .Y(_03605_)
   );
   OAI22X1 _09712_ (
@@ -30264,11 +30264,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03599_),
     .C(_03605_),
     .D(_03598_),
-    .Y( execution_unit_0.inst_src_7_ )
+    .Y(execution_unit_0.inst_src_7_ )
   );
   NAND2X1 _09713_ (
-    .A( frontend_0.inst_jmp_bin_1_ ),
-    .B( execution_unit_0.inst_type_2_ ),
+    .A(frontend_0.inst_jmp_bin_1_ ),
+    .B(execution_unit_0.inst_type_2_ ),
     .Y(_03606_)
   );
   OAI22X1 _09714_ (
@@ -30276,7 +30276,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03599_),
     .C(_03606_),
     .D(_03592_),
-    .Y( execution_unit_0.inst_src_8_ )
+    .Y(execution_unit_0.inst_src_8_ )
   );
   OR2X1 _09715_ (
     .A(_03231_),
@@ -30288,49 +30288,49 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .B(_03599_),
     .C(_03607_),
     .D(_03596_),
-    .Y( execution_unit_0.inst_src_9_ )
+    .Y(execution_unit_0.inst_src_9_ )
   );
   OAI22X1 _09717_ (
     .A(_03582_),
     .B(_03599_),
     .C(_03600_),
     .D(_03607_),
-    .Y( execution_unit_0.inst_src_10_ )
+    .Y(execution_unit_0.inst_src_10_ )
   );
   OAI22X1 _09718_ (
     .A(_03583_),
     .B(_03599_),
     .C(_03601_),
     .D(_03607_),
-    .Y( execution_unit_0.inst_src_11_ )
+    .Y(execution_unit_0.inst_src_11_ )
   );
   OAI22X1 _09719_ (
     .A(_03584_),
     .B(_03599_),
     .C(_03602_),
     .D(_03607_),
-    .Y( execution_unit_0.inst_src_12_ )
+    .Y(execution_unit_0.inst_src_12_ )
   );
   OAI22X1 _09720_ (
     .A(_03585_),
     .B(_03599_),
     .C(_03603_),
     .D(_03607_),
-    .Y( execution_unit_0.inst_src_13_ )
+    .Y(execution_unit_0.inst_src_13_ )
   );
   OAI22X1 _09721_ (
     .A(_03586_),
     .B(_03599_),
     .C(_03604_),
     .D(_03607_),
-    .Y( execution_unit_0.inst_src_14_ )
+    .Y(execution_unit_0.inst_src_14_ )
   );
   OAI22X1 _09722_ (
     .A(_03587_),
     .B(_03599_),
     .C(_03605_),
     .D(_03607_),
-    .Y( execution_unit_0.inst_src_15_ )
+    .Y(execution_unit_0.inst_src_15_ )
   );
   NAND2X1 _09723_ (
     .A(_03204_),
@@ -30338,12 +30338,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03608_)
   );
   OR2X1 _09724_ (
-    .A( frontend_0.irq_addr_3_ ),
+    .A(frontend_0.irq_addr_3_ ),
     .B(_03608_),
     .Y(_03609_)
   );
   OR2X1 _09725_ (
-    .A( frontend_0.irq_addr_4_ ),
+    .A(frontend_0.irq_addr_4_ ),
     .B(_03609_),
     .Y(_03610_)
   );
@@ -30353,13 +30353,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05616_)
   );
   NAND3X1 _09727_ (
-    .A( frontend_0.irq_addr_1_ ),
+    .A(frontend_0.irq_addr_1_ ),
     .B(_03206_),
     .C(_03208_),
     .Y(_03611_)
   );
   XOR2X1 _09728_ (
-    .A( frontend_0.irq_addr_4_ ),
+    .A(frontend_0.irq_addr_4_ ),
     .B(_03609_),
     .Y(_03612_)
   );
@@ -30375,7 +30375,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _09731_ (
     .A(_03204_),
-    .B( frontend_0.irq_addr_2_ ),
+    .B(frontend_0.irq_addr_2_ ),
     .C(_03208_),
     .Y(_03614_)
   );
@@ -30385,12 +30385,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05622_)
   );
   NAND2X1 _09733_ (
-    .A( frontend_0.irq_addr_1_ ),
-    .B( frontend_0.irq_addr_2_ ),
+    .A(frontend_0.irq_addr_1_ ),
+    .B(frontend_0.irq_addr_2_ ),
     .Y(_03615_)
   );
   OR2X1 _09734_ (
-    .A( frontend_0.irq_addr_3_ ),
+    .A(frontend_0.irq_addr_3_ ),
     .B(_03615_),
     .Y(_03616_)
   );
@@ -30410,9 +30410,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05624_)
   );
   NAND3X1 _09738_ (
-    .A( frontend_0.irq_addr_1_ ),
+    .A(frontend_0.irq_addr_1_ ),
     .B(_03206_),
-    .C( frontend_0.irq_addr_3_ ),
+    .C(frontend_0.irq_addr_3_ ),
     .Y(_03618_)
   );
   NOR2X1 _09739_ (
@@ -30422,8 +30422,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _09740_ (
     .A(_03204_),
-    .B( frontend_0.irq_addr_2_ ),
-    .C( frontend_0.irq_addr_3_ ),
+    .B(frontend_0.irq_addr_2_ ),
+    .C(frontend_0.irq_addr_3_ ),
     .Y(_03619_)
   );
   NOR2X1 _09741_ (
@@ -30490,22 +30490,22 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NAND2X1 _09753_ (
     .A(_03460_),
     .B(_03623_),
-    .Y( frontend_0.mb_en )
+    .Y(frontend_0.mb_en )
   );
   NAND2X1 _09754_ (
-    .A( execution_unit_0.inst_type_1_ ),
+    .A(execution_unit_0.inst_type_1_ ),
     .B(_03227_),
     .Y(_03624_)
   );
   OR2X1 _09755_ (
-    .A( frontend_0.inst_jmp_bin_0_ ),
+    .A(frontend_0.inst_jmp_bin_0_ ),
     .B(_03624_),
     .Y(_03625_)
   );
   NOR2X1 _09756_ (
-    .A( frontend_0.inst_jmp_bin_2_ ),
+    .A(frontend_0.inst_jmp_bin_2_ ),
     .B(_03625_),
-    .Y( execution_unit_0.alu_0.inst_jmp_0_ )
+    .Y(execution_unit_0.alu_0.inst_jmp_0_ )
   );
   OR2X1 _09757_ (
     .A(_03228_),
@@ -30513,24 +30513,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03626_)
   );
   NOR2X1 _09758_ (
-    .A( frontend_0.inst_jmp_bin_2_ ),
+    .A(frontend_0.inst_jmp_bin_2_ ),
     .B(_03626_),
-    .Y( execution_unit_0.alu_0.inst_jmp_1_ )
+    .Y(execution_unit_0.alu_0.inst_jmp_1_ )
   );
   NAND2X1 _09759_ (
-    .A( execution_unit_0.inst_type_1_ ),
-    .B( frontend_0.inst_jmp_bin_1_ ),
+    .A(execution_unit_0.inst_type_1_ ),
+    .B(frontend_0.inst_jmp_bin_1_ ),
     .Y(_03627_)
   );
   OR2X1 _09760_ (
-    .A( frontend_0.inst_jmp_bin_0_ ),
+    .A(frontend_0.inst_jmp_bin_0_ ),
     .B(_03627_),
     .Y(_03628_)
   );
   NOR2X1 _09761_ (
-    .A( frontend_0.inst_jmp_bin_2_ ),
+    .A(frontend_0.inst_jmp_bin_2_ ),
     .B(_03628_),
-    .Y( execution_unit_0.alu_0.inst_jmp_2_ )
+    .Y(execution_unit_0.alu_0.inst_jmp_2_ )
   );
   OR2X1 _09762_ (
     .A(_03228_),
@@ -30538,29 +30538,29 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03629_)
   );
   NOR2X1 _09763_ (
-    .A( frontend_0.inst_jmp_bin_2_ ),
+    .A(frontend_0.inst_jmp_bin_2_ ),
     .B(_03629_),
-    .Y( execution_unit_0.alu_0.inst_jmp_3_ )
+    .Y(execution_unit_0.alu_0.inst_jmp_3_ )
   );
   NOR2X1 _09764_ (
     .A(_03233_),
     .B(_03625_),
-    .Y( execution_unit_0.alu_0.inst_jmp_4_ )
+    .Y(execution_unit_0.alu_0.inst_jmp_4_ )
   );
   NOR2X1 _09765_ (
     .A(_03233_),
     .B(_03626_),
-    .Y( execution_unit_0.alu_0.inst_jmp_5_ )
+    .Y(execution_unit_0.alu_0.inst_jmp_5_ )
   );
   NOR2X1 _09766_ (
     .A(_03233_),
     .B(_03628_),
-    .Y( execution_unit_0.alu_0.inst_jmp_6_ )
+    .Y(execution_unit_0.alu_0.inst_jmp_6_ )
   );
   OAI21X1 _09767_ (
-    .A( dbg_0.dbg_halt_cmd ),
+    .A(dbg_0.dbg_halt_cmd ),
     .B(_03167_),
-    .C( frontend_0.i_state_nxt_2_ ),
+    .C(frontend_0.i_state_nxt_2_ ),
     .Y(_03630_)
   );
   AOI21X1 _09768_ (
@@ -30576,14 +30576,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02920_)
   );
   NAND2X1 _09770_ (
-    .A( execution_unit_0.inst_type_0_ ),
+    .A(execution_unit_0.inst_type_0_ ),
     .B(_03375_),
     .Y(_03631_)
   );
   OAI21X1 _09771_ (
     .A(_03260_),
     .B(_03261_),
-    .C( frontend_0.exec_src_wr ),
+    .C(frontend_0.exec_src_wr ),
     .Y(_03632_)
   );
   OAI21X1 _09772_ (
@@ -30604,7 +30604,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03633_)
   );
   NOR2X1 _09775_ (
-    .A( dbg_0.fe_mdb_in_0_ ),
+    .A(dbg_0.fe_mdb_in_0_ ),
     .B(_03302_),
     .Y(_03634_)
   );
@@ -30615,7 +30615,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03635_)
   );
   OAI21X1 _09777_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03635_),
     .C(_03633_),
     .Y(_03636_)
@@ -30626,7 +30626,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NOR2X1 _09779_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .Y(_03638_)
   );
   NAND2X1 _09780_ (
@@ -30641,8 +30641,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02923_)
   );
   MUX2X1 _09782_ (
-    .A( execution_unit_0.inst_dext_0_ ),
-    .B( dbg_0.fe_mdb_in_0_ ),
+    .A(execution_unit_0.inst_dext_0_ ),
+    .B(dbg_0.fe_mdb_in_0_ ),
     .S(_03368_),
     .Y(_03640_)
   );
@@ -30654,11 +30654,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03170_),
     .B(_03367_),
     .C(_03434_),
-    .D( execution_unit_0.inst_as_4_ ),
+    .D(execution_unit_0.inst_as_4_ ),
     .Y(_03641_)
   );
   NAND2X1 _09785_ (
-    .A( execution_unit_0.UNUSED_inst_ad_symb ),
+    .A(execution_unit_0.UNUSED_inst_ad_symb ),
     .B(_03641_),
     .Y(_03642_)
   );
@@ -30684,7 +30684,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03646_)
   );
   NAND2X1 _09790_ (
-    .A( execution_unit_0.inst_dext_1_ ),
+    .A(execution_unit_0.inst_dext_1_ ),
     .B(_03368_),
     .Y(_03647_)
   );
@@ -30695,12 +30695,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02956_)
   );
   XNOR2X1 _09792_ (
-    .A( dbg_0.fe_mdb_in_2_ ),
+    .A(dbg_0.fe_mdb_in_2_ ),
     .B(_03644_),
     .Y(_03648_)
   );
   NAND2X1 _09793_ (
-    .A( execution_unit_0.inst_dext_2_ ),
+    .A(execution_unit_0.inst_dext_2_ ),
     .B(_03368_),
     .Y(_03649_)
   );
@@ -30728,7 +30728,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03652_)
   );
   NAND2X1 _09798_ (
-    .A( execution_unit_0.inst_dext_3_ ),
+    .A(execution_unit_0.inst_dext_3_ ),
     .B(_03368_),
     .Y(_03653_)
   );
@@ -30739,12 +30739,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02958_)
   );
   XOR2X1 _09800_ (
-    .A( dbg_0.fe_mdb_in_4_ ),
+    .A(dbg_0.fe_mdb_in_4_ ),
     .B(_03651_),
     .Y(_03654_)
   );
   NAND2X1 _09801_ (
-    .A( execution_unit_0.inst_dext_4_ ),
+    .A(execution_unit_0.inst_dext_4_ ),
     .B(_03368_),
     .Y(_03655_)
   );
@@ -30755,14 +30755,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02959_)
   );
   OAI21X1 _09803_ (
-    .A( dbg_0.fe_mdb_in_4_ ),
+    .A(dbg_0.fe_mdb_in_4_ ),
     .B(_03651_),
-    .C( dbg_0.fe_mdb_in_5_ ),
+    .C(dbg_0.fe_mdb_in_5_ ),
     .Y(_03656_)
   );
   NOR2X1 _09804_ (
-    .A( dbg_0.fe_mdb_in_5_ ),
-    .B( dbg_0.fe_mdb_in_4_ ),
+    .A(dbg_0.fe_mdb_in_5_ ),
+    .B(dbg_0.fe_mdb_in_4_ ),
     .Y(_03657_)
   );
   NAND2X1 _09805_ (
@@ -30782,7 +30782,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03660_)
   );
   NAND2X1 _09808_ (
-    .A( execution_unit_0.inst_dext_5_ ),
+    .A(execution_unit_0.inst_dext_5_ ),
     .B(_03368_),
     .Y(_03661_)
   );
@@ -30793,17 +30793,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02960_)
   );
   OR2X1 _09810_ (
-    .A( dbg_0.fe_mdb_in_6_ ),
+    .A(dbg_0.fe_mdb_in_6_ ),
     .B(_03659_),
     .Y(_03662_)
   );
   XOR2X1 _09811_ (
-    .A( dbg_0.fe_mdb_in_6_ ),
+    .A(dbg_0.fe_mdb_in_6_ ),
     .B(_03659_),
     .Y(_03663_)
   );
   NAND2X1 _09812_ (
-    .A( execution_unit_0.inst_dext_6_ ),
+    .A(execution_unit_0.inst_dext_6_ ),
     .B(_03368_),
     .Y(_03664_)
   );
@@ -30814,7 +30814,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02961_)
   );
   NOR2X1 _09814_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03662_),
     .Y(_03665_)
   );
@@ -30824,7 +30824,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03666_)
   );
   NAND2X1 _09816_ (
-    .A( execution_unit_0.inst_dext_7_ ),
+    .A(execution_unit_0.inst_dext_7_ ),
     .B(_03368_),
     .Y(_03667_)
   );
@@ -30835,9 +30835,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02962_)
   );
   OAI21X1 _09818_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03662_),
-    .C( dbg_0.fe_mdb_in_8_ ),
+    .C(dbg_0.fe_mdb_in_8_ ),
     .Y(_03668_)
   );
   NAND2X1 _09819_ (
@@ -30851,7 +30851,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03670_)
   );
   NAND2X1 _09821_ (
-    .A( execution_unit_0.inst_dext_8_ ),
+    .A(execution_unit_0.inst_dext_8_ ),
     .B(_03368_),
     .Y(_03671_)
   );
@@ -30873,7 +30873,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03673_)
   );
   NAND2X1 _09825_ (
-    .A( execution_unit_0.inst_dext_9_ ),
+    .A(execution_unit_0.inst_dext_9_ ),
     .B(_03368_),
     .Y(_03674_)
   );
@@ -30884,8 +30884,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02964_)
   );
   NOR2X1 _09827_ (
-    .A( dbg_0.fe_mdb_in_1_ ),
-    .B( dbg_0.fe_mdb_in_6_ ),
+    .A(dbg_0.fe_mdb_in_1_ ),
+    .B(dbg_0.fe_mdb_in_6_ ),
     .Y(_03675_)
   );
   NAND3X1 _09828_ (
@@ -30905,19 +30905,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03678_)
   );
   NOR2X1 _09831_ (
-    .A( dbg_0.fe_mdb_in_9_ ),
+    .A(dbg_0.fe_mdb_in_9_ ),
     .B(_03678_),
     .Y(_03679_)
   );
   OAI21X1 _09832_ (
-    .A( dbg_0.fe_mdb_in_9_ ),
+    .A(dbg_0.fe_mdb_in_9_ ),
     .B(_03678_),
-    .C( dbg_0.fe_mdb_in_10_ ),
+    .C(dbg_0.fe_mdb_in_10_ ),
     .Y(_03680_)
   );
   OR2X1 _09833_ (
-    .A( dbg_0.fe_mdb_in_10_ ),
-    .B( dbg_0.fe_mdb_in_9_ ),
+    .A(dbg_0.fe_mdb_in_10_ ),
+    .B(dbg_0.fe_mdb_in_9_ ),
     .Y(_03681_)
   );
   OR2X1 _09834_ (
@@ -30931,7 +30931,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03683_)
   );
   NAND2X1 _09836_ (
-    .A( execution_unit_0.inst_dext_10_ ),
+    .A(execution_unit_0.inst_dext_10_ ),
     .B(_03368_),
     .Y(_03684_)
   );
@@ -30950,11 +30950,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03303_),
     .B(_03679_),
     .C(_03682_),
-    .D( dbg_0.fe_mdb_in_11_ ),
+    .D(dbg_0.fe_mdb_in_11_ ),
     .Y(_03686_)
   );
   NAND2X1 _09840_ (
-    .A( execution_unit_0.inst_dext_11_ ),
+    .A(execution_unit_0.inst_dext_11_ ),
     .B(_03368_),
     .Y(_03687_)
   );
@@ -30965,13 +30965,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02966_)
   );
   NAND2X1 _09842_ (
-    .A( execution_unit_0.inst_dext_12_ ),
+    .A(execution_unit_0.inst_dext_12_ ),
     .B(_03368_),
     .Y(_03688_)
   );
   OR2X1 _09843_ (
-    .A( dbg_0.fe_mdb_in_11_ ),
-    .B( dbg_0.fe_mdb_in_12_ ),
+    .A(dbg_0.fe_mdb_in_11_ ),
+    .B(dbg_0.fe_mdb_in_12_ ),
     .Y(_03689_)
   );
   NOR2X1 _09844_ (
@@ -30990,7 +30990,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03692_)
   );
   AOI21X1 _09847_ (
-    .A( dbg_0.fe_mdb_in_12_ ),
+    .A(dbg_0.fe_mdb_in_12_ ),
     .B(_03685_),
     .C(_03692_),
     .Y(_03693_)
@@ -31002,7 +31002,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02967_)
   );
   NAND2X1 _09849_ (
-    .A( execution_unit_0.inst_dext_13_ ),
+    .A(execution_unit_0.inst_dext_13_ ),
     .B(_03368_),
     .Y(_03694_)
   );
@@ -31029,7 +31029,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03697_)
   );
   NOR2X1 _09854_ (
-    .A( dbg_0.fe_mdb_in_14_ ),
+    .A(dbg_0.fe_mdb_in_14_ ),
     .B(_03695_),
     .Y(_03698_)
   );
@@ -31056,7 +31056,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03701_)
   );
   NOR2X1 _09859_ (
-    .A( execution_unit_0.inst_dext_15_ ),
+    .A(execution_unit_0.inst_dext_15_ ),
     .B(_03369_),
     .Y(_03702_)
   );
@@ -31112,7 +31112,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03711_)
   );
   NAND3X1 _09870_ (
-    .A( dbg_0.fe_mdb_in_4_ ),
+    .A(dbg_0.fe_mdb_in_4_ ),
     .B(_03639_),
     .C(_03704_),
     .Y(_03712_)
@@ -31120,7 +31120,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _09871_ (
     .A(_03295_),
     .B(_03418_),
-    .C( dbg_0.fe_mdb_in_0_ ),
+    .C(dbg_0.fe_mdb_in_0_ ),
     .Y(_03713_)
   );
   OAI21X1 _09872_ (
@@ -31130,7 +31130,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03714_)
   );
   MUX2X1 _09873_ (
-    .A( execution_unit_0.inst_sext_0_ ),
+    .A(execution_unit_0.inst_sext_0_ ),
     .B(_03714_),
     .S(_03711_),
     .Y(_03715_)
@@ -31145,7 +31145,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03716_)
   );
   NAND2X1 _09876_ (
-    .A( dbg_0.fe_mdb_in_0_ ),
+    .A(dbg_0.fe_mdb_in_0_ ),
     .B(_03709_),
     .Y(_03717_)
   );
@@ -31163,7 +31163,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02997_)
   );
   NAND2X1 _09879_ (
-    .A( execution_unit_0.inst_sext_1_ ),
+    .A(execution_unit_0.inst_sext_1_ ),
     .B(_03711_),
     .Y(_02998_)
   );
@@ -31185,7 +31185,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03000_)
   );
   NAND2X1 _09883_ (
-    .A( dbg_0.fe_mdb_in_1_ ),
+    .A(dbg_0.fe_mdb_in_1_ ),
     .B(_03709_),
     .Y(_03001_)
   );
@@ -31197,7 +31197,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09885_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .C(_03323_),
     .Y(_03003_)
   );
@@ -31238,7 +31238,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03008_)
   );
   NAND2X1 _09892_ (
-    .A( execution_unit_0.inst_sext_3_ ),
+    .A(execution_unit_0.inst_sext_3_ ),
     .B(_03711_),
     .Y(_03009_)
   );
@@ -31249,7 +31249,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02974_)
   );
   NAND2X1 _09894_ (
-    .A( dbg_0.fe_mdb_in_3_ ),
+    .A(dbg_0.fe_mdb_in_3_ ),
     .B(_03709_),
     .Y(_03010_)
   );
@@ -31272,7 +31272,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02975_)
   );
   NAND2X1 _09898_ (
-    .A( dbg_0.fe_mdb_in_4_ ),
+    .A(dbg_0.fe_mdb_in_4_ ),
     .B(_03709_),
     .Y(_03013_)
   );
@@ -31295,7 +31295,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02976_)
   );
   NAND2X1 _09902_ (
-    .A( dbg_0.fe_mdb_in_5_ ),
+    .A(dbg_0.fe_mdb_in_5_ ),
     .B(_03709_),
     .Y(_03016_)
   );
@@ -31318,7 +31318,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02977_)
   );
   NAND2X1 _09906_ (
-    .A( dbg_0.fe_mdb_in_6_ ),
+    .A(dbg_0.fe_mdb_in_6_ ),
     .B(_03709_),
     .Y(_03019_)
   );
@@ -31341,7 +31341,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02978_)
   );
   NAND2X1 _09910_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03709_),
     .Y(_03022_)
   );
@@ -31364,7 +31364,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02979_)
   );
   NAND2X1 _09914_ (
-    .A( dbg_0.fe_mdb_in_8_ ),
+    .A(dbg_0.fe_mdb_in_8_ ),
     .B(_03709_),
     .Y(_03025_)
   );
@@ -31392,7 +31392,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03028_)
   );
   AND2X1 _09919_ (
-    .A( dbg_0.fe_mdb_in_9_ ),
+    .A(dbg_0.fe_mdb_in_9_ ),
     .B(_03709_),
     .Y(_03029_)
   );
@@ -31490,13 +31490,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02986_)
   );
   AND2X1 _09935_ (
-    .A( execution_unit_0.inst_irq_rst ),
+    .A(execution_unit_0.inst_irq_rst ),
     .B(_03268_),
     .Y(_02991_)
   );
   NOR2X1 _09936_ (
-    .A( dbg_0.fe_mdb_in_13_ ),
-    .B( dbg_0.fe_mdb_in_12_ ),
+    .A(dbg_0.fe_mdb_in_13_ ),
+    .B(dbg_0.fe_mdb_in_12_ ),
     .Y(_03039_)
   );
   INVX1 _09937_ (
@@ -31504,7 +31504,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03040_)
   );
   NAND2X1 _09938_ (
-    .A( dbg_0.fe_mdb_in_15_ ),
+    .A(dbg_0.fe_mdb_in_15_ ),
     .B(_03291_),
     .Y(_03041_)
   );
@@ -31513,7 +31513,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03042_)
   );
   NAND2X1 _09940_ (
-    .A( dbg_0.fe_mdb_in_14_ ),
+    .A(dbg_0.fe_mdb_in_14_ ),
     .B(_03042_),
     .Y(_03043_)
   );
@@ -31523,17 +31523,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03044_)
   );
   NAND2X1 _09942_ (
-    .A( dbg_0.fe_mdb_in_13_ ),
-    .B( dbg_0.fe_mdb_in_12_ ),
+    .A(dbg_0.fe_mdb_in_13_ ),
+    .B(dbg_0.fe_mdb_in_12_ ),
     .Y(_03045_)
   );
   NAND2X1 _09943_ (
-    .A( dbg_0.fe_mdb_in_14_ ),
+    .A(dbg_0.fe_mdb_in_14_ ),
     .B(_03187_),
     .Y(_03046_)
   );
   NOR2X1 _09944_ (
-    .A( dbg_0.fe_mdb_in_13_ ),
+    .A(dbg_0.fe_mdb_in_13_ ),
     .B(_03187_),
     .Y(_03047_)
   );
@@ -31555,7 +31555,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03050_)
   );
   NAND2X1 _09948_ (
-    .A( execution_unit_0.alu_0.inst_alu_0_ ),
+    .A(execution_unit_0.alu_0.inst_alu_0_ ),
     .B(_03638_),
     .Y(_03051_)
   );
@@ -31566,7 +31566,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02908_)
   );
   NAND2X1 _09950_ (
-    .A( execution_unit_0.alu_0.inst_alu_1_ ),
+    .A(execution_unit_0.alu_0.inst_alu_1_ ),
     .B(_03638_),
     .Y(_03052_)
   );
@@ -31582,7 +31582,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03053_)
   );
   AOI22X1 _09953_ (
-    .A( execution_unit_0.alu_0.inst_alu_2_ ),
+    .A(execution_unit_0.alu_0.inst_alu_2_ ),
     .B(_03638_),
     .C(_03053_),
     .D(_03420_),
@@ -31595,11 +31595,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NOR2X1 _09955_ (
     .A(_03186_),
-    .B( dbg_0.fe_mdb_in_12_ ),
+    .B(dbg_0.fe_mdb_in_12_ ),
     .Y(_03056_)
   );
   NAND2X1 _09956_ (
-    .A( dbg_0.decode_noirq ),
+    .A(dbg_0.decode_noirq ),
     .B(_03056_),
     .Y(_03057_)
   );
@@ -31622,7 +31622,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03059_)
   );
   NOR2X1 _09960_ (
-    .A( execution_unit_0.alu_0.inst_alu_3_ ),
+    .A(execution_unit_0.alu_0.inst_alu_3_ ),
     .B(_03639_),
     .Y(_03060_)
   );
@@ -31650,19 +31650,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02912_)
   );
   NAND2X1 _09965_ (
-    .A( execution_unit_0.alu_0.inst_alu_5_ ),
+    .A(execution_unit_0.alu_0.inst_alu_5_ ),
     .B(_03638_),
     .Y(_03063_)
   );
   OAI21X1 _09966_ (
-    .A( dbg_0.fe_mdb_in_14_ ),
-    .B( dbg_0.fe_mdb_in_15_ ),
+    .A(dbg_0.fe_mdb_in_14_ ),
+    .B(dbg_0.fe_mdb_in_15_ ),
     .C(_03420_),
     .Y(_03064_)
   );
   NAND3X1 _09967_ (
-    .A( dbg_0.fe_mdb_in_14_ ),
-    .B( dbg_0.fe_mdb_in_12_ ),
+    .A(dbg_0.fe_mdb_in_14_ ),
+    .B(dbg_0.fe_mdb_in_12_ ),
     .C(_03047_),
     .Y(_03065_)
   );
@@ -31673,7 +31673,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02913_)
   );
   NAND2X1 _09969_ (
-    .A( execution_unit_0.alu_0.inst_alu_6_ ),
+    .A(execution_unit_0.alu_0.inst_alu_6_ ),
     .B(_03638_),
     .Y(_03066_)
   );
@@ -31684,7 +31684,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02914_)
   );
   NAND2X1 _09971_ (
-    .A( execution_unit_0.alu_0.inst_alu_7_ ),
+    .A(execution_unit_0.alu_0.inst_alu_7_ ),
     .B(_03638_),
     .Y(_03067_)
   );
@@ -31695,14 +31695,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02915_)
   );
   AOI22X1 _09973_ (
-    .A( execution_unit_0.alu_0.inst_alu_8_ ),
+    .A(execution_unit_0.alu_0.inst_alu_8_ ),
     .B(_03638_),
     .C(_03061_),
-    .D( dbg_0.decode_noirq ),
+    .D(dbg_0.decode_noirq ),
     .Y(_03068_)
   );
   NOR2X1 _09974_ (
-    .A( dbg_0.fe_mdb_in_9_ ),
+    .A(dbg_0.fe_mdb_in_9_ ),
     .B(_03638_),
     .Y(_03069_)
   );
@@ -31718,7 +31718,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02916_)
   );
   OAI21X1 _09977_ (
-    .A( dbg_0.fe_mdb_in_8_ ),
+    .A(dbg_0.fe_mdb_in_8_ ),
     .B(_03195_),
     .C(_03192_),
     .Y(_03071_)
@@ -31735,7 +31735,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03073_)
   );
   OAI22X1 _09980_ (
-    .A( execution_unit_0.alu_0.inst_alu_9_ ),
+    .A(execution_unit_0.alu_0.inst_alu_9_ ),
     .B(_03639_),
     .C(_03072_),
     .D(_03073_),
@@ -31746,24 +31746,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02917_)
   );
   NAND2X1 _09982_ (
-    .A( execution_unit_0.alu_0.inst_alu_10_ ),
+    .A(execution_unit_0.alu_0.inst_alu_10_ ),
     .B(_03638_),
     .Y(_03075_)
   );
   OAI21X1 _09983_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03070_),
     .C(_03075_),
     .Y(_02918_)
   );
   OAI21X1 _09984_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
-    .C( dbg_0.fe_mdb_in_12_ ),
+    .B(dbg_0.decode_noirq ),
+    .C(dbg_0.fe_mdb_in_12_ ),
     .Y(_03076_)
   );
   NAND2X1 _09985_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_alu ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_alu ),
     .B(_03638_),
     .Y(_03077_)
   );
@@ -31780,7 +31780,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03078_)
   );
   NAND2X1 _09988_ (
-    .A( frontend_0.inst_sz_0_ ),
+    .A(frontend_0.inst_sz_0_ ),
     .B(_03638_),
     .Y(_03079_)
   );
@@ -31791,7 +31791,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02924_)
   );
   OAI21X1 _09990_ (
-    .A( frontend_0.inst_sz_1_ ),
+    .A(frontend_0.inst_sz_1_ ),
     .B(_03639_),
     .C(_03078_),
     .Y(_03080_)
@@ -31801,7 +31801,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02925_)
   );
   NAND2X1 _09992_ (
-    .A( dbg_0.fe_mdb_in_6_ ),
+    .A(dbg_0.fe_mdb_in_6_ ),
     .B(_03420_),
     .Y(_03081_)
   );
@@ -31811,7 +31811,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03082_)
   );
   AOI22X1 _09994_ (
-    .A( execution_unit_0.alu_0.inst_bw ),
+    .A(execution_unit_0.alu_0.inst_bw ),
     .B(_03638_),
     .C(_03082_),
     .D(_03295_),
@@ -31828,7 +31828,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03084_)
   );
   NAND2X1 _09997_ (
-    .A( execution_unit_0.inst_as_0_ ),
+    .A(execution_unit_0.inst_as_0_ ),
     .B(_03638_),
     .Y(_03085_)
   );
@@ -31840,12 +31840,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _09999_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .C(_03339_),
     .Y(_03086_)
   );
   NAND2X1 _10000_ (
-    .A( execution_unit_0.inst_as_1_ ),
+    .A(execution_unit_0.inst_as_1_ ),
     .B(_03638_),
     .Y(_03087_)
   );
@@ -31856,7 +31856,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02928_)
   );
   NAND2X1 _10002_ (
-    .A( execution_unit_0.inst_as_2_ ),
+    .A(execution_unit_0.inst_as_2_ ),
     .B(_03638_),
     .Y(_03088_)
   );
@@ -31867,7 +31867,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02929_)
   );
   NAND2X1 _10004_ (
-    .A( execution_unit_0.inst_as_3_ ),
+    .A(execution_unit_0.inst_as_3_ ),
     .B(_03638_),
     .Y(_03089_)
   );
@@ -31885,7 +31885,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02931_)
   );
   NAND2X1 _10007_ (
-    .A( execution_unit_0.inst_as_5_ ),
+    .A(execution_unit_0.inst_as_5_ ),
     .B(_03638_),
     .Y(_03090_)
   );
@@ -31896,7 +31896,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02932_)
   );
   NAND2X1 _10009_ (
-    .A( execution_unit_0.inst_as_6_ ),
+    .A(execution_unit_0.inst_as_6_ ),
     .B(_03638_),
     .Y(_03091_)
   );
@@ -31914,12 +31914,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _10012_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .C(_03190_),
     .Y(_03092_)
   );
   OAI21X1 _10013_ (
-    .A( frontend_0.inst_src_bin_0_ ),
+    .A(frontend_0.inst_src_bin_0_ ),
     .B(_03639_),
     .C(_03092_),
     .Y(_03093_)
@@ -31936,12 +31936,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _10016_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .C(_03191_),
     .Y(_03094_)
   );
   OAI21X1 _10017_ (
-    .A( frontend_0.inst_dest_bin_0_ ),
+    .A(frontend_0.inst_dest_bin_0_ ),
     .B(_03639_),
     .C(_03094_),
     .Y(_03095_)
@@ -31952,12 +31952,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _10019_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .C(_03193_),
     .Y(_03096_)
   );
   OAI21X1 _10020_ (
-    .A( frontend_0.inst_dest_bin_1_ ),
+    .A(frontend_0.inst_dest_bin_1_ ),
     .B(_03639_),
     .C(_03096_),
     .Y(_03097_)
@@ -31968,12 +31968,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _10022_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .C(_03188_),
     .Y(_03098_)
   );
   OAI21X1 _10023_ (
-    .A( frontend_0.inst_dest_bin_2_ ),
+    .A(frontend_0.inst_dest_bin_2_ ),
     .B(_03639_),
     .C(_03098_),
     .Y(_03099_)
@@ -31984,12 +31984,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _10025_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .C(_03189_),
     .Y(_03100_)
   );
   OAI21X1 _10026_ (
-    .A( frontend_0.inst_dest_bin_3_ ),
+    .A(frontend_0.inst_dest_bin_3_ ),
     .B(_03639_),
     .C(_03100_),
     .Y(_03101_)
@@ -31999,7 +31999,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02940_)
   );
   NAND2X1 _10028_ (
-    .A( execution_unit_0.inst_mov ),
+    .A(execution_unit_0.inst_mov ),
     .B(_03638_),
     .Y(_03102_)
   );
@@ -32015,8 +32015,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02941_)
   );
   MUX2X1 _10031_ (
-    .A( dbg_0.fe_mdb_in_10_ ),
-    .B( frontend_0.inst_jmp_bin_0_ ),
+    .A(dbg_0.fe_mdb_in_10_ ),
+    .B(frontend_0.inst_jmp_bin_0_ ),
     .S(_03639_),
     .Y(_03104_)
   );
@@ -32025,8 +32025,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02942_)
   );
   MUX2X1 _10033_ (
-    .A( dbg_0.fe_mdb_in_11_ ),
-    .B( frontend_0.inst_jmp_bin_1_ ),
+    .A(dbg_0.fe_mdb_in_11_ ),
+    .B(frontend_0.inst_jmp_bin_1_ ),
     .S(_03639_),
     .Y(_03105_)
   );
@@ -32041,13 +32041,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02944_)
   );
   NAND2X1 _10036_ (
-    .A( execution_unit_0.alu_0.inst_so_0_ ),
+    .A(execution_unit_0.alu_0.inst_so_0_ ),
     .B(_03638_),
     .Y(_03106_)
   );
   NAND2X1 _10037_ (
     .A(_03300_),
-    .B( dbg_0.decode_noirq ),
+    .B(dbg_0.decode_noirq ),
     .Y(_03107_)
   );
   OAI21X1 _10038_ (
@@ -32057,14 +32057,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02945_)
   );
   NAND2X1 _10039_ (
-    .A( execution_unit_0.alu_0.inst_so_1_ ),
+    .A(execution_unit_0.alu_0.inst_so_1_ ),
     .B(_03638_),
     .Y(_03108_)
   );
   NAND3X1 _10040_ (
     .A(_03190_),
     .B(_03192_),
-    .C( dbg_0.fe_mdb_in_7_ ),
+    .C(dbg_0.fe_mdb_in_7_ ),
     .Y(_03109_)
   );
   OAI21X1 _10041_ (
@@ -32074,7 +32074,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02946_)
   );
   NAND2X1 _10042_ (
-    .A( execution_unit_0.alu_0.inst_so_3_ ),
+    .A(execution_unit_0.alu_0.inst_so_3_ ),
     .B(_03638_),
     .Y(_03110_)
   );
@@ -32085,7 +32085,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02947_)
   );
   NAND2X1 _10044_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_push ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_push ),
     .B(_03638_),
     .Y(_03111_)
   );
@@ -32096,13 +32096,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03112_)
   );
   OAI21X1 _10046_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03112_),
     .C(_03111_),
     .Y(_02948_)
   );
   NAND2X1 _10047_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_call ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_call ),
     .B(_03638_),
     .Y(_03113_)
   );
@@ -32113,7 +32113,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02949_)
   );
   NAND2X1 _10049_ (
-    .A( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .A(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .B(_03638_),
     .Y(_03114_)
   );
@@ -32137,7 +32137,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02952_)
   );
   AOI21X1 _10053_ (
-    .A( execution_unit_0.inst_type_1_ ),
+    .A(execution_unit_0.inst_type_1_ ),
     .B(_03638_),
     .C(_03709_),
     .Y(_03115_)
@@ -32153,24 +32153,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02954_)
   );
   NAND2X1 _10056_ (
-    .A( execution_unit_0.inst_ad_0_ ),
+    .A(execution_unit_0.inst_ad_0_ ),
     .B(_03638_),
     .Y(_03116_)
   );
   OAI21X1 _10057_ (
-    .A( dbg_0.fe_mdb_in_7_ ),
+    .A(dbg_0.fe_mdb_in_7_ ),
     .B(_03064_),
     .C(_03116_),
     .Y(_02987_)
   );
   OAI21X1 _10058_ (
     .A(_03290_),
-    .B( dbg_0.decode_noirq ),
-    .C( dbg_0.fe_mdb_in_7_ ),
+    .B(dbg_0.decode_noirq ),
+    .C(dbg_0.fe_mdb_in_7_ ),
     .Y(_03117_)
   );
   OAI21X1 _10059_ (
-    .A( dbg_0.fe_mdb_in_0_ ),
+    .A(dbg_0.fe_mdb_in_0_ ),
     .B(_03302_),
     .C(_03329_),
     .Y(_03118_)
@@ -32183,7 +32183,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02988_)
   );
   NAND2X1 _10061_ (
-    .A( execution_unit_0.UNUSED_inst_ad_symb ),
+    .A(execution_unit_0.UNUSED_inst_ad_symb ),
     .B(_03638_),
     .Y(_03119_)
   );
@@ -32194,12 +32194,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02989_)
   );
   NAND2X1 _10063_ (
-    .A( execution_unit_0.inst_ad_6_ ),
+    .A(execution_unit_0.inst_ad_6_ ),
     .B(_03638_),
     .Y(_03120_)
   );
   NAND3X1 _10064_ (
-    .A( dbg_0.fe_mdb_in_1_ ),
+    .A(dbg_0.fe_mdb_in_1_ ),
     .B(_03301_),
     .C(_03330_),
     .Y(_03121_)
@@ -32223,7 +32223,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   OAI21X1 _10068_ (
     .A(irq_10_),
-    .B( frontend_0.wdt_irq ),
+    .B(frontend_0.wdt_irq ),
     .C(_03174_),
     .Y(_03124_)
   );
@@ -32421,7 +32421,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03161_)
   );
   AOI22X1 _10106_ (
-    .A( frontend_0.irq_addr_1_ ),
+    .A(frontend_0.irq_addr_1_ ),
     .B(_03291_),
     .C(_03160_),
     .D(_03161_),
@@ -32432,7 +32432,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02992_)
   );
   NAND2X1 _10108_ (
-    .A( frontend_0.irq_addr_2_ ),
+    .A(frontend_0.irq_addr_2_ ),
     .B(_03291_),
     .Y(_03163_)
   );
@@ -32462,7 +32462,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_02994_)
   );
   NAND2X1 _10113_ (
-    .A( frontend_0.irq_addr_4_ ),
+    .A(frontend_0.irq_addr_4_ ),
     .B(_03291_),
     .Y(_03166_)
   );
@@ -32474,925 +32474,925 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   DFFSR _10115_ (
     .CLK(dco_clk),
-    .D( frontend_0.e_state_nxt_0_ ),
-    .Q( execution_unit_0.e_state_0_ ),
+    .D(frontend_0.e_state_nxt_0_ ),
+    .Q(execution_unit_0.e_state_0_ ),
     .R(1'h1),
     .S(_02907_)
   );
   DFFSR _10116_ (
     .CLK(dco_clk),
-    .D( frontend_0.e_state_nxt_1_ ),
-    .Q( execution_unit_0.e_state_1_ ),
+    .D(frontend_0.e_state_nxt_1_ ),
+    .Q(execution_unit_0.e_state_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10117_ (
     .CLK(dco_clk),
-    .D( frontend_0.e_state_nxt_2_ ),
-    .Q( execution_unit_0.e_state_2_ ),
+    .D(frontend_0.e_state_nxt_2_ ),
+    .Q(execution_unit_0.e_state_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10118_ (
     .CLK(dco_clk),
-    .D( frontend_0.e_state_nxt_3_ ),
-    .Q( execution_unit_0.e_state_3_ ),
+    .D(frontend_0.e_state_nxt_3_ ),
+    .Q(execution_unit_0.e_state_3_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10119_ (
     .CLK(dco_clk),
     .D(_02908_),
-    .Q( execution_unit_0.alu_0.inst_alu_0_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10120_ (
     .CLK(dco_clk),
     .D(_02909_),
-    .Q( execution_unit_0.alu_0.inst_alu_1_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10121_ (
     .CLK(dco_clk),
     .D(_02910_),
-    .Q( execution_unit_0.alu_0.inst_alu_2_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10122_ (
     .CLK(dco_clk),
     .D(_02911_),
-    .Q( execution_unit_0.alu_0.inst_alu_3_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_3_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10123_ (
     .CLK(dco_clk),
     .D(_02912_),
-    .Q( execution_unit_0.alu_0.inst_alu_4_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_4_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10124_ (
     .CLK(dco_clk),
     .D(_02913_),
-    .Q( execution_unit_0.alu_0.inst_alu_5_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_5_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10125_ (
     .CLK(dco_clk),
     .D(_02914_),
-    .Q( execution_unit_0.alu_0.inst_alu_6_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_6_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10126_ (
     .CLK(dco_clk),
     .D(_02915_),
-    .Q( execution_unit_0.alu_0.inst_alu_7_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_7_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10127_ (
     .CLK(dco_clk),
     .D(_02916_),
-    .Q( execution_unit_0.alu_0.inst_alu_8_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_8_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10128_ (
     .CLK(dco_clk),
     .D(_02917_),
-    .Q( execution_unit_0.alu_0.inst_alu_9_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_9_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10129_ (
     .CLK(dco_clk),
     .D(_02918_),
-    .Q( execution_unit_0.alu_0.inst_alu_10_ ),
+    .Q(execution_unit_0.alu_0.inst_alu_10_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10130_ (
     .CLK(dco_clk),
     .D(_02919_),
-    .Q( execution_unit_0.alu_0.UNUSED_inst_alu ),
+    .Q(execution_unit_0.alu_0.UNUSED_inst_alu ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10131_ (
     .CLK(dco_clk),
     .D(_02920_),
-    .Q( frontend_0.exec_dext_rdy ),
+    .Q(frontend_0.exec_dext_rdy ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10132_ (
     .CLK(dco_clk),
     .D(_02921_),
-    .Q( frontend_0.exec_src_wr ),
+    .Q(frontend_0.exec_src_wr ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10133_ (
     .CLK(dco_clk),
     .D(_02922_),
-    .Q( frontend_0.exec_dst_wr ),
+    .Q(frontend_0.exec_dst_wr ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10134_ (
     .CLK(dco_clk),
     .D(_02923_),
-    .Q( frontend_0.exec_jmp ),
+    .Q(frontend_0.exec_jmp ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10135_ (
     .CLK(dco_clk),
     .D(_02924_),
-    .Q( frontend_0.inst_sz_0_ ),
+    .Q(frontend_0.inst_sz_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10136_ (
     .CLK(dco_clk),
     .D(_02925_),
-    .Q( frontend_0.inst_sz_1_ ),
+    .Q(frontend_0.inst_sz_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10137_ (
     .CLK(dco_clk),
     .D(_02926_),
-    .Q( execution_unit_0.alu_0.inst_bw ),
+    .Q(execution_unit_0.alu_0.inst_bw ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10138_ (
     .CLK(dco_clk),
     .D(_02927_),
-    .Q( execution_unit_0.inst_as_0_ ),
+    .Q(execution_unit_0.inst_as_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10139_ (
     .CLK(dco_clk),
     .D(_02928_),
-    .Q( execution_unit_0.inst_as_1_ ),
+    .Q(execution_unit_0.inst_as_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10140_ (
     .CLK(dco_clk),
     .D(_02929_),
-    .Q( execution_unit_0.inst_as_2_ ),
+    .Q(execution_unit_0.inst_as_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10141_ (
     .CLK(dco_clk),
     .D(_02930_),
-    .Q( execution_unit_0.inst_as_3_ ),
+    .Q(execution_unit_0.inst_as_3_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10142_ (
     .CLK(dco_clk),
     .D(_02931_),
-    .Q( execution_unit_0.inst_as_4_ ),
+    .Q(execution_unit_0.inst_as_4_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10143_ (
     .CLK(dco_clk),
     .D(_02932_),
-    .Q( execution_unit_0.inst_as_5_ ),
+    .Q(execution_unit_0.inst_as_5_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10144_ (
     .CLK(dco_clk),
     .D(_02933_),
-    .Q( execution_unit_0.inst_as_6_ ),
+    .Q(execution_unit_0.inst_as_6_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10145_ (
     .CLK(dco_clk),
     .D(_02934_),
-    .Q( execution_unit_0.inst_as_7_ ),
+    .Q(execution_unit_0.inst_as_7_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10146_ (
     .CLK(dco_clk),
     .D(_02935_),
-    .Q( frontend_0.inst_src_bin_0_ ),
+    .Q(frontend_0.inst_src_bin_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10147_ (
     .CLK(dco_clk),
     .D(_02936_),
-    .Q( frontend_0.inst_src_bin_1_ ),
+    .Q(frontend_0.inst_src_bin_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10148_ (
     .CLK(dco_clk),
     .D(_02937_),
-    .Q( frontend_0.inst_dest_bin_0_ ),
+    .Q(frontend_0.inst_dest_bin_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10149_ (
     .CLK(dco_clk),
     .D(_02938_),
-    .Q( frontend_0.inst_dest_bin_1_ ),
+    .Q(frontend_0.inst_dest_bin_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10150_ (
     .CLK(dco_clk),
     .D(_02939_),
-    .Q( frontend_0.inst_dest_bin_2_ ),
+    .Q(frontend_0.inst_dest_bin_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10151_ (
     .CLK(dco_clk),
     .D(_02940_),
-    .Q( frontend_0.inst_dest_bin_3_ ),
+    .Q(frontend_0.inst_dest_bin_3_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10152_ (
     .CLK(dco_clk),
     .D(_02941_),
-    .Q( execution_unit_0.inst_mov ),
+    .Q(execution_unit_0.inst_mov ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10153_ (
     .CLK(dco_clk),
     .D(_02942_),
-    .Q( frontend_0.inst_jmp_bin_0_ ),
+    .Q(frontend_0.inst_jmp_bin_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10154_ (
     .CLK(dco_clk),
     .D(_02943_),
-    .Q( frontend_0.inst_jmp_bin_1_ ),
+    .Q(frontend_0.inst_jmp_bin_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10155_ (
     .CLK(dco_clk),
     .D(_02944_),
-    .Q( frontend_0.inst_jmp_bin_2_ ),
+    .Q(frontend_0.inst_jmp_bin_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10156_ (
     .CLK(dco_clk),
     .D(_02945_),
-    .Q( execution_unit_0.alu_0.inst_so_0_ ),
+    .Q(execution_unit_0.alu_0.inst_so_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10157_ (
     .CLK(dco_clk),
     .D(_02946_),
-    .Q( execution_unit_0.alu_0.inst_so_1_ ),
+    .Q(execution_unit_0.alu_0.inst_so_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10158_ (
     .CLK(dco_clk),
     .D(_02947_),
-    .Q( execution_unit_0.alu_0.inst_so_3_ ),
+    .Q(execution_unit_0.alu_0.inst_so_3_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10159_ (
     .CLK(dco_clk),
     .D(_02948_),
-    .Q( execution_unit_0.alu_0.UNUSED_inst_so_push ),
+    .Q(execution_unit_0.alu_0.UNUSED_inst_so_push ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10160_ (
     .CLK(dco_clk),
     .D(_02949_),
-    .Q( execution_unit_0.alu_0.UNUSED_inst_so_call ),
+    .Q(execution_unit_0.alu_0.UNUSED_inst_so_call ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10161_ (
     .CLK(dco_clk),
     .D(_02950_),
-    .Q( execution_unit_0.alu_0.UNUSED_inst_so_reti ),
+    .Q(execution_unit_0.alu_0.UNUSED_inst_so_reti ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10162_ (
     .CLK(dco_clk),
     .D(_02951_),
-    .Q( execution_unit_0.alu_0.inst_so_7_ ),
+    .Q(execution_unit_0.alu_0.inst_so_7_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10163_ (
     .CLK(dco_clk),
     .D(_02952_),
-    .Q( execution_unit_0.inst_type_0_ ),
+    .Q(execution_unit_0.inst_type_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10164_ (
     .CLK(dco_clk),
     .D(_02953_),
-    .Q( execution_unit_0.inst_type_1_ ),
+    .Q(execution_unit_0.inst_type_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10165_ (
     .CLK(dco_clk),
     .D(_02954_),
-    .Q( execution_unit_0.inst_type_2_ ),
+    .Q(execution_unit_0.inst_type_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10166_ (
     .CLK(dco_clk),
     .D(_02955_),
-    .Q( execution_unit_0.inst_dext_0_ ),
+    .Q(execution_unit_0.inst_dext_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10167_ (
     .CLK(dco_clk),
     .D(_02956_),
-    .Q( execution_unit_0.inst_dext_1_ ),
+    .Q(execution_unit_0.inst_dext_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10168_ (
     .CLK(dco_clk),
     .D(_02957_),
-    .Q( execution_unit_0.inst_dext_2_ ),
+    .Q(execution_unit_0.inst_dext_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10169_ (
     .CLK(dco_clk),
     .D(_02958_),
-    .Q( execution_unit_0.inst_dext_3_ ),
+    .Q(execution_unit_0.inst_dext_3_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10170_ (
     .CLK(dco_clk),
     .D(_02959_),
-    .Q( execution_unit_0.inst_dext_4_ ),
+    .Q(execution_unit_0.inst_dext_4_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10171_ (
     .CLK(dco_clk),
     .D(_02960_),
-    .Q( execution_unit_0.inst_dext_5_ ),
+    .Q(execution_unit_0.inst_dext_5_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10172_ (
     .CLK(dco_clk),
     .D(_02961_),
-    .Q( execution_unit_0.inst_dext_6_ ),
+    .Q(execution_unit_0.inst_dext_6_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10173_ (
     .CLK(dco_clk),
     .D(_02962_),
-    .Q( execution_unit_0.inst_dext_7_ ),
+    .Q(execution_unit_0.inst_dext_7_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10174_ (
     .CLK(dco_clk),
     .D(_02963_),
-    .Q( execution_unit_0.inst_dext_8_ ),
+    .Q(execution_unit_0.inst_dext_8_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10175_ (
     .CLK(dco_clk),
     .D(_02964_),
-    .Q( execution_unit_0.inst_dext_9_ ),
+    .Q(execution_unit_0.inst_dext_9_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10176_ (
     .CLK(dco_clk),
     .D(_02965_),
-    .Q( execution_unit_0.inst_dext_10_ ),
+    .Q(execution_unit_0.inst_dext_10_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10177_ (
     .CLK(dco_clk),
     .D(_02966_),
-    .Q( execution_unit_0.inst_dext_11_ ),
+    .Q(execution_unit_0.inst_dext_11_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10178_ (
     .CLK(dco_clk),
     .D(_02967_),
-    .Q( execution_unit_0.inst_dext_12_ ),
+    .Q(execution_unit_0.inst_dext_12_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10179_ (
     .CLK(dco_clk),
     .D(_02968_),
-    .Q( execution_unit_0.inst_dext_13_ ),
+    .Q(execution_unit_0.inst_dext_13_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10180_ (
     .CLK(dco_clk),
     .D(_02969_),
-    .Q( execution_unit_0.inst_dext_14_ ),
+    .Q(execution_unit_0.inst_dext_14_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10181_ (
     .CLK(dco_clk),
     .D(_02970_),
-    .Q( execution_unit_0.inst_dext_15_ ),
+    .Q(execution_unit_0.inst_dext_15_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10182_ (
     .CLK(dco_clk),
-    .D( frontend_0.fe_pmem_wait ),
-    .Q( frontend_0.pmem_busy ),
+    .D(frontend_0.fe_pmem_wait ),
+    .Q(frontend_0.pmem_busy ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10183_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_0_ ),
-    .Q( dbg_0.UNUSED_pc_0_ ),
+    .D(execution_unit_0.pc_nxt_0_ ),
+    .Q(dbg_0.UNUSED_pc_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10184_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_1_ ),
-    .Q( dbg_0.UNUSED_pc_1_ ),
+    .D(execution_unit_0.pc_nxt_1_ ),
+    .Q(dbg_0.UNUSED_pc_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10185_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_2_ ),
-    .Q( dbg_0.UNUSED_pc_2_ ),
+    .D(execution_unit_0.pc_nxt_2_ ),
+    .Q(dbg_0.UNUSED_pc_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10186_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_3_ ),
-    .Q( dbg_0.UNUSED_pc_3_ ),
+    .D(execution_unit_0.pc_nxt_3_ ),
+    .Q(dbg_0.UNUSED_pc_3_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10187_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_4_ ),
-    .Q( dbg_0.UNUSED_pc_4_ ),
+    .D(execution_unit_0.pc_nxt_4_ ),
+    .Q(dbg_0.UNUSED_pc_4_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10188_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_5_ ),
-    .Q( dbg_0.UNUSED_pc_5_ ),
+    .D(execution_unit_0.pc_nxt_5_ ),
+    .Q(dbg_0.UNUSED_pc_5_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10189_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_6_ ),
-    .Q( dbg_0.UNUSED_pc_6_ ),
+    .D(execution_unit_0.pc_nxt_6_ ),
+    .Q(dbg_0.UNUSED_pc_6_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10190_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_7_ ),
-    .Q( dbg_0.UNUSED_pc_7_ ),
+    .D(execution_unit_0.pc_nxt_7_ ),
+    .Q(dbg_0.UNUSED_pc_7_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10191_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_8_ ),
-    .Q( dbg_0.UNUSED_pc_8_ ),
+    .D(execution_unit_0.pc_nxt_8_ ),
+    .Q(dbg_0.UNUSED_pc_8_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10192_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_9_ ),
-    .Q( dbg_0.UNUSED_pc_9_ ),
+    .D(execution_unit_0.pc_nxt_9_ ),
+    .Q(dbg_0.UNUSED_pc_9_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10193_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_10_ ),
-    .Q( dbg_0.UNUSED_pc_10_ ),
+    .D(execution_unit_0.pc_nxt_10_ ),
+    .Q(dbg_0.UNUSED_pc_10_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10194_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_11_ ),
-    .Q( dbg_0.UNUSED_pc_11_ ),
+    .D(execution_unit_0.pc_nxt_11_ ),
+    .Q(dbg_0.UNUSED_pc_11_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10195_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_12_ ),
-    .Q( dbg_0.UNUSED_pc_12_ ),
+    .D(execution_unit_0.pc_nxt_12_ ),
+    .Q(dbg_0.UNUSED_pc_12_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10196_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_13_ ),
-    .Q( dbg_0.UNUSED_pc_13_ ),
+    .D(execution_unit_0.pc_nxt_13_ ),
+    .Q(dbg_0.UNUSED_pc_13_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10197_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_14_ ),
-    .Q( dbg_0.UNUSED_pc_14_ ),
+    .D(execution_unit_0.pc_nxt_14_ ),
+    .Q(dbg_0.UNUSED_pc_14_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10198_ (
     .CLK(dco_clk),
-    .D( execution_unit_0.pc_nxt_15_ ),
-    .Q( dbg_0.UNUSED_pc_15_ ),
+    .D(execution_unit_0.pc_nxt_15_ ),
+    .Q(dbg_0.UNUSED_pc_15_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10199_ (
     .CLK(dco_clk),
     .D(_02971_),
-    .Q( execution_unit_0.inst_sext_0_ ),
+    .Q(execution_unit_0.inst_sext_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10200_ (
     .CLK(dco_clk),
     .D(_02972_),
-    .Q( execution_unit_0.inst_sext_1_ ),
+    .Q(execution_unit_0.inst_sext_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10201_ (
     .CLK(dco_clk),
     .D(_02973_),
-    .Q( execution_unit_0.inst_sext_2_ ),
+    .Q(execution_unit_0.inst_sext_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10202_ (
     .CLK(dco_clk),
     .D(_02974_),
-    .Q( execution_unit_0.inst_sext_3_ ),
+    .Q(execution_unit_0.inst_sext_3_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10203_ (
     .CLK(dco_clk),
     .D(_02975_),
-    .Q( execution_unit_0.inst_sext_4_ ),
+    .Q(execution_unit_0.inst_sext_4_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10204_ (
     .CLK(dco_clk),
     .D(_02976_),
-    .Q( execution_unit_0.inst_sext_5_ ),
+    .Q(execution_unit_0.inst_sext_5_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10205_ (
     .CLK(dco_clk),
     .D(_02977_),
-    .Q( execution_unit_0.inst_sext_6_ ),
+    .Q(execution_unit_0.inst_sext_6_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10206_ (
     .CLK(dco_clk),
     .D(_02978_),
-    .Q( execution_unit_0.inst_sext_7_ ),
+    .Q(execution_unit_0.inst_sext_7_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10207_ (
     .CLK(dco_clk),
     .D(_02979_),
-    .Q( execution_unit_0.inst_sext_8_ ),
+    .Q(execution_unit_0.inst_sext_8_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10208_ (
     .CLK(dco_clk),
     .D(_02980_),
-    .Q( execution_unit_0.inst_sext_9_ ),
+    .Q(execution_unit_0.inst_sext_9_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10209_ (
     .CLK(dco_clk),
     .D(_02981_),
-    .Q( execution_unit_0.inst_sext_10_ ),
+    .Q(execution_unit_0.inst_sext_10_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10210_ (
     .CLK(dco_clk),
     .D(_02982_),
-    .Q( execution_unit_0.inst_sext_11_ ),
+    .Q(execution_unit_0.inst_sext_11_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10211_ (
     .CLK(dco_clk),
     .D(_02983_),
-    .Q( execution_unit_0.inst_sext_12_ ),
+    .Q(execution_unit_0.inst_sext_12_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10212_ (
     .CLK(dco_clk),
     .D(_02984_),
-    .Q( execution_unit_0.inst_sext_13_ ),
+    .Q(execution_unit_0.inst_sext_13_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10213_ (
     .CLK(dco_clk),
     .D(_02985_),
-    .Q( execution_unit_0.inst_sext_14_ ),
+    .Q(execution_unit_0.inst_sext_14_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10214_ (
     .CLK(dco_clk),
     .D(_02986_),
-    .Q( execution_unit_0.inst_sext_15_ ),
+    .Q(execution_unit_0.inst_sext_15_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10215_ (
     .CLK(dco_clk),
     .D(_02987_),
-    .Q( execution_unit_0.inst_ad_0_ ),
+    .Q(execution_unit_0.inst_ad_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10216_ (
     .CLK(dco_clk),
     .D(_02988_),
-    .Q( execution_unit_0.UNUSED_inst_ad_idx ),
+    .Q(execution_unit_0.UNUSED_inst_ad_idx ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10217_ (
     .CLK(dco_clk),
     .D(_02989_),
-    .Q( execution_unit_0.UNUSED_inst_ad_symb ),
+    .Q(execution_unit_0.UNUSED_inst_ad_symb ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10218_ (
     .CLK(dco_clk),
     .D(_02990_),
-    .Q( execution_unit_0.inst_ad_6_ ),
+    .Q(execution_unit_0.inst_ad_6_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10219_ (
     .CLK(dco_clk),
     .D(_02906_),
-    .Q( dbg_0.cpu_stat_full_0_ ),
+    .Q(dbg_0.cpu_stat_full_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10220_ (
     .CLK(dco_clk),
-    .D( frontend_0.i_state_nxt_0_ ),
-    .Q( frontend_0.i_state_0_ ),
+    .D(frontend_0.i_state_nxt_0_ ),
+    .Q(frontend_0.i_state_0_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10221_ (
     .CLK(dco_clk),
-    .D( frontend_0.i_state_nxt_1_ ),
-    .Q( frontend_0.i_state_1_ ),
+    .D(frontend_0.i_state_nxt_1_ ),
+    .Q(frontend_0.i_state_1_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10222_ (
     .CLK(dco_clk),
-    .D( frontend_0.i_state_nxt_2_ ),
-    .Q( frontend_0.i_state_2_ ),
+    .D(frontend_0.i_state_nxt_2_ ),
+    .Q(frontend_0.i_state_2_ ),
     .R(_02907_),
     .S(1'h1)
   );
   DFFSR _10223_ (
     .CLK(dco_clk),
     .D(_02991_),
-    .Q( execution_unit_0.inst_irq_rst ),
+    .Q(execution_unit_0.inst_irq_rst ),
     .R(1'h1),
     .S(_02907_)
   );
   DFFSR _10224_ (
     .CLK(dco_clk),
     .D(_02992_),
-    .Q( frontend_0.irq_addr_1_ ),
+    .Q(frontend_0.irq_addr_1_ ),
     .R(1'h1),
     .S(_02907_)
   );
   DFFSR _10225_ (
     .CLK(dco_clk),
     .D(_02993_),
-    .Q( frontend_0.irq_addr_2_ ),
+    .Q(frontend_0.irq_addr_2_ ),
     .R(1'h1),
     .S(_02907_)
   );
   DFFSR _10226_ (
     .CLK(dco_clk),
     .D(_02994_),
-    .Q( frontend_0.irq_addr_3_ ),
+    .Q(frontend_0.irq_addr_3_ ),
     .R(1'h1),
     .S(_02907_)
   );
   DFFSR _10227_ (
     .CLK(dco_clk),
     .D(_02995_),
-    .Q( frontend_0.irq_addr_4_ ),
+    .Q(frontend_0.irq_addr_4_ ),
     .R(1'h1),
     .S(_02907_)
   );
   INVX1 _10228_ (
-    .A( dbg_0.cpu_stat_full_0_ ),
+    .A(dbg_0.cpu_stat_full_0_ ),
     .Y(_03737_)
   );
   INVX1 _10229_ (
-    .A( dbg_0.UNUSED_eu_mb_wr_0_ ),
+    .A(dbg_0.UNUSED_eu_mb_wr_0_ ),
     .Y(_03738_)
   );
   INVX1 _10230_ (
-    .A( dbg_0.dbg_mem_wr_0_ ),
+    .A(dbg_0.dbg_mem_wr_0_ ),
     .Y(_03739_)
   );
   INVX1 _10231_ (
-    .A( dbg_0.dbg_mem_addr_13_ ),
+    .A(dbg_0.dbg_mem_addr_13_ ),
     .Y(_03740_)
   );
   INVX1 _10232_ (
-    .A( dbg_0.dbg_mem_addr_14_ ),
+    .A(dbg_0.dbg_mem_addr_14_ ),
     .Y(_03741_)
   );
   INVX1 _10233_ (
-    .A( dbg_0.dbg_mem_addr_10_ ),
+    .A(dbg_0.dbg_mem_addr_10_ ),
     .Y(_03742_)
   );
   INVX1 _10234_ (
-    .A( dbg_0.dbg_mem_addr_9_ ),
+    .A(dbg_0.dbg_mem_addr_9_ ),
     .Y(_03743_)
   );
   INVX1 _10235_ (
-    .A( dbg_0.dbg_mem_addr_12_ ),
+    .A(dbg_0.dbg_mem_addr_12_ ),
     .Y(_03744_)
   );
   INVX1 _10236_ (
-    .A( dbg_0.dbg_mem_addr_11_ ),
+    .A(dbg_0.dbg_mem_addr_11_ ),
     .Y(_03745_)
   );
   INVX1 _10237_ (
-    .A( dbg_0.dbg_mem_addr_2_ ),
+    .A(dbg_0.dbg_mem_addr_2_ ),
     .Y(_03746_)
   );
   INVX1 _10238_ (
-    .A( dbg_0.dbg_mem_addr_1_ ),
+    .A(dbg_0.dbg_mem_addr_1_ ),
     .Y(_03747_)
   );
   INVX1 _10239_ (
-    .A( dbg_0.dbg_mem_addr_4_ ),
+    .A(dbg_0.dbg_mem_addr_4_ ),
     .Y(_03748_)
   );
   INVX1 _10240_ (
-    .A( dbg_0.dbg_mem_addr_3_ ),
+    .A(dbg_0.dbg_mem_addr_3_ ),
     .Y(_03749_)
   );
   INVX1 _10241_ (
-    .A( dbg_0.dbg_mem_addr_6_ ),
+    .A(dbg_0.dbg_mem_addr_6_ ),
     .Y(_03750_)
   );
   INVX1 _10242_ (
-    .A( dbg_0.dbg_mem_addr_5_ ),
+    .A(dbg_0.dbg_mem_addr_5_ ),
     .Y(_03751_)
   );
   INVX1 _10243_ (
-    .A( dbg_0.dbg_mem_addr_8_ ),
+    .A(dbg_0.dbg_mem_addr_8_ ),
     .Y(_03752_)
   );
   INVX1 _10244_ (
-    .A( dbg_0.dbg_mem_addr_7_ ),
+    .A(dbg_0.dbg_mem_addr_7_ ),
     .Y(_03753_)
   );
   INVX1 _10245_ (
-    .A( dbg_0.dbg_mem_addr_15_ ),
+    .A(dbg_0.dbg_mem_addr_15_ ),
     .Y(_03754_)
   );
   INVX1 _10246_ (
-    .A( dbg_0.UNUSED_eu_mab_13_ ),
+    .A(dbg_0.UNUSED_eu_mab_13_ ),
     .Y(_03755_)
   );
   INVX1 _10247_ (
-    .A( dbg_0.UNUSED_eu_mab_10_ ),
+    .A(dbg_0.UNUSED_eu_mab_10_ ),
     .Y(_03756_)
   );
   INVX1 _10248_ (
-    .A( dbg_0.UNUSED_eu_mab_9_ ),
+    .A(dbg_0.UNUSED_eu_mab_9_ ),
     .Y(_03757_)
   );
   INVX1 _10249_ (
-    .A( dbg_0.UNUSED_eu_mab_12_ ),
+    .A(dbg_0.UNUSED_eu_mab_12_ ),
     .Y(_03758_)
   );
   INVX1 _10250_ (
-    .A( dbg_0.UNUSED_eu_mab_11_ ),
+    .A(dbg_0.UNUSED_eu_mab_11_ ),
     .Y(_03759_)
   );
   INVX1 _10251_ (
-    .A( dbg_0.UNUSED_eu_mab_6_ ),
+    .A(dbg_0.UNUSED_eu_mab_6_ ),
     .Y(_03760_)
   );
   INVX1 _10252_ (
-    .A( dbg_0.UNUSED_eu_mab_5_ ),
+    .A(dbg_0.UNUSED_eu_mab_5_ ),
     .Y(_03761_)
   );
   INVX1 _10253_ (
-    .A( dbg_0.UNUSED_eu_mab_8_ ),
+    .A(dbg_0.UNUSED_eu_mab_8_ ),
     .Y(_03762_)
   );
   INVX1 _10254_ (
-    .A( dbg_0.UNUSED_eu_mab_7_ ),
+    .A(dbg_0.UNUSED_eu_mab_7_ ),
     .Y(_03763_)
   );
   INVX1 _10255_ (
-    .A( dbg_0.UNUSED_eu_mab_2_ ),
+    .A(dbg_0.UNUSED_eu_mab_2_ ),
     .Y(_03764_)
   );
   INVX1 _10256_ (
-    .A( dbg_0.UNUSED_eu_mab_1_ ),
+    .A(dbg_0.UNUSED_eu_mab_1_ ),
     .Y(_03765_)
   );
   INVX1 _10257_ (
-    .A( dbg_0.UNUSED_eu_mab_4_ ),
+    .A(dbg_0.UNUSED_eu_mab_4_ ),
     .Y(_03766_)
   );
   INVX1 _10258_ (
-    .A( dbg_0.UNUSED_eu_mab_3_ ),
+    .A(dbg_0.UNUSED_eu_mab_3_ ),
     .Y(_03767_)
   );
   INVX1 _10259_ (
-    .A( dbg_0.UNUSED_eu_mb_wr_1_ ),
+    .A(dbg_0.UNUSED_eu_mb_wr_1_ ),
     .Y(_03768_)
   );
   INVX1 _10260_ (
-    .A( dbg_0.dbg_mem_wr_1_ ),
+    .A(dbg_0.dbg_mem_wr_1_ ),
     .Y(_03769_)
   );
   INVX1 _10261_ (
@@ -33400,7 +33400,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03770_)
   );
   INVX1 _10262_ (
-    .A( execution_unit_0.mdb_out_0_ ),
+    .A(execution_unit_0.mdb_out_0_ ),
     .Y(_03771_)
   );
   INVX1 _10263_ (
@@ -33408,7 +33408,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03772_)
   );
   INVX1 _10264_ (
-    .A( execution_unit_0.mdb_out_1_ ),
+    .A(execution_unit_0.mdb_out_1_ ),
     .Y(_03773_)
   );
   INVX1 _10265_ (
@@ -33416,7 +33416,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03774_)
   );
   INVX1 _10266_ (
-    .A( execution_unit_0.mdb_out_2_ ),
+    .A(execution_unit_0.mdb_out_2_ ),
     .Y(_03775_)
   );
   INVX1 _10267_ (
@@ -33424,7 +33424,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03776_)
   );
   INVX1 _10268_ (
-    .A( execution_unit_0.mdb_out_3_ ),
+    .A(execution_unit_0.mdb_out_3_ ),
     .Y(_03777_)
   );
   INVX1 _10269_ (
@@ -33432,7 +33432,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03778_)
   );
   INVX1 _10270_ (
-    .A( execution_unit_0.mdb_out_4_ ),
+    .A(execution_unit_0.mdb_out_4_ ),
     .Y(_03779_)
   );
   INVX1 _10271_ (
@@ -33440,7 +33440,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03780_)
   );
   INVX1 _10272_ (
-    .A( execution_unit_0.mdb_out_5_ ),
+    .A(execution_unit_0.mdb_out_5_ ),
     .Y(_03781_)
   );
   INVX1 _10273_ (
@@ -33448,7 +33448,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03782_)
   );
   INVX1 _10274_ (
-    .A( execution_unit_0.mdb_out_6_ ),
+    .A(execution_unit_0.mdb_out_6_ ),
     .Y(_03783_)
   );
   INVX1 _10275_ (
@@ -33456,7 +33456,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03784_)
   );
   INVX1 _10276_ (
-    .A( execution_unit_0.mdb_out_7_ ),
+    .A(execution_unit_0.mdb_out_7_ ),
     .Y(_03785_)
   );
   INVX1 _10277_ (
@@ -33464,7 +33464,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03786_)
   );
   INVX1 _10278_ (
-    .A( execution_unit_0.mdb_out_8_ ),
+    .A(execution_unit_0.mdb_out_8_ ),
     .Y(_03787_)
   );
   INVX1 _10279_ (
@@ -33472,7 +33472,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03788_)
   );
   INVX1 _10280_ (
-    .A( execution_unit_0.mdb_out_9_ ),
+    .A(execution_unit_0.mdb_out_9_ ),
     .Y(_03789_)
   );
   INVX1 _10281_ (
@@ -33480,7 +33480,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03790_)
   );
   INVX1 _10282_ (
-    .A( execution_unit_0.mdb_out_10_ ),
+    .A(execution_unit_0.mdb_out_10_ ),
     .Y(_03791_)
   );
   INVX1 _10283_ (
@@ -33488,7 +33488,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03792_)
   );
   INVX1 _10284_ (
-    .A( execution_unit_0.mdb_out_11_ ),
+    .A(execution_unit_0.mdb_out_11_ ),
     .Y(_03793_)
   );
   INVX1 _10285_ (
@@ -33496,7 +33496,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03794_)
   );
   INVX1 _10286_ (
-    .A( execution_unit_0.mdb_out_12_ ),
+    .A(execution_unit_0.mdb_out_12_ ),
     .Y(_03795_)
   );
   INVX1 _10287_ (
@@ -33504,7 +33504,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03796_)
   );
   INVX1 _10288_ (
-    .A( execution_unit_0.mdb_out_13_ ),
+    .A(execution_unit_0.mdb_out_13_ ),
     .Y(_03797_)
   );
   INVX1 _10289_ (
@@ -33512,7 +33512,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03798_)
   );
   INVX1 _10290_ (
-    .A( execution_unit_0.mdb_out_14_ ),
+    .A(execution_unit_0.mdb_out_14_ ),
     .Y(_03799_)
   );
   INVX1 _10291_ (
@@ -33520,7 +33520,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03800_)
   );
   INVX1 _10292_ (
-    .A( execution_unit_0.mdb_out_15_ ),
+    .A(execution_unit_0.mdb_out_15_ ),
     .Y(_03801_)
   );
   INVX1 _10293_ (
@@ -33592,28 +33592,28 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03719_)
   );
   NAND2X1 _10310_ (
-    .A( frontend_0.mb_en ),
-    .B( execution_unit_0.pc_nxt_15_ ),
+    .A(frontend_0.mb_en ),
+    .B(execution_unit_0.pc_nxt_15_ ),
     .Y(_03818_)
   );
   INVX1 _10311_ (
     .A(_03818_),
-    .Y( mem_backbone_0.fe_pmem_en )
+    .Y(mem_backbone_0.fe_pmem_en )
   );
   NAND2X1 _10312_ (
-    .A( dbg_0.UNUSED_eu_mab_14_ ),
-    .B( dbg_0.UNUSED_eu_mb_en ),
+    .A(dbg_0.UNUSED_eu_mab_14_ ),
+    .B(dbg_0.UNUSED_eu_mb_en ),
     .Y(_03819_)
   );
   NOR2X1 _10313_ (
-    .A( dbg_0.UNUSED_eu_mab_15_ ),
+    .A(dbg_0.UNUSED_eu_mab_15_ ),
     .B(_03819_),
     .Y(_03820_)
   );
   NAND3X1 _10314_ (
-    .A( dbg_0.dbg_mem_addr_14_ ),
+    .A(dbg_0.dbg_mem_addr_14_ ),
     .B(_03754_),
-    .C( dbg_0.dbg_mem_en ),
+    .C(dbg_0.dbg_mem_en ),
     .Y(_03821_)
   );
   NOR2X1 _10315_ (
@@ -33622,14 +33622,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03822_)
   );
   MUX2X1 _10316_ (
-    .A( dbg_0.dbg_mem_wr_0_ ),
-    .B( dbg_0.UNUSED_eu_mb_wr_0_ ),
+    .A(dbg_0.dbg_mem_wr_0_ ),
+    .B(dbg_0.UNUSED_eu_mb_wr_0_ ),
     .S(_03822_),
     .Y(_05614_)
   );
   MUX2X1 _10317_ (
-    .A( dbg_0.dbg_mem_wr_1_ ),
-    .B( dbg_0.UNUSED_eu_mb_wr_1_ ),
+    .A(dbg_0.dbg_mem_wr_1_ ),
+    .B(dbg_0.UNUSED_eu_mb_wr_1_ ),
     .S(_03822_),
     .Y(_05615_)
   );
@@ -33808,19 +33808,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05604_)
   );
   OR2X1 _10347_ (
-    .A( dbg_0.UNUSED_eu_mb_wr_0_ ),
-    .B( dbg_0.UNUSED_eu_mb_wr_1_ ),
+    .A(dbg_0.UNUSED_eu_mb_wr_0_ ),
+    .B(dbg_0.UNUSED_eu_mb_wr_1_ ),
     .Y(_03823_)
   );
   NAND2X1 _10348_ (
-    .A( dbg_0.UNUSED_eu_mab_15_ ),
-    .B( dbg_0.UNUSED_eu_mb_en ),
+    .A(dbg_0.UNUSED_eu_mab_15_ ),
+    .B(dbg_0.UNUSED_eu_mb_en ),
     .Y(_03824_)
   );
   NOR2X1 _10349_ (
     .A(_03823_),
     .B(_03824_),
-    .Y( mem_backbone_0.eu_pmem_en )
+    .Y(mem_backbone_0.eu_pmem_en )
   );
   OAI21X1 _10350_ (
     .A(_03823_),
@@ -33829,856 +33829,856 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03825_)
   );
   NAND2X1 _10351_ (
-    .A( dbg_0.dbg_mem_addr_15_ ),
-    .B( dbg_0.dbg_mem_en ),
+    .A(dbg_0.dbg_mem_addr_15_ ),
+    .B(dbg_0.dbg_mem_en ),
     .Y(_03826_)
   );
   NOR2X1 _10352_ (
     .A(_03825_),
     .B(_03826_),
-    .Y( mem_backbone_0.ext_pmem_en )
+    .Y(mem_backbone_0.ext_pmem_en )
   );
   NAND2X1 _10353_ (
-    .A( dbg_0.dbg_mem_wr_0_ ),
-    .B( mem_backbone_0.ext_pmem_en ),
+    .A(dbg_0.dbg_mem_wr_0_ ),
+    .B(mem_backbone_0.ext_pmem_en ),
     .Y(_05693_)
   );
   NAND2X1 _10354_ (
-    .A( dbg_0.dbg_mem_wr_1_ ),
-    .B( mem_backbone_0.ext_pmem_en ),
+    .A(dbg_0.dbg_mem_wr_1_ ),
+    .B(mem_backbone_0.ext_pmem_en ),
     .Y(_05694_)
   );
   MUX2X1 _10355_ (
-    .A( dbg_0.UNUSED_eu_mab_1_ ),
-    .B( execution_unit_0.pc_nxt_1_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_1_ ),
+    .B(execution_unit_0.pc_nxt_1_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03827_)
   );
   MUX2X1 _10356_ (
     .A(_03747_),
     .B(_03827_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05662_)
   );
   MUX2X1 _10357_ (
-    .A( dbg_0.UNUSED_eu_mab_2_ ),
-    .B( execution_unit_0.pc_nxt_2_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_2_ ),
+    .B(execution_unit_0.pc_nxt_2_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03828_)
   );
   MUX2X1 _10358_ (
     .A(_03746_),
     .B(_03828_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05667_)
   );
   MUX2X1 _10359_ (
-    .A( dbg_0.UNUSED_eu_mab_3_ ),
-    .B( execution_unit_0.pc_nxt_3_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_3_ ),
+    .B(execution_unit_0.pc_nxt_3_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03829_)
   );
   MUX2X1 _10360_ (
     .A(_03749_),
     .B(_03829_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05668_)
   );
   MUX2X1 _10361_ (
-    .A( dbg_0.UNUSED_eu_mab_4_ ),
-    .B( execution_unit_0.pc_nxt_4_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_4_ ),
+    .B(execution_unit_0.pc_nxt_4_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03830_)
   );
   MUX2X1 _10362_ (
     .A(_03748_),
     .B(_03830_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05669_)
   );
   MUX2X1 _10363_ (
-    .A( dbg_0.UNUSED_eu_mab_5_ ),
-    .B( execution_unit_0.pc_nxt_5_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_5_ ),
+    .B(execution_unit_0.pc_nxt_5_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03831_)
   );
   MUX2X1 _10364_ (
     .A(_03751_),
     .B(_03831_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05670_)
   );
   MUX2X1 _10365_ (
-    .A( dbg_0.UNUSED_eu_mab_6_ ),
-    .B( execution_unit_0.pc_nxt_6_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_6_ ),
+    .B(execution_unit_0.pc_nxt_6_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03832_)
   );
   MUX2X1 _10366_ (
     .A(_03750_),
     .B(_03832_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05671_)
   );
   MUX2X1 _10367_ (
-    .A( dbg_0.UNUSED_eu_mab_7_ ),
-    .B( execution_unit_0.pc_nxt_7_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_7_ ),
+    .B(execution_unit_0.pc_nxt_7_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03833_)
   );
   MUX2X1 _10368_ (
     .A(_03753_),
     .B(_03833_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05672_)
   );
   MUX2X1 _10369_ (
-    .A( dbg_0.UNUSED_eu_mab_8_ ),
-    .B( execution_unit_0.pc_nxt_8_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_8_ ),
+    .B(execution_unit_0.pc_nxt_8_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03834_)
   );
   MUX2X1 _10370_ (
     .A(_03752_),
     .B(_03834_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05673_)
   );
   MUX2X1 _10371_ (
-    .A( dbg_0.UNUSED_eu_mab_9_ ),
-    .B( execution_unit_0.pc_nxt_9_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_9_ ),
+    .B(execution_unit_0.pc_nxt_9_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03835_)
   );
   MUX2X1 _10372_ (
     .A(_03743_),
     .B(_03835_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05674_)
   );
   MUX2X1 _10373_ (
-    .A( dbg_0.UNUSED_eu_mab_10_ ),
-    .B( execution_unit_0.pc_nxt_10_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_10_ ),
+    .B(execution_unit_0.pc_nxt_10_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03836_)
   );
   MUX2X1 _10374_ (
     .A(_03742_),
     .B(_03836_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05675_)
   );
   MUX2X1 _10375_ (
-    .A( dbg_0.UNUSED_eu_mab_11_ ),
-    .B( execution_unit_0.pc_nxt_11_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_11_ ),
+    .B(execution_unit_0.pc_nxt_11_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03837_)
   );
   MUX2X1 _10376_ (
     .A(_03745_),
     .B(_03837_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05663_)
   );
   MUX2X1 _10377_ (
-    .A( dbg_0.UNUSED_eu_mab_12_ ),
-    .B( execution_unit_0.pc_nxt_12_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_12_ ),
+    .B(execution_unit_0.pc_nxt_12_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03838_)
   );
   MUX2X1 _10378_ (
     .A(_03744_),
     .B(_03838_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05664_)
   );
   MUX2X1 _10379_ (
-    .A( dbg_0.UNUSED_eu_mab_13_ ),
-    .B( execution_unit_0.pc_nxt_13_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_13_ ),
+    .B(execution_unit_0.pc_nxt_13_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03839_)
   );
   MUX2X1 _10380_ (
     .A(_03740_),
     .B(_03839_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05665_)
   );
   MUX2X1 _10381_ (
-    .A( dbg_0.UNUSED_eu_mab_14_ ),
-    .B( execution_unit_0.pc_nxt_14_ ),
-    .S( mem_backbone_0.eu_pmem_en ),
+    .A(dbg_0.UNUSED_eu_mab_14_ ),
+    .B(execution_unit_0.pc_nxt_14_ ),
+    .S(mem_backbone_0.eu_pmem_en ),
     .Y(_03840_)
   );
   MUX2X1 _10382_ (
     .A(_03741_),
     .B(_03840_),
-    .S( mem_backbone_0.ext_pmem_en ),
+    .S(mem_backbone_0.ext_pmem_en ),
     .Y(_05666_)
   );
   NOR2X1 _10383_ (
-    .A( dbg_0.UNUSED_eu_mab_15_ ),
-    .B( dbg_0.UNUSED_eu_mab_14_ ),
+    .A(dbg_0.UNUSED_eu_mab_15_ ),
+    .B(dbg_0.UNUSED_eu_mab_14_ ),
     .Y(_03841_)
   );
   NAND2X1 _10384_ (
-    .A( dbg_0.UNUSED_eu_mb_en ),
+    .A(dbg_0.UNUSED_eu_mb_en ),
     .B(_03841_),
     .Y(_03842_)
   );
   INVX1 _10385_ (
     .A(_03842_),
-    .Y( mem_backbone_0.eu_per_en )
+    .Y(mem_backbone_0.eu_per_en )
   );
   NAND3X1 _10386_ (
     .A(_03741_),
     .B(_03754_),
-    .C( dbg_0.dbg_mem_en ),
+    .C(dbg_0.dbg_mem_en ),
     .Y(_03843_)
   );
   NOR2X1 _10387_ (
-    .A( mem_backbone_0.eu_per_en ),
+    .A(mem_backbone_0.eu_per_en ),
     .B(_03843_),
-    .Y( mem_backbone_0.ext_per_en )
+    .Y(mem_backbone_0.ext_per_en )
   );
   MUX2X1 _10388_ (
     .A(_03739_),
     .B(_03738_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05660_)
   );
   MUX2X1 _10389_ (
     .A(_03769_),
     .B(_03768_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05661_)
   );
   MUX2X1 _10390_ (
     .A(_03747_),
     .B(_03765_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05630_)
   );
   MUX2X1 _10391_ (
     .A(_03746_),
     .B(_03764_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05634_)
   );
   MUX2X1 _10392_ (
     .A(_03749_),
     .B(_03767_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05635_)
   );
   MUX2X1 _10393_ (
     .A(_03748_),
     .B(_03766_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05636_)
   );
   MUX2X1 _10394_ (
     .A(_03751_),
     .B(_03761_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05637_)
   );
   MUX2X1 _10395_ (
     .A(_03750_),
     .B(_03760_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05638_)
   );
   MUX2X1 _10396_ (
     .A(_03753_),
     .B(_03763_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05639_)
   );
   MUX2X1 _10397_ (
     .A(_03752_),
     .B(_03762_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05640_)
   );
   MUX2X1 _10398_ (
     .A(_03743_),
     .B(_03757_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05641_)
   );
   MUX2X1 _10399_ (
     .A(_03742_),
     .B(_03756_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05642_)
   );
   MUX2X1 _10400_ (
     .A(_03745_),
     .B(_03759_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05631_)
   );
   MUX2X1 _10401_ (
     .A(_03744_),
     .B(_03758_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05632_)
   );
   MUX2X1 _10402_ (
     .A(_03740_),
     .B(_03755_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05633_)
   );
   MUX2X1 _10403_ (
     .A(_03770_),
     .B(_03771_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05643_)
   );
   MUX2X1 _10404_ (
     .A(_03772_),
     .B(_03773_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05650_)
   );
   MUX2X1 _10405_ (
     .A(_03774_),
     .B(_03775_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05651_)
   );
   MUX2X1 _10406_ (
     .A(_03776_),
     .B(_03777_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05652_)
   );
   MUX2X1 _10407_ (
     .A(_03778_),
     .B(_03779_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05653_)
   );
   MUX2X1 _10408_ (
     .A(_03780_),
     .B(_03781_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05654_)
   );
   MUX2X1 _10409_ (
     .A(_03782_),
     .B(_03783_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05655_)
   );
   MUX2X1 _10410_ (
     .A(_03784_),
     .B(_03785_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05656_)
   );
   MUX2X1 _10411_ (
     .A(_03786_),
     .B(_03787_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05657_)
   );
   MUX2X1 _10412_ (
     .A(_03788_),
     .B(_03789_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05658_)
   );
   MUX2X1 _10413_ (
     .A(_03790_),
     .B(_03791_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05644_)
   );
   MUX2X1 _10414_ (
     .A(_03792_),
     .B(_03793_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05645_)
   );
   MUX2X1 _10415_ (
     .A(_03794_),
     .B(_03795_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05646_)
   );
   MUX2X1 _10416_ (
     .A(_03796_),
     .B(_03797_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05647_)
   );
   MUX2X1 _10417_ (
     .A(_03798_),
     .B(_03799_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05648_)
   );
   MUX2X1 _10418_ (
     .A(_03800_),
     .B(_03801_),
-    .S( mem_backbone_0.ext_per_en ),
+    .S(mem_backbone_0.ext_per_en ),
     .Y(_05649_)
   );
   NAND2X1 _10419_ (
-    .A( mem_backbone_0.pmem_dout_bckup_0_ ),
-    .B( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_0_ ),
+    .B(mem_backbone_0.pmem_dout_bckup_sel ),
     .Y(_03844_)
   );
   OAI21X1 _10420_ (
     .A(_03802_),
-    .B( mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_sel ),
     .C(_03844_),
-    .Y( dbg_0.fe_mdb_in_0_ )
+    .Y(dbg_0.fe_mdb_in_0_ )
   );
   NAND2X1 _10421_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_1_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_1_ ),
     .Y(_03845_)
   );
   OAI21X1 _10422_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03803_),
     .C(_03845_),
-    .Y( dbg_0.fe_mdb_in_1_ )
+    .Y(dbg_0.fe_mdb_in_1_ )
   );
   NAND2X1 _10423_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_2_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_2_ ),
     .Y(_03846_)
   );
   OAI21X1 _10424_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03804_),
     .C(_03846_),
-    .Y( dbg_0.fe_mdb_in_2_ )
+    .Y(dbg_0.fe_mdb_in_2_ )
   );
   NAND2X1 _10425_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_3_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_3_ ),
     .Y(_03847_)
   );
   OAI21X1 _10426_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03805_),
     .C(_03847_),
-    .Y( dbg_0.fe_mdb_in_3_ )
+    .Y(dbg_0.fe_mdb_in_3_ )
   );
   NAND2X1 _10427_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_4_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_4_ ),
     .Y(_03848_)
   );
   OAI21X1 _10428_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03806_),
     .C(_03848_),
-    .Y( dbg_0.fe_mdb_in_4_ )
+    .Y(dbg_0.fe_mdb_in_4_ )
   );
   NAND2X1 _10429_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_5_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_5_ ),
     .Y(_03849_)
   );
   OAI21X1 _10430_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03807_),
     .C(_03849_),
-    .Y( dbg_0.fe_mdb_in_5_ )
+    .Y(dbg_0.fe_mdb_in_5_ )
   );
   NAND2X1 _10431_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_6_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_6_ ),
     .Y(_03850_)
   );
   OAI21X1 _10432_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03808_),
     .C(_03850_),
-    .Y( dbg_0.fe_mdb_in_6_ )
+    .Y(dbg_0.fe_mdb_in_6_ )
   );
   NAND2X1 _10433_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_7_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_7_ ),
     .Y(_03851_)
   );
   OAI21X1 _10434_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03809_),
     .C(_03851_),
-    .Y( dbg_0.fe_mdb_in_7_ )
+    .Y(dbg_0.fe_mdb_in_7_ )
   );
   NAND2X1 _10435_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_8_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_8_ ),
     .Y(_03852_)
   );
   OAI21X1 _10436_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03810_),
     .C(_03852_),
-    .Y( dbg_0.fe_mdb_in_8_ )
+    .Y(dbg_0.fe_mdb_in_8_ )
   );
   NAND2X1 _10437_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_9_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_9_ ),
     .Y(_03853_)
   );
   OAI21X1 _10438_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03811_),
     .C(_03853_),
-    .Y( dbg_0.fe_mdb_in_9_ )
+    .Y(dbg_0.fe_mdb_in_9_ )
   );
   NAND2X1 _10439_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_10_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_10_ ),
     .Y(_03854_)
   );
   OAI21X1 _10440_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03812_),
     .C(_03854_),
-    .Y( dbg_0.fe_mdb_in_10_ )
+    .Y(dbg_0.fe_mdb_in_10_ )
   );
   NAND2X1 _10441_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_11_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_11_ ),
     .Y(_03855_)
   );
   OAI21X1 _10442_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03813_),
     .C(_03855_),
-    .Y( dbg_0.fe_mdb_in_11_ )
+    .Y(dbg_0.fe_mdb_in_11_ )
   );
   NAND2X1 _10443_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_12_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_12_ ),
     .Y(_03856_)
   );
   OAI21X1 _10444_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03814_),
     .C(_03856_),
-    .Y( dbg_0.fe_mdb_in_12_ )
+    .Y(dbg_0.fe_mdb_in_12_ )
   );
   NAND2X1 _10445_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_13_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_13_ ),
     .Y(_03857_)
   );
   OAI21X1 _10446_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03815_),
     .C(_03857_),
-    .Y( dbg_0.fe_mdb_in_13_ )
+    .Y(dbg_0.fe_mdb_in_13_ )
   );
   NAND2X1 _10447_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_14_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_14_ ),
     .Y(_03858_)
   );
   OAI21X1 _10448_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03816_),
     .C(_03858_),
-    .Y( dbg_0.fe_mdb_in_14_ )
+    .Y(dbg_0.fe_mdb_in_14_ )
   );
   NAND2X1 _10449_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
-    .B( mem_backbone_0.pmem_dout_bckup_15_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_15_ ),
     .Y(_03859_)
   );
   OAI21X1 _10450_ (
-    .A( mem_backbone_0.pmem_dout_bckup_sel ),
+    .A(mem_backbone_0.pmem_dout_bckup_sel ),
     .B(_03817_),
     .C(_03859_),
-    .Y( dbg_0.fe_mdb_in_15_ )
+    .Y(dbg_0.fe_mdb_in_15_ )
   );
   MUX2X1 _10451_ (
-    .A( mem_backbone_0.per_dout_val_0_ ),
+    .A(mem_backbone_0.per_dout_val_0_ ),
     .B(dmem_dout_0_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03860_)
   );
   NAND2X1 _10452_ (
     .A(pmem_dout_0_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03861_)
   );
   OAI21X1 _10453_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03860_),
     .C(_03861_),
-    .Y( execution_unit_0.mdb_in_0_ )
+    .Y(execution_unit_0.mdb_in_0_ )
   );
   MUX2X1 _10454_ (
-    .A( mem_backbone_0.per_dout_val_1_ ),
+    .A(mem_backbone_0.per_dout_val_1_ ),
     .B(dmem_dout_1_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03862_)
   );
   NAND2X1 _10455_ (
     .A(pmem_dout_1_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03863_)
   );
   OAI21X1 _10456_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03862_),
     .C(_03863_),
-    .Y( execution_unit_0.mdb_in_1_ )
+    .Y(execution_unit_0.mdb_in_1_ )
   );
   MUX2X1 _10457_ (
-    .A( mem_backbone_0.per_dout_val_2_ ),
+    .A(mem_backbone_0.per_dout_val_2_ ),
     .B(dmem_dout_2_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03864_)
   );
   NAND2X1 _10458_ (
     .A(pmem_dout_2_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03865_)
   );
   OAI21X1 _10459_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03864_),
     .C(_03865_),
-    .Y( execution_unit_0.mdb_in_2_ )
+    .Y(execution_unit_0.mdb_in_2_ )
   );
   MUX2X1 _10460_ (
-    .A( mem_backbone_0.per_dout_val_3_ ),
+    .A(mem_backbone_0.per_dout_val_3_ ),
     .B(dmem_dout_3_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03866_)
   );
   NAND2X1 _10461_ (
     .A(pmem_dout_3_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03867_)
   );
   OAI21X1 _10462_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03866_),
     .C(_03867_),
-    .Y( execution_unit_0.mdb_in_3_ )
+    .Y(execution_unit_0.mdb_in_3_ )
   );
   MUX2X1 _10463_ (
-    .A( mem_backbone_0.per_dout_val_4_ ),
+    .A(mem_backbone_0.per_dout_val_4_ ),
     .B(dmem_dout_4_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03868_)
   );
   NAND2X1 _10464_ (
     .A(pmem_dout_4_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03869_)
   );
   OAI21X1 _10465_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03868_),
     .C(_03869_),
-    .Y( execution_unit_0.mdb_in_4_ )
+    .Y(execution_unit_0.mdb_in_4_ )
   );
   MUX2X1 _10466_ (
-    .A( mem_backbone_0.per_dout_val_5_ ),
+    .A(mem_backbone_0.per_dout_val_5_ ),
     .B(dmem_dout_5_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03870_)
   );
   NAND2X1 _10467_ (
     .A(pmem_dout_5_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03871_)
   );
   OAI21X1 _10468_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03870_),
     .C(_03871_),
-    .Y( execution_unit_0.mdb_in_5_ )
+    .Y(execution_unit_0.mdb_in_5_ )
   );
   MUX2X1 _10469_ (
-    .A( mem_backbone_0.per_dout_val_6_ ),
+    .A(mem_backbone_0.per_dout_val_6_ ),
     .B(dmem_dout_6_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03872_)
   );
   NAND2X1 _10470_ (
     .A(pmem_dout_6_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03873_)
   );
   OAI21X1 _10471_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03872_),
     .C(_03873_),
-    .Y( execution_unit_0.mdb_in_6_ )
+    .Y(execution_unit_0.mdb_in_6_ )
   );
   MUX2X1 _10472_ (
-    .A( mem_backbone_0.per_dout_val_7_ ),
+    .A(mem_backbone_0.per_dout_val_7_ ),
     .B(dmem_dout_7_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03874_)
   );
   NAND2X1 _10473_ (
     .A(pmem_dout_7_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03875_)
   );
   OAI21X1 _10474_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03874_),
     .C(_03875_),
-    .Y( execution_unit_0.mdb_in_7_ )
+    .Y(execution_unit_0.mdb_in_7_ )
   );
   MUX2X1 _10475_ (
-    .A( mem_backbone_0.per_dout_val_8_ ),
+    .A(mem_backbone_0.per_dout_val_8_ ),
     .B(dmem_dout_8_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03876_)
   );
   NAND2X1 _10476_ (
     .A(pmem_dout_8_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03877_)
   );
   OAI21X1 _10477_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03876_),
     .C(_03877_),
-    .Y( execution_unit_0.mdb_in_8_ )
+    .Y(execution_unit_0.mdb_in_8_ )
   );
   MUX2X1 _10478_ (
-    .A( mem_backbone_0.per_dout_val_9_ ),
+    .A(mem_backbone_0.per_dout_val_9_ ),
     .B(dmem_dout_9_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03878_)
   );
   NAND2X1 _10479_ (
     .A(pmem_dout_9_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03879_)
   );
   OAI21X1 _10480_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03878_),
     .C(_03879_),
-    .Y( execution_unit_0.mdb_in_9_ )
+    .Y(execution_unit_0.mdb_in_9_ )
   );
   MUX2X1 _10481_ (
-    .A( mem_backbone_0.per_dout_val_10_ ),
+    .A(mem_backbone_0.per_dout_val_10_ ),
     .B(dmem_dout_10_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03880_)
   );
   NAND2X1 _10482_ (
     .A(pmem_dout_10_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03881_)
   );
   OAI21X1 _10483_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03880_),
     .C(_03881_),
-    .Y( execution_unit_0.mdb_in_10_ )
+    .Y(execution_unit_0.mdb_in_10_ )
   );
   MUX2X1 _10484_ (
-    .A( mem_backbone_0.per_dout_val_11_ ),
+    .A(mem_backbone_0.per_dout_val_11_ ),
     .B(dmem_dout_11_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03882_)
   );
   NAND2X1 _10485_ (
     .A(pmem_dout_11_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03883_)
   );
   OAI21X1 _10486_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03882_),
     .C(_03883_),
-    .Y( execution_unit_0.mdb_in_11_ )
+    .Y(execution_unit_0.mdb_in_11_ )
   );
   MUX2X1 _10487_ (
-    .A( mem_backbone_0.per_dout_val_12_ ),
+    .A(mem_backbone_0.per_dout_val_12_ ),
     .B(dmem_dout_12_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03884_)
   );
   NAND2X1 _10488_ (
     .A(pmem_dout_12_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03885_)
   );
   OAI21X1 _10489_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03884_),
     .C(_03885_),
-    .Y( execution_unit_0.mdb_in_12_ )
+    .Y(execution_unit_0.mdb_in_12_ )
   );
   MUX2X1 _10490_ (
-    .A( mem_backbone_0.per_dout_val_13_ ),
+    .A(mem_backbone_0.per_dout_val_13_ ),
     .B(dmem_dout_13_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03886_)
   );
   NAND2X1 _10491_ (
     .A(pmem_dout_13_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03887_)
   );
   OAI21X1 _10492_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03886_),
     .C(_03887_),
-    .Y( execution_unit_0.mdb_in_13_ )
+    .Y(execution_unit_0.mdb_in_13_ )
   );
   MUX2X1 _10493_ (
-    .A( mem_backbone_0.per_dout_val_14_ ),
+    .A(mem_backbone_0.per_dout_val_14_ ),
     .B(dmem_dout_14_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03888_)
   );
   NAND2X1 _10494_ (
     .A(pmem_dout_14_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03889_)
   );
   OAI21X1 _10495_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03888_),
     .C(_03889_),
-    .Y( execution_unit_0.mdb_in_14_ )
+    .Y(execution_unit_0.mdb_in_14_ )
   );
   MUX2X1 _10496_ (
-    .A( mem_backbone_0.per_dout_val_15_ ),
+    .A(mem_backbone_0.per_dout_val_15_ ),
     .B(dmem_dout_15_),
-    .S( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .S(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .Y(_03890_)
   );
   NAND2X1 _10497_ (
     .A(pmem_dout_15_),
-    .B( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .B(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .Y(_03891_)
   );
   OAI21X1 _10498_ (
-    .A( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .A(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .B(_03890_),
     .C(_03891_),
-    .Y( execution_unit_0.mdb_in_15_ )
+    .Y(execution_unit_0.mdb_in_15_ )
   );
   MUX2X1 _10499_ (
-    .A( mem_backbone_0.per_dout_val_0_ ),
+    .A(mem_backbone_0.per_dout_val_0_ ),
     .B(dmem_dout_0_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03892_)
   );
   NAND2X1 _10500_ (
@@ -34690,12 +34690,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03892_),
     .C(_03893_),
-    .Y( dbg_0.dbg_mem_din_0_ )
+    .Y(dbg_0.dbg_mem_din_0_ )
   );
   MUX2X1 _10502_ (
-    .A( mem_backbone_0.per_dout_val_1_ ),
+    .A(mem_backbone_0.per_dout_val_1_ ),
     .B(dmem_dout_1_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03894_)
   );
   NAND2X1 _10503_ (
@@ -34707,12 +34707,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03894_),
     .C(_03895_),
-    .Y( dbg_0.dbg_mem_din_1_ )
+    .Y(dbg_0.dbg_mem_din_1_ )
   );
   MUX2X1 _10505_ (
-    .A( mem_backbone_0.per_dout_val_2_ ),
+    .A(mem_backbone_0.per_dout_val_2_ ),
     .B(dmem_dout_2_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03896_)
   );
   NAND2X1 _10506_ (
@@ -34724,12 +34724,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03896_),
     .C(_03897_),
-    .Y( dbg_0.dbg_mem_din_2_ )
+    .Y(dbg_0.dbg_mem_din_2_ )
   );
   MUX2X1 _10508_ (
-    .A( mem_backbone_0.per_dout_val_3_ ),
+    .A(mem_backbone_0.per_dout_val_3_ ),
     .B(dmem_dout_3_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03898_)
   );
   NAND2X1 _10509_ (
@@ -34741,12 +34741,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03898_),
     .C(_03899_),
-    .Y( dbg_0.dbg_mem_din_3_ )
+    .Y(dbg_0.dbg_mem_din_3_ )
   );
   MUX2X1 _10511_ (
-    .A( mem_backbone_0.per_dout_val_4_ ),
+    .A(mem_backbone_0.per_dout_val_4_ ),
     .B(dmem_dout_4_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03900_)
   );
   NAND2X1 _10512_ (
@@ -34758,12 +34758,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03900_),
     .C(_03901_),
-    .Y( dbg_0.dbg_mem_din_4_ )
+    .Y(dbg_0.dbg_mem_din_4_ )
   );
   MUX2X1 _10514_ (
-    .A( mem_backbone_0.per_dout_val_5_ ),
+    .A(mem_backbone_0.per_dout_val_5_ ),
     .B(dmem_dout_5_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03902_)
   );
   NAND2X1 _10515_ (
@@ -34775,12 +34775,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03902_),
     .C(_03903_),
-    .Y( dbg_0.dbg_mem_din_5_ )
+    .Y(dbg_0.dbg_mem_din_5_ )
   );
   MUX2X1 _10517_ (
-    .A( mem_backbone_0.per_dout_val_6_ ),
+    .A(mem_backbone_0.per_dout_val_6_ ),
     .B(dmem_dout_6_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03904_)
   );
   NAND2X1 _10518_ (
@@ -34792,12 +34792,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03904_),
     .C(_03905_),
-    .Y( dbg_0.dbg_mem_din_6_ )
+    .Y(dbg_0.dbg_mem_din_6_ )
   );
   MUX2X1 _10520_ (
-    .A( mem_backbone_0.per_dout_val_7_ ),
+    .A(mem_backbone_0.per_dout_val_7_ ),
     .B(dmem_dout_7_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03906_)
   );
   NAND2X1 _10521_ (
@@ -34809,12 +34809,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03906_),
     .C(_03907_),
-    .Y( dbg_0.dbg_mem_din_7_ )
+    .Y(dbg_0.dbg_mem_din_7_ )
   );
   MUX2X1 _10523_ (
-    .A( mem_backbone_0.per_dout_val_8_ ),
+    .A(mem_backbone_0.per_dout_val_8_ ),
     .B(dmem_dout_8_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03908_)
   );
   NAND2X1 _10524_ (
@@ -34826,12 +34826,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03908_),
     .C(_03909_),
-    .Y( dbg_0.dbg_mem_din_8_ )
+    .Y(dbg_0.dbg_mem_din_8_ )
   );
   MUX2X1 _10526_ (
-    .A( mem_backbone_0.per_dout_val_9_ ),
+    .A(mem_backbone_0.per_dout_val_9_ ),
     .B(dmem_dout_9_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03910_)
   );
   NAND2X1 _10527_ (
@@ -34843,12 +34843,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03910_),
     .C(_03911_),
-    .Y( dbg_0.dbg_mem_din_9_ )
+    .Y(dbg_0.dbg_mem_din_9_ )
   );
   MUX2X1 _10529_ (
-    .A( mem_backbone_0.per_dout_val_10_ ),
+    .A(mem_backbone_0.per_dout_val_10_ ),
     .B(dmem_dout_10_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03912_)
   );
   NAND2X1 _10530_ (
@@ -34860,12 +34860,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03912_),
     .C(_03913_),
-    .Y( dbg_0.dbg_mem_din_10_ )
+    .Y(dbg_0.dbg_mem_din_10_ )
   );
   MUX2X1 _10532_ (
-    .A( mem_backbone_0.per_dout_val_11_ ),
+    .A(mem_backbone_0.per_dout_val_11_ ),
     .B(dmem_dout_11_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03914_)
   );
   NAND2X1 _10533_ (
@@ -34877,12 +34877,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03914_),
     .C(_03915_),
-    .Y( dbg_0.dbg_mem_din_11_ )
+    .Y(dbg_0.dbg_mem_din_11_ )
   );
   MUX2X1 _10535_ (
-    .A( mem_backbone_0.per_dout_val_12_ ),
+    .A(mem_backbone_0.per_dout_val_12_ ),
     .B(dmem_dout_12_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03916_)
   );
   NAND2X1 _10536_ (
@@ -34894,12 +34894,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03916_),
     .C(_03917_),
-    .Y( dbg_0.dbg_mem_din_12_ )
+    .Y(dbg_0.dbg_mem_din_12_ )
   );
   MUX2X1 _10538_ (
-    .A( mem_backbone_0.per_dout_val_13_ ),
+    .A(mem_backbone_0.per_dout_val_13_ ),
     .B(dmem_dout_13_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03918_)
   );
   NAND2X1 _10539_ (
@@ -34911,12 +34911,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03918_),
     .C(_03919_),
-    .Y( dbg_0.dbg_mem_din_13_ )
+    .Y(dbg_0.dbg_mem_din_13_ )
   );
   MUX2X1 _10541_ (
-    .A( mem_backbone_0.per_dout_val_14_ ),
+    .A(mem_backbone_0.per_dout_val_14_ ),
     .B(dmem_dout_14_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03920_)
   );
   NAND2X1 _10542_ (
@@ -34928,12 +34928,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03920_),
     .C(_03921_),
-    .Y( dbg_0.dbg_mem_din_14_ )
+    .Y(dbg_0.dbg_mem_din_14_ )
   );
   MUX2X1 _10544_ (
-    .A( mem_backbone_0.per_dout_val_15_ ),
+    .A(mem_backbone_0.per_dout_val_15_ ),
     .B(dmem_dout_15_),
-    .S( mem_backbone_0.ext_mem_din_sel ),
+    .S(mem_backbone_0.ext_mem_din_sel ),
     .Y(_03922_)
   );
   NAND2X1 _10545_ (
@@ -34945,10 +34945,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_03718_),
     .B(_03922_),
     .C(_03923_),
-    .Y( dbg_0.dbg_mem_din_15_ )
+    .Y(dbg_0.dbg_mem_din_15_ )
   );
   OAI21X1 _10547_ (
-    .A( dbg_0.UNUSED_eu_mab_15_ ),
+    .A(dbg_0.UNUSED_eu_mab_15_ ),
     .B(_03819_),
     .C(_03821_),
     .Y(_03924_)
@@ -34959,13 +34959,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NOR2X1 _10549_ (
     .A(_03825_),
-    .B( mem_backbone_0.ext_pmem_en ),
+    .B(mem_backbone_0.ext_pmem_en ),
     .Y(_05676_)
   );
   AND2X1 _10550_ (
-    .A( mem_backbone_0.fe_pmem_en ),
-    .B( mem_backbone_0.eu_pmem_en ),
-    .Y( frontend_0.fe_pmem_wait )
+    .A(mem_backbone_0.fe_pmem_en ),
+    .B(mem_backbone_0.eu_pmem_en ),
+    .Y(frontend_0.fe_pmem_wait )
   );
   NAND2X1 _10551_ (
     .A(_03842_),
@@ -34973,13 +34973,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05659_)
   );
   NAND3X1 _10552_ (
-    .A( mem_backbone_0.fe_pmem_en_dly ),
+    .A(mem_backbone_0.fe_pmem_en_dly ),
     .B(_03737_),
     .C(_03818_),
     .Y(_03925_)
   );
   MUX2X1 _10553_ (
-    .A( mem_backbone_0.pmem_dout_bckup_0_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_0_ ),
     .B(pmem_dout_0_),
     .S(_03925_),
     .Y(_03926_)
@@ -34989,7 +34989,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03720_)
   );
   MUX2X1 _10555_ (
-    .A( mem_backbone_0.pmem_dout_bckup_1_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_1_ ),
     .B(pmem_dout_1_),
     .S(_03925_),
     .Y(_03927_)
@@ -34999,7 +34999,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03721_)
   );
   MUX2X1 _10557_ (
-    .A( mem_backbone_0.pmem_dout_bckup_2_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_2_ ),
     .B(pmem_dout_2_),
     .S(_03925_),
     .Y(_03928_)
@@ -35009,7 +35009,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03722_)
   );
   MUX2X1 _10559_ (
-    .A( mem_backbone_0.pmem_dout_bckup_3_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_3_ ),
     .B(pmem_dout_3_),
     .S(_03925_),
     .Y(_03929_)
@@ -35019,7 +35019,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03723_)
   );
   MUX2X1 _10561_ (
-    .A( mem_backbone_0.pmem_dout_bckup_4_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_4_ ),
     .B(pmem_dout_4_),
     .S(_03925_),
     .Y(_03930_)
@@ -35029,7 +35029,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03724_)
   );
   MUX2X1 _10563_ (
-    .A( mem_backbone_0.pmem_dout_bckup_5_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_5_ ),
     .B(pmem_dout_5_),
     .S(_03925_),
     .Y(_03931_)
@@ -35039,7 +35039,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03725_)
   );
   MUX2X1 _10565_ (
-    .A( mem_backbone_0.pmem_dout_bckup_6_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_6_ ),
     .B(pmem_dout_6_),
     .S(_03925_),
     .Y(_03932_)
@@ -35049,7 +35049,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03726_)
   );
   MUX2X1 _10567_ (
-    .A( mem_backbone_0.pmem_dout_bckup_7_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_7_ ),
     .B(pmem_dout_7_),
     .S(_03925_),
     .Y(_03933_)
@@ -35059,7 +35059,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03727_)
   );
   MUX2X1 _10569_ (
-    .A( mem_backbone_0.pmem_dout_bckup_8_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_8_ ),
     .B(pmem_dout_8_),
     .S(_03925_),
     .Y(_03934_)
@@ -35069,7 +35069,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03728_)
   );
   MUX2X1 _10571_ (
-    .A( mem_backbone_0.pmem_dout_bckup_9_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_9_ ),
     .B(pmem_dout_9_),
     .S(_03925_),
     .Y(_03935_)
@@ -35079,7 +35079,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03729_)
   );
   MUX2X1 _10573_ (
-    .A( mem_backbone_0.pmem_dout_bckup_10_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_10_ ),
     .B(pmem_dout_10_),
     .S(_03925_),
     .Y(_03936_)
@@ -35089,7 +35089,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03730_)
   );
   MUX2X1 _10575_ (
-    .A( mem_backbone_0.pmem_dout_bckup_11_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_11_ ),
     .B(pmem_dout_11_),
     .S(_03925_),
     .Y(_03937_)
@@ -35099,7 +35099,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03731_)
   );
   MUX2X1 _10577_ (
-    .A( mem_backbone_0.pmem_dout_bckup_12_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_12_ ),
     .B(pmem_dout_12_),
     .S(_03925_),
     .Y(_03938_)
@@ -35109,7 +35109,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03732_)
   );
   MUX2X1 _10579_ (
-    .A( mem_backbone_0.pmem_dout_bckup_13_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_13_ ),
     .B(pmem_dout_13_),
     .S(_03925_),
     .Y(_03939_)
@@ -35119,7 +35119,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03733_)
   );
   MUX2X1 _10581_ (
-    .A( mem_backbone_0.pmem_dout_bckup_14_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_14_ ),
     .B(pmem_dout_14_),
     .S(_03925_),
     .Y(_03940_)
@@ -35129,7 +35129,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03734_)
   );
   MUX2X1 _10583_ (
-    .A( mem_backbone_0.pmem_dout_bckup_15_ ),
+    .A(mem_backbone_0.pmem_dout_bckup_15_ ),
     .B(pmem_dout_15_),
     .S(_03925_),
     .Y(_03941_)
@@ -35139,13 +35139,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03735_)
   );
   NOR2X1 _10585_ (
-    .A( mem_backbone_0.fe_pmem_en_dly ),
+    .A(mem_backbone_0.fe_pmem_en_dly ),
     .B(_03818_),
     .Y(_03942_)
   );
   NAND2X1 _10586_ (
     .A(_03737_),
-    .B( mem_backbone_0.pmem_dout_bckup_sel ),
+    .B(mem_backbone_0.pmem_dout_bckup_sel ),
     .Y(_03943_)
   );
   OAI21X1 _10587_ (
@@ -35157,275 +35157,275 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   DFFSR _10588_ (
     .CLK(dco_clk),
     .D(_03720_),
-    .Q( mem_backbone_0.pmem_dout_bckup_0_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_0_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10589_ (
     .CLK(dco_clk),
     .D(_03721_),
-    .Q( mem_backbone_0.pmem_dout_bckup_1_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_1_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10590_ (
     .CLK(dco_clk),
     .D(_03722_),
-    .Q( mem_backbone_0.pmem_dout_bckup_2_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_2_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10591_ (
     .CLK(dco_clk),
     .D(_03723_),
-    .Q( mem_backbone_0.pmem_dout_bckup_3_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_3_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10592_ (
     .CLK(dco_clk),
     .D(_03724_),
-    .Q( mem_backbone_0.pmem_dout_bckup_4_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_4_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10593_ (
     .CLK(dco_clk),
     .D(_03725_),
-    .Q( mem_backbone_0.pmem_dout_bckup_5_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_5_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10594_ (
     .CLK(dco_clk),
     .D(_03726_),
-    .Q( mem_backbone_0.pmem_dout_bckup_6_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_6_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10595_ (
     .CLK(dco_clk),
     .D(_03727_),
-    .Q( mem_backbone_0.pmem_dout_bckup_7_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_7_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10596_ (
     .CLK(dco_clk),
     .D(_03728_),
-    .Q( mem_backbone_0.pmem_dout_bckup_8_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_8_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10597_ (
     .CLK(dco_clk),
     .D(_03729_),
-    .Q( mem_backbone_0.pmem_dout_bckup_9_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_9_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10598_ (
     .CLK(dco_clk),
     .D(_03730_),
-    .Q( mem_backbone_0.pmem_dout_bckup_10_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_10_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10599_ (
     .CLK(dco_clk),
     .D(_03731_),
-    .Q( mem_backbone_0.pmem_dout_bckup_11_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_11_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10600_ (
     .CLK(dco_clk),
     .D(_03732_),
-    .Q( mem_backbone_0.pmem_dout_bckup_12_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_12_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10601_ (
     .CLK(dco_clk),
     .D(_03733_),
-    .Q( mem_backbone_0.pmem_dout_bckup_13_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_13_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10602_ (
     .CLK(dco_clk),
     .D(_03734_),
-    .Q( mem_backbone_0.pmem_dout_bckup_14_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_14_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10603_ (
     .CLK(dco_clk),
     .D(_03735_),
-    .Q( mem_backbone_0.pmem_dout_bckup_15_ ),
+    .Q(mem_backbone_0.pmem_dout_bckup_15_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10604_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.ext_per_en ),
-    .Q( mem_backbone_0.ext_mem_din_sel ),
+    .D(mem_backbone_0.ext_per_en ),
+    .Q(mem_backbone_0.ext_mem_din_sel ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10605_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.ext_pmem_en ),
+    .D(mem_backbone_0.ext_pmem_en ),
     .Q(_03718_),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10606_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.eu_per_en ),
-    .Q( mem_backbone_0.eu_mdb_in_sel_0_ ),
+    .D(mem_backbone_0.eu_per_en ),
+    .Q(mem_backbone_0.eu_mdb_in_sel_0_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10607_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.eu_pmem_en ),
-    .Q( mem_backbone_0.eu_mdb_in_sel_1_ ),
+    .D(mem_backbone_0.eu_pmem_en ),
+    .Q(mem_backbone_0.eu_mdb_in_sel_1_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10608_ (
     .CLK(dco_clk),
     .D(_03736_),
-    .Q( mem_backbone_0.pmem_dout_bckup_sel ),
+    .Q(mem_backbone_0.pmem_dout_bckup_sel ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10609_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.fe_pmem_en ),
-    .Q( mem_backbone_0.fe_pmem_en_dly ),
+    .D(mem_backbone_0.fe_pmem_en ),
+    .Q(mem_backbone_0.fe_pmem_en_dly ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10610_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_0_ ),
-    .Q( mem_backbone_0.per_dout_val_0_ ),
+    .D(mem_backbone_0.per_dout_0_ ),
+    .Q(mem_backbone_0.per_dout_val_0_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10611_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_1_ ),
-    .Q( mem_backbone_0.per_dout_val_1_ ),
+    .D(mem_backbone_0.per_dout_1_ ),
+    .Q(mem_backbone_0.per_dout_val_1_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10612_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_2_ ),
-    .Q( mem_backbone_0.per_dout_val_2_ ),
+    .D(mem_backbone_0.per_dout_2_ ),
+    .Q(mem_backbone_0.per_dout_val_2_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10613_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_3_ ),
-    .Q( mem_backbone_0.per_dout_val_3_ ),
+    .D(mem_backbone_0.per_dout_3_ ),
+    .Q(mem_backbone_0.per_dout_val_3_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10614_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_4_ ),
-    .Q( mem_backbone_0.per_dout_val_4_ ),
+    .D(mem_backbone_0.per_dout_4_ ),
+    .Q(mem_backbone_0.per_dout_val_4_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10615_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_5_ ),
-    .Q( mem_backbone_0.per_dout_val_5_ ),
+    .D(mem_backbone_0.per_dout_5_ ),
+    .Q(mem_backbone_0.per_dout_val_5_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10616_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_6_ ),
-    .Q( mem_backbone_0.per_dout_val_6_ ),
+    .D(mem_backbone_0.per_dout_6_ ),
+    .Q(mem_backbone_0.per_dout_val_6_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10617_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_7_ ),
-    .Q( mem_backbone_0.per_dout_val_7_ ),
+    .D(mem_backbone_0.per_dout_7_ ),
+    .Q(mem_backbone_0.per_dout_val_7_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10618_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_8_ ),
-    .Q( mem_backbone_0.per_dout_val_8_ ),
+    .D(mem_backbone_0.per_dout_8_ ),
+    .Q(mem_backbone_0.per_dout_val_8_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10619_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_9_ ),
-    .Q( mem_backbone_0.per_dout_val_9_ ),
+    .D(mem_backbone_0.per_dout_9_ ),
+    .Q(mem_backbone_0.per_dout_val_9_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10620_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_10_ ),
-    .Q( mem_backbone_0.per_dout_val_10_ ),
+    .D(mem_backbone_0.per_dout_10_ ),
+    .Q(mem_backbone_0.per_dout_val_10_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10621_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_11_ ),
-    .Q( mem_backbone_0.per_dout_val_11_ ),
+    .D(mem_backbone_0.per_dout_11_ ),
+    .Q(mem_backbone_0.per_dout_val_11_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10622_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_12_ ),
-    .Q( mem_backbone_0.per_dout_val_12_ ),
+    .D(mem_backbone_0.per_dout_12_ ),
+    .Q(mem_backbone_0.per_dout_val_12_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10623_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_13_ ),
-    .Q( mem_backbone_0.per_dout_val_13_ ),
+    .D(mem_backbone_0.per_dout_13_ ),
+    .Q(mem_backbone_0.per_dout_val_13_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10624_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_14_ ),
-    .Q( mem_backbone_0.per_dout_val_14_ ),
+    .D(mem_backbone_0.per_dout_14_ ),
+    .Q(mem_backbone_0.per_dout_val_14_ ),
     .R(_03719_),
     .S(1'h1)
   );
   DFFSR _10625_ (
     .CLK(dco_clk),
-    .D( mem_backbone_0.per_dout_15_ ),
-    .Q( mem_backbone_0.per_dout_val_15_ ),
+    .D(mem_backbone_0.per_dout_15_ ),
+    .Q(mem_backbone_0.per_dout_val_15_ ),
     .R(_03719_),
     .S(1'h1)
   );
   INVX1 _10626_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .Y(_04588_)
   );
   INVX1 _10627_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .Y(_04589_)
   );
   INVX1 _10628_ (
@@ -35449,103 +35449,103 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04594_)
   );
   INVX1 _10633_ (
-    .A( multiplier_0.op2_0_ ),
+    .A(multiplier_0.op2_0_ ),
     .Y(_04595_)
   );
   INVX1 _10634_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .Y(_04596_)
   );
   INVX1 _10635_ (
-    .A( multiplier_0.op2_1_ ),
+    .A(multiplier_0.op2_1_ ),
     .Y(_04597_)
   );
   INVX1 _10636_ (
-    .A( multiplier_0.reslo_2_ ),
+    .A(multiplier_0.reslo_2_ ),
     .Y(_04598_)
   );
   INVX1 _10637_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .Y(_04599_)
   );
   INVX1 _10638_ (
-    .A( multiplier_0.op2_2_ ),
+    .A(multiplier_0.op2_2_ ),
     .Y(_04600_)
   );
   INVX1 _10639_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .Y(_04601_)
   );
   INVX1 _10640_ (
-    .A( multiplier_0.op2_3_ ),
+    .A(multiplier_0.op2_3_ ),
     .Y(_04602_)
   );
   INVX1 _10641_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .Y(_04603_)
   );
   INVX1 _10642_ (
-    .A( multiplier_0.op2_4_ ),
+    .A(multiplier_0.op2_4_ ),
     .Y(_04604_)
   );
   INVX1 _10643_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .Y(_04605_)
   );
   INVX1 _10644_ (
-    .A( multiplier_0.op2_5_ ),
+    .A(multiplier_0.op2_5_ ),
     .Y(_04606_)
   );
   INVX1 _10645_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .Y(_04607_)
   );
   INVX1 _10646_ (
-    .A( multiplier_0.op2_6_ ),
+    .A(multiplier_0.op2_6_ ),
     .Y(_04608_)
   );
   INVX1 _10647_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .Y(_04609_)
   );
   INVX1 _10648_ (
-    .A( multiplier_0.op2_7_ ),
+    .A(multiplier_0.op2_7_ ),
     .Y(_04610_)
   );
   INVX1 _10649_ (
-    .A( multiplier_0.op1_8_ ),
+    .A(multiplier_0.op1_8_ ),
     .Y(_04611_)
   );
   INVX1 _10650_ (
-    .A( multiplier_0.reslo_11_ ),
+    .A(multiplier_0.reslo_11_ ),
     .Y(_04612_)
   );
   INVX1 _10651_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .Y(_04613_)
   );
   INVX1 _10652_ (
-    .A( multiplier_0.reslo_15_ ),
+    .A(multiplier_0.reslo_15_ ),
     .Y(_04614_)
   );
   INVX1 _10653_ (
-    .A( multiplier_0.reshi_3_ ),
+    .A(multiplier_0.reshi_3_ ),
     .Y(_04615_)
   );
   INVX1 _10654_ (
-    .A( multiplier_0.reshi_5_ ),
+    .A(multiplier_0.reshi_5_ ),
     .Y(_04616_)
   );
   INVX1 _10655_ (
-    .A( multiplier_0.reshi_7_ ),
+    .A(multiplier_0.reshi_7_ ),
     .Y(_04617_)
   );
   INVX1 _10656_ (
-    .A( multiplier_0.reshi_15_ ),
+    .A(multiplier_0.reshi_15_ ),
     .Y(_04618_)
   );
   INVX1 _10657_ (
-    .A( multiplier_0.sumext_0_ ),
+    .A(multiplier_0.sumext_0_ ),
     .Y(_04619_)
   );
   INVX1 _10658_ (
@@ -35631,64 +35631,64 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _10674_ (
     .A(_04634_),
-    .Y( multiplier_0.op2_wr )
+    .Y(multiplier_0.op2_wr )
   );
   NOR2X1 _10675_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.sign_sel ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.sign_sel ),
     .Y(_04635_)
   );
   NAND2X1 _10676_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.op2_9_ ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.op2_9_ ),
     .Y(_04636_)
   );
   MUX2X1 _10677_ (
-    .A( multiplier_0.op2_9_ ),
-    .B( multiplier_0.op2_1_ ),
-    .S( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.op2_9_ ),
+    .B(multiplier_0.op2_1_ ),
+    .S(multiplier_0.cycle_0_ ),
     .Y(_04637_)
   );
   OAI21X1 _10678_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04597_),
     .C(_04636_),
     .Y(_04638_)
   );
   NAND2X1 _10679_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.op2_8_ ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.op2_8_ ),
     .Y(_04639_)
   );
   NOR2X1 _10680_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04595_),
     .Y(_04640_)
   );
   MUX2X1 _10681_ (
-    .A( multiplier_0.op2_8_ ),
-    .B( multiplier_0.op2_0_ ),
-    .S( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.op2_8_ ),
+    .B(multiplier_0.op2_0_ ),
+    .S(multiplier_0.cycle_0_ ),
     .Y(_04641_)
   );
   OAI21X1 _10682_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04595_),
     .C(_04639_),
     .Y(_04642_)
   );
   AND2X1 _10683_ (
-    .A( multiplier_0.sign_sel ),
-    .B( multiplier_0.op1_15_ ),
+    .A(multiplier_0.sign_sel ),
+    .B(multiplier_0.op1_15_ ),
     .Y(_04643_)
   );
   NAND2X1 _10684_ (
-    .A( multiplier_0.sign_sel ),
-    .B( multiplier_0.op1_15_ ),
+    .A(multiplier_0.sign_sel ),
+    .B(multiplier_0.op1_15_ ),
     .Y(_04644_)
   );
   NAND2X1 _10685_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04642_),
     .Y(_04645_)
   );
@@ -35698,7 +35698,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04646_)
   );
   NAND2X1 _10687_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04638_),
     .Y(_04647_)
   );
@@ -35712,18 +35712,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04649_)
   );
   NAND2X1 _10690_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.op2_10_ ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.op2_10_ ),
     .Y(_04650_)
   );
   OAI21X1 _10691_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04600_),
     .C(_04650_),
     .Y(_04651_)
   );
   NAND2X1 _10692_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04651_),
     .Y(_04652_)
   );
@@ -35743,50 +35743,50 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04655_)
   );
   NAND2X1 _10696_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.op2_13_ ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.op2_13_ ),
     .Y(_04656_)
   );
   OAI21X1 _10697_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04606_),
     .C(_04656_),
     .Y(_04657_)
   );
   NAND2X1 _10698_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .B(_04657_),
     .Y(_04658_)
   );
   NAND2X1 _10699_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.op2_12_ ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.op2_12_ ),
     .Y(_04659_)
   );
   OAI21X1 _10700_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04604_),
     .C(_04659_),
     .Y(_04660_)
   );
   NAND2X1 _10701_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04660_),
     .Y(_04661_)
   );
   NAND2X1 _10702_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.op2_11_ ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.op2_11_ ),
     .Y(_04662_)
   );
   OAI21X1 _10703_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04602_),
     .C(_04662_),
     .Y(_04663_)
   );
   NAND2X1 _10704_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04663_),
     .Y(_04664_)
   );
@@ -35844,12 +35844,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04674_)
   );
   AND2X1 _10715_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04657_),
     .Y(_04675_)
   );
   NAND2X1 _10716_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04657_),
     .Y(_04676_)
   );
@@ -35890,44 +35890,44 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04683_)
   );
   NAND2X1 _10724_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.op2_15_ ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.op2_15_ ),
     .Y(_04684_)
   );
   OAI21X1 _10725_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04610_),
     .C(_04684_),
     .Y(_04685_)
   );
   NAND2X1 _10726_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04685_),
     .Y(_04686_)
   );
   NAND2X1 _10727_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.op2_14_ ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.op2_14_ ),
     .Y(_04687_)
   );
   OAI21X1 _10728_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04608_),
     .C(_04687_),
     .Y(_04688_)
   );
   NAND2X1 _10729_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04688_),
     .Y(_04689_)
   );
   NAND2X1 _10730_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04685_),
     .Y(_04690_)
   );
   NAND2X1 _10731_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04688_),
     .Y(_04691_)
   );
@@ -35937,13 +35937,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04692_)
   );
   NAND3X1 _10733_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.op2_15_ ),
-    .C( multiplier_0.sign_sel ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.op2_15_ ),
+    .C(multiplier_0.sign_sel ),
     .Y(_04693_)
   );
   NOR2X1 _10734_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04693_),
     .Y(_04694_)
   );
@@ -35971,12 +35971,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04698_)
   );
   OR2X1 _10739_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04693_),
     .Y(_04699_)
   );
   NAND2X1 _10740_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .B(_04688_),
     .Y(_04700_)
   );
@@ -35986,7 +35986,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04701_)
   );
   NAND2X1 _10742_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .B(_04685_),
     .Y(_04702_)
   );
@@ -35997,7 +35997,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04703_)
   );
   OAI21X1 _10744_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04693_),
     .C(_04703_),
     .Y(_04704_)
@@ -36062,12 +36062,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04715_)
   );
   OR2X1 _10756_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04693_),
     .Y(_04716_)
   );
   NAND2X1 _10757_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04688_),
     .Y(_04717_)
   );
@@ -36077,7 +36077,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04718_)
   );
   NAND2X1 _10759_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04685_),
     .Y(_04719_)
   );
@@ -36088,7 +36088,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04720_)
   );
   OAI21X1 _10761_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04693_),
     .C(_04720_),
     .Y(_04721_)
@@ -36209,7 +36209,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04743_)
   );
   OR2X1 _10784_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .B(_04693_),
     .Y(_04744_)
   );
@@ -36294,17 +36294,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04760_)
   );
   NAND2X1 _10801_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04657_),
     .Y(_04761_)
   );
   NAND2X1 _10802_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .B(_04660_),
     .Y(_04762_)
   );
   NAND2X1 _10803_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .B(_04663_),
     .Y(_04763_)
   );
@@ -36341,12 +36341,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04769_)
   );
   NAND2X1 _10810_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04685_),
     .Y(_04770_)
   );
   NAND2X1 _10811_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04688_),
     .Y(_04771_)
   );
@@ -36356,7 +36356,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04772_)
   );
   NOR2X1 _10813_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04693_),
     .Y(_04773_)
   );
@@ -36382,7 +36382,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04777_)
   );
   OAI21X1 _10818_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04693_),
     .C(_04696_),
     .Y(_04778_)
@@ -36485,7 +36485,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04797_)
   );
   NAND2X1 _10838_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .B(_04651_),
     .Y(_04798_)
   );
@@ -36527,17 +36527,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04805_)
   );
   NAND2X1 _10846_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04657_),
     .Y(_04806_)
   );
   NAND2X1 _10847_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04660_),
     .Y(_04807_)
   );
   NAND2X1 _10848_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04663_),
     .Y(_04808_)
   );
@@ -36577,17 +36577,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04815_)
   );
   NAND2X1 _10856_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04685_),
     .Y(_04816_)
   );
   NAND2X1 _10857_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04688_),
     .Y(_04817_)
   );
   NOR2X1 _10858_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04693_),
     .Y(_04818_)
   );
@@ -36727,12 +36727,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04844_)
   );
   NAND2X1 _10885_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .B(_04642_),
     .Y(_04845_)
   );
   NAND2X1 _10886_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04651_),
     .Y(_04846_)
   );
@@ -36770,17 +36770,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04852_)
   );
   NAND2X1 _10893_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04657_),
     .Y(_04853_)
   );
   NAND2X1 _10894_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04660_),
     .Y(_04854_)
   );
   NAND2X1 _10895_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04663_),
     .Y(_04855_)
   );
@@ -36816,17 +36816,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04861_)
   );
   NAND2X1 _10902_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04685_),
     .Y(_04862_)
   );
   NAND2X1 _10903_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04688_),
     .Y(_04863_)
   );
   NOR2X1 _10904_ (
-    .A( multiplier_0.op1_8_ ),
+    .A(multiplier_0.op1_8_ ),
     .B(_04693_),
     .Y(_04864_)
   );
@@ -36955,17 +36955,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04888_)
   );
   NAND2X1 _10929_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04638_),
     .Y(_04889_)
   );
   NAND2X1 _10930_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04642_),
     .Y(_04890_)
   );
   NAND2X1 _10931_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04651_),
     .Y(_04891_)
   );
@@ -37000,17 +37000,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04897_)
   );
   NAND2X1 _10938_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04657_),
     .Y(_04898_)
   );
   NAND2X1 _10939_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04660_),
     .Y(_04899_)
   );
   NAND2X1 _10940_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04663_),
     .Y(_04900_)
   );
@@ -37046,17 +37046,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04906_)
   );
   NAND2X1 _10947_ (
-    .A( multiplier_0.op1_8_ ),
+    .A(multiplier_0.op1_8_ ),
     .B(_04685_),
     .Y(_04907_)
   );
   NAND2X1 _10948_ (
-    .A( multiplier_0.op1_8_ ),
+    .A(multiplier_0.op1_8_ ),
     .B(_04688_),
     .Y(_04908_)
   );
   NOR2X1 _10949_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .B(_04693_),
     .Y(_04909_)
   );
@@ -37189,17 +37189,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04934_)
   );
   NAND2X1 _10975_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04638_),
     .Y(_04935_)
   );
   NAND2X1 _10976_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04642_),
     .Y(_04936_)
   );
   NAND2X1 _10977_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04651_),
     .Y(_04937_)
   );
@@ -37232,17 +37232,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04942_)
   );
   NAND2X1 _10983_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04657_),
     .Y(_04943_)
   );
   NAND2X1 _10984_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04660_),
     .Y(_04944_)
   );
   NAND2X1 _10985_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04663_),
     .Y(_04945_)
   );
@@ -37278,17 +37278,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04951_)
   );
   NAND2X1 _10992_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .B(_04685_),
     .Y(_04952_)
   );
   NAND2X1 _10993_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .B(_04688_),
     .Y(_04953_)
   );
   NOR2X1 _10994_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .B(_04693_),
     .Y(_04954_)
   );
@@ -37407,17 +37407,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04976_)
   );
   NAND2X1 _11017_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04638_),
     .Y(_04977_)
   );
   NAND2X1 _11018_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04642_),
     .Y(_04978_)
   );
   NAND2X1 _11019_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04651_),
     .Y(_04979_)
   );
@@ -37448,17 +37448,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04984_)
   );
   NAND2X1 _11025_ (
-    .A( multiplier_0.op1_8_ ),
+    .A(multiplier_0.op1_8_ ),
     .B(_04657_),
     .Y(_04985_)
   );
   NAND2X1 _11026_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04660_),
     .Y(_04986_)
   );
   NAND2X1 _11027_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04663_),
     .Y(_04987_)
   );
@@ -37494,17 +37494,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04993_)
   );
   NAND2X1 _11034_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .B(_04685_),
     .Y(_04994_)
   );
   NAND2X1 _11035_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .B(_04688_),
     .Y(_04995_)
   );
   NOR2X1 _11036_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .B(_04693_),
     .Y(_04996_)
   );
@@ -37637,17 +37637,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05021_)
   );
   NAND2X1 _11062_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04638_),
     .Y(_05022_)
   );
   NAND2X1 _11063_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04642_),
     .Y(_05023_)
   );
   NAND2X1 _11064_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04651_),
     .Y(_05024_)
   );
@@ -37678,17 +37678,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05029_)
   );
   NAND2X1 _11070_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .B(_04657_),
     .Y(_05030_)
   );
   NAND2X1 _11071_ (
-    .A( multiplier_0.op1_8_ ),
+    .A(multiplier_0.op1_8_ ),
     .B(_04660_),
     .Y(_05031_)
   );
   NAND2X1 _11072_ (
-    .A( multiplier_0.op1_8_ ),
+    .A(multiplier_0.op1_8_ ),
     .B(_04663_),
     .Y(_05032_)
   );
@@ -37724,17 +37724,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05038_)
   );
   NAND2X1 _11079_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .B(_04685_),
     .Y(_05039_)
   );
   NAND2X1 _11080_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .B(_04688_),
     .Y(_05040_)
   );
   NOR2X1 _11081_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .B(_04693_),
     .Y(_05041_)
   );
@@ -37858,17 +37858,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05064_)
   );
   NAND2X1 _11105_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04638_),
     .Y(_05065_)
   );
   NAND2X1 _11106_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04642_),
     .Y(_05066_)
   );
   NAND2X1 _11107_ (
-    .A( multiplier_0.op1_8_ ),
+    .A(multiplier_0.op1_8_ ),
     .B(_04651_),
     .Y(_05067_)
   );
@@ -37899,17 +37899,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05072_)
   );
   NAND2X1 _11113_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .B(_04657_),
     .Y(_05073_)
   );
   NAND2X1 _11114_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .B(_04660_),
     .Y(_05074_)
   );
   NAND2X1 _11115_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .B(_04663_),
     .Y(_05075_)
   );
@@ -37945,17 +37945,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05081_)
   );
   NAND2X1 _11122_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .B(_04685_),
     .Y(_05082_)
   );
   NAND2X1 _11123_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .B(_04688_),
     .Y(_05083_)
   );
   NOR2X1 _11124_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .B(_04693_),
     .Y(_05084_)
   );
@@ -38104,7 +38104,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05112_)
   );
   NAND2X1 _11153_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .B(_04651_),
     .Y(_05113_)
   );
@@ -38141,17 +38141,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05119_)
   );
   NAND2X1 _11160_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .B(_04657_),
     .Y(_05120_)
   );
   NAND2X1 _11161_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .B(_04660_),
     .Y(_05121_)
   );
   AND2X1 _11162_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .B(_04663_),
     .Y(_05122_)
   );
@@ -38200,17 +38200,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05131_)
   );
   NAND2X1 _11172_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .B(_04685_),
     .Y(_05132_)
   );
   NAND2X1 _11173_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .B(_04688_),
     .Y(_05133_)
   );
   NOR2X1 _11174_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04693_),
     .Y(_05134_)
   );
@@ -38374,17 +38374,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05165_)
   );
   NAND2X1 _11206_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .B(_04657_),
     .Y(_05166_)
   );
   NAND2X1 _11207_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .B(_04660_),
     .Y(_05167_)
   );
   NAND2X1 _11208_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .B(_04663_),
     .Y(_05168_)
   );
@@ -38420,12 +38420,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05174_)
   );
   NAND2X1 _11215_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04685_),
     .Y(_05175_)
   );
   NAND2X1 _11216_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04688_),
     .Y(_05176_)
   );
@@ -38435,7 +38435,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05177_)
   );
   NOR2X1 _11218_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .B(_04693_),
     .Y(_05178_)
   );
@@ -38582,7 +38582,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05205_)
   );
   AND2X1 _11246_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .B(_04651_),
     .Y(_05206_)
   );
@@ -38608,12 +38608,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05210_)
   );
   NAND2X1 _11251_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .B(_04660_),
     .Y(_05211_)
   );
   NAND2X1 _11252_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .B(_04651_),
     .Y(_05212_)
   );
@@ -38663,17 +38663,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05221_)
   );
   NAND2X1 _11262_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .B(_04657_),
     .Y(_05222_)
   );
   NAND2X1 _11263_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04657_),
     .Y(_05223_)
   );
   NAND2X1 _11264_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .B(_04685_),
     .Y(_05224_)
   );
@@ -38797,7 +38797,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05247_)
   );
   NAND2X1 _11288_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .B(_04651_),
     .Y(_05248_)
   );
@@ -38828,17 +38828,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05253_)
   );
   NAND2X1 _11294_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .B(_04660_),
     .Y(_05254_)
   );
   NAND2X1 _11295_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .B(_04663_),
     .Y(_05255_)
   );
   NAND2X1 _11296_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .B(_04663_),
     .Y(_05256_)
   );
@@ -38874,12 +38874,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05262_)
   );
   AND2X1 _11303_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04688_),
     .Y(_05263_)
   );
   NAND3X1 _11304_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .B(_04685_),
     .C(_05263_),
     .Y(_05264_)
@@ -39002,7 +39002,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05287_)
   );
   NAND2X1 _11328_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .B(_04651_),
     .Y(_05288_)
   );
@@ -39028,17 +39028,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05292_)
   );
   NAND2X1 _11333_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .B(_04657_),
     .Y(_05293_)
   );
   NAND2X1 _11334_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04660_),
     .Y(_05294_)
   );
   AND2X1 _11335_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04663_),
     .Y(_05295_)
   );
@@ -39079,10 +39079,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05302_)
   );
   AOI22X1 _11343_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04685_),
     .C(_04688_),
-    .D( multiplier_0.op1_1_ ),
+    .D(multiplier_0.op1_1_ ),
     .Y(_05303_)
   );
   NOR2X1 _11344_ (
@@ -39187,7 +39187,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05323_)
   );
   NAND2X1 _11364_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04651_),
     .Y(_05324_)
   );
@@ -39213,17 +39213,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05328_)
   );
   NAND2X1 _11369_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04657_),
     .Y(_05329_)
   );
   NAND2X1 _11370_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .B(_04660_),
     .Y(_05330_)
   );
   NAND3X1 _11371_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .B(_04660_),
     .C(_05295_),
     .Y(_05331_)
@@ -39318,7 +39318,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05348_)
   );
   OR2X1 _11389_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04693_),
     .Y(_05349_)
   );
@@ -39349,18 +39349,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05354_)
   );
   NAND3X1 _11395_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04638_),
     .C(_05322_),
     .Y(_05355_)
   );
   NAND2X1 _11396_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .B(_04651_),
     .Y(_05356_)
   );
   AOI21X1 _11397_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04638_),
     .C(_05322_),
     .Y(_05357_)
@@ -39394,14 +39394,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05362_)
   );
   AOI22X1 _11403_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04660_),
     .C(_04663_),
-    .D( multiplier_0.op1_1_ ),
+    .D(multiplier_0.op1_1_ ),
     .Y(_05363_)
   );
   NAND2X1 _11404_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04663_),
     .Y(_05364_)
   );
@@ -39493,13 +39493,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05381_)
   );
   NAND3X1 _11422_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04642_),
     .C(_05381_),
     .Y(_05382_)
   );
   NAND2X1 _11423_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04651_),
     .Y(_05383_)
   );
@@ -39583,17 +39583,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04016_)
   );
   NAND2X1 _11439_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04640_),
     .Y(_04017_)
   );
   NAND2X1 _11440_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04638_),
     .Y(_04018_)
   );
   NAND3X1 _11441_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04642_),
     .C(_05381_),
     .Y(_04019_)
@@ -39787,7 +39787,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04053_)
   );
   NOR2X1 _11476_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04693_),
     .Y(_04054_)
   );
@@ -39849,8 +39849,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04065_)
   );
   OAI21X1 _11488_ (
-    .A( multiplier_0.cycle_0_ ),
-    .B( multiplier_0.sign_sel ),
+    .A(multiplier_0.cycle_0_ ),
+    .B(multiplier_0.sign_sel ),
     .C(_04065_),
     .Y(_04066_)
   );
@@ -39869,12 +39869,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04069_)
   );
   NAND2X1 _11492_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04069_),
     .Y(_04070_)
   );
   NOR2X1 _11493_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04065_),
     .Y(_04071_)
   );
@@ -39893,13 +39893,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04074_)
   );
   NAND3X1 _11497_ (
-    .A( multiplier_0.reshi_14_ ),
+    .A(multiplier_0.reshi_14_ ),
     .B(_04070_),
     .C(_04072_),
     .Y(_04075_)
   );
   XOR2X1 _11498_ (
-    .A( multiplier_0.reshi_14_ ),
+    .A(multiplier_0.reshi_14_ ),
     .B(_04074_),
     .Y(_04076_)
   );
@@ -39919,12 +39919,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04079_)
   );
   OR2X1 _11502_ (
-    .A( multiplier_0.reshi_13_ ),
+    .A(multiplier_0.reshi_13_ ),
     .B(_04079_),
     .Y(_04080_)
   );
   NAND2X1 _11503_ (
-    .A( multiplier_0.reshi_13_ ),
+    .A(multiplier_0.reshi_13_ ),
     .B(_04079_),
     .Y(_04081_)
   );
@@ -39938,18 +39938,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04083_)
   );
   AOI21X1 _11506_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04083_),
     .C(_04073_),
     .Y(_04084_)
   );
   NAND2X1 _11507_ (
-    .A( multiplier_0.reshi_12_ ),
+    .A(multiplier_0.reshi_12_ ),
     .B(_04084_),
     .Y(_04085_)
   );
   XNOR2X1 _11508_ (
-    .A( multiplier_0.reshi_12_ ),
+    .A(multiplier_0.reshi_12_ ),
     .B(_04084_),
     .Y(_04086_)
   );
@@ -39969,12 +39969,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04089_)
   );
   AND2X1 _11512_ (
-    .A( multiplier_0.reshi_11_ ),
+    .A(multiplier_0.reshi_11_ ),
     .B(_04089_),
     .Y(_04090_)
   );
   XNOR2X1 _11513_ (
-    .A( multiplier_0.reshi_11_ ),
+    .A(multiplier_0.reshi_11_ ),
     .B(_04089_),
     .Y(_04091_)
   );
@@ -39988,7 +39988,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04093_)
   );
   NAND2X1 _11516_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04093_),
     .Y(_04094_)
   );
@@ -39998,13 +39998,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04095_)
   );
   NAND3X1 _11518_ (
-    .A( multiplier_0.reshi_10_ ),
+    .A(multiplier_0.reshi_10_ ),
     .B(_04072_),
     .C(_04094_),
     .Y(_04096_)
   );
   XOR2X1 _11519_ (
-    .A( multiplier_0.reshi_10_ ),
+    .A(multiplier_0.reshi_10_ ),
     .B(_04095_),
     .Y(_04097_)
   );
@@ -40014,7 +40014,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04098_)
   );
   NAND2X1 _11521_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04098_),
     .Y(_04099_)
   );
@@ -40024,17 +40024,17 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04100_)
   );
   NOR2X1 _11523_ (
-    .A( multiplier_0.reshi_9_ ),
+    .A(multiplier_0.reshi_9_ ),
     .B(_04100_),
     .Y(_04101_)
   );
   OR2X1 _11524_ (
-    .A( multiplier_0.reshi_9_ ),
+    .A(multiplier_0.reshi_9_ ),
     .B(_04100_),
     .Y(_04102_)
   );
   AND2X1 _11525_ (
-    .A( multiplier_0.reshi_9_ ),
+    .A(multiplier_0.reshi_9_ ),
     .B(_04100_),
     .Y(_04103_)
   );
@@ -40044,7 +40044,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04104_)
   );
   NAND2X1 _11527_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04104_),
     .Y(_04105_)
   );
@@ -40054,7 +40054,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04106_)
   );
   NAND3X1 _11529_ (
-    .A( multiplier_0.reshi_8_ ),
+    .A(multiplier_0.reshi_8_ ),
     .B(_04072_),
     .C(_04105_),
     .Y(_04107_)
@@ -40062,11 +40062,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _11530_ (
     .A(_04072_),
     .B(_04105_),
-    .C( multiplier_0.reshi_8_ ),
+    .C(multiplier_0.reshi_8_ ),
     .Y(_04108_)
   );
   XOR2X1 _11531_ (
-    .A( multiplier_0.reshi_8_ ),
+    .A(multiplier_0.reshi_8_ ),
     .B(_04106_),
     .Y(_04109_)
   );
@@ -40092,7 +40092,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04113_)
   );
   NOR2X1 _11536_ (
-    .A( multiplier_0.reshi_7_ ),
+    .A(multiplier_0.reshi_7_ ),
     .B(_04112_),
     .Y(_04114_)
   );
@@ -40119,12 +40119,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04118_)
   );
   NAND2X1 _11541_ (
-    .A( multiplier_0.reshi_6_ ),
+    .A(multiplier_0.reshi_6_ ),
     .B(_04118_),
     .Y(_04119_)
   );
   XNOR2X1 _11542_ (
-    .A( multiplier_0.reshi_6_ ),
+    .A(multiplier_0.reshi_6_ ),
     .B(_04118_),
     .Y(_04120_)
   );
@@ -40134,12 +40134,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04121_)
   );
   NAND2X1 _11544_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04121_),
     .Y(_04122_)
   );
   OAI21X1 _11545_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04077_),
     .C(_04122_),
     .Y(_04123_)
@@ -40161,12 +40161,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04126_)
   );
   NAND2X1 _11549_ (
-    .A( multiplier_0.reshi_4_ ),
+    .A(multiplier_0.reshi_4_ ),
     .B(_04126_),
     .Y(_04127_)
   );
   XNOR2X1 _11550_ (
-    .A( multiplier_0.reshi_4_ ),
+    .A(multiplier_0.reshi_4_ ),
     .B(_04126_),
     .Y(_04128_)
   );
@@ -40198,12 +40198,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04133_)
   );
   NAND2X1 _11556_ (
-    .A( multiplier_0.reshi_2_ ),
+    .A(multiplier_0.reshi_2_ ),
     .B(_04133_),
     .Y(_04134_)
   );
   XNOR2X1 _11557_ (
-    .A( multiplier_0.reshi_2_ ),
+    .A(multiplier_0.reshi_2_ ),
     .B(_04133_),
     .Y(_04135_)
   );
@@ -40219,7 +40219,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04137_)
   );
   AND2X1 _11560_ (
-    .A( multiplier_0.reshi_1_ ),
+    .A(multiplier_0.reshi_1_ ),
     .B(_04137_),
     .Y(_04138_)
   );
@@ -40235,7 +40235,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04140_)
   );
   NAND2X1 _11563_ (
-    .A( multiplier_0.reshi_0_ ),
+    .A(multiplier_0.reshi_0_ ),
     .B(_04140_),
     .Y(_04141_)
   );
@@ -40245,12 +40245,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04142_)
   );
   NAND2X1 _11565_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04142_),
     .Y(_04143_)
   );
   OAI21X1 _11566_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04110_),
     .C(_04143_),
     .Y(_04144_)
@@ -40272,23 +40272,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04147_)
   );
   NAND2X1 _11570_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04147_),
     .Y(_04148_)
   );
   OAI21X1 _11571_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04117_),
     .C(_04148_),
     .Y(_04149_)
   );
   NAND2X1 _11572_ (
-    .A( multiplier_0.reslo_14_ ),
+    .A(multiplier_0.reslo_14_ ),
     .B(_04149_),
     .Y(_04150_)
   );
   XNOR2X1 _11573_ (
-    .A( multiplier_0.reslo_14_ ),
+    .A(multiplier_0.reslo_14_ ),
     .B(_04149_),
     .Y(_04151_)
   );
@@ -40304,7 +40304,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04153_)
   );
   AND2X1 _11576_ (
-    .A( multiplier_0.reslo_13_ ),
+    .A(multiplier_0.reslo_13_ ),
     .B(_04153_),
     .Y(_04154_)
   );
@@ -40314,23 +40314,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04155_)
   );
   NAND2X1 _11578_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04155_),
     .Y(_04156_)
   );
   OAI21X1 _11579_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04125_),
     .C(_04156_),
     .Y(_04157_)
   );
   NAND2X1 _11580_ (
-    .A( multiplier_0.reslo_12_ ),
+    .A(multiplier_0.reslo_12_ ),
     .B(_04157_),
     .Y(_04158_)
   );
   XNOR2X1 _11581_ (
-    .A( multiplier_0.reslo_12_ ),
+    .A(multiplier_0.reslo_12_ ),
     .B(_04157_),
     .Y(_04159_)
   );
@@ -40351,7 +40351,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04162_)
   );
   XNOR2X1 _11585_ (
-    .A( multiplier_0.reslo_11_ ),
+    .A(multiplier_0.reslo_11_ ),
     .B(_04161_),
     .Y(_04163_)
   );
@@ -40361,23 +40361,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04164_)
   );
   NAND2X1 _11587_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04164_),
     .Y(_04165_)
   );
   OAI21X1 _11588_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04132_),
     .C(_04165_),
     .Y(_04166_)
   );
   NAND2X1 _11589_ (
-    .A( multiplier_0.reslo_10_ ),
+    .A(multiplier_0.reslo_10_ ),
     .B(_04166_),
     .Y(_04167_)
   );
   XNOR2X1 _11590_ (
-    .A( multiplier_0.reslo_10_ ),
+    .A(multiplier_0.reslo_10_ ),
     .B(_04166_),
     .Y(_04168_)
   );
@@ -40393,28 +40393,28 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04170_)
   );
   NAND2X1 _11593_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04170_),
     .Y(_04171_)
   );
   OAI21X1 _11594_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04136_),
     .C(_04171_),
     .Y(_04172_)
   );
   AND2X1 _11595_ (
-    .A( multiplier_0.reslo_9_ ),
+    .A(multiplier_0.reslo_9_ ),
     .B(_04172_),
     .Y(_04173_)
   );
   NAND2X1 _11596_ (
-    .A( multiplier_0.reslo_9_ ),
+    .A(multiplier_0.reslo_9_ ),
     .B(_04172_),
     .Y(_04174_)
   );
   OR2X1 _11597_ (
-    .A( multiplier_0.reslo_9_ ),
+    .A(multiplier_0.reslo_9_ ),
     .B(_04172_),
     .Y(_04175_)
   );
@@ -40424,8 +40424,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04176_)
   );
   AOI21X1 _11599_ (
-    .A( multiplier_0.op2_8_ ),
-    .B( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op2_8_ ),
+    .B(multiplier_0.op1_0_ ),
     .C(_04589_),
     .Y(_04177_)
   );
@@ -40436,27 +40436,27 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04178_)
   );
   NAND2X1 _11601_ (
-    .A( multiplier_0.reslo_8_ ),
+    .A(multiplier_0.reslo_8_ ),
     .B(_04178_),
     .Y(_04179_)
   );
   NOR2X1 _11602_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04142_),
     .Y(_04180_)
   );
   AND2X1 _11603_ (
-    .A( multiplier_0.reslo_7_ ),
+    .A(multiplier_0.reslo_7_ ),
     .B(_04180_),
     .Y(_04181_)
   );
   NAND2X1 _11604_ (
-    .A( multiplier_0.reslo_7_ ),
+    .A(multiplier_0.reslo_7_ ),
     .B(_04180_),
     .Y(_04182_)
   );
   OR2X1 _11605_ (
-    .A( multiplier_0.reslo_7_ ),
+    .A(multiplier_0.reslo_7_ ),
     .B(_04180_),
     .Y(_04183_)
   );
@@ -40472,38 +40472,38 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _11608_ (
     .A(_04589_),
-    .B( multiplier_0.reslo_6_ ),
+    .B(multiplier_0.reslo_6_ ),
     .C(_04147_),
     .Y(_04186_)
   );
   AOI21X1 _11609_ (
     .A(_04589_),
     .B(_04147_),
-    .C( multiplier_0.reslo_6_ ),
+    .C(multiplier_0.reslo_6_ ),
     .Y(_04187_)
   );
   XNOR2X1 _11610_ (
-    .A( multiplier_0.reslo_6_ ),
+    .A(multiplier_0.reslo_6_ ),
     .B(_04185_),
     .Y(_04188_)
   );
   NOR2X1 _11611_ (
-    .A( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_0_ ),
     .B(_04152_),
     .Y(_04189_)
   );
   AND2X1 _11612_ (
-    .A( multiplier_0.reslo_5_ ),
+    .A(multiplier_0.reslo_5_ ),
     .B(_04189_),
     .Y(_04190_)
   );
   NAND2X1 _11613_ (
-    .A( multiplier_0.reslo_5_ ),
+    .A(multiplier_0.reslo_5_ ),
     .B(_04189_),
     .Y(_04191_)
   );
   OR2X1 _11614_ (
-    .A( multiplier_0.reslo_5_ ),
+    .A(multiplier_0.reslo_5_ ),
     .B(_04189_),
     .Y(_04192_)
   );
@@ -40519,7 +40519,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _11617_ (
     .A(_04589_),
-    .B( multiplier_0.reslo_4_ ),
+    .B(multiplier_0.reslo_4_ ),
     .C(_04155_),
     .Y(_04195_)
   );
@@ -40530,18 +40530,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _11619_ (
     .A(_04589_),
-    .B( multiplier_0.reslo_3_ ),
+    .B(multiplier_0.reslo_3_ ),
     .C(_04160_),
     .Y(_04197_)
   );
   AOI21X1 _11620_ (
     .A(_04589_),
     .B(_04160_),
-    .C( multiplier_0.reslo_3_ ),
+    .C(multiplier_0.reslo_3_ ),
     .Y(_04198_)
   );
   XNOR2X1 _11621_ (
-    .A( multiplier_0.reslo_3_ ),
+    .A(multiplier_0.reslo_3_ ),
     .B(_04196_),
     .Y(_04199_)
   );
@@ -40556,7 +40556,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04201_)
   );
   XNOR2X1 _11624_ (
-    .A( multiplier_0.reslo_2_ ),
+    .A(multiplier_0.reslo_2_ ),
     .B(_04200_),
     .Y(_04202_)
   );
@@ -40567,24 +40567,24 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND3X1 _11626_ (
     .A(_04589_),
-    .B( multiplier_0.reslo_1_ ),
+    .B(multiplier_0.reslo_1_ ),
     .C(_04170_),
     .Y(_04204_)
   );
   NAND3X1 _11627_ (
-    .A( multiplier_0.reslo_0_ ),
-    .B( multiplier_0.op1_0_ ),
+    .A(multiplier_0.reslo_0_ ),
+    .B(multiplier_0.op1_0_ ),
     .C(_04640_),
     .Y(_04205_)
   );
   AOI21X1 _11628_ (
     .A(_04589_),
     .B(_04170_),
-    .C( multiplier_0.reslo_1_ ),
+    .C(multiplier_0.reslo_1_ ),
     .Y(_04206_)
   );
   XNOR2X1 _11629_ (
-    .A( multiplier_0.reslo_1_ ),
+    .A(multiplier_0.reslo_1_ ),
     .B(_04203_),
     .Y(_04207_)
   );
@@ -40611,7 +40611,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04211_)
   );
   XOR2X1 _11634_ (
-    .A( multiplier_0.reslo_4_ ),
+    .A(multiplier_0.reslo_4_ ),
     .B(_04194_),
     .Y(_04212_)
   );
@@ -40640,7 +40640,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04216_)
   );
   XNOR2X1 _11639_ (
-    .A( multiplier_0.reslo_8_ ),
+    .A(multiplier_0.reslo_8_ ),
     .B(_04178_),
     .Y(_04217_)
   );
@@ -40675,7 +40675,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04222_)
   );
   XOR2X1 _11645_ (
-    .A( multiplier_0.reslo_13_ ),
+    .A(multiplier_0.reslo_13_ ),
     .B(_04153_),
     .Y(_04223_)
   );
@@ -40692,7 +40692,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04225_)
   );
   XNOR2X1 _11648_ (
-    .A( multiplier_0.reslo_15_ ),
+    .A(multiplier_0.reslo_15_ ),
     .B(_04144_),
     .Y(_04226_)
   );
@@ -40703,7 +40703,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04227_)
   );
   XNOR2X1 _11650_ (
-    .A( multiplier_0.reshi_0_ ),
+    .A(multiplier_0.reshi_0_ ),
     .B(_04140_),
     .Y(_04228_)
   );
@@ -40714,7 +40714,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04229_)
   );
   XOR2X1 _11652_ (
-    .A( multiplier_0.reshi_1_ ),
+    .A(multiplier_0.reshi_1_ ),
     .B(_04137_),
     .Y(_04230_)
   );
@@ -40731,7 +40731,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04232_)
   );
   XNOR2X1 _11655_ (
-    .A( multiplier_0.reshi_3_ ),
+    .A(multiplier_0.reshi_3_ ),
     .B(_04130_),
     .Y(_04233_)
   );
@@ -40748,7 +40748,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04235_)
   );
   XNOR2X1 _11658_ (
-    .A( multiplier_0.reshi_5_ ),
+    .A(multiplier_0.reshi_5_ ),
     .B(_04123_),
     .Y(_04236_)
   );
@@ -40825,7 +40825,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04248_)
   );
   NOR2X1 _11671_ (
-    .A( multiplier_0.sign_sel ),
+    .A(multiplier_0.sign_sel ),
     .B(_04248_),
     .Y(_04249_)
   );
@@ -40835,12 +40835,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04250_)
   );
   AND2X1 _11673_ (
-    .A( multiplier_0.sign_sel ),
+    .A(multiplier_0.sign_sel ),
     .B(_04250_),
     .Y(_04251_)
   );
   AOI21X1 _11674_ (
-    .A( multiplier_0.sign_sel ),
+    .A(multiplier_0.sign_sel ),
     .B(_04250_),
     .C(_04588_),
     .Y(_04252_)
@@ -40873,8 +40873,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04257_)
   );
   OAI21X1 _11680_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.sumext_0_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.sumext_0_ ),
     .C(_04257_),
     .Y(_04258_)
   );
@@ -40894,13 +40894,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04261_)
   );
   OAI21X1 _11684_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_0_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_0_ ),
     .C(_04261_),
     .Y(_04262_)
   );
   AOI21X1 _11685_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04259_),
     .C(_04262_),
     .Y(_04263_)
@@ -40915,18 +40915,18 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04265_)
   );
   XOR2X1 _11688_ (
-    .A( multiplier_0.reslo_0_ ),
+    .A(multiplier_0.reslo_0_ ),
     .B(_04017_),
     .Y(_04266_)
   );
   NAND2X1 _11689_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04266_),
     .Y(_04267_)
   );
   OAI21X1 _11690_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_0_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_0_ ),
     .C(_04267_),
     .Y(_04268_)
   );
@@ -40941,10 +40941,10 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04270_)
   );
   AOI22X1 _11693_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_0_ ),
+    .D(multiplier_0.op2_0_ ),
     .Y(_04271_)
   );
   OAI21X1 _11694_ (
@@ -40962,11 +40962,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04253_),
     .B(_04258_),
     .C(_04273_),
-    .Y( multiplier_0.per_dout_0_ )
+    .Y(multiplier_0.per_dout_0_ )
   );
   OAI21X1 _11697_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.sumext_10_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.sumext_10_ ),
     .C(_04257_),
     .Y(_04274_)
   );
@@ -40981,13 +40981,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04276_)
   );
   OAI21X1 _11700_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_1_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_1_ ),
     .C(_04261_),
     .Y(_04277_)
   );
   AOI21X1 _11701_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04276_),
     .C(_04277_),
     .Y(_04278_)
@@ -40998,21 +40998,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04279_)
   );
   AND2X1 _11703_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04279_),
     .Y(_04280_)
   );
   OAI21X1 _11704_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_1_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_1_ ),
     .C(_04264_),
     .Y(_04281_)
   );
   AOI22X1 _11705_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_1_ ),
+    .D(multiplier_0.op2_1_ ),
     .Y(_04282_)
   );
   OAI21X1 _11706_ (
@@ -41030,7 +41030,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04284_),
-    .Y( multiplier_0.per_dout_1_ )
+    .Y(multiplier_0.per_dout_1_ )
   );
   XNOR2X1 _11709_ (
     .A(_04135_),
@@ -41038,13 +41038,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04285_)
   );
   OAI21X1 _11710_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_2_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_2_ ),
     .C(_04261_),
     .Y(_04286_)
   );
   AOI21X1 _11711_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04285_),
     .C(_04286_),
     .Y(_04287_)
@@ -41055,21 +41055,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04288_)
   );
   AND2X1 _11713_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04288_),
     .Y(_04289_)
   );
   OAI21X1 _11714_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_2_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_2_ ),
     .C(_04264_),
     .Y(_04290_)
   );
   AOI22X1 _11715_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_2_ ),
+    .D(multiplier_0.op2_2_ ),
     .Y(_04291_)
   );
   OAI21X1 _11716_ (
@@ -41087,7 +41087,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04293_),
-    .Y( multiplier_0.per_dout_2_ )
+    .Y(multiplier_0.per_dout_2_ )
   );
   XNOR2X1 _11719_ (
     .A(_04232_),
@@ -41095,13 +41095,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04294_)
   );
   OAI21X1 _11720_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_3_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_3_ ),
     .C(_04261_),
     .Y(_04295_)
   );
   AOI21X1 _11721_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04294_),
     .C(_04295_),
     .Y(_04296_)
@@ -41121,16 +41121,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04299_)
   );
   OAI21X1 _11725_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_3_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_3_ ),
     .C(_04264_),
     .Y(_04300_)
   );
   AOI22X1 _11726_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_3_ ),
+    .D(multiplier_0.op2_3_ ),
     .Y(_04301_)
   );
   OAI21X1 _11727_ (
@@ -41148,7 +41148,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04303_),
-    .Y( multiplier_0.per_dout_3_ )
+    .Y(multiplier_0.per_dout_3_ )
   );
   XNOR2X1 _11730_ (
     .A(_04128_),
@@ -41156,13 +41156,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04304_)
   );
   OAI21X1 _11731_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_4_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_4_ ),
     .C(_04261_),
     .Y(_04305_)
   );
   AOI21X1 _11732_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04304_),
     .C(_04305_),
     .Y(_04306_)
@@ -41182,16 +41182,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04309_)
   );
   OAI21X1 _11736_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_4_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_4_ ),
     .C(_04264_),
     .Y(_04310_)
   );
   AOI22X1 _11737_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_4_ ),
+    .D(multiplier_0.op2_4_ ),
     .Y(_04311_)
   );
   OAI21X1 _11738_ (
@@ -41209,7 +41209,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04313_),
-    .Y( multiplier_0.per_dout_4_ )
+    .Y(multiplier_0.per_dout_4_ )
   );
   XNOR2X1 _11741_ (
     .A(_04235_),
@@ -41217,13 +41217,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04314_)
   );
   OAI21X1 _11742_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_5_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_5_ ),
     .C(_04261_),
     .Y(_04315_)
   );
   AOI21X1 _11743_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04314_),
     .C(_04315_),
     .Y(_04316_)
@@ -41243,16 +41243,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04319_)
   );
   OAI21X1 _11747_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_5_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_5_ ),
     .C(_04264_),
     .Y(_04320_)
   );
   AOI22X1 _11748_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_5_ ),
+    .D(multiplier_0.op2_5_ ),
     .Y(_04321_)
   );
   OAI21X1 _11749_ (
@@ -41270,7 +41270,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04323_),
-    .Y( multiplier_0.per_dout_5_ )
+    .Y(multiplier_0.per_dout_5_ )
   );
   XNOR2X1 _11752_ (
     .A(_04120_),
@@ -41278,13 +41278,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04324_)
   );
   OAI21X1 _11753_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_6_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_6_ ),
     .C(_04261_),
     .Y(_04325_)
   );
   AOI21X1 _11754_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04324_),
     .C(_04325_),
     .Y(_04326_)
@@ -41295,21 +41295,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04327_)
   );
   AND2X1 _11756_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04327_),
     .Y(_04328_)
   );
   OAI21X1 _11757_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_6_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_6_ ),
     .C(_04264_),
     .Y(_04329_)
   );
   AOI22X1 _11758_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_6_ ),
+    .D(multiplier_0.op2_6_ ),
     .Y(_04330_)
   );
   OAI21X1 _11759_ (
@@ -41327,7 +41327,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04332_),
-    .Y( multiplier_0.per_dout_6_ )
+    .Y(multiplier_0.per_dout_6_ )
   );
   XNOR2X1 _11762_ (
     .A(_04116_),
@@ -41335,13 +41335,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04333_)
   );
   OAI21X1 _11763_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_7_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_7_ ),
     .C(_04261_),
     .Y(_04334_)
   );
   AOI21X1 _11764_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04333_),
     .C(_04334_),
     .Y(_04335_)
@@ -41361,16 +41361,16 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04338_)
   );
   OAI21X1 _11768_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_7_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_7_ ),
     .C(_04264_),
     .Y(_04339_)
   );
   AOI22X1 _11769_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_7_ ),
+    .D(multiplier_0.op2_7_ ),
     .Y(_04340_)
   );
   OAI21X1 _11770_ (
@@ -41388,7 +41388,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04342_),
-    .Y( multiplier_0.per_dout_7_ )
+    .Y(multiplier_0.per_dout_7_ )
   );
   XNOR2X1 _11773_ (
     .A(_04109_),
@@ -41396,13 +41396,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04343_)
   );
   OAI21X1 _11774_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_8_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_8_ ),
     .C(_04261_),
     .Y(_04344_)
   );
   AOI21X1 _11775_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04343_),
     .C(_04344_),
     .Y(_04345_)
@@ -41413,21 +41413,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04346_)
   );
   AND2X1 _11777_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04346_),
     .Y(_04347_)
   );
   OAI21X1 _11778_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_8_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_8_ ),
     .C(_04264_),
     .Y(_04348_)
   );
   AOI22X1 _11779_ (
-    .A( multiplier_0.op1_8_ ),
+    .A(multiplier_0.op1_8_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_8_ ),
+    .D(multiplier_0.op2_8_ ),
     .Y(_04349_)
   );
   OAI21X1 _11780_ (
@@ -41445,7 +41445,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04351_),
-    .Y( multiplier_0.per_dout_8_ )
+    .Y(multiplier_0.per_dout_8_ )
   );
   NOR2X1 _11783_ (
     .A(_04101_),
@@ -41458,13 +41458,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04353_)
   );
   OAI21X1 _11785_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_9_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_9_ ),
     .C(_04261_),
     .Y(_04354_)
   );
   AOI21X1 _11786_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04353_),
     .C(_04354_),
     .Y(_04355_)
@@ -41475,21 +41475,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04356_)
   );
   AND2X1 _11788_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04356_),
     .Y(_04357_)
   );
   OAI21X1 _11789_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_9_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_9_ ),
     .C(_04264_),
     .Y(_04358_)
   );
   AOI22X1 _11790_ (
-    .A( multiplier_0.op1_9_ ),
+    .A(multiplier_0.op1_9_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_9_ ),
+    .D(multiplier_0.op2_9_ ),
     .Y(_04359_)
   );
   OAI21X1 _11791_ (
@@ -41507,7 +41507,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04361_),
-    .Y( multiplier_0.per_dout_9_ )
+    .Y(multiplier_0.per_dout_9_ )
   );
   XNOR2X1 _11794_ (
     .A(_04097_),
@@ -41515,13 +41515,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04362_)
   );
   OAI21X1 _11795_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_10_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_10_ ),
     .C(_04261_),
     .Y(_04363_)
   );
   AOI21X1 _11796_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04362_),
     .C(_04363_),
     .Y(_04364_)
@@ -41532,21 +41532,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04365_)
   );
   AND2X1 _11798_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04365_),
     .Y(_04366_)
   );
   OAI21X1 _11799_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_10_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_10_ ),
     .C(_04264_),
     .Y(_04367_)
   );
   AOI22X1 _11800_ (
-    .A( multiplier_0.op1_10_ ),
+    .A(multiplier_0.op1_10_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_10_ ),
+    .D(multiplier_0.op2_10_ ),
     .Y(_04368_)
   );
   OAI21X1 _11801_ (
@@ -41564,7 +41564,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04370_),
-    .Y( multiplier_0.per_dout_10_ )
+    .Y(multiplier_0.per_dout_10_ )
   );
   XNOR2X1 _11804_ (
     .A(_04092_),
@@ -41572,13 +41572,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04371_)
   );
   OAI21X1 _11805_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_11_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_11_ ),
     .C(_04261_),
     .Y(_04372_)
   );
   AOI21X1 _11806_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04371_),
     .C(_04372_),
     .Y(_04373_)
@@ -41589,21 +41589,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04374_)
   );
   AND2X1 _11808_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04374_),
     .Y(_04375_)
   );
   OAI21X1 _11809_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_11_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_11_ ),
     .C(_04264_),
     .Y(_04376_)
   );
   AOI22X1 _11810_ (
-    .A( multiplier_0.op1_11_ ),
+    .A(multiplier_0.op1_11_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_11_ ),
+    .D(multiplier_0.op2_11_ ),
     .Y(_04377_)
   );
   OAI21X1 _11811_ (
@@ -41621,7 +41621,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04379_),
-    .Y( multiplier_0.per_dout_11_ )
+    .Y(multiplier_0.per_dout_11_ )
   );
   XNOR2X1 _11814_ (
     .A(_04086_),
@@ -41629,13 +41629,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04380_)
   );
   OAI21X1 _11815_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_12_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_12_ ),
     .C(_04261_),
     .Y(_04381_)
   );
   AOI21X1 _11816_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04380_),
     .C(_04381_),
     .Y(_04382_)
@@ -41646,21 +41646,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04383_)
   );
   AND2X1 _11818_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04383_),
     .Y(_04384_)
   );
   OAI21X1 _11819_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_12_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_12_ ),
     .C(_04264_),
     .Y(_04385_)
   );
   AOI22X1 _11820_ (
-    .A( multiplier_0.op1_12_ ),
+    .A(multiplier_0.op1_12_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_12_ ),
+    .D(multiplier_0.op2_12_ ),
     .Y(_04386_)
   );
   OAI21X1 _11821_ (
@@ -41678,7 +41678,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04388_),
-    .Y( multiplier_0.per_dout_12_ )
+    .Y(multiplier_0.per_dout_12_ )
   );
   NAND2X1 _11824_ (
     .A(_04080_),
@@ -41691,13 +41691,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04390_)
   );
   OAI21X1 _11826_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_13_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_13_ ),
     .C(_04261_),
     .Y(_04391_)
   );
   AOI21X1 _11827_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04390_),
     .C(_04391_),
     .Y(_04392_)
@@ -41708,21 +41708,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04393_)
   );
   AND2X1 _11829_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04393_),
     .Y(_04394_)
   );
   OAI21X1 _11830_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_13_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_13_ ),
     .C(_04264_),
     .Y(_04395_)
   );
   AOI22X1 _11831_ (
-    .A( multiplier_0.op1_13_ ),
+    .A(multiplier_0.op1_13_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_13_ ),
+    .D(multiplier_0.op2_13_ ),
     .Y(_04396_)
   );
   OAI21X1 _11832_ (
@@ -41740,7 +41740,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04398_),
-    .Y( multiplier_0.per_dout_13_ )
+    .Y(multiplier_0.per_dout_13_ )
   );
   XNOR2X1 _11835_ (
     .A(_04076_),
@@ -41748,13 +41748,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04399_)
   );
   OAI21X1 _11836_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_14_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_14_ ),
     .C(_04261_),
     .Y(_04400_)
   );
   AOI21X1 _11837_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04399_),
     .C(_04400_),
     .Y(_04401_)
@@ -41765,21 +41765,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04402_)
   );
   AND2X1 _11839_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04402_),
     .Y(_04403_)
   );
   OAI21X1 _11840_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_14_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_14_ ),
     .C(_04264_),
     .Y(_04404_)
   );
   AOI22X1 _11841_ (
-    .A( multiplier_0.op1_14_ ),
+    .A(multiplier_0.op1_14_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_14_ ),
+    .D(multiplier_0.op2_14_ ),
     .Y(_04405_)
   );
   OAI21X1 _11842_ (
@@ -41797,11 +41797,11 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04252_),
     .B(_04274_),
     .C(_04407_),
-    .Y( multiplier_0.per_dout_14_ )
+    .Y(multiplier_0.per_dout_14_ )
   );
   OAI21X1 _11845_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reshi_15_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reshi_15_ ),
     .C(_04261_),
     .Y(_04408_)
   );
@@ -41821,21 +41821,21 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04411_)
   );
   AND2X1 _11849_ (
-    .A( multiplier_0.cycle_1_ ),
+    .A(multiplier_0.cycle_1_ ),
     .B(_04411_),
     .Y(_04412_)
   );
   OAI21X1 _11850_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.reslo_15_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.reslo_15_ ),
     .C(_04264_),
     .Y(_04413_)
   );
   AOI22X1 _11851_ (
-    .A( multiplier_0.op1_15_ ),
+    .A(multiplier_0.op1_15_ ),
     .B(_04269_),
     .C(_04270_),
-    .D( multiplier_0.op2_15_ ),
+    .D(multiplier_0.op2_15_ ),
     .Y(_04414_)
   );
   OAI21X1 _11852_ (
@@ -41852,7 +41852,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_04275_),
     .B(_04410_),
     .C(_04416_),
-    .Y( multiplier_0.per_dout_15_ )
+    .Y(multiplier_0.per_dout_15_ )
   );
   NOR2X1 _11855_ (
     .A(_04593_),
@@ -41898,7 +41898,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04424_)
   );
   MUX2X1 _11863_ (
-    .A( multiplier_0.acc_sel ),
+    .A(multiplier_0.acc_sel ),
     .B(_05634_),
     .S(_04424_),
     .Y(_04425_)
@@ -41908,7 +41908,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03945_)
   );
   MUX2X1 _11865_ (
-    .A( multiplier_0.sign_sel ),
+    .A(multiplier_0.sign_sel ),
     .B(_05630_),
     .S(_04424_),
     .Y(_04426_)
@@ -41918,8 +41918,8 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03946_)
   );
   NOR2X1 _11867_ (
-    .A( multiplier_0.cycle_1_ ),
-    .B( multiplier_0.cycle_0_ ),
+    .A(multiplier_0.cycle_1_ ),
+    .B(multiplier_0.cycle_0_ ),
     .Y(_04427_)
   );
   NAND2X1 _11868_ (
@@ -41939,7 +41939,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04430_)
   );
   NAND3X1 _11871_ (
-    .A( multiplier_0.sumext_0_ ),
+    .A(multiplier_0.sumext_0_ ),
     .B(_04427_),
     .C(_04429_),
     .Y(_04431_)
@@ -41957,7 +41957,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03947_)
   );
   NAND3X1 _11874_ (
-    .A( multiplier_0.sumext_10_ ),
+    .A(multiplier_0.sumext_10_ ),
     .B(_04427_),
     .C(_04429_),
     .Y(_04433_)
@@ -41977,7 +41977,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04435_)
   );
   OAI21X1 _11878_ (
-    .A( multiplier_0.acc_sel ),
+    .A(multiplier_0.acc_sel ),
     .B(_04634_),
     .C(_04435_),
     .Y(_04436_)
@@ -42009,7 +42009,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04441_)
   );
   OAI21X1 _11884_ (
-    .A( multiplier_0.reshi_0_ ),
+    .A(multiplier_0.reshi_0_ ),
     .B(_04439_),
     .C(_04441_),
     .Y(_04442_)
@@ -42031,7 +42031,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04444_)
   );
   OAI21X1 _11888_ (
-    .A( multiplier_0.reshi_1_ ),
+    .A(multiplier_0.reshi_1_ ),
     .B(_04439_),
     .C(_04444_),
     .Y(_04445_)
@@ -42053,7 +42053,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04447_)
   );
   OAI21X1 _11892_ (
-    .A( multiplier_0.reshi_2_ ),
+    .A(multiplier_0.reshi_2_ ),
     .B(_04439_),
     .C(_04447_),
     .Y(_04448_)
@@ -42075,7 +42075,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04450_)
   );
   OAI21X1 _11896_ (
-    .A( multiplier_0.reshi_3_ ),
+    .A(multiplier_0.reshi_3_ ),
     .B(_04439_),
     .C(_04450_),
     .Y(_04451_)
@@ -42097,7 +42097,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04453_)
   );
   OAI21X1 _11900_ (
-    .A( multiplier_0.reshi_4_ ),
+    .A(multiplier_0.reshi_4_ ),
     .B(_04439_),
     .C(_04453_),
     .Y(_04454_)
@@ -42119,7 +42119,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04456_)
   );
   OAI21X1 _11904_ (
-    .A( multiplier_0.reshi_5_ ),
+    .A(multiplier_0.reshi_5_ ),
     .B(_04439_),
     .C(_04456_),
     .Y(_04457_)
@@ -42141,7 +42141,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04459_)
   );
   OAI21X1 _11908_ (
-    .A( multiplier_0.reshi_6_ ),
+    .A(multiplier_0.reshi_6_ ),
     .B(_04439_),
     .C(_04459_),
     .Y(_04460_)
@@ -42163,7 +42163,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04462_)
   );
   OAI21X1 _11912_ (
-    .A( multiplier_0.reshi_7_ ),
+    .A(multiplier_0.reshi_7_ ),
     .B(_04439_),
     .C(_04462_),
     .Y(_04463_)
@@ -42195,7 +42195,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04467_)
   );
   OAI21X1 _11918_ (
-    .A( multiplier_0.reshi_8_ ),
+    .A(multiplier_0.reshi_8_ ),
     .B(_04439_),
     .C(_04467_),
     .Y(_04468_)
@@ -42227,7 +42227,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04472_)
   );
   OAI21X1 _11924_ (
-    .A( multiplier_0.reshi_9_ ),
+    .A(multiplier_0.reshi_9_ ),
     .B(_04439_),
     .C(_04472_),
     .Y(_04473_)
@@ -42259,7 +42259,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04477_)
   );
   OAI21X1 _11930_ (
-    .A( multiplier_0.reshi_10_ ),
+    .A(multiplier_0.reshi_10_ ),
     .B(_04439_),
     .C(_04477_),
     .Y(_04478_)
@@ -42291,7 +42291,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04482_)
   );
   OAI21X1 _11936_ (
-    .A( multiplier_0.reshi_11_ ),
+    .A(multiplier_0.reshi_11_ ),
     .B(_04439_),
     .C(_04482_),
     .Y(_04483_)
@@ -42323,7 +42323,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04487_)
   );
   OAI21X1 _11942_ (
-    .A( multiplier_0.reshi_12_ ),
+    .A(multiplier_0.reshi_12_ ),
     .B(_04439_),
     .C(_04487_),
     .Y(_04488_)
@@ -42355,7 +42355,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04492_)
   );
   OAI21X1 _11948_ (
-    .A( multiplier_0.reshi_13_ ),
+    .A(multiplier_0.reshi_13_ ),
     .B(_04439_),
     .C(_04492_),
     .Y(_04493_)
@@ -42387,7 +42387,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04497_)
   );
   OAI21X1 _11954_ (
-    .A( multiplier_0.reshi_14_ ),
+    .A(multiplier_0.reshi_14_ ),
     .B(_04439_),
     .C(_04497_),
     .Y(_04498_)
@@ -42435,7 +42435,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04504_)
   );
   OAI21X1 _11963_ (
-    .A( multiplier_0.acc_sel ),
+    .A(multiplier_0.acc_sel ),
     .B(_04634_),
     .C(_04504_),
     .Y(_04505_)
@@ -42462,7 +42462,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04509_)
   );
   NAND2X1 _11968_ (
-    .A( multiplier_0.reslo_0_ ),
+    .A(multiplier_0.reslo_0_ ),
     .B(_04506_),
     .Y(_04510_)
   );
@@ -42484,7 +42484,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04512_)
   );
   NAND2X1 _11972_ (
-    .A( multiplier_0.reslo_1_ ),
+    .A(multiplier_0.reslo_1_ ),
     .B(_04506_),
     .Y(_04513_)
   );
@@ -42530,7 +42530,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04518_)
   );
   OAI21X1 _11980_ (
-    .A( multiplier_0.reslo_3_ ),
+    .A(multiplier_0.reslo_3_ ),
     .B(_04507_),
     .C(_04518_),
     .Y(_04519_)
@@ -42552,7 +42552,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04521_)
   );
   OAI21X1 _11984_ (
-    .A( multiplier_0.reslo_4_ ),
+    .A(multiplier_0.reslo_4_ ),
     .B(_04507_),
     .C(_04521_),
     .Y(_04522_)
@@ -42574,7 +42574,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04524_)
   );
   OAI21X1 _11988_ (
-    .A( multiplier_0.reslo_5_ ),
+    .A(multiplier_0.reslo_5_ ),
     .B(_04507_),
     .C(_04524_),
     .Y(_04525_)
@@ -42596,7 +42596,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04527_)
   );
   OAI21X1 _11992_ (
-    .A( multiplier_0.reslo_6_ ),
+    .A(multiplier_0.reslo_6_ ),
     .B(_04507_),
     .C(_04527_),
     .Y(_04528_)
@@ -42618,7 +42618,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04530_)
   );
   OAI21X1 _11996_ (
-    .A( multiplier_0.reslo_7_ ),
+    .A(multiplier_0.reslo_7_ ),
     .B(_04507_),
     .C(_04530_),
     .Y(_04531_)
@@ -42640,7 +42640,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04533_)
   );
   OAI21X1 _12000_ (
-    .A( multiplier_0.reslo_8_ ),
+    .A(multiplier_0.reslo_8_ ),
     .B(_04507_),
     .C(_04533_),
     .Y(_04534_)
@@ -42662,7 +42662,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04536_)
   );
   OAI21X1 _12004_ (
-    .A( multiplier_0.reslo_9_ ),
+    .A(multiplier_0.reslo_9_ ),
     .B(_04507_),
     .C(_04536_),
     .Y(_04537_)
@@ -42684,7 +42684,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04539_)
   );
   OAI21X1 _12008_ (
-    .A( multiplier_0.reslo_10_ ),
+    .A(multiplier_0.reslo_10_ ),
     .B(_04507_),
     .C(_04539_),
     .Y(_04540_)
@@ -42706,7 +42706,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04542_)
   );
   OAI21X1 _12012_ (
-    .A( multiplier_0.reslo_11_ ),
+    .A(multiplier_0.reslo_11_ ),
     .B(_04507_),
     .C(_04542_),
     .Y(_04543_)
@@ -42728,7 +42728,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04545_)
   );
   OAI21X1 _12016_ (
-    .A( multiplier_0.reslo_12_ ),
+    .A(multiplier_0.reslo_12_ ),
     .B(_04507_),
     .C(_04545_),
     .Y(_04546_)
@@ -42750,7 +42750,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04548_)
   );
   OAI21X1 _12020_ (
-    .A( multiplier_0.reslo_13_ ),
+    .A(multiplier_0.reslo_13_ ),
     .B(_04507_),
     .C(_04548_),
     .Y(_04549_)
@@ -42772,7 +42772,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04551_)
   );
   OAI21X1 _12024_ (
-    .A( multiplier_0.reslo_14_ ),
+    .A(multiplier_0.reslo_14_ ),
     .B(_04507_),
     .C(_04551_),
     .Y(_04552_)
@@ -42793,7 +42793,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04554_)
   );
   OAI22X1 _12028_ (
-    .A( multiplier_0.reslo_15_ ),
+    .A(multiplier_0.reslo_15_ ),
     .B(_04507_),
     .C(_04553_),
     .D(_04554_),
@@ -42804,7 +42804,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03980_)
   );
   MUX2X1 _12030_ (
-    .A( multiplier_0.op2_0_ ),
+    .A(multiplier_0.op2_0_ ),
     .B(_05643_),
     .S(_04429_),
     .Y(_04556_)
@@ -42814,7 +42814,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03981_)
   );
   MUX2X1 _12032_ (
-    .A( multiplier_0.op2_1_ ),
+    .A(multiplier_0.op2_1_ ),
     .B(_05650_),
     .S(_04429_),
     .Y(_04557_)
@@ -42824,7 +42824,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03982_)
   );
   MUX2X1 _12034_ (
-    .A( multiplier_0.op2_2_ ),
+    .A(multiplier_0.op2_2_ ),
     .B(_05651_),
     .S(_04429_),
     .Y(_04558_)
@@ -42834,7 +42834,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03983_)
   );
   MUX2X1 _12036_ (
-    .A( multiplier_0.op2_3_ ),
+    .A(multiplier_0.op2_3_ ),
     .B(_05652_),
     .S(_04429_),
     .Y(_04559_)
@@ -42844,7 +42844,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03984_)
   );
   MUX2X1 _12038_ (
-    .A( multiplier_0.op2_4_ ),
+    .A(multiplier_0.op2_4_ ),
     .B(_05653_),
     .S(_04429_),
     .Y(_04560_)
@@ -42854,7 +42854,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03985_)
   );
   MUX2X1 _12040_ (
-    .A( multiplier_0.op2_5_ ),
+    .A(multiplier_0.op2_5_ ),
     .B(_05654_),
     .S(_04429_),
     .Y(_04561_)
@@ -42864,7 +42864,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03986_)
   );
   MUX2X1 _12042_ (
-    .A( multiplier_0.op2_6_ ),
+    .A(multiplier_0.op2_6_ ),
     .B(_05655_),
     .S(_04429_),
     .Y(_04562_)
@@ -42874,7 +42874,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03987_)
   );
   MUX2X1 _12044_ (
-    .A( multiplier_0.op2_7_ ),
+    .A(multiplier_0.op2_7_ ),
     .B(_05656_),
     .S(_04429_),
     .Y(_04563_)
@@ -42886,7 +42886,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12046_ (
     .A(_04631_),
     .B(_04633_),
-    .C( multiplier_0.op2_8_ ),
+    .C(multiplier_0.op2_8_ ),
     .Y(_04564_)
   );
   OAI21X1 _12047_ (
@@ -42898,7 +42898,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12048_ (
     .A(_04631_),
     .B(_04633_),
-    .C( multiplier_0.op2_9_ ),
+    .C(multiplier_0.op2_9_ ),
     .Y(_04565_)
   );
   OAI21X1 _12049_ (
@@ -42910,7 +42910,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12050_ (
     .A(_04631_),
     .B(_04633_),
-    .C( multiplier_0.op2_10_ ),
+    .C(multiplier_0.op2_10_ ),
     .Y(_04566_)
   );
   OAI21X1 _12051_ (
@@ -42922,7 +42922,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12052_ (
     .A(_04631_),
     .B(_04633_),
-    .C( multiplier_0.op2_11_ ),
+    .C(multiplier_0.op2_11_ ),
     .Y(_04567_)
   );
   OAI21X1 _12053_ (
@@ -42934,7 +42934,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12054_ (
     .A(_04631_),
     .B(_04633_),
-    .C( multiplier_0.op2_12_ ),
+    .C(multiplier_0.op2_12_ ),
     .Y(_04568_)
   );
   OAI21X1 _12055_ (
@@ -42946,7 +42946,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12056_ (
     .A(_04631_),
     .B(_04633_),
-    .C( multiplier_0.op2_13_ ),
+    .C(multiplier_0.op2_13_ ),
     .Y(_04569_)
   );
   OAI21X1 _12057_ (
@@ -42958,7 +42958,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12058_ (
     .A(_04631_),
     .B(_04633_),
-    .C( multiplier_0.op2_14_ ),
+    .C(multiplier_0.op2_14_ ),
     .Y(_04570_)
   );
   OAI21X1 _12059_ (
@@ -42970,7 +42970,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12060_ (
     .A(_04631_),
     .B(_04633_),
-    .C( multiplier_0.op2_15_ ),
+    .C(multiplier_0.op2_15_ ),
     .Y(_04571_)
   );
   OAI21X1 _12061_ (
@@ -42980,7 +42980,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03996_)
   );
   MUX2X1 _12062_ (
-    .A( multiplier_0.op1_0_ ),
+    .A(multiplier_0.op1_0_ ),
     .B(_05643_),
     .S(_04424_),
     .Y(_04572_)
@@ -42990,7 +42990,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03997_)
   );
   MUX2X1 _12064_ (
-    .A( multiplier_0.op1_1_ ),
+    .A(multiplier_0.op1_1_ ),
     .B(_05650_),
     .S(_04424_),
     .Y(_04573_)
@@ -43000,7 +43000,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03998_)
   );
   MUX2X1 _12066_ (
-    .A( multiplier_0.op1_2_ ),
+    .A(multiplier_0.op1_2_ ),
     .B(_05651_),
     .S(_04424_),
     .Y(_04574_)
@@ -43010,7 +43010,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_03999_)
   );
   MUX2X1 _12068_ (
-    .A( multiplier_0.op1_3_ ),
+    .A(multiplier_0.op1_3_ ),
     .B(_05652_),
     .S(_04424_),
     .Y(_04575_)
@@ -43020,7 +43020,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04000_)
   );
   MUX2X1 _12070_ (
-    .A( multiplier_0.op1_4_ ),
+    .A(multiplier_0.op1_4_ ),
     .B(_05653_),
     .S(_04424_),
     .Y(_04576_)
@@ -43030,7 +43030,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04001_)
   );
   MUX2X1 _12072_ (
-    .A( multiplier_0.op1_5_ ),
+    .A(multiplier_0.op1_5_ ),
     .B(_05654_),
     .S(_04424_),
     .Y(_04577_)
@@ -43040,7 +43040,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04002_)
   );
   MUX2X1 _12074_ (
-    .A( multiplier_0.op1_6_ ),
+    .A(multiplier_0.op1_6_ ),
     .B(_05655_),
     .S(_04424_),
     .Y(_04578_)
@@ -43050,7 +43050,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_04003_)
   );
   MUX2X1 _12076_ (
-    .A( multiplier_0.op1_7_ ),
+    .A(multiplier_0.op1_7_ ),
     .B(_05656_),
     .S(_04424_),
     .Y(_04579_)
@@ -43062,7 +43062,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12078_ (
     .A(_05635_),
     .B(_04631_),
-    .C( multiplier_0.op1_8_ ),
+    .C(multiplier_0.op1_8_ ),
     .Y(_04580_)
   );
   OAI21X1 _12079_ (
@@ -43074,7 +43074,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12080_ (
     .A(_05635_),
     .B(_04631_),
-    .C( multiplier_0.op1_9_ ),
+    .C(multiplier_0.op1_9_ ),
     .Y(_04581_)
   );
   OAI21X1 _12081_ (
@@ -43086,7 +43086,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12082_ (
     .A(_05635_),
     .B(_04631_),
-    .C( multiplier_0.op1_10_ ),
+    .C(multiplier_0.op1_10_ ),
     .Y(_04582_)
   );
   OAI21X1 _12083_ (
@@ -43098,7 +43098,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12084_ (
     .A(_05635_),
     .B(_04631_),
-    .C( multiplier_0.op1_11_ ),
+    .C(multiplier_0.op1_11_ ),
     .Y(_04583_)
   );
   OAI21X1 _12085_ (
@@ -43110,7 +43110,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12086_ (
     .A(_05635_),
     .B(_04631_),
-    .C( multiplier_0.op1_12_ ),
+    .C(multiplier_0.op1_12_ ),
     .Y(_04584_)
   );
   OAI21X1 _12087_ (
@@ -43122,7 +43122,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12088_ (
     .A(_05635_),
     .B(_04631_),
-    .C( multiplier_0.op1_13_ ),
+    .C(multiplier_0.op1_13_ ),
     .Y(_04585_)
   );
   OAI21X1 _12089_ (
@@ -43134,7 +43134,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12090_ (
     .A(_05635_),
     .B(_04631_),
-    .C( multiplier_0.op1_14_ ),
+    .C(multiplier_0.op1_14_ ),
     .Y(_04586_)
   );
   OAI21X1 _12091_ (
@@ -43146,7 +43146,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12092_ (
     .A(_05635_),
     .B(_04631_),
-    .C( multiplier_0.op1_15_ ),
+    .C(multiplier_0.op1_15_ ),
     .Y(_04587_)
   );
   OAI21X1 _12093_ (
@@ -43157,491 +43157,491 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   DFFSR _12094_ (
     .CLK(dco_clk),
-    .D( multiplier_0.op2_wr ),
-    .Q( multiplier_0.cycle_0_ ),
+    .D(multiplier_0.op2_wr ),
+    .Q(multiplier_0.cycle_0_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12095_ (
     .CLK(dco_clk),
-    .D( multiplier_0.cycle_0_ ),
-    .Q( multiplier_0.cycle_1_ ),
+    .D(multiplier_0.cycle_0_ ),
+    .Q(multiplier_0.cycle_1_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12096_ (
     .CLK(dco_clk),
     .D(_03945_),
-    .Q( multiplier_0.acc_sel ),
+    .Q(multiplier_0.acc_sel ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12097_ (
     .CLK(dco_clk),
     .D(_03946_),
-    .Q( multiplier_0.sign_sel ),
+    .Q(multiplier_0.sign_sel ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12098_ (
     .CLK(dco_clk),
     .D(_03947_),
-    .Q( multiplier_0.sumext_0_ ),
+    .Q(multiplier_0.sumext_0_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12099_ (
     .CLK(dco_clk),
     .D(_03948_),
-    .Q( multiplier_0.sumext_10_ ),
+    .Q(multiplier_0.sumext_10_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12100_ (
     .CLK(dco_clk),
     .D(_03949_),
-    .Q( multiplier_0.reshi_0_ ),
+    .Q(multiplier_0.reshi_0_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12101_ (
     .CLK(dco_clk),
     .D(_03950_),
-    .Q( multiplier_0.reshi_1_ ),
+    .Q(multiplier_0.reshi_1_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12102_ (
     .CLK(dco_clk),
     .D(_03951_),
-    .Q( multiplier_0.reshi_2_ ),
+    .Q(multiplier_0.reshi_2_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12103_ (
     .CLK(dco_clk),
     .D(_03952_),
-    .Q( multiplier_0.reshi_3_ ),
+    .Q(multiplier_0.reshi_3_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12104_ (
     .CLK(dco_clk),
     .D(_03953_),
-    .Q( multiplier_0.reshi_4_ ),
+    .Q(multiplier_0.reshi_4_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12105_ (
     .CLK(dco_clk),
     .D(_03954_),
-    .Q( multiplier_0.reshi_5_ ),
+    .Q(multiplier_0.reshi_5_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12106_ (
     .CLK(dco_clk),
     .D(_03955_),
-    .Q( multiplier_0.reshi_6_ ),
+    .Q(multiplier_0.reshi_6_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12107_ (
     .CLK(dco_clk),
     .D(_03956_),
-    .Q( multiplier_0.reshi_7_ ),
+    .Q(multiplier_0.reshi_7_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12108_ (
     .CLK(dco_clk),
     .D(_03957_),
-    .Q( multiplier_0.reshi_8_ ),
+    .Q(multiplier_0.reshi_8_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12109_ (
     .CLK(dco_clk),
     .D(_03958_),
-    .Q( multiplier_0.reshi_9_ ),
+    .Q(multiplier_0.reshi_9_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12110_ (
     .CLK(dco_clk),
     .D(_03959_),
-    .Q( multiplier_0.reshi_10_ ),
+    .Q(multiplier_0.reshi_10_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12111_ (
     .CLK(dco_clk),
     .D(_03960_),
-    .Q( multiplier_0.reshi_11_ ),
+    .Q(multiplier_0.reshi_11_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12112_ (
     .CLK(dco_clk),
     .D(_03961_),
-    .Q( multiplier_0.reshi_12_ ),
+    .Q(multiplier_0.reshi_12_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12113_ (
     .CLK(dco_clk),
     .D(_03962_),
-    .Q( multiplier_0.reshi_13_ ),
+    .Q(multiplier_0.reshi_13_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12114_ (
     .CLK(dco_clk),
     .D(_03963_),
-    .Q( multiplier_0.reshi_14_ ),
+    .Q(multiplier_0.reshi_14_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12115_ (
     .CLK(dco_clk),
     .D(_03964_),
-    .Q( multiplier_0.reshi_15_ ),
+    .Q(multiplier_0.reshi_15_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12116_ (
     .CLK(dco_clk),
     .D(_03965_),
-    .Q( multiplier_0.reslo_0_ ),
+    .Q(multiplier_0.reslo_0_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12117_ (
     .CLK(dco_clk),
     .D(_03966_),
-    .Q( multiplier_0.reslo_1_ ),
+    .Q(multiplier_0.reslo_1_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12118_ (
     .CLK(dco_clk),
     .D(_03967_),
-    .Q( multiplier_0.reslo_2_ ),
+    .Q(multiplier_0.reslo_2_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12119_ (
     .CLK(dco_clk),
     .D(_03968_),
-    .Q( multiplier_0.reslo_3_ ),
+    .Q(multiplier_0.reslo_3_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12120_ (
     .CLK(dco_clk),
     .D(_03969_),
-    .Q( multiplier_0.reslo_4_ ),
+    .Q(multiplier_0.reslo_4_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12121_ (
     .CLK(dco_clk),
     .D(_03970_),
-    .Q( multiplier_0.reslo_5_ ),
+    .Q(multiplier_0.reslo_5_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12122_ (
     .CLK(dco_clk),
     .D(_03971_),
-    .Q( multiplier_0.reslo_6_ ),
+    .Q(multiplier_0.reslo_6_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12123_ (
     .CLK(dco_clk),
     .D(_03972_),
-    .Q( multiplier_0.reslo_7_ ),
+    .Q(multiplier_0.reslo_7_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12124_ (
     .CLK(dco_clk),
     .D(_03973_),
-    .Q( multiplier_0.reslo_8_ ),
+    .Q(multiplier_0.reslo_8_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12125_ (
     .CLK(dco_clk),
     .D(_03974_),
-    .Q( multiplier_0.reslo_9_ ),
+    .Q(multiplier_0.reslo_9_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12126_ (
     .CLK(dco_clk),
     .D(_03975_),
-    .Q( multiplier_0.reslo_10_ ),
+    .Q(multiplier_0.reslo_10_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12127_ (
     .CLK(dco_clk),
     .D(_03976_),
-    .Q( multiplier_0.reslo_11_ ),
+    .Q(multiplier_0.reslo_11_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12128_ (
     .CLK(dco_clk),
     .D(_03977_),
-    .Q( multiplier_0.reslo_12_ ),
+    .Q(multiplier_0.reslo_12_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12129_ (
     .CLK(dco_clk),
     .D(_03978_),
-    .Q( multiplier_0.reslo_13_ ),
+    .Q(multiplier_0.reslo_13_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12130_ (
     .CLK(dco_clk),
     .D(_03979_),
-    .Q( multiplier_0.reslo_14_ ),
+    .Q(multiplier_0.reslo_14_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12131_ (
     .CLK(dco_clk),
     .D(_03980_),
-    .Q( multiplier_0.reslo_15_ ),
+    .Q(multiplier_0.reslo_15_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12132_ (
     .CLK(dco_clk),
     .D(_03981_),
-    .Q( multiplier_0.op2_0_ ),
+    .Q(multiplier_0.op2_0_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12133_ (
     .CLK(dco_clk),
     .D(_03982_),
-    .Q( multiplier_0.op2_1_ ),
+    .Q(multiplier_0.op2_1_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12134_ (
     .CLK(dco_clk),
     .D(_03983_),
-    .Q( multiplier_0.op2_2_ ),
+    .Q(multiplier_0.op2_2_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12135_ (
     .CLK(dco_clk),
     .D(_03984_),
-    .Q( multiplier_0.op2_3_ ),
+    .Q(multiplier_0.op2_3_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12136_ (
     .CLK(dco_clk),
     .D(_03985_),
-    .Q( multiplier_0.op2_4_ ),
+    .Q(multiplier_0.op2_4_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12137_ (
     .CLK(dco_clk),
     .D(_03986_),
-    .Q( multiplier_0.op2_5_ ),
+    .Q(multiplier_0.op2_5_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12138_ (
     .CLK(dco_clk),
     .D(_03987_),
-    .Q( multiplier_0.op2_6_ ),
+    .Q(multiplier_0.op2_6_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12139_ (
     .CLK(dco_clk),
     .D(_03988_),
-    .Q( multiplier_0.op2_7_ ),
+    .Q(multiplier_0.op2_7_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12140_ (
     .CLK(dco_clk),
     .D(_03989_),
-    .Q( multiplier_0.op2_8_ ),
+    .Q(multiplier_0.op2_8_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12141_ (
     .CLK(dco_clk),
     .D(_03990_),
-    .Q( multiplier_0.op2_9_ ),
+    .Q(multiplier_0.op2_9_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12142_ (
     .CLK(dco_clk),
     .D(_03991_),
-    .Q( multiplier_0.op2_10_ ),
+    .Q(multiplier_0.op2_10_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12143_ (
     .CLK(dco_clk),
     .D(_03992_),
-    .Q( multiplier_0.op2_11_ ),
+    .Q(multiplier_0.op2_11_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12144_ (
     .CLK(dco_clk),
     .D(_03993_),
-    .Q( multiplier_0.op2_12_ ),
+    .Q(multiplier_0.op2_12_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12145_ (
     .CLK(dco_clk),
     .D(_03994_),
-    .Q( multiplier_0.op2_13_ ),
+    .Q(multiplier_0.op2_13_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12146_ (
     .CLK(dco_clk),
     .D(_03995_),
-    .Q( multiplier_0.op2_14_ ),
+    .Q(multiplier_0.op2_14_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12147_ (
     .CLK(dco_clk),
     .D(_03996_),
-    .Q( multiplier_0.op2_15_ ),
+    .Q(multiplier_0.op2_15_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12148_ (
     .CLK(dco_clk),
     .D(_03997_),
-    .Q( multiplier_0.op1_0_ ),
+    .Q(multiplier_0.op1_0_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12149_ (
     .CLK(dco_clk),
     .D(_03998_),
-    .Q( multiplier_0.op1_1_ ),
+    .Q(multiplier_0.op1_1_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12150_ (
     .CLK(dco_clk),
     .D(_03999_),
-    .Q( multiplier_0.op1_2_ ),
+    .Q(multiplier_0.op1_2_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12151_ (
     .CLK(dco_clk),
     .D(_04000_),
-    .Q( multiplier_0.op1_3_ ),
+    .Q(multiplier_0.op1_3_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12152_ (
     .CLK(dco_clk),
     .D(_04001_),
-    .Q( multiplier_0.op1_4_ ),
+    .Q(multiplier_0.op1_4_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12153_ (
     .CLK(dco_clk),
     .D(_04002_),
-    .Q( multiplier_0.op1_5_ ),
+    .Q(multiplier_0.op1_5_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12154_ (
     .CLK(dco_clk),
     .D(_04003_),
-    .Q( multiplier_0.op1_6_ ),
+    .Q(multiplier_0.op1_6_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12155_ (
     .CLK(dco_clk),
     .D(_04004_),
-    .Q( multiplier_0.op1_7_ ),
+    .Q(multiplier_0.op1_7_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12156_ (
     .CLK(dco_clk),
     .D(_04005_),
-    .Q( multiplier_0.op1_8_ ),
+    .Q(multiplier_0.op1_8_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12157_ (
     .CLK(dco_clk),
     .D(_04006_),
-    .Q( multiplier_0.op1_9_ ),
+    .Q(multiplier_0.op1_9_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12158_ (
     .CLK(dco_clk),
     .D(_04007_),
-    .Q( multiplier_0.op1_10_ ),
+    .Q(multiplier_0.op1_10_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12159_ (
     .CLK(dco_clk),
     .D(_04008_),
-    .Q( multiplier_0.op1_11_ ),
+    .Q(multiplier_0.op1_11_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12160_ (
     .CLK(dco_clk),
     .D(_04009_),
-    .Q( multiplier_0.op1_12_ ),
+    .Q(multiplier_0.op1_12_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12161_ (
     .CLK(dco_clk),
     .D(_04010_),
-    .Q( multiplier_0.op1_13_ ),
+    .Q(multiplier_0.op1_13_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12162_ (
     .CLK(dco_clk),
     .D(_04011_),
-    .Q( multiplier_0.op1_14_ ),
+    .Q(multiplier_0.op1_14_ ),
     .R(_03944_),
     .S(1'h1)
   );
   DFFSR _12163_ (
     .CLK(dco_clk),
     .D(_04012_),
-    .Q( multiplier_0.op1_15_ ),
+    .Q(multiplier_0.op1_15_ ),
     .R(_03944_),
     .S(1'h1)
   );
@@ -43670,7 +43670,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05408_)
   );
   INVX1 _12170_ (
-    .A( sfr_0.ie1_0_ ),
+    .A(sfr_0.ie1_0_ ),
     .Y(_05409_)
   );
   INVX1 _12171_ (
@@ -43818,7 +43818,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_05405_),
     .B(_05435_),
     .C(_05438_),
-    .Y( sfr_0.per_dout_14_ )
+    .Y(sfr_0.per_dout_14_ )
   );
   NAND2X1 _12202_ (
     .A(_05403_),
@@ -43845,19 +43845,19 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(_05406_),
     .B(_05435_),
     .C(_05442_),
-    .Y( sfr_0.per_dout_8_ )
+    .Y(sfr_0.per_dout_8_ )
   );
   OAI21X1 _12207_ (
     .A(_05407_),
     .B(_05435_),
     .C(_05442_),
-    .Y( sfr_0.per_dout_15_ )
+    .Y(sfr_0.per_dout_15_ )
   );
   OAI21X1 _12208_ (
     .A(_05408_),
     .B(_05435_),
     .C(_05438_),
-    .Y( sfr_0.per_dout_1_ )
+    .Y(sfr_0.per_dout_1_ )
   );
   AND2X1 _12209_ (
     .A(_05403_),
@@ -43867,7 +43867,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI22X1 _12210_ (
     .A(_05403_),
     .B(_05634_),
-    .C( sfr_0.ie1_0_ ),
+    .C(sfr_0.ie1_0_ ),
     .D(_05397_),
     .Y(_05398_)
   );
@@ -43880,14 +43880,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .A(1'h0),
     .B(_05434_),
     .C(_05399_),
-    .D( sfr_0.ifg1_0_ ),
+    .D(sfr_0.ifg1_0_ ),
     .Y(_05400_)
   );
   AOI21X1 _12213_ (
     .A(_05398_),
     .B(_05400_),
     .C(_05432_),
-    .Y( sfr_0.per_dout_0_ )
+    .Y(sfr_0.per_dout_0_ )
   );
   NAND3X1 _12214_ (
     .A(_05660_),
@@ -43898,67 +43898,67 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   NOR2X1 _12215_ (
     .A(_05643_),
     .B(_05401_),
-    .Y( sfr_0.wdtifg_sw_clr )
+    .Y(sfr_0.wdtifg_sw_clr )
   );
   NOR2X1 _12216_ (
     .A(_05410_),
     .B(_05401_),
-    .Y( sfr_0.wdtifg_sw_set )
+    .Y(sfr_0.wdtifg_sw_set )
   );
   NOR2X1 _12217_ (
     .A(_05411_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_2_ )
+    .Y(sfr_0.cpu_nr_rd_2_ )
   );
   NOR2X1 _12218_ (
     .A(_05412_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_3_ )
+    .Y(sfr_0.cpu_nr_rd_3_ )
   );
   NOR2X1 _12219_ (
     .A(_05413_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_4_ )
+    .Y(sfr_0.cpu_nr_rd_4_ )
   );
   NOR2X1 _12220_ (
     .A(_05414_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_5_ )
+    .Y(sfr_0.cpu_nr_rd_5_ )
   );
   NOR2X1 _12221_ (
     .A(_05415_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_6_ )
+    .Y(sfr_0.cpu_nr_rd_6_ )
   );
   NOR2X1 _12222_ (
     .A(_05416_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_7_ )
+    .Y(sfr_0.cpu_nr_rd_7_ )
   );
   NOR2X1 _12223_ (
     .A(_05417_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_9_ )
+    .Y(sfr_0.cpu_nr_rd_9_ )
   );
   NOR2X1 _12224_ (
     .A(_05418_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_10_ )
+    .Y(sfr_0.cpu_nr_rd_10_ )
   );
   NOR2X1 _12225_ (
     .A(_05419_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_11_ )
+    .Y(sfr_0.cpu_nr_rd_11_ )
   );
   NOR2X1 _12226_ (
     .A(_05420_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_12_ )
+    .Y(sfr_0.cpu_nr_rd_12_ )
   );
   NOR2X1 _12227_ (
     .A(_05421_),
     .B(_05435_),
-    .Y( sfr_0.cpu_nr_rd_13_ )
+    .Y(sfr_0.cpu_nr_rd_13_ )
   );
   NAND3X1 _12228_ (
     .A(_05660_),
@@ -43975,28 +43975,28 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   DFFSR _12230_ (
     .CLK(dco_clk),
     .D(_05396_),
-    .Q( sfr_0.ie1_0_ ),
+    .Q(sfr_0.ie1_0_ ),
     .R(_05395_),
     .S(1'h1)
   );
   INVX1 _12231_ (
-    .A( watchdog_0.wdtcnt_2_ ),
+    .A(watchdog_0.wdtcnt_2_ ),
     .Y(_05576_)
   );
   INVX1 _12232_ (
-    .A( watchdog_0.wdtctl_0_ ),
+    .A(watchdog_0.wdtctl_0_ ),
     .Y(_05577_)
   );
   INVX1 _12233_ (
-    .A( watchdog_0.wdtctl_1_ ),
+    .A(watchdog_0.wdtctl_1_ ),
     .Y(_05578_)
   );
   INVX1 _12234_ (
-    .A( watchdog_0.wdtcnt_9_ ),
+    .A(watchdog_0.wdtcnt_9_ ),
     .Y(_05579_)
   );
   INVX1 _12235_ (
-    .A( watchdog_0.wdtcnt_10_ ),
+    .A(watchdog_0.wdtcnt_10_ ),
     .Y(_05580_)
   );
   INVX1 _12236_ (
@@ -44020,15 +44020,15 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05472_)
   );
   INVX1 _12241_ (
-    .A( sfr_0.wdtifg_sw_set ),
+    .A(sfr_0.wdtifg_sw_set ),
     .Y(_05473_)
   );
   INVX1 _12242_ (
-    .A( sfr_0.wdtifg_sw_clr ),
+    .A(sfr_0.wdtifg_sw_clr ),
     .Y(_05474_)
   );
   INVX1 _12243_ (
-    .A( clock_module_0.por ),
+    .A(clock_module_0.por ),
     .Y(_05444_)
   );
   INVX1 _12244_ (
@@ -44105,51 +44105,51 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   INVX1 _12258_ (
     .A(_05487_),
-    .Y( watchdog_0.per_dout_11_ )
+    .Y(watchdog_0.per_dout_11_ )
   );
   NOR2X1 _12259_ (
     .A(_05577_),
     .B(_05487_),
-    .Y( watchdog_0.per_dout_0_ )
+    .Y(watchdog_0.per_dout_0_ )
   );
   NOR2X1 _12260_ (
     .A(_05578_),
     .B(_05487_),
-    .Y( watchdog_0.per_dout_1_ )
+    .Y(watchdog_0.per_dout_1_ )
   );
   AND2X1 _12261_ (
-    .A( watchdog_0.wdtctl_2_ ),
-    .B( watchdog_0.per_dout_11_ ),
-    .Y( watchdog_0.per_dout_2_ )
+    .A(watchdog_0.wdtctl_2_ ),
+    .B(watchdog_0.per_dout_11_ ),
+    .Y(watchdog_0.per_dout_2_ )
   );
   AND2X1 _12262_ (
-    .A( watchdog_0.wdtctl_4_ ),
-    .B( watchdog_0.per_dout_11_ ),
-    .Y( watchdog_0.per_dout_4_ )
+    .A(watchdog_0.wdtctl_4_ ),
+    .B(watchdog_0.per_dout_11_ ),
+    .Y(watchdog_0.per_dout_4_ )
   );
   AND2X1 _12263_ (
-    .A( watchdog_0.wdtctl_7_ ),
-    .B( watchdog_0.per_dout_11_ ),
-    .Y( watchdog_0.per_dout_7_ )
+    .A(watchdog_0.wdtctl_7_ ),
+    .B(watchdog_0.per_dout_11_ ),
+    .Y(watchdog_0.per_dout_7_ )
   );
   NAND3X1 _12264_ (
-    .A( watchdog_0.wdtctl_4_ ),
-    .B( sfr_0.ifg1_0_ ),
-    .C( sfr_0.ie1_0_ ),
+    .A(watchdog_0.wdtctl_4_ ),
+    .B(sfr_0.ifg1_0_ ),
+    .C(sfr_0.ie1_0_ ),
     .Y(_05488_)
   );
   INVX1 _12265_ (
     .A(_05488_),
-    .Y( frontend_0.wdt_irq )
+    .Y(frontend_0.wdt_irq )
   );
   MUX2X1 _12266_ (
     .A(_05581_),
     .B(_05696_),
-    .S( watchdog_0.wdtctl_2_ ),
+    .S(watchdog_0.wdtctl_2_ ),
     .Y(_05489_)
   );
   OR2X1 _12267_ (
-    .A( watchdog_0.wdtctl_7_ ),
+    .A(watchdog_0.wdtctl_7_ ),
     .B(_05582_),
     .Y(_05490_)
   );
@@ -44163,23 +44163,23 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05492_)
   );
   NOR2X1 _12270_ (
-    .A( watchdog_0.wdtctl_0_ ),
-    .B( watchdog_0.wdtctl_1_ ),
+    .A(watchdog_0.wdtctl_0_ ),
+    .B(watchdog_0.wdtctl_1_ ),
     .Y(_05493_)
   );
   NAND2X1 _12271_ (
-    .A( watchdog_0.wdtcnt_5_ ),
-    .B( watchdog_0.wdtcnt_4_ ),
+    .A(watchdog_0.wdtcnt_5_ ),
+    .B(watchdog_0.wdtcnt_4_ ),
     .Y(_05494_)
   );
   NAND2X1 _12272_ (
-    .A( watchdog_0.wdtcnt_1_ ),
-    .B( watchdog_0.wdtcnt_0_ ),
+    .A(watchdog_0.wdtcnt_1_ ),
+    .B(watchdog_0.wdtcnt_0_ ),
     .Y(_05495_)
   );
   NAND2X1 _12273_ (
-    .A( watchdog_0.wdtcnt_3_ ),
-    .B( watchdog_0.wdtcnt_2_ ),
+    .A(watchdog_0.wdtcnt_3_ ),
+    .B(watchdog_0.wdtcnt_2_ ),
     .Y(_05496_)
   );
   NOR3X1 _12274_ (
@@ -44189,12 +44189,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05497_)
   );
   AND2X1 _12275_ (
-    .A( watchdog_0.wdtcnt_7_ ),
-    .B( watchdog_0.wdtcnt_8_ ),
+    .A(watchdog_0.wdtcnt_7_ ),
+    .B(watchdog_0.wdtcnt_8_ ),
     .Y(_05498_)
   );
   NAND3X1 _12276_ (
-    .A( watchdog_0.wdtcnt_6_ ),
+    .A(watchdog_0.wdtcnt_6_ ),
     .B(_05497_),
     .C(_05498_),
     .Y(_05499_)
@@ -44210,9 +44210,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05501_)
   );
   NAND3X1 _12279_ (
-    .A( watchdog_0.wdtcnt_11_ ),
-    .B( watchdog_0.wdtcnt_10_ ),
-    .C( watchdog_0.wdtcnt_12_ ),
+    .A(watchdog_0.wdtcnt_11_ ),
+    .B(watchdog_0.wdtcnt_10_ ),
+    .C(watchdog_0.wdtcnt_12_ ),
     .Y(_05502_)
   );
   NOR3X1 _12280_ (
@@ -44222,14 +44222,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05503_)
   );
   XOR2X1 _12281_ (
-    .A( watchdog_0.wdtcnt_13_ ),
+    .A(watchdog_0.wdtcnt_13_ ),
     .B(_05503_),
     .Y(_05504_)
   );
   OAI21X1 _12282_ (
-    .A( watchdog_0.wdtcnt_6_ ),
+    .A(watchdog_0.wdtcnt_6_ ),
     .B(_05497_),
-    .C( watchdog_0.wdtctl_1_ ),
+    .C(watchdog_0.wdtctl_1_ ),
     .Y(_05505_)
   );
   OR2X1 _12283_ (
@@ -44238,26 +44238,26 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05506_)
   );
   AOI21X1 _12284_ (
-    .A( watchdog_0.wdtcnt_6_ ),
+    .A(watchdog_0.wdtcnt_6_ ),
     .B(_05497_),
     .C(_05506_),
     .Y(_05507_)
   );
   NAND3X1 _12285_ (
-    .A( watchdog_0.wdtcnt_13_ ),
-    .B( watchdog_0.wdtcnt_14_ ),
+    .A(watchdog_0.wdtcnt_13_ ),
+    .B(watchdog_0.wdtcnt_14_ ),
     .C(_05503_),
     .Y(_05508_)
   );
   XOR2X1 _12286_ (
-    .A( watchdog_0.wdtcnt_15_ ),
+    .A(watchdog_0.wdtcnt_15_ ),
     .B(_05508_),
     .Y(_05509_)
   );
   AOI21X1 _12287_ (
-    .A( watchdog_0.wdtctl_1_ ),
+    .A(watchdog_0.wdtctl_1_ ),
     .B(_05501_),
-    .C( watchdog_0.wdtctl_0_ ),
+    .C(watchdog_0.wdtctl_0_ ),
     .Y(_05510_)
   );
   AOI21X1 _12288_ (
@@ -44384,14 +44384,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05533_)
   );
   AOI22X1 _12311_ (
-    .A( watchdog_0.wdtctl_4_ ),
+    .A(watchdog_0.wdtctl_4_ ),
     .B(_05532_),
     .C(_05533_),
     .D(_05473_),
     .Y(_05443_)
   );
   MUX2X1 _12312_ (
-    .A( watchdog_0.wdtctl_0_ ),
+    .A(watchdog_0.wdtctl_0_ ),
     .B(_05643_),
     .S(_05525_),
     .Y(_05534_)
@@ -44401,7 +44401,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05446_)
   );
   MUX2X1 _12314_ (
-    .A( watchdog_0.wdtctl_1_ ),
+    .A(watchdog_0.wdtctl_1_ ),
     .B(_05650_),
     .S(_05525_),
     .Y(_05535_)
@@ -44411,7 +44411,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05447_)
   );
   MUX2X1 _12316_ (
-    .A( watchdog_0.wdtctl_2_ ),
+    .A(watchdog_0.wdtctl_2_ ),
     .B(_05651_),
     .S(_05525_),
     .Y(_05536_)
@@ -44421,7 +44421,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05448_)
   );
   MUX2X1 _12318_ (
-    .A( watchdog_0.wdtctl_4_ ),
+    .A(watchdog_0.wdtctl_4_ ),
     .B(_05653_),
     .S(_05525_),
     .Y(_05537_)
@@ -44431,7 +44431,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05449_)
   );
   MUX2X1 _12320_ (
-    .A( watchdog_0.wdtctl_7_ ),
+    .A(watchdog_0.wdtctl_7_ ),
     .B(_05656_),
     .S(_05525_),
     .Y(_05538_)
@@ -44442,12 +44442,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   );
   NAND2X1 _12322_ (
     .A(_05617_),
-    .B( watchdog_0.wdtctl_4_ ),
+    .B(watchdog_0.wdtctl_4_ ),
     .Y(_05539_)
   );
   NAND3X1 _12323_ (
     .A(_05474_),
-    .B( sfr_0.ifg1_0_ ),
+    .B(sfr_0.ifg1_0_ ),
     .C(_05539_),
     .Y(_05540_)
   );
@@ -44469,12 +44469,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05542_)
   );
   NAND2X1 _12327_ (
-    .A( watchdog_0.wdtcnt_0_ ),
+    .A(watchdog_0.wdtcnt_0_ ),
     .B(_05491_),
     .Y(_05543_)
   );
   XNOR2X1 _12328_ (
-    .A( watchdog_0.wdtcnt_0_ ),
+    .A(watchdog_0.wdtcnt_0_ ),
     .B(_05491_),
     .Y(_05544_)
   );
@@ -44489,7 +44489,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05545_)
   );
   XOR2X1 _12331_ (
-    .A( watchdog_0.wdtcnt_1_ ),
+    .A(watchdog_0.wdtcnt_1_ ),
     .B(_05543_),
     .Y(_05546_)
   );
@@ -44514,7 +44514,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05454_)
   );
   XNOR2X1 _12336_ (
-    .A( watchdog_0.wdtcnt_3_ ),
+    .A(watchdog_0.wdtcnt_3_ ),
     .B(_05547_),
     .Y(_05549_)
   );
@@ -44524,14 +44524,14 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05455_)
   );
   AOI21X1 _12338_ (
-    .A( watchdog_0.wdtcnt_3_ ),
+    .A(watchdog_0.wdtcnt_3_ ),
     .B(_05547_),
-    .C( watchdog_0.wdtcnt_4_ ),
+    .C(watchdog_0.wdtcnt_4_ ),
     .Y(_05550_)
   );
   NAND3X1 _12339_ (
-    .A( watchdog_0.wdtcnt_4_ ),
-    .B( watchdog_0.wdtcnt_3_ ),
+    .A(watchdog_0.wdtcnt_4_ ),
+    .B(watchdog_0.wdtcnt_3_ ),
     .C(_05547_),
     .Y(_05551_)
   );
@@ -44555,7 +44555,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05554_)
   );
   OAI21X1 _12344_ (
-    .A( watchdog_0.wdtcnt_5_ ),
+    .A(watchdog_0.wdtcnt_5_ ),
     .B(_05552_),
     .C(_05554_),
     .Y(_05555_)
@@ -44566,12 +44566,12 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05457_)
   );
   NAND2X1 _12346_ (
-    .A( watchdog_0.wdtcnt_6_ ),
+    .A(watchdog_0.wdtcnt_6_ ),
     .B(_05553_),
     .Y(_05556_)
   );
   XNOR2X1 _12347_ (
-    .A( watchdog_0.wdtcnt_6_ ),
+    .A(watchdog_0.wdtcnt_6_ ),
     .B(_05553_),
     .Y(_05557_)
   );
@@ -44581,13 +44581,13 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05458_)
   );
   NAND3X1 _12349_ (
-    .A( watchdog_0.wdtcnt_6_ ),
-    .B( watchdog_0.wdtcnt_7_ ),
+    .A(watchdog_0.wdtcnt_6_ ),
+    .B(watchdog_0.wdtcnt_7_ ),
     .C(_05553_),
     .Y(_05558_)
   );
   XOR2X1 _12350_ (
-    .A( watchdog_0.wdtcnt_7_ ),
+    .A(watchdog_0.wdtcnt_7_ ),
     .B(_05556_),
     .Y(_05559_)
   );
@@ -44597,7 +44597,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05459_)
   );
   XOR2X1 _12352_ (
-    .A( watchdog_0.wdtcnt_8_ ),
+    .A(watchdog_0.wdtcnt_8_ ),
     .B(_05558_),
     .Y(_05560_)
   );
@@ -44612,7 +44612,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05561_)
   );
   OAI21X1 _12355_ (
-    .A( watchdog_0.wdtcnt_9_ ),
+    .A(watchdog_0.wdtcnt_9_ ),
     .B(_05491_),
     .C(_05561_),
     .Y(_05562_)
@@ -44630,7 +44630,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   AOI21X1 _12358_ (
     .A(_05491_),
     .B(_05500_),
-    .C( watchdog_0.wdtcnt_10_ ),
+    .C(watchdog_0.wdtcnt_10_ ),
     .Y(_05564_)
   );
   NOR2X1 _12359_ (
@@ -44645,7 +44645,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05462_)
   );
   XNOR2X1 _12361_ (
-    .A( watchdog_0.wdtcnt_11_ ),
+    .A(watchdog_0.wdtcnt_11_ ),
     .B(_05565_),
     .Y(_05566_)
   );
@@ -44655,9 +44655,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05463_)
   );
   AOI21X1 _12363_ (
-    .A( watchdog_0.wdtcnt_11_ ),
+    .A(watchdog_0.wdtcnt_11_ ),
     .B(_05565_),
-    .C( watchdog_0.wdtcnt_12_ ),
+    .C(watchdog_0.wdtcnt_12_ ),
     .Y(_05567_)
   );
   AND2X1 _12364_ (
@@ -44678,7 +44678,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   OAI21X1 _12367_ (
     .A(_05489_),
     .B(_05490_),
-    .C( watchdog_0.wdtcnt_13_ ),
+    .C(watchdog_0.wdtcnt_13_ ),
     .Y(_05570_)
   );
   NAND2X1 _12368_ (
@@ -44693,9 +44693,9 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05465_)
   );
   AOI21X1 _12370_ (
-    .A( watchdog_0.wdtcnt_13_ ),
+    .A(watchdog_0.wdtcnt_13_ ),
     .B(_05568_),
-    .C( watchdog_0.wdtcnt_14_ ),
+    .C(watchdog_0.wdtcnt_14_ ),
     .Y(_05572_)
   );
   NOR2X1 _12371_ (
@@ -44714,7 +44714,7 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
     .Y(_05466_)
   );
   XNOR2X1 _12374_ (
-    .A( watchdog_0.wdtcnt_15_ ),
+    .A(watchdog_0.wdtcnt_15_ ),
     .B(_05573_),
     .Y(_05575_)
   );
@@ -44726,161 +44726,161 @@ module openMSP430(aclk, aclk_en, dbg_freeze, dbg_i2c_sda_out, dbg_uart_txd, dco_
   DFFSR _12376_ (
     .CLK(dco_clk),
     .D(_05443_),
-    .Q( clock_module_0.wdt_reset ),
+    .Q(clock_module_0.wdt_reset ),
     .R(_05444_),
     .S(1'h1)
   );
   DFFSR _12377_ (
     .CLK(dco_clk),
     .D(_05446_),
-    .Q( watchdog_0.wdtctl_0_ ),
+    .Q(watchdog_0.wdtctl_0_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12378_ (
     .CLK(dco_clk),
     .D(_05447_),
-    .Q( watchdog_0.wdtctl_1_ ),
+    .Q(watchdog_0.wdtctl_1_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12379_ (
     .CLK(dco_clk),
     .D(_05448_),
-    .Q( watchdog_0.wdtctl_2_ ),
+    .Q(watchdog_0.wdtctl_2_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12380_ (
     .CLK(dco_clk),
     .D(_05449_),
-    .Q( watchdog_0.wdtctl_4_ ),
+    .Q(watchdog_0.wdtctl_4_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12381_ (
     .CLK(dco_clk),
     .D(_05450_),
-    .Q( watchdog_0.wdtctl_7_ ),
+    .Q(watchdog_0.wdtctl_7_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12382_ (
     .CLK(dco_clk),
     .D(_05451_),
-    .Q( sfr_0.ifg1_0_ ),
+    .Q(sfr_0.ifg1_0_ ),
     .R(_05444_),
     .S(1'h1)
   );
   DFFSR _12383_ (
     .CLK(dco_clk),
     .D(_05452_),
-    .Q( watchdog_0.wdtcnt_0_ ),
+    .Q(watchdog_0.wdtcnt_0_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12384_ (
     .CLK(dco_clk),
     .D(_05453_),
-    .Q( watchdog_0.wdtcnt_1_ ),
+    .Q(watchdog_0.wdtcnt_1_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12385_ (
     .CLK(dco_clk),
     .D(_05454_),
-    .Q( watchdog_0.wdtcnt_2_ ),
+    .Q(watchdog_0.wdtcnt_2_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12386_ (
     .CLK(dco_clk),
     .D(_05455_),
-    .Q( watchdog_0.wdtcnt_3_ ),
+    .Q(watchdog_0.wdtcnt_3_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12387_ (
     .CLK(dco_clk),
     .D(_05456_),
-    .Q( watchdog_0.wdtcnt_4_ ),
+    .Q(watchdog_0.wdtcnt_4_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12388_ (
     .CLK(dco_clk),
     .D(_05457_),
-    .Q( watchdog_0.wdtcnt_5_ ),
+    .Q(watchdog_0.wdtcnt_5_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12389_ (
     .CLK(dco_clk),
     .D(_05458_),
-    .Q( watchdog_0.wdtcnt_6_ ),
+    .Q(watchdog_0.wdtcnt_6_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12390_ (
     .CLK(dco_clk),
     .D(_05459_),
-    .Q( watchdog_0.wdtcnt_7_ ),
+    .Q(watchdog_0.wdtcnt_7_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12391_ (
     .CLK(dco_clk),
     .D(_05460_),
-    .Q( watchdog_0.wdtcnt_8_ ),
+    .Q(watchdog_0.wdtcnt_8_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12392_ (
     .CLK(dco_clk),
     .D(_05461_),
-    .Q( watchdog_0.wdtcnt_9_ ),
+    .Q(watchdog_0.wdtcnt_9_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12393_ (
     .CLK(dco_clk),
     .D(_05462_),
-    .Q( watchdog_0.wdtcnt_10_ ),
+    .Q(watchdog_0.wdtcnt_10_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12394_ (
     .CLK(dco_clk),
     .D(_05463_),
-    .Q( watchdog_0.wdtcnt_11_ ),
+    .Q(watchdog_0.wdtcnt_11_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12395_ (
     .CLK(dco_clk),
     .D(_05464_),
-    .Q( watchdog_0.wdtcnt_12_ ),
+    .Q(watchdog_0.wdtcnt_12_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12396_ (
     .CLK(dco_clk),
     .D(_05465_),
-    .Q( watchdog_0.wdtcnt_13_ ),
+    .Q(watchdog_0.wdtcnt_13_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12397_ (
     .CLK(dco_clk),
     .D(_05466_),
-    .Q( watchdog_0.wdtcnt_14_ ),
+    .Q(watchdog_0.wdtcnt_14_ ),
     .R(_05445_),
     .S(1'h1)
   );
   DFFSR _12398_ (
     .CLK(dco_clk),
     .D(_05467_),
-    .Q( watchdog_0.wdtcnt_15_ ),
+    .Q(watchdog_0.wdtcnt_15_ ),
     .R(_05445_),
     .S(1'h1)
   );

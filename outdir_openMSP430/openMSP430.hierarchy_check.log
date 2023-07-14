@@ -178,6 +178,6 @@ Successfully finished Verilog frontend.
 
 25. Executing HIERARCHY pass (managing design hierarchy).
 
-End of script. Logfile hash: 5290e2bc85, CPU: user 0.21s system 0.01s, MEM: 24.09 MB peak
+End of script. Logfile hash: 5290e2bc85, CPU: user 0.17s system 0.00s, MEM: 24.00 MB peak
 Yosys 0.29+44 (git sha1 88c849d11, clang 6.0.0-1ubuntu2 -fPIC -Os)
 Time spent: 95% 46x read_verilog (0 sec), 3% 2x read_liberty (0 sec), ...

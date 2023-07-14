@@ -5521,8 +5521,8 @@ Finding unused cells or wires in module \omsp_sync_cell..
 Finding unused cells or wires in module \omsp_sync_reset..
 Finding unused cells or wires in module \omsp_watchdog..
 Finding unused cells or wires in module \openMSP430..
-Removed 0 unused cells and 825 unused wires.
-<suppressed ~203 debug messages>
+Removed 0 unused cells and 823 unused wires.
+<suppressed ~201 debug messages>
 
 29.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module omsp_alu.
@@ -5638,8 +5638,8 @@ Finding unused cells or wires in module \omsp_sync_cell..
 Finding unused cells or wires in module \omsp_sync_reset..
 Finding unused cells or wires in module \omsp_watchdog..
 Finding unused cells or wires in module \openMSP430..
-Removed 0 unused cells and 113 unused wires.
-<suppressed ~113 debug messages>
+Removed 0 unused cells and 115 unused wires.
+<suppressed ~115 debug messages>
 
 29.15. Executing OPT_EXPR pass (perform const folding).
 Optimizing module omsp_alu.
@@ -6358,8 +6358,8 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX2".
-ABC: Library "osu018_stdcells" from "/home/vsduser/vsdsynth/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func; 0 dont_use).  Time =     0.01 sec
-ABC: Memory =    0.48 MB. Time =     0.01 sec
+ABC: Library "osu018_stdcells" from "/home/vsduser/vsdsynth/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func; 0 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.48 MB. Time =     0.00 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
 ABC: + strash 
 ABC: + &get -n 
@@ -6831,6 +6831,6 @@ Optimizing module openMSP430.
 34.2. Executing DEMUXMAP pass.
 Dumping module `\openMSP430'.
 
-End of script. Logfile hash: f76edb8998, CPU: user 8.25s system 0.23s, MEM: 70.72 MB peak
+End of script. Logfile hash: 79b1f064d0, CPU: user 6.09s system 0.12s, MEM: 70.52 MB peak
 Yosys 0.29+44 (git sha1 88c849d11, clang 6.0.0-1ubuntu2 -fPIC -Os)
-Time spent: 28% 2x abc (3 sec), 16% 55x opt_expr (1 sec), ...
+Time spent: 31% 2x abc (2 sec), 15% 55x opt_expr (1 sec), ...
