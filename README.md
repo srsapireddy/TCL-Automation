@@ -444,17 +444,11 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 
 #### Quaity of Results (QoR)
 
-#### Script to print the values of QoR
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/def6c41e-5c34-411c-8cfb-fef0bdb0eafc)
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/6b7d7469-abb7-454d-b014-6de06ef89423)
-
-#### Output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/e91a31a7-6590-40d1-bb24-df528fd16df2)
-
 #### PRELAYOUT TIMING RESULTS
 
 #### Script to print the values of QoR
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/0c6b8ed2-5a5e-4d74-b612-239deb23aee1)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/05431940-804c-42e8-8bdc-ec123e100e23)
+
 
 
 #### Output
