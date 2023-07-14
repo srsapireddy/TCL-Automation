@@ -239,43 +239,52 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers verify
 
 Generating log file
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/f62de66a-91c4-4e21-9377-5bd6829f838f)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/f28f57de-1680-4459-8423-355b1fb24a1f)
+
 
 Checking log file errors
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/ece9c547-52ea-4838-85bb-d81010fe09c0)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/0d8b92e5-6497-4707-bede-f9520872ea30)
+
 
 ### Edit the synthesis file so that OpenTimer can use it
 Unedited synthesis file:
 
 Errors due to "*" code
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/457d0aa1-e70a-47a2-b07d-b88747ae839a)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/d3500543-bb93-4054-8774-8e69c0a9dd0b)
+
 
 Errors due to "\" in code
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/e66a03d1-596a-405c-bfd4-d541e375e07a)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/16b86f0c-f56d-4f3c-8654-1da4b3ee02b7)
+
 
 Count of errors found in the unedited file
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/597d2e46-da58-4c13-839c-0596308469f2)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/b0699622-446d-4488-90ed-5778801e20d1)
+
 
 ### Edit output netlist to be used by OpenTimer
 Edited synthesis file:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/4c3bf7d0-4fa6-4339-baee-61f8d4dccea1)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/8665444c-d461-494c-8fb8-9e065a0f5e35)
+
 
 Output:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/d4b2e73f-6bc9-4db2-9db0-53b1ce115436)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/aa8898fb-afc1-4946-82a5-c22d552c53fa)
+
 
 Before Editing
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/06e55962-6d10-448a-b127-d9d7b94a0af3)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/0d8311fe-9707-4bb6-bab2-efd194129cbc)
+
 
 After Editing
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/2203350b-8631-44a5-8172-c368882377b8)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/e752feff-f4ee-442e-bd4c-55be50fe3f12)
+
 
 As seen from the above two images, we remove the characters "\" and "*" from the original synthesis file to be usable by OpenTimer.
 
@@ -285,45 +294,56 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 
 ### Proc Example Scripts
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/c5f535df-12db-4ff6-9022-2e1a4dfb8df9)
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/d57ae74e-c265-4218-917b-d208d98593bc)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/6671e839-b971-4aa2-82d7-825d6434ae97)
+
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/7d614e73-166b-4b0d-9cc5-69c399f1144e)
+
 
 ### 'set_multi_cpu_usage' proc Script
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/a60563e2-ce66-4225-a897-0f5b170c1eeb)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/5140d6c9-9ed6-4778-b778-929fc28cbbb2)
+
 
 ### STA Using OpenTimer
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/6350f0dc-9fc9-43a0-af42-a53885f93cb8)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/0a6f2b14-2e9a-4296-b1e0-a90864c7f317)
+
 
 ### Output
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/9608996b-946e-4e0b-95b9-624b94b95eb7)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/6b9210ae-4b96-4b16-9518-a50ee3c18c72)
+
 
 ### Output Files Generated
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/5254166a-1f09-4d37-8826-5cfd092b3652)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/ff4043d8-0cea-439c-9ca7-f07d09feaa6e)
+
 
 ### read_lib, read_verilog and reada_sdc proc Scripts
 
 ### Code
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/caf09221-5233-4772-8d4a-33ce2d700fd6)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/5fa57b34-1135-495b-8415-f59867c561c4)
+
 
 ### Output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/f15da641-0174-4865-aa2a-d60beaabcea3)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/e5642e88-5749-4489-b0b0-8d4922f6eb4b)
+
 
 ### Procs Folder Files
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/685f75f3-2f4f-44ad-adb6-c479606d4f7c)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/0a5b4448-2436-43e3-8301-e5e7ca2b2fe4)
+
 
 ### Constraints converted from SDC format to opentimer format
 
 #### Script
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/415ffcdd-439e-4f6f-95fc-7be68c0c60c8)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/4620ecb4-5eef-4540-930d-0c3518ae3753)
+
 
 #### Output
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/e0404b1c-9050-4ddd-b729-cc65a11851b6)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/71fff1a1-b2e3-4022-bdd2-4f8ef2a37923)
+
 
 ### Proc file Scripts
 
@@ -345,63 +365,82 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 #### Convert set_clock_latency in SDC to arrival_time in opentimer
 
 #### Script
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/84470d0a-3791-4a17-a21f-1ee0606607c9)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/42ab6989-c246-4bee-8e28-8ff8f57b4d5f)
+
 #### Output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/a49d2c59-a318-4a6c-8269-b9696fe7e585)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/ac392b22-93b3-4e30-bb53-44abb11797c6)
+
 
 #### Convert transition and input delay to opentimer format
 
 #### Script
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/de6fcb65-dce5-47b8-8b75-fcb112c0470a)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/284e6501-147a-4198-9beb-c7c68a829549)
+
 #### Output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/95afd981-b3fa-48b0-b9c9-5db2a2fa7bf7)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/231907f8-69bd-42b1-9291-f7ea0b22756e)
+
 
 #### Script
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/adaf5e7b-e537-4593-b3fc-3a82d62af220)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/dce7f6a2-89fc-471e-a347-e24df5b68d81)
+
 #### Output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/080f3dca-3ab0-48cb-be95-33b16c21193c)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/c6f6a050-a56f-4216-ab96-11b6499bdabc)
+
 
 #### Script
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/67d10e89-6f0f-42c9-84d3-110ac370ed5b)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/c5a4ddec-5b39-4c28-b65b-6e35e88e9071)
+
 #### Output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/10de8d5c-bb1c-4e4f-a03d-26fdee768c15)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/b8e7c68c-b9f8-4f3d-8d00-a59d33a1baad)
+
 
 #### Convert output SDC constraints to opentimer format
 
 #### Script
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/f0be3ebc-8ffa-4722-af51-55cd1cf4a4c8)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/fb6397a6-eaee-4a27-aa1d-4dd397eaf349)
+
 #### Output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/dbbf00df-5b37-4662-b623-88de24ef5623)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/332be2a7-2ac5-4fa1-bcc2-961df3cd79f4)
+
 
 #### Script
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/d445f029-aae4-4cbe-98a7-ac1f96206d81)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/4c03e1b4-dbda-445f-85f7-d6191f40972b)
+
 #### Output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/7d00f96e-9a17-4773-bad8-efac0dbaee86)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/1e13eadb-d19a-44c6-9e7a-0ff85fb4f12c)
+
 
 ### Processing bussed ports and configuration file creation
 
 #### Script to expand bussed input ports for arrival time constraints: Converting all bussed constraints to bit-blasted
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/41cd8606-e12f-49b5-a659-071638dbc1a3)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/405e1630-4a42-463c-aba5-8aa7e122efdf)
+
 
 ##### Bus port: Before
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/22e52cb1-5736-4433-bcc5-eb4a6ba352c5)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/f1a1c3d7-c3eb-4581-92a9-999dad01e9ee)
+
 
 ##### Bit blasted port: After
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/e0f864f9-8479-49d6-98fa-c423db124917)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/9fb0908d-a642-4fc6-9c4e-4951014874c6)
+
 
 #### Opentimer configuration file creation
 
 #### Running the Script
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/ca1e7e06-1860-4df2-978a-0f27aec4f8d8)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/c0662715-1b2c-4378-be81-6a0ed8824ea2)
+
 
 ### Checking output files
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/d0535daa-6b77-42b1-82f0-dbc1a9b9c39c)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/ee2068cd-0424-4cb6-b83f-6349823406a9)
+
 
 #### SPEF file contents
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/0fd0d2dd-e9db-4dc1-adbc-7d105265fbb1)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/15f57101-b0d9-4ba1-93b1-0d8a38e30c16)
+
 
 #### Configuration file output
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/3ac96623-0910-4488-b60e-2c33b64bd310)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/f3f6b073-1705-4af3-ae2d-a548ad2ea0f0)
+
 
 #### Quaity of Results (QoR)
 
