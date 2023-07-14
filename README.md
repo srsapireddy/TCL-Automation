@@ -7,7 +7,8 @@ A User Interface (UI) that will take RTL netlist & SDC constraints as an input, 
 
 ### The task is to take a User Interface to take an Excel file as an input and provide the output as a datasheet.
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/3245eb4e-1654-44ff-8a00-e0a1b6e1f706)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/f74d1cd1-95cb-4f3a-a092-fd909c91c6d2)
+
 
 
 ### A command that passes a .csv file from UNIX shell to TCL script.
