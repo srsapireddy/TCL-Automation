@@ -156,12 +156,15 @@ Output:
 
 ### Output constraints generation and bits/bussed differentiation
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/53c6f531-f7ad-499c-88ba-48751dadbc76)
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/08a48638-3816-4cf4-9024-ff48885effe3)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/052b710e-7b41-4ed7-9516-7e32bc16c0b7)
+
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/fc903b37-298a-4ea0-9173-db3db664d52c)
+
 
 Output:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/b909a594-02f7-4596-969c-86a1fcc7aae8)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/c690dd44-07fa-4f89-bd4c-af75d2573e90)
+
 
 
 ### Synthesis on Yosys
