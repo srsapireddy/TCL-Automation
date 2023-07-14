@@ -1,5 +1,8 @@
 # ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS
 
+## Author: Srinivas Rahul Sapireddy
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)
+
 A User Interface (UI) that will take RTL netlist & SDC constraints as an input, and will generate sythnesized netlist & pre-layout timing report as an output. It uses Yosys open-source tool for synthesis and Opentimer to generate pre-layout timing reports.
 
 ### The task is to take a User Interface to take an Excel file as an input and provide the output as a datasheet.
@@ -371,7 +374,6 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 ![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/e91a31a7-6590-40d1-bb24-df528fd16df2)
 
 #### PRELAYOUT TIMING RESULTS
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/ea96bdaf-53b2-4351-a365-b7a682d372fa)
 
 #### Script to print the values of QoR
 ![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/0c6b8ed2-5a5e-4d74-b612-239deb23aee1)
@@ -380,8 +382,9 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 #### Output
 ![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/74c07c3c-ede2-4fdc-b354-5babae955cd0)
 
-For a detailed explanation, please refer to: https://github.com/srsapireddy/Advanced-TCL-Scripting
+For a detailed explanation (Private Repo): https://github.com/srsapireddy/Advanced-TCL-Scripting
 
+Acknowledgements: Mr. Kunal Ghosh
 
 
 
