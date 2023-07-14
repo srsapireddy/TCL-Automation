@@ -175,47 +175,57 @@ Synthesis on yosys for the following RTL code:
 
 ### Memory functionality and Synthesis using Yosys Example
 
-![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/bb566e02-df74-4042-af35-624c344c1004)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/0b6e2721-7ce7-4155-a546-15f1961aec54)
+
 
 
 Script to run memory module using Yosys:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/a744bb95-8dc4-4885-9dcf-bfaf469b79d6)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/d91aa0e1-c03f-4c09-b2fe-53d1adc9a707)
+
 
 Synthesis output:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/26230544-1337-44ef-a255-76fb9c9cb17f)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/a6353d31-5486-41d5-b092-4c7e4420899f)
+
 
 ### Hierarchy check script generation
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/d3868daa-1b7e-4829-bb6d-e9d0e45084df)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/15c0f969-85ce-4dff-8864-d49cf65f75d9)
+
 
 Hierarchy file:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/57f77903-0cc5-4674-acd8-076ee4926371)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/d2b4ca93-5b5c-45e7-8fd8-7dda898e1d6f)
+
 
 Output:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/0378ffc8-ea3c-4412-846c-c96029a9e377)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/d338dcc0-bffe-40a2-b5e4-94efe968dcf7)
+
 
 ### Error handling concept in hierarchy check
 When all the modules called in the top module exist:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/6a8b3afa-6570-424c-9666-7df427265723)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/5b43ebfd-678c-421a-a4ba-d0f2d514c425)
+
 
 Output:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/9cf877c8-4869-4cb5-bd18-3bd5f98930e2)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/efda6bcc-d925-416c-abee-5c7d816aab5e)
+
 
 ### Complete script for error handling script
 
 Checking errors in log file:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/0b4cb5ce-5d4c-45dd-a875-1ef69fdb8507)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/756da7b5-68ec-49fb-a8f0-efa13614f9fb)
+
 
 Script for error handling:
 
-![image](https://github.com/srsapireddy/ADVANCED-SCRIPTING-TECHNIQUES-IN-VLSI-DESIGN-AND-SYNTHESIS/assets/32967087/bde4d8cf-a260-4419-857e-3bbe5968fb63)
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/34e35ffc-07ae-418f-a854-a0c90f7f2c00)
+
 
 ### Synthesis script creation: Running synthesis on Yosys
 #### To run STA analysis on OpenTimer
