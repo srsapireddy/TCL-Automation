@@ -459,7 +459,7 @@ As seen from the above two images, we remove the characters "\" and "*" from the
 #### Output
 ![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/22cf60fb-eb66-4d93-b325-045bc8dca981)
 
-Acknowledgements: Mr. Kunal Ghosh
+
 
 
 
