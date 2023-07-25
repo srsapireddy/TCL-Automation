@@ -3,7 +3,10 @@
 ## Author: Srinivas Rahul Sapireddy
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)
 
-A User Interface (UI) that will take RTL netlist & SDC constraints as an input, and will generate sythnesized netlist & pre-layout timing report as an output. It uses Yosys open-source tool for synthesis and Opentimer to generate pre-layout timing reports.
+![image](https://github.com/srsapireddy/TCL-Automation/assets/32967087/3a697992-f969-4e31-92b4-501f8613e8ee)
+
+
+A User Interface (UI) that will take RTL netlist & SDC constraints as input and will generate synthesized netlist & pre-layout timing report as an output. It uses Yosys open-source tool for synthesis and Opentimer to generate pre-layout timing reports.
 
 ### The task is to take a User Interface to take an Excel file as an input and provide the output as a datasheet.
 
@@ -11,7 +14,7 @@ A User Interface (UI) that will take RTL netlist & SDC constraints as an input, 
 
 
 
-### A command that passes a .csv file from UNIX shell to TCL script.
+### A command that passes a .csv file from the UNIX shell to the TCL script.
 #### It checks for the following conditions and responds as shown below:
 1. CSV file not provided
 2. Incorrect CSV file
